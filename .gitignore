@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+venv*/
+.venv/
+*.egg-info/
+
+# Node
+node_modules/
+
+# Secrets - NEVER commit these
+.env
+.env.*
+**/auth-profiles.json
+**/*.key
+**/*.pem
+**/credentials.json
+**/token.json
+
+# Large/Generated
+*.log
+*.db
+*.sqlite
+canvas/

@@ -1,0 +1,3135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cortana OS - Command Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-void: #0a0a0f;
+            --bg-deep: #12121a;
+            --bg-surface: #1a1a24;
+            --bg-elevated: #22222e;
+            --bg-hover: #2a2a38;
+            --border-dim: #2d2d3d;
+            --border-accent: #3d3d52;
+            --text-primary: #e8e8f0;
+            --text-secondary: #9898a8;
+            --text-muted: #68687a;
+            --accent-cyan: #00d4ff;
+            --accent-purple: #a855f7;
+            --accent-green: #22c55e;
+            --accent-amber: #f59e0b;
+            --accent-red: #ef4444;
+            --accent-blue: #3b82f6;
+            --accent-pink: #ec4899;
+            --glow-cyan: rgba(0, 212, 255, 0.15);
+            --glow-purple: rgba(168, 85, 247, 0.15);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg-void);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Subtle grid background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background:
+                linear-gradient(90deg, var(--border-dim) 1px, transparent 1px),
+                linear-gradient(var(--border-dim) 1px, transparent 1px);
+            background-size: 60px 60px;
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* Layout */
+        .app-container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            width: 72px;
+            background: var(--bg-deep);
+            border-right: 1px solid var(--border-dim);
+            display: flex;
+            flex-direction: column;
+            padding: 12px;
+            gap: 6px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 100;
+            transition: width 0.25s ease;
+            overflow: hidden;
+        }
+
+        .sidebar.expanded {
+            width: 240px;
+        }
+
+        .sidebar-toggle {
+            width: 48px;
+            height: 48px;
+            min-height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            color: var(--text-secondary);
+            font-size: 20px;
+            margin-bottom: 12px;
+            background: transparent;
+            border: none;
+            flex-shrink: 0;
+        }
+
+        .sidebar-toggle:hover {
+            background: var(--bg-hover);
+            color: var(--text-primary);
+        }
+
+        .sidebar.expanded .sidebar-toggle {
+            width: 100%;
+            justify-content: flex-start;
+            padding-left: 14px;
+        }
+
+        .nav-item {
+            width: 48px;
+            height: 48px;
+            min-height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            position: relative;
+            color: var(--text-muted);
+            flex-shrink: 0;
+        }
+
+        .sidebar.expanded .nav-item {
+            width: 100%;
+            justify-content: flex-start;
+            padding-left: 14px;
+            gap: 14px;
+        }
+
+        .nav-icon {
+            font-size: 22px;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+
+        .nav-item:hover {
+            background: var(--bg-hover);
+            color: var(--text-primary);
+        }
+
+        .nav-item.active {
+            background: linear-gradient(135deg, var(--glow-cyan), var(--glow-purple));
+            color: var(--accent-cyan);
+            box-shadow: 0 0 20px var(--glow-cyan);
+        }
+
+        .nav-item .nav-label {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            white-space: nowrap;
+            display: none;
+        }
+
+        .sidebar.expanded .nav-item .nav-label {
+            display: block;
+        }
+
+        .nav-item:hover .nav-label,
+        .nav-item.active .nav-label {
+            color: var(--text-primary);
+        }
+
+        .nav-item .badge {
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            background: var(--accent-red);
+            color: white;
+            font-size: 10px;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 8px;
+            font-family: 'JetBrains Mono', monospace;
+            min-width: 18px;
+            text-align: center;
+        }
+
+        .sidebar.expanded .nav-item .badge {
+            position: static;
+            margin-left: auto;
+        }
+
+        .nav-spacer { flex: 1; }
+
+        .nav-category {
+            padding: 16px 14px 6px 14px;
+            margin-top: 8px;
+        }
+
+        .nav-category-label {
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            display: none;
+        }
+
+        .sidebar.expanded .nav-category-label {
+            display: block;
+        }
+
+        .sidebar:not(.expanded) .nav-category {
+            height: 1px;
+            background: var(--border-dim);
+            margin: 8px 12px;
+            padding: 0;
+        }
+
+        .sidebar-footer {
+            padding-top: 12px;
+            border-top: 1px solid var(--border-dim);
+            margin-top: auto;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            margin-left: 72px;
+            padding: 24px;
+            max-width: calc(100vw - 72px);
+            transition: margin-left 0.25s ease, max-width 0.25s ease;
+        }
+
+        .sidebar.expanded ~ .main-content {
+            margin-left: 220px;
+            max-width: calc(100vw - 220px);
+        }
+
+        /* View Container */
+        .view-container {
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .view-container.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Header */
+        .view-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border-dim);
+        }
+
+        .view-title {
+            font-size: 28px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .view-title span {
+            color: var(--text-muted);
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 12px;
+        }
+
+        /* Buttons */
+        .btn {
+            padding: 10px 16px;
+            border-radius: 8px;
+            border: 1px solid var(--border-dim);
+            background: var(--bg-surface);
+            color: var(--text-primary);
+            font-family: 'Outfit', sans-serif;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn:hover {
+            background: var(--bg-hover);
+            border-color: var(--border-accent);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            border: none;
+            font-weight: 500;
+        }
+
+        .btn-primary:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+
+        .btn-danger {
+            background: var(--accent-red);
+            border: none;
+        }
+
+        .btn-sm {
+            padding: 6px 12px;
+            font-size: 12px;
+        }
+
+        /* Cards */
+        .card {
+            background: var(--bg-deep);
+            border: 1px solid var(--border-dim);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .card-title {
+            font-size: 16px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card-badge {
+            background: var(--bg-surface);
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-secondary);
+        }
+
+        /* Grid Layouts */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+
+        @media (max-width: 1400px) {
+            .grid-4 { grid-template-columns: repeat(2, 1fr); }
+            .grid-3 { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 900px) {
+            .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+        }
+
+        /* Action Items - Core of actionable OS */
+        .action-item {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-dim);
+            border-radius: 10px;
+            padding: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .action-item:hover {
+            background: var(--bg-hover);
+            border-color: var(--border-accent);
+            transform: translateX(4px);
+        }
+
+        .action-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .action-icon.email { background: rgba(239, 68, 68, 0.15); color: var(--accent-red); }
+        .action-icon.calendar { background: rgba(59, 130, 246, 0.15); color: var(--accent-blue); }
+        .action-icon.twitter { background: rgba(0, 212, 255, 0.15); color: var(--accent-cyan); }
+        .action-icon.task { background: rgba(34, 197, 94, 0.15); color: var(--accent-green); }
+        .action-icon.drive { background: rgba(245, 158, 11, 0.15); color: var(--accent-amber); }
+        .action-icon.notion { background: rgba(168, 85, 247, 0.15); color: var(--accent-purple); }
+
+        .action-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .action-title {
+            font-weight: 500;
+            margin-bottom: 4px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .action-meta {
+            font-size: 13px;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .action-meta .time {
+            color: var(--text-muted);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 6px;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+
+        .action-item:hover .action-buttons {
+            opacity: 1;
+        }
+
+        /* Priority indicators */
+        .action-item.priority-urgent {
+            border-left: 3px solid var(--accent-red);
+            background: rgba(239, 68, 68, 0.08);
+        }
+
+        .action-item.priority-urgent:hover {
+            background: rgba(239, 68, 68, 0.12);
+        }
+
+        .action-item.priority-high {
+            border-left: 3px solid var(--accent-amber);
+        }
+
+        .action-item.priority-urgent .action-buttons {
+            opacity: 1;
+        }
+
+        /* Daily Brief */
+        .daily-brief {
+            background: linear-gradient(135deg, var(--bg-deep) 0%, var(--bg-surface) 100%);
+            border: 1px solid var(--border-dim);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 24px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .daily-brief::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple), var(--accent-pink));
+        }
+
+        .brief-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 16px;
+        }
+
+        .brief-greeting {
+            font-size: 28px;
+            font-weight: 600;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-cyan) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .brief-date {
+            font-size: 14px;
+            color: var(--text-muted);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .brief-summary {
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .brief-summary strong {
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        .brief-summary .highlight {
+            color: var(--accent-cyan);
+            font-weight: 500;
+        }
+
+        .brief-summary .warning {
+            color: var(--accent-amber);
+            font-weight: 500;
+        }
+
+        .brief-summary .urgent {
+            color: var(--accent-red);
+            font-weight: 500;
+        }
+
+        .brief-highlights {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .brief-highlight {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            background: var(--bg-surface);
+            border: 1px solid var(--border-dim);
+            border-radius: 8px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .brief-highlight:hover {
+            background: var(--bg-hover);
+            border-color: var(--border-accent);
+            color: var(--text-primary);
+        }
+
+        .brief-highlight .icon {
+            font-size: 16px;
+        }
+
+        .brief-highlight.urgent {
+            border-color: var(--accent-red);
+            background: rgba(239, 68, 68, 0.1);
+        }
+
+        .brief-highlight.warning {
+            border-color: var(--accent-amber);
+            background: rgba(245, 158, 11, 0.1);
+        }
+
+        /* Stats Row */
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        @media (max-width: 1200px) {
+            .stats-row { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        .stat-card {
+            background: var(--bg-deep);
+            border: 1px solid var(--border-dim);
+            border-radius: 10px;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 32px;
+            font-weight: 700;
+            font-family: 'JetBrains Mono', monospace;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* Section Title */
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title .icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+
+        /* Email List */
+        .email-item {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-dim);
+            border-radius: 10px;
+            padding: 16px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .email-item:hover {
+            background: var(--bg-hover);
+            border-color: var(--border-accent);
+        }
+
+        .email-item.unread {
+            border-left: 3px solid var(--accent-cyan);
+        }
+
+        .email-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+
+        .email-from {
+            font-weight: 500;
+        }
+
+        .email-date {
+            font-size: 12px;
+            color: var(--text-muted);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .email-subject {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+        }
+
+        .email-snippet {
+            font-size: 13px;
+            color: var(--text-muted);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Calendar Event */
+        .calendar-event {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-dim);
+            border-radius: 10px;
+            padding: 16px;
+            margin-bottom: 8px;
+            border-left: 3px solid var(--accent-blue);
+        }
+
+        .calendar-event.now {
+            border-left-color: var(--accent-green);
+            background: rgba(34, 197, 94, 0.05);
+        }
+
+        .event-time {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            color: var(--accent-blue);
+            margin-bottom: 6px;
+        }
+
+        .event-title {
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .event-meta {
+            display: flex;
+            gap: 12px;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .event-meta a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        .event-meta a:hover {
+            text-decoration: underline;
+        }
+
+        /* Twitter Feed */
+        .tweet-item {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-dim);
+            border-radius: 10px;
+            padding: 16px;
+            margin-bottom: 8px;
+        }
+
+        .tweet-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .tweet-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--bg-hover);
+        }
+
+        .tweet-author {
+            font-weight: 500;
+        }
+
+        .tweet-handle {
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+
+        .tweet-content {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+
+        .tweet-actions {
+            display: flex;
+            gap: 16px;
+        }
+
+        .tweet-action {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--text-muted);
+            font-size: 13px;
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
+
+        .tweet-action:hover {
+            color: var(--accent-cyan);
+        }
+
+        /* Drive Files */
+        .drive-file {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: var(--bg-surface);
+            border: 1px solid var(--border-dim);
+            border-radius: 8px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .drive-file:hover {
+            background: var(--bg-hover);
+            border-color: var(--border-accent);
+        }
+
+        .drive-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .drive-icon.doc { background: rgba(59, 130, 246, 0.15); color: var(--accent-blue); }
+        .drive-icon.sheet { background: rgba(34, 197, 94, 0.15); color: var(--accent-green); }
+        .drive-icon.slide { background: rgba(245, 158, 11, 0.15); color: var(--accent-amber); }
+        .drive-icon.folder { background: rgba(168, 85, 247, 0.15); color: var(--accent-purple); }
+
+        .drive-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .drive-name {
+            font-weight: 500;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .drive-meta {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        /* Notion Database */
+        .notion-db {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-dim);
+            border-radius: 10px;
+            padding: 16px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .notion-db:hover {
+            background: var(--bg-hover);
+            border-color: var(--accent-purple);
+        }
+
+        .notion-db-title {
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .notion-db-meta {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        /* Notion Items */
+        .notion-db-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .notion-db-header h3 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .notion-db-meta {
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+
+        .notion-items-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 16px;
+        }
+
+        .notion-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-dim);
+            border-radius: 12px;
+            padding: 16px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .notion-card:hover {
+            background: var(--bg-hover);
+            border-color: var(--border-accent);
+            transform: translateY(-2px);
+        }
+
+        .notion-card-header {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .notion-status {
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .notion-platform {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-left: auto;
+        }
+
+        .notion-card-title {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .notion-card-type {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+        }
+
+        .notion-card-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 12px;
+        }
+
+        .notion-tag {
+            font-size: 11px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            background: var(--bg-hover);
+            color: var(--text-secondary);
+        }
+
+        .notion-tag-more {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        .notion-card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 12px;
+            border-top: 1px solid var(--border-dim);
+        }
+
+        .notion-card-date {
+            font-size: 12px;
+            color: var(--text-muted);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .notion-card-actions {
+            display: flex;
+            gap: 4px;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+
+        .notion-card:hover .notion-card-actions {
+            opacity: 1;
+        }
+
+        .notion-action-btn {
+            width: 28px;
+            height: 28px;
+            border-radius: 6px;
+            border: 1px solid var(--border-dim);
+            background: var(--bg-deep);
+            color: var(--text-secondary);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            transition: all 0.2s ease;
+        }
+
+        .notion-action-btn:hover {
+            background: var(--bg-surface);
+            color: var(--text-primary);
+            border-color: var(--accent-cyan);
+        }
+
+        .notion-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .notion-filters {
+            display: flex;
+            gap: 8px;
+        }
+
+        .filter-select {
+            padding: 8px 12px;
+            border-radius: 8px;
+            border: 1px solid var(--border-dim);
+            background: var(--bg-surface);
+            color: var(--text-primary);
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .filter-select:focus {
+            outline: none;
+            border-color: var(--accent-cyan);
+        }
+
+        /* Legacy notion-item styles */
+        .notion-item {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-dim);
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .notion-item:hover {
+            background: var(--bg-hover);
+        }
+
+        .notion-item-title {
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .notion-item-props {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .notion-prop {
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background: var(--bg-hover);
+            color: var(--text-secondary);
+        }
+
+        /* Reply Composer */
+        .reply-composer {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-dim);
+            border-radius: 10px;
+            padding: 16px;
+            margin-top: 12px;
+        }
+
+        .reply-composer textarea {
+            width: 100%;
+            background: var(--bg-deep);
+            border: 1px solid var(--border-dim);
+            border-radius: 8px;
+            padding: 12px;
+            color: var(--text-primary);
+            font-family: 'Outfit', sans-serif;
+            font-size: 14px;
+            resize: vertical;
+            min-height: 80px;
+            margin-bottom: 12px;
+        }
+
+        .reply-composer textarea:focus {
+            outline: none;
+            border-color: var(--accent-cyan);
+        }
+
+        .reply-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .char-count {
+            font-size: 12px;
+            color: var(--text-muted);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal {
+            background: var(--bg-deep);
+            border: 1px solid var(--border-dim);
+            border-radius: 16px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: scale(0.95) translateY(-20px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        .modal-header {
+            padding: 20px;
+            border-bottom: 1px solid var(--border-dim);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .modal-close {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            border: none;
+            background: var(--bg-surface);
+            color: var(--text-secondary);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-body {
+            padding: 20px;
+        }
+
+        /* Loading States */
+        .loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            color: var(--text-muted);
+        }
+
+        .spinner {
+            width: 24px;
+            height: 24px;
+            border: 2px solid var(--border-dim);
+            border-top-color: var(--accent-cyan);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 12px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+        }
+
+        .empty-state .icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+            opacity: 0.5;
+        }
+
+        /* Toast Notifications */
+        .toast-container {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 2000;
+        }
+
+        .toast {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-dim);
+            border-radius: 10px;
+            padding: 14px 20px;
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            animation: slideUp 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .toast.success { border-left: 3px solid var(--accent-green); }
+        .toast.error { border-left: 3px solid var(--accent-red); }
+        .toast.info { border-left: 3px solid var(--accent-cyan); }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-void);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-dim);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--border-accent);
+        }
+
+        /* Quick Action Bar */
+        .quick-actions {
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-deep);
+            border: 1px solid var(--border-dim);
+            border-radius: 16px;
+            padding: 12px 20px;
+            display: flex;
+            gap: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+            z-index: 500;
+        }
+
+        .quick-action {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            padding: 8px 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            color: var(--text-muted);
+        }
+
+        .quick-action:hover {
+            background: var(--bg-hover);
+            color: var(--text-primary);
+        }
+
+        .quick-action .icon {
+            font-size: 20px;
+        }
+
+        .quick-action .label {
+            font-size: 11px;
+        }
+
+        /* Sub-nav Tabs */
+        .tab-nav {
+            display: flex;
+            gap: 4px;
+            background: var(--bg-deep);
+            padding: 4px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tab-btn {
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            font-family: 'Outfit', sans-serif;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .tab-btn:hover {
+            color: var(--text-primary);
+        }
+
+        .tab-btn.active {
+            background: var(--bg-surface);
+            color: var(--text-primary);
+        }
+
+        /* Account Switcher */
+        .account-switcher {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .account-btn {
+            padding: 8px 16px;
+            border-radius: 8px;
+            border: 1px solid var(--border-dim);
+            background: var(--bg-surface);
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .account-btn.active {
+            background: linear-gradient(135deg, var(--glow-cyan), var(--glow-purple));
+            border-color: var(--accent-cyan);
+            color: var(--text-primary);
+        }
+
+        .account-btn .avatar {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+        }
+    </style>
+<link rel="stylesheet" href="views-upgrade.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-toggle" onclick="toggleSidebar()" title="Toggle Sidebar">
+                <span id="toggle-icon">☰</span>
+            </div>
+
+            <!-- Home -->
+            <div class="nav-item active" data-view="dashboard" title="Dashboard">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-label">Command Center</span>
+            </div>
+
+            <!-- Productivity -->
+            <div class="nav-category">
+                <span class="nav-category-label">Productivity</span>
+            </div>
+            <div class="nav-item" data-view="inbox" title="Inbox">
+                <span class="nav-icon">📬</span>
+                <span class="nav-label">Gmail</span>
+                <span class="badge" id="inbox-badge">0</span>
+            </div>
+            <div class="nav-item" data-view="calendar" title="Calendar">
+                <span class="nav-icon">📅</span>
+                <span class="nav-label">Calendar</span>
+            </div>
+            <div class="nav-item" data-view="tasks" title="Tasks">
+                <span class="nav-icon">✅</span>
+                <span class="nav-label">Tasks</span>
+            </div>
+
+            <!-- Social -->
+            <div class="nav-category">
+                <span class="nav-category-label">Social</span>
+            </div>
+            <div class="nav-item" data-view="twitter" title="Twitter">
+                <span class="nav-icon">🐦</span>
+                <span class="nav-label">Twitter</span>
+                <span class="badge" id="twitter-badge">0</span>
+            </div>
+            <div class="nav-item" data-view="youtube" title="YouTube">
+                <span class="nav-icon">📺</span>
+                <span class="nav-label">YouTube</span>
+            </div>
+
+            <!-- Workspace -->
+            <div class="nav-category">
+                <span class="nav-category-label">Workspace</span>
+            </div>
+            <div class="nav-item" data-view="notion" title="Notion">
+                <span class="nav-icon">📝</span>
+                <span class="nav-label">Notion</span>
+            </div>
+            <div class="nav-item" data-view="drive" title="Drive">
+                <span class="nav-icon">📁</span>
+                <span class="nav-label">Google Drive</span>
+            </div>
+            <div class="nav-item" data-view="documents" title="Documents">
+                <span class="nav-icon">📄</span>
+                <span class="nav-label">Cortana Files</span>
+            </div>
+
+            <div class="nav-spacer"></div>
+
+            <!-- System -->
+            <div class="sidebar-footer">
+                <div class="nav-item" data-view="settings" title="Settings">
+                    <span class="nav-icon">⚙️</span>
+                    <span class="nav-label">Settings</span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Dashboard View -->
+            <div class="view-container active" id="view-dashboard">
+                <div class="view-header">
+                    <h1 class="view-title">Command Center <span>What needs your attention</span></h1>
+                    <div class="header-actions">
+                        <button class="btn" onclick="refreshAll()">🔄 Refresh</button>
+                    </div>
+                </div>
+
+                <!-- Daily Brief -->
+                <div class="daily-brief" id="daily-brief">
+                    <div class="brief-header">
+                        <div class="brief-greeting" id="brief-greeting">Good morning, Ben</div>
+                        <div class="brief-date" id="brief-date"></div>
+                    </div>
+                    <div class="brief-summary" id="brief-summary">
+                        <div class="loading"><div class="spinner"></div> Preparing your daily brief...</div>
+                    </div>
+                    <div class="brief-highlights" id="brief-highlights"></div>
+                </div>
+
+                <!-- Stats Row -->
+                <div class="stats-row">
+                    <div class="stat-card">
+                        <div class="stat-value" id="stat-emails">-</div>
+                        <div class="stat-label">Unread Emails</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="stat-meetings">-</div>
+                        <div class="stat-label">Today's Meetings</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="stat-mentions">-</div>
+                        <div class="stat-label">Mentions</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="stat-tasks">-</div>
+                        <div class="stat-label">Open Tasks</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="stat-followers">-</div>
+                        <div class="stat-label">Followers</div>
+                    </div>
+                </div>
+
+                <!-- Action Queue -->
+                <div class="section-title">
+                    <div class="icon" style="background: var(--glow-cyan);">⚡</div>
+                    Action Queue <span class="card-badge" id="action-count">0 items</span>
+                </div>
+                <div id="action-queue" class="grid-2">
+                    <div class="loading"><div class="spinner"></div> Loading actions...</div>
+                </div>
+
+                <!-- Two Column Layout -->
+                <div class="grid-2" style="margin-top: 24px;">
+                    <!-- Upcoming Events -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">📅 Upcoming Events</div>
+                            <button class="btn btn-sm" onclick="showView('calendar')">View All</button>
+                        </div>
+                        <div id="upcoming-events">
+                            <div class="loading"><div class="spinner"></div> Loading...</div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Mentions -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">🐦 Mentions to Reply</div>
+                            <button class="btn btn-sm" onclick="showView('twitter')">View All</button>
+                        </div>
+                        <div id="recent-mentions">
+                            <div class="loading"><div class="spinner"></div> Loading...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Files -->
+                <div class="card" style="margin-top: 16px;">
+                    <div class="card-header">
+                        <div class="card-title">📁 Recent Drive Files</div>
+                        <button class="btn btn-sm" onclick="showView('drive')">View All</button>
+                    </div>
+                    <div id="recent-drive" class="grid-3">
+                        <div class="loading"><div class="spinner"></div> Loading...</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inbox View -->
+            <div class="view-container" id="view-inbox">
+                <div class="view-header">
+                    <h1 class="view-title">📬 Inbox <span id="inbox-subtitle">Loading...</span></h1>
+                    <div class="header-actions">
+                        <button class="btn" onclick="loadEmails()">🔄 Refresh</button>
+                        <button class="btn btn-primary" onclick="composeEmail()">✉️ Compose</button>
+                    </div>
+                </div>
+
+                <div class="tab-nav">
+                    <button class="tab-btn active" onclick="filterEmails('all')">All</button>
+                    <button class="tab-btn" onclick="filterEmails('unread')">Unread</button>
+                    <button class="tab-btn" onclick="filterEmails('important')">Important</button>
+                    <button class="tab-btn" onclick="filterEmails('starred')">Starred</button>
+                </div>
+
+                <div id="email-list">
+                    <div class="loading"><div class="spinner"></div> Loading emails...</div>
+                </div>
+            </div>
+
+            <!-- Calendar View -->
+            <div class="view-container" id="view-calendar">
+                <div class="view-header">
+                    <h1 class="view-title">📅 Calendar <span id="calendar-subtitle">Loading...</span></h1>
+                    <div class="header-actions">
+                        <button class="btn" onclick="loadCalendar()">🔄 Refresh</button>
+                        <button class="btn btn-primary" onclick="createEvent()">+ New Event</button>
+                    </div>
+                </div>
+
+                <div class="tab-nav">
+                    <button class="tab-btn active" onclick="filterCalendar('upcoming')">Upcoming</button>
+                    <button class="tab-btn" onclick="filterCalendar('today')">Today</button>
+                    <button class="tab-btn" onclick="filterCalendar('week')">This Week</button>
+                </div>
+
+                <div id="calendar-events">
+                    <div class="loading"><div class="spinner"></div> Loading events...</div>
+                </div>
+            </div>
+
+            <!-- Twitter View -->
+            <div class="view-container" id="view-twitter">
+                <div class="view-header">
+                    <h1 class="view-title">🐦 Twitter <span>Social Command Center</span></h1>
+                    <div class="header-actions">
+                        <button class="btn" onclick="loadTwitter()">🔄 Refresh</button>
+                        <button class="btn btn-primary" onclick="composeTweet()">📝 Tweet</button>
+                    </div>
+                </div>
+
+                <!-- Account Switcher -->
+                <div class="account-switcher">
+                    <button class="account-btn active" data-account="cortana" onclick="switchTwitterAccount('cortana')">
+                        <div class="avatar" style="background: var(--accent-purple);"></div>
+                        @0xBenJammin (Cortana)
+                    </button>
+                    <button class="account-btn" data-account="ben" onclick="switchTwitterAccount('ben')">
+                        <div class="avatar" style="background: var(--accent-cyan);"></div>
+                        @xBenJamminx (Ben)
+                    </button>
+                </div>
+
+                <div class="tab-nav">
+                    <button class="tab-btn active" onclick="filterTwitter('mentions')">Mentions</button>
+                    <button class="tab-btn" onclick="filterTwitter('tweets')">My Tweets</button>
+                    <button class="tab-btn" onclick="filterTwitter('followers')">New Followers</button>
+                    <button class="tab-btn" onclick="filterTwitter('replyGuy')">Reply Guy Mode</button>
+                </div>
+
+                <div id="twitter-content">
+                    <div class="loading"><div class="spinner"></div> Loading Twitter...</div>
+                </div>
+
+                <!-- Tweet Composer -->
+                <div id="tweet-composer" class="reply-composer" style="display: none;">
+                    <textarea id="tweet-text" placeholder="What's happening?" maxlength="280"></textarea>
+                    <div class="reply-footer">
+                        <span class="char-count"><span id="tweet-chars">0</span>/280</span>
+                        <div>
+                            <button class="btn" onclick="closeTweetComposer()">Cancel</button>
+                            <button class="btn btn-primary" onclick="postTweet()">Tweet</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notion View -->
+            <div class="view-container" id="view-notion">
+                <div class="view-header">
+                    <h1 class="view-title">📝 Notion <span>Databases & Pages</span></h1>
+                    <div class="header-actions">
+                        <button class="btn" onclick="loadNotion()">🔄 Refresh</button>
+                    </div>
+                </div>
+
+                <div class="tab-nav">
+                    <button class="tab-btn active" onclick="filterNotion('databases')">Databases</button>
+                    <button class="tab-btn" onclick="filterNotion('pages')">Recent Pages</button>
+                </div>
+
+                <div id="notion-content">
+                    <div class="loading"><div class="spinner"></div> Loading Notion...</div>
+                </div>
+
+                <!-- Database Drill-down -->
+                <div id="notion-drilldown" style="display: none;">
+                    <button class="btn" onclick="closeNotionDrilldown()" style="margin-bottom: 16px;">← Back to Databases</button>
+                    <div id="notion-items">
+                        <div class="loading"><div class="spinner"></div> Loading items...</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drive View -->
+            <div class="view-container" id="view-drive">
+                <div class="view-header">
+                    <h1 class="view-title">📁 Google Drive <span id="drive-subtitle">Loading...</span></h1>
+                    <div class="header-actions">
+                        <button class="btn" onclick="loadDrive()">🔄 Refresh</button>
+                    </div>
+                </div>
+
+                <div class="tab-nav">
+                    <button class="tab-btn active" onclick="filterDrive('recent')">Recent</button>
+                    <button class="tab-btn" onclick="filterDrive('shared')">Shared with Me</button>
+                    <button class="tab-btn" onclick="filterDrive('starred')">Starred</button>
+                </div>
+
+                <div id="drive-content">
+                    <div class="loading"><div class="spinner"></div> Loading Drive...</div>
+                </div>
+            </div>
+
+            <!-- Documents View -->
+            <div class="view-container" id="view-documents">
+                <div class="view-header">
+                    <h1 class="view-title">📄 Cortana's Documents <span>Files generated by Cortana</span></h1>
+                    <div class="header-actions">
+                        <button class="btn" onclick="loadDocuments()">🔄 Refresh</button>
+                    </div>
+                </div>
+
+                <div class="tab-nav">
+                    <button class="tab-btn active" onclick="filterDocs('all')">All Files</button>
+                    <button class="tab-btn" onclick="filterDocs('identity')">Identity</button>
+                    <button class="tab-btn" onclick="filterDocs('docs')">Docs</button>
+                    <button class="tab-btn" onclick="filterDocs('code')">Code</button>
+                    <button class="tab-btn" onclick="filterDocs('images')">Images</button>
+                </div>
+
+                <div id="documents-content">
+                    <div class="loading"><div class="spinner"></div> Loading documents...</div>
+                </div>
+            </div>
+
+            <!-- Settings View -->
+            <div class="view-container" id="view-settings">
+                <div class="view-header">
+                    <h1 class="view-title">⚙️ Settings <span>Configuration & Status</span></h1>
+                </div>
+
+                <div class="grid-2">
+                    <div class="card">
+                        <div class="card-title" style="margin-bottom: 16px;">Integration Status</div>
+                        <div id="integration-status">
+                            <div class="loading"><div class="spinner"></div> Checking...</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title" style="margin-bottom: 16px;">System Info</div>
+                        <div id="system-info">
+                            <div class="loading"><div class="spinner"></div> Loading...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
+        <div class="modal" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <div class="modal-title" id="modal-title">Modal</div>
+                <button class="modal-close" onclick="closeModal()">✕</button>
+            </div>
+            <div class="modal-body" id="modal-body"></div>
+        </div>
+    </div>
+
+    <script>
+        // State
+        const state = {
+            currentView: 'dashboard',
+            twitterAccount: 'cortana',
+            emailFilter: 'all',
+            emails: [],
+            events: [],
+            mentions: [],
+            driveFiles: [],
+            notionDatabases: [],
+            documents: []
+        };
+
+        // Helpers
+        function safeArray(v) { return Array.isArray(v) ? v : []; }
+        function safeObj(v) { return v && typeof v === "object" && !Array.isArray(v) ? v : {}; }
+
+        function formatDate(dateStr) {
+            if (!dateStr) return '';
+            const d = new Date(dateStr);
+            return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        }
+
+        function formatTime(dateStr) {
+            if (!dateStr) return '';
+            const d = new Date(dateStr);
+            return d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+        }
+
+        function formatRelativeTime(dateStr) {
+            if (!dateStr) return '';
+            const d = new Date(dateStr);
+            const now = new Date();
+            const diff = now - d;
+            const mins = Math.floor(diff / 60000);
+            const hours = Math.floor(diff / 3600000);
+            const days = Math.floor(diff / 86400000);
+
+            if (mins < 1) return 'just now';
+            if (mins < 60) return `${mins}m ago`;
+            if (hours < 24) return `${hours}h ago`;
+            if (days < 7) return `${days}d ago`;
+            return formatDate(dateStr);
+        }
+
+        function toast(message, type = 'info') {
+            const container = document.getElementById('toast-container');
+            const t = document.createElement('div');
+            t.className = `toast ${type}`;
+            t.innerHTML = message;
+            container.appendChild(t);
+            setTimeout(() => t.remove(), 4000);
+        }
+
+        // Sidebar Toggle
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const icon = document.getElementById('toggle-icon');
+            sidebar.classList.toggle('expanded');
+
+            if (sidebar.classList.contains('expanded')) {
+                icon.textContent = '✕';
+                localStorage.setItem('sidebarExpanded', 'true');
+            } else {
+                icon.textContent = '☰';
+                localStorage.setItem('sidebarExpanded', 'false');
+            }
+        }
+
+        // Restore sidebar state from localStorage
+        function restoreSidebarState() {
+            const expanded = localStorage.getItem('sidebarExpanded') === 'true';
+            if (expanded) {
+                document.getElementById('sidebar').classList.add('expanded');
+                document.getElementById('toggle-icon').textContent = '✕';
+            }
+        }
+
+        // Navigation
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const view = item.dataset.view;
+                if (view) showView(view);
+            });
+        });
+
+        function showView(viewName) {
+            state.currentView = viewName;
+            document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
+            document.querySelectorAll('.view-container').forEach(v => v.classList.remove('active'));
+
+            document.querySelector(`.nav-item[data-view="${viewName}"]`)?.classList.add('active');
+            document.getElementById(`view-${viewName}`)?.classList.add('active');
+
+            // Load data for view
+            switch(viewName) {
+                case 'dashboard': loadDashboard(); break;
+                case 'inbox': loadEmails(); break;
+                case 'calendar': loadCalendar(); break;
+                case 'twitter': loadTwitter(); break;
+                case 'notion': loadNotion(); break;
+                case 'drive': loadDrive(); break;
+                case 'documents': loadDocuments(); break;
+                case 'settings': loadSettings(); break;
+            }
+        }
+
+        // API Calls
+        async function api(endpoint) {
+            try {
+                const resp = await fetch(`/api${endpoint}`);
+                return await resp.json();
+            } catch (e) {
+                console.error('API Error:', e);
+                return { error: e.message };
+            }
+        }
+
+        async function apiPost(endpoint, data) {
+            try {
+                const resp = await fetch(`/api${endpoint}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                return await resp.json();
+            } catch (e) {
+                console.error('API Error:', e);
+                return { error: e.message };
+            }
+        }
+
+        // Dashboard
+        // Build the Daily Brief
+        function buildDailyBrief(data) {
+            const { emails, calendar, mentions, tasks, twitterProfile } = data;
+            const now = new Date();
+            const hour = now.getHours();
+
+            // Greeting based on time of day
+            let greeting = 'Good morning';
+            if (hour >= 12 && hour < 17) greeting = 'Good afternoon';
+            else if (hour >= 17) greeting = 'Good evening';
+
+            document.getElementById('brief-greeting').textContent = `${greeting}, Ben`;
+            document.getElementById('brief-date').textContent = now.toLocaleDateString('en-US', {
+                weekday: 'long',
+                month: 'long',
+                day: 'numeric',
+                year: 'numeric'
+            });
+
+            // Gather data for the brief
+            const allEvents = safeArray(safeObj(calendar).events);
+            const todayEvents = allEvents.filter(e => e.is_today);
+            const upcomingEvents = allEvents.filter(e => {
+                const start = new Date(e.start_dt);
+                const hoursUntil = (start - now) / 3600000;
+                return hoursUntil > 0 && hoursUntil < 4;
+            });
+
+            const unreadEmails = safeObj(emails).unread_count || 0;
+            const actionableEmails = safeArray(safeObj(emails).messages)
+                .filter(e => e.is_unread && isActionableEmail(e));
+
+            const mentionsList = safeArray(safeObj(mentions).data);
+            const tasksList = safeArray(safeObj(tasks).tasks);
+            const overdueTasks = tasksList.filter(t => t.is_overdue);
+            const dueTodayTasks = tasksList.filter(t => {
+                if (!t.due) return false;
+                const dueDate = t.due.slice(0, 10);
+                const today = now.toISOString().slice(0, 10);
+                return dueDate === today;
+            });
+
+            const followers = safeObj(safeObj(twitterProfile).data).public_metrics?.followers_count || 0;
+
+            // Build the narrative summary
+            let summaryParts = [];
+            let highlights = [];
+
+            // Calendar summary
+            if (todayEvents.length === 0) {
+                summaryParts.push("Your calendar is <strong>clear today</strong> — no meetings scheduled.");
+            } else if (todayEvents.length === 1) {
+                const event = todayEvents[0];
+                const time = event.all_day ? 'all day' : formatTime(event.start_dt);
+                summaryParts.push(`You have <strong>1 meeting</strong> today: "${event.summary}" at ${time}.`);
+            } else {
+                summaryParts.push(`You have <strong>${todayEvents.length} meetings</strong> today.`);
+            }
+
+            // Upcoming meeting alert
+            if (upcomingEvents.length > 0) {
+                const next = upcomingEvents[0];
+                const start = new Date(next.start_dt);
+                const minsUntil = Math.round((start - now) / 60000);
+
+                if (minsUntil < 15) {
+                    summaryParts.push(`<span class="urgent">⚠️ "${next.summary}" starts in ${minsUntil} minutes!</span>`);
+                    highlights.push({
+                        icon: '🔴',
+                        text: `${next.summary} in ${minsUntil}m`,
+                        class: 'urgent',
+                        action: () => next.hangout_link ? window.open(next.hangout_link, '_blank') : null
+                    });
+                } else if (minsUntil < 60) {
+                    summaryParts.push(`<span class="warning">Next up: "${next.summary}" in ${minsUntil} minutes.</span>`);
+                    highlights.push({
+                        icon: '📅',
+                        text: `${next.summary} in ${minsUntil}m`,
+                        class: 'warning',
+                        action: () => next.html_link ? window.open(next.html_link, '_blank') : null
+                    });
+                }
+            }
+
+            // Tasks summary
+            if (overdueTasks.length > 0) {
+                summaryParts.push(`<span class="urgent">You have <strong>${overdueTasks.length} overdue task${overdueTasks.length > 1 ? 's' : ''}</strong> that need attention.</span>`);
+                highlights.push({
+                    icon: '⚠️',
+                    text: `${overdueTasks.length} overdue`,
+                    class: 'urgent',
+                    action: () => showView('tasks')
+                });
+            }
+            if (dueTodayTasks.length > 0) {
+                summaryParts.push(`<strong>${dueTodayTasks.length} task${dueTodayTasks.length > 1 ? 's' : ''}</strong> due today.`);
+            }
+
+            // Email summary
+            if (actionableEmails.length > 0) {
+                const senders = actionableEmails.slice(0, 2).map(e =>
+                    e.from?.split('<')[0]?.trim() || 'someone'
+                );
+                if (actionableEmails.length === 1) {
+                    summaryParts.push(`You have <strong>1 email</strong> that may need a reply from ${senders[0]}.`);
+                } else {
+                    summaryParts.push(`You have <strong>${actionableEmails.length} emails</strong> that may need replies, including from ${senders.join(' and ')}.`);
+                }
+                highlights.push({
+                    icon: '✉️',
+                    text: `${actionableEmails.length} to reply`,
+                    class: '',
+                    action: () => showView('inbox')
+                });
+            } else if (unreadEmails > 0) {
+                summaryParts.push(`${unreadEmails} unread emails, but nothing urgent.`);
+            }
+
+            // Social summary
+            if (mentionsList.length > 0) {
+                summaryParts.push(`You have <span class="highlight">${mentionsList.length} Twitter mention${mentionsList.length > 1 ? 's' : ''}</span> to check.`);
+                highlights.push({
+                    icon: '🐦',
+                    text: `${mentionsList.length} mentions`,
+                    class: '',
+                    action: () => showView('twitter')
+                });
+            }
+
+            // Render summary
+            document.getElementById('brief-summary').innerHTML = summaryParts.join(' ');
+
+            // Render highlights
+            if (highlights.length > 0) {
+                document.getElementById('brief-highlights').innerHTML = highlights.map((h, i) => `
+                    <div class="brief-highlight ${h.class}" onclick="window.briefActions[${i}]()">
+                        <span class="icon">${h.icon}</span>
+                        <span>${h.text}</span>
+                    </div>
+                `).join('');
+
+                window.briefActions = highlights.map(h => h.action);
+            } else {
+                document.getElementById('brief-highlights').innerHTML = `
+                    <div class="brief-highlight">
+                        <span class="icon">✨</span>
+                        <span>Looking good — nothing urgent right now</span>
+                    </div>
+                `;
+            }
+        }
+
+        async function loadDashboard() {
+            // Load all data in parallel
+            const [emails, calendar, mentions, drive, tasks] = await Promise.all([
+                api('/google/gmail/messages?max_results=10'),
+                api('/google/calendar/events?days_ahead=7'),
+                api('/integrations/twitter/cortana/mentions?limit=10'),
+                api('/google/drive/recent?limit=6'),
+                api('/google/tasks/items')
+            ]);
+
+            // Update stats
+            const unreadCount = safeObj(emails).unread_count || 0;
+            document.getElementById('stat-emails').textContent = unreadCount;
+            document.getElementById('inbox-badge').textContent = unreadCount;
+            document.getElementById('inbox-badge').style.display = unreadCount > 0 ? 'block' : 'none';
+
+            const todayEvents = safeArray(safeObj(calendar).events).filter(e => e.is_today);
+            document.getElementById('stat-meetings').textContent = todayEvents.length;
+
+            const mentionCount = safeArray(safeObj(mentions).data).length;
+            document.getElementById('stat-mentions').textContent = mentionCount;
+            document.getElementById('twitter-badge').textContent = mentionCount;
+            document.getElementById('twitter-badge').style.display = mentionCount > 0 ? 'block' : 'none';
+
+            const taskCount = safeObj(tasks).total || 0;
+            document.getElementById('stat-tasks').textContent = taskCount;
+
+            // Get followers from Twitter
+            const twitterProfile = await api('/integrations/twitter/cortana');
+            const followers = safeObj(safeObj(twitterProfile).data).public_metrics?.followers_count || 0;
+            document.getElementById('stat-followers').textContent = followers.toLocaleString();
+
+            // Build Daily Brief
+            buildDailyBrief({ emails, calendar, mentions, tasks, twitterProfile });
+
+            // Build action queue with smart filtering
+            buildActionQueue(emails, calendar, mentions, tasks);
+
+            // Upcoming events
+            renderUpcomingEvents(safeArray(safeObj(calendar).events).slice(0, 3));
+
+            // Recent mentions
+            renderRecentMentions(safeArray(safeObj(mentions).data).slice(0, 3), safeObj(mentions).includes?.users || []);
+
+            // Recent Drive files
+            renderRecentDrive(safeArray(safeObj(drive).files).slice(0, 6));
+        }
+
+        // Helper: Check if email is from a real person who might expect a reply
+        function isActionableEmail(email) {
+            const from = (email.from || '').toLowerCase();
+            const subject = (email.subject || '').toLowerCase();
+            const labels = email.labels || [];
+
+            // Skip automated/no-reply senders
+            const automatedPatterns = [
+                'noreply@', 'no-reply@', 'donotreply@', 'do-not-reply@',
+                'notifications@', 'notification@', 'alerts@', 'alert@',
+                'newsletter@', 'news@', 'marketing@', 'promo@',
+                'support@', 'help@', 'info@', 'hello@',
+                'updates@', 'digest@', 'weekly@', 'daily@',
+                'mailer-daemon', 'postmaster@',
+                '@github.com', '@linkedin.com', '@facebook.com', '@twitter.com',
+                '@slack.com', '@notion.so', '@stripe.com', '@vercel.com',
+                '@google.com', '@accounts.google', '@amazonses.com',
+                'beehiiv.com', 'substack.com', 'mailchimp', 'sendgrid',
+                'safesendreturns', 'workos-mail'
+            ];
+
+            if (automatedPatterns.some(p => from.includes(p))) return false;
+
+            // Skip promotional/update categories (unless marked important)
+            if (labels.includes('CATEGORY_PROMOTIONS')) return false;
+            if (labels.includes('CATEGORY_UPDATES') && !email.is_important) return false;
+            if (labels.includes('CATEGORY_SOCIAL')) return false;
+
+            // Skip common newsletter/automated subject patterns
+            const automatedSubjects = [
+                'security alert', 'verify your', 'confirm your', 'reset your password',
+                'weekly digest', 'daily digest', 'newsletter', 'your weekly',
+                'new sign-in', 'new login', 'account activity',
+                'has been added', 'has been removed', 'was updated',
+                'reminder:', 'automated:', '[automated]',
+                'unsubscribe', 'subscription'
+            ];
+
+            if (automatedSubjects.some(p => subject.includes(p))) return false;
+
+            // Prioritize: Important emails, or emails that seem personal
+            // Check if it looks like a real person's email (has a name before <email>)
+            const hasPersonName = email.from && email.from.includes('<') &&
+                                  email.from.split('<')[0].trim().length > 2;
+
+            return email.is_important || hasPersonName;
+        }
+
+        // Helper: Calculate priority score for sorting
+        function getActionPriority(action) {
+            // Higher = more urgent
+            if (action.priority === 'urgent') return 100;
+            if (action.priority === 'high') return 75;
+            if (action.type === 'calendar' && action.minutesUntil < 30) return 90;
+            if (action.type === 'calendar' && action.minutesUntil < 60) return 70;
+            if (action.type === 'email' && action.isImportant) return 60;
+            if (action.type === 'task' && action.isOverdue) return 80;
+            if (action.type === 'twitter') return 40;
+            if (action.type === 'calendar') return 50;
+            if (action.type === 'email') return 30;
+            return 10;
+        }
+
+        function buildActionQueue(emails, calendar, mentions, tasks) {
+            const actions = [];
+            const now = new Date();
+
+            // === MEETINGS STARTING SOON (highest priority) ===
+            safeArray(safeObj(calendar).events).forEach(e => {
+                const start = new Date(e.start_dt);
+                const minutesUntil = (start - now) / 60000;
+
+                // Only show meetings in the next 2 hours
+                if (minutesUntil > 0 && minutesUntil < 120) {
+                    let urgency = 'normal';
+                    let timeLabel = formatTime(e.start_dt);
+
+                    if (minutesUntil < 15) {
+                        urgency = 'urgent';
+                        timeLabel = `Starting in ${Math.round(minutesUntil)} min!`;
+                    } else if (minutesUntil < 30) {
+                        urgency = 'high';
+                        timeLabel = `In ${Math.round(minutesUntil)} min`;
+                    } else if (minutesUntil < 60) {
+                        timeLabel = `In ${Math.round(minutesUntil)} min`;
+                    }
+
+                    actions.push({
+                        type: 'calendar',
+                        priority: urgency,
+                        minutesUntil,
+                        icon: minutesUntil < 15 ? '🔴' : '📅',
+                        title: e.summary,
+                        meta: e.location || (e.hangout_link ? 'Google Meet' : 'No location'),
+                        time: timeLabel,
+                        joinLink: e.hangout_link,
+                        action: () => {
+                            if (e.hangout_link) window.open(e.hangout_link, '_blank');
+                            else if (e.html_link) window.open(e.html_link, '_blank');
+                        }
+                    });
+                }
+            });
+
+            // === OVERDUE TASKS ===
+            safeArray(safeObj(tasks).tasks).forEach(t => {
+                if (t.is_overdue) {
+                    actions.push({
+                        type: 'task',
+                        priority: 'high',
+                        isOverdue: true,
+                        icon: '⚠️',
+                        title: t.title,
+                        meta: `Overdue: ${t.due_date}`,
+                        time: 'Overdue',
+                        action: () => showView('tasks')
+                    });
+                }
+            });
+
+            // === ACTIONABLE EMAILS (filtered for real people) ===
+            const actionableEmails = safeArray(safeObj(emails).messages)
+                .filter(e => e.is_unread && isActionableEmail(e));
+
+            actionableEmails.slice(0, 3).forEach(e => {
+                const senderName = e.from?.split('<')[0]?.trim() || 'Unknown';
+                actions.push({
+                    type: 'email',
+                    priority: e.is_important ? 'high' : 'normal',
+                    isImportant: e.is_important,
+                    icon: e.is_important ? '🔴' : '✉️',
+                    title: e.subject || '(No Subject)',
+                    meta: senderName,
+                    time: formatRelativeTime(e.date),
+                    action: () => openEmail(e.id)
+                });
+            });
+
+            // === TWITTER MENTIONS (people expecting engagement) ===
+            const users = safeObj(mentions).includes?.users || [];
+            safeArray(safeObj(mentions).data).slice(0, 3).forEach(m => {
+                const author = users.find(u => u.id === m.author_id);
+                // Skip if it's from a bot or very low follower account
+                const followerCount = author?.public_metrics?.followers_count || 0;
+
+                actions.push({
+                    type: 'twitter',
+                    priority: followerCount > 1000 ? 'high' : 'normal',
+                    icon: '🐦',
+                    title: m.text?.slice(0, 100) || 'Tweet',
+                    meta: `@${author?.username || 'unknown'} (${followerCount.toLocaleString()} followers)`,
+                    time: formatRelativeTime(m.created_at),
+                    action: () => openTweetReply(m.id, m.text, author)
+                });
+            });
+
+            // Sort by priority
+            actions.sort((a, b) => getActionPriority(b) - getActionPriority(a));
+
+            // Render action queue
+            const container = document.getElementById('action-queue');
+            document.getElementById('action-count').textContent = `${actions.length} items`;
+
+            if (actions.length === 0) {
+                container.innerHTML = '<div class="empty-state"><div class="icon">✅</div>All caught up!</div>';
+                return;
+            }
+
+            container.innerHTML = actions.map((a, idx) => {
+                const priorityClass = a.priority === 'urgent' ? 'priority-urgent' :
+                                     a.priority === 'high' ? 'priority-high' : '';
+                const actionLabel = a.type === 'email' ? 'Reply' :
+                                   a.type === 'twitter' ? 'Reply' :
+                                   a.type === 'calendar' ? (a.joinLink ? 'Join' : 'Open') :
+                                   a.type === 'task' ? 'Complete' : 'Open';
+
+                return `
+                <div class="action-item ${priorityClass}" onclick="window.actionHandlers['${a.type}_${idx}']()">
+                    <div class="action-icon ${a.type}">${a.icon}</div>
+                    <div class="action-content">
+                        <div class="action-title">${a.title}</div>
+                        <div class="action-meta">
+                            ${a.meta}
+                            <span class="time">${a.time}</span>
+                        </div>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn btn-sm ${a.priority === 'urgent' ? 'btn-danger' : ''}">${actionLabel}</button>
+                    </div>
+                </div>
+            `}).join('');
+
+            // Store action handlers
+            window.actionHandlers = {};
+            actions.forEach((a, i) => {
+                window.actionHandlers[`${a.type}_${i}`] = a.action;
+            });
+        }
+
+        function renderUpcomingEvents(events) {
+            const container = document.getElementById('upcoming-events');
+            if (events.length === 0) {
+                container.innerHTML = '<div class="empty-state">No upcoming events</div>';
+                return;
+            }
+            container.innerHTML = events.map(e => `
+                <div class="calendar-event ${e.is_now ? 'now' : ''}">
+                    <div class="event-time">${formatDate(e.start_dt)} • ${e.all_day ? 'All day' : formatTime(e.start_dt)}</div>
+                    <div class="event-title">${e.summary}</div>
+                    <div class="event-meta">
+                        ${e.location ? `<span>📍 ${e.location}</span>` : ''}
+                        ${e.hangout_link ? `<a href="${e.hangout_link}" target="_blank">Join Meet</a>` : ''}
+                        ${e.html_link ? `<a href="${e.html_link}" target="_blank">Open</a>` : ''}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderRecentMentions(mentions, users) {
+            const container = document.getElementById('recent-mentions');
+            if (mentions.length === 0) {
+                container.innerHTML = '<div class="empty-state">No recent mentions</div>';
+                return;
+            }
+            container.innerHTML = mentions.map(m => {
+                const author = users.find(u => u.id === m.author_id);
+                return `
+                <div class="tweet-item">
+                    <div class="tweet-header">
+                        <img class="tweet-avatar" src="${author?.profile_image_url || ''}" onerror="this.style.background='var(--bg-hover)'">
+                        <div>
+                            <div class="tweet-author">${author?.name || 'Unknown'}</div>
+                            <div class="tweet-handle">@${author?.username || 'unknown'} • ${formatRelativeTime(m.created_at)}</div>
+                        </div>
+                    </div>
+                    <div class="tweet-content">${m.text}</div>
+                    <div class="tweet-actions">
+                        <button class="btn btn-sm" onclick="openTweetReply('${m.id}', '${m.text?.replace(/'/g, "\\'")}', ${JSON.stringify(author).replace(/"/g, '&quot;')})">Reply</button>
+                    </div>
+                </div>
+            `}).join('');
+        }
+
+        function renderRecentDrive(files) {
+            const container = document.getElementById('recent-drive');
+            if (files.length === 0) {
+                container.innerHTML = '<div class="empty-state">No recent files</div>';
+                return;
+            }
+            container.innerHTML = files.map(f => {
+                let icon = '📄', iconClass = 'doc';
+                if (f.mimeType?.includes('spreadsheet')) { icon = '📊'; iconClass = 'sheet'; }
+                else if (f.mimeType?.includes('presentation')) { icon = '📽️'; iconClass = 'slide'; }
+                else if (f.mimeType?.includes('folder')) { icon = '📁'; iconClass = 'folder'; }
+
+                return `
+                <div class="drive-file" onclick="window.open('${f.webViewLink}', '_blank')">
+                    <div class="drive-icon ${iconClass}">${icon}</div>
+                    <div class="drive-info">
+                        <div class="drive-name">${f.name}</div>
+                        <div class="drive-meta">${formatRelativeTime(f.modifiedTime)}</div>
+                    </div>
+                </div>
+            `}).join('');
+        }
+
+        // Emails
+        async function loadEmails() {
+            const data = await api('/google/gmail/messages?max_results=30');
+            state.emails = safeArray(safeObj(data).messages);
+
+            const unread = state.emails.filter(e => e.is_unread).length;
+            document.getElementById('inbox-subtitle').textContent = `${unread} unread of ${state.emails.length}`;
+
+            renderEmails();
+        }
+
+        function filterEmails(filter) {
+            state.emailFilter = filter;
+            document.querySelectorAll('#view-inbox .tab-btn').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+            renderEmails();
+        }
+
+        function renderEmails() {
+            let emails = state.emails;
+            switch(state.emailFilter) {
+                case 'unread': emails = emails.filter(e => e.is_unread); break;
+                case 'important': emails = emails.filter(e => e.is_important); break;
+                case 'starred': emails = emails.filter(e => e.is_starred); break;
+            }
+
+            const container = document.getElementById('email-list');
+            if (emails.length === 0) {
+                container.innerHTML = '<div class="empty-state"><div class="icon">📭</div>No emails</div>';
+                return;
+            }
+
+            container.innerHTML = emails.map(e => `
+                <div class="email-item ${e.is_unread ? 'unread' : ''}" onclick="openEmail('${e.id}')">
+                    <div class="email-header">
+                        <div class="email-from">${e.from?.split('<')[0]?.trim() || 'Unknown'}</div>
+                        <div class="email-date">${formatRelativeTime(e.date)}</div>
+                    </div>
+                    <div class="email-subject">${e.subject || '(No Subject)'}</div>
+                    <div class="email-snippet">${e.snippet || ''}</div>
+                </div>
+            `).join('');
+        }
+
+        async function openEmail(id) {
+            const data = await api(`/google/gmail/message/${id}`);
+            if (data.error) {
+                toast('Error loading email: ' + data.error, 'error');
+                return;
+            }
+
+            document.getElementById('modal-title').textContent = data.subject || '(No Subject)';
+            document.getElementById('modal-body').innerHTML = `
+                <div style="margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--border-dim);">
+                    <div><strong>From:</strong> ${data.from}</div>
+                    <div><strong>To:</strong> ${data.to}</div>
+                    <div><strong>Date:</strong> ${data.date}</div>
+                </div>
+                <div style="white-space: pre-wrap; font-family: sans-serif; line-height: 1.6;">${data.body || data.snippet}</div>
+                <div class="reply-composer" style="margin-top: 20px;">
+                    <textarea id="email-reply" placeholder="Write your reply..."></textarea>
+                    <div class="reply-footer">
+                        <div></div>
+                        <button class="btn btn-primary" onclick="replyToEmail('${id}')">Send Reply</button>
+                    </div>
+                </div>
+            `;
+            document.getElementById('modal-overlay').classList.add('active');
+        }
+
+        async function replyToEmail(id) {
+            const body = document.getElementById('email-reply').value;
+            if (!body.trim()) {
+                toast('Please enter a reply', 'error');
+                return;
+            }
+
+            const result = await apiPost(`/google/gmail/reply/${id}`, body);
+            if (result.success) {
+                toast('Reply sent!', 'success');
+                closeModal();
+                loadEmails();
+            } else {
+                toast('Error: ' + (result.error || 'Failed to send'), 'error');
+            }
+        }
+
+        // Calendar
+        async function loadCalendar() {
+            const data = await api('/google/calendar/events?days_ahead=14');
+            state.events = safeArray(safeObj(data).events);
+
+            const today = state.events.filter(e => e.is_today).length;
+            document.getElementById('calendar-subtitle').textContent = `${today} today, ${state.events.length} total`;
+
+            renderCalendar();
+        }
+
+        function filterCalendar(filter) {
+            document.querySelectorAll('#view-calendar .tab-btn').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+            renderCalendar(filter);
+        }
+
+        function renderCalendar(filter = 'upcoming') {
+            let events = state.events;
+            const now = new Date();
+
+            switch(filter) {
+                case 'today':
+                    events = events.filter(e => e.is_today);
+                    break;
+                case 'week':
+                    const weekFromNow = new Date(now.getTime() + 7 * 24 * 60 * 60 * 1000);
+                    events = events.filter(e => new Date(e.start_dt) <= weekFromNow);
+                    break;
+            }
+
+            const container = document.getElementById('calendar-events');
+            if (events.length === 0) {
+                container.innerHTML = '<div class="empty-state"><div class="icon">📅</div>No events</div>';
+                return;
+            }
+
+            container.innerHTML = events.map(e => `
+                <div class="calendar-event ${e.is_now ? 'now' : ''}">
+                    <div class="event-time">${formatDate(e.start_dt)} • ${e.all_day ? 'All day' : formatTime(e.start_dt) + ' - ' + formatTime(e.end_dt)}</div>
+                    <div class="event-title">${e.summary}</div>
+                    <div class="event-meta">
+                        ${e.location ? `<span>📍 ${e.location}</span>` : ''}
+                        ${e.attendees?.length ? `<span>👥 ${e.attendees.length} attendees</span>` : ''}
+                        ${e.hangout_link ? `<a href="${e.hangout_link}" target="_blank">Join Meet</a>` : ''}
+                        ${e.html_link ? `<a href="${e.html_link}" target="_blank">Open in Calendar</a>` : ''}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Twitter
+        async function loadTwitter() {
+            const account = state.twitterAccount;
+            const endpoint = account === 'cortana' ? '/integrations/twitter/cortana/mentions' : '/integrations/twitter/ben/mentions';
+            const data = await api(endpoint + '?limit=20');
+            state.mentions = safeArray(safeObj(data).data);
+            state.mentionUsers = safeObj(data).includes?.users || [];
+
+            renderTwitter();
+        }
+
+        function switchTwitterAccount(account) {
+            state.twitterAccount = account;
+            document.querySelectorAll('.account-btn').forEach(b => b.classList.remove('active'));
+            document.querySelector(`.account-btn[data-account="${account}"]`).classList.add('active');
+            loadTwitter();
+        }
+
+        function filterTwitter(filter) {
+            document.querySelectorAll('#view-twitter .tab-btn').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+            renderTwitter(filter);
+        }
+
+        async function renderTwitter(filter = 'mentions') {
+            const container = document.getElementById('twitter-content');
+
+            if (filter === 'mentions') {
+                if (state.mentions.length === 0) {
+                    container.innerHTML = '<div class="empty-state"><div class="icon">🐦</div>No mentions</div>';
+                    return;
+                }
+                container.innerHTML = state.mentions.map(m => {
+                    const author = state.mentionUsers.find(u => u.id === m.author_id);
+                    return `
+                    <div class="tweet-item">
+                        <div class="tweet-header">
+                            <img class="tweet-avatar" src="${author?.profile_image_url || ''}" onerror="this.style.background='var(--bg-hover)'">
+                            <div>
+                                <div class="tweet-author">${author?.name || 'Unknown'}</div>
+                                <div class="tweet-handle">@${author?.username || 'unknown'} • ${formatRelativeTime(m.created_at)}</div>
+                            </div>
+                        </div>
+                        <div class="tweet-content">${m.text}</div>
+                        <div class="tweet-actions">
+                            <span class="tweet-action">❤️ ${m.public_metrics?.like_count || 0}</span>
+                            <span class="tweet-action">🔄 ${m.public_metrics?.retweet_count || 0}</span>
+                            <span class="tweet-action">💬 ${m.public_metrics?.reply_count || 0}</span>
+                            <button class="btn btn-sm btn-primary" onclick="openTweetReply('${m.id}', \`${m.text?.replace(/`/g, "'")}\`, ${JSON.stringify(author).replace(/"/g, '&quot;')})">Reply</button>
+                        </div>
+                    </div>
+                `}).join('');
+            } else if (filter === 'tweets') {
+                const endpoint = state.twitterAccount === 'cortana' ? '/integrations/twitter/cortana/tweets' : '/integrations/twitter/ben/tweets';
+                const data = await api(endpoint + '?limit=20');
+                const tweets = safeArray(safeObj(data).tweets);
+
+                if (tweets.length === 0) {
+                    container.innerHTML = '<div class="empty-state">No tweets</div>';
+                    return;
+                }
+
+                container.innerHTML = tweets.map(t => `
+                    <div class="tweet-item">
+                        <div class="tweet-content">${t.text}</div>
+                        <div class="tweet-actions">
+                            <span class="tweet-action">❤️ ${t.public_metrics?.like_count || 0}</span>
+                            <span class="tweet-action">🔄 ${t.public_metrics?.retweet_count || 0}</span>
+                            <span class="tweet-action">💬 ${t.public_metrics?.reply_count || 0}</span>
+                            <span class="tweet-action">👁️ ${t.public_metrics?.impression_count || 0}</span>
+                        </div>
+                    </div>
+                `).join('');
+            } else if (filter === 'followers') {
+                const endpoint = state.twitterAccount === 'cortana' ? '/integrations/twitter/cortana/followers' : '/integrations/twitter/ben/followers';
+                const data = await api(endpoint + '?limit=20');
+                const followers = safeArray(safeObj(data).data);
+
+                if (followers.length === 0) {
+                    container.innerHTML = '<div class="empty-state">No followers data</div>';
+                    return;
+                }
+
+                container.innerHTML = `<div class="grid-2">${followers.map(f => `
+                    <div class="action-item" onclick="window.open('https://twitter.com/${f.username}', '_blank')">
+                        <img class="tweet-avatar" src="${f.profile_image_url || ''}" style="width:48px;height:48px;border-radius:50%;" onerror="this.style.background='var(--bg-hover)'">
+                        <div class="action-content">
+                            <div class="action-title">${f.name}</div>
+                            <div class="action-meta">@${f.username} • ${(f.public_metrics?.followers_count || 0).toLocaleString()} followers</div>
+                        </div>
+                        <button class="btn btn-sm" onclick="event.stopPropagation(); followUser('${f.id}')">Follow Back</button>
+                    </div>
+                `).join('')}</div>`;
+            } else if (filter === 'replyGuy') {
+                // Reply Guy Mode - find tweets from target accounts to engage with
+                container.innerHTML = `
+                    <div class="card">
+                        <div class="card-title" style="margin-bottom: 16px;">🎯 Reply Guy Mode</div>
+                        <p style="color: var(--text-secondary); margin-bottom: 16px;">Find tweets from target accounts to engage with. Build relationships through thoughtful replies.</p>
+                        <div style="display: flex; gap: 8px; margin-bottom: 20px;">
+                            <input type="text" id="search-query" placeholder="Search tweets..." style="flex:1; padding: 10px; background: var(--bg-deep); border: 1px solid var(--border-dim); border-radius: 8px; color: var(--text-primary);">
+                            <button class="btn btn-primary" onclick="searchTwitter()">Search</button>
+                        </div>
+                        <div id="search-results"></div>
+                    </div>
+                `;
+            }
+        }
+
+        async function searchTwitter() {
+            const query = document.getElementById('search-query').value;
+            if (!query) return;
+
+            const container = document.getElementById('search-results');
+            container.innerHTML = '<div class="loading"><div class="spinner"></div> Searching...</div>';
+
+            const data = await api(`/integrations/twitter/search?query=${encodeURIComponent(query)}&limit=20`);
+            const tweets = safeArray(safeObj(data).data);
+            const users = safeObj(data).includes?.users || [];
+
+            if (tweets.length === 0) {
+                container.innerHTML = '<div class="empty-state">No results found</div>';
+                return;
+            }
+
+            container.innerHTML = tweets.map(t => {
+                const author = users.find(u => u.id === t.author_id);
+                return `
+                <div class="tweet-item">
+                    <div class="tweet-header">
+                        <img class="tweet-avatar" src="${author?.profile_image_url || ''}" onerror="this.style.background='var(--bg-hover)'">
+                        <div>
+                            <div class="tweet-author">${author?.name || 'Unknown'}</div>
+                            <div class="tweet-handle">@${author?.username || 'unknown'} • ${(author?.public_metrics?.followers_count || 0).toLocaleString()} followers</div>
+                        </div>
+                    </div>
+                    <div class="tweet-content">${t.text}</div>
+                    <div class="tweet-actions">
+                        <span class="tweet-action">❤️ ${t.public_metrics?.like_count || 0}</span>
+                        <span class="tweet-action">🔄 ${t.public_metrics?.retweet_count || 0}</span>
+                        <button class="btn btn-sm" onclick="likeTweet('${t.id}')">Like</button>
+                        <button class="btn btn-sm btn-primary" onclick="openTweetReply('${t.id}', \`${t.text?.replace(/`/g, "'")}\`, ${JSON.stringify(author).replace(/"/g, '&quot;')})">Reply</button>
+                    </div>
+                </div>
+            `}).join('');
+        }
+
+        function openTweetReply(tweetId, tweetText, author) {
+            document.getElementById('modal-title').textContent = 'Reply to Tweet';
+            document.getElementById('modal-body').innerHTML = `
+                <div class="tweet-item" style="margin-bottom: 16px;">
+                    <div class="tweet-header">
+                        <img class="tweet-avatar" src="${author?.profile_image_url || ''}" onerror="this.style.background='var(--bg-hover)'">
+                        <div>
+                            <div class="tweet-author">${author?.name || 'Unknown'}</div>
+                            <div class="tweet-handle">@${author?.username || 'unknown'}</div>
+                        </div>
+                    </div>
+                    <div class="tweet-content">${tweetText}</div>
+                </div>
+                <div class="reply-composer">
+                    <textarea id="reply-text" placeholder="Write your reply..." maxlength="280" oninput="updateReplyCount()"></textarea>
+                    <div class="reply-footer">
+                        <span class="char-count"><span id="reply-chars">0</span>/280</span>
+                        <button class="btn btn-primary" onclick="sendReply('${tweetId}')">Reply</button>
+                    </div>
+                </div>
+            `;
+            document.getElementById('modal-overlay').classList.add('active');
+        }
+
+        function updateReplyCount() {
+            const text = document.getElementById('reply-text').value;
+            document.getElementById('reply-chars').textContent = text.length;
+        }
+
+        async function sendReply(tweetId) {
+            const text = document.getElementById('reply-text').value;
+            if (!text.trim()) {
+                toast('Please enter a reply', 'error');
+                return;
+            }
+
+            const result = await apiPost('/integrations/twitter/tweet', { text, reply_to: tweetId });
+            if (result.data) {
+                toast('Reply posted!', 'success');
+                closeModal();
+                loadTwitter();
+            } else {
+                toast('Error: ' + (result.error || 'Failed to post'), 'error');
+            }
+        }
+
+        async function likeTweet(tweetId) {
+            const result = await apiPost(`/integrations/twitter/like/${tweetId}`, {});
+            if (result.data?.liked) {
+                toast('Tweet liked!', 'success');
+            } else {
+                toast('Error liking tweet', 'error');
+            }
+        }
+
+        async function followUser(userId) {
+            const result = await apiPost(`/integrations/twitter/follow/${userId}`, {});
+            if (result.data?.following) {
+                toast('Following!', 'success');
+            } else {
+                toast('Error following user', 'error');
+            }
+        }
+
+        function composeTweet() {
+            const composer = document.getElementById('tweet-composer');
+            composer.style.display = composer.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function closeTweetComposer() {
+            document.getElementById('tweet-composer').style.display = 'none';
+            document.getElementById('tweet-text').value = '';
+        }
+
+        async function postTweet() {
+            const text = document.getElementById('tweet-text').value;
+            if (!text.trim()) {
+                toast('Please enter some text', 'error');
+                return;
+            }
+
+            const result = await apiPost('/integrations/twitter/tweet', { text });
+            if (result.data) {
+                toast('Tweet posted!', 'success');
+                closeTweetComposer();
+                loadTwitter();
+            } else {
+                toast('Error: ' + (result.error || 'Failed to post'), 'error');
+            }
+        }
+
+        document.getElementById('tweet-text')?.addEventListener('input', function() {
+            document.getElementById('tweet-chars').textContent = this.value.length;
+        });
+
+        // Notion
+        async function loadNotion() {
+            const data = await api('/integrations/notion/databases');
+            state.notionDatabases = safeArray(safeObj(data).results);
+            renderNotion();
+        }
+
+        function filterNotion(filter) {
+            document.querySelectorAll('#view-notion .tab-btn').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+            renderNotion(filter);
+        }
+
+        async function renderNotion(filter = 'databases') {
+            const container = document.getElementById('notion-content');
+            document.getElementById('notion-drilldown').style.display = 'none';
+            container.style.display = 'block';
+
+            if (filter === 'databases') {
+                if (state.notionDatabases.length === 0) {
+                    container.innerHTML = '<div class="empty-state"><div class="icon">📝</div>No databases found</div>';
+                    return;
+                }
+
+                container.innerHTML = state.notionDatabases.map(db => {
+                    const title = db.title?.[0]?.plain_text || db.title?.[0]?.text?.content || 'Untitled';
+                    const icon = db.icon?.emoji || '📋';
+                    return `
+                    <div class="notion-db" onclick="openNotionDatabase('${db.id}', '${title}')">
+                        <div class="notion-db-title">${icon} ${title}</div>
+                        <div class="notion-db-meta">Last edited: ${formatRelativeTime(db.last_edited_time)}</div>
+                    </div>
+                `}).join('');
+            } else if (filter === 'pages') {
+                const data = await api('/integrations/notion/pages?limit=20');
+                const pages = safeArray(safeObj(data).results);
+
+                if (pages.length === 0) {
+                    container.innerHTML = '<div class="empty-state">No recent pages</div>';
+                    return;
+                }
+
+                container.innerHTML = pages.map(p => {
+                    const title = p.properties?.title?.title?.[0]?.plain_text ||
+                                  p.properties?.Name?.title?.[0]?.plain_text ||
+                                  Object.values(p.properties || {}).find(prop => prop.title)?.title?.[0]?.plain_text ||
+                                  'Untitled';
+                    const icon = p.icon?.emoji || '📄';
+                    return `
+                    <div class="notion-item" onclick="window.open('${p.url}', '_blank')">
+                        <div class="notion-item-title">${icon} ${title}</div>
+                        <div class="notion-item-props">
+                            <span class="notion-prop">${formatRelativeTime(p.last_edited_time)}</span>
+                        </div>
+                    </div>
+                `}).join('');
+            }
+        }
+
+        async function openNotionDatabase(dbId, title) {
+            document.getElementById('notion-content').style.display = 'none';
+            document.getElementById('notion-drilldown').style.display = 'block';
+
+            const container = document.getElementById('notion-items');
+            container.innerHTML = '<div class="loading"><div class="spinner"></div> Loading items...</div>';
+
+            const data = await api(`/integrations/notion/database/${dbId}?limit=50`);
+            const items = safeArray(safeObj(data).results);
+            state.currentNotionDb = { id: dbId, title, items };
+
+            if (items.length === 0) {
+                container.innerHTML = '<div class="empty-state">No items in this database</div>';
+                return;
+            }
+
+            // Analyze properties to understand the database structure
+            const firstItem = items[0];
+            const propTypes = {};
+            Object.entries(firstItem.properties || {}).forEach(([key, val]) => {
+                propTypes[key] = val.type;
+            });
+
+            container.innerHTML = `
+                <div class="notion-db-header">
+                    <h3>${title}</h3>
+                    <div class="notion-db-meta">${items.length} items</div>
+                </div>
+                <div class="notion-items-grid">
+                    ${items.map((item, idx) => renderNotionCard(item, idx)).join('')}
+                </div>
+            `;
+        }
+
+        function renderNotionCard(item, idx) {
+            const props = item.properties || {};
+
+            // Get title from various possible fields
+            const title = props.Name?.title?.[0]?.plain_text ||
+                          props.Title?.title?.[0]?.plain_text ||
+                          Object.values(props).find(p => p.title)?.title?.[0]?.plain_text ||
+                          'Untitled';
+
+            // Extract status
+            let status = null;
+            let statusColor = '';
+            Object.entries(props).forEach(([key, value]) => {
+                if (value.status?.name) {
+                    status = value.status.name;
+                    statusColor = value.status.color || 'default';
+                } else if (key.toLowerCase() === 'status' && value.select?.name) {
+                    status = value.select.name;
+                    statusColor = value.select.color || 'default';
+                }
+            });
+
+            // Extract type/category
+            let type = null;
+            let typeColor = '';
+            Object.entries(props).forEach(([key, value]) => {
+                if ((key.toLowerCase().includes('type') || key.toLowerCase().includes('category')) && value.select?.name) {
+                    type = value.select.name;
+                    typeColor = value.select.color || 'default';
+                }
+            });
+
+            // Extract tags (multi-select)
+            const tags = [];
+            Object.entries(props).forEach(([key, value]) => {
+                if (value.multi_select) {
+                    value.multi_select.forEach(s => tags.push({ name: s.name, color: s.color || 'default' }));
+                }
+            });
+
+            // Extract platform (common for content)
+            let platform = null;
+            Object.entries(props).forEach(([key, value]) => {
+                if (key.toLowerCase().includes('platform') || key.toLowerCase().includes('channel')) {
+                    if (value.select?.name) platform = value.select.name;
+                    if (value.multi_select?.[0]) platform = value.multi_select[0].name;
+                }
+            });
+
+            // Extract date
+            let dueDate = null;
+            Object.entries(props).forEach(([key, value]) => {
+                if (value.date?.start && (key.toLowerCase().includes('due') || key.toLowerCase().includes('date') || key.toLowerCase().includes('scheduled'))) {
+                    dueDate = value.date.start;
+                }
+            });
+
+            // Status color mapping
+            const statusColors = {
+                'draft': 'var(--text-muted)',
+                'in progress': 'var(--accent-blue)',
+                'in-progress': 'var(--accent-blue)',
+                'review': 'var(--accent-amber)',
+                'published': 'var(--accent-green)',
+                'done': 'var(--accent-green)',
+                'complete': 'var(--accent-green)',
+                'archived': 'var(--text-muted)',
+                'default': 'var(--text-secondary)'
+            };
+
+            const statusBgColors = {
+                'draft': 'rgba(104, 104, 122, 0.15)',
+                'in progress': 'rgba(59, 130, 246, 0.15)',
+                'in-progress': 'rgba(59, 130, 246, 0.15)',
+                'review': 'rgba(245, 158, 11, 0.15)',
+                'published': 'rgba(34, 197, 94, 0.15)',
+                'done': 'rgba(34, 197, 94, 0.15)',
+                'complete': 'rgba(34, 197, 94, 0.15)',
+                'archived': 'rgba(104, 104, 122, 0.1)',
+                'default': 'rgba(152, 152, 168, 0.1)'
+            };
+
+            const sColor = statusColors[(status || '').toLowerCase()] || statusColors.default;
+            const sBgColor = statusBgColors[(status || '').toLowerCase()] || statusBgColors.default;
+
+            // Platform icons
+            const platformIcons = {
+                'x': '𝕏',
+                'twitter': '🐦',
+                'youtube': '📺',
+                'linkedin': '💼',
+                'newsletter': '📧',
+                'blog': '📝',
+                'tiktok': '🎵'
+            };
+            const pIcon = platform ? (platformIcons[(platform || '').toLowerCase()] || '📌') : '';
+
+            return `
+                <div class="notion-card" data-item-id="${item.id}">
+                    <div class="notion-card-header">
+                        ${status ? `<span class="notion-status" style="color: ${sColor}; background: ${sBgColor}">${status}</span>` : ''}
+                        ${platform ? `<span class="notion-platform">${pIcon} ${platform}</span>` : ''}
+                    </div>
+                    <div class="notion-card-title">${title}</div>
+                    ${type ? `<div class="notion-card-type">${type}</div>` : ''}
+                    ${tags.length > 0 ? `
+                        <div class="notion-card-tags">
+                            ${tags.slice(0, 3).map(t => `<span class="notion-tag">${t.name}</span>`).join('')}
+                            ${tags.length > 3 ? `<span class="notion-tag-more">+${tags.length - 3}</span>` : ''}
+                        </div>
+                    ` : ''}
+                    <div class="notion-card-footer">
+                        <span class="notion-card-date">${dueDate ? formatDate(dueDate) : formatRelativeTime(item.last_edited_time)}</span>
+                        <div class="notion-card-actions">
+                            <button class="notion-action-btn" onclick="event.stopPropagation(); window.open('${item.url}', '_blank')" title="Open in Notion">↗</button>
+                            <button class="notion-action-btn" onclick="event.stopPropagation(); showNotionStatusMenu(${idx})" title="Change Status">⋮</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function showNotionStatusMenu(idx) {
+            const item = state.currentNotionDb?.items[idx];
+            if (!item) return;
+
+            const statuses = ['Draft', 'In Progress', 'Review', 'Published', 'Archived'];
+            const menuHtml = statuses.map(s => `
+                <div class="status-menu-item" onclick="updateNotionStatus('${item.id}', '${s}')">${s}</div>
+            `).join('');
+
+            // Simple alert for now - would be better with a proper dropdown
+            const newStatus = prompt('Change status to:\\n' + statuses.join('\\n'));
+            if (newStatus && statuses.map(s => s.toLowerCase()).includes(newStatus.toLowerCase())) {
+                toast(`Status update would change to: ${newStatus}`, 'info');
+                // Note: Notion API status update would go here
+            }
+        }
+
+        function closeNotionDrilldown() {
+            document.getElementById('notion-drilldown').style.display = 'none';
+            document.getElementById('notion-content').style.display = 'block';
+        }
+
+        // Drive
+        async function loadDrive() {
+            const data = await api('/google/drive/files?page_size=30');
+            state.driveFiles = safeArray(safeObj(data).files);
+
+            const storage = await api('/google/drive/storage');
+            document.getElementById('drive-subtitle').textContent = `${safeObj(storage).usage_gb || 0} GB of ${safeObj(storage).limit_gb || 15} GB used`;
+
+            renderDrive();
+        }
+
+        function filterDrive(filter) {
+            document.querySelectorAll('#view-drive .tab-btn').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+            renderDrive(filter);
+        }
+
+        async function renderDrive(filter = 'recent') {
+            const container = document.getElementById('drive-content');
+
+            if (filter === 'shared') {
+                const data = await api('/google/drive/shared?limit=30');
+                state.driveFiles = safeArray(safeObj(data).files);
+            } else if (filter === 'starred') {
+                const data = await api('/google/drive/starred');
+                state.driveFiles = safeArray(safeObj(data).files);
+            }
+
+            if (state.driveFiles.length === 0) {
+                container.innerHTML = '<div class="empty-state"><div class="icon">📁</div>No files</div>';
+                return;
+            }
+
+            container.innerHTML = `<div class="grid-3">${state.driveFiles.map(f => {
+                let icon = '📄', iconClass = 'doc';
+                if (f.mimeType?.includes('spreadsheet')) { icon = '📊'; iconClass = 'sheet'; }
+                else if (f.mimeType?.includes('presentation')) { icon = '📽️'; iconClass = 'slide'; }
+                else if (f.mimeType?.includes('folder')) { icon = '📁'; iconClass = 'folder'; }
+
+                return `
+                <div class="drive-file" onclick="window.open('${f.webViewLink}', '_blank')">
+                    <div class="drive-icon ${iconClass}">${icon}</div>
+                    <div class="drive-info">
+                        <div class="drive-name">${f.name}</div>
+                        <div class="drive-meta">${formatRelativeTime(f.modifiedTime)}${f.shared ? ' • Shared' : ''}</div>
+                    </div>
+                </div>
+            `}).join('')}</div>`;
+        }
+
+        // Documents
+        async function loadDocuments() {
+            const data = await api('/documents/');
+            state.documents = safeArray(safeObj(data).files);
+            renderDocuments();
+        }
+
+        function filterDocs(category) {
+            document.querySelectorAll('#view-documents .tab-btn').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+            renderDocuments(category);
+        }
+
+        function renderDocuments(category = 'all') {
+            let docs = state.documents;
+            if (category !== 'all') {
+                docs = docs.filter(d => d.category === category);
+            }
+
+            const container = document.getElementById('documents-content');
+            if (docs.length === 0) {
+                container.innerHTML = '<div class="empty-state"><div class="icon">📄</div>No documents</div>';
+                return;
+            }
+
+            container.innerHTML = `<div class="grid-3">${docs.map(d => {
+                const icons = {
+                    'identity': '🪪',
+                    'docs': '📄',
+                    'code': '💻',
+                    'images': '🖼️',
+                    'data': '📊',
+                    'other': '📎'
+                };
+                return `
+                <div class="drive-file" onclick="openDocument('${d.path}')">
+                    <div class="drive-icon">${icons[d.category] || '📄'}</div>
+                    <div class="drive-info">
+                        <div class="drive-name">${d.name}</div>
+                        <div class="drive-meta">${d.size_human} • ${formatRelativeTime(d.modified)}</div>
+                    </div>
+                </div>
+            `}).join('')}</div>`;
+        }
+
+        async function openDocument(path) {
+            const data = await api(`/documents/read/${encodeURIComponent(path)}`);
+            if (data.error) {
+                toast('Error loading document', 'error');
+                return;
+            }
+
+            if (data.is_binary) {
+                window.open(`/api/documents/download/${encodeURIComponent(path)}`, '_blank');
+                return;
+            }
+
+            document.getElementById('modal-title').textContent = data.name;
+            document.getElementById('modal-body').innerHTML = `
+                <pre style="white-space: pre-wrap; font-family: 'JetBrains Mono', monospace; font-size: 13px; background: var(--bg-surface); padding: 16px; border-radius: 8px; max-height: 400px; overflow: auto;">${data.content?.replace(/</g, '&lt;').replace(/>/g, '&gt;') || ''}</pre>
+            `;
+            document.getElementById('modal-overlay').classList.add('active');
+        }
+
+        // Settings
+        async function loadSettings() {
+            // Integration status
+            const [google, integrations, system] = await Promise.all([
+                api('/google/status'),
+                api('/integrations/dashboard'),
+                api('/system/status')
+            ]);
+
+            const statusContainer = document.getElementById('integration-status');
+            const items = [
+                { name: 'Google (Calendar, Drive, Gmail)', status: safeObj(google).authenticated ? 'connected' : 'disconnected' },
+                { name: 'Twitter (Cortana)', status: safeObj(safeObj(integrations).twitter).cortana?.username ? 'connected' : 'disconnected' },
+                { name: 'Twitter (Ben)', status: safeObj(safeObj(integrations).twitter).ben?.username ? 'connected' : 'disconnected' },
+                { name: 'YouTube', status: safeObj(integrations).youtube?.title ? 'connected' : 'disconnected' },
+                { name: 'Notion', status: safeObj(integrations).notion?.status === 'connected' ? 'connected' : 'disconnected' },
+                { name: 'Slack', status: safeObj(integrations).slack?.status === 'connected' ? 'connected' : 'disconnected' }
+            ];
+
+            statusContainer.innerHTML = items.map(i => `
+                <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border-dim);">
+                    <span>${i.name}</span>
+                    <span style="color: ${i.status === 'connected' ? 'var(--accent-green)' : 'var(--accent-red)'}">
+                        ${i.status === 'connected' ? '✓ Connected' : '✗ Disconnected'}
+                    </span>
+                </div>
+            `).join('');
+
+            // System info
+            const sysContainer = document.getElementById('system-info');
+            const sys = safeObj(system);
+            sysContainer.innerHTML = `
+                <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border-dim);">
+                    <span>Server Status</span>
+                    <span style="color: var(--accent-green)">Online</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border-dim);">
+                    <span>CPU</span>
+                    <span>${sys.cpu?.percent || 0}%</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border-dim);">
+                    <span>Memory</span>
+                    <span>${sys.memory?.percent || 0}%</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 10px 0;">
+                    <span>Disk</span>
+                    <span>${sys.disk?.percent || 0}%</span>
+                </div>
+            `;
+        }
+
+        // Modal
+        function closeModal(event) {
+            if (event && event.target !== document.getElementById('modal-overlay')) return;
+            document.getElementById('modal-overlay').classList.remove('active');
+        }
+
+        // Refresh all data
+        async function refreshAll() {
+            toast('Refreshing...', 'info');
+            await loadDashboard();
+            toast('Refreshed!', 'success');
+        }
+
+        // Initialize
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            restoreSidebarState();
+            loadDashboard();
+        });
+    </script>
+<script src="upgrade-views.js"></script>
+</body>
+</html>
