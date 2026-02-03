@@ -1,0 +1,17 @@
+#!/bin/bash
+# Composio wrapper - handles venv activation
+source ~/clawd/composio_venv/bin/activate
+export COMPOSIO_API_KEY=ak_UjBg3sflMbHRQgr_qzwr
+
+if [ "$1" == "--list" ]; then
+    if [ -n "$2" ]; then
+        composio actions --app "$2" 2>&1 | head -50
+    else
+        composio apps 2>&1
+    fi
+elif [ "$1" == "--connections" ]; then
+    composio connections 2>&1
+else
+    # Execute action via Python
+    python3 ~/clawd/skills/composio/composio-tool.py "$@"
+fi
