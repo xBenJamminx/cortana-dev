@@ -22,3 +22,6 @@ node_modules/
 *.db
 *.sqlite
 canvas/
+*.db-shm
+*.db-wal
+*.blend
