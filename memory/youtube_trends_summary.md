@@ -1,5 +1,17 @@
 📺 YouTube - Latest from AI/Creator Channels
 
+• [New DeepSeek Research - The Age of AI Is Here!](https://www.youtube.com/watch?v=fFL7la73RO4)
+  _Two Minute Papers_
+
+• [The top mistake people make in setting goals](https://www.youtube.com/shorts/HYLLea-rrkc)
+  _Ali Abdaal_
+
+• [Long context windows for LLMs: 1 million tokens and beyond | Lex Fridman Podcast](https://www.youtube.com/watch?v=6iq0QXRRyso)
+  _Matt Wolfe_
+
+• [Is the dream of AGI dying? | Lex Fridman Podcast](https://www.youtube.com/watch?v=RIHU0tFmZPA)
+  _Matt Wolfe_
+
 • [3 Simple Questions To Find Your Business Idea](https://www.youtube.com/shorts/cNZCYPtQZ8M)
   _Ali Abdaal_
 
@@ -17,16 +29,4 @@
 
 • [Claude AI Co-founder Publishes 4 Big Claims about Near Future: Breakdown](https://www.youtube.com/watch?v=Iar4yweKGoI)
   _AI Explained_
-
-• [Will OpenAI go bankrupt? | Lex Fridman Podcast](https://www.youtube.com/watch?v=royD2ETzgZs)
-  _Matt Wolfe_
-
-• [Career advice in AI: Where to work? | Lex Fridman Podcast](https://www.youtube.com/watch?v=n0YRllg7xYg)
-  _Matt Wolfe_
-
-• [The huge cost of training LLMs | Lex Fridman Podcast](https://www.youtube.com/watch?v=qeAdgD6A19E)
-  _Matt Wolfe_
-
-• [They Said It Was Impossible… This Simulation Solved It](https://www.youtube.com/watch?v=9Mcv9vpGW5Q)
-  _Two Minute Papers_
 

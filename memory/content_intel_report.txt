@@ -1,37 +1,40 @@
-🎯 *Content Intel* (2026-02-04 04:11)
+🎯 *Content Intel* (2026-02-04 16:00)
 
 *🔥 TRENDING TOPICS*
-🔴 *TYPESCRIPT* `[dev, hn, news]`
-   • [Lessons learned shipping 500 units of my first hardware prod](https://www.simonberens.com/p/lessons-learned-shipping-500-units) (407⬆)
-   • [Deno Sandbox](https://deno.com/blog/introducing-deno-sandbox) (355⬆)
-   • [Xcode 26.3 – Developers can leverage coding agents directly ](https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/) (260⬆)
+🔴 *TYPESCRIPT* `[dev, hn, news, ph]`
+   • [Lessons learned shipping 500 units of my first hardware prod](https://www.simonberens.com/p/lessons-learned-shipping-500-units) (725⬆)
+   • [Deno Sandbox](https://deno.com/blog/introducing-deno-sandbox) (491⬆)
+   • [Xcode 26.3 – Developers can leverage coding agents directly ](https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/) (342⬆)
 
-🔴 *AI AGENTS* `[dev, hn, news]`
-   • [Agent Skills](https://agentskills.io/home) (395⬆)
-   • [Xcode 26.3 – Developers can leverage coding agents directly ](https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/) (260⬆)
-   • [Beyond Chatbots: Building Task-Driven Agentic Interfaces in ](https://dev.to/gde/beyond-chatbots-building-task-driven-agentic-interfaces-in-google-workspace-with-a2ui-and-gemini-c2d) (6⬆)
+🔴 *AI AGENTS* `[dev, hn, news, ph]`
+   • [Agent Skills](https://agentskills.io/home) (497⬆)
+   • [Xcode 26.3 – Developers can leverage coding agents directly ](https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/) (342⬆)
+   • [Show HN: Ghidra MCP Server – 110 tools for AI-assisted rever](https://github.com/bethington/ghidra-mcp) (186⬆)
+
+🟡 *SIDE PROJECT* `[dev, hn]`
+   • [Lessons learned shipping 500 units of my first hardware prod](https://www.simonberens.com/p/lessons-learned-shipping-500-units) (725⬆)
+   • [Your Side Project Didn’t Fail — It Just Reached Reality](https://dev.to/art_light/your-side-project-didnt-fail-it-just-reached-reality-1o76) (45⬆)
+
+🔴 *DEV TOOLS* `[dev, hn, news, ph]`
+   • [X offices raided in France as UK opens fresh investigation i](https://www.bbc.com/news/articles/ce3ex92557jo) (498⬆)
+   • [Your Side Project Didn’t Fail — It Just Reached Reality](https://dev.to/art_light/your-side-project-didnt-fail-it-just-reached-reality-1o76) (45⬆)
+   • [Chord Identifier](https://www.producthunt.com/products/chord-identifier-2) (6⬆)
 
 🟡 *LLM* `[dev, hn]`
    • [Qwen3-Coder-Next](https://qwen.ai/blog?id=qwen3-coder-next) (594⬆)
-   • [Realtime Multimodal AI on Ray-Ban Meta Glasses with Gemini L](https://dev.to/googleai/realtime-multimodal-ai-on-ray-ban-meta-glasses-with-gemini-live-livekit-45mn) (16⬆)
-   • [Beyond Chatbots: Building Task-Driven Agentic Interfaces in ](https://dev.to/gde/beyond-chatbots-building-task-driven-agentic-interfaces-in-google-workspace-with-a2ui-and-gemini-c2d) (6⬆)
+   • [Realtime Multimodal AI on Ray-Ban Meta Glasses with Gemini L](https://dev.to/googleai/realtime-multimodal-ai-on-ray-ban-meta-glasses-with-gemini-live-livekit-45mn) (18⬆)
+   • [An Al-go-llama Adventure](https://dev.to/annavi11arrea1/an-al-go-llama-adventure-4051) (15⬆)
 
-⚪ *RUST* `[hn]`
-   • [Prek: A better, faster, drop-in pre-commit replacement, engi](https://github.com/j178/prek) (204⬆)
-
-⚪ *SIDE PROJECT* `[hn]`
-   • [Lessons learned shipping 500 units of my first hardware prod](https://www.simonberens.com/p/lessons-learned-shipping-500-units) (407⬆)
-
-🟡 *STARTUP* `[hn, news]`
-   • [Y Combinator will let founders receive funds in stablecoins](https://fortune.com/2026/02/03/famed-startup-incubator-y-combinator-to-let-founders-receive-funds-in-stablecoins/) (88⬆)
-   • [Launch HN: Modelence (YC S25) – App Builder with TypeScript ](https://news.ycombinator.com/item?id=46872733) (67⬆)
-   • [Two Stanford students launch $2M startup accelerator for stu](https://www.msn.com/en-us/money/careers/two-stanford-students-launch-2m-startup-accelerator-for-students-nationwide/ar-AA1VwlRC)
+🔴 *XCODE* `[hn, news, ph]`
+   • [Xcode 26.3 – Developers can leverage coding agents directly ](https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/) (342⬆)
+   • [Xcode 26.3](https://www.producthunt.com/products/xcode) (13⬆)
+   • [Apple integrates Anthropic's Claude and OpenAI's Codex into ](https://venturebeat.com/technology/apple-integrates-anthropics-claude-and-openais-codex-into-xcode-26-3-in-push)
 
 *🚀 FRESH LAUNCHES*
-• [Grid Overlay Pro](https://www.producthunt.com/products/grid-overlay-pro)
-• [Codex by OpenAI](https://www.producthunt.com/products/openai)
-• [Grok Imagine 1.0](https://www.producthunt.com/products/grok-com-beta)
-• [AI Doc Writer by Trupeer](https://www.producthunt.com/products/trupeer)
-• [Hugo](https://www.producthunt.com/products/crisp)
+• [CreateOS](https://www.producthunt.com/products/createos)
+• [Genstore.ai](https://www.producthunt.com/products/genstore-ai-2)
+• [Xcode 26.3](https://www.producthunt.com/products/xcode)
+• [Multitui](https://www.producthunt.com/products/multitui)
+• [Pastey Extension](https://www.producthunt.com/products/pastey-extension)
 
 _🔴 3+ platforms | 🟡 2 platforms | ⚪ 1 platform_

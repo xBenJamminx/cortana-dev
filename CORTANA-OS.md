@@ -188,10 +188,83 @@ Content Operating System for Builds by Ben
 
 | Script | Purpose | Schedule |
 |--------|---------|----------|
-| `morning-briefing.py` | Daily briefing to Telegram | 7:00 AM ET |
+| `morning-briefing.py` | Daily briefing to Telegram | 8:00 AM ET |
 | `real-trends-monitor.py` | Actual trending topics | Every 4 hours |
 | `competitor-monitor.py` | Track creator activity | Every 6 hours |
-| `content-analytics.py` | Topic-first analysis | On demand |
+| `topic-aggregator.py` | Cross-source topic discovery | With briefing |
+| `email-newsletter-monitor.py` | Extract from Ben's inbox | With briefing |
+
+---
+
+## TRACKED SOURCES
+
+### Twitter Accounts (45+)
+
+**AI Labs & Official:**
+- @OpenAI, @AnthropicAI, @GoogleDeepMind, @xAI, @NVIDIAAI
+
+**Researchers & Thought Leaders:**
+- @karpathy (Andrej Karpathy - LLM explainers)
+- @sama (Sam Altman - OpenAI CEO)
+- @ylecun (Yann LeCun - Meta AI)
+- @drfeifei (Fei-Fei Li - Stanford)
+- @fchollet (François Chollet - Keras/ARC)
+- @demishassabis (DeepMind CEO)
+- @lexfridman (AI podcaster)
+- @DrJimFan (NVIDIA AI researcher)
+
+**Curated AI News & Newsletters:**
+- @rowancheung / @TheRundownAI - #1 daily AI digest
+- @kimmonismus - Superintelligence newsletter, 210k+ subs
+- @_akhaliq - Fastest for paper/research drops
+- @bensbites - Ben's Bites, casual fun AI curation
+- @theneuron - The Neuron, beginner-to-expert friendly
+- @superhumanai - Superhuman AI, 1M+ readers
+- @tldrai - TLDR AI, ultra time-saver format
+- @theresanaiforthat - TAAFT, tool discovery focused
+- @AravSrinivas - Perplexity CEO
+
+**Builders & Creators:**
+- @LinusEkenstam - AI tools/demos
+- @levelsio - Indie legend
+- @LiamOttley - AI agency builder
+- @mattshumer_ - AI builder
+- @hwchase17 - LangChain founder
+- @mckaywrigley - Chatbot UI creator
+- @swyx - AI engineering / Latent Space
+- @bentossell - No-code/AI
+- @dannypostmaa, @marc_louvion - Indie hackers
+- @bindureddy - AI infrastructure
+- @skirank - AI agent builder
+
+### YouTube Channels (14)
+
+**AI News & Analysis:**
+- Fireship - Fast tech explainers
+- Matt Wolfe - AI tools & news
+- AI Explained - Deep AI analysis
+- Two Minute Papers - Research breakdowns
+- Yannic Kilcher - ML paper reviews
+- TheAIGRID - AI news
+- Wes Roth - AI commentary
+- WorldofAI - AI tutorials
+
+**Builders & Business:**
+- Liam Ottley - AI agency
+- Greg Isenberg - Startup ideas
+- My First Million - Business/entrepreneurship
+- The AI Advantage - Practical AI
+- AI Jason - AI tutorials
+- David Ondrej - AI tools
+
+### Other Sources
+
+**Hacker News:** Front page + Show HN
+**IndieHackers:** Top posts
+**Reddit:** r/LocalLLaMA, r/ChatGPT, r/ClaudeAI, r/OpenAI, r/SideProject, r/SaaS, r/n8n
+**Dev.to / Hashnode:** Trending AI/dev posts
+**Product Hunt:** Daily launches
+**Email Newsletters:** Ben's inbox (via Gmail)
 
 ---
 

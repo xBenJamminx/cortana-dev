@@ -15,18 +15,18 @@
 🔷 [Unpopular Opinion: I stopped coding on weekends and my career got better.](https://dev.to/the_nortern_dev/unpopular-opinion-i-stopped-coding-on-weekends-and-my-career-got-better-3el)
   _@the_nortern_dev_ (79❤️)
 
+🔷 [Do We Even Need Backend Developers Anymore?](https://dev.to/art_light/do-we-even-need-backend-developers-anymore-15pg)
+  _@art_light_ (57❤️)
+
 🔷 [GitHub Copilot CLI Challenge Badges Are Here + 28 Chances to Win a Prize!](https://dev.to/devteam/github-copilot-cli-challenge-badges-are-here-28-chances-to-win-a-prize-3c42)
   _@jess_ (45❤️)
+
+🔷 [Your Side Project Didn’t Fail — It Just Reached Reality](https://dev.to/art_light/your-side-project-didnt-fail-it-just-reached-reality-1o76)
+  _@art_light_ (45❤️)
 
 🔷 [Why I Sometimes Leave Tech Events Feeling Smaller](https://dev.to/itsugo/why-i-sometimes-leave-tech-events-feeling-smaller-3p55)
   _@itsugo_ (44❤️)
 
 🔷 [The Valley of Code: A Learning Resource](https://dev.to/richardpascoe/the-valley-of-code-a-learning-resource-303o)
   _@richardpascoe_ (40❤️)
-
-🔷 [What was your win this week?](https://dev.to/devteam/what-was-your-win-this-week-1916)
-  _@jess_ (39❤️)
-
-🔷 [About Wizards & Warlocks, Programmers & Vibe Coders](https://dev.to/manuartero/about-wizards-warlocks-programmers-vibe-coders-4p6n)
-  _@manuartero_ (38❤️)
 

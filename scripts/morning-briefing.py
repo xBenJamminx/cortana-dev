@@ -155,13 +155,19 @@ def get_twitter_stats():
     """Get Twitter profile stats via Composio"""
     try:
         result = composio_exec("TWITTER_USER_LOOKUP_ME")
+        # Navigate nested response: data.results[0].response.data.data
         if result and "data" in result:
-            data = result["data"]
-            return {
-                "followers": data.get("public_metrics", {}).get("followers_count", 0),
-                "following": data.get("public_metrics", {}).get("following_count", 0),
-                "tweets": data.get("public_metrics", {}).get("tweet_count", 0),
-            }
+            results = result["data"].get("results", [])
+            if results:
+                inner = results[0].get("response", {}).get("data", {}).get("data", {})
+                metrics = inner.get("public_metrics", {})
+                return {
+                    "followers": metrics.get("followers_count", 0),
+                    "following": metrics.get("following_count", 0),
+                    "tweets": metrics.get("tweet_count", 0),
+                    "username": inner.get("username", "xBenJamminx"),
+                    "name": inner.get("name", "Ben"),
+                }
         return None
     except Exception as e:
         log(f"Twitter stats error: {e}")
@@ -199,20 +205,25 @@ def get_recent_tweets_engagement():
 def get_airtable_content_queue():
     """Get pending content from Airtable"""
     try:
-        # First list bases to find content OS
-        bases = composio_exec("AIRTABLE_LIST_BASES")
-        if bases and "bases" in bases:
-            for base in bases["bases"]:
-                if "content" in base.get("name", "").lower():
-                    # Get records from this base
-                    records = composio_exec("AIRTABLE_LIST_RECORDS", {
-                        "baseId": base["id"],
-                        "tableIdOrName": "Content"  # Adjust table name as needed
-                    })
-                    if records and "records" in records:
-                        pending = [r for r in records["records"]
-                                  if r.get("fields", {}).get("Status") in ["Draft", "Ready", "Scheduled"]]
-                        return pending[:5]
+        # Navigate nested response
+        result = composio_exec("AIRTABLE_LIST_BASES")
+        if result and "data" in result:
+            results = result["data"].get("results", [])
+            if results:
+                bases_data = results[0].get("response", {}).get("data", {}).get("bases", [])
+                for base in bases_data:
+                    if "content" in base.get("name", "").lower():
+                        records_result = composio_exec("AIRTABLE_LIST_RECORDS", {
+                            "baseId": base["id"],
+                            "tableIdOrName": "Content"
+                        })
+                        if records_result and "data" in records_result:
+                            rec_results = records_result["data"].get("results", [])
+                            if rec_results:
+                                records = rec_results[0].get("response", {}).get("data", {}).get("records", [])
+                                pending = [r for r in records
+                                          if r.get("fields", {}).get("Status") in ["Draft", "Ready", "Scheduled", "Idea"]]
+                                return pending[:5]
         return None
     except Exception as e:
         log(f"Airtable error: {e}")
@@ -360,6 +371,23 @@ def get_substack_posts():
     except:
         return []
 
+def get_competitor_youtube():
+    """Get latest YouTube videos from tracked channels"""
+    try:
+        conn = sqlite3.connect(MEMORY_DB)
+        cursor = conn.cursor()
+        cursor.execute('''
+            SELECT creator, content, url FROM competitor_content
+            WHERE platform = 'youtube'
+            AND created_at > datetime('now', '-48 hours')
+            ORDER BY created_at DESC LIMIT 8
+        ''')
+        videos = cursor.fetchall()
+        conn.close()
+        return videos
+    except:
+        return []
+
 def get_exploding_topics():
     """Get exploding topics"""
     try:
@@ -468,50 +496,51 @@ _{openers.get(day_name, "Let's go.")}_""")
             twitter_lines.append(f"Recent: {engagement.get('total_likes', 0)} likes, {engagement.get('total_retweets', 0)} RTs")
         sections.append("\n".join(twitter_lines))
 
-    # HOT TOPICS - SPECIFIC topics trending across multiple sources
+    # HOT TOPICS - Compact format: Topic (count) [HN](url) [YT](url) [TW](url)
     hot_topics = get_cross_source_hot_topics()
     if hot_topics:
-        topics_lines = ["🔥 *HOT TOPICS* (trending across multiple sources)"]
+        topics_lines = ["🔥 *HOT TOPICS*"]
 
         shown = 0
         for ht in hot_topics:
             if shown >= 6:
                 break
 
-            # Use the full topic name - this IS the specific topic
             topic_name = ht['topic']
             source_count = ht['source_count']
-            sources = ', '.join(ht['sources'])
 
-            # Main topic line with full title
-            topics_lines.append(f"\n*{topic_name}*")
-            topics_lines.append(f"📍 {source_count} sources: {sources}")
-
-            # Show where it's being discussed (different sources only)
+            # Build compact links: [HN](url) [YT](url) [TW](url)
             seen_sources = set()
+            links = []
             for mention in ht['mentions']:
-                source_type = mention.get('source_type', '')
+                source_type = mention.get('source_type', mention.get('source', '').split('/')[0])
                 if source_type in seen_sources:
                     continue
                 seen_sources.add(source_type)
 
-                source_full = mention.get('source_full', '').replace('@@', '@')
                 url = mention.get('url', '')
-                engagement = mention.get('engagement', '')
-
                 if url:
-                    topics_lines.append(f"  → [{source_full}]({url}) {engagement}")
-                else:
-                    topics_lines.append(f"  → {source_full} {engagement}")
+                    # Short label: hackernews->HN, youtube->YT, twitter->TW, etc.
+                    label_map = {
+                        'hackernews': 'HN', 'reddit': 'RD', 'youtube': 'YT',
+                        'twitter': 'TW', 'producthunt': 'PH', 'newsletter': 'NL',
+                        'dev.to': 'DV', 'indiehackers': 'IH'
+                    }
+                    label = label_map.get(source_type, source_type[:2].upper())
+                    links.append(f"[{label}]({url})")
 
-                if len(seen_sources) >= 3:
+                if len(links) >= 3:
                     break
+
+            # Single line: Topic Name (count) [HN](url) [YT](url)
+            links_str = " ".join(links)
+            topics_lines.append(f"• *{topic_name}* ({source_count}) {links_str}")
 
             shown += 1
 
         sections.append("\n".join(topics_lines))
 
-    # Fresh Product Hunt launches only (IH is now in hot topics)
+    # Fresh Product Hunt launches
     ph_launches = get_producthunt_launches()
     if ph_launches:
         launch_lines = ["🚀 *Product Hunt Today*"]
@@ -520,6 +549,38 @@ _{openers.get(day_name, "Let's go.")}_""")
             votes_str = f" ({votes}⬆)" if votes else ""
             launch_lines.append(f"• [{title}]({url}){votes_str}")
         sections.append("\n".join(launch_lines))
+
+    # YouTube - Latest from tracked channels
+    yt_videos = get_competitor_youtube()
+    if yt_videos:
+        yt_lines = ["📺 *YouTube* (from tracked channels)"]
+        for creator, title, url in yt_videos[:5]:
+            # Truncate long titles
+            title_short = title[:50] + "..." if len(title) > 50 else title
+            yt_lines.append(f"• {creator}: [{title_short}]({url})")
+        sections.append("\n".join(yt_lines))
+
+    # Google Trends
+    trends = get_google_trends()
+    if trends:
+        trend_lines = ["📈 *Google Trends*"]
+        for term, category, traffic, url in trends[:4]:
+            traffic_str = f" ({traffic})" if traffic else ""
+            if url:
+                trend_lines.append(f"• [{term}]({url}){traffic_str}")
+            else:
+                trend_lines.append(f"• {term}{traffic_str}")
+        sections.append("\n".join(trend_lines))
+
+    # Dev Community (Dev.to / Hashnode)
+    dev_posts = get_devto_posts()
+    if dev_posts:
+        dev_lines = ["💻 *Dev Community*"]
+        for title, author, url, reactions, source in dev_posts[:4]:
+            title_short = title[:45] + "..." if len(title) > 45 else title
+            reactions_str = f" ({reactions}❤)" if reactions else ""
+            dev_lines.append(f"• [{title_short}]({url}){reactions_str}")
+        sections.append("\n".join(dev_lines))
 
     # Content Pipeline (Airtable)
     content = get_airtable_content_queue()
