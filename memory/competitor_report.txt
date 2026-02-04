@@ -1,22 +1,26 @@
 👀 COMPETITOR WATCH
 
-Updated: 2026-02-04 04:15
+Updated: 2026-02-04 15:53
 
 
 📺 YOUTUBE:
-  Greg Isenberg: 2024 Executive Challenge Video Diary
+  TheAIGRID: How To Setup OpenClaw For Beginners - OpenClaw Tutorial For 
     Published: 2026-02-03
-  Greg Isenberg: Executive Challenge From Alumni Judges
+  TheAIGRID: Sam Altman Finally Admits It: "We Screwed Up"
     Published: 2026-02-03
-  AI Explained: Anthropic: Our AI just created a tool that can ‘automate all
-    Published: 2026-01-14
-  AI Explained: Claude AI Co-founder Publishes 4 Big Claims about Near Futur
-    Published: 2026-01-28
-  Matt Wolfe: Career advice in AI: Where to work? | Lex Fridman Podcast
+  Wes Roth: ClawdBot BROKE EVERYTHING in 72 hours...
     Published: 2026-02-03
-  Matt Wolfe: The huge cost of training LLMs | Lex Fridman Podcast
+  Wes Roth: ClawdBot makes money
     Published: 2026-02-04
-  Fireship: Bun in 100 Seconds
-    Published: 2026-01-22
-  Fireship: The wild rise of OpenClaw...
-    Published: 2026-01-30
+  WorldofAI: OpenClaw + Antigravity Turns Your AI Into a Full Autonomous 
+    Published: 2026-02-03
+  WorldofAI: Claude Sonnet 5: Greatest AI Coding Model Ever! 1M Context, 
+    Published: 2026-02-04
+  David Ondrej: Biggest mistake startup founders make
+    Published: 2026-02-03
+  David Ondrej: Every big player is going all in on this
+    Published: 2026-02-03
+  AI Jason: Secrets to unlock Gemini 3's hidden power...
+    Published: 2025-12-24
+  AI Jason: Why MCP is dead & How I vibe now
+    Published: 2026-01-24

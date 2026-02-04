@@ -1,19 +1,43 @@
 #!/usr/bin/env python3
 """
-Topic Aggregator - Identify HOT TOPICS by finding what's mentioned across multiple sources
+Topic Aggregator v6 - Smart trending detection
 
-The goal: If "Claude Code" is mentioned on HN, Twitter, AND a newsletter, that's a hot topic.
-Not just "here's articles from IndieHackers" but "here's what EVERYONE is talking about"
+TWO types of signals:
+1. CROSS-PLATFORM TRENDING - Same story on 2+ platforms (confirmed hot)
+2. SINGLE-PLATFORM EXPLOSION - Viral on ONE platform, early signal to be first
+
+Output:
+- 🔴 TRENDING (3+ platforms)
+- 🟡 SPREADING (2 platforms)
+- ⚡ EXPLODING (viral on 1 platform - 10X normal engagement)
 """
 import sqlite3
 import json
 import re
+import requests
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import urlparse
 
 MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
 LOG_FILE = Path("/root/clawd/logs/topic-aggregator.log")
+
+# Baseline engagement thresholds (what's "normal")
+# Anything significantly above this = exploding
+BASELINE = {
+    "hackernews": 150,      # Average front page post ~150 pts
+    "reddit": 100,          # Average hot post ~100 pts
+    "twitter": 30,          # Average trending topic ~30 posts
+    "youtube": 1,           # Any video counts
+    "producthunt": 100,     # Average launch ~100 votes
+    "dev.to": 50,           # Average article ~50 reactions
+    "news": 1,              # Any news coverage counts
+    "newsletter": 1,        # Any newsletter mention counts
+}
+
+# Multiplier for "exploding" - 5X baseline = exploding
+EXPLOSION_MULTIPLIER = 5
 
 def log(msg):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -22,535 +46,505 @@ def log(msg):
     with open(LOG_FILE, "a") as f:
         f.write(f"[{timestamp}] {msg}\n")
 
+def normalize_url(url):
+    if not url:
+        return ""
+    try:
+        parsed = urlparse(url)
+        domain = parsed.netloc.lower().replace("www.", "")
+        path = parsed.path.rstrip("/")
+        return f"{domain}{path}"
+    except:
+        return url.lower()
+
+def title_similarity(t1, t2):
+    if not t1 or not t2:
+        return 0
+    t1 = re.sub(r'[^\w\s]', '', t1.lower())
+    t2 = re.sub(r'[^\w\s]', '', t2.lower())
+    words1 = set(t1.split())
+    words2 = set(t2.split())
+    if not words1 or not words2:
+        return 0
+    overlap = len(words1 & words2)
+    total = min(len(words1), len(words2))
+    return overlap / total if total > 0 else 0
+
+def extract_entities(text):
+    if not text:
+        return set()
+    text_lower = text.lower()
+    entities = set()
+    KEYWORDS = [
+        "claude", "anthropic", "openai", "chatgpt", "gpt-4", "gpt-5",
+        "gemini", "grok", "copilot", "cursor", "windsurf", "xcode",
+        "mcp", "ollama", "deepseek", "llama", "mistral", "qwen",
+        "ghidra", "n8n", "supabase", "vercel", "deno", "bun",
+        "openclaw", "huggingface", "langchain", "vapi", "retell",
+        "coding agent", "ai agent", "vibe coding", "ad-free", "ads",
+    ]
+    for kw in KEYWORDS:
+        if kw in text_lower:
+            entities.add(kw)
+    return entities
+
 def normalize_title(text):
-    """Clean up a title to be a proper topic name"""
     if not text:
         return ""
-    # Remove common prefixes
     text = re.sub(r'^(Show HN:|Ask HN:|Launch HN:|Tell HN:)\s*', '', text)
-    # Remove newlines (tweets often have them)
     text = text.replace('\n', ' ').replace('\r', ' ')
-    # Clean up multiple spaces
-    text = re.sub(r'\s+', ' ', text)
-    # Trim to reasonable length but keep it meaningful
-    if len(text) > 100:
-        # Try to cut at a natural break
-        for sep in [' – ', ' - ', ': ', ' | ', '. ']:
-            if sep in text[:100]:
-                text = text[:text.index(sep)]
-                break
-        else:
-            text = text[:100]
-    return text.strip()
+    text = re.sub(r'\s+', ' ', text).strip()
+    return text[:150]
 
-def is_good_title(text, source=''):
-    """Check if text looks like a proper article/topic title, not a tweet"""
-    if not text:
+def is_good_title(title):
+    if not title or len(title) < 25:
         return False
-
-    # Twitter source = almost never a good title
-    if 'twitter' in source.lower():
+    if title.lower().strip() in ["claude", "openai", "mcp", "chatgpt", "xcode"]:
         return False
-
-    # Reject if it looks like tweet garbage
-    if text.count('@') > 0:  # Any mentions
-        return False
-    if text.count('→') > 0:  # Arrow formatting
-        return False
-    if '🧵' in text:  # Thread indicator
-        return False
-    if text.startswith(('I ', 'My ', 'We ', 'Im ', "I'm ", 'Just ', 'Woke ', 'People ')):
-        return False
-    if len(text) < 20:  # Too short
-        return False
-    if len(text.split()) < 4:  # Too few words
-        return False
-    # Check if it has proper capitalization (title case or sentence case)
-    if text[0].islower():
-        return False
-    # Reject if mostly lowercase with random caps (tweet style)
-    caps = sum(1 for c in text if c.isupper())
-    if caps > 10:  # Too many caps = ALL CAPS or weird
+    if title.lower().startswith(("i ", "my ", "just ", "we ", "people ", "here ")):
         return False
     return True
 
-def extract_topic_signature(text):
-    """Extract a signature that can match similar topics across sources.
-    For example: 'Xcode 26.3 coding agents' and 'Apple adds coding agents to Xcode'
-    should match on 'xcode' + 'coding agent' or 'xcode' + 'agent'"""
-    if not text:
-        return set()
-
-    text_lower = text.lower()
-    signature = set()
-
-    # Specific products/tools to look for
-    markers = [
-        'xcode', 'cursor', 'copilot', 'windsurf', 'vscode',
-        'claude', 'chatgpt', 'gpt-4', 'gpt-5', 'gemini', 'grok', 'deepseek', 'llama', 'qwen',
-        'openai', 'anthropic', 'google', 'apple', 'microsoft', 'meta',
-        'mcp', 'langchain', 'langgraph', 'crewai', 'autogen',
-        'n8n', 'zapier', 'make.com', 'composio', 'retell', 'vapi',
-        'midjourney', 'sora', 'runway', 'flux', 'stable diffusion',
-        'openclaw', 'clawdbot', 'ollama', 'huggingface',
-        'deno', 'bun', 'rust', 'typescript', 'golang',
-        'ghidra', 'docker', 'kubernetes', 'supabase', 'vercel', 'netlify',
-    ]
-
-    for marker in markers:
-        if marker in text_lower:
-            signature.add(marker)
-
-    # Add key concepts that make topics specific
-    concepts = [
-        'coding agent', 'ai agent', 'voice agent',
-        'open source', 'self-hosted', 'local llm',
-        'bankruptcy', 'acquisition', 'funding', 'launch', 'release',
-        'mcp server', 'reverse engineering',
-    ]
-
-    for concept in concepts:
-        if concept in text_lower:
-            signature.add(concept.replace(' ', '_'))
-
-    return signature
-
-def normalize_signature(sig):
-    """Normalize signature for better matching"""
-    normalized = set()
-    for s in sig:
-        # Treat coding_agent and ai_agent as equivalent
-        if s in ('coding_agent', 'ai_agent', 'voice_agent'):
-            normalized.add('agent')
-        else:
-            normalized.add(s)
-    return normalized
-
-def topics_match(sig1, sig2):
-    """Check if two topic signatures are similar enough to be the same topic"""
-    if not sig1 or not sig2:
-        return False
-
-    # Normalize signatures for comparison
-    norm1 = normalize_signature(sig1)
-    norm2 = normalize_signature(sig2)
-
-    overlap = norm1 & norm2
-
-    # Match if 2+ overlapping, OR if both have same specific product + agent concept
-    if len(overlap) >= 2:
+def items_match(item1, item2):
+    url1 = normalize_url(item1.get("url", ""))
+    url2 = normalize_url(item2.get("url", ""))
+    if url1 and url2 and url1 == url2:
         return True
-
-    # Also match if they share a specific product (not a generic company)
-    specific_products = {'xcode', 'cursor', 'copilot', 'windsurf', 'claude', 'chatgpt',
-                        'gemini', 'grok', 'deepseek', 'mcp', 'n8n', 'openclaw', 'deno', 'ollama'}
-    shared_products = overlap & specific_products
-    if shared_products and ('agent' in norm1 or 'agent' in norm2):
+    sim = title_similarity(item1.get("title", ""), item2.get("title", ""))
+    if sim >= 0.5:
         return True
+    entities1 = item1.get("entities", set())
+    entities2 = item2.get("entities", set())
+    if len(entities1 & entities2) >= 2:
+        return True
+    return False
 
-    return len(overlap) == 1 and len(sig1) == 1 and len(sig2) == 1
+def is_exploding(source_type, score):
+    """Check if this score is significantly above baseline"""
+    baseline = BASELINE.get(source_type, 50)
+    return score >= baseline * EXPLOSION_MULTIPLIER
 
 def fetch_reddit_hot(subreddit):
-    """Fetch hot posts from a subreddit via JSON API"""
-    import requests
-    import time
     try:
-        headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'}
-        url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=10"
+        headers = {"User-Agent": "Mozilla/5.0 (compatible; TrendBot/1.0)"}
+        url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=15"
         resp = requests.get(url, headers=headers, timeout=10)
         if resp.status_code == 200:
-            data = resp.json()
             posts = []
-            for post in data.get('data', {}).get('children', []):
-                p = post.get('data', {})
+            for post in resp.json().get("data", {}).get("children", []):
+                p = post.get("data", {})
                 posts.append({
-                    'title': p.get('title', ''),
-                    'url': f"https://reddit.com{p.get('permalink', '')}",
-                    'score': p.get('score', 0),
-                    'subreddit': subreddit
+                    "title": p.get("title", ""),
+                    "url": f"https://reddit.com{p.get('permalink', '')}",
+                    "external_url": p.get("url", ""),
+                    "score": p.get("score", 0)
                 })
             return posts
-        return []
     except:
-        return []
+        pass
+    return []
 
 def gather_all_content():
-    """Gather content from all sources - use FULL TITLES as potential topics"""
     conn = sqlite3.connect(MEMORY_DB)
     cursor = conn.cursor()
-
     all_content = []
 
-    # 0. Reddit (live fetch from key subreddits)
-    reddit_subs = ['LocalLLaMA', 'ChatGPT', 'ClaudeAI', 'OpenAI', 'SideProject', 'SaaS', 'n8n']
+    # 1. REDDIT
+    log("Fetching Reddit...")
+    reddit_subs = ["LocalLLaMA", "ChatGPT", "ClaudeAI", "OpenAI", "artificial", "SideProject", "singularity"]
     for sub in reddit_subs:
-        try:
-            posts = fetch_reddit_hot(sub)
-            for p in posts[:5]:
-                title = normalize_title(p['title'])
-                sig = extract_topic_signature(title)
-                if sig:  # Only include if it has relevant markers
-                    all_content.append({
-                        'title': title,
-                        'source': f"reddit/r/{sub}",
-                        'url': p['url'],
-                        'signature': sig,
-                        'engagement': f"{p['score']}⬆"
-                    })
-            import time
-            time.sleep(0.5)
-        except:
-            pass
-
-    # 1. HN / Real trends
-    try:
-        cursor.execute('''
-            SELECT topic, source, url, traffic FROM real_trends
-            WHERE created_at > datetime('now', '-24 hours')
-        ''')
-        for topic, source, url, traffic in cursor.fetchall():
-            title = normalize_title(topic)
-            sig = extract_topic_signature(title)
-            if sig:
+        posts = fetch_reddit_hot(sub)
+        for p in posts[:8]:
+            title = normalize_title(p["title"])
+            entities = extract_entities(title)
+            if is_good_title(title):
                 all_content.append({
-                    'title': title,
-                    'source': source,
-                    'url': url,
-                    'signature': sig,
-                    'engagement': traffic
+                    "title": title,
+                    "source": f"reddit/r/{sub}",
+                    "source_type": "reddit",
+                    "url": p.get("external_url") or p["url"],
+                    "entities": entities,
+                    "engagement": f"{p['score']}pts",
+                    "score": p["score"],
+                    "is_exploding": is_exploding("reddit", p["score"])
                 })
-    except: pass
+        import time
+        time.sleep(0.3)
 
-    # 2. IndieHackers
+    # 2. HACKER NEWS
+    log("Reading HN...")
     try:
-        cursor.execute('''
+        cursor.execute("""
             SELECT title, url, score FROM indiehacker_posts
             WHERE created_at > datetime('now', '-24 hours')
-        ''')
+            ORDER BY score DESC
+        """)
         for title, url, score in cursor.fetchall():
             title = normalize_title(title)
-            sig = extract_topic_signature(title)
-            if sig:
+            if is_good_title(title):
                 all_content.append({
-                    'title': title,
-                    'source': 'indiehackers',
-                    'url': url,
-                    'signature': sig,
-                    'engagement': f"{score}⬆"
+                    "title": title,
+                    "source": "hackernews",
+                    "source_type": "hackernews",
+                    "url": url,
+                    "entities": extract_entities(title),
+                    "engagement": f"{score}pts",
+                    "score": score or 0,
+                    "is_exploding": is_exploding("hackernews", score or 0)
                 })
-    except: pass
+    except:
+        pass
 
-    # 3. YouTube
+    # 3. NEWS/TRENDS
     try:
-        cursor.execute('''
+        cursor.execute("""
+            SELECT topic, source, url, traffic FROM real_trends
+            WHERE created_at > datetime('now', '-24 hours')
+        """)
+        for topic, source, url, traffic in cursor.fetchall():
+            title = normalize_title(topic)
+            if is_good_title(title):
+                all_content.append({
+                    "title": title,
+                    "source": source or "news",
+                    "source_type": "news",
+                    "url": url,
+                    "entities": extract_entities(title),
+                    "engagement": traffic or "",
+                    "score": 50,
+                    "is_exploding": False
+                })
+    except:
+        pass
+
+    # 4. YOUTUBE
+    log("Reading YouTube...")
+    try:
+        cursor.execute("""
             SELECT title, channel, url FROM youtube_videos
             WHERE created_at > datetime('now', '-48 hours')
-        ''')
+        """)
         for title, channel, url in cursor.fetchall():
             title = normalize_title(title)
-            sig = extract_topic_signature(title)
-            if sig:
+            if is_good_title(title):
                 all_content.append({
-                    'title': title,
-                    'source': f'youtube/{channel}',
-                    'url': url,
-                    'signature': sig,
-                    'engagement': 'video'
+                    "title": title,
+                    "source": f"youtube/{channel}",
+                    "source_type": "youtube",
+                    "url": url,
+                    "entities": extract_entities(title),
+                    "engagement": "video",
+                    "score": 100,
+                    "is_exploding": False
                 })
-    except: pass
+    except:
+        pass
 
-    # 4. Twitter
+    # 5. DEV.TO
     try:
-        cursor.execute('''
-            SELECT text, author, url, likes FROM twitter_trends
-            WHERE created_at > datetime('now', '-24 hours')
-        ''')
-        for text, author, url, likes in cursor.fetchall():
-            # For tweets, use full text as title
-            title = normalize_title(text)
-            sig = extract_topic_signature(title)
-            if sig:
-                all_content.append({
-                    'title': title,
-                    'source': f'twitter/@{author}',
-                    'url': url,
-                    'signature': sig,
-                    'engagement': f"{likes} likes"
-                })
-    except: pass
-
-    # 5. Dev.to / Hashnode
-    try:
-        cursor.execute('''
+        cursor.execute("""
             SELECT title, source, url, reactions FROM devto_posts
             WHERE created_at > datetime('now', '-48 hours')
-        ''')
+        """)
         for title, source, url, reactions in cursor.fetchall():
             title = normalize_title(title)
-            sig = extract_topic_signature(title)
-            if sig:
+            if is_good_title(title):
                 all_content.append({
-                    'title': title,
-                    'source': source,
-                    'url': url,
-                    'signature': sig,
-                    'engagement': f"{reactions} reactions"
+                    "title": title,
+                    "source": source or "dev.to",
+                    "source_type": "dev.to",
+                    "url": url,
+                    "entities": extract_entities(title),
+                    "engagement": f"{reactions} reactions",
+                    "score": reactions or 0,
+                    "is_exploding": is_exploding("dev.to", reactions or 0)
                 })
-    except: pass
+    except:
+        pass
 
-    # 6. Newsletters (Substack)
+    # 6. PRODUCT HUNT
     try:
-        cursor.execute('''
-            SELECT title, newsletter, url FROM substack_posts
-            WHERE created_at > datetime('now', '-48 hours')
-        ''')
-        for title, newsletter, url in cursor.fetchall():
-            title = normalize_title(title)
-            sig = extract_topic_signature(title)
-            if sig:
-                all_content.append({
-                    'title': title,
-                    'source': f'newsletter/{newsletter}',
-                    'url': url,
-                    'signature': sig,
-                    'engagement': 'newsletter'
-                })
-    except: pass
-
-    # 7. Email newsletters
-    try:
-        cursor.execute('''
-            SELECT subject, sender, snippet FROM email_newsletters
-            WHERE created_at > datetime('now', '-48 hours')
-        ''')
-        for subject, sender, snippet in cursor.fetchall():
-            title = normalize_title(subject)
-            sig = extract_topic_signature(f"{subject} {snippet}")
-            if sig:
-                sender_name = sender.split('<')[0].strip() if '<' in sender else sender[:20]
-                all_content.append({
-                    'title': title,
-                    'source': f'email/{sender_name}',
-                    'url': '',
-                    'signature': sig,
-                    'engagement': 'inbox'
-                })
-    except: pass
-
-    # 8. Product Hunt
-    try:
-        cursor.execute('''
+        cursor.execute("""
             SELECT title, tagline, url, votes FROM producthunt_posts
             WHERE created_at > datetime('now', '-24 hours')
-        ''')
+        """)
         for title, tagline, url, votes in cursor.fetchall():
             full_title = f"{title}: {tagline}" if tagline else title
             full_title = normalize_title(full_title)
-            sig = extract_topic_signature(full_title)
-            if sig:
+            if is_good_title(full_title):
                 all_content.append({
-                    'title': full_title,
-                    'source': 'producthunt',
-                    'url': url,
-                    'signature': sig,
-                    'engagement': f"{votes}⬆"
+                    "title": full_title,
+                    "source": "producthunt",
+                    "source_type": "producthunt",
+                    "url": url,
+                    "entities": extract_entities(full_title),
+                    "engagement": f"{votes}pts",
+                    "score": votes or 0,
+                    "is_exploding": is_exploding("producthunt", votes or 0)
                 })
-    except: pass
+    except:
+        pass
+
+    # 7. NEWSLETTERS
+    try:
+        cursor.execute("""
+            SELECT title, newsletter, url FROM substack_posts
+            WHERE created_at > datetime('now', '-48 hours')
+        """)
+        for title, newsletter, url in cursor.fetchall():
+            title = normalize_title(title)
+            if is_good_title(title):
+                all_content.append({
+                    "title": title,
+                    "source": f"newsletter/{newsletter}",
+                    "source_type": "newsletter",
+                    "url": url,
+                    "entities": extract_entities(title),
+                    "engagement": "newsletter",
+                    "score": 50,
+                    "is_exploding": False
+                })
+    except:
+        pass
+
+    # 8. TWITTER (high-engagement topics)
+    log("Reading Twitter...")
+    try:
+        cursor.execute("""
+            SELECT topic, post_count, topic_type, urls FROM twitter_topics
+            WHERE created_at > datetime('now', '-12 hours')
+            ORDER BY post_count DESC LIMIT 30
+        """)
+        for topic, post_count, topic_type, urls_json in cursor.fetchall():
+            if topic_type == 'linked_content' and is_good_title(topic):
+                urls = json.loads(urls_json) if urls_json else []
+                all_content.append({
+                    "title": normalize_title(topic),
+                    "source": "twitter",
+                    "source_type": "twitter",
+                    "url": urls[0] if urls else "",
+                    "entities": extract_entities(topic),
+                    "engagement": f"{post_count} tweets",
+                    "score": post_count,
+                    "is_exploding": is_exploding("twitter", post_count)
+                })
+            elif topic_type == 'entity' and post_count >= 50:
+                # High-engagement entity = something big happening
+                all_content.append({
+                    "title": f"{topic} trending on Twitter",
+                    "source": "twitter",
+                    "source_type": "twitter",
+                    "url": "",
+                    "entities": extract_entities(topic),
+                    "engagement": f"{post_count} tweets",
+                    "score": post_count,
+                    "is_exploding": is_exploding("twitter", post_count)
+                })
+    except Exception as e:
+        log(f"Twitter error: {e}")
 
     conn.close()
     return all_content
 
-def aggregate_topics(all_content):
-    """Find SPECIFIC topics that appear across multiple sources.
-    Group similar content by signature matching, use best title as topic name."""
-
-    # Group content by similar signatures
+def cluster_and_detect(all_content):
+    """Cluster for cross-platform AND detect single-platform explosions"""
     clusters = []
+    used_indices = set()
 
-    for item in all_content:
-        sig = item['signature']
-        source_type = item['source'].split('/')[0].split('@')[0]
+    # First pass: cluster matching items
+    for i, item in enumerate(all_content):
+        if i in used_indices:
+            continue
 
-        # Try to find existing cluster this matches
-        matched = False
-        for cluster in clusters:
-            if topics_match(sig, cluster['signature']):
-                # Add to existing cluster
-                if source_type not in cluster['source_types']:
-                    cluster['source_types'].add(source_type)
-                    cluster['sources'].append(item['source'])
-                cluster['items'].append(item)
-                # Update signature to be union
-                cluster['signature'] = cluster['signature'] | sig
-                matched = True
-                break
+        source_type = item["source_type"]
+        cluster = {
+            "sources": {source_type},
+            "items": [item],
+            "max_score": item["score"],
+            "has_explosion": item.get("is_exploding", False)
+        }
+        used_indices.add(i)
 
-        if not matched:
-            # Start new cluster
-            clusters.append({
-                'signature': sig,
-                'source_types': {source_type},
-                'sources': [item['source']],
-                'items': [item]
-            })
+        for j, other in enumerate(all_content):
+            if j in used_indices:
+                continue
+            if items_match(item, other):
+                other_source = other["source_type"]
+                if other_source not in cluster["sources"]:
+                    cluster["sources"].add(other_source)
+                cluster["items"].append(other)
+                cluster["max_score"] = max(cluster["max_score"], other["score"])
+                if other.get("is_exploding"):
+                    cluster["has_explosion"] = True
+                used_indices.add(j)
 
-    # Convert clusters to hot topics (only if 2+ source types)
-    hot_topics = []
+        clusters.append(cluster)
+
+    # Categorize results
+    trending = []      # 3+ platforms
+    spreading = []     # 2 platforms
+    exploding = []     # 1 platform but viral
+
     for cluster in clusters:
-        if len(cluster['source_types']) >= 2:
-            items = cluster['items']
+        items = cluster["items"]
+        best_item = max(items, key=lambda x: x["score"])
 
-            # Find the best title - prefer good titles over long ones
-            good_titles = [i for i in items if is_good_title(i['title'], i.get('source', ''))]
-            if good_titles:
-                best_title = max(good_titles, key=lambda x: len(x['title']))['title']
-            else:
-                # Fall back to longest if no good titles
-                best_title = max(items, key=lambda x: len(x['title']))['title']
+        # Dedupe by URL
+        seen_urls = set()
+        unique_items = []
+        for item in items:
+            url = normalize_url(item.get("url", ""))
+            if not url or url not in seen_urls:
+                if url:
+                    seen_urls.add(url)
+                unique_items.append(item)
 
-            # Clean up the title one more time
-            best_title = normalize_title(best_title)
+        topic_data = {
+            "topic": best_item["title"],
+            "source_count": len(cluster["sources"]),
+            "sources": list(cluster["sources"]),
+            "max_score": cluster["max_score"],
+            "is_exploding": cluster["has_explosion"],
+            "mentions": [
+                {
+                    "source": i["source"],
+                    "text": i["title"][:80],
+                    "url": i["url"],
+                    "engagement": i["engagement"],
+                    "exploding": i.get("is_exploding", False)
+                }
+                for i in unique_items[:5]
+            ]
+        }
 
-            hot_topics.append({
-                'topic': best_title,
-                'source_count': len(cluster['source_types']),
-                'sources': list(cluster['source_types']),
-                'mentions': [
-                    {
-                        'source_type': i['source'].split('/')[0],
-                        'source_full': i['source'],
-                        'text': i['title'],
-                        'url': i['url'],
-                        'engagement': i['engagement']
-                    }
-                    for i in items[:5]
-                ],
-                'total_mentions': len(items)
-            })
+        if len(cluster["sources"]) >= 3:
+            trending.append(topic_data)
+        elif len(cluster["sources"]) >= 2:
+            spreading.append(topic_data)
+        elif cluster["has_explosion"]:
+            # Single platform but exploding
+            exploding.append(topic_data)
 
-    # Score topics by: source count + relevance boost for builder topics
-    # Builder-relevant markers get a boost
-    builder_markers = {
-        'xcode', 'cursor', 'copilot', 'windsurf', 'vscode', 'neovim',
-        'claude', 'chatgpt', 'gemini', 'deepseek', 'llama', 'qwen',
-        'mcp', 'langchain', 'langgraph', 'crewai', 'autogen',
-        'n8n', 'zapier', 'composio', 'retell', 'vapi',
-        'openclaw', 'ollama', 'huggingface', 'supabase', 'vercel',
-        'deno', 'typescript', 'rust', 'golang',
-        'coding_agent', 'ai_agent', 'voice_agent', 'mcp_server',
-        'open_source', 'self-hosted', 'local_llm', 'launch', 'release',
-    }
+    # Sort each category
+    trending.sort(key=lambda x: (x["source_count"], x["max_score"]), reverse=True)
+    spreading.sort(key=lambda x: x["max_score"], reverse=True)
+    exploding.sort(key=lambda x: x["max_score"], reverse=True)
 
-    # News/boring markers get penalized
-    news_markers = {'raided', 'investigation', 'lawsuit', 'arrested', 'died', 'war', 'election'}
+    return trending, spreading, exploding
 
-    for ht in hot_topics:
-        sig = set()
-        for item in ht.get('mentions', []):
-            text_lower = item.get('text', '').lower()
-            for marker in builder_markers:
-                if marker.replace('_', ' ') in text_lower or marker in text_lower:
-                    sig.add(marker)
-
-        # Calculate relevance score
-        builder_score = len(sig & builder_markers)
-        news_penalty = sum(1 for m in news_markers if m in ht['topic'].lower())
-
-        # Final score: source_count + builder_boost - news_penalty
-        ht['relevance_score'] = ht['source_count'] + (builder_score * 0.5) - (news_penalty * 2)
-
-    # Sort by relevance score, then source count
-    hot_topics.sort(key=lambda x: (x.get('relevance_score', 0), x['source_count'], x['total_mentions']), reverse=True)
-
-    return hot_topics
-
-def save_hot_topics(hot_topics):
-    """Save aggregated hot topics to database"""
+def save_hot_topics(trending, spreading, exploding):
+    """Save all categories to database"""
     conn = sqlite3.connect(MEMORY_DB)
     cursor = conn.cursor()
 
-    cursor.execute('''
+    cursor.execute("""
         CREATE TABLE IF NOT EXISTS hot_topics (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             topic TEXT,
             source_count INTEGER,
             sources TEXT,
             mentions TEXT,
+            category TEXT,
             created_at TEXT,
             UNIQUE(topic, created_at)
         )
-    ''')
+    """)
 
-    now = datetime.now().strftime("%Y-%m-%d %H:00")  # Round to hour
+    now = datetime.now().strftime("%Y-%m-%d %H:00")
     saved = 0
 
-    for ht in hot_topics[:20]:
-        try:
-            cursor.execute('''
-                INSERT OR REPLACE INTO hot_topics
-                (topic, source_count, sources, mentions, created_at)
-                VALUES (?, ?, ?, ?, ?)
-            ''', (
-                ht['topic'], ht['source_count'],
-                json.dumps(ht['sources']), json.dumps(ht['mentions']), now
-            ))
-            saved += 1
-        except: pass
+    for category, items in [("trending", trending), ("spreading", spreading), ("exploding", exploding)]:
+        for ht in items[:10]:
+            try:
+                cursor.execute("""
+                    INSERT OR REPLACE INTO hot_topics
+                    (topic, source_count, sources, mentions, category, created_at)
+                    VALUES (?, ?, ?, ?, ?, ?)
+                """, (
+                    ht["topic"], ht["source_count"],
+                    json.dumps(ht["sources"]), json.dumps(ht["mentions"]),
+                    category, now
+                ))
+                saved += 1
+            except:
+                pass
 
     conn.commit()
     conn.close()
     return saved
 
 def get_hot_topics_for_briefing():
-    """Get hot topics formatted for the morning briefing"""
+    """Get all hot topics for morning briefing"""
     conn = sqlite3.connect(MEMORY_DB)
     cursor = conn.cursor()
 
-    cursor.execute('''
-        SELECT topic, source_count, sources, mentions
-        FROM hot_topics
-        WHERE created_at > datetime('now', '-12 hours')
-        ORDER BY source_count DESC, created_at DESC
-        LIMIT 10
-    ''')
+    results = {"trending": [], "spreading": [], "exploding": []}
 
-    results = []
-    for topic, source_count, sources_json, mentions_json in cursor.fetchall():
-        sources = json.loads(sources_json)
-        mentions = json.loads(mentions_json)
-        results.append({
-            'topic': topic,
-            'source_count': source_count,
-            'sources': sources,
-            'mentions': mentions
-        })
+    for category in ["trending", "spreading", "exploding"]:
+        cursor.execute("""
+            SELECT topic, source_count, sources, mentions
+            FROM hot_topics
+            WHERE created_at > datetime('now', '-12 hours')
+            AND category = ?
+            ORDER BY source_count DESC
+            LIMIT 10
+        """, (category,))
+
+        for topic, source_count, sources_json, mentions_json in cursor.fetchall():
+            results[category].append({
+                "topic": topic,
+                "source_count": source_count,
+                "sources": json.loads(sources_json),
+                "mentions": json.loads(mentions_json)[:5]
+            })
 
     conn.close()
     return results
 
 def main():
-    log("Topic Aggregator starting...")
+    log("Topic Aggregator v6 - Smart trending detection")
 
-    # Gather all content
     all_content = gather_all_content()
-    log(f"Gathered {len(all_content)} items from all sources")
+    log(f"Gathered {len(all_content)} content items")
 
-    # Find cross-source topics
-    hot_topics = aggregate_topics(all_content)
-    log(f"Found {len(hot_topics)} topics mentioned across multiple sources")
+    trending, spreading, exploding = cluster_and_detect(all_content)
+    log(f"Found: {len(trending)} trending, {len(spreading)} spreading, {len(exploding)} exploding")
 
-    # Save to database
-    saved = save_hot_topics(hot_topics)
-    log(f"Saved {saved} hot topics")
+    saved = save_hot_topics(trending, spreading, exploding)
+    log(f"Saved {saved} topics")
 
     # Print report
-    print("\n🔥 HOT TOPICS (mentioned across multiple sources):\n")
-    for ht in hot_topics[:15]:
-        print(f"*{ht['topic'].upper()}* - {ht['source_count']} sources ({', '.join(ht['sources'])})")
-        for m in ht['mentions'][:2]:
-            print(f"  • {m['text'][:60]}... [{m['source_full']}]")
-        print()
+    print("\n" + "="*60)
+    print("📊 CONTENT INTEL REPORT")
+    print("="*60)
 
+    if trending:
+        print("\n🔴 TRENDING (3+ platforms - confirmed hot)")
+        for t in trending[:5]:
+            print(f"\n   **{t['topic']}**")
+            print(f"   Platforms: {', '.join(t['sources'])}")
+            for m in t["mentions"][:2]:
+                print(f"   • [{m['source']}] {m['engagement']}")
+
+    if spreading:
+        print("\n🟡 SPREADING (2 platforms)")
+        for t in spreading[:5]:
+            print(f"\n   **{t['topic']}**")
+            print(f"   Platforms: {', '.join(t['sources'])}")
+            for m in t["mentions"][:2]:
+                print(f"   • [{m['source']}] {m['engagement']}")
+
+    if exploding:
+        print("\n⚡ EXPLODING (viral on 1 platform - early signal!)")
+        for t in exploding[:5]:
+            exp_mention = next((m for m in t["mentions"] if m.get("exploding")), t["mentions"][0])
+            print(f"\n   **{t['topic']}**")
+            print(f"   🚀 {exp_mention['engagement']} on {exp_mention['source']}")
+
+    if not trending and not spreading and not exploding:
+        print("\nNo significant trending topics detected right now.")
+
+    print("\n" + "="*60)
     log("Done")
 
 if __name__ == "__main__":

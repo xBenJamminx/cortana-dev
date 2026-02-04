@@ -1,32 +1,32 @@
 📰 Trending Topics (last 24h)
 
-• Bye bye, ChatGPT-4o: OpenAI will soon retire several models, pushing new GPT-5 ones
-  _CNET_
+• OpenAI is retiring GPT-4o, and the AI relationships community is not OK
+  _Mashable_
 
-• Apple integrates Anthropic's Claude and OpenAI's Codex into Xcode 26.3 in push for 'agentic coding'
-  _VentureBeat_
+• Was Vibe Coding a Ruse?
+  _Inc.com_
 
-• 2025 Year in Review and Predictions for 2026 in the Cyber, AI, and Privacy Frontier
-  _JD Supra_
+• Vibe Coding: The Balance Between Passion And Principle
+  _Forbes_
 
-• Nextech3D.ai's KraftyLab Accelerates Global Scale with Launch of In-Person Experiences and AI-Driven Platform Automation
-  _Milwaukee Journal Sentinel_
+• OpenAI is retiring GPT-4o again: What it means for you, and why some users are upset
+  _ZDNET_
 
-• Moving Beyond Hype: Expert AI Prompts Launches Financial Tool to Measure the Hard Dollar Value of Automation
-  _azcentral.com_
+• RIoT State of the Region: AI, automation make for uncertain economy, opportunities for entrepreneurs
+  _WRAL_
 
-• PSCI Examines Staffing And Consulting Approaches To AI And Automation
-  _USA TODAY_
+• Anthropic says 'Claude will remain ad-free,' unlike ChatGPT
+  _The Verge_
 
-• PSCI Examines AI And Automation Talent Trends In IT Staffing
-  _USA TODAY_
+• 20 AI-Resistant Careers With The Lowest Automation Risk In 2026
+  _Forbes_
 
-• Turning AI Into Business Results: Why Automation Specialists Are in High Demand in 2026
-  _The Columbus Dispatch_
+• No-Code AI Automation Made Easy: How to Build Powerful AI Workflows Without Coding
+  _Tech Times_
 
-• Inspiring examples of responsible and realistic vibe coding for SEO
-  _Search Engine Land_
+• Apple just made Xcode better for vibe coding
+  _Engadget_
 
-• Xcode 26.3 hands on: AI agent coding is astoundingly fast, smart, and too convenient
-  _AppleInsider_
+• Claude AI Now Lets You Use Slack, Figma, and Canva Within the Chat
+  _MacRumors_
 
