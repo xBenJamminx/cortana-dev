@@ -1,0 +1,20 @@
+🚀 Indie Hacker Monitor (2026-02-04 03:57)
+
+🔥 Hot Topics:
+  • bootstrapped: 9 mentions
+  • side project: 9 mentions
+  • launch: 7 mentions
+  • solopreneur: 4 mentions
+  • build in public: 2 mentions
+
+📈 Top Stories:
+  • [Hacker News] (822⬆): France dumps Zoom and Teams as Europe seeks digital autonomy from the US
+    https://apnews.com/article/europe-digital-sovereignty-big-tech-9f5388b68a0648514cebc8d92f682060
+  • [Hacker News] (593⬆): Qwen3-Coder-Next
+    https://qwen.ai/blog?id=qwen3-coder-next
+  • [Hacker News] (396⬆): Lessons learned shipping 500 units of my first hardware product
+    https://www.simonberens.com/p/lessons-learned-shipping-500-units
+  • [Hacker News] (393⬆): Agent Skills
+    https://agentskills.io/home
+  • [Hacker News] (352⬆): Deno Sandbox
+    https://deno.com/blog/introducing-deno-sandbox
