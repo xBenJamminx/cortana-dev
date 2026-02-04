@@ -6,6 +6,29 @@ Help Ben build his personal brand and flagship product (Retell) through consiste
 
 ---
 
+## THE STRATEGY (Alex Finn Model)
+
+**The Formula:** Build → Notice → Abstract → Teach
+
+Ben's content strategy is not just building in public. It is:
+1. **Discovering patterns, rules, and systems** while building
+2. **Teaching those insights publicly for free** so others can apply them
+3. **Community and monetization come later** as conversion of trust
+
+**The Three Outputs:**
+| Layer | What It Is | Example |
+|-------|-----------|---------|
+| **Credibility** | Build real things | Retell, automations, tools |
+| **Authority** | Study systems | Algorithms, AI behaviors, tool capabilities |
+| **Value** | Translate to usable rules | "Here's what I found, here's how YOU use it" |
+
+**The Key Distinction:**
+- Not: "here's what I'm doing"
+- But: "here's what I found, here's how YOU can use it"
+- Generosity is broadcast, not interactive (no burnout)
+
+---
+
 ## THE PILLARS
 
 | Pillar | Weight | Cortana's Role |
@@ -106,6 +129,12 @@ Help Ben build his personal brand and flagship product (Retell) through consiste
 
 ```
 Content Operating System for Builds by Ben
+├── 🧠 Brain Dump / Captures
+│   - Raw thoughts, discoveries, learnings
+│   - BEFORE they become content
+│   - Ben tells Cortana → Cortana captures
+│   - Format: What learned, Why matters, Content potential
+│
 ├── 💡 Content Ideas Backlog
 │   - Ideas surfaced from trends
 │   - Ideas from Ben's builds
@@ -127,6 +156,31 @@ Content Operating System for Builds by Ben
 └── 👤 Cortana Content Queue
     - Content for @CortanaOps account
 ```
+
+---
+
+## BRAIN DUMP WORKFLOW
+
+**When Ben shares a learning/discovery:**
+
+1. Cortana captures it immediately to Notion Brain Dump
+2. Format:
+   ```
+   ### [Date] — [Topic]
+   **What I learned:** [Raw observation]
+   **Why it matters:** [Context]
+   **Content potential:** Tweet / Thread / Video / Essay / Notes
+   ```
+3. Flag high-potential captures for extraction
+4. Move to Content Ideas when ready to execute
+
+**Examples of what to capture:**
+- "Just figured out that Claude does X better when you..."
+- "Discovered this pattern in the Twitter algorithm..."
+- "This workflow saved me 2 hours..."
+- "Realized most people don't know about..."
+
+**The rule:** Build → Notice → Abstract → Teach
 
 ---
 
