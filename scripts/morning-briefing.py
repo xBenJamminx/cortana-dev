@@ -473,25 +473,47 @@ _{openers.get(day_name, "Let's go.")}_""")
     if hot_topics:
         topics_lines = ["🔥 *HOT TOPICS* (trending across multiple sources)"]
 
-        for ht in hot_topics[:8]:
+        seen_topics = set()
+        shown = 0
+        for ht in hot_topics:
+            if shown >= 8:
+                break
+
             topic_name = ht['topic'].upper()
+
+            # Skip duplicates
+            if topic_name in seen_topics:
+                continue
+            seen_topics.add(topic_name)
+
             source_count = ht['source_count']
             sources = ', '.join(ht['sources'][:4])
 
             topics_lines.append(f"\n*{topic_name}* — {source_count} sources")
             topics_lines.append(f"_{sources}_")
 
-            # Show 2 example mentions with links
-            for mention in ht['mentions'][:2]:
-                text = mention.get('text', '')[:60]
+            # Show 2 example mentions with links (dedupe URLs too)
+            seen_urls = set()
+            mention_count = 0
+            for mention in ht['mentions']:
+                if mention_count >= 2:
+                    break
                 url = mention.get('url', '')
-                source = mention.get('source_full', '')
+                if url in seen_urls:
+                    continue
+                seen_urls.add(url)
+
+                text = mention.get('text', '')[:55]
+                source = mention.get('source_full', '').replace('@@', '@')
 
                 if url:
                     topics_lines.append(f"  • [{text}...]({url})")
                 else:
                     topics_lines.append(f"  • {text}...")
                 topics_lines.append(f"    _{source}_")
+                mention_count += 1
+
+            shown += 1
 
         sections.append("\n".join(topics_lines))
 
