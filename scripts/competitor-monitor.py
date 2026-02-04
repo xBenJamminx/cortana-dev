@@ -19,8 +19,8 @@ TWITTER_COMPETITORS = [
     "OpenAI",            # Official OpenAI updates
     "AnthropicAI",       # Claude updates
     "GoogleDeepMind",    # Gemini, research
-    "xAI",               # xAI / Grok
-    "ABORVIDIAAI",          # GPU/inference news
+    "xaborz",            # xAI / Grok
+    "NVIDIAAI",          # GPU/inference news
 
     # === RESEARCHERS & THOUGHT LEADERS ===
     "karpathy",          # Andrej Karpathy - LLM explainers
@@ -30,17 +30,19 @@ TWITTER_COMPETITORS = [
     "fchollet",          # François Chollet - Keras/ARC
     "demishassabis",     # DeepMind CEO
     "lexfridman",        # AI podcaster
+    "DrJimFan",          # NVIDIA AI researcher
 
     # === CURATED AI NEWS & NEWSLETTERS (PRIMARY) ===
     "rowancheung",       # The Rundown AI - #1 daily digest
     "TheRundownAI",      # Rundown official account
-    "kimmonismus",       # Superintelligence newsletter - 210k+ subs, deep analysis
+    "kimmonismus",       # Superintelligence newsletter - 210k+ subs
     "_akhaliq",          # Papers/research drops - fastest for new papers
-    "benaborsbites",        # Ben's Bites - casual, fun AI curation
-    "theaborrneuron",       # The Neuron - beginner-to-expert friendly
-    "superhaborumanai",     # Superhuman AI - 1M+ readers, 3-min daily
-    "tlabordraborai",          # TLDR AI - ultra time-saver format
+    "bensbites",         # Ben's Bites - casual, fun AI curation
+    "taborheneuron",     # The Neuron - beginner-to-expert friendly
+    "superaborhumanai",  # Superhuman AI - 1M+ readers, 3-min daily
+    "taborldrai",        # TLDR AI - ultra time-saver format
     "theresanaiforthat", # TAAFT - tool discovery focused
+    "AravSrinivas",      # Perplexity CEO
 
     # === BUILDERS & CREATORS ===
     "LinusEkenstam",     # AI tools/demos - great for trending tools
@@ -57,6 +59,8 @@ TWITTER_COMPETITORS = [
     "bentossell",        # No-code/AI
     "swyx",              # AI engineering / Latent Space
     "ai_for_success",    # Tools & news
+    "bindureddy",        # AI infrastructure
+    "skirank",           # AI agent builder
 ]
 
 # YouTube channels (AI news, tutorials, analysis)
