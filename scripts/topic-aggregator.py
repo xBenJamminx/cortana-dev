@@ -22,78 +22,133 @@ def log(msg):
     with open(LOG_FILE, "a") as f:
         f.write(f"[{timestamp}] {msg}\n")
 
-def extract_keywords(text):
-    """Extract meaningful keywords/phrases from text - focus on specific products/concepts, not generic words"""
+def normalize_title(text):
+    """Clean up a title to be a proper topic name"""
     if not text:
-        return []
+        return ""
+    # Remove common prefixes
+    text = re.sub(r'^(Show HN:|Ask HN:|Launch HN:|Tell HN:)\s*', '', text)
+    # Remove newlines (tweets often have them)
+    text = text.replace('\n', ' ').replace('\r', ' ')
+    # Clean up multiple spaces
+    text = re.sub(r'\s+', ' ', text)
+    # Trim to reasonable length but keep it meaningful
+    if len(text) > 100:
+        # Try to cut at a natural break
+        for sep in [' – ', ' - ', ': ', ' | ', '. ']:
+            if sep in text[:100]:
+                text = text[:text.index(sep)]
+                break
+        else:
+            text = text[:100]
+    return text.strip()
+
+def is_good_title(text, source=''):
+    """Check if text looks like a proper article/topic title, not a tweet"""
+    if not text:
+        return False
+
+    # Twitter source = almost never a good title
+    if 'twitter' in source.lower():
+        return False
+
+    # Reject if it looks like tweet garbage
+    if text.count('@') > 0:  # Any mentions
+        return False
+    if text.count('→') > 0:  # Arrow formatting
+        return False
+    if '🧵' in text:  # Thread indicator
+        return False
+    if text.startswith(('I ', 'My ', 'We ', 'Im ', "I'm ", 'Just ', 'Woke ', 'People ')):
+        return False
+    if len(text) < 20:  # Too short
+        return False
+    if len(text.split()) < 4:  # Too few words
+        return False
+    # Check if it has proper capitalization (title case or sentence case)
+    if text[0].islower():
+        return False
+    # Reject if mostly lowercase with random caps (tweet style)
+    caps = sum(1 for c in text if c.isupper())
+    if caps > 10:  # Too many caps = ALL CAPS or weird
+        return False
+    return True
+
+def extract_topic_signature(text):
+    """Extract a signature that can match similar topics across sources.
+    For example: 'Xcode 26.3 coding agents' and 'Apple adds coding agents to Xcode'
+    should match on 'xcode' + 'coding agent' or 'xcode' + 'agent'"""
+    if not text:
+        return set()
 
     text_lower = text.lower()
-    keywords = []
+    signature = set()
 
-    # Known hot topics - SPECIFIC products, tools, and concepts (not generic words)
-    known_topics = [
-        # AI Models & Companies
-        ('claude', 'Claude'), ('claude code', 'Claude Code'), ('chatgpt', 'ChatGPT'),
-        ('gpt-4', 'GPT-4'), ('gpt-5', 'GPT-5'), ('gpt 4o', 'GPT-4o'), ('o1', 'o1'),
-        ('openai', 'OpenAI'), ('anthropic', 'Anthropic'), ('gemini', 'Gemini'),
-        ('deepseek', 'DeepSeek'), ('mistral', 'Mistral'), ('llama', 'Llama'),
-        ('qwen', 'Qwen'), ('grok', 'Grok'),
-
-        # Dev Tools
-        ('cursor', 'Cursor'), ('copilot', 'Copilot'), ('windsurf', 'Windsurf'),
-        ('xcode', 'Xcode'), ('vscode', 'VSCode'), ('neovim', 'Neovim'),
-
-        # Protocols & Frameworks
-        ('mcp', 'MCP'), ('model context protocol', 'MCP'),
-        ('langchain', 'LangChain'), ('langgraph', 'LangGraph'),
-        ('crewai', 'CrewAI'), ('autogen', 'AutoGen'),
-
-        # Concepts (specific)
-        ('coding agent', 'Coding Agents'), ('ai agent', 'AI Agents'), ('agentic', 'Agentic AI'),
-        ('vibe coding', 'Vibe Coding'), ('vibe-coding', 'Vibe Coding'),
-        ('local llm', 'Local LLMs'), ('fine-tuning', 'Fine-tuning'), ('fine tuning', 'Fine-tuning'),
-
-        # Automation Tools
-        ('n8n', 'n8n'), ('make.com', 'Make.com'), ('zapier', 'Zapier'),
-        ('composio', 'Composio'), ('retell', 'Retell'), ('vapi', 'Vapi'),
-
-        # Image/Video AI
-        ('midjourney', 'Midjourney'), ('sora', 'Sora'), ('runway', 'Runway'),
-        ('flux', 'Flux'), ('stable diffusion', 'Stable Diffusion'), ('dall-e', 'DALL-E'),
-
-        # Platforms
-        ('openclaw', 'OpenClaw'), ('clawdbot', 'OpenClaw'),
-        ('ollama', 'Ollama'), ('huggingface', 'HuggingFace'), ('replicate', 'Replicate'),
-
-        # Tech (be specific to avoid false positives)
-        ('deno ', 'Deno'), (' bun ', 'Bun'), ('bunjs', 'Bun'), ('typescript', 'TypeScript'),
-        (' rust ', 'Rust'), ('rustlang', 'Rust'), ('golang', 'Go'),
-
-        # Business/Creator
-        ('micro-saas', 'Micro-SaaS'), ('micro saas', 'Micro-SaaS'),
-        ('indie hacker', 'Indie Hacking'), ('solopreneur', 'Solopreneur'),
-        ('bootstrapped', 'Bootstrapping'),
+    # Specific products/tools to look for
+    markers = [
+        'xcode', 'cursor', 'copilot', 'windsurf', 'vscode',
+        'claude', 'chatgpt', 'gpt-4', 'gpt-5', 'gemini', 'grok', 'deepseek', 'llama', 'qwen',
+        'openai', 'anthropic', 'google', 'apple', 'microsoft', 'meta',
+        'mcp', 'langchain', 'langgraph', 'crewai', 'autogen',
+        'n8n', 'zapier', 'make.com', 'composio', 'retell', 'vapi',
+        'midjourney', 'sora', 'runway', 'flux', 'stable diffusion',
+        'openclaw', 'clawdbot', 'ollama', 'huggingface',
+        'deno', 'bun', 'rust', 'typescript', 'golang',
+        'ghidra', 'docker', 'kubernetes', 'supabase', 'vercel', 'netlify',
     ]
 
-    for search_term, display_name in known_topics:
-        if search_term in text_lower:
-            keywords.append(display_name)
+    for marker in markers:
+        if marker in text_lower:
+            signature.add(marker)
 
-    # Extract capitalized product names (but filter aggressively)
-    stopwords = {'the', 'and', 'for', 'with', 'this', 'that', 'from', 'what', 'how',
-                 'why', 'when', 'who', 'here', 'there', 'your', 'have', 'been', 'will',
-                 'can', 'could', 'would', 'should', 'may', 'might', 'must', 'shall',
-                 'show', 'new', 'top', 'best', 'first', 'last', 'next', 'most', 'just',
-                 'now', 'today', 'yesterday', 'tomorrow', 'week', 'month', 'year',
-                 'great', 'good', 'bad', 'big', 'small', 'old', 'young', 'high', 'low'}
+    # Add key concepts that make topics specific
+    concepts = [
+        'coding agent', 'ai agent', 'voice agent',
+        'open source', 'self-hosted', 'local llm',
+        'bankruptcy', 'acquisition', 'funding', 'launch', 'release',
+        'mcp server', 'reverse engineering',
+    ]
 
-    # Only extract capitalized words that look like product names (CamelCase or single caps)
-    caps = re.findall(r'\b([A-Z][a-z]+(?:[A-Z][a-z]+)+)\b', text)  # CamelCase like DeepSeek
-    for cap in caps:
-        if len(cap) > 3 and cap.lower() not in stopwords:
-            keywords.append(cap)
+    for concept in concepts:
+        if concept in text_lower:
+            signature.add(concept.replace(' ', '_'))
 
-    return list(set(keywords))
+    return signature
+
+def normalize_signature(sig):
+    """Normalize signature for better matching"""
+    normalized = set()
+    for s in sig:
+        # Treat coding_agent and ai_agent as equivalent
+        if s in ('coding_agent', 'ai_agent', 'voice_agent'):
+            normalized.add('agent')
+        else:
+            normalized.add(s)
+    return normalized
+
+def topics_match(sig1, sig2):
+    """Check if two topic signatures are similar enough to be the same topic"""
+    if not sig1 or not sig2:
+        return False
+
+    # Normalize signatures for comparison
+    norm1 = normalize_signature(sig1)
+    norm2 = normalize_signature(sig2)
+
+    overlap = norm1 & norm2
+
+    # Match if 2+ overlapping, OR if both have same specific product + agent concept
+    if len(overlap) >= 2:
+        return True
+
+    # Also match if they share a specific product (not a generic company)
+    specific_products = {'xcode', 'cursor', 'copilot', 'windsurf', 'claude', 'chatgpt',
+                        'gemini', 'grok', 'deepseek', 'mcp', 'n8n', 'openclaw', 'deno', 'ollama'}
+    shared_products = overlap & specific_products
+    if shared_products and ('agent' in norm1 or 'agent' in norm2):
+        return True
+
+    return len(overlap) == 1 and len(sig1) == 1 and len(sig2) == 1
 
 def fetch_reddit_hot(subreddit):
     """Fetch hot posts from a subreddit via JSON API"""
@@ -120,7 +175,7 @@ def fetch_reddit_hot(subreddit):
         return []
 
 def gather_all_content():
-    """Gather content from all sources with extracted keywords"""
+    """Gather content from all sources - use FULL TITLES as potential topics"""
     conn = sqlite3.connect(MEMORY_DB)
     cursor = conn.cursor()
 
@@ -132,14 +187,18 @@ def gather_all_content():
         try:
             posts = fetch_reddit_hot(sub)
             for p in posts[:5]:
-                keywords = extract_keywords(p['title'])
-                if keywords:
+                title = normalize_title(p['title'])
+                sig = extract_topic_signature(title)
+                if sig:  # Only include if it has relevant markers
                     all_content.append({
-                        'text': p['title'], 'source': f"reddit/r/{sub}", 'url': p['url'],
-                        'keywords': keywords, 'engagement': f"{p['score']}⬆"
+                        'title': title,
+                        'source': f"reddit/r/{sub}",
+                        'url': p['url'],
+                        'signature': sig,
+                        'engagement': f"{p['score']}⬆"
                     })
             import time
-            time.sleep(0.5)  # Be nice to Reddit
+            time.sleep(0.5)
         except:
             pass
 
@@ -150,11 +209,15 @@ def gather_all_content():
             WHERE created_at > datetime('now', '-24 hours')
         ''')
         for topic, source, url, traffic in cursor.fetchall():
-            keywords = extract_keywords(topic)
-            if keywords:
+            title = normalize_title(topic)
+            sig = extract_topic_signature(title)
+            if sig:
                 all_content.append({
-                    'text': topic, 'source': source, 'url': url,
-                    'keywords': keywords, 'engagement': traffic
+                    'title': title,
+                    'source': source,
+                    'url': url,
+                    'signature': sig,
+                    'engagement': traffic
                 })
     except: pass
 
@@ -165,11 +228,15 @@ def gather_all_content():
             WHERE created_at > datetime('now', '-24 hours')
         ''')
         for title, url, score in cursor.fetchall():
-            keywords = extract_keywords(title)
-            if keywords:
+            title = normalize_title(title)
+            sig = extract_topic_signature(title)
+            if sig:
                 all_content.append({
-                    'text': title, 'source': 'indiehackers', 'url': url,
-                    'keywords': keywords, 'engagement': f"{score}⬆"
+                    'title': title,
+                    'source': 'indiehackers',
+                    'url': url,
+                    'signature': sig,
+                    'engagement': f"{score}⬆"
                 })
     except: pass
 
@@ -180,11 +247,15 @@ def gather_all_content():
             WHERE created_at > datetime('now', '-48 hours')
         ''')
         for title, channel, url in cursor.fetchall():
-            keywords = extract_keywords(title)
-            if keywords:
+            title = normalize_title(title)
+            sig = extract_topic_signature(title)
+            if sig:
                 all_content.append({
-                    'text': title, 'source': f'youtube/{channel}', 'url': url,
-                    'keywords': keywords, 'engagement': 'video'
+                    'title': title,
+                    'source': f'youtube/{channel}',
+                    'url': url,
+                    'signature': sig,
+                    'engagement': 'video'
                 })
     except: pass
 
@@ -195,11 +266,16 @@ def gather_all_content():
             WHERE created_at > datetime('now', '-24 hours')
         ''')
         for text, author, url, likes in cursor.fetchall():
-            keywords = extract_keywords(text)
-            if keywords:
+            # For tweets, use full text as title
+            title = normalize_title(text)
+            sig = extract_topic_signature(title)
+            if sig:
                 all_content.append({
-                    'text': text[:100], 'source': f'twitter/@{author}', 'url': url,
-                    'keywords': keywords, 'engagement': f"{likes} likes"
+                    'title': title,
+                    'source': f'twitter/@{author}',
+                    'url': url,
+                    'signature': sig,
+                    'engagement': f"{likes} likes"
                 })
     except: pass
 
@@ -210,11 +286,15 @@ def gather_all_content():
             WHERE created_at > datetime('now', '-48 hours')
         ''')
         for title, source, url, reactions in cursor.fetchall():
-            keywords = extract_keywords(title)
-            if keywords:
+            title = normalize_title(title)
+            sig = extract_topic_signature(title)
+            if sig:
                 all_content.append({
-                    'text': title, 'source': source, 'url': url,
-                    'keywords': keywords, 'engagement': f"{reactions} reactions"
+                    'title': title,
+                    'source': source,
+                    'url': url,
+                    'signature': sig,
+                    'engagement': f"{reactions} reactions"
                 })
     except: pass
 
@@ -225,11 +305,15 @@ def gather_all_content():
             WHERE created_at > datetime('now', '-48 hours')
         ''')
         for title, newsletter, url in cursor.fetchall():
-            keywords = extract_keywords(title)
-            if keywords:
+            title = normalize_title(title)
+            sig = extract_topic_signature(title)
+            if sig:
                 all_content.append({
-                    'text': title, 'source': f'newsletter/{newsletter}', 'url': url,
-                    'keywords': keywords, 'engagement': 'newsletter'
+                    'title': title,
+                    'source': f'newsletter/{newsletter}',
+                    'url': url,
+                    'signature': sig,
+                    'engagement': 'newsletter'
                 })
     except: pass
 
@@ -240,13 +324,16 @@ def gather_all_content():
             WHERE created_at > datetime('now', '-48 hours')
         ''')
         for subject, sender, snippet in cursor.fetchall():
-            # Extract from both subject and snippet
-            keywords = extract_keywords(f"{subject} {snippet}")
-            if keywords:
+            title = normalize_title(subject)
+            sig = extract_topic_signature(f"{subject} {snippet}")
+            if sig:
                 sender_name = sender.split('<')[0].strip() if '<' in sender else sender[:20]
                 all_content.append({
-                    'text': subject, 'source': f'email/{sender_name}', 'url': '',
-                    'keywords': keywords, 'engagement': 'inbox'
+                    'title': title,
+                    'source': f'email/{sender_name}',
+                    'url': '',
+                    'signature': sig,
+                    'engagement': 'inbox'
                 })
     except: pass
 
@@ -257,12 +344,16 @@ def gather_all_content():
             WHERE created_at > datetime('now', '-24 hours')
         ''')
         for title, tagline, url, votes in cursor.fetchall():
-            keywords = extract_keywords(f"{title} {tagline}")
-            if keywords:
+            full_title = f"{title}: {tagline}" if tagline else title
+            full_title = normalize_title(full_title)
+            sig = extract_topic_signature(full_title)
+            if sig:
                 all_content.append({
-                    'text': f"{title}: {tagline}" if tagline else title,
-                    'source': 'producthunt', 'url': url,
-                    'keywords': keywords, 'engagement': f"{votes}⬆"
+                    'title': full_title,
+                    'source': 'producthunt',
+                    'url': url,
+                    'signature': sig,
+                    'engagement': f"{votes}⬆"
                 })
     except: pass
 
@@ -270,42 +361,106 @@ def gather_all_content():
     return all_content
 
 def aggregate_topics(all_content):
-    """Find topics that appear across multiple sources"""
+    """Find SPECIFIC topics that appear across multiple sources.
+    Group similar content by signature matching, use best title as topic name."""
 
-    # Map: keyword -> list of sources/content mentioning it
-    topic_mentions = defaultdict(list)
+    # Group content by similar signatures
+    clusters = []
 
     for item in all_content:
-        # Get the base source type (strip specific channel/author)
+        sig = item['signature']
         source_type = item['source'].split('/')[0].split('@')[0]
 
-        for keyword in item['keywords']:
-            topic_mentions[keyword].append({
-                'source_type': source_type,
-                'source_full': item['source'],
-                'text': item['text'],
-                'url': item['url'],
-                'engagement': item['engagement']
+        # Try to find existing cluster this matches
+        matched = False
+        for cluster in clusters:
+            if topics_match(sig, cluster['signature']):
+                # Add to existing cluster
+                if source_type not in cluster['source_types']:
+                    cluster['source_types'].add(source_type)
+                    cluster['sources'].append(item['source'])
+                cluster['items'].append(item)
+                # Update signature to be union
+                cluster['signature'] = cluster['signature'] | sig
+                matched = True
+                break
+
+        if not matched:
+            # Start new cluster
+            clusters.append({
+                'signature': sig,
+                'source_types': {source_type},
+                'sources': [item['source']],
+                'items': [item]
             })
 
-    # Score topics by how many DIFFERENT source types mention them
+    # Convert clusters to hot topics (only if 2+ source types)
     hot_topics = []
-    for keyword, mentions in topic_mentions.items():
-        # Get unique source types
-        source_types = set(m['source_type'] for m in mentions)
+    for cluster in clusters:
+        if len(cluster['source_types']) >= 2:
+            items = cluster['items']
 
-        # Only interested if mentioned in 2+ different source types
-        if len(source_types) >= 2:
+            # Find the best title - prefer good titles over long ones
+            good_titles = [i for i in items if is_good_title(i['title'], i.get('source', ''))]
+            if good_titles:
+                best_title = max(good_titles, key=lambda x: len(x['title']))['title']
+            else:
+                # Fall back to longest if no good titles
+                best_title = max(items, key=lambda x: len(x['title']))['title']
+
+            # Clean up the title one more time
+            best_title = normalize_title(best_title)
+
             hot_topics.append({
-                'topic': keyword,
-                'source_count': len(source_types),
-                'sources': list(source_types),
-                'mentions': mentions[:5],  # Keep top 5 examples
-                'total_mentions': len(mentions)
+                'topic': best_title,
+                'source_count': len(cluster['source_types']),
+                'sources': list(cluster['source_types']),
+                'mentions': [
+                    {
+                        'source_type': i['source'].split('/')[0],
+                        'source_full': i['source'],
+                        'text': i['title'],
+                        'url': i['url'],
+                        'engagement': i['engagement']
+                    }
+                    for i in items[:5]
+                ],
+                'total_mentions': len(items)
             })
 
-    # Sort by number of different sources, then by total mentions
-    hot_topics.sort(key=lambda x: (x['source_count'], x['total_mentions']), reverse=True)
+    # Score topics by: source count + relevance boost for builder topics
+    # Builder-relevant markers get a boost
+    builder_markers = {
+        'xcode', 'cursor', 'copilot', 'windsurf', 'vscode', 'neovim',
+        'claude', 'chatgpt', 'gemini', 'deepseek', 'llama', 'qwen',
+        'mcp', 'langchain', 'langgraph', 'crewai', 'autogen',
+        'n8n', 'zapier', 'composio', 'retell', 'vapi',
+        'openclaw', 'ollama', 'huggingface', 'supabase', 'vercel',
+        'deno', 'typescript', 'rust', 'golang',
+        'coding_agent', 'ai_agent', 'voice_agent', 'mcp_server',
+        'open_source', 'self-hosted', 'local_llm', 'launch', 'release',
+    }
+
+    # News/boring markers get penalized
+    news_markers = {'raided', 'investigation', 'lawsuit', 'arrested', 'died', 'war', 'election'}
+
+    for ht in hot_topics:
+        sig = set()
+        for item in ht.get('mentions', []):
+            text_lower = item.get('text', '').lower()
+            for marker in builder_markers:
+                if marker.replace('_', ' ') in text_lower or marker in text_lower:
+                    sig.add(marker)
+
+        # Calculate relevance score
+        builder_score = len(sig & builder_markers)
+        news_penalty = sum(1 for m in news_markers if m in ht['topic'].lower())
+
+        # Final score: source_count + builder_boost - news_penalty
+        ht['relevance_score'] = ht['source_count'] + (builder_score * 0.5) - (news_penalty * 2)
+
+    # Sort by relevance score, then source count
+    hot_topics.sort(key=lambda x: (x.get('relevance_score', 0), x['source_count'], x['total_mentions']), reverse=True)
 
     return hot_topics
 
