@@ -385,157 +385,42 @@ def get_system_status():
 
 # ============= TOPIC ANALYTICS =============
 
-def get_real_trending_topics():
-    """Get ACTUAL trending topics from ALL sources - HN, Reddit, Twitter, YouTube, IndieHackers, etc.
-    Aggregates from all our monitor tables, scores by engagement, and returns unified list."""
+def get_cross_source_hot_topics():
+    """Get topics that are trending ACROSS multiple sources.
+    This is the key insight: if something is mentioned on HN + Twitter + Newsletter,
+    it's actually hot - not just 'here are articles from IndieHackers'."""
     conn = sqlite3.connect(MEMORY_DB)
     cursor = conn.cursor()
 
-    all_items = []
+    hot_topics = []
 
-    # 1. Real trends (Google Daily, HN front page)
     try:
         cursor.execute('''
-            SELECT topic, source, traffic, relevance_score, url
-            FROM real_trends
+            SELECT topic, source_count, sources, mentions
+            FROM hot_topics
             WHERE created_at > datetime('now', '-12 hours')
-            ORDER BY relevance_score DESC
+            ORDER BY source_count DESC, created_at DESC
             LIMIT 15
         ''')
-        for topic, source, traffic, relevance, url in cursor.fetchall():
-            all_items.append({
-                "topic": topic, "source": source, "traffic": traffic,
-                "relevance": relevance or 0, "url": url, "score": relevance or 0
-            })
-    except: pass
+        for topic, source_count, sources_json, mentions_json in cursor.fetchall():
+            # Skip generic words
+            if topic.lower() in ['how', 'what', 'here', 'this', 'that', 'with', 'from', 'your']:
+                continue
 
-    # 2. IndieHacker posts (high signal for creators)
-    try:
-        cursor.execute('''
-            SELECT title, source, score, url FROM indiehacker_posts
-            WHERE created_at > datetime('now', '-24 hours')
-            ORDER BY score DESC LIMIT 10
-        ''')
-        for title, source, score, url in cursor.fetchall():
-            all_items.append({
-                "topic": title, "source": f"indiehackers", "traffic": f"{score}⬆",
-                "relevance": 25, "url": url, "score": score or 0  # IH is always relevant
-            })
-    except: pass
+            sources = json.loads(sources_json) if sources_json else []
+            mentions = json.loads(mentions_json) if mentions_json else []
 
-    # 3. YouTube videos (competitor content)
-    try:
-        cursor.execute('''
-            SELECT title, channel, url FROM youtube_videos
-            WHERE created_at > datetime('now', '-48 hours')
-            ORDER BY created_at DESC LIMIT 8
-        ''')
-        for title, channel, url in cursor.fetchall():
-            all_items.append({
-                "topic": title, "source": f"youtube/{channel}", "traffic": "new",
-                "relevance": 20, "url": url, "score": 50  # YouTube creators we track are relevant
+            hot_topics.append({
+                'topic': topic,
+                'source_count': source_count,
+                'sources': sources,
+                'mentions': mentions
             })
-    except: pass
-
-    # 4. Twitter trends
-    try:
-        cursor.execute('''
-            SELECT author, text, likes, url FROM twitter_trends
-            WHERE created_at > datetime('now', '-24 hours')
-            ORDER BY likes DESC LIMIT 8
-        ''')
-        for author, text, likes, url in cursor.fetchall():
-            all_items.append({
-                "topic": f"@{author}: {text[:80]}", "source": "twitter", "traffic": f"{likes} likes",
-                "relevance": 15, "url": url, "score": likes or 0
-            })
-    except: pass
-
-    # 5. Dev.to / Hashnode posts
-    try:
-        cursor.execute('''
-            SELECT title, author, url, reactions, source FROM devto_posts
-            WHERE created_at > datetime('now', '-48 hours')
-            ORDER BY reactions DESC LIMIT 6
-        ''')
-        for title, author, url, reactions, source in cursor.fetchall():
-            all_items.append({
-                "topic": title, "source": source, "traffic": f"{reactions} reactions",
-                "relevance": 20, "url": url, "score": reactions or 0
-            })
-    except: pass
-
-    # 6. Product Hunt launches
-    try:
-        cursor.execute('''
-            SELECT title, tagline, url, votes FROM producthunt_posts
-            WHERE created_at > datetime('now', '-24 hours')
-            ORDER BY votes DESC LIMIT 6
-        ''')
-        for title, tagline, url, votes in cursor.fetchall():
-            desc = f"{title}: {tagline}" if tagline else title
-            all_items.append({
-                "topic": desc[:100], "source": "producthunt", "traffic": f"{votes}⬆",
-                "relevance": 20, "url": url, "score": votes or 0
-            })
-    except: pass
-
-    # 7. Substack newsletters
-    try:
-        cursor.execute('''
-            SELECT title, newsletter, url FROM substack_posts
-            WHERE created_at > datetime('now', '-48 hours')
-            ORDER BY created_at DESC LIMIT 5
-        ''')
-        for title, newsletter, url in cursor.fetchall():
-            all_items.append({
-                "topic": title, "source": f"newsletter/{newsletter}", "traffic": "new",
-                "relevance": 15, "url": url, "score": 30
-            })
-    except: pass
-
-    # 8. Email newsletters (from Ben's inbox) - boost relevance since these are curated
-    try:
-        cursor.execute('''
-            SELECT subject, sender, snippet, relevance_score FROM email_newsletters
-            WHERE created_at > datetime('now', '-48 hours')
-            ORDER BY relevance_score DESC LIMIT 8
-        ''')
-        for subject, sender, snippet, relevance in cursor.fetchall():
-            # Extract sender name
-            sender_name = sender.split('<')[0].strip() if '<' in sender else sender[:30]
-            # Boost relevance - these are newsletters Ben subscribes to, so inherently relevant
-            boosted_relevance = max((relevance or 10) + 10, 20)
-            all_items.append({
-                "topic": subject, "source": f"📧 {sender_name}", "traffic": "inbox",
-                "relevance": boosted_relevance, "url": "", "score": boosted_relevance
-            })
-    except: pass
+    except Exception as e:
+        log(f"Hot topics query error: {e}")
 
     conn.close()
-
-    # Dedupe by URL
-    seen_urls = set()
-    seen_topics = set()
-    deduped = []
-    for item in all_items:
-        url = item.get("url", "")
-        topic_key = item["topic"][:40].lower()
-        if url and url in seen_urls:
-            continue
-        if topic_key in seen_topics:
-            continue
-        seen_urls.add(url)
-        seen_topics.add(topic_key)
-        deduped.append(item)
-
-    # Sort by relevance first, then by score
-    deduped.sort(key=lambda x: (x["relevance"], x["score"]), reverse=True)
-
-    # Only return niche-relevant items (relevance >= 15)
-    high_relevance = [i for i in deduped if i["relevance"] >= 15][:12]
-
-    return {"high_relevance": high_relevance}
+    return hot_topics
 
 # ============= BRIEFING BUILDER =============
 
@@ -583,22 +468,30 @@ _{openers.get(day_name, "Let's go.")}_""")
             twitter_lines.append(f"Recent: {engagement.get('total_likes', 0)} likes, {engagement.get('total_retweets', 0)} RTs")
         sections.append("\n".join(twitter_lines))
 
-    # HOT TOPICS - Only niche-relevant content (AI, automation, indie, creator, tech)
-    real_trends = get_real_trending_topics()
-    if real_trends.get("high_relevance"):
-        topics_lines = ["🔥 *WHAT'S HOT TODAY*"]
+    # HOT TOPICS - Topics trending ACROSS multiple sources
+    hot_topics = get_cross_source_hot_topics()
+    if hot_topics:
+        topics_lines = ["🔥 *HOT TOPICS* (trending across multiple sources)"]
 
-        for item in real_trends["high_relevance"][:10]:
-            topic = item["topic"][:100]
-            source = item["source"]
-            traffic = item["traffic"]
-            url = item.get("url", "")
+        for ht in hot_topics[:8]:
+            topic_name = ht['topic'].upper()
+            source_count = ht['source_count']
+            sources = ', '.join(ht['sources'][:4])
 
-            if url:
-                topics_lines.append(f"\n• [{topic}]({url})")
-            else:
-                topics_lines.append(f"\n• {topic}")
-            topics_lines.append(f"  _{source} | {traffic}_")
+            topics_lines.append(f"\n*{topic_name}* — {source_count} sources")
+            topics_lines.append(f"_{sources}_")
+
+            # Show 2 example mentions with links
+            for mention in ht['mentions'][:2]:
+                text = mention.get('text', '')[:60]
+                url = mention.get('url', '')
+                source = mention.get('source_full', '')
+
+                if url:
+                    topics_lines.append(f"  • [{text}...]({url})")
+                else:
+                    topics_lines.append(f"  • {text}...")
+                topics_lines.append(f"    _{source}_")
 
         sections.append("\n".join(topics_lines))
 
@@ -637,15 +530,16 @@ def main():
 
     # Run monitors first to refresh data
     monitors = [
-        # CRITICAL: Real trends must run first - this pulls ACTUAL trending topics
-        ("/root/clawd/scripts/real-trends-monitor.py", "Real Trends (Google Daily, HN, Reddit)"),
+        # Data collection from all sources
+        ("/root/clawd/scripts/real-trends-monitor.py", "Real Trends (Google Daily, HN)"),
         ("/root/clawd/scripts/competitor-monitor.py", "Competitors"),
         ("/root/clawd/scripts/email-newsletter-monitor.py", "Email Newsletters"),
-        # Other monitors for additional sources
         ("/root/clawd/scripts/indiehacker-monitor.py", "Indie Hacker"),
         ("/root/clawd/scripts/producthunt-monitor.py", "Product Hunt"),
         ("/root/clawd/scripts/youtube-trending-monitor.py", "YouTube"),
         ("/root/clawd/scripts/devto-hashnode-monitor.py", "Dev.to/Hashnode"),
+        # CRITICAL: Topic aggregator runs LAST - finds cross-source hot topics
+        ("/root/clawd/scripts/topic-aggregator.py", "Topic Aggregator"),
     ]
 
     for script, name in monitors:
