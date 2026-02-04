@@ -19,7 +19,7 @@ TWITTER_COMPETITORS = [
     "OpenAI",            # Official OpenAI updates
     "AnthropicAI",       # Claude updates
     "GoogleDeepMind",    # Gemini, research
-    "xaborz",            # xAI / Grok
+    "xai",               # xAI / Grok
     "NVIDIAAI",          # GPU/inference news
 
     # === RESEARCHERS & THOUGHT LEADERS ===
@@ -38,9 +38,9 @@ TWITTER_COMPETITORS = [
     "kimmonismus",       # Superintelligence newsletter - 210k+ subs
     "_akhaliq",          # Papers/research drops - fastest for new papers
     "bensbites",         # Ben's Bites - casual, fun AI curation
-    "taborheneuron",     # The Neuron - beginner-to-expert friendly
-    "superaborhumanai",  # Superhuman AI - 1M+ readers, 3-min daily
-    "taborldrai",        # TLDR AI - ultra time-saver format
+    "theneuron",         # The Neuron - beginner-to-expert friendly
+    "superhumanai",      # Superhuman AI - 1M+ readers, 3-min daily
+    "tldrai",            # TLDR AI - ultra time-saver format
     "theresanaiforthat", # TAAFT - tool discovery focused
     "AravSrinivas",      # Perplexity CEO
 
@@ -68,17 +68,17 @@ YOUTUBE_COMPETITORS = [
     ("Fireship", "UCsBjURrPoezykLs9EqgamOA"),
     ("Matt Wolfe", "UCJIfeSCssxSC_Dhc5s7woww"),
     ("AI Explained", "UCNJ1Ymd5yFuUPtn21xtRbbw"),
-    ("The AI Advantage", "UCLZGCe59kwxd9DlmEMVCPuw"),
-    ("Liam Ottley", "UCWRBqP4RG1m_G96Hrg0DT-w"),
+    ("The AI Advantage", "UCHhYXsLBEVVnbvsq57n1MTQ"),
+    ("Liam Ottley", "UCui4jxDaMb53Gdh-AZUTPAg"),
     ("Greg Isenberg", "UCGwuxdEeCf0TIA2RbPOj-8g"),
-    ("My First Million", "UC5vNPzGPPQTIO7YCgjzU9PQ"),
+    ("My First Million", "UCyaN6mg5u8Cjy2ZI4ikWaug"),
     ("Two Minute Papers", "UCbfYPyITQ-7l4upoX8nvctg"),
     ("Yannic Kilcher", "UCZHmQk67mSJgfCCTn7xBfew"),
-    ("AI Jason", "UCcOLT-yWC4TeJ2p3jKHOlFw"),
-    ("David Ondrej", "UCYFyXmXjCUcshOUZPxXWqUQ"),
-    ("WorldofAI", "UCLq3pSiPGNew_9eXq1CPxww"),
-    ("Wes Roth", "UC_rVR86DT8ihdnjVFUwhHqw"),
-    ("TheAIGRID", "UCnHM8csnBLLW3KyWdYFOHOA"),
+    ("AI Jason", "UCrXSVX9a1mj8l0CMLwKgMVw"),
+    ("David Ondrej", "UCPGrgwfbkjTIgPoOh2q1BAg"),
+    ("WorldofAI", "UC2WmuBuFq6gL08QYG-JjXKw"),
+    ("Wes Roth", "UCqcbQf6yw5KzRoDDcZ_wBSw"),
+    ("TheAIGRID", "UCbY9xX3_jW5c2fjlZVBI4cg"),
 ]
 
 def log(msg):
