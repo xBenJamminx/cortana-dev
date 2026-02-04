@@ -1,0 +1,101 @@
+# 💡 Content Ideas — Wednesday, February 04
+
+Generated: 12:57 PM
+
+---
+
+## Top Opportunities
+
+### 1. 2024 Executive Challenge Video Diary
+
+**Source:** Competitor (Greg Isenberg)
+**Link:** https://www.youtube.com/shorts/bzDY1_3xWEU
+
+**Angles:**
+- My perspective on what @Greg Isenberg posted
+- Building on @Greg Isenberg's point
+
+---
+
+### 2. Executive Challenge From Alumni Judges
+
+**Source:** Competitor (Greg Isenberg)
+**Link:** https://www.youtube.com/shorts/iWV2AueH7bI
+
+**Angles:**
+- My perspective on what @Greg Isenberg posted
+- Building on @Greg Isenberg's point
+
+---
+
+### 3. Anthropic: Our AI just created a tool that can ‘automate all
+
+**Source:** Competitor (AI Explained)
+**Link:** https://www.youtube.com/watch?v=wYs6HWZ2FdM
+
+**Angles:**
+- My perspective on what @AI Explained posted
+- Building on @AI Explained's point
+
+---
+
+### 4. Claude AI Co-founder Publishes 4 Big Claims about Near Futur
+
+**Source:** Competitor (AI Explained)
+**Link:** https://www.youtube.com/watch?v=Iar4yweKGoI
+
+**Angles:**
+- My perspective on what @AI Explained posted
+- Building on @AI Explained's point
+
+---
+
+### 5. Career advice in AI: Where to work? | Lex Fridman Podcast
+
+**Source:** Competitor (Matt Wolfe)
+**Link:** https://www.youtube.com/watch?v=n0YRllg7xYg
+
+**Angles:**
+- My perspective on what @Matt Wolfe posted
+- Building on @Matt Wolfe's point
+
+---
+
+### 6. Xcode 26.3 – Developers can leverage coding agents
+
+**Source:** Trending (hackernews)
+**Signal:** 262 points
+
+**Angles:**
+- Hot take: My thoughts on Xcode 26.3 – Developers can leverage coding agents
+- Thread: What Xcode 26.3 – Developers can leverage coding agents means for builders
+
+---
+
+### 7. Agent Skills
+
+**Source:** Trending (hackernews)
+**Signal:** 400 points
+
+**Angles:**
+- Hot take: My thoughts on Agent Skills
+- Thread: What Agent Skills means for builders
+
+---
+
+
+## Quick Wins (Low Effort)
+
+- Reply to a trending thread with your take
+- Share one thing you built/learned today
+- Quote tweet a competitor with added value
+
+## For Later (Higher Effort)
+
+- Deep dive on the top trending topic
+- Video breakdown of a workflow
+- Build log from Retell progress
+
+---
+
+*Pick 1-2 and execute. Don't overthink.*
