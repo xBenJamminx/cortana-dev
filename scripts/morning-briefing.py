@@ -28,15 +28,55 @@ def log(msg):
         f.write(f"[{timestamp}] {msg}\n")
 
 def send_telegram(message, parse_mode="Markdown"):
+    """Send message to Telegram, splitting if too long"""
     try:
         url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
-        r = requests.post(url, json={
-            "chat_id": CHAT_ID,
-            "text": message,
-            "parse_mode": parse_mode,
-            "disable_web_page_preview": True
-        }, timeout=30)
-        return r.json().get("ok", False)
+
+        # Telegram limit is 4096, but stay safe at 3500
+        MAX_LEN = 3500
+
+        if len(message) <= MAX_LEN:
+            r = requests.post(url, json={
+                "chat_id": CHAT_ID,
+                "text": message,
+                "parse_mode": parse_mode,
+                "disable_web_page_preview": True
+            }, timeout=30)
+            return r.json().get("ok", False)
+        else:
+            # Split into multiple messages by sections
+            import time
+            sections = message.split("\n\n")
+            current_msg = ""
+            success = True
+
+            for section in sections:
+                if len(current_msg) + len(section) + 2 > MAX_LEN:
+                    # Send current message
+                    if current_msg.strip():
+                        r = requests.post(url, json={
+                            "chat_id": CHAT_ID,
+                            "text": current_msg,
+                            "parse_mode": parse_mode,
+                            "disable_web_page_preview": True
+                        }, timeout=30)
+                        success = success and r.json().get("ok", False)
+                        time.sleep(0.5)
+                    current_msg = section
+                else:
+                    current_msg = current_msg + "\n\n" + section if current_msg else section
+
+            # Send remaining
+            if current_msg.strip():
+                r = requests.post(url, json={
+                    "chat_id": CHAT_ID,
+                    "text": current_msg,
+                    "parse_mode": parse_mode,
+                    "disable_web_page_preview": True
+                }, timeout=30)
+                success = success and r.json().get("ok", False)
+
+            return success
     except Exception as e:
         log(f"Telegram error: {e}")
         return False
@@ -345,131 +385,157 @@ def get_system_status():
 
 # ============= TOPIC ANALYTICS =============
 
-def get_trending_topics_with_context():
-    """Get trending topics with related content from all sources"""
-    import re
-    from collections import Counter
-
-    def normalize(t):
-        return re.sub(r'[^a-z0-9]', '', t.lower())
-
-    all_topics = {}
-
-    # Hot keywords to detect
-    hot_keywords = [
-        'chatgpt', 'claude', 'gemini', 'deepseek', 'openai', 'anthropic',
-        'gpt-4', 'gpt4', 'gpt-5', 'llm', 'ai agent', 'ai agents',
-        'automation', 'no-code', 'nocode', 'cursor', 'copilot',
-        'midjourney', 'sora', 'dalle', 'flux', 'n8n', 'make.com',
-        'saas', 'indie hacker', 'solopreneur', 'creator economy',
-        'viral', 'launch', 'shipped', 'vibe coding', 'mcp'
-    ]
-
+def get_real_trending_topics():
+    """Get ACTUAL trending topics from ALL sources - HN, Reddit, Twitter, YouTube, IndieHackers, etc.
+    Aggregates from all our monitor tables, scores by engagement, and returns unified list."""
     conn = sqlite3.connect(MEMORY_DB)
     cursor = conn.cursor()
 
-    # Google Trends (high signal)
+    all_items = []
+
+    # 1. Real trends (Google Daily, HN front page)
     try:
-        cursor.execute("SELECT term, traffic, url FROM google_trends WHERE created_at > datetime('now', '-24 hours')")
-        for term, traffic, url in cursor.fetchall():
-            key = normalize(term)
-            if key and len(key) > 2:
-                if key not in all_topics:
-                    all_topics[key] = {"name": term, "sources": [], "score": 0, "content": []}
-                all_topics[key]["sources"].append("trends")
-                all_topics[key]["score"] += 100
+        cursor.execute('''
+            SELECT topic, source, traffic, relevance_score, url
+            FROM real_trends
+            WHERE created_at > datetime('now', '-12 hours')
+            ORDER BY relevance_score DESC
+            LIMIT 15
+        ''')
+        for topic, source, traffic, relevance, url in cursor.fetchall():
+            all_items.append({
+                "topic": topic, "source": source, "traffic": traffic,
+                "relevance": relevance or 0, "url": url, "score": relevance or 0
+            })
     except: pass
 
-    # Twitter - extract topics and keep tweets as content
+    # 2. IndieHacker posts (high signal for creators)
     try:
-        cursor.execute("SELECT author, text, url, likes FROM twitter_trends WHERE created_at > datetime('now', '-24 hours')")
-        for author, text, url, likes in cursor.fetchall():
-            text_lower = text.lower()
-            # Find keywords
-            for kw in hot_keywords:
-                if kw in text_lower:
-                    key = normalize(kw)
-                    if key not in all_topics:
-                        all_topics[key] = {"name": kw, "sources": [], "score": 0, "content": []}
-                    if "twitter" not in all_topics[key]["sources"]:
-                        all_topics[key]["sources"].append("twitter")
-                    all_topics[key]["score"] += max(likes or 0, 20)
-                    all_topics[key]["content"].append({
-                        "type": "tweet", "author": author, "text": text[:100], "url": url
-                    })
-            # Hashtags
-            for tag in re.findall(r'#(\w+)', text):
-                key = normalize(tag)
-                if key and len(key) > 2:
-                    if key not in all_topics:
-                        all_topics[key] = {"name": tag, "sources": [], "score": 0, "content": []}
-                    if "twitter" not in all_topics[key]["sources"]:
-                        all_topics[key]["sources"].append("twitter")
-                    all_topics[key]["score"] += max(likes or 0, 10)
-                    all_topics[key]["content"].append({
-                        "type": "tweet", "author": author, "text": text[:100], "url": url
-                    })
+        cursor.execute('''
+            SELECT title, source, score, url FROM indiehacker_posts
+            WHERE created_at > datetime('now', '-24 hours')
+            ORDER BY score DESC LIMIT 10
+        ''')
+        for title, source, score, url in cursor.fetchall():
+            all_items.append({
+                "topic": title, "source": f"indiehackers", "traffic": f"{score}⬆",
+                "relevance": 25, "url": url, "score": score or 0  # IH is always relevant
+            })
     except: pass
 
-    # YouTube - extract topics from titles
+    # 3. YouTube videos (competitor content)
     try:
-        cursor.execute("SELECT title, channel, url FROM youtube_videos WHERE created_at > datetime('now', '-48 hours')")
+        cursor.execute('''
+            SELECT title, channel, url FROM youtube_videos
+            WHERE created_at > datetime('now', '-48 hours')
+            ORDER BY created_at DESC LIMIT 8
+        ''')
         for title, channel, url in cursor.fetchall():
-            title_lower = title.lower()
-            for kw in hot_keywords:
-                if kw in title_lower:
-                    key = normalize(kw)
-                    if key not in all_topics:
-                        all_topics[key] = {"name": kw, "sources": [], "score": 0, "content": []}
-                    if "youtube" not in all_topics[key]["sources"]:
-                        all_topics[key]["sources"].append("youtube")
-                    all_topics[key]["score"] += 30
-                    all_topics[key]["content"].append({
-                        "type": "video", "title": title, "channel": channel, "url": url
-                    })
+            all_items.append({
+                "topic": title, "source": f"youtube/{channel}", "traffic": "new",
+                "relevance": 20, "url": url, "score": 50  # YouTube creators we track are relevant
+            })
     except: pass
 
-    # Dev.to / Hashnode
+    # 4. Twitter trends
     try:
-        cursor.execute("SELECT title, author, url, reactions, source FROM devto_posts WHERE created_at > datetime('now', '-48 hours')")
+        cursor.execute('''
+            SELECT author, text, likes, url FROM twitter_trends
+            WHERE created_at > datetime('now', '-24 hours')
+            ORDER BY likes DESC LIMIT 8
+        ''')
+        for author, text, likes, url in cursor.fetchall():
+            all_items.append({
+                "topic": f"@{author}: {text[:80]}", "source": "twitter", "traffic": f"{likes} likes",
+                "relevance": 15, "url": url, "score": likes or 0
+            })
+    except: pass
+
+    # 5. Dev.to / Hashnode posts
+    try:
+        cursor.execute('''
+            SELECT title, author, url, reactions, source FROM devto_posts
+            WHERE created_at > datetime('now', '-48 hours')
+            ORDER BY reactions DESC LIMIT 6
+        ''')
         for title, author, url, reactions, source in cursor.fetchall():
-            title_lower = title.lower()
-            for kw in hot_keywords:
-                if kw in title_lower:
-                    key = normalize(kw)
-                    if key not in all_topics:
-                        all_topics[key] = {"name": kw, "sources": [], "score": 0, "content": []}
-                    if "dev" not in all_topics[key]["sources"]:
-                        all_topics[key]["sources"].append("dev")
-                    all_topics[key]["score"] += min(reactions or 0, 20)
-                    all_topics[key]["content"].append({
-                        "type": "article", "title": title, "source": source, "url": url
-                    })
+            all_items.append({
+                "topic": title, "source": source, "traffic": f"{reactions} reactions",
+                "relevance": 20, "url": url, "score": reactions or 0
+            })
     except: pass
 
-    # Product Hunt
+    # 6. Product Hunt launches
     try:
-        cursor.execute("SELECT title, tagline, url, votes FROM producthunt_posts WHERE created_at > datetime('now', '-24 hours')")
+        cursor.execute('''
+            SELECT title, tagline, url, votes FROM producthunt_posts
+            WHERE created_at > datetime('now', '-24 hours')
+            ORDER BY votes DESC LIMIT 6
+        ''')
         for title, tagline, url, votes in cursor.fetchall():
-            combined = (title + " " + (tagline or "")).lower()
-            for kw in hot_keywords:
-                if kw in combined:
-                    key = normalize(kw)
-                    if key not in all_topics:
-                        all_topics[key] = {"name": kw, "sources": [], "score": 0, "content": []}
-                    if "ph" not in all_topics[key]["sources"]:
-                        all_topics[key]["sources"].append("ph")
-                    all_topics[key]["score"] += min(votes or 0, 30)
-                    all_topics[key]["content"].append({
-                        "type": "product", "title": title, "tagline": tagline, "url": url
-                    })
+            desc = f"{title}: {tagline}" if tagline else title
+            all_items.append({
+                "topic": desc[:100], "source": "producthunt", "traffic": f"{votes}⬆",
+                "relevance": 20, "url": url, "score": votes or 0
+            })
+    except: pass
+
+    # 7. Substack newsletters
+    try:
+        cursor.execute('''
+            SELECT title, newsletter, url FROM substack_posts
+            WHERE created_at > datetime('now', '-48 hours')
+            ORDER BY created_at DESC LIMIT 5
+        ''')
+        for title, newsletter, url in cursor.fetchall():
+            all_items.append({
+                "topic": title, "source": f"newsletter/{newsletter}", "traffic": "new",
+                "relevance": 15, "url": url, "score": 30
+            })
+    except: pass
+
+    # 8. Email newsletters (from Ben's inbox) - boost relevance since these are curated
+    try:
+        cursor.execute('''
+            SELECT subject, sender, snippet, relevance_score FROM email_newsletters
+            WHERE created_at > datetime('now', '-48 hours')
+            ORDER BY relevance_score DESC LIMIT 8
+        ''')
+        for subject, sender, snippet, relevance in cursor.fetchall():
+            # Extract sender name
+            sender_name = sender.split('<')[0].strip() if '<' in sender else sender[:30]
+            # Boost relevance - these are newsletters Ben subscribes to, so inherently relevant
+            boosted_relevance = max((relevance or 10) + 10, 20)
+            all_items.append({
+                "topic": subject, "source": f"📧 {sender_name}", "traffic": "inbox",
+                "relevance": boosted_relevance, "url": "", "score": boosted_relevance
+            })
     except: pass
 
     conn.close()
 
-    # Sort by score and return top topics
-    ranked = sorted(all_topics.values(), key=lambda x: x["score"], reverse=True)
-    return ranked[:8]
+    # Dedupe by URL
+    seen_urls = set()
+    seen_topics = set()
+    deduped = []
+    for item in all_items:
+        url = item.get("url", "")
+        topic_key = item["topic"][:40].lower()
+        if url and url in seen_urls:
+            continue
+        if topic_key in seen_topics:
+            continue
+        seen_urls.add(url)
+        seen_topics.add(topic_key)
+        deduped.append(item)
+
+    # Sort by relevance first, then by score
+    deduped.sort(key=lambda x: (x["relevance"], x["score"]), reverse=True)
+
+    # Only return niche-relevant items (relevance >= 15)
+    high_relevance = [i for i in deduped if i["relevance"] >= 15][:12]
+
+    return {"high_relevance": high_relevance}
 
 # ============= BRIEFING BUILDER =============
 
@@ -517,54 +583,34 @@ _{openers.get(day_name, "Let's go.")}_""")
             twitter_lines.append(f"Recent: {engagement.get('total_likes', 0)} likes, {engagement.get('total_retweets', 0)} RTs")
         sections.append("\n".join(twitter_lines))
 
-    # HOT TOPICS - The main event
-    topics = get_trending_topics_with_context()
-    if topics:
-        topics_lines = ["🔥 *HOT TOPICS* (content opportunities)"]
-        for topic in topics[:5]:
-            name = topic["name"].upper()
-            sources = ", ".join(topic["sources"])
-            topics_lines.append(f"\n*{name}* _{sources}_")
+    # HOT TOPICS - Only niche-relevant content (AI, automation, indie, creator, tech)
+    real_trends = get_real_trending_topics()
+    if real_trends.get("high_relevance"):
+        topics_lines = ["🔥 *WHAT'S HOT TODAY*"]
 
-            # Show up to 2 pieces of content per topic
-            for item in topic["content"][:2]:
-                if item["type"] == "tweet":
-                    text = item["text"][:50].replace("\n", " ") + "..."
-                    topics_lines.append(f"  🐦 @{item['author']}: {text}")
-                elif item["type"] == "video":
-                    topics_lines.append(f"  📺 {item['title'][:40]}... ({item['channel']})")
-                elif item["type"] == "article":
-                    topics_lines.append(f"  📝 {item['title'][:45]}...")
-                elif item["type"] == "product":
-                    topics_lines.append(f"  🚀 {item['title']}: {(item['tagline'] or '')[:30]}...")
+        for item in real_trends["high_relevance"][:10]:
+            topic = item["topic"][:100]
+            source = item["source"]
+            traffic = item["traffic"]
+            url = item.get("url", "")
+
+            if url:
+                topics_lines.append(f"\n• [{topic}]({url})")
+            else:
+                topics_lines.append(f"\n• {topic}")
+            topics_lines.append(f"  _{source} | {traffic}_")
 
         sections.append("\n".join(topics_lines))
 
-    # Fresh launches (PH + Indie)
+    # Fresh Product Hunt launches only (IH is now in hot topics)
     ph_launches = get_producthunt_launches()
-    ih_posts = get_indiehacker_posts()
-    if ph_launches or ih_posts:
-        launch_lines = ["🚀 *Fresh Launches*"]
-        for item in (ph_launches or [])[:3]:
+    if ph_launches:
+        launch_lines = ["🚀 *Product Hunt Today*"]
+        for item in (ph_launches or [])[:4]:
             title, tagline, url, votes = item
-            launch_lines.append(f"• [{title}]({url}) ({votes}⬆)")
-        for item in (ih_posts or [])[:2]:
-            title, source, score, url = item
-            launch_lines.append(f"• [{title}]({url})")
+            votes_str = f" ({votes}⬆)" if votes else ""
+            launch_lines.append(f"• [{title}]({url}){votes_str}")
         sections.append("\n".join(launch_lines))
-
-    # Quick hits - YouTube + Newsletters (brief)
-    yt = get_youtube_videos()
-    nl = get_substack_posts()
-    if yt or nl:
-        quick_lines = ["📬 *Quick Reads/Watches*"]
-        for item in (yt or [])[:2]:
-            title, channel, url = item
-            quick_lines.append(f"• [{title[:35]}...]({url})")
-        for item in (nl or [])[:2]:
-            title, newsletter, url = item
-            quick_lines.append(f"• [{title[:35]}...]({url})")
-        sections.append("\n".join(quick_lines))
 
     # Content Pipeline (Airtable)
     content = get_airtable_content_queue()
@@ -591,15 +637,15 @@ def main():
 
     # Run monitors first to refresh data
     monitors = [
-        ("/root/clawd/scripts/trending-monitor.py", "Trending"),
+        # CRITICAL: Real trends must run first - this pulls ACTUAL trending topics
+        ("/root/clawd/scripts/real-trends-monitor.py", "Real Trends (Google Daily, HN, Reddit)"),
+        ("/root/clawd/scripts/competitor-monitor.py", "Competitors"),
+        ("/root/clawd/scripts/email-newsletter-monitor.py", "Email Newsletters"),
+        # Other monitors for additional sources
         ("/root/clawd/scripts/indiehacker-monitor.py", "Indie Hacker"),
         ("/root/clawd/scripts/producthunt-monitor.py", "Product Hunt"),
-        ("/root/clawd/scripts/google-trends-monitor.py", "Google Trends"),
-        ("/root/clawd/scripts/twitter-trends-monitor.py", "Twitter Trends"),
         ("/root/clawd/scripts/youtube-trending-monitor.py", "YouTube"),
         ("/root/clawd/scripts/devto-hashnode-monitor.py", "Dev.to/Hashnode"),
-        ("/root/clawd/scripts/substack-monitor.py", "Newsletters"),
-        ("/root/clawd/scripts/exploding-topics-monitor.py", "Exploding Topics"),
     ]
 
     for script, name in monitors:
