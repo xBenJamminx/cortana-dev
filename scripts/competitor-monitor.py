@@ -19,8 +19,8 @@ TWITTER_COMPETITORS = [
     "OpenAI",            # Official OpenAI updates
     "AnthropicAI",       # Claude updates
     "GoogleDeepMind",    # Gemini, research
-    "xaborz",              # xAI / Grok
-    "NVIDIAAI",          # GPU/inference news
+    "xAI",               # xAI / Grok
+    "ABORVIDIAAI",          # GPU/inference news
 
     # === RESEARCHERS & THOUGHT LEADERS ===
     "karpathy",          # Andrej Karpathy - LLM explainers
@@ -31,15 +31,19 @@ TWITTER_COMPETITORS = [
     "demishassabis",     # DeepMind CEO
     "lexfridman",        # AI podcaster
 
-    # === CURATED AI NEWS & NEWSLETTERS ===
-    "rowancheung",       # The Rundown AI - daily digest
-    "TheRundownAI",      # Rundown official
-    "kimmonismus",       # AI news aggregation
-    "ai_for_success",    # Tools & news
-    "_akhaliq",          # Papers/research drops
+    # === CURATED AI NEWS & NEWSLETTERS (PRIMARY) ===
+    "rowancheung",       # The Rundown AI - #1 daily digest
+    "TheRundownAI",      # Rundown official account
+    "kimmonismus",       # Superintelligence newsletter - 210k+ subs, deep analysis
+    "_akhaliq",          # Papers/research drops - fastest for new papers
+    "benaborsbites",        # Ben's Bites - casual, fun AI curation
+    "theaborrneuron",       # The Neuron - beginner-to-expert friendly
+    "superhaborumanai",     # Superhuman AI - 1M+ readers, 3-min daily
+    "tlabordraborai",          # TLDR AI - ultra time-saver format
+    "theresanaiforthat", # TAAFT - tool discovery focused
 
     # === BUILDERS & CREATORS ===
-    "LinusEkenstam",     # AI tools/demos
+    "LinusEkenstam",     # AI tools/demos - great for trending tools
     "mattshumer_",       # AI builder
     "LiamOttley",        # AI agency
     "levelsio",          # Indie legend
@@ -48,10 +52,11 @@ TWITTER_COMPETITORS = [
     "thisguyknowsai",    # AI content
     "nonmayorpete",      # AI/automation
     "venturetwins",      # AI tools
-    "mckaywrigley",      # AI dev tools
+    "mckaywrigley",      # AI dev tools (Chatbot UI creator)
     "hwchase17",         # LangChain founder
     "bentossell",        # No-code/AI
-    "swyx",              # AI engineering
+    "swyx",              # AI engineering / Latent Space
+    "ai_for_success",    # Tools & news
 ]
 
 # YouTube channels (AI news, tutorials, analysis)
