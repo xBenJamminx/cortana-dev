@@ -1,0 +1,37 @@
+🎯 *Content Intel* (2026-02-04 04:11)
+
+*🔥 TRENDING TOPICS*
+🔴 *TYPESCRIPT* `[dev, hn, news]`
+   • [Lessons learned shipping 500 units of my first hardware prod](https://www.simonberens.com/p/lessons-learned-shipping-500-units) (407⬆)
+   • [Deno Sandbox](https://deno.com/blog/introducing-deno-sandbox) (355⬆)
+   • [Xcode 26.3 – Developers can leverage coding agents directly ](https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/) (260⬆)
+
+🔴 *AI AGENTS* `[dev, hn, news]`
+   • [Agent Skills](https://agentskills.io/home) (395⬆)
+   • [Xcode 26.3 – Developers can leverage coding agents directly ](https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/) (260⬆)
+   • [Beyond Chatbots: Building Task-Driven Agentic Interfaces in ](https://dev.to/gde/beyond-chatbots-building-task-driven-agentic-interfaces-in-google-workspace-with-a2ui-and-gemini-c2d) (6⬆)
+
+🟡 *LLM* `[dev, hn]`
+   • [Qwen3-Coder-Next](https://qwen.ai/blog?id=qwen3-coder-next) (594⬆)
+   • [Realtime Multimodal AI on Ray-Ban Meta Glasses with Gemini L](https://dev.to/googleai/realtime-multimodal-ai-on-ray-ban-meta-glasses-with-gemini-live-livekit-45mn) (16⬆)
+   • [Beyond Chatbots: Building Task-Driven Agentic Interfaces in ](https://dev.to/gde/beyond-chatbots-building-task-driven-agentic-interfaces-in-google-workspace-with-a2ui-and-gemini-c2d) (6⬆)
+
+⚪ *RUST* `[hn]`
+   • [Prek: A better, faster, drop-in pre-commit replacement, engi](https://github.com/j178/prek) (204⬆)
+
+⚪ *SIDE PROJECT* `[hn]`
+   • [Lessons learned shipping 500 units of my first hardware prod](https://www.simonberens.com/p/lessons-learned-shipping-500-units) (407⬆)
+
+🟡 *STARTUP* `[hn, news]`
+   • [Y Combinator will let founders receive funds in stablecoins](https://fortune.com/2026/02/03/famed-startup-incubator-y-combinator-to-let-founders-receive-funds-in-stablecoins/) (88⬆)
+   • [Launch HN: Modelence (YC S25) – App Builder with TypeScript ](https://news.ycombinator.com/item?id=46872733) (67⬆)
+   • [Two Stanford students launch $2M startup accelerator for stu](https://www.msn.com/en-us/money/careers/two-stanford-students-launch-2m-startup-accelerator-for-students-nationwide/ar-AA1VwlRC)
+
+*🚀 FRESH LAUNCHES*
+• [Grid Overlay Pro](https://www.producthunt.com/products/grid-overlay-pro)
+• [Codex by OpenAI](https://www.producthunt.com/products/openai)
+• [Grok Imagine 1.0](https://www.producthunt.com/products/grok-com-beta)
+• [AI Doc Writer by Trupeer](https://www.producthunt.com/products/trupeer)
+• [Hugo](https://www.producthunt.com/products/crisp)
+
+_🔴 3+ platforms | 🟡 2 platforms | ⚪ 1 platform_
