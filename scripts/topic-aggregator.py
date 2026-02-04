@@ -23,44 +23,101 @@ def log(msg):
         f.write(f"[{timestamp}] {msg}\n")
 
 def extract_keywords(text):
-    """Extract meaningful keywords/phrases from text"""
+    """Extract meaningful keywords/phrases from text - focus on specific products/concepts, not generic words"""
     if not text:
         return []
 
     text_lower = text.lower()
     keywords = []
 
-    # Known hot topics to look for (products, companies, concepts)
+    # Known hot topics - SPECIFIC products, tools, and concepts (not generic words)
     known_topics = [
-        'claude', 'claude code', 'chatgpt', 'gpt-4', 'gpt-5', 'openai', 'anthropic',
-        'gemini', 'deepseek', 'mistral', 'llama', 'qwen', 'cursor', 'copilot',
-        'mcp', 'model context protocol', 'ai agent', 'ai agents', 'agentic',
-        'vibe coding', 'vibe-coding', 'coding agent', 'xcode', 'windsurf',
-        'n8n', 'make.com', 'zapier', 'automation', 'workflow',
-        'saas', 'micro-saas', 'indie hacker', 'solopreneur', 'bootstrapped',
-        'no-code', 'nocode', 'low-code', 'api', 'sdk',
-        'midjourney', 'sora', 'runway', 'flux', 'stable diffusion',
-        'rag', 'vector', 'embedding', 'fine-tuning', 'fine tuning',
-        'open source', 'self-hosted', 'local llm', 'ollama',
-        'retell', 'vapi', 'voice ai', 'speech to text', 'tts',
-        'composio', 'langchain', 'langgraph', 'crewai', 'autogen',
-        'twitter', 'x algorithm', 'youtube algorithm', 'content creation',
-        'deno', 'bun', 'typescript', 'rust', 'golang',
+        # AI Models & Companies
+        ('claude', 'Claude'), ('claude code', 'Claude Code'), ('chatgpt', 'ChatGPT'),
+        ('gpt-4', 'GPT-4'), ('gpt-5', 'GPT-5'), ('gpt 4o', 'GPT-4o'), ('o1', 'o1'),
+        ('openai', 'OpenAI'), ('anthropic', 'Anthropic'), ('gemini', 'Gemini'),
+        ('deepseek', 'DeepSeek'), ('mistral', 'Mistral'), ('llama', 'Llama'),
+        ('qwen', 'Qwen'), ('grok', 'Grok'),
+
+        # Dev Tools
+        ('cursor', 'Cursor'), ('copilot', 'Copilot'), ('windsurf', 'Windsurf'),
+        ('xcode', 'Xcode'), ('vscode', 'VSCode'), ('neovim', 'Neovim'),
+
+        # Protocols & Frameworks
+        ('mcp', 'MCP'), ('model context protocol', 'MCP'),
+        ('langchain', 'LangChain'), ('langgraph', 'LangGraph'),
+        ('crewai', 'CrewAI'), ('autogen', 'AutoGen'),
+
+        # Concepts (specific)
+        ('coding agent', 'Coding Agents'), ('ai agent', 'AI Agents'), ('agentic', 'Agentic AI'),
+        ('vibe coding', 'Vibe Coding'), ('vibe-coding', 'Vibe Coding'),
+        ('local llm', 'Local LLMs'), ('fine-tuning', 'Fine-tuning'), ('fine tuning', 'Fine-tuning'),
+
+        # Automation Tools
+        ('n8n', 'n8n'), ('make.com', 'Make.com'), ('zapier', 'Zapier'),
+        ('composio', 'Composio'), ('retell', 'Retell'), ('vapi', 'Vapi'),
+
+        # Image/Video AI
+        ('midjourney', 'Midjourney'), ('sora', 'Sora'), ('runway', 'Runway'),
+        ('flux', 'Flux'), ('stable diffusion', 'Stable Diffusion'), ('dall-e', 'DALL-E'),
+
+        # Platforms
+        ('openclaw', 'OpenClaw'), ('clawdbot', 'OpenClaw'),
+        ('ollama', 'Ollama'), ('huggingface', 'HuggingFace'), ('replicate', 'Replicate'),
+
+        # Tech (be specific to avoid false positives)
+        ('deno ', 'Deno'), (' bun ', 'Bun'), ('bunjs', 'Bun'), ('typescript', 'TypeScript'),
+        (' rust ', 'Rust'), ('rustlang', 'Rust'), ('golang', 'Go'),
+
+        # Business/Creator
+        ('micro-saas', 'Micro-SaaS'), ('micro saas', 'Micro-SaaS'),
+        ('indie hacker', 'Indie Hacking'), ('solopreneur', 'Solopreneur'),
+        ('bootstrapped', 'Bootstrapping'),
     ]
 
-    for topic in known_topics:
-        if topic in text_lower:
-            # Normalize variations
-            normalized = topic.replace('-', ' ').replace('.', ' ').strip()
-            keywords.append(normalized)
+    for search_term, display_name in known_topics:
+        if search_term in text_lower:
+            keywords.append(display_name)
 
-    # Extract capitalized product/company names (2+ chars)
-    caps = re.findall(r'\b([A-Z][a-zA-Z0-9]+(?:\s+[A-Z][a-zA-Z0-9]+)?)\b', text)
+    # Extract capitalized product names (but filter aggressively)
+    stopwords = {'the', 'and', 'for', 'with', 'this', 'that', 'from', 'what', 'how',
+                 'why', 'when', 'who', 'here', 'there', 'your', 'have', 'been', 'will',
+                 'can', 'could', 'would', 'should', 'may', 'might', 'must', 'shall',
+                 'show', 'new', 'top', 'best', 'first', 'last', 'next', 'most', 'just',
+                 'now', 'today', 'yesterday', 'tomorrow', 'week', 'month', 'year',
+                 'great', 'good', 'bad', 'big', 'small', 'old', 'young', 'high', 'low'}
+
+    # Only extract capitalized words that look like product names (CamelCase or single caps)
+    caps = re.findall(r'\b([A-Z][a-z]+(?:[A-Z][a-z]+)+)\b', text)  # CamelCase like DeepSeek
     for cap in caps:
-        if len(cap) > 2 and cap.lower() not in ['the', 'and', 'for', 'with', 'this', 'that', 'from']:
-            keywords.append(cap.lower())
+        if len(cap) > 3 and cap.lower() not in stopwords:
+            keywords.append(cap)
 
     return list(set(keywords))
+
+def fetch_reddit_hot(subreddit):
+    """Fetch hot posts from a subreddit via JSON API"""
+    import requests
+    import time
+    try:
+        headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'}
+        url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=10"
+        resp = requests.get(url, headers=headers, timeout=10)
+        if resp.status_code == 200:
+            data = resp.json()
+            posts = []
+            for post in data.get('data', {}).get('children', []):
+                p = post.get('data', {})
+                posts.append({
+                    'title': p.get('title', ''),
+                    'url': f"https://reddit.com{p.get('permalink', '')}",
+                    'score': p.get('score', 0),
+                    'subreddit': subreddit
+                })
+            return posts
+        return []
+    except:
+        return []
 
 def gather_all_content():
     """Gather content from all sources with extracted keywords"""
@@ -68,6 +125,23 @@ def gather_all_content():
     cursor = conn.cursor()
 
     all_content = []
+
+    # 0. Reddit (live fetch from key subreddits)
+    reddit_subs = ['LocalLLaMA', 'ChatGPT', 'ClaudeAI', 'OpenAI', 'SideProject', 'SaaS', 'n8n']
+    for sub in reddit_subs:
+        try:
+            posts = fetch_reddit_hot(sub)
+            for p in posts[:5]:
+                keywords = extract_keywords(p['title'])
+                if keywords:
+                    all_content.append({
+                        'text': p['title'], 'source': f"reddit/r/{sub}", 'url': p['url'],
+                        'keywords': keywords, 'engagement': f"{p['score']}⬆"
+                    })
+            import time
+            time.sleep(0.5)  # Be nice to Reddit
+        except:
+            pass
 
     # 1. HN / Real trends
     try:
