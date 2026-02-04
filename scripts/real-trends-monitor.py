@@ -126,40 +126,74 @@ def fetch_hn_front_page():
     return results
 
 def fetch_reddit_rising():
-    """Fetch Reddit rising posts from relevant subreddits"""
+    """Fetch Reddit hot/rising posts from targeted subreddits"""
     results = []
-    subreddits = ['technology', 'programming', 'artificial', 'MachineLearning', 'SideProject', 'startups']
-    
-    headers = {'User-Agent': 'CortanaBot/1.0'}
-    
+    # Focused subreddits for AI/automation/creator/indie space
+    subreddits = [
+        # AI & LLMs
+        'LocalLLaMA',           # Local AI models
+        'ChatGPT',              # ChatGPT news
+        'ClaudeAI',             # Claude specific
+        'OpenAI',               # OpenAI news
+        'singularity',          # AI future/AGI
+        # Building & Indie
+        'SideProject',          # Indie builders
+        'SaaS',                 # SaaS builders
+        'Entrepreneur',         # Business/startup
+        'nocode',               # No-code tools
+        # Automation
+        'n8n',                  # n8n workflows
+        'zapier',               # Zapier community
+        # Creator Economy
+        'content_marketing',    # Content strategy
+        'NewTubers',            # YouTube growth
+    ]
+
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
+    }
+
+    import time
     for sub in subreddits:
         try:
+            # Use hot instead of rising for more reliable results
             resp = requests.get(
-                f"https://www.reddit.com/r/{sub}/rising.json?limit=10",
+                f"https://www.reddit.com/r/{sub}/hot.json?limit=5",
                 headers=headers, timeout=10
             )
+
+            if resp.status_code == 429:
+                log(f"Reddit rate limited, waiting...")
+                time.sleep(5)
+                continue
+
+            if resp.status_code != 200:
+                continue
+
             data = resp.json()
-            
+
             for post in data.get('data', {}).get('children', []):
                 p = post.get('data', {})
                 title = p.get('title', '')
                 url = f"https://reddit.com{p.get('permalink', '')}"
                 score = p.get('score', 0)
-                
+
                 relevance, matches = score_relevance(title)
-                
+
                 results.append({
                     'topic': title,
-                    'source': f'reddit_{sub}',
+                    'source': f'r/{sub}',
                     'traffic': f"{score} upvotes",
                     'relevance': relevance,
                     'url': url,
                     'matches': matches
                 })
+
+            time.sleep(1)  # Be nice to Reddit
         except Exception as e:
             log(f"Reddit {sub} error: {e}")
-    
-    log(f"Reddit: {len(results)} posts")
+
+    log(f"Reddit: {len(results)} posts from {len(subreddits)} subs")
     return results
 
 def fetch_twitter_trending():
