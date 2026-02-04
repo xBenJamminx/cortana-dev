@@ -468,50 +468,44 @@ _{openers.get(day_name, "Let's go.")}_""")
             twitter_lines.append(f"Recent: {engagement.get('total_likes', 0)} likes, {engagement.get('total_retweets', 0)} RTs")
         sections.append("\n".join(twitter_lines))
 
-    # HOT TOPICS - Topics trending ACROSS multiple sources
+    # HOT TOPICS - SPECIFIC topics trending across multiple sources
     hot_topics = get_cross_source_hot_topics()
     if hot_topics:
         topics_lines = ["🔥 *HOT TOPICS* (trending across multiple sources)"]
 
-        seen_topics = set()
         shown = 0
         for ht in hot_topics:
-            if shown >= 8:
+            if shown >= 6:
                 break
 
-            topic_name = ht['topic'].upper()
-
-            # Skip duplicates
-            if topic_name in seen_topics:
-                continue
-            seen_topics.add(topic_name)
-
+            # Use the full topic name - this IS the specific topic
+            topic_name = ht['topic']
             source_count = ht['source_count']
-            sources = ', '.join(ht['sources'][:4])
+            sources = ', '.join(ht['sources'])
 
-            topics_lines.append(f"\n*{topic_name}* — {source_count} sources")
-            topics_lines.append(f"_{sources}_")
+            # Main topic line with full title
+            topics_lines.append(f"\n*{topic_name}*")
+            topics_lines.append(f"📍 {source_count} sources: {sources}")
 
-            # Show 2 example mentions with links (dedupe URLs too)
-            seen_urls = set()
-            mention_count = 0
+            # Show where it's being discussed (different sources only)
+            seen_sources = set()
             for mention in ht['mentions']:
-                if mention_count >= 2:
-                    break
-                url = mention.get('url', '')
-                if url in seen_urls:
+                source_type = mention.get('source_type', '')
+                if source_type in seen_sources:
                     continue
-                seen_urls.add(url)
+                seen_sources.add(source_type)
 
-                text = mention.get('text', '')[:55]
-                source = mention.get('source_full', '').replace('@@', '@')
+                source_full = mention.get('source_full', '').replace('@@', '@')
+                url = mention.get('url', '')
+                engagement = mention.get('engagement', '')
 
                 if url:
-                    topics_lines.append(f"  • [{text}...]({url})")
+                    topics_lines.append(f"  → [{source_full}]({url}) {engagement}")
                 else:
-                    topics_lines.append(f"  • {text}...")
-                topics_lines.append(f"    _{source}_")
-                mention_count += 1
+                    topics_lines.append(f"  → {source_full} {engagement}")
+
+                if len(seen_sources) >= 3:
+                    break
 
             shown += 1
 

@@ -13,21 +13,48 @@ from pathlib import Path
 MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
 LOG_FILE = Path("/root/clawd/logs/competitor-monitor.log")
 
-# Twitter accounts to monitor (AI/automation/creator space)
+# Twitter accounts to monitor (AI news, builders, creators)
 TWITTER_COMPETITORS = [
-    "therundownai",      # AI newsletter
+    # === AI LABS & OFFICIAL ===
+    "OpenAI",            # Official OpenAI updates
+    "AnthropicAI",       # Claude updates
+    "GoogleDeepMind",    # Gemini, research
+    "xaborz",              # xAI / Grok
+    "NVIDIAAI",          # GPU/inference news
+
+    # === RESEARCHERS & THOUGHT LEADERS ===
+    "karpathy",          # Andrej Karpathy - LLM explainers
+    "sama",              # Sam Altman - OpenAI CEO
+    "ylecun",            # Yann LeCun - Meta AI
+    "drfeifei",          # Fei-Fei Li - Stanford
+    "fchollet",          # François Chollet - Keras/ARC
+    "demishassabis",     # DeepMind CEO
+    "lexfridman",        # AI podcaster
+
+    # === CURATED AI NEWS & NEWSLETTERS ===
+    "rowancheung",       # The Rundown AI - daily digest
+    "TheRundownAI",      # Rundown official
+    "kimmonismus",       # AI news aggregation
+    "ai_for_success",    # Tools & news
+    "_akhaliq",          # Papers/research drops
+
+    # === BUILDERS & CREATORS ===
+    "LinusEkenstam",     # AI tools/demos
     "mattshumer_",       # AI builder
-    "mcaborern",         # AI content
     "LiamOttley",        # AI agency
-    "dannypostmaa",      # Indie hacker
     "levelsio",          # Indie legend
     "marc_louvion",      # Indie hacker
+    "dannypostmaa",      # Indie hacker
     "thisguyknowsai",    # AI content
     "nonmayorpete",      # AI/automation
     "venturetwins",      # AI tools
+    "mckaywrigley",      # AI dev tools
+    "hwchase17",         # LangChain founder
+    "bentossell",        # No-code/AI
+    "swyx",              # AI engineering
 ]
 
-# YouTube channels (already have RSS feeds)
+# YouTube channels (AI news, tutorials, analysis)
 YOUTUBE_COMPETITORS = [
     ("Fireship", "UCsBjURrPoezykLs9EqgamOA"),
     ("Matt Wolfe", "UCJIfeSCssxSC_Dhc5s7woww"),
@@ -36,6 +63,13 @@ YOUTUBE_COMPETITORS = [
     ("Liam Ottley", "UCWRBqP4RG1m_G96Hrg0DT-w"),
     ("Greg Isenberg", "UCGwuxdEeCf0TIA2RbPOj-8g"),
     ("My First Million", "UC5vNPzGPPQTIO7YCgjzU9PQ"),
+    ("Two Minute Papers", "UCbfYPyITQ-7l4upoX8nvctg"),
+    ("Yannic Kilcher", "UCZHmQk67mSJgfCCTn7xBfew"),
+    ("AI Jason", "UCcOLT-yWC4TeJ2p3jKHOlFw"),
+    ("David Ondrej", "UCYFyXmXjCUcshOUZPxXWqUQ"),
+    ("WorldofAI", "UCLq3pSiPGNew_9eXq1CPxww"),
+    ("Wes Roth", "UC_rVR86DT8ihdnjVFUwhHqw"),
+    ("TheAIGRID", "UCnHM8csnBLLW3KyWdYFOHOA"),
 ]
 
 def log(msg):
