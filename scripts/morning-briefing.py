@@ -443,6 +443,34 @@ def get_newsletter_content_topics():
     conn.close()
     return stories
 
+
+def get_newsletter_nuggets():
+    """Get nuggets (tutorials, tools, funding, etc.) from newsletters."""
+    conn = sqlite3.connect(MEMORY_DB)
+    cursor = conn.cursor()
+
+    nuggets = []
+
+    try:
+        cursor.execute('''
+            SELECT category, content, url, source_name
+            FROM newsletter_nuggets
+            WHERE created_at > datetime('now', '-36 hours')
+            ORDER BY category, created_at DESC
+        ''')
+        for category, content, url, source_name in cursor.fetchall():
+            nuggets.append({
+                'category': category,
+                'content': content or '',
+                'url': url or '',
+                'source': source_name,
+            })
+    except Exception as e:
+        log(f"Newsletter nuggets query error: {e}")
+
+    conn.close()
+    return nuggets
+
 def get_cross_source_hot_topics():
     """Get topics trending across multiple platforms (secondary signal)."""
     conn = sqlite3.connect(MEMORY_DB)
@@ -549,6 +577,24 @@ _{openers.get(day_name, "Let's go.")}_""")
                 clean = clean[:150]
                 topics_lines.append(f"  _{clean}_")
         sections.append("\n".join(topics_lines))
+
+    # NUGGETS from newsletters
+    nuggets = get_newsletter_nuggets()
+    if nuggets:
+        cat_emoji = {
+            'TUTORIAL': 'how-to', 'TOOL': 'tool', 'FUNDING': 'funding',
+            'HIRING': 'hiring', 'PROMPT': 'prompt', 'TIP': 'tip', 'INSIGHT': 'insight'
+        }
+        nugget_lines = ["💎 *NUGGETS* (from your newsletters)"]
+        for n in nuggets:
+            cat = cat_emoji.get(n['category'], n['category'].lower())
+            url = n.get('url', '')
+            content = n['content'][:120]
+            if url:
+                nugget_lines.append(f"• [{cat}] [{content}]({url}) _({n['source']})_")
+            else:
+                nugget_lines.append(f"• [{cat}] {content} _({n['source']})_")
+        sections.append("\n".join(nugget_lines))
 
     # Cross-platform trending (only if 3+ platforms, secondary signal)
     hot_topics = get_cross_source_hot_topics()

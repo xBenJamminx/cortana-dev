@@ -111,6 +111,18 @@ def ensure_tables():
             UNIQUE(headline, email_id)
         )
     ''')
+    # Nuggets: tutorials, tools, funding, hiring, prompts, insights
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS newsletter_nuggets (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            category TEXT,
+            content TEXT,
+            url TEXT,
+            source_name TEXT,
+            created_at TEXT,
+            UNIQUE(content, source_name)
+        )
+    ''')
     conn.commit()
     conn.close()
 
@@ -554,6 +566,90 @@ Respond ONLY with valid JSON - no markdown, no code fences. Format:
         return stories
 
 
+def extract_nuggets_with_llm(newsletters):
+    """Second LLM pass: mine full newsletter content for golden nuggets beyond top stories.
+    Finds tutorials, tools, funding, hiring, prompts, tips, and insights."""
+    import subprocess
+
+    if not newsletters:
+        return []
+
+    # Build newsletter summaries for analysis
+    nl_texts = []
+    for nl in newsletters:
+        sender = nl.get('sender_name', '')
+        subject = nl.get('subject', '')
+        content = nl.get('content', '')[:3000]  # Send more content for nugget mining
+        nl_texts.append(f"=== {sender}: {subject} ===\n{content}")
+
+    all_content = "\n\n".join(nl_texts)
+
+    prompt = f"""You are mining AI/creator newsletters for golden nuggets for Ben, who teaches everyday people to build with AI.
+
+Here are {len(newsletters)} newsletters from today:
+
+{all_content}
+
+Extract ALL valuable nuggets that aren't just top news stories. Look for:
+
+- TUTORIAL: Step-by-step guides, how-tos, workflows people can follow
+- TOOL: New tools, repos, products, features launched
+- FUNDING: Companies raising money, revenue milestones, business signals
+- HIRING: Who's hiring, new AI roles, job market signals
+- PROMPT: Specific AI prompts, templates, or techniques to try
+- TIP: Practical advice, growth tactics, creator strategies
+- INSIGHT: Counterintuitive takes, data points, trend observations
+
+For each nugget, extract:
+- category: one of TUTORIAL, TOOL, FUNDING, HIRING, PROMPT, TIP, INSIGHT
+- content: 1-2 sentence description of the nugget
+- url: direct link if available, otherwise empty string
+- source: which newsletter it came from
+
+Respond ONLY with valid JSON, no markdown fences:
+[{{"category": "TOOL", "content": "description", "url": "https://...", "source": "The Rundown AI"}}]
+
+Only include genuinely useful nuggets. Skip fluff, ads, and self-promotion. Aim for 5-15 nuggets total."""
+
+    try:
+        result = subprocess.run(
+            ['claude', '-p', '--output-format', 'json', '--model', 'sonnet', prompt],
+            capture_output=True, text=True, timeout=120
+        )
+
+        if result.returncode != 0:
+            log(f"Nugget extraction failed: {result.stderr[:200]}")
+            return []
+
+        output = result.stdout.strip()
+        try:
+            response = json.loads(output)
+            result_text = response.get('result', '')
+            result_text = re.sub(r'^```(?:json)?\s*', '', result_text)
+            result_text = re.sub(r'\s*```$', '', result_text)
+            nuggets = json.loads(result_text.strip())
+        except (json.JSONDecodeError, TypeError) as e:
+            log(f"Nugget parse error: {e}")
+            match = re.search(r'\[.*\]', output, re.DOTALL)
+            if match:
+                try:
+                    nuggets = json.loads(match.group(0))
+                except json.JSONDecodeError:
+                    return []
+            else:
+                return []
+
+        log(f"Extracted {len(nuggets)} nuggets from newsletters")
+        return nuggets
+
+    except subprocess.TimeoutExpired:
+        log("Nugget extraction timed out")
+        return []
+    except Exception as e:
+        log(f"Nugget extraction error: {e}")
+        return []
+
+
 def fetch_gmail_with_retry(query, max_results=20, retries=2):
     """Fetch emails with retry logic for flaky API. Returns list of messages."""
     import time
@@ -707,9 +803,35 @@ def process_messages(messages):
         except Exception:
             pass
 
+    # Second pass: extract nuggets from full newsletter content
+    log("Mining newsletters for nuggets...")
+    nl_records = []
+    cursor.execute('''
+        SELECT sender_name, subject, content FROM newsletter_topics
+        WHERE created_at > datetime('now', '-36 hours')
+        AND content IS NOT NULL AND length(content) > 100
+    ''')
+    for row in cursor.fetchall():
+        nl_records.append({'sender_name': row[0], 'subject': row[1], 'content': row[2]})
+
+    nuggets = extract_nuggets_with_llm(nl_records)
+    saved_nuggets = 0
+    for nugget in nuggets:
+        try:
+            cursor.execute('''
+                INSERT OR IGNORE INTO newsletter_nuggets
+                (category, content, url, source_name, created_at)
+                VALUES (?, ?, ?, ?, ?)
+            ''', (nugget.get('category', ''), nugget.get('content', ''),
+                  nugget.get('url', ''), nugget.get('source', ''), now))
+            if cursor.rowcount > 0:
+                saved_nuggets += 1
+        except Exception:
+            pass
+
     conn.commit()
     conn.close()
-    log(f"Saved {saved_emails} emails, {saved_stories} curated stories | Skipped: {skipped_blacklist} blacklisted")
+    log(f"Saved {saved_emails} emails, {saved_stories} stories, {saved_nuggets} nuggets | Skipped: {skipped_blacklist} blacklisted")
     return saved_stories
 
 
@@ -730,6 +852,33 @@ def get_stories_for_briefing(limit=12):
     return results
 
 
+def get_nuggets_for_briefing():
+    """Get nuggets for the morning briefing, grouped by category"""
+    conn = sqlite3.connect(MEMORY_DB)
+    conn.row_factory = sqlite3.Row
+    cursor = conn.cursor()
+    cursor.execute('''
+        SELECT category, content, url, source_name
+        FROM newsletter_nuggets
+        WHERE created_at > datetime('now', '-36 hours')
+        ORDER BY category, created_at DESC
+    ''')
+    results = [dict(row) for row in cursor.fetchall()]
+    conn.close()
+    return results
+
+
+CATEGORY_EMOJI = {
+    'TUTORIAL': 'how-to',
+    'TOOL': 'tool',
+    'FUNDING': 'funding',
+    'HIRING': 'hiring',
+    'PROMPT': 'prompt',
+    'TIP': 'tip',
+    'INSIGHT': 'insight',
+}
+
+
 def main():
     log("Newsletter Monitor v3 starting...")
     ensure_tables()
@@ -745,20 +894,46 @@ def main():
     stories = get_stories_for_briefing(15)
     if stories:
         print(f"\n{'='*70}")
-        print(f"CURATED STORIES ({len(stories)} stories)")
+        print(f"TOP STORIES ({len(stories)})")
         print(f"{'='*70}")
         for s in stories:
             score = s.get('relevance_score', 0)
             sources = s.get('source_name', '')
-            multi = ' **' if ',' in sources else ''
+            multi = ' [MULTI-SOURCE]' if ',' in sources else ''
             print(f"\n[{score}]{multi} {s['headline']}")
             print(f"    Source: {sources}")
             if s['description']:
                 print(f"    {s['description'][:300]}")
             if s['article_url']:
                 print(f"    {s['article_url']}")
-    else:
-        print("\nNo stories extracted yet")
+
+    # Show nuggets
+    nuggets = get_nuggets_for_briefing()
+    if nuggets:
+        print(f"\n{'='*70}")
+        print(f"NUGGETS ({len(nuggets)})")
+        print(f"{'='*70}")
+
+        # Group by category
+        by_cat = {}
+        for n in nuggets:
+            cat = n.get('category', 'OTHER')
+            if cat not in by_cat:
+                by_cat[cat] = []
+            by_cat[cat].append(n)
+
+        for cat in ['TUTORIAL', 'TOOL', 'FUNDING', 'HIRING', 'PROMPT', 'TIP', 'INSIGHT']:
+            items = by_cat.get(cat, [])
+            if items:
+                label = CATEGORY_EMOJI.get(cat, cat.lower())
+                print(f"\n  [{label}]")
+                for item in items:
+                    url_str = f" -> {item['url']}" if item.get('url') else ''
+                    print(f"    - {item['content']}{url_str}")
+                    print(f"      ({item['source_name']})")
+
+    if not stories and not nuggets:
+        print("\nNo content extracted yet")
 
     log("Done")
 
