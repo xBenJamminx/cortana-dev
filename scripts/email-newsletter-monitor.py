@@ -143,54 +143,33 @@ def get_sender_name(sender_email):
             return name
     return sender_email.split('<')[0].strip().strip('"')
 
-def fetch_newsletter_threads():
-    """Fetch recent newsletter threads using GMAIL_LIST_THREADS"""
-    # Build query for newsletter senders
-    query = 'newer_than:2d (from:beehiiv OR from:substack OR from:newsletter OR from:rundown OR from:snackprompt OR from:aiforwork OR from:unwindai OR from:whatsupinai OR from:superhuman OR from:bensbites OR from:tldr OR from:theneuron OR from:hypefury OR from:ideabrowser OR from:producthunt)'
+def fetch_newsletter_emails():
+    """Fetch recent newsletter emails using GMAIL_FETCH_EMAILS with full payload"""
+    query = 'newer_than:2d (from:beehiiv OR from:substack OR from:newsletter OR from:rundown OR from:snackprompt OR from:aiforwork OR from:unwindai OR from:whatsupinai OR from:superhuman OR from:bensbites OR from:tldr OR from:theneuron OR from:hypefury OR from:ideabrowser OR from:producthunt OR from:socialgrowthengineer OR from:tinylaunch OR from:unicorne)'
 
     result = composio_call([{
-        'tool_slug': 'GMAIL_LIST_THREADS',
+        'tool_slug': 'GMAIL_FETCH_EMAILS',
         'arguments': {
-            'max_results': 50,
-            'query': query
+            'max_results': 30,
+            'query': query,
+            'include_payload': True,
+            'verbose': True
         }
     }])
 
     if not result or not result.get('successful'):
-        log("Failed to list threads")
+        log("Failed to fetch emails")
         return []
 
     results = result.get('data', {}).get('results', [])
     if not results:
         return []
 
-    threads = results[0].get('response', {}).get('data', {}).get('threads', [])
-    thread_ids = [t['id'] for t in threads]
-    log(f"Found {len(thread_ids)} newsletter threads")
+    resp = results[0].get('response', {})
+    messages = resp.get('data', {}).get('messages', resp.get('data_preview', {}).get('messages', []))
 
-    if not thread_ids:
-        return []
-
-    # Fetch individual messages (batch of 20 at a time)
-    messages = []
-    for i in range(0, len(thread_ids), 20):
-        batch = thread_ids[i:i+20]
-        tools = [{'tool_slug': 'GMAIL_FETCH_MESSAGE_BY_MESSAGE_ID', 'arguments': {'message_id': tid}} for tid in batch]
-
-        result = composio_call(tools)
-        if not result or not result.get('successful'):
-            continue
-
-        for r in result.get('data', {}).get('results', []):
-            if isinstance(r, str):
-                continue
-            resp = r.get('response', {})
-            msg_data = resp.get('data', resp.get('data_preview', {}))
-            if msg_data:
-                messages.append(msg_data)
-
-    log(f"Fetched {len(messages)} message details")
-    return messages
+    log(f"Fetched {len(messages)} newsletter emails with full content")
+    return [m for m in messages if isinstance(m, dict)]
 
 def extract_content_topics(subject, content):
     """Extract meaningful content topics from newsletter text"""
@@ -384,7 +363,7 @@ def main():
     log("Newsletter Monitor v2 starting...")
     ensure_table()
 
-    messages = fetch_newsletter_threads()
+    messages = fetch_newsletter_emails()
 
     if messages:
         saved = process_messages(messages)
