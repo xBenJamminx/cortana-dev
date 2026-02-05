@@ -534,11 +534,14 @@ _{openers.get(day_name, "Let's go.")}_""")
             url = story.get('url', '')
             description = story.get('description', '')
 
+            # Multi-source indicator
+            multi = "🔥 " if ',' in sender else ""
+
             # Headline with link if available
             if url:
-                topics_lines.append(f"• [{headline}]({url}) _({sender})_")
+                topics_lines.append(f"• {multi}[{headline}]({url}) _({sender})_")
             else:
-                topics_lines.append(f"• *{headline}* _({sender})_")
+                topics_lines.append(f"• {multi}*{headline}* _({sender})_")
             # Add description
             if description and len(description) > 20:
                 import re as _re
