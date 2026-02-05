@@ -471,7 +471,7 @@ Respond ONLY with valid JSON - no markdown, no code fences. Format:
 
     try:
         result = subprocess.run(
-            ['claude', '-p', '--output-format', 'json', '--model', 'haiku', prompt],
+            ['claude', '-p', '--output-format', 'json', '--model', 'sonnet', prompt],
             capture_output=True, text=True, timeout=120
         )
 
