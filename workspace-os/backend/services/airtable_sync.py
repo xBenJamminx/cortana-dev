@@ -74,6 +74,14 @@ def parse_content_item(record: dict) -> dict:
         "QT": "qt",
         "Thread": "thread"
     }
+    format_map = {
+        "Tweet/Post": "tweet",
+        "Thread": "thread",
+        "Short Video": "short_video",
+        "Long Video": "long_video",
+        "Article": "article",
+        "Carousel": "carousel"
+    }
     account_map = {
         "Cortana": "cortana",
         "Ben": "ben"
@@ -84,6 +92,7 @@ def parse_content_item(record: dict) -> dict:
         "content": fields.get("Content"),
         "status": status_map.get(fields.get("Status"), "idea"),
         "content_type": type_map.get(fields.get("Type")),
+        "content_format": format_map.get(fields.get("Format")),
         "account": account_map.get(fields.get("Account")),
         "scheduled": fields.get("Scheduled"),
         "posted_url": fields.get("Posted URL"),
@@ -351,6 +360,14 @@ async def create_content_item(data: dict) -> Optional[dict]:
         "qt": "QT",
         "thread": "Thread"
     }
+    format_map = {
+        "tweet": "Tweet/Post",
+        "thread": "Thread",
+        "short_video": "Short Video",
+        "long_video": "Long Video",
+        "article": "Article",
+        "carousel": "Carousel"
+    }
     account_map = {
         "cortana": "Cortana",
         "ben": "Ben"
@@ -364,6 +381,8 @@ async def create_content_item(data: dict) -> Optional[dict]:
     }
     if data.get("content_type"):
         fields["Type"] = type_map.get(data["content_type"])
+    if data.get("content_format"):
+        fields["Format"] = format_map.get(data["content_format"])
     if data.get("account"):
         fields["Account"] = account_map.get(data["account"])
 
@@ -386,6 +405,15 @@ async def update_content_item(airtable_id: str, data: dict) -> Optional[dict]:
         "rejected": "❌ Rejected"
     }
 
+    format_map = {
+        "tweet": "Tweet/Post",
+        "thread": "Thread",
+        "short_video": "Short Video",
+        "long_video": "Long Video",
+        "article": "Article",
+        "carousel": "Carousel"
+    }
+
     fields = {}
     if "title" in data:
         fields["Title"] = data["title"]
@@ -393,6 +421,8 @@ async def update_content_item(airtable_id: str, data: dict) -> Optional[dict]:
         fields["Content"] = data["content"]
     if "status" in data:
         fields["Status"] = status_map.get(data["status"])
+    if "content_format" in data:
+        fields["Format"] = format_map.get(data["content_format"])
     if "notes" in data:
         fields["Notes"] = data["notes"]
     if "posted_url" in data:

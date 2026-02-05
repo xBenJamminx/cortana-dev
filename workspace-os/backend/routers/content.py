@@ -75,6 +75,7 @@ class ContentCreate(BaseModel):
     content: str
     platform: str = "Twitter"
     status: str = "Draft"
+    content_format: Optional[str] = None
     scheduled_date: Optional[str] = None
     notes: Optional[str] = None
 
@@ -89,6 +90,8 @@ async def create_content(data: ContentCreate):
         "Platform": data.platform,
         "Status": data.status
     }
+    if data.content_format:
+        fields["Format"] = data.content_format
     if data.scheduled_date:
         fields["Scheduled Date"] = data.scheduled_date
     if data.notes:
@@ -108,6 +111,7 @@ class ContentUpdate(BaseModel):
     content: Optional[str] = None
     platform: Optional[str] = None
     status: Optional[str] = None
+    content_format: Optional[str] = None
     scheduled_date: Optional[str] = None
     posted_url: Optional[str] = None
     notes: Optional[str] = None
@@ -125,6 +129,8 @@ async def update_content(record_id: str, data: ContentUpdate):
         fields["Platform"] = data.platform
     if data.status is not None:
         fields["Status"] = data.status
+    if data.content_format is not None:
+        fields["Format"] = data.content_format
     if data.scheduled_date is not None:
         fields["Scheduled Date"] = data.scheduled_date
     if data.posted_url is not None:
@@ -172,12 +178,14 @@ async def get_pipeline_stats():
             raise HTTPException(resp.status_code, resp.text)
 
     records = resp.json().get("records", [])
-    stats = {"total": len(records), "by_status": {}, "by_platform": {}}
+    stats = {"total": len(records), "by_status": {}, "by_platform": {}, "by_format": {}}
 
     for r in records:
         status = r["fields"].get("Status", "Unknown")
         platform = r["fields"].get("Platform", "Unknown")
+        fmt = r["fields"].get("Format", "Unknown")
         stats["by_status"][status] = stats["by_status"].get(status, 0) + 1
         stats["by_platform"][platform] = stats["by_platform"].get(platform, 0) + 1
+        stats["by_format"][fmt] = stats["by_format"].get(fmt, 0) + 1
 
     return stats

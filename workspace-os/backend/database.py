@@ -105,6 +105,7 @@ class ContentItem(Base):
     content = Column(Text)
     status = Column(String(50), default="idea")
     content_type = Column(String(50))
+    content_format = Column(String(50))
     account = Column(String(50))
     scheduled = Column(DateTime)
     posted_url = Column(String(500))
