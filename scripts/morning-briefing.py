@@ -414,35 +414,34 @@ def get_system_status():
 # ============= TOPIC ANALYTICS =============
 
 def get_newsletter_content_topics():
-    """Get top content topics from AI/creator newsletters.
-    Primary source for content ideas - already curated by newsletter authors."""
+    """Get top stories extracted from AI/creator newsletters.
+    Returns individual stories with headlines, descriptions, and article links."""
     conn = sqlite3.connect(MEMORY_DB)
     cursor = conn.cursor()
 
-    topics = []
+    stories = []
 
     try:
         cursor.execute('''
-            SELECT subject, sender_name, content, topics, links, relevance_score
-            FROM newsletter_topics
+            SELECT headline, description, article_url, source_name, relevance_score
+            FROM newsletter_stories
             WHERE created_at > datetime('now', '-36 hours')
             ORDER BY relevance_score DESC, created_at DESC
-            LIMIT 8
+            LIMIT 10
         ''')
-        for subject, sender, content, topics_json, links_json, relevance in cursor.fetchall():
-            topics.append({
-                'subject': subject,
-                'sender': sender,
-                'content': content or '',
-                'links': json.loads(links_json) if links_json else [],
+        for headline, description, article_url, source_name, relevance in cursor.fetchall():
+            stories.append({
+                'headline': headline,
+                'description': description or '',
+                'url': article_url or '',
+                'sender': source_name,
                 'relevance': relevance,
-                'tags': json.loads(topics_json) if topics_json else []
             })
     except Exception as e:
-        log(f"Newsletter topics query error: {e}")
+        log(f"Newsletter stories query error: {e}")
 
     conn.close()
-    return topics
+    return stories
 
 def get_cross_source_hot_topics():
     """Get topics trending across multiple platforms (secondary signal)."""
@@ -526,28 +525,26 @@ _{openers.get(day_name, "Let's go.")}_""")
         sections.append("\n".join(twitter_lines))
 
     # CONTENT TOPICS from newsletters (primary source)
-    newsletter_topics = get_newsletter_content_topics()
-    if newsletter_topics:
+    newsletter_stories = get_newsletter_content_topics()
+    if newsletter_stories:
         topics_lines = ["📬 *CONTENT TOPICS* (from your newsletters)"]
-        for nt in newsletter_topics[:6]:
-            subject = nt['subject'][:60]
-            sender = nt['sender']
-            snippet = nt.get('content', '')[:120]
-            links = nt.get('links', [])
+        for story in newsletter_stories[:8]:
+            headline = story['headline'][:70]
+            sender = story['sender']
+            url = story.get('url', '')
+            description = story.get('description', '')
 
-            # Subject with link if available, otherwise plain
-            if links:
-                # Trim tracking params from URLs
-                link = links[0].split('?')[0] if '?' in links[0] else links[0]
-                topics_lines.append(f"• [{subject}]({link}) _({sender})_")
+            # Headline with link if available
+            if url:
+                topics_lines.append(f"• [{headline}]({url}) _({sender})_")
             else:
-                topics_lines.append(f"• *{subject}* _({sender})_")
-            # Add snippet as description (skip if empty or too short)
-            if snippet and len(snippet) > 20:
-                # Remove any remaining markdown link syntax
+                topics_lines.append(f"• *{headline}* _({sender})_")
+            # Add description
+            if description and len(description) > 20:
                 import re as _re
-                clean = _re.sub(r'\[([^\]]*)\]\([^\)]*\)', r'\1', snippet)
-                topics_lines.append(f"  _{clean[:120]}_")
+                clean = _re.sub(r'\[([^\]]*)\]\([^\)]*\)', r'\1', description)
+                clean = clean[:150]
+                topics_lines.append(f"  _{clean}_")
         sections.append("\n".join(topics_lines))
 
     # Cross-platform trending (only if 3+ platforms, secondary signal)
