@@ -428,7 +428,7 @@ def extract_stories_list_format(sender_name, subject, message_text):
 
         i += 1
 
-    return stories[:10]  # Cap at 10 stories per newsletter
+    return stories  # No cap - LLM handles filtering
 
 
 def analyze_stories_with_llm(stories):
@@ -554,26 +554,14 @@ Respond ONLY with valid JSON - no markdown, no code fences. Format:
         return stories
 
 
-def fetch_newsletter_emails():
-    """Fetch recent newsletter emails with full content, using multiple targeted queries for reliability"""
-    # Multiple smaller queries are more reliable than one huge OR query
-    queries = [
-        'newer_than:2d from:therundown',
-        'newer_than:2d from:unwindai',
-        'newer_than:2d from:aiforwork',
-        'newer_than:2d from:deepview',
-        'newer_than:2d (from:beehiiv OR from:substack)',
-        'newer_than:2d (from:newsletter OR from:hypefury OR from:lenny)',
-    ]
-
-    all_messages = []
-    seen_ids = set()
-
-    for query in queries:
+def fetch_gmail_with_retry(query, max_results=20, retries=2):
+    """Fetch emails with retry logic for flaky API. Returns list of messages."""
+    import time
+    for attempt in range(retries + 1):
         result = composio_call([{
             'tool_slug': 'GMAIL_FETCH_EMAILS',
             'arguments': {
-                'max_results': 10,
+                'max_results': max_results,
                 'query': query,
                 'include_payload': True,
                 'verbose': True
@@ -581,18 +569,60 @@ def fetch_newsletter_emails():
         }])
 
         if not result or not result.get('successful'):
-            continue
+            if attempt < retries:
+                log(f"  Query failed (attempt {attempt + 1}), retrying...")
+                time.sleep(2)
+                continue
+            return []
 
         results = result.get('data', {}).get('results', [])
         if not results:
-            continue
+            if attempt < retries:
+                time.sleep(2)
+                continue
+            return []
 
         resp = results[0].get('response', {})
-        messages = resp.get('data', {}).get('messages', resp.get('data_preview', {}).get('messages', []))
+        messages = resp.get('data', {}).get('messages', [])
+
+        # If data is empty, try data_preview as fallback
+        if not messages:
+            messages = resp.get('data_preview', {}).get('messages', [])
+
+        if messages:
+            return [m for m in messages if isinstance(m, dict)]
+
+        # Got a response but no messages - might be rate limited, retry
+        if attempt < retries:
+            log(f"  Empty response (attempt {attempt + 1}), retrying...")
+            time.sleep(3)
+
+    return []
+
+
+def fetch_newsletter_emails():
+    """Fetch recent newsletter emails with full content, using multiple targeted queries for reliability"""
+    # Targeted queries by sender for consistent results
+    queries = [
+        'newer_than:2d from:therundown',
+        'newer_than:2d from:unwindai',
+        'newer_than:2d from:aiforwork',
+        'newer_than:2d from:deepview',
+        'newer_than:2d from:snackprompt',
+        'newer_than:2d from:dailybite',
+        'newer_than:2d from:hypefury',
+        'newer_than:2d from:lenny',
+        'newer_than:2d (from:beehiiv OR from:substack)',
+        'newer_than:2d (from:newsletter OR from:tinylaunch OR from:producthunt)',
+    ]
+
+    all_messages = []
+    seen_ids = set()
+
+    for query in queries:
+        messages = fetch_gmail_with_retry(query, max_results=20)
 
         for m in messages:
-            if not isinstance(m, dict):
-                continue
             mid = m.get('messageId', m.get('id', ''))
             if mid and mid not in seen_ids:
                 seen_ids.add(mid)
