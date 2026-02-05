@@ -453,20 +453,21 @@ Here are {len(stories)} stories extracted from his AI/creator newsletters today:
 {stories_text}
 
 Your job:
-1. REMOVE stories that are NOT relevant to Ben's audience (pure academic research, enterprise-only news, crypto, stories about AI safety policy that everyday builders don't care about, internal company drama)
-2. DEDUPLICATE - if the same story appears from multiple sources, keep the one with the better description
+1. REMOVE stories that are NOT relevant to Ben's audience (pure academic research, enterprise-only news, crypto, stories about AI safety policy that everyday builders don't care about, internal company drama, course/product promotions, junk/broken headlines)
+2. MERGE stories that cover the same topic from multiple newsletters. List ALL source indices. Multiple sources = higher signal that the story matters.
 3. RANK the remaining stories by how useful they are for Ben to make content about. Prioritize:
    - New AI tools or features everyday people can actually USE
    - Tutorials or guides for building with AI
    - Major product launches that affect builders (new models, IDE features, etc.)
    - Creator economy / growth tactics
    - Stories that would spark good discussion or hot takes
+   - Stories covered by multiple newsletters get a boost
 4. Score each story 1-100 based on content potential for Ben's audience
 
 Respond ONLY with valid JSON - no markdown, no code fences. Format:
-[{{"index": 0, "score": 85, "reason": "one sentence why this matters for Ben's audience"}}]
+[{{"indices": [0, 5], "score": 85, "reason": "one sentence why this matters for Ben's audience"}}]
 
-Only include stories worth keeping (score >= 50). Order by score descending."""
+"indices" is an array of ALL story indices that cover the same topic (use multiple when merging). Order by score descending. Only include stories scoring >= 50."""
 
     try:
         result = subprocess.run(
@@ -503,15 +504,42 @@ Only include stories worth keeping (score >= 50). Order by score descending."""
                 log(f"Could not find JSON array in Claude response")
                 return stories
 
-        # Map analysis back to stories
+        # Map analysis back to stories, merging sources when multiple indices
         ranked_stories = []
         for item in analysis:
-            idx = item.get('index', -1)
-            if 0 <= idx < len(stories):
-                story = stories[idx].copy()
-                story['relevance_score'] = item.get('score', 50)
-                story['llm_reason'] = item.get('reason', '')
-                ranked_stories.append(story)
+            indices = item.get('indices', [])
+            # Backward compat: support old "index" field
+            if not indices and 'index' in item:
+                indices = [item['index']]
+
+            valid_indices = [i for i in indices if 0 <= i < len(stories)]
+            if not valid_indices:
+                continue
+
+            # Use the first story as the base
+            primary = stories[valid_indices[0]].copy()
+            primary['relevance_score'] = item.get('score', 50)
+            primary['llm_reason'] = item.get('reason', '')
+
+            # Merge sources from all indices
+            all_sources = list(set(stories[i]['source_name'] for i in valid_indices))
+            primary['sources'] = all_sources
+            primary['source_count'] = len(all_sources)
+
+            # Pick the best URL (prefer non-empty)
+            for i in valid_indices:
+                if stories[i].get('article_url'):
+                    primary['article_url'] = stories[i]['article_url']
+                    break
+
+            # Pick the longest description
+            best_desc = primary.get('description', '')
+            for i in valid_indices:
+                if len(stories[i].get('description', '')) > len(best_desc):
+                    best_desc = stories[i]['description']
+            primary['description'] = best_desc
+
+            ranked_stories.append(primary)
 
         # Sort by score
         ranked_stories.sort(key=lambda x: x.get('relevance_score', 0), reverse=True)
@@ -633,13 +661,15 @@ def process_messages(messages):
     saved_stories = 0
     for story in ranked_stories:
         try:
+            sources = story.get('sources', [story['source_name']])
+            source_str = ', '.join(sources)
             cursor.execute('''
                 INSERT OR IGNORE INTO newsletter_stories
                 (headline, description, article_url, source_name, source_subject,
                  email_id, relevance_score, created_at)
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?)
             ''', (story['headline'], story.get('llm_reason', story['description']),
-                  story.get('article_url', ''), story['source_name'],
+                  story.get('article_url', ''), source_str,
                   story.get('source_subject', ''), story.get('email_id', ''),
                   story.get('relevance_score', 50), now))
             if cursor.rowcount > 0:
@@ -689,8 +719,10 @@ def main():
         print(f"{'='*70}")
         for s in stories:
             score = s.get('relevance_score', 0)
-            print(f"\n[{score}] {s['headline']}")
-            print(f"    Source: {s['source_name']}")
+            sources = s.get('source_name', '')
+            multi = ' **' if ',' in sources else ''
+            print(f"\n[{score}]{multi} {s['headline']}")
+            print(f"    Source: {sources}")
             if s['description']:
                 print(f"    {s['description'][:300]}")
             if s['article_url']:
