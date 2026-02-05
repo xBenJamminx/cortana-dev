@@ -151,7 +151,7 @@ def gather_all_content():
 
     # 1. REDDIT
     log("Fetching Reddit...")
-    reddit_subs = ["LocalLLaMA", "ChatGPT", "ClaudeAI", "OpenAI", "artificial", "SideProject", "singularity"]
+    reddit_subs = json.load(open("/root/clawd/config/high_signal_sources.json"))["reddit_subreddits"]
     for sub in reddit_subs:
         posts = fetch_reddit_hot(sub)
         for p in posts[:8]:

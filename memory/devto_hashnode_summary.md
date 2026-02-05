@@ -18,6 +18,9 @@
 🔷 [Do We Even Need Backend Developers Anymore?](https://dev.to/art_light/do-we-even-need-backend-developers-anymore-15pg)
   _@art_light_ (57❤️)
 
+🔷 [Stop Installing Libraries: 10 Browser APIs That Already Solve Your Problems](https://dev.to/sylwia-lask/stop-installing-libraries-10-browser-apis-that-already-solve-your-problems-35bi)
+  _@sylwia-lask_ (56❤️)
+
 🔷 [GitHub Copilot CLI Challenge Badges Are Here + 28 Chances to Win a Prize!](https://dev.to/devteam/github-copilot-cli-challenge-badges-are-here-28-chances-to-win-a-prize-3c42)
   _@jess_ (45❤️)
 
@@ -26,7 +29,4 @@
 
 🔷 [Why I Sometimes Leave Tech Events Feeling Smaller](https://dev.to/itsugo/why-i-sometimes-leave-tech-events-feeling-smaller-3p55)
   _@itsugo_ (44❤️)
-
-🔷 [The Valley of Code: A Learning Resource](https://dev.to/richardpascoe/the-valley-of-code-a-learning-resource-303o)
-  _@richardpascoe_ (40❤️)
 

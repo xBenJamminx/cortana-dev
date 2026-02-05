@@ -49,8 +49,8 @@ TWITTER_COMPETITORS = [
     "mattshumer_",       # AI builder
     "LiamOttley",        # AI agency
     "levelsio",          # Indie legend
-    "marc_louvion",      # Indie hacker
-    "dannypostmaa",      # Indie hacker
+    "marclou",           # Indie hacker (Marc Lou)
+    "dannypostma",       # Indie hacker (Danny Postma)
     "thisguyknowsai",    # AI content
     "nonmayorpete",      # AI/automation
     "venturetwins",      # AI tools

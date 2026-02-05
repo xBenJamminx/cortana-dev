@@ -1,11 +1,11 @@
-🚀 Indie Hacker Monitor (2026-02-04 17:17)
+🚀 Indie Hacker Monitor (2026-02-05 13:32)
 
 🔥 Hot Topics:
-  • solopreneur: 80 mentions
-  • bootstrapped: 63 mentions
-  • launch: 46 mentions
-  • side project: 40 mentions
-  • build in public: 18 mentions
+  • solopreneur: 88 mentions
+  • bootstrapped: 69 mentions
+  • launch: 50 mentions
+  • side project: 42 mentions
+  • build in public: 22 mentions
 
 📈 Top Stories:
   • [Hacker News] (1073⬆): France dumps Zoom and Teams as Europe seeks digital autonomy from the US
@@ -14,7 +14,7 @@
     https://www.jernesto.com/articles/thinking_hard
   • [Hacker News] (928⬆): Data centers in space makes no sense
     https://civai.org/blog/space-data-centers
+  • [Hacker News] (923⬆): Voxtral Transcribe 2
+    https://mistral.ai/news/voxtral-transcribe-2
   • [Hacker News] (742⬆): Lessons learned shipping 500 units of my first hardware product
     https://www.simonberens.com/p/lessons-learned-shipping-500-units
-  • [Hacker News] (691⬆): Qwen3-Coder-Next
-    https://qwen.ai/blog?id=qwen3-coder-next

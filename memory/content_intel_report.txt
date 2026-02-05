@@ -1,4 +1,4 @@
-🎯 *Content Intel* (2026-02-04 16:00)
+🎯 *Content Intel* (2026-02-05 12:00)
 
 *🔥 TRENDING TOPICS*
 🔴 *TYPESCRIPT* `[dev, hn, news, ph]`
@@ -6,35 +6,36 @@
    • [Deno Sandbox](https://deno.com/blog/introducing-deno-sandbox) (491⬆)
    • [Xcode 26.3 – Developers can leverage coding agents directly ](https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/) (342⬆)
 
+🟡 *CLAUDE* `[hn, news]`
+   • [Claude is a space to think](https://www.anthropic.com/news/claude-is-a-space-to-think) (435⬆)
+   • [Claude Code: connect to a local model when your quota runs o](https://boxc.net/blog/2026/claude-code-connecting-to-local-models-when-your-quota-runs-out/) (293⬆)
+   • [Claude Code for Infrastructure](https://www.fluid.sh/) (222⬆)
+
 🔴 *AI AGENTS* `[dev, hn, news, ph]`
    • [Agent Skills](https://agentskills.io/home) (497⬆)
    • [Xcode 26.3 – Developers can leverage coding agents directly ](https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/) (342⬆)
-   • [Show HN: Ghidra MCP Server – 110 tools for AI-assisted rever](https://github.com/bethington/ghidra-mcp) (186⬆)
-
-🟡 *SIDE PROJECT* `[dev, hn]`
-   • [Lessons learned shipping 500 units of my first hardware prod](https://www.simonberens.com/p/lessons-learned-shipping-500-units) (725⬆)
-   • [Your Side Project Didn’t Fail — It Just Reached Reality](https://dev.to/art_light/your-side-project-didnt-fail-it-just-reached-reality-1o76) (45⬆)
+   • [Show HN: Ghidra MCP Server – 110 tools for AI-assisted rever](https://github.com/bethington/ghidra-mcp) (239⬆)
 
 🔴 *DEV TOOLS* `[dev, hn, news, ph]`
    • [X offices raided in France as UK opens fresh investigation i](https://www.bbc.com/news/articles/ce3ex92557jo) (498⬆)
-   • [Your Side Project Didn’t Fail — It Just Reached Reality](https://dev.to/art_light/your-side-project-didnt-fail-it-just-reached-reality-1o76) (45⬆)
-   • [Chord Identifier](https://www.producthunt.com/products/chord-identifier-2) (6⬆)
+   • [Sqldef: Idempotent schema management tool for MySQL, Postgre](https://sqldef.github.io/) (183⬆)
+   • [Your Side Project Didn’t Fail — It Just Reached Reality](https://dev.to/art_light/your-side-project-didnt-fail-it-just-reached-reality-1o76) (60⬆)
 
-🟡 *LLM* `[dev, hn]`
-   • [Qwen3-Coder-Next](https://qwen.ai/blog?id=qwen3-coder-next) (594⬆)
-   • [Realtime Multimodal AI on Ray-Ban Meta Glasses with Gemini L](https://dev.to/googleai/realtime-multimodal-ai-on-ray-ban-meta-glasses-with-gemini-live-livekit-45mn) (18⬆)
-   • [An Al-go-llama Adventure](https://dev.to/annavi11arrea1/an-al-go-llama-adventure-4051) (15⬆)
+🟡 *SIDE PROJECT* `[dev, hn]`
+   • [Lessons learned shipping 500 units of my first hardware prod](https://www.simonberens.com/p/lessons-learned-shipping-500-units) (725⬆)
+   • [Your Side Project Didn’t Fail — It Just Reached Reality](https://dev.to/art_light/your-side-project-didnt-fail-it-just-reached-reality-1o76) (60⬆)
+   • [I Built a "Give & Take" Feedback App Because Nobody Was Revi](https://dev.to/mogee/i-built-a-give-take-feedback-app-because-nobody-was-reviewing-my-side-projects-22f7) (1⬆)
 
-🔴 *XCODE* `[hn, news, ph]`
-   • [Xcode 26.3 – Developers can leverage coding agents directly ](https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/) (342⬆)
-   • [Xcode 26.3](https://www.producthunt.com/products/xcode) (13⬆)
-   • [Apple integrates Anthropic's Claude and OpenAI's Codex into ](https://venturebeat.com/technology/apple-integrates-anthropics-claude-and-openais-codex-into-xcode-26-3-in-push)
+🟡 *SAAS* `[hn, news]`
+   • [AI is killing B2B SaaS](https://nmn.gl/blog/ai-killing-b2b-saas) (366⬆)
+   • [Brazilian Micro-SaaS Map](https://saas-map.ssr.trapiche.cloud/) (81⬆)
+   • [U.S. Cleantech Leadership Endures, but Start-Up Pipeline Is ](https://www.cfr.org/articles/u-s-cleantech-leadership-endures-but-start-up-pipeline-is-narrowing)
 
 *🚀 FRESH LAUNCHES*
-• [CreateOS](https://www.producthunt.com/products/createos)
-• [Genstore.ai](https://www.producthunt.com/products/genstore-ai-2)
-• [Xcode 26.3](https://www.producthunt.com/products/xcode)
-• [Multitui](https://www.producthunt.com/products/multitui)
-• [Pastey Extension](https://www.producthunt.com/products/pastey-extension)
+• [AutoBandStudio](https://www.producthunt.com/products/autobandstudio)
+• [Therapist AI](https://www.producthunt.com/products/therapist-ai-time-for-what-matters)
+• [Votap](https://www.producthunt.com/products/votap)
+• [GitScrum Studio for IDE](https://www.producthunt.com/products/gitscrum-studio-for-ide)
+• [Sylvian AI Forms](https://www.producthunt.com/products/sylvian-excel-agent)
 
 _🔴 3+ platforms | 🟡 2 platforms | ⚪ 1 platform_
