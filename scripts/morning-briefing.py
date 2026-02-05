@@ -423,16 +423,18 @@ def get_newsletter_content_topics():
 
     try:
         cursor.execute('''
-            SELECT subject, sender_name, content, topics, relevance_score
+            SELECT subject, sender_name, content, topics, links, relevance_score
             FROM newsletter_topics
             WHERE created_at > datetime('now', '-36 hours')
             ORDER BY relevance_score DESC, created_at DESC
             LIMIT 8
         ''')
-        for subject, sender, content, topics_json, relevance in cursor.fetchall():
+        for subject, sender, content, topics_json, links_json, relevance in cursor.fetchall():
             topics.append({
                 'subject': subject,
                 'sender': sender,
+                'content': content or '',
+                'links': json.loads(links_json) if links_json else [],
                 'relevance': relevance,
                 'tags': json.loads(topics_json) if topics_json else []
             })
@@ -530,7 +532,22 @@ _{openers.get(day_name, "Let's go.")}_""")
         for nt in newsletter_topics[:6]:
             subject = nt['subject'][:60]
             sender = nt['sender']
-            topics_lines.append(f"• {subject} _({sender})_")
+            snippet = nt.get('content', '')[:120]
+            links = nt.get('links', [])
+
+            # Subject with link if available, otherwise plain
+            if links:
+                # Trim tracking params from URLs
+                link = links[0].split('?')[0] if '?' in links[0] else links[0]
+                topics_lines.append(f"• [{subject}]({link}) _({sender})_")
+            else:
+                topics_lines.append(f"• *{subject}* _({sender})_")
+            # Add snippet as description (skip if empty or too short)
+            if snippet and len(snippet) > 20:
+                # Remove any remaining markdown link syntax
+                import re as _re
+                clean = _re.sub(r'\[([^\]]*)\]\([^\)]*\)', r'\1', snippet)
+                topics_lines.append(f"  _{clean[:120]}_")
         sections.append("\n".join(topics_lines))
 
     # Cross-platform trending (only if 3+ platforms, secondary signal)

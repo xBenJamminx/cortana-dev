@@ -86,6 +86,7 @@ def ensure_table():
             sender_email TEXT,
             content TEXT,
             topics TEXT,
+            links TEXT,
             relevance_score INTEGER,
             email_id TEXT UNIQUE,
             created_at TEXT
@@ -250,6 +251,58 @@ def score_relevance(topics, text):
 
     return min(score, 100)
 
+def extract_links(content):
+    """Extract useful links from newsletter content"""
+    if not content:
+        return []
+    urls = re.findall(r'https?://[^\s\)>\]\*]+', content)
+    good_urls = []
+    skip_patterns = ['unsubscribe', 'beehiiv.com/cdn', 'tracking', 'click.', 'manage',
+                     'preferences', 'mailchimp', 'list-manage', 'email.', 'mailto',
+                     'beacon', 'pixel', 'open.substack', 'cdn-cgi', 'fonts.', 'static.']
+    for u in urls:
+        u_clean = u.rstrip('.,;:')
+        u_lower = u_clean.lower()
+        if any(s in u_lower for s in skip_patterns):
+            continue
+        if len(u_clean) < 15:
+            continue
+        good_urls.append(u_clean)
+        if len(good_urls) >= 5:
+            break
+    return good_urls
+
+def clean_snippet(content, max_len=200):
+    """Clean newsletter content into a readable snippet"""
+    if not content:
+        return ""
+    # Remove image references and captions
+    text = re.sub(r'View image:.*?\)', '', content)
+    text = re.sub(r'Caption:.*?(?:\n|$)', '', text)
+    text = re.sub(r'Follow ima.*?(?:\n|$)', '', text)
+    # Remove markdown links but keep text
+    text = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', text)
+    # Remove formatting noise
+    text = re.sub(r'[─═╌\-]{3,}', ' ', text)  # horizontal rules
+    text = re.sub(r'[â]+', '', text)  # unicode box chars
+    text = re.sub(r'\*{1,2}', '', text)  # bold markers
+    text = re.sub(r'#{1,3}\s*', '', text)  # headers
+    text = re.sub(r'\^', '', text)
+    text = re.sub(r'View this post on the web at\s*\S+\s*', '', text)
+    text = re.sub(r'Read Online\s*', '', text)
+    text = re.sub(r'https?://\S+', '', text)  # strip URLs from snippet
+    text = re.sub(r'GMGM,?\s*', '', text)
+    text = re.sub(r'SPONSORED BY\s+\S+', '', text)
+    # Clean whitespace
+    text = re.sub(r'\s+', ' ', text).strip()
+    # Skip if too short after cleaning
+    if len(text) < 10:
+        return ""
+    # Truncate
+    if len(text) > max_len:
+        text = text[:max_len].rsplit(' ', 1)[0] + '...'
+    return text
+
 def process_messages(messages):
     """Process fetched messages and save relevant ones"""
     conn = sqlite3.connect(MEMORY_DB)
@@ -264,7 +317,7 @@ def process_messages(messages):
             email_id = msg.get('messageId', msg.get('id', ''))
             subject = msg.get('subject', '')
             sender_raw = msg.get('sender', msg.get('from', ''))
-            content = msg.get('messageText', msg.get('snippet', ''))[:1000]
+            raw_content = msg.get('messageText', msg.get('snippet', ''))
 
             # Skip blacklisted senders
             if is_blacklisted(sender_raw):
@@ -272,19 +325,22 @@ def process_messages(messages):
                 continue
 
             sender_name = get_sender_name(sender_raw)
-            full_text = f"{subject} {content}"
+            full_text = f"{subject} {raw_content or ''}"
 
-            # Extract topics and score
-            topics = extract_content_topics(subject, content)
+            # Extract topics, links, and clean snippet
+            topics = extract_content_topics(subject, raw_content or '')
+            links = extract_links(raw_content or '')
+            snippet = clean_snippet(raw_content or '')
             relevance = score_relevance(topics, full_text)
 
             # Only save if relevant enough
             if relevance >= 15:
                 cursor.execute('''
                     INSERT OR IGNORE INTO newsletter_topics
-                    (subject, sender_name, sender_email, content, topics, relevance_score, email_id, created_at)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-                ''', (subject, sender_name, sender_raw, content[:500], json.dumps(topics), relevance, email_id, now))
+                    (subject, sender_name, sender_email, content, topics, links, relevance_score, email_id, created_at)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ''', (subject, sender_name, sender_raw, snippet, json.dumps(topics),
+                      json.dumps(links), relevance, email_id, now))
 
                 if cursor.rowcount > 0:
                     saved += 1
@@ -304,13 +360,23 @@ def get_content_topics_for_briefing():
     conn = sqlite3.connect(MEMORY_DB)
     cursor = conn.cursor()
     cursor.execute('''
-        SELECT subject, sender_name, content, topics, relevance_score
+        SELECT subject, sender_name, content, topics, links, relevance_score
         FROM newsletter_topics
         WHERE created_at > datetime('now', '-36 hours')
         ORDER BY relevance_score DESC, created_at DESC
         LIMIT 10
     ''')
-    results = cursor.fetchall()
+    results = []
+    for row in cursor.fetchall():
+        subject, sender, content, topics_json, links_json, relevance = row
+        results.append({
+            'subject': subject,
+            'sender': sender,
+            'content': content or '',
+            'topics': json.loads(topics_json) if topics_json else [],
+            'links': json.loads(links_json) if links_json else [],
+            'relevance': relevance
+        })
     conn.close()
     return results
 
@@ -329,10 +395,14 @@ def main():
     topics = get_content_topics_for_briefing()
     if topics:
         print(f"\n📬 NEWSLETTER CONTENT TOPICS ({len(topics)} stories):")
-        for subject, sender, content, topics_json, relevance in topics:
-            print(f"\n[{relevance}] {sender}: {subject[:70]}")
-            topics_list = json.loads(topics_json) if topics_json else []
-            topic_tags = [t for t in topics_list if not t.startswith('[story]')][:5]
+        for t in topics:
+            print(f"\n[{t['relevance']}] {t['sender']}: {t['subject'][:70]}")
+            if t['content']:
+                print(f"    {t['content'][:150]}")
+            if t['links']:
+                for link in t['links'][:2]:
+                    print(f"    🔗 {link[:100]}")
+            topic_tags = [tag for tag in t['topics'] if not tag.startswith('[story]')][:5]
             if topic_tags:
                 print(f"    Tags: {', '.join(topic_tags)}")
 
