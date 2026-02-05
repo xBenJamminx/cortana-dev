@@ -81,6 +81,7 @@ app.include_router(bookmarks.router, prefix="/api/bookmarks", tags=["bookmarks"]
 async def list_content(
     status: str = None,
     account: str = None,
+    content_format: str = None,
     limit: int = 100,
     db: Session = Depends(get_db)
 ):
@@ -90,6 +91,8 @@ async def list_content(
         query = query.filter(ContentItem.status == status)
     if account:
         query = query.filter(ContentItem.account == account)
+    if content_format:
+        query = query.filter(ContentItem.content_format == content_format)
     items = query.order_by(ContentItem.updated_at.desc()).limit(limit).all()
     return [{
         "id": i.id,
@@ -98,6 +101,7 @@ async def list_content(
         "content": i.content,
         "status": i.status,
         "content_type": i.content_type,
+        "content_format": i.content_format,
         "account": i.account,
         "scheduled": i.scheduled.isoformat() if i.scheduled else None,
         "posted_url": i.posted_url,
@@ -128,6 +132,7 @@ async def get_content_kanban(db: Session = Depends(get_db)):
                 "content": item.content,
                 "content_preview": item.content[:150] + "..." if item.content and len(item.content) > 150 else item.content,
                 "content_type": item.content_type,
+                "content_format": item.content_format,
                 "account": item.account,
                 "scheduled": item.scheduled.isoformat() if item.scheduled else None,
                 "posted_url": item.posted_url,
@@ -144,6 +149,7 @@ async def create_content(
     content: str = None,
     status: str = "idea",
     content_type: str = None,
+    content_format: str = None,
     account: str = None,
     notes: str = None,
     db: Session = Depends(get_db)
@@ -154,6 +160,7 @@ async def create_content(
         "content": content,
         "status": status,
         "content_type": content_type,
+        "content_format": content_format,
         "account": account,
         "notes": notes
     }
@@ -172,6 +179,7 @@ async def create_content(
         content=content,
         status=status,
         content_type=content_type,
+        content_format=content_format,
         account=account,
         notes=notes
     )
@@ -199,6 +207,7 @@ class ContentUpdate(BaseModel):
     title: Optional[str] = None
     content: Optional[str] = None
     status: Optional[str] = None
+    content_format: Optional[str] = None
     notes: Optional[str] = None
     posted_url: Optional[str] = None
 
@@ -211,6 +220,7 @@ async def update_content(
     title = updates.title
     content = updates.content
     status = updates.status
+    content_format = updates.content_format
     notes = updates.notes
     posted_url = updates.posted_url
     """Update content item (syncs to Airtable)"""
@@ -229,6 +239,9 @@ async def update_content(
         old_status = item.status
         item.status = status
         update_data["status"] = status
+    if content_format is not None:
+        item.content_format = content_format
+        update_data["content_format"] = content_format
     if notes is not None:
         item.notes = notes
         update_data["notes"] = notes
