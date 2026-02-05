@@ -1,0 +1,33 @@
+{
+  "reddit_subreddits": [
+    "LocalLLaMA",
+    "ChatGPT", 
+    "ClaudeAI",
+    "OpenAI",
+    "SideProject",
+    "SaaS",
+    "n8n",
+    "artificial",
+    "singularity",
+    "MachineLearning",
+    "Entrepreneur",
+    "AutomateYourself"
+  ],
+  "twitter_accounts": [
+    "OpenAI", "AnthropicAI", "GoogleDeepMind", "xai", "NVIDIAAI",
+    "karpathy", "sama", "ylecun", "fchollet", "demishassabis",
+    "lexfridman", "DrJimFan",
+    "rowancheung", "TheRundownAI", "kimmonismus", "_akhaliq",
+    "bensbites", "theneuron", "superhumanai", "tldrai",
+    "theresanaiforthat", "AravSrinivas",
+    "LinusEkenstam", "levelsio", "LiamOttley", "mattshumer_",
+    "hwchase17", "mckaywrigley", "swyx", "bentossell",
+    "dannypostmaa", "marc_louvion", "skirank"
+  ],
+  "youtube_channels": [
+    "Fireship", "Matt Wolfe", "AI Explained", "Two Minute Papers",
+    "Yannic Kilcher", "TheAIGRID", "Wes Roth", "WorldofAI",
+    "Liam Ottley", "Greg Isenberg", "My First Million",
+    "The AI Advantage", "AI Jason", "David Ondrej"
+  ]
+}

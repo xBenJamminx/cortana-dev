@@ -1,5 +1,20 @@
 📺 YouTube - Latest from AI/Creator Channels
 
+• [How To Fix Your Attention Span (Before It's Too Late)](https://www.youtube.com/watch?v=7EWYjFqgmHM)
+  _Ali Abdaal_
+
+• [Advice for beginners in AI: How to learn and what to build | Lex Fridman Podcast](https://www.youtube.com/watch?v=dGqhTpsu_5Y)
+  _Matt Wolfe_
+
+• [Ideas in AI beyond transformers | Lex Fridman Podcast](https://www.youtube.com/watch?v=gCw4SuESfTA)
+  _Matt Wolfe_
+
+• [How modern LLMs work | Lex Fridman Podcast](https://www.youtube.com/watch?v=44mKM4WxSOA)
+  _Matt Wolfe_
+
+• [Is SF and Silicon Valley a bubble? | Lex Fridman Podcast](https://www.youtube.com/watch?v=cjysyQS1oZE)
+  _Matt Wolfe_
+
 • [New DeepSeek Research - The Age of AI Is Here!](https://www.youtube.com/watch?v=fFL7la73RO4)
   _Two Minute Papers_
 
@@ -14,19 +29,4 @@
 
 • [3 Simple Questions To Find Your Business Idea](https://www.youtube.com/shorts/cNZCYPtQZ8M)
   _Ali Abdaal_
-
-• [The richest people I know do this](https://www.youtube.com/shorts/l5Ppm1L1XEA)
-  _Ali Abdaal_
-
-• [If you find building a business hard, watch this](https://www.youtube.com/shorts/gR1F1lzwZpY)
-  _Ali Abdaal_
-
-• [What the Freakiness of 2025 in AI Tells Us About 2026](https://www.youtube.com/watch?v=FMMpUO1uAYk)
-  _AI Explained_
-
-• [Anthropic: Our AI just created a tool that can ‘automate all white collar work’, Me:](https://www.youtube.com/watch?v=wYs6HWZ2FdM)
-  _AI Explained_
-
-• [Claude AI Co-founder Publishes 4 Big Claims about Near Future: Breakdown](https://www.youtube.com/watch?v=Iar4yweKGoI)
-  _AI Explained_
 

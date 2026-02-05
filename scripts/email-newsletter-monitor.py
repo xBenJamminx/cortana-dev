@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Email Newsletter Monitor - Extract trending topics from Ben's newsletter subscriptions
-Pulls from Gmail, extracts key topics from newsletter content
+Email Newsletter Monitor v2 - Extract content topics from Ben's AI/creator newsletters
+Uses GMAIL_LIST_THREADS + GMAIL_FETCH_MESSAGE_BY_MESSAGE_ID for reliable data
 """
 import sqlite3
 import json
@@ -21,32 +21,51 @@ HEADERS = {
     'x-api-key': API_KEY
 }
 
-# Newsletter senders to look for
-NEWSLETTER_SENDERS = [
-    'rundown',           # The Rundown AI
-    'tldr',              # TLDR
-    'morningbrew',       # Morning Brew
-    'bensbites',         # Ben's Bites
-    'superhuman',        # Superhuman AI
-    'thehustle',         # The Hustle
-    'lenny',             # Lenny's Newsletter
-    'stratechery',       # Stratechery
-    'producthunt',       # Product Hunt Daily
-    'indiehackers',      # Indie Hackers
-    'hackernewsletter',  # Hacker Newsletter
-    'aiweekly',          # AI Weekly
-    'techcrunch',        # TechCrunch
-    'theprofile',        # The Profile
+# AI/Creator newsletters we care about (from Ben's actual inbox)
+# Format: sender email fragment -> display name
+NEWSLETTER_WHITELIST = {
+    'therundown': 'The Rundown AI',
+    'rundownai': 'The Rundown AI',
+    'aiforwork': 'AI For Work',
+    'unwindai': 'Unwind AI',
+    'whatsupinai': "What's Up in AI",
+    'dailybite@mail.beehiiv': 'Snack Prompt',
+    'snackprompt': 'Snack Prompt',
+    'socialgrowthengineer': 'Social Growth Engineers',
+    'wavy@mail.beehiiv': 'Kallaway',
+    'kallaway': 'Kallaway',
+    'unicorne@mail.beehiiv': 'Marc Lou',
+    'marclou': 'Marc Lou',
+    'hypefury': 'Hypefury',
+    'lenny': "Lenny's Newsletter",
+    'tinylaunch': 'TinyLaunch',
+    'tinylog': 'TinyLaunch',
+    'ideabrowser': 'Ideabrowser',
+    'bensbites': "Ben's Bites",
+    'superhuman': 'Superhuman AI',
+    'tldr': 'TLDR',
+    'theneuron': 'The Neuron',
+    'producthunt': 'Product Hunt',
+}
+
+# Senders to SKIP (crypto, not relevant)
+SENDER_BLACKLIST = [
+    'dailybones',       # The Daily Bone (crypto)
+    'luckytrader',      # Morning Minute (crypto)
+    'circleboom',       # Social tool notifications
+    'noreply-apps-scripts',  # Google Apps Script
 ]
 
-# Niche keywords for relevance scoring
+# Topics relevant to Ben's niche
 NICHE_KEYWORDS = [
     'ai', 'artificial intelligence', 'machine learning', 'llm', 'gpt',
     'chatgpt', 'claude', 'gemini', 'openai', 'anthropic', 'deepseek',
     'automation', 'workflow', 'no-code', 'nocode', 'api', 'agent',
     'saas', 'startup', 'founder', 'indie', 'solopreneur', 'creator',
-    'coding', 'developer', 'software', 'tech', 'app', 'launch',
-    'mcp', 'cursor', 'copilot', 'midjourney', 'video', 'content'
+    'coding', 'vibecod', 'developer', 'software', 'app', 'launch',
+    'mcp', 'cursor', 'copilot', 'midjourney', 'video', 'content',
+    'tool', 'build', 'ship', 'product', 'revenue', 'mrr', 'growth',
+    'n8n', 'make.com', 'zapier', 'retell', 'vapi', 'elevenlabs',
 ]
 
 def log(msg):
@@ -60,11 +79,12 @@ def ensure_table():
     conn = sqlite3.connect(MEMORY_DB)
     cursor = conn.cursor()
     cursor.execute('''
-        CREATE TABLE IF NOT EXISTS email_newsletters (
+        CREATE TABLE IF NOT EXISTS newsletter_topics (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             subject TEXT,
-            sender TEXT,
-            snippet TEXT,
+            sender_name TEXT,
+            sender_email TEXT,
+            content TEXT,
             topics TEXT,
             relevance_score INTEGER,
             email_id TEXT UNIQUE,
@@ -74,119 +94,219 @@ def ensure_table():
     conn.commit()
     conn.close()
 
-def parse_sse_response(response):
-    if 'text/event-stream' in response.headers.get('content-type', ''):
-        for line in response.text.split('\n'):
-            if line.startswith('data:'):
-                return json.loads(line[5:])
-    return response.json()
-
-def fetch_emails():
-    """Fetch recent emails from Gmail - newsletters and updates"""
+def composio_call(tools):
+    """Make a Composio multi-execute call"""
     try:
         response = requests.post(MCP_URL, headers=HEADERS, json={
             'jsonrpc': '2.0',
             'method': 'tools/call',
             'params': {
                 'name': 'COMPOSIO_MULTI_EXECUTE_TOOL',
-                'arguments': {
-                    'tools': [{
-                        'tool_slug': 'GMAIL_FETCH_EMAILS',
-                        'arguments': {
-                            'max_results': 30
-                        }
-                    }]
-                }
+                'arguments': {'tools': tools}
             },
             'id': 1
-        }, timeout=30)
+        }, timeout=60)
 
-        result = parse_sse_response(response)
-        if 'result' in result:
-            data = json.loads(result['result']['content'][0]['text'])
-            if data.get('successful'):
-                # Navigate the nested response structure
-                results = data.get('data', {}).get('results', [])
-                if results:
-                    response_data = results[0].get('response', {}).get('data_preview', {})
-                    return response_data.get('messages', [])
-        return []
+        for line in response.text.split('\n'):
+            if line.startswith('data:'):
+                data = json.loads(line[5:])
+                text = data.get('result', {}).get('content', [{}])[0].get('text', '')
+                if text:
+                    return json.loads(text)
+        return None
     except Exception as e:
-        log(f"Gmail fetch error: {e}")
+        log(f"Composio call error: {e}")
+        return None
+
+def is_whitelisted(sender_email):
+    """Check if sender is in our whitelist"""
+    sender_lower = sender_email.lower()
+    for fragment in NEWSLETTER_WHITELIST:
+        if fragment in sender_lower:
+            return True
+    return False
+
+def is_blacklisted(sender_email):
+    """Check if sender is blacklisted"""
+    sender_lower = sender_email.lower()
+    for fragment in SENDER_BLACKLIST:
+        if fragment in sender_lower:
+            return True
+    return False
+
+def get_sender_name(sender_email):
+    """Get friendly name for a sender"""
+    sender_lower = sender_email.lower()
+    for fragment, name in NEWSLETTER_WHITELIST.items():
+        if fragment in sender_lower:
+            return name
+    return sender_email.split('<')[0].strip().strip('"')
+
+def fetch_newsletter_threads():
+    """Fetch recent newsletter threads using GMAIL_LIST_THREADS"""
+    # Build query for newsletter senders
+    query = 'newer_than:2d (from:beehiiv OR from:substack OR from:newsletter OR from:rundown OR from:snackprompt OR from:aiforwork OR from:unwindai OR from:whatsupinai OR from:superhuman OR from:bensbites OR from:tldr OR from:theneuron OR from:hypefury OR from:ideabrowser OR from:producthunt)'
+
+    result = composio_call([{
+        'tool_slug': 'GMAIL_LIST_THREADS',
+        'arguments': {
+            'max_results': 50,
+            'query': query
+        }
+    }])
+
+    if not result or not result.get('successful'):
+        log("Failed to list threads")
         return []
 
-def extract_topics(subject, snippet):
-    """Extract topics/keywords from email subject and snippet"""
-    text = f"{subject} {snippet}".lower()
-    found_topics = []
+    results = result.get('data', {}).get('results', [])
+    if not results:
+        return []
 
-    # Find matching niche keywords
+    threads = results[0].get('response', {}).get('data', {}).get('threads', [])
+    thread_ids = [t['id'] for t in threads]
+    log(f"Found {len(thread_ids)} newsletter threads")
+
+    if not thread_ids:
+        return []
+
+    # Fetch individual messages (batch of 20 at a time)
+    messages = []
+    for i in range(0, len(thread_ids), 20):
+        batch = thread_ids[i:i+20]
+        tools = [{'tool_slug': 'GMAIL_FETCH_MESSAGE_BY_MESSAGE_ID', 'arguments': {'message_id': tid}} for tid in batch]
+
+        result = composio_call(tools)
+        if not result or not result.get('successful'):
+            continue
+
+        for r in result.get('data', {}).get('results', []):
+            if isinstance(r, str):
+                continue
+            resp = r.get('response', {})
+            msg_data = resp.get('data', resp.get('data_preview', {}))
+            if msg_data:
+                messages.append(msg_data)
+
+    log(f"Fetched {len(messages)} message details")
+    return messages
+
+def extract_content_topics(subject, content):
+    """Extract meaningful content topics from newsletter text"""
+    text = f"{subject} {content}".lower()
+    found = []
+
+    # Find niche keyword matches
     for kw in NICHE_KEYWORDS:
         if kw in text:
-            found_topics.append(kw)
+            found.append(kw)
 
-    # Extract capitalized phrases (likely product/company names)
-    caps = re.findall(r'\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\b', f"{subject} {snippet}")
-    for cap in caps[:5]:
-        if len(cap) > 3 and cap.lower() not in ['the', 'and', 'for', 'with']:
-            found_topics.append(cap)
+    # Extract product/company names (capitalized words)
+    caps = re.findall(r'\b([A-Z][a-zA-Z]+(?:\s+[A-Z][a-zA-Z]+)*)\b', f"{subject} {content}")
+    known_products = ['Claude', 'ChatGPT', 'Gemini', 'OpenAI', 'Anthropic', 'DeepSeek',
+                      'Cursor', 'Copilot', 'Midjourney', 'Grok', 'Perplexity', 'Sora',
+                      'Codex', 'Xcode', 'GitHub', 'Vercel', 'Supabase', 'Retell', 'Vapi',
+                      'ElevenLabs', 'Composio', 'Windsurf', 'Bolt', 'Lovable', 'Replit',
+                      'Google', 'Apple', 'Meta', 'Microsoft', 'Amazon', 'Tesla', 'SpaceX']
+    for cap in caps:
+        if cap in known_products and cap.lower() not in found:
+            found.append(cap)
 
-    return list(set(found_topics))[:10]
+    # Extract key phrases that indicate content-worthy stories
+    story_patterns = [
+        r'launch(?:ed|es|ing)',
+        r'releas(?:ed|es|ing)',
+        r'announc(?:ed|es|ing)',
+        r'introduc(?:ed|es|ing)',
+        r'new (?:tool|feature|model|update|version)',
+        r'\$[\d,.]+[KMB]?\s+(?:ARR|MRR|revenue)',
+        r'raised? \$[\d,.]+[KMB]',
+        r'open.?sourc',
+    ]
+    for pattern in story_patterns:
+        if re.search(pattern, text):
+            match_context = re.search(r'(.{0,30}' + pattern + r'.{0,30})', text)
+            if match_context:
+                found.append(f"[story] {match_context.group(0).strip()[:60]}")
+
+    return list(set(found))[:15]
 
 def score_relevance(topics, text):
-    """Score relevance to our niche"""
+    """Score relevance to Ben's niche"""
     score = 0
     text_lower = text.lower()
-    for kw in NICHE_KEYWORDS:
+
+    # Core AI topics worth more
+    high_value = ['ai', 'automation', 'agent', 'vibecod', 'no-code', 'nocode',
+                  'claude', 'mcp', 'cursor', 'build', 'ship', 'launch', 'tool']
+    for kw in high_value:
         if kw in text_lower:
-            score += 10
+            score += 15
+
+    # General relevance
+    for kw in NICHE_KEYWORDS:
+        if kw in text_lower and kw not in high_value:
+            score += 5
+
     return min(score, 100)
 
-def process_emails(emails):
-    """Process emails and extract newsletter content"""
+def process_messages(messages):
+    """Process fetched messages and save relevant ones"""
     conn = sqlite3.connect(MEMORY_DB)
     cursor = conn.cursor()
     saved = 0
+    skipped_blacklist = 0
+    skipped_relevance = 0
     now = datetime.now().strftime("%Y-%m-%d %H:%M")
 
-    for email in emails:
+    for msg in messages:
         try:
-            email_id = email.get('messageId', '')
-            subject = email.get('subject', '')
-            sender = email.get('sender', '')
-            # Get content from messageText or preview body
-            snippet = email.get('messageText', email.get('preview', {}).get('body', ''))[:500]
+            email_id = msg.get('messageId', msg.get('id', ''))
+            subject = msg.get('subject', '')
+            sender_raw = msg.get('sender', msg.get('from', ''))
+            content = msg.get('messageText', msg.get('snippet', ''))[:1000]
 
-            # Extract topics
-            topics = extract_topics(subject, snippet)
-            relevance = score_relevance(topics, f"{subject} {snippet}")
+            # Skip blacklisted senders
+            if is_blacklisted(sender_raw):
+                skipped_blacklist += 1
+                continue
 
-            # Only save if somewhat relevant
-            if relevance >= 10:
+            sender_name = get_sender_name(sender_raw)
+            full_text = f"{subject} {content}"
+
+            # Extract topics and score
+            topics = extract_content_topics(subject, content)
+            relevance = score_relevance(topics, full_text)
+
+            # Only save if relevant enough
+            if relevance >= 15:
                 cursor.execute('''
-                    INSERT OR IGNORE INTO email_newsletters
-                    (subject, sender, snippet, topics, relevance_score, email_id, created_at)
-                    VALUES (?, ?, ?, ?, ?, ?, ?)
-                ''', (subject, sender, snippet, json.dumps(topics), relevance, email_id, now))
+                    INSERT OR IGNORE INTO newsletter_topics
+                    (subject, sender_name, sender_email, content, topics, relevance_score, email_id, created_at)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                ''', (subject, sender_name, sender_raw, content[:500], json.dumps(topics), relevance, email_id, now))
 
                 if cursor.rowcount > 0:
                     saved += 1
-                    log(f"Saved: {subject[:50]}... (relevance: {relevance})")
+                    log(f"[{relevance}] {sender_name}: {subject[:50]}")
+            else:
+                skipped_relevance += 1
         except Exception as e:
             log(f"Process error: {e}")
 
     conn.commit()
     conn.close()
+    log(f"Saved {saved} | Skipped: {skipped_blacklist} blacklisted, {skipped_relevance} low relevance")
     return saved
 
-def get_newsletter_topics():
-    """Get recent newsletter topics for briefing"""
+def get_content_topics_for_briefing():
+    """Get top newsletter topics for the morning briefing"""
     conn = sqlite3.connect(MEMORY_DB)
     cursor = conn.cursor()
     cursor.execute('''
-        SELECT subject, sender, snippet, topics, relevance_score
-        FROM email_newsletters
-        WHERE created_at > datetime('now', '-48 hours')
+        SELECT subject, sender_name, content, topics, relevance_score
+        FROM newsletter_topics
+        WHERE created_at > datetime('now', '-36 hours')
         ORDER BY relevance_score DESC, created_at DESC
         LIMIT 10
     ''')
@@ -195,26 +315,26 @@ def get_newsletter_topics():
     return results
 
 def main():
-    log("Email Newsletter Monitor starting...")
+    log("Newsletter Monitor v2 starting...")
     ensure_table()
 
-    emails = fetch_emails()
-    log(f"Fetched {len(emails)} emails")
+    messages = fetch_newsletter_threads()
 
-    if emails:
-        saved = process_emails(emails)
-        log(f"Saved {saved} new newsletter items")
+    if messages:
+        saved = process_messages(messages)
+    else:
+        log("No newsletter messages found")
 
     # Show what we found
-    topics = get_newsletter_topics()
+    topics = get_content_topics_for_briefing()
     if topics:
-        print("\n📬 NEWSLETTER TOPICS:")
-        for subject, sender, snippet, topics_json, relevance in topics[:5]:
-            print(f"\n[{relevance}] {subject[:60]}...")
-            print(f"    From: {sender[:40]}")
+        print(f"\n📬 NEWSLETTER CONTENT TOPICS ({len(topics)} stories):")
+        for subject, sender, content, topics_json, relevance in topics:
+            print(f"\n[{relevance}] {sender}: {subject[:70]}")
             topics_list = json.loads(topics_json) if topics_json else []
-            if topics_list:
-                print(f"    Topics: {', '.join(topics_list[:5])}")
+            topic_tags = [t for t in topics_list if not t.startswith('[story]')][:5]
+            if topic_tags:
+                print(f"    Tags: {', '.join(topic_tags)}")
 
     log("Done")
 

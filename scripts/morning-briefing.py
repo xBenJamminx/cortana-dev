@@ -413,10 +413,37 @@ def get_system_status():
 
 # ============= TOPIC ANALYTICS =============
 
+def get_newsletter_content_topics():
+    """Get top content topics from AI/creator newsletters.
+    Primary source for content ideas - already curated by newsletter authors."""
+    conn = sqlite3.connect(MEMORY_DB)
+    cursor = conn.cursor()
+
+    topics = []
+
+    try:
+        cursor.execute('''
+            SELECT subject, sender_name, content, topics, relevance_score
+            FROM newsletter_topics
+            WHERE created_at > datetime('now', '-36 hours')
+            ORDER BY relevance_score DESC, created_at DESC
+            LIMIT 8
+        ''')
+        for subject, sender, content, topics_json, relevance in cursor.fetchall():
+            topics.append({
+                'subject': subject,
+                'sender': sender,
+                'relevance': relevance,
+                'tags': json.loads(topics_json) if topics_json else []
+            })
+    except Exception as e:
+        log(f"Newsletter topics query error: {e}")
+
+    conn.close()
+    return topics
+
 def get_cross_source_hot_topics():
-    """Get topics that are trending ACROSS multiple sources.
-    This is the key insight: if something is mentioned on HN + Twitter + Newsletter,
-    it's actually hot - not just 'here are articles from IndieHackers'."""
+    """Get topics trending across multiple platforms (secondary signal)."""
     conn = sqlite3.connect(MEMORY_DB)
     cursor = conn.cursor()
 
@@ -427,11 +454,11 @@ def get_cross_source_hot_topics():
             SELECT topic, source_count, sources, mentions
             FROM hot_topics
             WHERE created_at > datetime('now', '-12 hours')
+            AND source_count >= 3
             ORDER BY source_count DESC, created_at DESC
-            LIMIT 15
+            LIMIT 5
         ''')
         for topic, source_count, sources_json, mentions_json in cursor.fetchall():
-            # Skip generic words
             if topic.lower() in ['how', 'what', 'here', 'this', 'that', 'with', 'from', 'your']:
                 continue
 
@@ -496,49 +523,25 @@ _{openers.get(day_name, "Let's go.")}_""")
             twitter_lines.append(f"Recent: {engagement.get('total_likes', 0)} likes, {engagement.get('total_retweets', 0)} RTs")
         sections.append("\n".join(twitter_lines))
 
-    # HOT TOPICS - Compact format: Topic (count) [HN](url) [YT](url) [TW](url)
+    # CONTENT TOPICS from newsletters (primary source)
+    newsletter_topics = get_newsletter_content_topics()
+    if newsletter_topics:
+        topics_lines = ["📬 *CONTENT TOPICS* (from your newsletters)"]
+        for nt in newsletter_topics[:6]:
+            subject = nt['subject'][:60]
+            sender = nt['sender']
+            topics_lines.append(f"• {subject} _({sender})_")
+        sections.append("\n".join(topics_lines))
+
+    # Cross-platform trending (only if 3+ platforms, secondary signal)
     hot_topics = get_cross_source_hot_topics()
     if hot_topics:
-        topics_lines = ["🔥 *HOT TOPICS*"]
-
-        shown = 0
-        for ht in hot_topics:
-            if shown >= 6:
-                break
-
-            topic_name = ht['topic']
+        trending_lines = ["🔥 *TRENDING* (3+ platforms)"]
+        for ht in hot_topics[:3]:
+            topic_name = ht['topic'][:50]
             source_count = ht['source_count']
-
-            # Build compact links: [HN](url) [YT](url) [TW](url)
-            seen_sources = set()
-            links = []
-            for mention in ht['mentions']:
-                source_type = mention.get('source_type', mention.get('source', '').split('/')[0])
-                if source_type in seen_sources:
-                    continue
-                seen_sources.add(source_type)
-
-                url = mention.get('url', '')
-                if url:
-                    # Short label: hackernews->HN, youtube->YT, twitter->TW, etc.
-                    label_map = {
-                        'hackernews': 'HN', 'reddit': 'RD', 'youtube': 'YT',
-                        'twitter': 'TW', 'producthunt': 'PH', 'newsletter': 'NL',
-                        'dev.to': 'DV', 'indiehackers': 'IH'
-                    }
-                    label = label_map.get(source_type, source_type[:2].upper())
-                    links.append(f"[{label}]({url})")
-
-                if len(links) >= 3:
-                    break
-
-            # Single line: Topic Name (count) [HN](url) [YT](url)
-            links_str = " ".join(links)
-            topics_lines.append(f"• *{topic_name}* ({source_count}) {links_str}")
-
-            shown += 1
-
-        sections.append("\n".join(topics_lines))
+            trending_lines.append(f"• *{topic_name}* ({source_count} platforms)")
+        sections.append("\n".join(trending_lines))
 
     # Fresh Product Hunt launches
     ph_launches = get_producthunt_launches()

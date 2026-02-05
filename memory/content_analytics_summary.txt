@@ -1,12 +1,12 @@
 🔥 TRENDING TOPICS — Content Opportunities
 
-Generated: 2026-02-04 12:00
+Generated: 2026-02-05 12:00
 
 ==================================================
 
 
 1. CLAUDE
-   Score: 400 | Sources: twitter
+   Score: 600 | Sources: twitter
    Related content:
    🐦 @@wildmindai: MCP server+Claude+Comfy: workflow automation; 
 - embedded te...
@@ -18,7 +18,7 @@ A small grou...
 I use it...
 
 2. CHATGPT
-   Score: 260 | Sources: twitter
+   Score: 320 | Sources: twitter
    Related content:
    🐦 @@RahulKu22532718: Most people will still be learning AI in 2026.
 
@@ -28,43 +28,8 @@ A small grou...
 Almost no one is learning how ...
    🐦 @@prof_ai_hack: 論文のイントロ（Introduction）執筆で、chatGPTやGeminiに「流暢な英語にして」と頼むのはもったいな...
 
-3. VIRAL
-   Score: 220 | Sources: twitter
-   Related content:
-   🐦 @@jon_d_doe: The ability to create stunning, hyper-realistic content is n...
-   🐦 @@itsjoaki: People asking on DMs to send lists of directories, here are ...
-   🐦 @@veratheape: Hollywood is cooked.
-
-A single ai artist just dropped a 7 mi...
-
-4. AUTOMATION
-   Score: 220 | Sources: twitter
-   Related content:
-   🐦 @@mostofakamal00: 📌Major drop for automation builder
-
-1,200+ready-to-use n8n w...
-   🐦 @@piyascode9: Secret AIs That Nobody Knows (Part 2)
-
-1. https://t.co/sbDCx...
-   🐦 @@damianplayer: the average CEO cannot tell you the difference between an au...
-
-5. LAUNCH
-   Score: 220 | Sources: twitter
-   Related content:
-   🐦 @@thejustinwelsh: 2024 as a solopreneur:  
-
-- $4.15M+ in revenue 
-- Operated a...
-   🐦 @@SebastianRoehl: My 2025 as an indie hacker:
-
-💰 $602K revenue from my apps
-📈 ...
-   🐦 @@denisyurchak: 2025 was my first successful year as an indie hacker
-
-I grin...
-
-6. SOLOPRENEUR
-   Score: 200 | Sources: twitter
+3. SOLOPRENEUR
+   Score: 320 | Sources: twitter
    Related content:
    🐦 @@thejustinwelsh: 2025 as a solopreneur: 
 
@@ -78,8 +43,43 @@ and today—Schej made its first revenue....
 - $4.15M+ in revenue 
 - Operated a...
 
+4. AUTOMATION
+   Score: 280 | Sources: twitter
+   Related content:
+   🐦 @@mostofakamal00: 📌Major drop for automation builder
+
+1,200+ready-to-use n8n w...
+   🐦 @@piyascode9: Secret AIs That Nobody Knows (Part 2)
+
+1. https://t.co/sbDCx...
+   🐦 @@damianplayer: the average CEO cannot tell you the difference between an au...
+
+5. LAUNCH
+   Score: 280 | Sources: twitter
+   Related content:
+   🐦 @@thejustinwelsh: 2024 as a solopreneur:  
+
+- $4.15M+ in revenue 
+- Operated a...
+   🐦 @@SebastianRoehl: My 2025 as an indie hacker:
+
+💰 $602K revenue from my apps
+📈 ...
+   🐦 @@denisyurchak: 2025 was my first successful year as an indie hacker
+
+I grin...
+
+6. VIRAL
+   Score: 220 | Sources: twitter
+   Related content:
+   🐦 @@jon_d_doe: The ability to create stunning, hyper-realistic content is n...
+   🐦 @@itsjoaki: People asking on DMs to send lists of directories, here are ...
+   🐦 @@veratheape: Hollywood is cooked.
+
+A single ai artist just dropped a 7 mi...
+
 7. INDIE HACKER
-   Score: 200 | Sources: twitter
+   Score: 220 | Sources: twitter
    Related content:
    🐦 @@SebastianRoehl: My 2025 as an indie hacker:
 
@@ -90,14 +90,20 @@ and today—Schej made its first revenue....
 I grin...
    🐦 @@arslandevs: So I followed this indie hacker's entire journey from zero t...
 
-8. GEORGE PICKENS
+8. ANTHROPIC
+   Score: 120 | Sources: twitter
+   Related content:
+   🐦 @@dr_cintas: They put Anthropic’s Claude inside a video editor 🤯
+
+Higgsfi...
+   🐦 @@BrandonButch: Apple just announced support for AI agents in Xcode 26.3. Yo...
+   🐦 @@yukimamax: Anthropicが、Claudeに『法律プラグイン』を追加。
+これにより、法律やデータサービスを提供する会社（RELX...
+
+9. GEORGE PICKENS
    Score: 100 | Sources: google_trends
    ⚡ Fresh topic - no indexed content yet (opportunity!)
 
-9. UPLOADARTICLE
-   Score: 100 | Sources: google_trends
-   ⚡ Fresh topic - no indexed content yet (opportunity!)
-
-10. WHAT IS A CONTENT CALENDAR
+10. UPLOADARTICLE
    Score: 100 | Sources: google_trends
    ⚡ Fresh topic - no indexed content yet (opportunity!)
