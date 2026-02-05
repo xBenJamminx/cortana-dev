@@ -431,27 +431,99 @@ def extract_stories_list_format(sender_name, subject, message_text):
     return stories[:10]  # Cap at 10 stories per newsletter
 
 
-def score_story_relevance(headline, description):
-    """Score a story's relevance to Ben's niche"""
-    text = f"{headline} {description}".lower()
-    score = 0
+def analyze_stories_with_llm(stories):
+    """Use Claude to analyze, deduplicate, and rank stories for Ben's audience.
+    Returns filtered and ranked list with relevance scores and reasoning."""
+    import subprocess
 
-    high_value = ['ai', 'automation', 'agent', 'vibecod', 'no-code', 'nocode',
-                  'claude', 'mcp', 'cursor', 'build', 'ship', 'launch', 'tool',
-                  'anthropic', 'openai', 'xcode', 'codex', 'creator', 'content']
-    for kw in high_value:
-        if kw in text:
-            score += 15
+    if not stories:
+        return []
 
-    medium_value = ['llm', 'gpt', 'gemini', 'deepseek', 'saas', 'startup',
-                    'founder', 'indie', 'solopreneur', 'developer', 'software',
-                    'api', 'app', 'product', 'revenue', 'growth', 'video',
-                    'elevenlabs', 'copilot', 'midjourney', 'model']
-    for kw in medium_value:
-        if kw in text:
-            score += 8
+    # Build the story list for analysis
+    story_list = []
+    for i, s in enumerate(stories):
+        story_list.append(f"[{i}] {s['headline']} ({s['source_name']})\n    {s['description'][:200]}\n    URL: {s.get('article_url', 'none')}")
 
-    return min(score, 100)
+    stories_text = "\n\n".join(story_list)
+
+    prompt = f"""You are analyzing newsletter stories for Ben, who teaches everyday people to build with AI. His audience is non-technical people interested in vibecoding, AI automation, and building tools/apps with AI.
+
+Here are {len(stories)} stories extracted from his AI/creator newsletters today:
+
+{stories_text}
+
+Your job:
+1. REMOVE stories that are NOT relevant to Ben's audience (pure academic research, enterprise-only news, crypto, stories about AI safety policy that everyday builders don't care about, internal company drama)
+2. DEDUPLICATE - if the same story appears from multiple sources, keep the one with the better description
+3. RANK the remaining stories by how useful they are for Ben to make content about. Prioritize:
+   - New AI tools or features everyday people can actually USE
+   - Tutorials or guides for building with AI
+   - Major product launches that affect builders (new models, IDE features, etc.)
+   - Creator economy / growth tactics
+   - Stories that would spark good discussion or hot takes
+4. Score each story 1-100 based on content potential for Ben's audience
+
+Respond ONLY with valid JSON - no markdown, no code fences. Format:
+[{{"index": 0, "score": 85, "reason": "one sentence why this matters for Ben's audience"}}]
+
+Only include stories worth keeping (score >= 50). Order by score descending."""
+
+    try:
+        result = subprocess.run(
+            ['claude', '-p', '--output-format', 'json', '--model', 'haiku', prompt],
+            capture_output=True, text=True, timeout=120
+        )
+
+        if result.returncode != 0:
+            log(f"Claude analysis failed: {result.stderr[:200]}")
+            return stories  # Fall back to returning all stories
+
+        # Parse the JSON response from Claude CLI
+        # Format: {"type":"result", "result": "```json\n[...]\n```", ...}
+        output = result.stdout.strip()
+        try:
+            response = json.loads(output)
+            result_text = response.get('result', '')
+            # Strip markdown code fences if present
+            result_text = re.sub(r'^```(?:json)?\s*', '', result_text)
+            result_text = re.sub(r'\s*```$', '', result_text)
+            analysis = json.loads(result_text.strip())
+        except (json.JSONDecodeError, TypeError) as e:
+            log(f"JSON parse error: {e}")
+            log(f"Raw output (first 500): {output[:500]}")
+            # Try to extract JSON array from raw output
+            match = re.search(r'\[.*\]', output, re.DOTALL)
+            if match:
+                try:
+                    analysis = json.loads(match.group(0))
+                except json.JSONDecodeError as e2:
+                    log(f"Fallback parse also failed: {e2}")
+                    return stories
+            else:
+                log(f"Could not find JSON array in Claude response")
+                return stories
+
+        # Map analysis back to stories
+        ranked_stories = []
+        for item in analysis:
+            idx = item.get('index', -1)
+            if 0 <= idx < len(stories):
+                story = stories[idx].copy()
+                story['relevance_score'] = item.get('score', 50)
+                story['llm_reason'] = item.get('reason', '')
+                ranked_stories.append(story)
+
+        # Sort by score
+        ranked_stories.sort(key=lambda x: x.get('relevance_score', 0), reverse=True)
+        log(f"LLM analysis: {len(stories)} stories -> {len(ranked_stories)} kept")
+        return ranked_stories
+
+    except subprocess.TimeoutExpired:
+        log("Claude analysis timed out")
+        return stories
+    except Exception as e:
+        log(f"Claude analysis error: {e}")
+        return stories
 
 
 def fetch_newsletter_emails():
@@ -503,13 +575,14 @@ def fetch_newsletter_emails():
 
 
 def process_messages(messages):
-    """Process emails: extract stories from each newsletter and save"""
+    """Process emails: extract stories, analyze with LLM, save the good ones"""
     conn = sqlite3.connect(MEMORY_DB)
     cursor = conn.cursor()
     saved_emails = 0
-    saved_stories = 0
     skipped_blacklist = 0
     now = datetime.now().strftime("%Y-%m-%d %H:%M")
+
+    all_stories = []
 
     for msg in messages:
         try:
@@ -533,7 +606,7 @@ def process_messages(messages):
                 (subject, sender_name, sender_email, content, topics, links, relevance_score, email_id, created_at)
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
             ''', (subject, sender_name, sender_raw,
-                  (message_text or '')[:5000],  # Store more content for reference
+                  (message_text or '')[:5000],
                   '[]', json.dumps(good_links), 50, email_id, now))
 
             if cursor.rowcount > 0:
@@ -541,32 +614,42 @@ def process_messages(messages):
 
             # Extract individual stories
             stories = extract_stories_from_newsletter(sender_name, subject, message_text or '')
-
             for story in stories:
-                relevance = score_story_relevance(story['headline'], story['description'])
-                if relevance >= 15:
-                    try:
-                        cursor.execute('''
-                            INSERT OR IGNORE INTO newsletter_stories
-                            (headline, description, article_url, source_name, source_subject,
-                             email_id, relevance_score, created_at)
-                            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-                        ''', (story['headline'], story['description'], story['article_url'],
-                              story['source_name'], story['source_subject'],
-                              email_id, relevance, now))
-                        if cursor.rowcount > 0:
-                            saved_stories += 1
-                    except Exception:
-                        pass
+                story['email_id'] = email_id
+            all_stories.extend(stories)
 
-            log(f"  {sender_name}: {subject[:50]} -> {len(stories)} stories")
+            log(f"  {sender_name}: {subject[:50]} -> {len(stories)} stories extracted")
 
         except Exception as e:
             log(f"Process error: {e}")
 
     conn.commit()
+
+    # Now analyze ALL stories with LLM for relevance, deduplication, ranking
+    log(f"Analyzing {len(all_stories)} total stories with LLM...")
+    ranked_stories = analyze_stories_with_llm(all_stories)
+
+    # Save the LLM-approved stories
+    saved_stories = 0
+    for story in ranked_stories:
+        try:
+            cursor.execute('''
+                INSERT OR IGNORE INTO newsletter_stories
+                (headline, description, article_url, source_name, source_subject,
+                 email_id, relevance_score, created_at)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            ''', (story['headline'], story.get('llm_reason', story['description']),
+                  story.get('article_url', ''), story['source_name'],
+                  story.get('source_subject', ''), story.get('email_id', ''),
+                  story.get('relevance_score', 50), now))
+            if cursor.rowcount > 0:
+                saved_stories += 1
+        except Exception:
+            pass
+
+    conn.commit()
     conn.close()
-    log(f"Saved {saved_emails} emails, {saved_stories} new stories | Skipped: {skipped_blacklist} blacklisted")
+    log(f"Saved {saved_emails} emails, {saved_stories} curated stories | Skipped: {skipped_blacklist} blacklisted")
     return saved_stories
 
 
@@ -598,22 +681,20 @@ def main():
     else:
         log("No newsletter messages found")
 
-    # Show extracted stories
+    # Show curated stories
     stories = get_stories_for_briefing(15)
     if stories:
         print(f"\n{'='*70}")
-        print(f"NEWSLETTER STORIES ({len(stories)} stories)")
+        print(f"CURATED STORIES ({len(stories)} stories)")
         print(f"{'='*70}")
         for s in stories:
-            print(f"\n>> {s['headline']}")
-            print(f"   Source: {s['source_name']}")
+            score = s.get('relevance_score', 0)
+            print(f"\n[{score}] {s['headline']}")
+            print(f"    Source: {s['source_name']}")
             if s['description']:
-                # Show a meaningful chunk of the description
-                print(f"   {s['description'][:300]}")
+                print(f"    {s['description'][:300]}")
             if s['article_url']:
-                print(f"   {s['article_url']}")
-            else:
-                print(f"   (no direct link)")
+                print(f"    {s['article_url']}")
     else:
         print("\nNo stories extracted yet")
 
