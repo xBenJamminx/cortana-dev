@@ -89,7 +89,7 @@
 				</h1>
 
 				<p class="{mounted ? 'reveal visible' : 'opacity-0'} mt-5 max-w-md text-base leading-relaxed text-muted md:mt-6 md:text-lg">
-					Tutorials, prompts, tool recommendations, and a community of people figuring out how to use AI in their real lives. Not just theory. The actual how.
+					Tutorials, workflows, tool recommendations, templates, and weekly calls. Everything you need to actually use AI in your work, your side projects, and your life. Not theory. The actual how.
 				</p>
 
 				<div class="{mounted ? 'reveal visible' : 'opacity-0'} mt-8 flex flex-wrap items-center gap-4">
@@ -120,7 +120,7 @@
 							</div>
 							<div class="flex items-center gap-2">
 								<div class="h-2.5 w-2.5 rounded-full border-2 border-ink bg-yellow"></div>
-								<span class="text-sm font-medium">Prompt pack: Business operations (12)</span>
+								<span class="text-sm font-medium">Starter kit: AI-powered side project</span>
 							</div>
 							<div class="flex items-center gap-2">
 								<div class="h-2.5 w-2.5 rounded-full border-2 border-ink bg-pink"></div>
@@ -128,7 +128,7 @@
 							</div>
 							<div class="flex items-center gap-2">
 								<div class="h-2.5 w-2.5 rounded-full border-2 border-ink bg-green"></div>
-								<span class="text-sm font-medium">Prompt pack: Content creation (12)</span>
+								<span class="text-sm font-medium">Template: Client proposal workflow</span>
 							</div>
 						</div>
 						<div class="mt-4 flex items-center gap-2 rounded-lg border-2 border-ink/10 bg-bg-alt px-3 py-2">
@@ -146,7 +146,7 @@
 	<div class="mx-auto grid max-w-4xl grid-cols-2 gap-4 px-6 md:grid-cols-4 md:gap-8">
 		{#each [
 			{ num: '12+', label: 'Tutorials', color: 'text-cyan' },
-			{ num: '6', label: 'Prompt Packs', color: 'text-yellow' },
+			{ num: '50+', label: 'Resources', color: 'text-yellow' },
 			{ num: 'Weekly', label: 'Live Calls', color: 'text-pink' },
 			{ num: '50', label: 'Founding Spots', color: 'text-green' }
 		] as stat}
@@ -164,13 +164,15 @@
 		{#each Array(3) as _}
 			<span class="font-display text-base font-bold uppercase tracking-wide text-bg">Step-by-Step Tutorials</span>
 			<span class="text-cyan">&bull;</span>
-			<span class="font-display text-base font-bold uppercase tracking-wide text-bg">Copy-Paste Prompt Packs</span>
+			<span class="font-display text-base font-bold uppercase tracking-wide text-bg">Workflow Templates</span>
 			<span class="text-cyan">&bull;</span>
 			<span class="font-display text-base font-bold uppercase tracking-wide text-bg">Honest Tool Reviews</span>
 			<span class="text-cyan">&bull;</span>
-			<span class="font-display text-base font-bold uppercase tracking-wide text-bg">Exclusive Tool Deals</span>
+			<span class="font-display text-base font-bold uppercase tracking-wide text-bg">Exclusive Deals</span>
 			<span class="text-cyan">&bull;</span>
 			<span class="font-display text-base font-bold uppercase tracking-wide text-bg">Weekly Live Calls</span>
+			<span class="text-cyan">&bull;</span>
+			<span class="font-display text-base font-bold uppercase tracking-wide text-bg">Starter Kits</span>
 			<span class="text-cyan">&bull;</span>
 		{/each}
 	</div>
@@ -322,16 +324,16 @@
 				{
 					num: '01',
 					title: 'Step-by-Step Tutorials',
-					desc: 'Walkthroughs that show you exactly how to use AI for specific tasks. Written for non-technical people. Each one takes you from zero to a working result.',
-					examples: 'How to automate your content pipeline (no code). How to use AI to write client proposals in 10 minutes. How to set up your first automation. How to build a bedtime story generator for your kids.',
+					desc: 'Full walkthroughs that take you from zero to a working result. Written for non-technical people. Each one covers a real use case you can apply the same day.',
+					examples: 'Automate your content pipeline (no code). Write client proposals in 10 minutes. Set up your first AI workflow. Build a custom tool for your family.',
 					badge: 'bg-cyan-light',
 					shadow: 'neo-card-cyan'
 				},
 				{
 					num: '02',
-					title: 'Prompt Packs (Copy-Paste Ready)',
-					desc: 'Curated sets of prompts organized by use case. Each prompt tells you which AI model to use, when to reach for it, and includes example output. No filler. 10-15 tested prompts per pack.',
-					examples: 'Business Operations: proposals, meeting notes, competitive analysis, invoicing, status reports. Content Creation: tweets, threads, newsletters, YouTube scripts, repurposing. Side Projects: specs, landing pages, launch checklists. Family: stories, planners, learning tools.',
+					title: 'Templates, Workflows & Starter Kits',
+					desc: 'Ready-to-use templates for common tasks. Automation workflows you can import and run. Starter kits that give you a head start on projects instead of starting from scratch.',
+					examples: 'Content pipeline templates. Client onboarding workflows. AI-powered email sequences. Side project starter kits. Prompt libraries organized by use case.',
 					badge: 'bg-yellow-light',
 					shadow: 'neo-card-yellow'
 				},
@@ -339,14 +341,14 @@
 					num: '03',
 					title: 'Honest Tool Breakdowns',
 					desc: 'Monthly roundups of which AI tools are actually worth paying for, what they cost, and honest verdicts. No affiliate links. No sponsorships. Just what works and what doesn\'t, tested across real work and real projects.',
-					examples: 'The AI tools actually worth paying for (and the monthly damage). Best free AI tools for small business. When to use Claude vs ChatGPT vs Gemini. Tool deals that offset your membership cost.',
+					examples: 'The AI tools actually worth paying for (and the monthly damage). Best free tools for small business. When to use Claude vs ChatGPT vs Gemini. Tool deals that offset your membership.',
 					badge: 'bg-pink-light',
 					shadow: 'neo-card-pink'
 				},
 				{
 					num: '04',
 					title: 'Weekly Calls + Private Community',
-					desc: 'Weekly community calls covering specific AI topics, workflows, and Q&amp;A. Dedicated channels for questions, wins, and troubleshooting. New resources and discussions every week.',
+					desc: 'Weekly community calls covering specific AI topics, live walkthroughs, and Q&amp;A. Dedicated channels for questions, wins, and troubleshooting. New resources added every week.',
 					examples: 'Weekly topic-based calls (recorded). Help channel for questions. Wins channel to share what you built. All session recordings archived.',
 					badge: 'bg-cyan-light',
 					shadow: 'neo-card-cyan'
@@ -354,16 +356,16 @@
 				{
 					num: '05',
 					title: 'Exclusive Tool Deals',
-					desc: 'Discounts negotiated with AI tool companies, exclusively for members. The goal: the deals alone save you more than the $29/mo membership. The tutorials, prompts, and community are free upside.',
-					examples: 'Discounts on the tools recommended in roundups. Lifetime deal alerts before they go public. Partner pricing on AI platforms.',
+					desc: 'Discounts negotiated with AI tool companies, exclusively for members. The goal: the deals alone save you more than the $29/mo membership. Everything else is free upside.',
+					examples: 'Discounts on recommended tools. Lifetime deal alerts before they go public. Partner pricing on AI platforms.',
 					badge: 'bg-yellow-light',
 					shadow: 'neo-card-yellow'
 				},
 				{
 					num: '06',
-					title: 'Advanced Resources (For Builders)',
-					desc: 'For members who want to go deeper: automation workflows, starter code, and technical breakdowns. This isn\'t the main focus, but it\'s here for people who want it.',
-					examples: 'n8n workflow templates. Automation scripts. Technical deep-dives. Code walkthroughs from real products.',
+					title: 'The Full Stack (For Builders)',
+					desc: 'For members who want to go deeper: the tech, the content strategy, and the launch playbook. How to go from idea to live product using AI as your unfair advantage.',
+					examples: 'Automation workflow templates. Technical deep-dives. Content and social media strategies. Launch checklists. Code walkthroughs from real products.',
 					badge: 'bg-pink-light',
 					shadow: 'neo-card-pink'
 				}
@@ -481,12 +483,12 @@
 					<div class="px-6 py-6 md:px-8 md:py-8">
 						<ul class="space-y-3 text-left text-sm">
 							{#each [
-								'Full library: tutorials, prompt packs, tool guides',
+								'Full library: tutorials, templates, workflows, tool guides',
 								'Permanent price lock at $29/mo',
 								'Weekly community calls + private channels',
+								'Starter kits and automation templates',
 								'Exclusive tool deals and partner discounts',
-								'Founding member badge',
-								'Input on what gets built next',
+								'Founding member badge + input on what gets built',
 								'Early access to all future products'
 							] as perk}
 								<li class="flex gap-3">
@@ -568,7 +570,7 @@
 				Learn AI. Use it everywhere.
 			</h2>
 			<p class="mt-4 text-base text-muted md:text-lg">
-				50 founding spots. Tutorials, prompts, tool deals, and weekly calls and a private community. $29/mo locked forever.
+				50 founding spots. Tutorials, templates, tool deals, weekly calls, and a private community. $29/mo locked forever.
 			</p>
 			<a
 				href="#founding"
