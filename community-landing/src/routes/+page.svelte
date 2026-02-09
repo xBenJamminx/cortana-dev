@@ -169,41 +169,41 @@
 		<div class="mt-10 space-y-3 md:mt-12 md:space-y-4">
 			{#each [
 				{
-					problem: 'There are 1,000 AI tools and you have no idea which ones are worth paying for.',
+					problem: '1,000 AI tools. No idea which ones are worth paying for.',
 					pain: 'You signed up for 3 different things last month. Used one of them twice. The rest are charging your card for nothing.',
-					solution: 'Every month, Ben publishes an honest breakdown of the AI tools he actually used that month, what they cost, and whether they\'re worth it. No affiliate links. No sponsorships. Just verdicts from someone who uses these tools for real work. Plus exclusive member deals designed to save you more than $29/mo.'
+					solution: 'Honest monthly breakdowns of the tools Ben actually uses, what they cost, and whether they\'re worth it. No affiliate links. Plus member-only deals designed to save you more than $29/mo.'
 				},
 				{
-					problem: 'You see what AI can do but don\'t know how to make it do that for you.',
-					pain: 'You watched someone on Twitter automate their entire content pipeline. You have no idea how to replicate it. The thread was 12 tweets of hype and zero details.',
-					solution: 'The library has step-by-step tutorials that show you exactly how to set things up. Not concepts. Not overviews. "Open this tool. Paste this prompt. Click here. Here\'s what you should see." Written for people who are not developers.'
+					problem: 'You see what AI can do but can\'t replicate it.',
+					pain: 'You watched someone on Twitter automate their entire content pipeline. The thread was 12 tweets of hype and zero details.',
+					solution: 'Step-by-step tutorials: "Open this tool. Paste this prompt. Click here." Written for non-technical people. Zero fluff.'
 				},
 				{
-					problem: 'You\'ve tried using ChatGPT but the results are... meh.',
-					pain: 'Generic outputs. Robotic language. Stuff you\'d never actually use. You know the tool is powerful but you\'re clearly not using it right.',
-					solution: 'The prompt packs give you copy-paste-ready prompts for specific tasks: client proposals, content creation, business analysis, even family stuff like bedtime stories and meal planning. Each one includes which AI model works best, when to use it, and example output so you know what to expect.'
+					problem: 'ChatGPT gives you generic, robotic outputs.',
+					pain: 'You know the tool is powerful but you\'re clearly not using it right.',
+					solution: 'Copy-paste prompt packs for specific tasks: proposals, content, analysis, even family stuff. Each one tells you which model to use and shows example output.'
 				},
 				{
 					problem: 'You get stuck and have nobody to ask.',
-					pain: 'Google gives you 2023 answers. Reddit threads end in arguments. You spend an hour troubleshooting and give up.',
-					solution: 'The community has people working through the same problems you are. Ben is in there daily. Ask a question, get a real answer from someone who\'s done it. Not a ghost town Discord. A room where people actually respond.'
+					pain: 'Google gives you 2023 answers. Reddit threads end in arguments.',
+					solution: 'A community where people actually respond. Ben is in there daily. Ask a question, get a real answer from someone who\'s done it.'
 				},
 				{
-					problem: 'You don\'t have time to figure all this out yourself.',
-					pain: 'Full-time job. Maybe kids. Maybe a side project. By the time you sit down to learn something new, you have 45 minutes before you\'re exhausted.',
-					solution: 'Everything in the library is built for busy people. Prompt packs you can use in 30 seconds. Tutorials you can finish in one sitting. Tool recommendations so you don\'t waste a week researching. The whole point is to skip the research phase and go straight to results.'
+					problem: 'No time to figure this out yourself.',
+					pain: 'Full-time job. Maybe kids. 45 minutes before you\'re exhausted.',
+					solution: 'Prompts you can use in 30 seconds. Tutorials you can finish in one sitting. Skip the research, go straight to results.'
 				}
 			] as row, i}
 				<div class="reveal grid gap-0 md:grid-cols-2" style="transition-delay: {i * 60}ms;">
 					<!-- Problem side -->
-					<div class="neo-card rounded-t-xl md:rounded-l-xl md:rounded-tr-none border-b-[1.5px] md:border-b-3 md:border-r-0 bg-surface p-5 md:p-6">
-						<div class="mb-2 inline-block rounded-md border-2 border-ink/20 bg-pink-light px-2 py-0.5 font-mono text-[0.6rem] font-bold uppercase tracking-wider text-ink/60">Problem</div>
-						<p class="font-semibold text-ink">{row.problem}</p>
-						<p class="mt-1.5 text-sm text-muted">{row.pain}</p>
+					<div class="neo-card rounded-t-xl md:rounded-l-xl md:rounded-tr-none border-b-[1.5px] md:border-b-3 md:border-r-0 bg-surface p-4 md:p-6">
+						<div class="mb-1.5 inline-block rounded-md border-2 border-ink/20 bg-pink-light px-2 py-0.5 font-mono text-[0.6rem] font-bold uppercase tracking-wider text-ink/60">Problem</div>
+						<p class="text-sm font-semibold text-ink">{row.problem}</p>
+						<p class="mt-1 hidden text-sm text-muted md:block">{row.pain}</p>
 					</div>
 					<!-- Solution side -->
-					<div class="neo-card rounded-b-xl md:rounded-r-xl md:rounded-bl-none border-t-0 md:border-t-3 bg-cyan-bg p-5 md:p-6">
-						<div class="mb-2 inline-block rounded-md border-2 border-ink bg-cyan px-2 py-0.5 font-mono text-[0.6rem] font-bold uppercase tracking-wider">Solution</div>
+					<div class="neo-card rounded-b-xl md:rounded-r-xl md:rounded-bl-none border-t-0 md:border-t-3 bg-cyan-bg p-4 md:p-6">
+						<div class="mb-1.5 inline-block rounded-md border-2 border-ink bg-cyan px-2 py-0.5 font-mono text-[0.6rem] font-bold uppercase tracking-wider">Solution</div>
 						<p class="text-sm font-medium leading-relaxed text-ink">{row.solution}</p>
 					</div>
 				</div>
