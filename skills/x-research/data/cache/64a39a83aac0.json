@@ -1,0 +1,1679 @@
+{
+  "query": "from:frankdegods -is:retweet",
+  "params": "sort=recent&pages=1&since=1d",
+  "timestamp": 1770586499961,
+  "data": [
+    {
+      "id": "2020601541527482746",
+      "text": "@ashebytes thanks you too!",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T20:52:03.000Z",
+      "conversation_id": "2020363804014493920",
+      "metrics": {
+        "likes": 6,
+        "retweets": 0,
+        "replies": 3,
+        "quotes": 0,
+        "impressions": 189,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "ashebytes"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020601541527482746"
+    },
+    {
+      "id": "2020577010284961977",
+      "text": "@Rewkang dms OPEN 😁😹",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T19:14:34.000Z",
+      "conversation_id": "2020560687722852391",
+      "metrics": {
+        "likes": 5,
+        "retweets": 0,
+        "replies": 5,
+        "quotes": 0,
+        "impressions": 1604,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "Rewkang"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020577010284961977"
+    },
+    {
+      "id": "2020575891240169963",
+      "text": "@Rewkang buy risk assets",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T19:10:07.000Z",
+      "conversation_id": "2020560687722852391",
+      "metrics": {
+        "likes": 40,
+        "retweets": 1,
+        "replies": 5,
+        "quotes": 0,
+        "impressions": 6473,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "Rewkang"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020575891240169963"
+    },
+    {
+      "id": "2020573089428328601",
+      "text": "@tenobrus use teamcreate is the new ultrathink, but it actually produces great outputs",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T18:58:59.000Z",
+      "conversation_id": "2020566590895632762",
+      "metrics": {
+        "likes": 8,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "impressions": 759,
+        "bookmarks": 1
+      },
+      "urls": [],
+      "mentions": [
+        "tenobrus"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020573089428328601"
+    },
+    {
+      "id": "2020572773429428306",
+      "text": "@Austen This is Kanban but probably can steal some of the stuff Alex already thought through with this\n\nhttps://t.co/Olv0ydWZAT",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T18:57:44.000Z",
+      "conversation_id": "2020569822665339330",
+      "metrics": {
+        "likes": 20,
+        "retweets": 0,
+        "replies": 2,
+        "quotes": 0,
+        "impressions": 6148,
+        "bookmarks": 35
+      },
+      "urls": [
+        "https://x.com/alexfinn/status/2019816560190521563?s=46"
+      ],
+      "mentions": [
+        "Austen"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020572773429428306"
+    },
+    {
+      "id": "2020572435053977770",
+      "text": "@jefftangx Not really. Less opinionated. \n\nIt’s exactly like Claude Code’s native research agent.\n\nSo when you say to Claude “research how other devs are doing this”\n\nNow you can say “use x-search to see how other devs are using this over last few days”",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T18:56:23.000Z",
+      "conversation_id": "2020363804014493920",
+      "metrics": {
+        "likes": 11,
+        "retweets": 1,
+        "replies": 0,
+        "quotes": 0,
+        "impressions": 598,
+        "bookmarks": 1
+      },
+      "urls": [],
+      "mentions": [
+        "jefftangx"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020572435053977770"
+    },
+    {
+      "id": "2020568743697392055",
+      "text": "@AlexFinn I find no personal need for local models &amp; I don’t think anyone should really use them if they are starting out. But definitely agree that you’re on cutting edge and it’s worthy experimentation.",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T18:41:43.000Z",
+      "conversation_id": "2020567487180579086",
+      "metrics": {
+        "likes": 65,
+        "retweets": 0,
+        "replies": 8,
+        "quotes": 0,
+        "impressions": 10271,
+        "bookmarks": 1
+      },
+      "urls": [],
+      "mentions": [
+        "AlexFinn"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020568743697392055"
+    },
+    {
+      "id": "2020559513309327398",
+      "text": "@yourfriendbrett the best skills will likely have lots of maintenance, constant updates &amp; support\n\ni think we’ve only seen the tip of the iceberg.",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T18:05:02.000Z",
+      "conversation_id": "2020552810153074942",
+      "metrics": {
+        "likes": 11,
+        "retweets": 0,
+        "replies": 2,
+        "quotes": 0,
+        "impressions": 490,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "yourfriendbrett"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020559513309327398"
+    },
+    {
+      "id": "2020552810153074942",
+      "text": "Skills as a Service will be the new SaaS",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T17:38:24.000Z",
+      "conversation_id": "2020552810153074942",
+      "metrics": {
+        "likes": 340,
+        "retweets": 27,
+        "replies": 68,
+        "quotes": 6,
+        "impressions": 13693,
+        "bookmarks": 41
+      },
+      "urls": [],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020552810153074942"
+    },
+    {
+      "id": "2020550429793202413",
+      "text": "@georgepickett mac &amp; windows of our generation",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T17:28:57.000Z",
+      "conversation_id": "2020541101937922109",
+      "metrics": {
+        "likes": 9,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "impressions": 707,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "georgepickett"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020550429793202413"
+    },
+    {
+      "id": "2020549866368241744",
+      "text": "@jpfraneto No. It could only be open source or at hardware level.",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T17:26:42.000Z",
+      "conversation_id": "2020447300850491413",
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "impressions": 131,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "jpfraneto"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020549866368241744"
+    },
+    {
+      "id": "2020544809471967416",
+      "text": "@AntoineRSX Try it - I think so.\n\nI just tinkered with it until it matched Claude Code’s native research agent as close as possible.",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T17:06:37.000Z",
+      "conversation_id": "2020363804014493920",
+      "metrics": {
+        "likes": 3,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "impressions": 681,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "AntoineRSX"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020544809471967416"
+    },
+    {
+      "id": "2020541790332342581",
+      "text": "My favorite thing in the world to play with now. You can accurately research anything on X now. https://t.co/e6Aiz38090 https://t.co/WWYRz4lRuE",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T16:54:37.000Z",
+      "conversation_id": "2020541790332342581",
+      "metrics": {
+        "likes": 818,
+        "retweets": 33,
+        "replies": 62,
+        "quotes": 1,
+        "impressions": 83309,
+        "bookmarks": 1093
+      },
+      "urls": [
+        "https://x.com/frankdegods/status/2020541790332342581/photo/1",
+        "https://twitter.com/frankdegods/status/2020363804014493920"
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020541790332342581"
+    },
+    {
+      "id": "2020541101937922109",
+      "text": "-OpenClaw continuing to go vertical\n-Opus 4.6 having massive context window\n-Use TeamCreate\n-New X API \n-Codex 5.3 catching up\n\nall not priced in yet",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T16:51:53.000Z",
+      "conversation_id": "2020541101937922109",
+      "metrics": {
+        "likes": 434,
+        "retweets": 22,
+        "replies": 76,
+        "quotes": 3,
+        "impressions": 19382,
+        "bookmarks": 86
+      },
+      "urls": [],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020541101937922109"
+    },
+    {
+      "id": "2020535186648076691",
+      "text": "@0xDismissals yes, i’m using it but just have it automatically collecting test net tokens in this screenshot haha",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T16:28:22.000Z",
+      "conversation_id": "2020429495686111296",
+      "metrics": {
+        "likes": 0,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "impressions": 521,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "0xDismissals"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020535186648076691"
+    },
+    {
+      "id": "2020469018012819787",
+      "text": "@notpius yes it will improve outputs for research &amp; token summaries",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T12:05:27.000Z",
+      "conversation_id": "2020363804014493920",
+      "metrics": {
+        "likes": 3,
+        "retweets": 0,
+        "replies": 2,
+        "quotes": 0,
+        "impressions": 947,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "notpius"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020469018012819787"
+    },
+    {
+      "id": "2020462726925918346",
+      "text": "@statezero they do now. all tweets.",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T11:40:27.000Z",
+      "conversation_id": "2020363804014493920",
+      "metrics": {
+        "likes": 3,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "impressions": 858,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "statezero"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020462726925918346"
+    },
+    {
+      "id": "2020461178321834327",
+      "text": "v2.1 quick update\n\nnow can filter search by time, even up to this hour https://t.co/bRbmua1jAf",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T11:34:17.000Z",
+      "conversation_id": "2020363804014493920",
+      "metrics": {
+        "likes": 58,
+        "retweets": 2,
+        "replies": 9,
+        "quotes": 0,
+        "impressions": 8724,
+        "bookmarks": 33
+      },
+      "urls": [
+        "https://x.com/frankdegods/status/2020461178321834327/photo/1"
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020461178321834327"
+    },
+    {
+      "id": "2020459021954654241",
+      "text": "@AndreWGMI yeah i think so, i'll maintain it &amp; keep improving it\n\nsince i'm already using it so much",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T11:25:43.000Z",
+      "conversation_id": "2020363804014493920",
+      "metrics": {
+        "likes": 4,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "impressions": 615,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "AndreWGMI"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020459021954654241"
+    },
+    {
+      "id": "2020458691158298730",
+      "text": "v2 is now pushed to the github\n\nmain focus was making it more token efficient &amp; reliable https://t.co/foFQCrWigA",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T11:24:24.000Z",
+      "conversation_id": "2020363804014493920",
+      "metrics": {
+        "likes": 57,
+        "retweets": 3,
+        "replies": 9,
+        "quotes": 0,
+        "impressions": 9679,
+        "bookmarks": 28
+      },
+      "urls": [
+        "https://x.com/frankdegods/status/2020458691158298730/photo/1"
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020458691158298730"
+    },
+    {
+      "id": "2020453822095675443",
+      "text": "@martin_casado \"Claude, I have 3 hours until my flight, please make me SaaS business so I can afford to pay $11.99 for inflight WiFi. Use TeamCreate\"",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T11:05:04.000Z",
+      "conversation_id": "2020409276687368663",
+      "metrics": {
+        "likes": 42,
+        "retweets": 2,
+        "replies": 7,
+        "quotes": 0,
+        "impressions": 5765,
+        "bookmarks": 14
+      },
+      "urls": [],
+      "mentions": [
+        "martin_casado"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020453822095675443"
+    },
+    {
+      "id": "2020450030717411428",
+      "text": "@VitalikButerin @post_polar_ thoughts on ai &amp; crypto?",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T10:50:00.000Z",
+      "conversation_id": "2020446456872611968",
+      "metrics": {
+        "likes": 19,
+        "retweets": 0,
+        "replies": 4,
+        "quotes": 0,
+        "impressions": 2087,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "VitalikButerin",
+        "post_polar_"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020450030717411428"
+    },
+    {
+      "id": "2020447802262745120",
+      "text": "Apple &amp; Google made all of the apps nobody built on top of them",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T10:41:08.000Z",
+      "conversation_id": "2020447717869178983",
+      "metrics": {
+        "likes": 23,
+        "retweets": 0,
+        "replies": 4,
+        "quotes": 0,
+        "impressions": 4935,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020447802262745120"
+    },
+    {
+      "id": "2020447717869178983",
+      "text": "Smartphones topped after the iPhone came out",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T10:40:48.000Z",
+      "conversation_id": "2020447717869178983",
+      "metrics": {
+        "likes": 126,
+        "retweets": 0,
+        "replies": 38,
+        "quotes": 0,
+        "impressions": 9725,
+        "bookmarks": 1
+      },
+      "urls": [],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020447717869178983"
+    },
+    {
+      "id": "2020447300850491413",
+      "text": "The TAM of OpenClaw is roughly everyone",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T10:39:09.000Z",
+      "conversation_id": "2020447300850491413",
+      "metrics": {
+        "likes": 95,
+        "retweets": 0,
+        "replies": 26,
+        "quotes": 1,
+        "impressions": 7431,
+        "bookmarks": 4
+      },
+      "urls": [],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020447300850491413"
+    },
+    {
+      "id": "2020446652499173663",
+      "text": "The TAM of OpenClaw is roughly everyone using the internet",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T10:36:34.000Z",
+      "conversation_id": "2020446652499173663",
+      "metrics": {
+        "likes": 8,
+        "retweets": 0,
+        "replies": 4,
+        "quotes": 0,
+        "impressions": 951,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020446652499173663"
+    },
+    {
+      "id": "2020439677833011652",
+      "text": "@spunosounds what was the prompt(s)",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T10:08:51.000Z",
+      "conversation_id": "2020436031603138758",
+      "metrics": {
+        "likes": 26,
+        "retweets": 0,
+        "replies": 9,
+        "quotes": 0,
+        "impressions": 13728,
+        "bookmarks": 10
+      },
+      "urls": [],
+      "mentions": [
+        "spunosounds"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020439677833011652"
+    },
+    {
+      "id": "2020436798074491138",
+      "text": "guy shorting software who will only ever spend more time on software",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T09:57:25.000Z",
+      "conversation_id": "2020436798074491138",
+      "metrics": {
+        "likes": 103,
+        "retweets": 3,
+        "replies": 37,
+        "quotes": 0,
+        "impressions": 7073,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020436798074491138"
+    },
+    {
+      "id": "2020432017608020183",
+      "text": "@honeybd wait actually? drop the skill g...",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T09:38:25.000Z",
+      "conversation_id": "2020319940671316249",
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 2,
+        "quotes": 0,
+        "impressions": 185,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "honeybd"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020432017608020183"
+    },
+    {
+      "id": "2020431070169362911",
+      "text": "TeamCreate is the new \"ultrathink\" but it's 1,000x better  outputs",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T09:34:39.000Z",
+      "conversation_id": "2020431070169362911",
+      "metrics": {
+        "likes": 43,
+        "retweets": 2,
+        "replies": 21,
+        "quotes": 0,
+        "impressions": 4928,
+        "bookmarks": 8
+      },
+      "urls": [],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020431070169362911"
+    },
+    {
+      "id": "2020429495686111296",
+      "text": "godspeed gentlemen https://t.co/WTER5Pdc7G",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T09:28:24.000Z",
+      "conversation_id": "2020429495686111296",
+      "metrics": {
+        "likes": 170,
+        "retweets": 1,
+        "replies": 38,
+        "quotes": 1,
+        "impressions": 23846,
+        "bookmarks": 21
+      },
+      "urls": [
+        "https://x.com/frankdegods/status/2020429495686111296/photo/1"
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020429495686111296"
+    },
+    {
+      "id": "2020425180842258647",
+      "text": "@LordEmo oh… u the goat",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T09:11:15.000Z",
+      "conversation_id": "2020419106449608939",
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "impressions": 672,
+        "bookmarks": 1
+      },
+      "urls": [],
+      "mentions": [
+        "LordEmo"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020425180842258647"
+    },
+    {
+      "id": "2020422954186871151",
+      "text": "@LordEmo I have it on Claude Code (it's the best feature yet) but I can't get it on my Clawdbot, IDK.",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T09:02:24.000Z",
+      "conversation_id": "2020419106449608939",
+      "metrics": {
+        "likes": 4,
+        "retweets": 0,
+        "replies": 2,
+        "quotes": 0,
+        "impressions": 1328,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "LordEmo"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020422954186871151"
+    },
+    {
+      "id": "2020422831386083521",
+      "text": "Another counter trend emerging\n\nEveryone complains about articles but they're becoming part of zeitgeist and carry a certain weight if it gets popular enough\n\nI see people remember names of X Articles and have discussions about them\n\nStill most of it's slop for now",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T09:01:55.000Z",
+      "conversation_id": "2020422831386083521",
+      "metrics": {
+        "likes": 107,
+        "retweets": 2,
+        "replies": 50,
+        "quotes": 1,
+        "impressions": 8463,
+        "bookmarks": 5
+      },
+      "urls": [],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020422831386083521"
+    },
+    {
+      "id": "2020419767778398357",
+      "text": "@CryptoInterpol link?",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T08:49:44.000Z",
+      "conversation_id": "2020419106449608939",
+      "metrics": {
+        "likes": 2,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "impressions": 980,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "CryptoInterpol"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020419767778398357"
+    },
+    {
+      "id": "2020419106449608939",
+      "text": "How do I get Agent Teams on Clawdbot?",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T08:47:07.000Z",
+      "conversation_id": "2020419106449608939",
+      "metrics": {
+        "likes": 120,
+        "retweets": 2,
+        "replies": 45,
+        "quotes": 0,
+        "impressions": 15408,
+        "bookmarks": 41
+      },
+      "urls": [],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020419106449608939"
+    },
+    {
+      "id": "2020418732573536538",
+      "text": "Within 30 days OpenClawd should 10x in growth again",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T08:45:38.000Z",
+      "conversation_id": "2020418732573536538",
+      "metrics": {
+        "likes": 177,
+        "retweets": 7,
+        "replies": 55,
+        "quotes": 4,
+        "impressions": 14871,
+        "bookmarks": 5
+      },
+      "urls": [],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020418732573536538"
+    },
+    {
+      "id": "2020417176000500118",
+      "text": "The context window in Opus 4.6 is OP",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T08:39:26.000Z",
+      "conversation_id": "2020417176000500118",
+      "metrics": {
+        "likes": 79,
+        "retweets": 0,
+        "replies": 33,
+        "quotes": 0,
+        "impressions": 7601,
+        "bookmarks": 2
+      },
+      "urls": [],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020417176000500118"
+    },
+    {
+      "id": "2020403363872141725",
+      "text": "@chainyoda 😹😹😹",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T07:44:33.000Z",
+      "conversation_id": "2020342165071901072",
+      "metrics": {
+        "likes": 2,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "impressions": 742,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "chainyoda"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020403363872141725"
+    },
+    {
+      "id": "2020393239648588150",
+      "text": "@BobBodily Grok is not great with specifics. I've been using this all day and stuff like \"search for stuff only from today\" or \"only things with decent engagement\" etc, works smoothly &amp; you can easily cite the raw sources instead of summaries.",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T07:04:20.000Z",
+      "conversation_id": "2020363804014493920",
+      "metrics": {
+        "likes": 12,
+        "retweets": 1,
+        "replies": 1,
+        "quotes": 0,
+        "impressions": 2653,
+        "bookmarks": 2
+      },
+      "urls": [],
+      "mentions": [
+        "BobBodily"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020393239648588150"
+    },
+    {
+      "id": "2020392637426225557",
+      "text": "@AlexFinn try this out. it's not just the new payment model, but there's new parameters too.\n\nsince posting this, just been going deeper and it feels like a whole new experience. \n\nfinally you can efficiently query arguably the most valuable/relevant content on the internet. really fun.",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T07:01:56.000Z",
+      "conversation_id": "2020363804014493920",
+      "metrics": {
+        "likes": 52,
+        "retweets": 0,
+        "replies": 6,
+        "quotes": 0,
+        "impressions": 3913,
+        "bookmarks": 6
+      },
+      "urls": [],
+      "mentions": [
+        "AlexFinn"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020392637426225557"
+    },
+    {
+      "id": "2020370539513290775",
+      "text": "@reelclaw @XDevelopers My console must be glitched because I’ve been using this via Bearer token all day today and it’s not showing any spend. I only loaded $25 in so far but will keep people posted.",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T05:34:07.000Z",
+      "conversation_id": "2020366023162225137",
+      "metrics": {
+        "likes": 12,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "impressions": 2096,
+        "bookmarks": 1
+      },
+      "urls": [],
+      "mentions": [
+        "reelclaw",
+        "XDevelopers"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020370539513290775"
+    },
+    {
+      "id": "2020369006994313421",
+      "text": "@ThatNFTGawd the new X API is pay per use https://t.co/xJCuKXI5vW",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T05:28:02.000Z",
+      "conversation_id": "2020363804014493920",
+      "metrics": {
+        "likes": 8,
+        "retweets": 2,
+        "replies": 3,
+        "quotes": 0,
+        "impressions": 3571,
+        "bookmarks": 3
+      },
+      "urls": [
+        "https://x.com/XDevelopers/status/2019881223666233717?s=20"
+      ],
+      "mentions": [
+        "ThatNFTGawd"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020369006994313421"
+    },
+    {
+      "id": "2020366940058054990",
+      "text": "@0xDeployer *at some point the only way to stand out from sea of software being released is incentivizing early adopters",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T05:19:49.000Z",
+      "conversation_id": "2020366630111572474",
+      "metrics": {
+        "likes": 119,
+        "retweets": 5,
+        "replies": 13,
+        "quotes": 3,
+        "impressions": 16966,
+        "bookmarks": 6
+      },
+      "urls": [],
+      "mentions": [
+        "0xDeployer"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020366940058054990"
+    },
+    {
+      "id": "2020366023162225137",
+      "text": "Words can't describe how nice it is to finally be tapped into the Twitter firehose. Previous versions of this stuff were heavily limited by being glorified web scrapers.\n\nNow... everyone has access to efficiently query all of Twitter. Insane. Thanks @XDevelopers https://t.co/WWYRz4mpkc",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T05:16:11.000Z",
+      "conversation_id": "2020366023162225137",
+      "metrics": {
+        "likes": 849,
+        "retweets": 32,
+        "replies": 59,
+        "quotes": 3,
+        "impressions": 149132,
+        "bookmarks": 985
+      },
+      "urls": [
+        "https://twitter.com/frankdegods/status/2020363804014493920"
+      ],
+      "mentions": [
+        "XDevelopers"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020366023162225137"
+    },
+    {
+      "id": "2020364374297440280",
+      "text": "The examples I gave are pretty simple but you can obviously use it to find specific latest best dev practices, interesting uses of new models, summarize narratives about certain tickers, all kinds of stuff.\n\nThis has made using CC/OpenClaw 20x more useful over last 24hrs so far.",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T05:09:38.000Z",
+      "conversation_id": "2020363804014493920",
+      "metrics": {
+        "likes": 79,
+        "retweets": 3,
+        "replies": 8,
+        "quotes": 0,
+        "impressions": 10850,
+        "bookmarks": 15
+      },
+      "urls": [],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020364374297440280"
+    },
+    {
+      "id": "2020363804014493920",
+      "text": "X just revamped their API to finally be useful \n\nSo I made a skill that searches X, modeled exactly like the native Claude Code research agent\n\nI've been asking like \"find best clawdbot skills last 24hrs\" or \"what are people saying about [ticker] today?\"\n\nhttps://t.co/RHtYxF7pZH https://t.co/ytZI8bT0gO",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T05:07:22.000Z",
+      "conversation_id": "2020363804014493920",
+      "metrics": {
+        "likes": 952,
+        "retweets": 46,
+        "replies": 113,
+        "quotes": 16,
+        "impressions": 274632,
+        "bookmarks": 1693
+      },
+      "urls": [
+        "https://github.com/rohunvora/x-research-skill",
+        "https://x.com/frankdegods/status/2020363804014493920/photo/1"
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020363804014493920"
+    },
+    {
+      "id": "2020354473281950091",
+      "text": "\"use TeamCreate\" is a masterpiece. pretty much makes the output for anything relatively complex that it touches, much better.\n\nanthropic does it again",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T04:30:17.000Z",
+      "conversation_id": "2020354473281950091",
+      "metrics": {
+        "likes": 140,
+        "retweets": 8,
+        "replies": 22,
+        "quotes": 0,
+        "impressions": 11230,
+        "bookmarks": 80
+      },
+      "urls": [],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020354473281950091"
+    },
+    {
+      "id": "2020345685435117636",
+      "text": "@blknoiz06 a gift for who 💀",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T03:55:22.000Z",
+      "conversation_id": "2020342812403986882",
+      "metrics": {
+        "likes": 11,
+        "retweets": 0,
+        "replies": 5,
+        "quotes": 0,
+        "impressions": 1814,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "blknoiz06"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020345685435117636"
+    },
+    {
+      "id": "2020345484716687547",
+      "text": "@akshaybd @Aabbhhz @TMTLongShort @lesabrefomo @trq212 reflexivity maxxing",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T03:54:34.000Z",
+      "conversation_id": "2020334172682813806",
+      "metrics": {
+        "likes": 3,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "impressions": 248,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "akshaybd",
+        "Aabbhhz",
+        "TMTLongShort",
+        "lesabrefomo",
+        "trq212"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020345484716687547"
+    },
+    {
+      "id": "2020336672316039437",
+      "text": "@Aabbhhz @emollick @TMTLongShort @lesabrefomo @akshaybd @trq212 i remember asking him about crypto in like september/october last year?\n\nhe just goes like bro i'm looking at uranium\n\nholy home run",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T03:19:33.000Z",
+      "conversation_id": "2020334172682813806",
+      "metrics": {
+        "likes": 9,
+        "retweets": 0,
+        "replies": 3,
+        "quotes": 0,
+        "impressions": 865,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "Aabbhhz",
+        "emollick",
+        "TMTLongShort",
+        "lesabrefomo",
+        "akshaybd",
+        "trq212"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020336672316039437"
+    },
+    {
+      "id": "2020335494543061493",
+      "text": "@remiaxyz @emollick @TMTLongShort @lesabrefomo @akshaybd @trq212 yeah, different breed. might be my favorite account?",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T03:14:52.000Z",
+      "conversation_id": "2020334172682813806",
+      "metrics": {
+        "likes": 4,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "impressions": 435,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "remiaxyz",
+        "emollick",
+        "TMTLongShort",
+        "lesabrefomo",
+        "akshaybd",
+        "trq212"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020335494543061493"
+    },
+    {
+      "id": "2020334172682813806",
+      "text": "couple random great accts on fire rn:\n\n@emollick \n@TMTLongShort \n@lesabrefomo \n@akshaybd \n@trq212",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T03:09:37.000Z",
+      "conversation_id": "2020334172682813806",
+      "metrics": {
+        "likes": 226,
+        "retweets": 5,
+        "replies": 43,
+        "quotes": 0,
+        "impressions": 23690,
+        "bookmarks": 130
+      },
+      "urls": [],
+      "mentions": [
+        "emollick",
+        "TMTLongShort",
+        "lesabrefomo",
+        "akshaybd",
+        "trq212"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020334172682813806"
+    },
+    {
+      "id": "2020334105981010202",
+      "text": "couple random great accts on fire rn:\n\n@emollick \n@TMTLongShort \n@lesabrefomo \n@akshaybd",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T03:09:21.000Z",
+      "conversation_id": "2020334105981010202",
+      "metrics": {
+        "likes": 2,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "impressions": 772,
+        "bookmarks": 1
+      },
+      "urls": [],
+      "mentions": [
+        "emollick",
+        "TMTLongShort",
+        "lesabrefomo",
+        "akshaybd"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020334105981010202"
+    },
+    {
+      "id": "2020327270246674841",
+      "text": "\"crypto is software. the coolest neatest software that every 16 year old on the planet wants to play with. this software can find it's way into our real economy.\"\n\n-kevin warsh, 8 days ago at WEF",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T02:42:11.000Z",
+      "conversation_id": "2020325426917413371",
+      "metrics": {
+        "likes": 201,
+        "retweets": 10,
+        "replies": 19,
+        "quotes": 0,
+        "impressions": 11987,
+        "bookmarks": 10
+      },
+      "urls": [],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020327270246674841"
+    },
+    {
+      "id": "2020327058048708951",
+      "text": "@whosmercer listening to a lot of his interviews today",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T02:41:21.000Z",
+      "conversation_id": "2020325426917413371",
+      "metrics": {
+        "likes": 7,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "impressions": 247,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "whosmercer"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020327058048708951"
+    },
+    {
+      "id": "2020325426917413371",
+      "text": "kevin warsh is extremely smart guy",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T02:34:52.000Z",
+      "conversation_id": "2020325426917413371",
+      "metrics": {
+        "likes": 131,
+        "retweets": 0,
+        "replies": 39,
+        "quotes": 0,
+        "impressions": 10388,
+        "bookmarks": 4
+      },
+      "urls": [],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020325426917413371"
+    },
+    {
+      "id": "2020321315908202727",
+      "text": "kind of surreal listening to this knowing it was over 12 years ago\n\nhttps://t.co/chPQtBkADE",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T02:18:32.000Z",
+      "conversation_id": "2020319940671316249",
+      "metrics": {
+        "likes": 11,
+        "retweets": 0,
+        "replies": 5,
+        "quotes": 0,
+        "impressions": 4843,
+        "bookmarks": 5
+      },
+      "urls": [
+        "https://youtu.be/6W719UP1z0Q"
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020321315908202727"
+    },
+    {
+      "id": "2020319940671316249",
+      "text": "crazy how out all of the sci-fi about ai\n\nspike jonze absolutely nailed it in 2013 https://t.co/KBYj9YBEsG",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T02:13:04.000Z",
+      "conversation_id": "2020319940671316249",
+      "metrics": {
+        "likes": 125,
+        "retweets": 2,
+        "replies": 36,
+        "quotes": 2,
+        "impressions": 10540,
+        "bookmarks": 13
+      },
+      "urls": [
+        "https://x.com/frankdegods/status/2020319940671316249/photo/1"
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020319940671316249"
+    },
+    {
+      "id": "2020318662809514419",
+      "text": "@RaoulGMI it does beat all benchmarks too",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T02:07:59.000Z",
+      "conversation_id": "2020317468062105910",
+      "metrics": {
+        "likes": 21,
+        "retweets": 1,
+        "replies": 3,
+        "quotes": 0,
+        "impressions": 7896,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "RaoulGMI"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020318662809514419"
+    },
+    {
+      "id": "2020318147962941921",
+      "text": "at this rate Opus 7 will just be a brain chip",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T02:05:56.000Z",
+      "conversation_id": "2020318147962941921",
+      "metrics": {
+        "likes": 166,
+        "retweets": 7,
+        "replies": 42,
+        "quotes": 0,
+        "impressions": 8263,
+        "bookmarks": 2
+      },
+      "urls": [],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020318147962941921"
+    },
+    {
+      "id": "2020312540668940397",
+      "text": "https://t.co/CLT3h0V8BN",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T01:43:39.000Z",
+      "conversation_id": "2020312540668940397",
+      "metrics": {
+        "likes": 39,
+        "retweets": 3,
+        "replies": 16,
+        "quotes": 0,
+        "impressions": 7008,
+        "bookmarks": 5
+      },
+      "urls": [
+        "https://youtu.be/w3qPMe_cCJk"
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020312540668940397"
+    },
+    {
+      "id": "2020309634817364220",
+      "text": "ai hype cycle is cool because there’s periods of hyperprogress when new breakthrough models come out but progress is so exponential that you almost have to spend all day keeping up with the updates\n\nthen when it finally plateaus for a few months, that’s when the really cool stuff",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T01:32:07.000Z",
+      "conversation_id": "2020309634817364220",
+      "metrics": {
+        "likes": 241,
+        "retweets": 9,
+        "replies": 58,
+        "quotes": 2,
+        "impressions": 15458,
+        "bookmarks": 24
+      },
+      "urls": [],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020309634817364220"
+    },
+    {
+      "id": "2020306930196250995",
+      "text": "@DipWheeler Dip Wheeler brutally quotemogs jestergooning foid Frank DeJEETS",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T01:21:22.000Z",
+      "conversation_id": "2020306247648714962",
+      "metrics": {
+        "likes": 94,
+        "retweets": 4,
+        "replies": 21,
+        "quotes": 3,
+        "impressions": 6138,
+        "bookmarks": 5
+      },
+      "urls": [],
+      "mentions": [
+        "DipWheeler"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020306930196250995"
+    },
+    {
+      "id": "2020304333527748745",
+      "text": "@steipete i dont mind it, bird served it’s purpose but the api is better",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T01:11:03.000Z",
+      "conversation_id": "2020295295406358798",
+      "metrics": {
+        "likes": 10,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "impressions": 3203,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "steipete"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020304333527748745"
+    },
+    {
+      "id": "2020304023006695486",
+      "text": "if that wasn’t the bottom it sure felt like the bottomiest bottom of all bottoms",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T01:09:49.000Z",
+      "conversation_id": "2020304023006695486",
+      "metrics": {
+        "likes": 371,
+        "retweets": 17,
+        "replies": 104,
+        "quotes": 3,
+        "impressions": 43840,
+        "bookmarks": 4
+      },
+      "urls": [],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020304023006695486"
+    },
+    {
+      "id": "2020302830599315529",
+      "text": "@thosmur iq maxxing",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-08T01:05:04.000Z",
+      "conversation_id": "2020284521737044126",
+      "metrics": {
+        "likes": 23,
+        "retweets": 0,
+        "replies": 14,
+        "quotes": 0,
+        "impressions": 1884,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "thosmur"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020302830599315529"
+    },
+    {
+      "id": "2020280775749288084",
+      "text": "@Insider6900 this is what i thought initially but after listening to a lot of his recent interviews, he seems to be an independent thinker\n\ni don’t think that’s bad for markets or asset prices &amp; i think it’s obvious we need to lower rates\n\ncan only hope it turns out better than having a",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-07T23:37:26.000Z",
+      "conversation_id": "2020279433714708701",
+      "metrics": {
+        "likes": 5,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "impressions": 604,
+        "bookmarks": 2
+      },
+      "urls": [],
+      "mentions": [
+        "Insider6900"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020280775749288084"
+    },
+    {
+      "id": "2020279433714708701",
+      "text": "i dont know how to price in kevin warsh being a really smart guy who seems to be on the money about everything he’s saying\n\ncan only hope it means asset prices go up via pure iq mogging, no jester",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-07T23:32:06.000Z",
+      "conversation_id": "2020279433714708701",
+      "metrics": {
+        "likes": 128,
+        "retweets": 7,
+        "replies": 39,
+        "quotes": 1,
+        "impressions": 9341,
+        "bookmarks": 6
+      },
+      "urls": [],
+      "mentions": [],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020279433714708701"
+    },
+    {
+      "id": "2020276097234137451",
+      "text": "@chang_defi tokens also serve as initial distribution\n\nin a world where there's an oversaturation of new software, you almost need a way to incentivize early users to want to try your new thing\n\nbnkr mode",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-07T23:18:51.000Z",
+      "conversation_id": "2020255045519044909",
+      "metrics": {
+        "likes": 24,
+        "retweets": 0,
+        "replies": 4,
+        "quotes": 1,
+        "impressions": 2156,
+        "bookmarks": 2
+      },
+      "urls": [],
+      "mentions": [
+        "chang_defi"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020276097234137451"
+    },
+    {
+      "id": "2020273648926609870",
+      "text": "@ThinkingUSD WEEEEE love Codex bro",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-07T23:09:07.000Z",
+      "conversation_id": "2020272122761998616",
+      "metrics": {
+        "likes": 2,
+        "retweets": 0,
+        "replies": 0,
+        "quotes": 0,
+        "impressions": 908,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "ThinkingUSD"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020273648926609870"
+    },
+    {
+      "id": "2020272776603726082",
+      "text": "@krugermacro warsh sounds like a smart guy ngl",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-07T23:05:39.000Z",
+      "conversation_id": "2020268978921476404",
+      "metrics": {
+        "likes": 1,
+        "retweets": 0,
+        "replies": 1,
+        "quotes": 0,
+        "impressions": 953,
+        "bookmarks": 0
+      },
+      "urls": [],
+      "mentions": [
+        "krugermacro"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020272776603726082"
+    },
+    {
+      "id": "2020271318684533134",
+      "text": "@palis not really about quantum gravity nor quantum, more about how if you assume ai will be disruptive, then you also must assume progress to future technology will be accelerated\n\nhttps://t.co/ihxSQUNwct",
+      "author_id": "1441835930889818113",
+      "username": "frankdegods",
+      "name": "Frank",
+      "created_at": "2026-02-07T22:59:51.000Z",
+      "conversation_id": "2020231113067974930",
+      "metrics": {
+        "likes": 4,
+        "retweets": 0,
+        "replies": 2,
+        "quotes": 0,
+        "impressions": 807,
+        "bookmarks": 0
+      },
+      "urls": [
+        "https://x.com/frankdegods/status/2020246271605501964?s=46"
+      ],
+      "mentions": [
+        "palis"
+      ],
+      "hashtags": [],
+      "tweet_url": "https://x.com/frankdegods/status/2020271318684533134"
+    }
+  ]
+}

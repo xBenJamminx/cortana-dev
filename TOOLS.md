@@ -1,35 +1,39 @@
 # TOOLS.md - Local Notes
 
-Skills define *how* tools work. This file is for *your* specifics — the stuff that's unique to your setup.
+Skills define *how* tools work. This file is for *your* specifics -- the stuff that's unique to your setup.
 
-## What Goes Here
+## SSH
+- `openclaw` -- main server (IP in .env)
+- User: root
 
-Things like:
-- Camera names and locations
-- SSH hosts and aliases  
-- Preferred voices for TTS
-- Speaker/room names
-- Device nicknames
-- Anything environment-specific
+## TTS (ElevenLabs)
+- Voice ID: `3JY1LL2MgjJ5HtZhEkm5`
+- Model: `eleven_multilingual_v2`
+- Use `/elevenlabs_tts` or the voice tool
 
-## Examples
+## Voice Calls
+- ALWAYS use: `/root/clawd/skills/vapi-call/vapi-call <number> [message]`
+- NEVER craft custom VAPI curl calls
 
-```markdown
-### Cameras
-- living-room → Main area, 180° wide angle
-- front-door → Entrance, motion-triggered
+## Image Generation
+- Use: `uv run ~/.codex/skills/nano-banana-pro/scripts/generate_image.py --prompt "..." --filename "output.png"`
+- NOT Hugging Face MCP (tiny quota)
 
-### SSH
-- home-server → 192.168.1.100, user: admin
+## Twitter/X
+- Posting: Use Composio `TWITTER_CREATION_OF_A_POST` or X OAuth
+- X OAuth tokens: `/root/.config/x-oauth/tokens.json`
+- Refresh: `python3 /root/clawd/scripts/x-oauth-setup.py --refresh`
+- Bird CLI: DEAD (discontinued by author)
 
-### TTS
-- Preferred voice: "Nova" (warm, slightly British)
-- Default speaker: Kitchen HomePod
-```
+## Content Pipeline
+- Airtable base: `appdFTSkXnphHLwfl`
+- Content table: `tblvLSX7DZxIRWU5g`
+- ALL content drafts go here, not local md files
 
-## Why Separate?
-
-Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
+## Secrets
+- All API keys: `/root/.openclaw/.env`
+- Source it: `source /root/.openclaw/.env`
+- Python: use `_load_env()` pattern
 
 ---
 
