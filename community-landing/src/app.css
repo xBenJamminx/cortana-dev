@@ -1,0 +1,140 @@
+@import 'tailwindcss';
+
+@theme {
+	--color-bg: #e8e4de;
+	--color-bg-alt: #f5f1eb;
+	--color-surface: #ffffff;
+	--color-ink: #000000;
+	--color-muted: #555555;
+	--color-cyan: #06b6d4;
+	--color-cyan-light: #a5f3fc;
+	--color-cyan-bg: #cffafe;
+	--color-yellow: #facc15;
+	--color-yellow-light: #fef9c3;
+	--color-yellow-bg: #fefce8;
+	--color-pink: #f472b6;
+	--color-pink-light: #fce7f3;
+	--color-green: #22c55e;
+	--color-green-light: #dcfce7;
+	--font-display: 'Syne', system-ui, sans-serif;
+	--font-sans: 'Inter', system-ui, sans-serif;
+	--font-mono: 'JetBrains Mono', monospace;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--font-sans);
+	background-color: var(--color-bg);
+	color: var(--color-ink);
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Neo-brutalist card */
+.neo-card {
+	background: var(--color-surface);
+	border: 3px solid var(--color-ink);
+	box-shadow: 6px 6px 0 var(--color-ink);
+	transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.neo-card:hover {
+	transform: translate(-2px, -2px);
+	box-shadow: 8px 8px 0 var(--color-ink);
+}
+
+/* Color shadow variants */
+.neo-card-cyan {
+	box-shadow: 6px 6px 0 var(--color-cyan);
+}
+.neo-card-cyan:hover {
+	box-shadow: 8px 8px 0 var(--color-cyan);
+}
+
+.neo-card-yellow {
+	box-shadow: 6px 6px 0 var(--color-yellow);
+}
+.neo-card-yellow:hover {
+	box-shadow: 8px 8px 0 var(--color-yellow);
+}
+
+.neo-card-pink {
+	box-shadow: 6px 6px 0 var(--color-pink);
+}
+.neo-card-pink:hover {
+	box-shadow: 8px 8px 0 var(--color-pink);
+}
+
+/* Neo-brutalist button */
+.neo-btn {
+	display: inline-flex;
+	align-items: center;
+	font-weight: 700;
+	border: 3px solid var(--color-ink);
+	box-shadow: 4px 4px 0 var(--color-ink);
+	transition: transform 0.1s ease, box-shadow 0.1s ease;
+	cursor: pointer;
+}
+
+.neo-btn:hover {
+	transform: translate(-2px, -2px);
+	box-shadow: 6px 6px 0 var(--color-ink);
+}
+
+.neo-btn:active {
+	transform: translate(2px, 2px);
+	box-shadow: 0 0 0 var(--color-ink);
+}
+
+/* Scroll reveal */
+.reveal {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* FAQ accordion */
+.faq-content {
+	display: grid;
+	grid-template-rows: 0fr;
+	transition: grid-template-rows 0.3s ease;
+}
+
+.faq-content.open {
+	grid-template-rows: 1fr;
+}
+
+.faq-content > div {
+	overflow: hidden;
+}
+
+/* Marquee */
+@keyframes marquee {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+	animation: marquee 25s linear infinite;
+}
+
+/* Stacked card effect */
+.stacked-card {
+	position: relative;
+}
+.stacked-card::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	border: 3px solid var(--color-ink);
+	border-radius: inherit;
+	transform: translate(10px, 10px);
+	z-index: -1;
+}
