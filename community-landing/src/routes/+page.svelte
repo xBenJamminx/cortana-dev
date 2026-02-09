@@ -55,9 +55,9 @@
 </svelte:head>
 
 <!-- Nav -->
-<nav class="fixed top-0 z-50 w-full border-b-3 border-ink bg-bg/90 backdrop-blur-md">
+<nav class="fixed top-0 z-50 w-full border-b-4 border-ink bg-bg/90 backdrop-blur-md">
 	<div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-		<span class="font-display text-2xl font-bold text-ink">BuildsByBen</span>
+		<span class="font-display text-2xl font-black uppercase tracking-tight text-ink">BuildsByBen</span>
 		<a href="#founding" class="neo-btn rounded-lg bg-cyan px-5 py-2.5 text-sm text-ink">
 			Join Now
 		</a>
@@ -67,17 +67,24 @@
 <!-- ============================================ -->
 <!-- HERO -->
 <!-- ============================================ -->
-<section class="pt-28 pb-12 md:pt-40 md:pb-20">
-	<div class="mx-auto max-w-5xl px-6">
+<section class="relative overflow-hidden pt-28 pb-12 md:pt-40 md:pb-20">
+	<!-- Floating geometric shapes -->
+	<div class="geo-shape hidden h-16 w-16 rotate-12 rounded-lg bg-cyan-light md:block" style="top: 120px; right: 8%;"></div>
+	<div class="geo-shape hidden h-10 w-10 -rotate-6 rounded-md bg-yellow-light md:block" style="top: 200px; right: 15%;"></div>
+	<div class="geo-shape hidden h-12 w-12 rotate-45 bg-pink-light md:block" style="top: 300px; right: 5%;"></div>
+	<div class="geo-shape hidden h-8 w-8 rotate-12 rounded-sm bg-green-light md:block" style="bottom: 60px; left: 5%;"></div>
+	<div class="geo-shape hidden h-14 w-14 -rotate-12 rounded-lg bg-yellow-light md:block" style="bottom: 40px; right: 12%;"></div>
+
+	<div class="relative z-10 mx-auto max-w-5xl px-6">
 		<div class="grid items-center gap-8 md:gap-10 md:grid-cols-2">
 			<div>
 				<div class="{mounted ? 'reveal visible' : 'opacity-0'}">
-					<div class="mb-6 inline-block rounded-lg border-3 border-ink bg-cyan px-4 py-1.5 font-mono text-xs font-medium uppercase tracking-wider text-ink shadow-[3px_3px_0_#000]">
+					<div class="mb-6 inline-block -rotate-1 rounded-lg border-4 border-ink bg-cyan px-4 py-1.5 font-mono text-xs font-bold uppercase tracking-wider text-ink shadow-[4px_4px_0_#000]">
 						AI for everyday people
 					</div>
 				</div>
 
-				<h1 class="{mounted ? 'reveal visible' : 'opacity-0'} font-display text-3xl font-extrabold leading-[1.05] text-ink sm:text-4xl md:text-6xl lg:text-7xl">
+				<h1 class="{mounted ? 'reveal visible' : 'opacity-0'} font-display text-3xl font-black leading-[1.05] text-ink sm:text-4xl md:text-6xl lg:text-7xl">
 					Learn AI.<br />Use it everywhere.
 				</h1>
 
@@ -96,11 +103,11 @@
 			<!-- Visual anchor -->
 			<div class="{mounted ? 'reveal visible' : 'opacity-0'} relative hidden md:block">
 				<div class="relative mx-auto w-full max-w-sm">
-					<div class="absolute top-6 left-6 right-0 h-64 rounded-2xl border-3 border-ink bg-yellow-light"></div>
-					<div class="absolute top-3 left-3 right-3 h-64 rounded-2xl border-3 border-ink bg-pink-light"></div>
-					<div class="relative rounded-2xl border-3 border-ink bg-surface p-6 shadow-[6px_6px_0_#000]">
+					<div class="absolute top-6 left-6 right-0 h-64 rounded-2xl border-4 border-ink bg-yellow-light"></div>
+					<div class="absolute top-3 left-3 right-3 h-64 rounded-2xl border-4 border-ink bg-pink-light"></div>
+					<div class="relative rounded-2xl border-4 border-ink bg-surface p-6 shadow-[8px_8px_0_#000]">
 						<div class="flex items-center gap-3 border-b-2 border-ink/10 pb-4">
-							<div class="flex h-10 w-10 items-center justify-center rounded-lg border-2 border-ink bg-cyan-light font-display text-lg font-bold">B</div>
+							<div class="flex h-10 w-10 items-center justify-center rounded-lg border-3 border-ink bg-cyan-light font-display text-lg font-bold">B</div>
 							<div>
 								<div class="font-display text-sm font-bold">BuildsByBen Library</div>
 								<div class="font-mono text-xs text-muted">Updated today</div>
@@ -117,7 +124,7 @@
 							</div>
 							<div class="flex items-center gap-2">
 								<div class="h-2.5 w-2.5 rounded-full border-2 border-ink bg-pink"></div>
-								<span class="text-sm font-medium">Guide: The AI tools I actually pay for</span>
+								<span class="text-sm font-medium">Guide: The AI tools actually worth paying for</span>
 							</div>
 							<div class="flex items-center gap-2">
 								<div class="h-2.5 w-2.5 rounded-full border-2 border-ink bg-green"></div>
@@ -134,19 +141,36 @@
 	</div>
 </section>
 
+<!-- Stats row -->
+<div class="border-y-4 border-ink bg-surface py-6 md:py-8">
+	<div class="mx-auto grid max-w-4xl grid-cols-2 gap-4 px-6 md:grid-cols-4 md:gap-8">
+		{#each [
+			{ num: '12+', label: 'Tutorials', color: 'text-cyan' },
+			{ num: '6', label: 'Prompt Packs', color: 'text-yellow' },
+			{ num: 'Weekly', label: 'Live Calls', color: 'text-pink' },
+			{ num: '50', label: 'Founding Spots', color: 'text-green' }
+		] as stat}
+			<div class="reveal text-center">
+				<div class="font-display text-3xl font-black {stat.color} md:text-4xl">{stat.num}</div>
+				<div class="mt-1 font-mono text-xs font-bold uppercase tracking-wider text-muted">{stat.label}</div>
+			</div>
+		{/each}
+	</div>
+</div>
+
 <!-- Scrolling marquee -->
-<div class="overflow-hidden border-y-3 border-ink bg-ink py-3.5">
+<div class="overflow-hidden border-b-4 border-ink bg-ink py-3.5">
 	<div class="animate-marquee flex w-max gap-10 whitespace-nowrap">
 		{#each Array(3) as _}
-			<span class="font-display text-base font-bold text-bg">STEP-BY-STEP TUTORIALS</span>
+			<span class="font-display text-base font-bold uppercase tracking-wide text-bg">Step-by-Step Tutorials</span>
 			<span class="text-cyan">&bull;</span>
-			<span class="font-display text-base font-bold text-bg">COPY-PASTE PROMPT PACKS</span>
+			<span class="font-display text-base font-bold uppercase tracking-wide text-bg">Copy-Paste Prompt Packs</span>
 			<span class="text-cyan">&bull;</span>
-			<span class="font-display text-base font-bold text-bg">HONEST TOOL REVIEWS</span>
+			<span class="font-display text-base font-bold uppercase tracking-wide text-bg">Honest Tool Reviews</span>
 			<span class="text-cyan">&bull;</span>
-			<span class="font-display text-base font-bold text-bg">EXCLUSIVE TOOL DEALS</span>
+			<span class="font-display text-base font-bold uppercase tracking-wide text-bg">Exclusive Tool Deals</span>
 			<span class="text-cyan">&bull;</span>
-			<span class="font-display text-base font-bold text-bg">WEEKLY LIVE CALLS</span>
+			<span class="font-display text-base font-bold uppercase tracking-wide text-bg">Weekly Live Calls</span>
 			<span class="text-cyan">&bull;</span>
 		{/each}
 	</div>
@@ -158,7 +182,7 @@
 <section class="py-14 md:py-28">
 	<div class="mx-auto max-w-5xl px-6">
 		<div class="reveal">
-			<div class="inline-block rounded-lg border-3 border-ink bg-pink-light px-4 py-1.5 font-mono text-xs font-bold uppercase tracking-wider text-ink shadow-[3px_3px_0_#000]">
+			<div class="inline-block -rotate-1 rounded-lg border-4 border-ink bg-pink-light px-4 py-1.5 font-mono text-xs font-bold uppercase tracking-wider text-ink shadow-[4px_4px_0_#000]">
 				Sound familiar?
 			</div>
 			<h2 class="mt-6 font-display text-3xl font-bold leading-tight text-ink md:text-5xl">
@@ -196,13 +220,13 @@
 			] as row, i}
 				<div class="reveal grid gap-0 md:grid-cols-2" style="transition-delay: {i * 60}ms;">
 					<!-- Problem side -->
-					<div class="neo-card rounded-t-xl md:rounded-l-xl md:rounded-tr-none border-b-[1.5px] md:border-b-3 md:border-r-0 bg-surface p-4 md:p-6">
+					<div class="neo-card rounded-t-xl md:rounded-l-xl md:rounded-tr-none border-b-[2px] md:border-b-4 md:border-r-0 bg-surface p-4 md:p-6">
 						<div class="mb-1.5 inline-block rounded-md border-2 border-ink/20 bg-pink-light px-2 py-0.5 font-mono text-[0.6rem] font-bold uppercase tracking-wider text-ink/60">Problem</div>
 						<p class="text-sm font-semibold text-ink">{row.problem}</p>
 						<p class="mt-1 hidden text-sm text-muted md:block">{row.pain}</p>
 					</div>
 					<!-- Solution side -->
-					<div class="neo-card rounded-b-xl md:rounded-r-xl md:rounded-bl-none border-t-0 md:border-t-3 bg-cyan-bg p-4 md:p-6">
+					<div class="neo-card rounded-b-xl md:rounded-r-xl md:rounded-bl-none border-t-0 md:border-t-4 bg-cyan-bg p-4 md:p-6">
 						<div class="mb-1.5 inline-block rounded-md border-2 border-ink bg-cyan px-2 py-0.5 font-mono text-[0.6rem] font-bold uppercase tracking-wider">Solution</div>
 						<p class="text-sm font-medium leading-relaxed text-ink">{row.solution}</p>
 					</div>
@@ -210,7 +234,7 @@
 			{/each}
 		</div>
 
-		<div class="reveal mt-10 rounded-2xl border-3 border-ink bg-yellow-bg p-6 text-center shadow-[6px_6px_0_theme(--color-yellow)] md:p-8">
+		<div class="reveal mt-10 rounded-2xl border-4 border-ink bg-yellow-bg p-6 text-center shadow-[8px_8px_0_theme(--color-yellow)] md:p-8">
 			<p class="font-display text-xl font-bold text-ink md:text-2xl">
 				The gap isn't knowledge. It's knowing what to actually do.
 			</p>
@@ -230,7 +254,7 @@
 <section class="py-14 md:py-28">
 	<div class="mx-auto max-w-5xl px-6">
 		<div class="reveal">
-			<div class="inline-block rounded-lg border-3 border-ink bg-cyan-light px-4 py-1.5 font-mono text-xs font-bold uppercase tracking-wider text-ink shadow-[3px_3px_0_#000]">
+			<div class="inline-block rotate-1 rounded-lg border-4 border-ink bg-cyan-light px-4 py-1.5 font-mono text-xs font-bold uppercase tracking-wider text-ink shadow-[4px_4px_0_#000]">
 				Who this is for
 			</div>
 			<h2 class="mt-6 font-display text-3xl font-bold leading-tight text-ink md:text-5xl">
@@ -264,7 +288,7 @@
 				}
 			] as segment, i}
 				<div class="reveal neo-card {segment.shadow} rounded-2xl p-5 md:p-7" style="transition-delay: {i * 80}ms;">
-					<span class="inline-block rounded-lg border-2 border-ink {segment.badge} px-3 py-1 font-mono text-xs font-bold uppercase tracking-wider">{segment.who}</span>
+					<span class="inline-block -rotate-1 rounded-lg border-3 border-ink {segment.badge} px-3 py-1 font-mono text-xs font-bold uppercase tracking-wider">{segment.who}</span>
 					<ul class="mt-5 space-y-3">
 						{#each segment.lines as line}
 							<li class="flex gap-2.5 text-sm leading-relaxed">
@@ -282,10 +306,10 @@
 <!-- ============================================ -->
 <!-- WHAT YOU GET (Tangible Outputs) -->
 <!-- ============================================ -->
-<section class="border-y-3 border-ink bg-bg-alt py-14 md:py-28">
+<section class="border-y-4 border-ink bg-bg-alt py-14 md:py-28">
 	<div class="mx-auto max-w-5xl px-6">
 		<div class="reveal">
-			<div class="inline-block rounded-lg border-3 border-ink bg-yellow-light px-4 py-1.5 font-mono text-xs font-bold uppercase tracking-wider text-ink shadow-[3px_3px_0_#000]">
+			<div class="inline-block -rotate-1 rounded-lg border-4 border-ink bg-yellow-light px-4 py-1.5 font-mono text-xs font-bold uppercase tracking-wider text-ink shadow-[4px_4px_0_#000]">
 				What's inside
 			</div>
 			<h2 class="mt-6 font-display text-3xl font-bold text-ink md:text-5xl">
@@ -346,7 +370,7 @@
 			] as feature, i}
 				<div class="reveal neo-card {feature.shadow} rounded-2xl p-5 md:p-8" style="transition-delay: {i * 40}ms;">
 					<div class="flex flex-col gap-4 md:flex-row md:items-start md:gap-6">
-						<span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border-3 border-ink {feature.badge} font-mono text-sm font-bold">{feature.num}</span>
+						<span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border-4 border-ink {feature.badge} font-mono text-sm font-black">{feature.num}</span>
 						<div class="flex-1">
 							<h3 class="font-display text-xl font-bold text-ink">{feature.title}</h3>
 							<p class="mt-2 text-[0.95rem] leading-relaxed text-muted">{feature.desc}</p>
@@ -362,7 +386,7 @@
 </section>
 
 <!-- Mid-page CTA 2 -->
-<div class="border-b-3 border-ink bg-cyan-bg py-10 text-center">
+<div class="border-b-4 border-ink bg-cyan-bg py-10 text-center">
 	<div class="reveal mx-auto max-w-2xl px-6">
 		<p class="font-display text-xl font-bold text-ink md:text-2xl">Everything above. $29/mo. Cancel anytime.</p>
 		<a href="#founding" class="neo-btn mt-5 inline-flex rounded-xl bg-yellow px-7 py-3 text-sm text-ink">
@@ -372,12 +396,16 @@
 </div>
 
 <!-- ============================================ -->
-<!-- WHO IS BEN -->
+<!-- BUILT FROM REAL WORK -->
 <!-- ============================================ -->
-<section class="py-14 md:py-28">
-	<div class="mx-auto max-w-4xl px-6">
+<section class="relative overflow-hidden py-14 md:py-28">
+	<!-- Floating shapes -->
+	<div class="geo-shape hidden h-10 w-10 rotate-12 rounded-md bg-pink-light md:block" style="top: 80px; right: 8%;"></div>
+	<div class="geo-shape hidden h-8 w-8 -rotate-6 bg-cyan-light md:block" style="bottom: 100px; left: 6%;"></div>
+
+	<div class="relative z-10 mx-auto max-w-4xl px-6">
 		<div class="reveal">
-			<div class="inline-block rounded-lg border-3 border-ink bg-green-light px-4 py-1.5 font-mono text-xs font-bold uppercase tracking-wider text-ink shadow-[3px_3px_0_#000]">
+			<div class="inline-block rotate-1 rounded-lg border-4 border-ink bg-green-light px-4 py-1.5 font-mono text-xs font-bold uppercase tracking-wider text-ink shadow-[4px_4px_0_#000]">
 				Built by
 			</div>
 			<h2 class="mt-6 font-display text-3xl font-bold text-ink md:text-5xl">
@@ -385,7 +413,7 @@
 			</h2>
 		</div>
 
-		<div class="reveal mt-10 rounded-2xl border-3 border-ink bg-surface p-6 shadow-[8px_8px_0_theme(--color-cyan)] md:p-12">
+		<div class="reveal mt-10 rounded-2xl border-4 border-ink bg-surface p-6 shadow-[8px_8px_0_theme(--color-cyan)] md:p-12">
 			<p class="text-base leading-relaxed text-ink md:text-xl">
 				Everything in this community comes from hands-on experience. AI automation for enterprise clients. Consumer products used by thousands. Side projects built on nights and weekends. Even a bedtime story generator for the kids.
 			</p>
@@ -403,7 +431,7 @@
 				{ label: 'Tools', text: 'Honest breakdowns of what to pay for, what to skip, and deals that save you money.', color: 'bg-green-light', shadow: 'neo-card' }
 			] as card, i}
 				<div class="reveal neo-card {card.shadow} rounded-xl p-5" style="transition-delay: {i * 60}ms;">
-					<span class="inline-block rounded-md border-2 border-ink {card.color} px-2.5 py-0.5 font-mono text-[0.65rem] font-bold uppercase tracking-wider">{card.label}</span>
+					<span class="inline-block -rotate-2 rounded-md border-2 border-ink {card.color} px-2.5 py-0.5 font-mono text-[0.65rem] font-bold uppercase tracking-wider">{card.label}</span>
 					<p class="mt-3 text-sm leading-relaxed text-muted">{card.text}</p>
 				</div>
 			{/each}
@@ -419,10 +447,14 @@
 <!-- ============================================ -->
 <!-- FOUNDING MEMBERS -->
 <!-- ============================================ -->
-<section id="founding" class="border-b-3 border-ink bg-ink py-14 md:py-28">
-	<div class="mx-auto max-w-4xl px-6">
+<section id="founding" class="relative overflow-hidden border-b-4 border-ink bg-ink py-14 md:py-28">
+	<!-- Floating shapes on dark bg -->
+	<div class="geo-shape hidden h-12 w-12 rotate-12 rounded-lg border-bg/30 bg-cyan/20 md:block" style="top: 100px; left: 5%;"></div>
+	<div class="geo-shape hidden h-8 w-8 -rotate-6 border-bg/30 bg-yellow/20 md:block" style="bottom: 120px; right: 8%;"></div>
+
+	<div class="relative z-10 mx-auto max-w-4xl px-6">
 		<div class="reveal text-center">
-			<div class="mx-auto inline-block rounded-lg border-3 border-bg bg-yellow px-4 py-1.5 font-mono text-xs font-bold uppercase tracking-wider text-ink shadow-[3px_3px_0_theme(--color-cyan)]">
+			<div class="mx-auto inline-block -rotate-1 rounded-lg border-4 border-bg bg-yellow px-4 py-1.5 font-mono text-xs font-bold uppercase tracking-wider text-ink shadow-[4px_4px_0_theme(--color-cyan)]">
 				Limited availability
 			</div>
 			<h2 class="mt-6 font-display text-3xl font-bold text-bg md:text-5xl">
@@ -436,11 +468,11 @@
 		<div class="mt-12 grid items-start gap-8 md:grid-cols-2">
 			<!-- Pricing card -->
 			<div class="reveal">
-				<div class="rounded-2xl border-3 border-bg bg-surface shadow-[8px_8px_0_theme(--color-cyan)]">
-					<div class="border-b-3 border-ink bg-cyan px-6 py-5 rounded-t-[13px] md:px-8 md:py-6">
+				<div class="rounded-2xl border-4 border-bg bg-surface shadow-[8px_8px_0_theme(--color-cyan)]">
+					<div class="border-b-4 border-ink bg-cyan px-6 py-5 rounded-t-[12px] md:px-8 md:py-6">
 						<span class="font-mono text-sm font-bold uppercase tracking-widest text-ink">Founding Member</span>
 						<div class="mt-3 flex items-baseline justify-center gap-1">
-							<span class="font-display text-5xl font-extrabold text-ink md:text-6xl">$29</span>
+							<span class="font-display text-5xl font-black text-ink md:text-6xl">$29</span>
 							<span class="text-xl text-ink/60">/mo</span>
 						</div>
 						<p class="mt-1 text-sm text-ink/60">Standard price: <span class="line-through">$49/mo</span></p>
@@ -529,7 +561,7 @@
 <!-- ============================================ -->
 <!-- FINAL CTA -->
 <!-- ============================================ -->
-<section class="border-t-3 border-ink bg-cyan-bg py-14 md:py-28">
+<section class="border-t-4 border-ink bg-cyan-bg py-14 md:py-28">
 	<div class="mx-auto max-w-3xl px-6 text-center">
 		<div class="reveal">
 			<h2 class="font-display text-3xl font-bold text-ink md:text-5xl">
@@ -550,7 +582,7 @@
 </section>
 
 <!-- Footer -->
-<footer class="border-t-3 border-ink py-8">
+<footer class="border-t-4 border-ink py-8">
 	<div class="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 text-sm text-muted md:flex-row md:justify-between">
 		<span class="font-bold text-ink">BuildsByBen &copy; {new Date().getFullYear()}</span>
 		<div class="flex gap-6">
