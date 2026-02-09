@@ -45,7 +45,7 @@
 		},
 		{
 			q: "Who runs this?",
-			a: "BuildsByBen is run by Ben, a technical program manager and AI automation consultant who uses AI across client work, side projects, and family life. New resources are added weekly and the community has regular calls, active channels, and a growing library."
+			a: "BuildsByBen is run by Ben, a technical program manager and AI automation consultant who uses AI across client work, side projects, and family life. New resources are added weekly and the community includes weekly calls, dedicated channels, and a growing resource library."
 		}
 	];
 </script>
@@ -146,7 +146,7 @@
 			<span class="text-cyan">&bull;</span>
 			<span class="font-display text-base font-bold text-bg">EXCLUSIVE TOOL DEALS</span>
 			<span class="text-cyan">&bull;</span>
-			<span class="font-display text-base font-bold text-bg">A COMMUNITY THAT ACTUALLY HELPS</span>
+			<span class="font-display text-base font-bold text-bg">WEEKLY LIVE CALLS</span>
 			<span class="text-cyan">&bull;</span>
 		{/each}
 	</div>
@@ -186,7 +186,7 @@
 				{
 					problem: 'You get stuck and have nobody to ask.',
 					pain: 'Google gives you 2023 answers. Reddit threads end in arguments.',
-					solution: 'A community where people actually respond. Ask a question, get a real answer from someone who\'s done it.'
+					solution: 'A private community with dedicated channels for questions, troubleshooting, and sharing wins. Plus weekly calls where topics get covered live.'
 				},
 				{
 					problem: 'No time to figure this out yourself.',
@@ -321,9 +321,9 @@
 				},
 				{
 					num: '04',
-					title: 'Weekly Calls + Active Community',
-					desc: 'Weekly community calls covering specific AI topics, workflows, and Q&amp;A. Plus active channels for questions, wins, and troubleshooting. Not a ghost town. Not a content dump.',
-					examples: 'Weekly topic-based calls (recorded). Help channel with real responses. Wins channel to share what you built. All session recordings archived.',
+					title: 'Weekly Calls + Private Community',
+					desc: 'Weekly community calls covering specific AI topics, workflows, and Q&amp;A. Dedicated channels for questions, wins, and troubleshooting. New resources and discussions every week.',
+					examples: 'Weekly topic-based calls (recorded). Help channel for questions. Wins channel to share what you built. All session recordings archived.',
 					badge: 'bg-cyan-light',
 					shadow: 'neo-card-cyan'
 				},
@@ -451,7 +451,7 @@
 							{#each [
 								'Full library: tutorials, prompt packs, tool guides',
 								'Permanent price lock at $29/mo',
-								'Weekly community calls + active channels',
+								'Weekly community calls + private channels',
 								'Exclusive tool deals and partner discounts',
 								'Founding member badge',
 								'Input on what gets built next',
@@ -536,7 +536,7 @@
 				Learn AI. Use it everywhere.
 			</h2>
 			<p class="mt-4 text-base text-muted md:text-lg">
-				50 founding spots. Tutorials, prompts, tool deals, and a community that actually helps. $29/mo locked forever.
+				50 founding spots. Tutorials, prompts, tool deals, and weekly calls and a private community. $29/mo locked forever.
 			</p>
 			<a
 				href="#founding"
