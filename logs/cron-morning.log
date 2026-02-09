@@ -1,0 +1,28 @@
+/root/clawd/scripts/morning-briefing.py:136: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.utcnow()
+[2026-02-08 13:00:02] Morning briefing v2 starting...
+[2026-02-08 13:00:07] Real Trends (Google Daily, HN) data refreshed
+[2026-02-08 13:01:31] Competitors data refreshed
+[2026-02-08 13:03:05] Email Newsletters data refreshed
+[2026-02-08 13:03:16] Indie Hacker data refreshed
+[2026-02-08 13:03:16] Product Hunt data refreshed
+[2026-02-08 13:03:18] YouTube data refreshed
+[2026-02-08 13:03:19] Dev.to/Hashnode data refreshed
+[2026-02-08 13:03:25] Topic Aggregator data refreshed
+[2026-02-08 13:03:38] Calendar error: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+[2026-02-08 13:03:43] Briefing built (9245 chars)
+[2026-02-08 13:03:45] ✅ Briefing sent
+/root/clawd/scripts/morning-briefing.py:131: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.utcnow()
+[2026-02-09 13:00:02] Morning briefing v2 starting...
+[2026-02-09 13:00:07] Real Trends (Google Daily, HN) data refreshed
+[2026-02-09 13:01:32] Competitors data refreshed
+[2026-02-09 13:02:19] Email Newsletters data refreshed
+[2026-02-09 13:02:30] Indie Hacker data refreshed
+[2026-02-09 13:02:31] Product Hunt data refreshed
+[2026-02-09 13:02:32] YouTube data refreshed
+[2026-02-09 13:02:33] Dev.to/Hashnode data refreshed
+[2026-02-09 13:02:39] Topic Aggregator data refreshed
+[2026-02-09 13:02:50] Calendar error: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+[2026-02-09 13:02:53] Briefing built (14995 chars)
+[2026-02-09 13:02:55] ❌ Failed to send

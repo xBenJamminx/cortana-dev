@@ -1,0 +1,279 @@
+[2026-02-04 03:55:28] Twitter trends monitor starting...
+[2026-02-04 03:55:28] Searching: AI tools viral min_faves:100
+[2026-02-04 03:55:28] bird search failed: error: unknown option '--limit'
+
+[2026-02-04 03:55:28]   Found 0 tweets
+[2026-02-04 03:55:28] Searching: automation workflow min_faves:50
+[2026-02-04 03:55:28] bird search failed: error: unknown option '--limit'
+
+[2026-02-04 03:55:28]   Found 0 tweets
+[2026-02-04 03:55:28] Searching: solopreneur revenue min_faves:100
+[2026-02-04 03:55:28] bird search failed: error: unknown option '--limit'
+
+[2026-02-04 03:55:28]   Found 0 tweets
+[2026-02-04 03:55:28] Searching: content creation tips min_faves:100
+[2026-02-04 03:55:28] bird search failed: error: unknown option '--limit'
+
+[2026-02-04 03:55:28]   Found 0 tweets
+[2026-02-04 03:55:28] Searching: no code app min_faves:50
+[2026-02-04 03:55:28] bird search failed: error: unknown option '--limit'
+
+[2026-02-04 03:55:28]   Found 0 tweets
+[2026-02-04 03:55:28] Searching: indie hacker launched min_faves:50
+[2026-02-04 03:55:28] bird search failed: error: unknown option '--limit'
+
+[2026-02-04 03:55:28]   Found 0 tweets
+[2026-02-04 03:55:28] Searching: ChatGPT hack min_faves:100
+[2026-02-04 03:55:28] bird search failed: error: unknown option '--limit'
+
+[2026-02-04 03:55:28]   Found 0 tweets
+[2026-02-04 03:55:28] Searching: Claude AI min_faves:50
+[2026-02-04 03:55:29] bird search failed: error: unknown option '--limit'
+
+[2026-02-04 03:55:29]   Found 0 tweets
+[2026-02-04 03:55:29] Found 0 total tweets
+[2026-02-04 03:55:29] Saved 0 tweets
+[2026-02-04 03:55:29] Summary generated
+[2026-02-04 03:55:29] Done
+[2026-02-04 03:55:54] Twitter trends monitor starting...
+[2026-02-04 03:55:54] Searching: AI tools viral min_faves:100
+[2026-02-04 03:55:54] bird search failed: ⚠️ No Twitter cookies found in Safari. Make sure you are logged into x.com in Safari.
+⚠️ Chrome cookies database not found.
+⚠️ No Twitter cookies found in Chrome. Make sure you are logged into x.com in Chrome.
+⚠️ Firefox cookies database not found.
+⚠️ No Twitter cookies found in Firefox. Make sure you are logged into x.com in Firefox and the profile exists.
+⚠️ Missing auth_token - provide via --auth-token, AUTH_TOKEN env var, or login to x.com in Safari/Chrome/Firefox
+⚠️ Missing ct0 - provide via --ct0, CT0 env var, or login to x.com in Safari/Chrome/Firefox
+❌ Missing required credentials
+
+[2026-02-04 03:55:54]   Found 0 tweets
+[2026-02-04 03:55:54] Searching: automation workflow min_faves:50
+[2026-02-04 03:55:54] bird search failed: ⚠️ No Twitter cookies found in Safari. Make sure you are logged into x.com in Safari.
+⚠️ Chrome cookies database not found.
+⚠️ No Twitter cookies found in Chrome. Make sure you are logged into x.com in Chrome.
+⚠️ Firefox cookies database not found.
+⚠️ No Twitter cookies found in Firefox. Make sure you are logged into x.com in Firefox and the profile exists.
+⚠️ Missing auth_token - provide via --auth-token, AUTH_TOKEN env var, or login to x.com in Safari/Chrome/Firefox
+⚠️ Missing ct0 - provide via --ct0, CT0 env var, or login to x.com in Safari/Chrome/Firefox
+❌ Missing required credentials
+
+[2026-02-04 03:55:54]   Found 0 tweets
+[2026-02-04 03:55:54] Searching: solopreneur revenue min_faves:100
+[2026-02-04 03:55:54] bird search failed: ⚠️ No Twitter cookies found in Safari. Make sure you are logged into x.com in Safari.
+⚠️ Chrome cookies database not found.
+⚠️ No Twitter cookies found in Chrome. Make sure you are logged into x.com in Chrome.
+⚠️ Firefox cookies database not found.
+⚠️ No Twitter cookies found in Firefox. Make sure you are logged into x.com in Firefox and the profile exists.
+⚠️ Missing auth_token - provide via --auth-token, AUTH_TOKEN env var, or login to x.com in Safari/Chrome/Firefox
+⚠️ Missing ct0 - provide via --ct0, CT0 env var, or login to x.com in Safari/Chrome/Firefox
+❌ Missing required credentials
+
+[2026-02-04 03:55:54]   Found 0 tweets
+[2026-02-04 03:55:54] Searching: content creation tips min_faves:100
+[2026-02-04 03:55:54] bird search failed: ⚠️ No Twitter cookies found in Safari. Make sure you are logged into x.com in Safari.
+⚠️ Chrome cookies database not found.
+⚠️ No Twitter cookies found in Chrome. Make sure you are logged into x.com in Chrome.
+⚠️ Firefox cookies database not found.
+⚠️ No Twitter cookies found in Firefox. Make sure you are logged into x.com in Firefox and the profile exists.
+⚠️ Missing auth_token - provide via --auth-token, AUTH_TOKEN env var, or login to x.com in Safari/Chrome/Firefox
+⚠️ Missing ct0 - provide via --ct0, CT0 env var, or login to x.com in Safari/Chrome/Firefox
+❌ Missing required credentials
+
+[2026-02-04 03:55:54]   Found 0 tweets
+[2026-02-04 03:55:54] Searching: no code app min_faves:50
+[2026-02-04 03:55:54] bird search failed: ⚠️ No Twitter cookies found in Safari. Make sure you are logged into x.com in Safari.
+⚠️ Chrome cookies database not found.
+⚠️ No Twitter cookies found in Chrome. Make sure you are logged into x.com in Chrome.
+⚠️ Firefox cookies database not found.
+⚠️ No Twitter cookies found in Firefox. Make sure you are logged into x.com in Firefox and the profile exists.
+⚠️ Missing auth_token - provide via --auth-token, AUTH_TOKEN env var, or login to x.com in Safari/Chrome/Firefox
+⚠️ Missing ct0 - provide via --ct0, CT0 env var, or login to x.com in Safari/Chrome/Firefox
+❌ Missing required credentials
+
+[2026-02-04 03:55:54]   Found 0 tweets
+[2026-02-04 03:55:54] Searching: indie hacker launched min_faves:50
+[2026-02-04 03:55:55] bird search failed: ⚠️ No Twitter cookies found in Safari. Make sure you are logged into x.com in Safari.
+⚠️ Chrome cookies database not found.
+⚠️ No Twitter cookies found in Chrome. Make sure you are logged into x.com in Chrome.
+⚠️ Firefox cookies database not found.
+⚠️ No Twitter cookies found in Firefox. Make sure you are logged into x.com in Firefox and the profile exists.
+⚠️ Missing auth_token - provide via --auth-token, AUTH_TOKEN env var, or login to x.com in Safari/Chrome/Firefox
+⚠️ Missing ct0 - provide via --ct0, CT0 env var, or login to x.com in Safari/Chrome/Firefox
+❌ Missing required credentials
+
+[2026-02-04 03:55:55]   Found 0 tweets
+[2026-02-04 03:55:55] Searching: ChatGPT hack min_faves:100
+[2026-02-04 03:55:55] bird search failed: ⚠️ No Twitter cookies found in Safari. Make sure you are logged into x.com in Safari.
+⚠️ Chrome cookies database not found.
+⚠️ No Twitter cookies found in Chrome. Make sure you are logged into x.com in Chrome.
+⚠️ Firefox cookies database not found.
+⚠️ No Twitter cookies found in Firefox. Make sure you are logged into x.com in Firefox and the profile exists.
+⚠️ Missing auth_token - provide via --auth-token, AUTH_TOKEN env var, or login to x.com in Safari/Chrome/Firefox
+⚠️ Missing ct0 - provide via --ct0, CT0 env var, or login to x.com in Safari/Chrome/Firefox
+❌ Missing required credentials
+
+[2026-02-04 03:55:55]   Found 0 tweets
+[2026-02-04 03:55:55] Searching: Claude AI min_faves:50
+[2026-02-04 03:55:55] bird search failed: ⚠️ No Twitter cookies found in Safari. Make sure you are logged into x.com in Safari.
+⚠️ Chrome cookies database not found.
+⚠️ No Twitter cookies found in Chrome. Make sure you are logged into x.com in Chrome.
+⚠️ Firefox cookies database not found.
+⚠️ No Twitter cookies found in Firefox. Make sure you are logged into x.com in Firefox and the profile exists.
+⚠️ Missing auth_token - provide via --auth-token, AUTH_TOKEN env var, or login to x.com in Safari/Chrome/Firefox
+⚠️ Missing ct0 - provide via --ct0, CT0 env var, or login to x.com in Safari/Chrome/Firefox
+❌ Missing required credentials
+
+[2026-02-04 03:55:55]   Found 0 tweets
+[2026-02-04 03:55:55] Found 0 total tweets
+[2026-02-04 03:55:55] Saved 0 tweets
+[2026-02-04 03:55:55] Summary generated
+[2026-02-04 03:55:55] Done
+[2026-02-04 03:56:10] Twitter trends monitor starting...
+[2026-02-04 03:56:10] Searching: AI tools viral min_faves:100
+[2026-02-04 03:56:11]   Found 10 tweets
+[2026-02-04 03:56:11] Searching: automation workflow min_faves:50
+[2026-02-04 03:56:12]   Found 10 tweets
+[2026-02-04 03:56:12] Searching: solopreneur revenue min_faves:100
+[2026-02-04 03:56:13]   Found 10 tweets
+[2026-02-04 03:56:13] Searching: content creation tips min_faves:100
+[2026-02-04 03:56:15]   Found 10 tweets
+[2026-02-04 03:56:15] Searching: no code app min_faves:50
+[2026-02-04 03:56:17]   Found 10 tweets
+[2026-02-04 03:56:17] Searching: indie hacker launched min_faves:50
+[2026-02-04 03:56:18]   Found 10 tweets
+[2026-02-04 03:56:18] Searching: ChatGPT hack min_faves:100
+[2026-02-04 03:56:19]   Found 10 tweets
+[2026-02-04 03:56:19] Searching: Claude AI min_faves:50
+[2026-02-04 03:56:21]   Found 10 tweets
+[2026-02-04 03:56:21] Found 80 total tweets
+[2026-02-04 03:56:21] Saved 80 tweets
+[2026-02-04 03:56:21] Summary generated
+[2026-02-04 03:56:21] Done
+[2026-02-04 03:57:22] Twitter trends monitor starting...
+[2026-02-04 03:57:22] Searching: AI tools viral min_faves:100
+[2026-02-04 03:57:23]   Found 10 tweets
+[2026-02-04 03:57:23] Searching: automation workflow min_faves:50
+[2026-02-04 03:57:24]   Found 10 tweets
+[2026-02-04 03:57:24] Searching: solopreneur revenue min_faves:100
+[2026-02-04 03:57:25]   Found 10 tweets
+[2026-02-04 03:57:25] Searching: content creation tips min_faves:100
+[2026-02-04 03:57:27]   Found 10 tweets
+[2026-02-04 03:57:27] Searching: no code app min_faves:50
+[2026-02-04 03:57:29]   Found 10 tweets
+[2026-02-04 03:57:29] Searching: indie hacker launched min_faves:50
+[2026-02-04 03:57:30]   Found 10 tweets
+[2026-02-04 03:57:30] Searching: ChatGPT hack min_faves:100
+[2026-02-04 03:57:31]   Found 10 tweets
+[2026-02-04 03:57:31] Searching: Claude AI min_faves:50
+[2026-02-04 03:57:32]   Found 10 tweets
+[2026-02-04 03:57:32] Found 80 total tweets
+[2026-02-04 03:57:32] Saved 2 tweets
+[2026-02-04 03:57:32] Summary generated
+[2026-02-04 03:57:32] Done
+[2026-02-04 04:02:59] Twitter trends monitor starting...
+[2026-02-04 04:02:59] Searching: AI tools viral min_faves:100
+[2026-02-04 04:03:01]   Found 10 tweets
+[2026-02-04 04:03:01] Searching: automation workflow min_faves:50
+[2026-02-04 04:03:01]   Found 10 tweets
+[2026-02-04 04:03:01] Searching: solopreneur revenue min_faves:100
+[2026-02-04 04:03:03]   Found 10 tweets
+[2026-02-04 04:03:03] Searching: content creation tips min_faves:100
+[2026-02-04 04:03:05]   Found 10 tweets
+[2026-02-04 04:03:05] Searching: no code app min_faves:50
+[2026-02-04 04:03:06]   Found 10 tweets
+[2026-02-04 04:03:06] Searching: indie hacker launched min_faves:50
+[2026-02-04 04:03:07]   Found 10 tweets
+[2026-02-04 04:03:07] Searching: ChatGPT hack min_faves:100
+[2026-02-04 04:03:08]   Found 10 tweets
+[2026-02-04 04:03:08] Searching: Claude AI min_faves:50
+[2026-02-04 04:03:10]   Found 10 tweets
+[2026-02-04 04:03:10] Found 80 total tweets
+[2026-02-04 04:03:10] Saved 3 tweets
+[2026-02-04 04:03:10] Summary generated
+[2026-02-04 04:03:10] Done
+[2026-02-04 13:27:39] Twitter trends monitor starting...
+[2026-02-04 13:27:39] Searching: AI tools viral min_faves:100
+[2026-02-04 13:27:40]   Found 10 tweets
+[2026-02-04 13:27:40] Searching: automation workflow min_faves:50
+[2026-02-04 13:27:41]   Found 10 tweets
+[2026-02-04 13:27:41] Searching: solopreneur revenue min_faves:100
+[2026-02-04 13:27:42]   Found 9 tweets
+[2026-02-04 13:27:42] Searching: content creation tips min_faves:100
+[2026-02-04 13:27:44]   Found 10 tweets
+[2026-02-04 13:27:44] Searching: no code app min_faves:50
+[2026-02-04 13:27:45]   Found 10 tweets
+[2026-02-04 13:27:45] Searching: indie hacker launched min_faves:50
+[2026-02-04 13:27:47]   Found 10 tweets
+[2026-02-04 13:27:47] Searching: ChatGPT hack min_faves:100
+[2026-02-04 13:27:49]   Found 10 tweets
+[2026-02-04 13:27:49] Searching: Claude AI min_faves:50
+[2026-02-04 13:27:50]   Found 10 tweets
+[2026-02-04 13:27:50] Found 79 total tweets
+[2026-02-04 13:27:50] Saved 20 tweets
+[2026-02-04 13:27:50] Summary generated
+[2026-02-04 13:27:50] Done
+[2026-02-04 13:28:45] Twitter trends monitor starting...
+[2026-02-04 13:28:45] Searching: AI tools viral min_faves:100
+[2026-02-04 13:28:46]   Found 10 tweets
+[2026-02-04 13:28:46] Searching: automation workflow min_faves:50
+[2026-02-04 13:28:47]   Found 10 tweets
+[2026-02-04 13:28:47] Searching: solopreneur revenue min_faves:100
+[2026-02-04 13:28:49]   Found 10 tweets
+[2026-02-04 13:28:49] Searching: content creation tips min_faves:100
+[2026-02-04 13:28:51]   Found 10 tweets
+[2026-02-04 13:28:51] Searching: no code app min_faves:50
+[2026-02-04 13:28:52]   Found 10 tweets
+[2026-02-04 13:28:52] Searching: indie hacker launched min_faves:50
+[2026-02-04 13:28:54]   Found 9 tweets
+[2026-02-04 13:28:54] Searching: ChatGPT hack min_faves:100
+[2026-02-04 13:28:55]   Found 10 tweets
+[2026-02-04 13:28:55] Searching: Claude AI min_faves:50
+[2026-02-04 13:28:57]   Found 10 tweets
+[2026-02-04 13:28:57] Found 79 total tweets
+[2026-02-04 13:28:57] Saved 7 tweets
+[2026-02-04 13:28:57] Summary generated
+[2026-02-04 13:28:57] Done
+[2026-02-04 13:50:57] Twitter trends monitor starting...
+[2026-02-04 13:50:57] Searching: AI tools viral min_faves:100
+[2026-02-04 13:50:58]   Found 10 tweets
+[2026-02-04 13:50:58] Searching: automation workflow min_faves:50
+[2026-02-04 13:50:59]   Found 10 tweets
+[2026-02-04 13:50:59] Searching: solopreneur revenue min_faves:100
+[2026-02-04 13:51:00]   Found 10 tweets
+[2026-02-04 13:51:00] Searching: content creation tips min_faves:100
+[2026-02-04 13:51:02]   Found 10 tweets
+[2026-02-04 13:51:02] Searching: no code app min_faves:50
+[2026-02-04 13:51:03]   Found 10 tweets
+[2026-02-04 13:51:03] Searching: indie hacker launched min_faves:50
+[2026-02-04 13:51:05] bird search failed: ❌ Search failed: Dependency: Unspecified
+
+[2026-02-04 13:51:05]   Found 0 tweets
+[2026-02-04 13:51:05] Searching: ChatGPT hack min_faves:100
+[2026-02-04 13:51:06]   Found 10 tweets
+[2026-02-04 13:51:06] Searching: Claude AI min_faves:50
+[2026-02-04 13:51:07]   Found 10 tweets
+[2026-02-04 13:51:07] Found 70 total tweets
+[2026-02-04 13:51:07] Saved 1 tweets
+[2026-02-04 13:51:07] Summary generated
+[2026-02-04 13:51:07] Done
+[2026-02-04 13:59:15] Twitter trends monitor starting...
+[2026-02-04 13:59:15] Searching: AI tools viral min_faves:100
+[2026-02-04 13:59:16]   Found 10 tweets
+[2026-02-04 13:59:16] Searching: automation workflow min_faves:50
+[2026-02-04 13:59:17]   Found 10 tweets
+[2026-02-04 13:59:17] Searching: solopreneur revenue min_faves:100
+[2026-02-04 13:59:18]   Found 10 tweets
+[2026-02-04 13:59:18] Searching: content creation tips min_faves:100
+[2026-02-04 13:59:20]   Found 10 tweets
+[2026-02-04 13:59:20] Searching: no code app min_faves:50
+[2026-02-04 13:59:21]   Found 10 tweets
+[2026-02-04 13:59:21] Searching: indie hacker launched min_faves:50
+[2026-02-04 13:59:23]   Found 10 tweets
+[2026-02-04 13:59:23] Searching: ChatGPT hack min_faves:100
+[2026-02-04 13:59:25]   Found 10 tweets
+[2026-02-04 13:59:25] Searching: Claude AI min_faves:50
+[2026-02-04 13:59:26]   Found 10 tweets
+[2026-02-04 13:59:26] Found 80 total tweets
+[2026-02-04 13:59:26] Saved 1 tweets
+[2026-02-04 13:59:26] Summary generated
+[2026-02-04 13:59:26] Done

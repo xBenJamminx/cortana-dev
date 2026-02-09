@@ -1,0 +1,41 @@
+🎯 *Content Intel* (2026-02-09 16:00)
+
+*🔥 TRENDING TOPICS*
+🔴 *OPEN SOURCE* `[dev, hn, news]`
+   • [OpenCiv3: Open-source, cross-platform reimagining of Civiliz](https://openciv3.org/) (929⬆)
+   • [France's homegrown open source online office suite](https://github.com/suitenumerique) (662⬆)
+   • [DoNotNotify is now Open Source](https://donotnotify.com/opensource.html) (350⬆)
+
+🔴 *AI AGENTS* `[dev, hn, news, ph]`
+   • [Coding agents have replaced every framework I used](https://blog.alaindichiappari.dev/p/software-engineering-is-back) (283⬆)
+   • [GitHub Agentic Workflows](https://github.github.io/gh-aw/) (265⬆)
+   • [Software factories and the agentic moment](https://factory.strongdm.ai/) (257⬆)
+
+🔴 *TYPESCRIPT* `[dev, hn, news]`
+   • [Coding agents have replaced every framework I used](https://blog.alaindichiappari.dev/p/software-engineering-is-back) (283⬆)
+   • [TSMC to make advanced AI semiconductors in Japan](https://apnews.com/article/semiconductors-tsmc-japan-taiwan-ai-11256f2bfde73ca23d08331ad138d6d5) (183⬆)
+   • [Billing can be bypassed using a combo of subagents with an a](https://github.com/microsoft/vscode/issues/292452) (180⬆)
+
+🔴 *DEV TOOLS* `[dev, hn, news]`
+   • [Vocal Guide – belt sing without killing yourself](https://jesperordrup.github.io/vocal-guide/) (376⬆)
+   • [Reverse Engineering Raiders of the Lost Ark for the Atari 26](https://github.com/joshuanwalker/Raiders2600) (76⬆)
+   • [A tough labor market for white-collar workers has turned rec](https://www.wsj.com/lifestyle/careers/job-hunters-are-so-desperate-that-theyre-paying-to-get-recruited-44891ac2) (32⬆)
+
+🔴 *GPT* `[dev, hn, news, ph]`
+   • [Show HN: LocalGPT – A local-first AI assistant in Rust with ](https://github.com/localgpt-app/localgpt) (302⬆)
+   • [OpenAI Frontier](https://www.producthunt.com/products/openai) (13⬆)
+   • [OpenAI Frontier](https://www.producthunt.com/products/openai) (13⬆)
+
+🟡 *RUST* `[dev, hn]`
+   • [Show HN: LocalGPT – A local-first AI assistant in Rust with ](https://github.com/localgpt-app/localgpt) (302⬆)
+   • [Go Made Me Fast. Rust Made Me Care. AWS Made Me Pay.](https://dev.to/art_light/go-made-me-fast-rust-made-me-care-aws-made-me-pay-2f82) (62⬆)
+   • [Lessons from BF-Tree: Building a Concurrent Larger-Than-Memo](https://zhihanz.github.io/posts/bf-tree-rust-implementation/) (4⬆)
+
+*🚀 FRESH LAUNCHES*
+• [SuperX](https://www.producthunt.com/products/superx)
+• [DubStream by CAMB.AI](https://www.producthunt.com/products/dubstream-by-camb)
+• [OpenAI Frontier](https://www.producthunt.com/products/openai)
+• [Afterpage](https://www.producthunt.com/products/afterpage)
+• [ClawdTalk](https://www.producthunt.com/products/telnyx)
+
+_🔴 3+ platforms | 🟡 2 platforms | ⚪ 1 platform_

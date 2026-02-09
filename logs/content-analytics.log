@@ -1,0 +1,106 @@
+[2026-02-04 03:54:37] Content analytics starting...
+[2026-02-04 03:54:37] Fetching Twitter profile...
+[2026-02-04 03:54:38] Composio TWITTER_USER_LOOKUP_ME output: {
+  "successful": true,
+  "data": {
+    "results": [
+      {
+        "response": {
+          "successful": true,
+          "data": {
+            "data": {
+              "id": "468825226",
+            
+[2026-02-04 03:54:38] Could not fetch Twitter profile
+[2026-02-04 03:54:38] Fetching recent tweets...
+[2026-02-04 03:54:40] Recent tweets error: 'str' object has no attribute 'get'
+[2026-02-04 03:54:40] Could not fetch recent tweets
+[2026-02-04 03:54:40] 📊 Content Analytics Summary (2026-02-04)
+
+
+[2026-02-04 03:54:40] Content analytics complete
+[2026-02-04 03:55:08] Content analytics starting...
+[2026-02-04 03:55:08] Fetching Twitter profile...
+[2026-02-04 03:55:09] Composio TWITTER_USER_LOOKUP_ME output: {
+  "successful": true,
+  "data": {
+    "results": [
+      {
+        "response": {
+          "successful": true,
+          "data": {
+            "data": {
+              "id": "468825226",
+            
+[2026-02-04 03:55:09] Could not fetch Twitter profile
+[2026-02-04 03:55:09] Fetching recent tweets...
+[2026-02-04 03:55:11] Recent tweets error: 'str' object has no attribute 'get'
+[2026-02-04 03:55:11] Could not fetch recent tweets
+[2026-02-04 03:55:11] 📊 Content Analytics Summary (2026-02-04)
+
+
+[2026-02-04 03:55:11] Content analytics complete
+[2026-02-04 03:56:13] Content analytics starting...
+[2026-02-04 03:56:13] Fetching Twitter profile...
+[2026-02-04 03:56:14] Composio TWITTER_USER_LOOKUP_ME output: {
+  "successful": true,
+  "data": {
+    "results": [
+      {
+        "response": {
+          "successful": true,
+          "data": {
+            "data": {
+              "id": "468825226",
+            
+[2026-02-04 03:56:14] Could not fetch Twitter profile
+[2026-02-04 03:56:14] Fetching recent tweets...
+[2026-02-04 03:56:16] Extract error: 'str' object has no attribute 'get'
+[2026-02-04 03:56:16] Could not fetch recent tweets
+[2026-02-04 03:56:16] 📊 Content Analytics Summary (2026-02-04)
+
+
+[2026-02-04 03:56:16] Content analytics complete
+[2026-02-04 03:56:32] Content analytics starting...
+[2026-02-04 03:56:32] Fetching Twitter profile...
+[2026-02-04 03:56:34] Saved daily stats: 0 followers
+[2026-02-04 03:56:34] Fetching recent tweets...
+[2026-02-04 03:56:35] Saved 20 tweets
+[2026-02-04 03:56:35] Daily engagement: 0 likes, 0 RTs
+[2026-02-04 03:56:35] 📊 Content Analytics Summary (2026-02-04)
+
+Twitter Profile:
+  • Followers: 0
+  • Following: 0
+  • Total Tweets: 0
+
+Recent Engagement:
+  • Likes: 0
+  • Retweets: 0
+  • Replies: 0
+
+Top Tweet:
+  "@mvanhorn @openclaw @slashlast30days @X @Reddit @threadreaderapp unroll..."
+  0 likes | https://twitter.com/xBenJamminx/status/2018887477868556343
+
+[2026-02-04 03:56:35] Content analytics complete
+[2026-02-04 04:02:53] Content Analytics starting...
+[2026-02-04 04:02:53] Done
+[2026-02-04 04:03:16] Content Analytics starting...
+[2026-02-04 04:03:16] Done
+[2026-02-04 04:03:50] Content Analytics starting...
+[2026-02-04 04:03:50] Done
+[2026-02-04 04:11:52] Content Analytics starting...
+[2026-02-04 04:11:52] Done
+[2026-02-04 12:00:01] Content Analytics starting...
+[2026-02-04 12:00:01] Done
+[2026-02-05 12:00:02] Content Analytics starting...
+[2026-02-05 12:00:02] Done
+[2026-02-06 12:00:01] Content Analytics starting...
+[2026-02-06 12:00:01] Done
+[2026-02-07 12:00:02] Content Analytics starting...
+[2026-02-07 12:00:02] Done
+[2026-02-08 12:00:02] Content Analytics starting...
+[2026-02-08 12:00:02] Done
+[2026-02-09 12:00:01] Content Analytics starting...
+[2026-02-09 12:00:01] Done

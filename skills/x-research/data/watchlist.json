@@ -1,0 +1,14 @@
+{
+  "accounts": [
+    {
+      "username": "openclaw",
+      "note": "OpenClaw - main project",
+      "addedAt": "2026-02-08T21:31:38.351Z"
+    },
+    {
+      "username": "CortanaOps",
+      "note": "Our AI operator account",
+      "addedAt": "2026-02-08T21:31:38.378Z"
+    }
+  ]
+}

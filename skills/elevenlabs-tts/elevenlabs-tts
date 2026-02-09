@@ -1,0 +1,103 @@
+#!/bin/bash
+# ElevenLabs TTS CLI for Linux
+
+set -e
+
+API_KEY="${ELEVENLABS_API_KEY}"
+DEFAULT_VOICE="Cortana"
+CORTANA_VOICE_ID="3JY1LL2MgjJ5HtZhEkm5"
+DEFAULT_MODEL="eleven_multilingual_v2"
+OUTPUT_FILE=""
+VOICE=""
+MODEL=""
+LIST_VOICES=false
+TEXT=""
+
+usage() {
+    echo "Usage: elevenlabs-tts [OPTIONS] <text>"
+    echo ""
+    echo "Options:"
+    echo "  -o, --output FILE    Output audio file (default: /tmp/tts-output.mp3)"
+    echo "  -v, --voice NAME     Voice name (default: Adam)"
+    echo "  -m, --model MODEL    Model ID (default: eleven_multilingual_v2)"
+    echo "  --voices             List available voices"
+    echo "  -h, --help           Show this help"
+    exit 1
+}
+
+list_voices() {
+    curl -s "https://api.elevenlabs.io/v1/voices" \
+        -H "xi-api-key: $API_KEY" | \
+        python3 -c "import sys,json; voices=json.load(sys.stdin)['voices']; print('\n'.join([f\"{v['name']:20} {v['voice_id']}\" for v in voices]))"
+    exit 0
+}
+
+# Parse arguments
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        -o|--output) OUTPUT_FILE="$2"; shift 2 ;;
+        -v|--voice) VOICE="$2"; shift 2 ;;
+        -m|--model) MODEL="$2"; shift 2 ;;
+        --voices) LIST_VOICES=true; shift ;;
+        -h|--help) usage ;;
+        *) TEXT="$1"; shift ;;
+    esac
+done
+
+if [ -z "$API_KEY" ]; then
+    echo "Error: ELEVENLABS_API_KEY not set" >&2
+    exit 1
+fi
+
+if [ "$LIST_VOICES" = true ]; then
+    list_voices
+fi
+
+if [ -z "$TEXT" ]; then
+    echo "Error: No text provided" >&2
+    usage
+fi
+
+VOICE="${VOICE:-$DEFAULT_VOICE}"
+MODEL="${MODEL:-$DEFAULT_MODEL}"
+OUTPUT_FILE="${OUTPUT_FILE:-/tmp/tts-output.mp3}"
+
+# Get voice ID from name (case insensitive)
+VOICE_LOWER=$(echo "$VOICE" | tr '[:upper:]' '[:lower:]')
+
+# Use hardcoded Cortana voice ID if specified
+if [ "$VOICE_LOWER" = "cortana" ]; then
+    VOICE_ID="$CORTANA_VOICE_ID"
+else
+    VOICE_ID=$(curl -s "https://api.elevenlabs.io/v1/voices" \
+        -H "xi-api-key: $API_KEY" | \
+        python3 -c "import sys,json; voices=json.load(sys.stdin)['voices']; matches=[v['voice_id'] for v in voices if v['name'].lower().startswith('$VOICE_LOWER') or v['name'].split(' - ')[0].lower()=='$VOICE_LOWER']; print(matches[0] if matches else '')" 2>/dev/null)
+fi
+
+if [ -z "$VOICE_ID" ]; then
+    echo "Error: Voice '$VOICE' not found. Use --voices to list available voices." >&2
+    exit 1
+fi
+
+# Escape text for JSON
+TEXT_ESCAPED=$(echo "$TEXT" | python3 -c "import sys,json; print(json.dumps(sys.stdin.read().strip())[1:-1])")
+
+# Generate speech
+HTTP_CODE=$(curl -s -w "%{http_code}" "https://api.elevenlabs.io/v1/text-to-speech/$VOICE_ID" \
+    -H "xi-api-key: $API_KEY" \
+    -H "Content-Type: application/json" \
+    -d "{\"text\": \"$TEXT_ESCAPED\", \"model_id\": \"$MODEL\", \"voice_settings\": {\"stability\": 0.5, \"similarity_boost\": 0.75}}" \
+    --output "$OUTPUT_FILE")
+
+if [ "$HTTP_CODE" != "200" ]; then
+    echo "Error: API returned HTTP $HTTP_CODE" >&2
+    cat "$OUTPUT_FILE" >&2
+    exit 1
+fi
+
+if [ -f "$OUTPUT_FILE" ] && [ -s "$OUTPUT_FILE" ]; then
+    echo "$OUTPUT_FILE"
+else
+    echo "Error: Failed to generate audio" >&2
+    exit 1
+fi

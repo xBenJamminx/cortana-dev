@@ -1,0 +1,135 @@
+/root/clawd/scripts/indiehacker-monitor.py:100: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/root/clawd/scripts/indiehacker-monitor.py:100: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/root/clawd/scripts/indiehacker-monitor.py:100: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/root/clawd/scripts/indiehacker-monitor.py:100: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/root/clawd/scripts/indiehacker-monitor.py:100: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/root/clawd/scripts/indiehacker-monitor.py:100: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+[2026-02-04 04:30:01] Indie Hacker monitor starting...
+[2026-02-04 04:30:01] Fetching Hacker News...
+[2026-02-04 04:30:04]   Got 30 HN stories
+[2026-02-04 04:30:04]   Saved: Launch HN: Modelence (YC S25) – App Builder with TypeScript ... (keywords: ['launch'])
+[2026-02-04 04:30:04] Searching: indie hacker news 2025
+[2026-02-04 04:30:05] Searching: micro saas launch
+[2026-02-04 04:30:07] Searching: solopreneur success story
+[2026-02-04 04:30:08] Searching: bootstrapped startup
+[2026-02-04 04:30:10] Searching: side project revenue
+[2026-02-04 04:30:12] Searching: build in public
+[2026-02-04 04:30:12] DDG news error for 'build in public': https://duckduckgo.com/?q=build+in+public 202 Ratelimit
+[2026-02-04 04:30:12] Total saved: 36 posts
+[2026-02-04 04:30:12] 🚀 Indie Hacker Monitor (2026-02-04 04:30)
+
+🔥 Hot Topics:
+  • bootstrapped: 12 mentions
+  • side project: 12 mentions
+  • launch: 9 mentions
+  • solopreneur: 8 mentions
+  • build in public: 2 mentions
+
+📈 Top Stories:
+  • [Hacker News] (830⬆): France dumps Zoom and Teams as Europe seeks digital autonomy from the US
+    https://apnews.com/article/europe-digital-sovereignty-big-tech-9f5388b68a0648514cebc8d92f682060
+  • [Hacker News] (599⬆): Qwen3-Coder-Next
+    https://qwen.ai/blog?id=qwen3-coder-next
+  • [Hacker News] (423⬆): Lessons learned shipping 500 units of my first hardware product
+    https://www.simonberens.com/p/lessons-learned-shipping-500-units
+  • [Hacker News] (402⬆): Agent Skills
+    https://agentskills.io/home
+  • [Hacker News] (361⬆): Deno Sandbox
+    https://deno.com/blog/introducing-deno-sandbox
+
+[2026-02-04 04:30:12] Indie Hacker monitor complete
+/root/clawd/scripts/indiehacker-monitor.py:100: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/root/clawd/scripts/indiehacker-monitor.py:100: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/root/clawd/scripts/indiehacker-monitor.py:100: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/root/clawd/scripts/indiehacker-monitor.py:100: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/root/clawd/scripts/indiehacker-monitor.py:100: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/root/clawd/scripts/indiehacker-monitor.py:100: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+[2026-02-04 08:30:01] Indie Hacker monitor starting...
+[2026-02-04 08:30:01] Fetching Hacker News...
+[2026-02-04 08:30:04]   Got 30 HN stories
+[2026-02-04 08:30:04] Searching: indie hacker news 2025
+[2026-02-04 08:30:05] Searching: micro saas launch
+[2026-02-04 08:30:07] Searching: solopreneur success story
+[2026-02-04 08:30:08] Searching: bootstrapped startup
+[2026-02-04 08:30:10] Searching: side project revenue
+[2026-02-04 08:30:12] Searching: build in public
+[2026-02-04 08:30:14] Total saved: 39 posts
+[2026-02-04 08:30:14] 🚀 Indie Hacker Monitor (2026-02-04 08:30)
+
+🔥 Hot Topics:
+  • bootstrapped: 15 mentions
+  • side project: 15 mentions
+  • solopreneur: 12 mentions
+  • launch: 11 mentions
+  • build in public: 3 mentions
+
+📈 Top Stories:
+  • [Hacker News] (924⬆): France dumps Zoom and Teams as Europe seeks digital autonomy from the US
+    https://apnews.com/article/europe-digital-sovereignty-big-tech-9f5388b68a0648514cebc8d92f682060
+  • [Hacker News] (642⬆): Qwen3-Coder-Next
+    https://qwen.ai/blog?id=qwen3-coder-next
+  • [Hacker News] (549⬆): Lessons learned shipping 500 units of my first hardware product
+    https://www.simonberens.com/p/lessons-learned-shipping-500-units
+  • [Hacker News] (533⬆): Data centers in space makes no sense
+    https://civai.org/blog/space-data-centers
+  • [Hacker News] (449⬆): Agent Skills
+    https://agentskills.io/home
+
+[2026-02-04 08:30:14] Indie Hacker monitor complete
+/root/clawd/scripts/indiehacker-monitor.py:100: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/root/clawd/scripts/indiehacker-monitor.py:100: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/root/clawd/scripts/indiehacker-monitor.py:100: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/root/clawd/scripts/indiehacker-monitor.py:100: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/root/clawd/scripts/indiehacker-monitor.py:100: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/root/clawd/scripts/indiehacker-monitor.py:100: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+[2026-02-04 12:30:01] Indie Hacker monitor starting...
+[2026-02-04 12:30:01] Fetching Hacker News...
+[2026-02-04 12:30:05]   Got 30 HN stories
+[2026-02-04 12:30:05]   Saved: Brazilian Micro-SaaS Map... (keywords: ['saas', 'micro-saas'])
+[2026-02-04 12:30:05] Searching: indie hacker news 2025
+[2026-02-04 12:30:06] Searching: micro saas launch
+[2026-02-04 12:30:08] Searching: solopreneur success story
+[2026-02-04 12:30:09] Searching: bootstrapped startup
+[2026-02-04 12:30:11] Searching: side project revenue
+[2026-02-04 12:30:13] Searching: build in public
+[2026-02-04 12:30:15] Total saved: 39 posts
+[2026-02-04 12:30:15] 🚀 Indie Hacker Monitor (2026-02-04 12:30)
+
+🔥 Hot Topics:
+  • bootstrapped: 18 mentions
+  • side project: 17 mentions
+  • solopreneur: 16 mentions
+  • launch: 13 mentions
+  • build in public: 4 mentions
+
+📈 Top Stories:
+  • [Hacker News] (1016⬆): France dumps Zoom and Teams as Europe seeks digital autonomy from the US
+    https://apnews.com/article/europe-digital-sovereignty-big-tech-9f5388b68a0648514cebc8d92f682060
+  • [Hacker News] (709⬆): I miss thinking hard
+    https://www.jernesto.com/articles/thinking_hard
+  • [Hacker News] (708⬆): Data centers in space makes no sense
+    https://civai.org/blog/space-data-centers
+  • [Hacker News] (679⬆): Qwen3-Coder-Next
+    https://qwen.ai/blog?id=qwen3-coder-next
+  • [Hacker News] (649⬆): Lessons learned shipping 500 units of my first hardware product
+    https://www.simonberens.com/p/lessons-learned-shipping-500-units
+
+[2026-02-04 12:30:15] Indie Hacker monitor complete

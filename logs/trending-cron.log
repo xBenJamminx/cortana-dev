@@ -1,0 +1,100 @@
+/root/clawd/scripts/trending-monitor.py:52: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+[2026-02-04 04:00:01] Trending monitor starting...
+[2026-02-04 04:00:01] Searching: AI tools 2025
+[2026-02-04 04:00:02] Searching: Claude AI news
+[2026-02-04 04:00:04] Searching: GPT news
+[2026-02-04 04:00:06] Searching: indie hacker trending
+[2026-02-04 04:00:08] Searching: no-code tools
+[2026-02-04 04:00:09] Searching: vibe coding
+[2026-02-04 04:00:11] Searching: AI automation
+[2026-02-04 04:00:13] Found 30 articles
+[2026-02-04 04:00:13] Saved 1 new articles
+[2026-02-04 04:00:13] Summary generated
+📰 Trending Topics (last 24h)
+
+• Bye bye, ChatGPT-4o: OpenAI will soon retire several models, pushing new GPT-5 ones
+  _CNET_
+
+• Apple integrates Anthropic's Claude and OpenAI's Codex into Xcode 26.3 in push for 'agentic coding'
+  _VentureBeat_
+
+• 2025 Year in Review and Predictions for 2026 in the Cyber, AI, and Privacy Frontier
+  _JD Supra_
+
+• Nextech3D.ai's KraftyLab Accelerates Global Scale with Launch of In-Person Experiences and AI-Driven Platform Automation
+  _Milwaukee Journal Sentinel_
+
+
+[2026-02-04 04:00:13] Done
+/root/clawd/scripts/trending-monitor.py:52: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+[2026-02-04 08:00:01] Trending monitor starting...
+[2026-02-04 08:00:01] Searching: AI tools 2025
+[2026-02-04 08:00:01]   Error: https://duckduckgo.com/?q=AI+tools+2025 202 Ratelimit
+[2026-02-04 08:00:01] Searching: Claude AI news
+[2026-02-04 08:00:02]   Error: https://duckduckgo.com/?q=Claude+AI+news 202 Ratelimit
+[2026-02-04 08:00:02] Searching: GPT news
+[2026-02-04 08:00:02]   Error: https://duckduckgo.com/?q=GPT+news 202 Ratelimit
+[2026-02-04 08:00:02] Searching: indie hacker trending
+[2026-02-04 08:00:03]   Error: https://duckduckgo.com/?q=indie+hacker+trending 202 Ratelimit
+[2026-02-04 08:00:03] Searching: no-code tools
+[2026-02-04 08:00:04]   Error: https://duckduckgo.com/?q=no-code+tools 202 Ratelimit
+[2026-02-04 08:00:04] Searching: vibe coding
+[2026-02-04 08:00:05]   Error: https://duckduckgo.com/?q=vibe+coding 202 Ratelimit
+[2026-02-04 08:00:05] Searching: AI automation
+[2026-02-04 08:00:06]   Error: https://duckduckgo.com/?q=AI+automation 202 Ratelimit
+[2026-02-04 08:00:06] Found 0 articles
+[2026-02-04 08:00:06] Saved 0 new articles
+[2026-02-04 08:00:06] Summary generated
+📰 Trending Topics (last 24h)
+
+• Bye bye, ChatGPT-4o: OpenAI will soon retire several models, pushing new GPT-5 ones
+  _CNET_
+
+• Apple integrates Anthropic's Claude and OpenAI's Codex into Xcode 26.3 in push for 'agentic coding'
+  _VentureBeat_
+
+• 2025 Year in Review and Predictions for 2026 in the Cyber, AI, and Privacy Frontier
+  _JD Supra_
+
+• Nextech3D.ai's KraftyLab Accelerates Global Scale with Launch of In-Person Experiences and AI-Driven Platform Automation
+  _Milwaukee Journal Sentinel_
+
+
+[2026-02-04 08:00:06] Done
+/root/clawd/scripts/trending-monitor.py:52: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+[2026-02-04 12:00:01] Trending monitor starting...
+[2026-02-04 12:00:01] Searching: AI tools 2025
+[2026-02-04 12:00:02] Searching: Claude AI news
+[2026-02-04 12:00:04] Searching: GPT news
+[2026-02-04 12:00:06] Searching: indie hacker trending
+[2026-02-04 12:00:07] Searching: no-code tools
+[2026-02-04 12:00:09] Searching: vibe coding
+[2026-02-04 12:00:11] Searching: AI automation
+[2026-02-04 12:00:13] Found 30 articles
+[2026-02-04 12:00:13] Saved 6 new articles
+[2026-02-04 12:00:13] Summary generated
+📰 Trending Topics (last 24h)
+
+• 20 AI-Resistant Careers With The Lowest Automation Risk In 2026
+  _Forbes_
+
+• No-Code AI Automation Made Easy: How to Build Powerful AI Workflows Without Coding
+  _Tech Times_
+
+• Apple just made Xcode better for vibe coding
+  _Engadget_
+
+• Claude AI Now Lets You Use Slack, Figma, and Canva Within the Chat
+  _MacRumors_
+
+• Claude's New Legal Plugin Could Threaten Dominance of Legal Tech's AI Leaders
+  _Law.com_
+
+• My 5 favorite AI tools in 2025
+  _YouTube_
+
+• Bye b
+[2026-02-04 12:00:13] Done

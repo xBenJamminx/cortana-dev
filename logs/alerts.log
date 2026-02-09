@@ -1,0 +1,28 @@
+[2026-02-08 09:16:13] Alert [critical]: Gateway restart FAILED (failure #1).
+Service: active/running
+HTTP: <urlopen error [Errno 111] Connection refused>
+Manual intervention may be needed.
+[2026-02-08 09:16:14] Telegram alert sent: Gateway restart FAILED (failure #1).
+Service: acti...
+[2026-02-08 09:16:14] Logged to ERROR_LOG.md
+[2026-02-08 09:20:09] Alert [info]: Diagnostics captured after 3 failures: /root/clawd/logs/diagnostics/diag-20260208-092008.txt
+[2026-02-08 09:20:09] Telegram alert sent: Diagnostics captured after 3 failures: /root/clawd...
+[2026-02-08 09:24:02] Alert [info]: Gateway recovered after 4 check failures
+[2026-02-08 09:24:02] Telegram alert sent: Gateway recovered after 4 check failures...
+[2026-02-08 09:40:11] Alert [critical]: 🔧 Gateway config error detected:
+
+**Field**: `{"0"`
+**Error**: {"0":"Invalid config at /root/.openclaw/openclaw.json:\\n- agents.defaults.blockStreamingBreak: Invalid input","_meta":{"runtime":"node","runtimeVersion":"22.22.0","hostname":"unknown","name":"openclaw","date":"2026-02-08T09:22:28.581Z","logLevelId":5,"logLevelName":"ERROR","path":{"fullFilePath":"file:///usr/lib/node_modules/openclaw/dist/entry.js:917:68","fileName":"entry.js","fileNameWithLine":"entry.js:917","fileColumn":"68","fileLine":"917","filePath":"/usr/lib/node_modules/openclaw/dist/entry.js","filePathWithLine":"/usr/lib/node_modules/openclaw/dist/entry.js:917","method":"console.error"}},"time":"2026-02-08T09:22:28.589Z"}
+
+**Fix**:
+Run: openclaw doctor --fix
+Or manually edit: /root/.openclaw/openclaw.json
+
+Gateway is crash-looping and won't recover without manual intervention.
+[2026-02-08 09:40:12] Telegram alert sent: 🔧 Gateway config error detected:
+
+**Field**: `{"0"...
+[2026-02-08 09:40:12] Logged to ERROR_LOG.md
+[2026-02-09 13:06:05] Alert [warning]: Killed 1 stuck process(es) and restarted gateway
+[2026-02-09 13:06:05] Telegram failed: {'ok': False, 'error_code': 404, 'description': 'Not Found'}
+[2026-02-09 13:06:05] Logged to ERROR_LOG.md

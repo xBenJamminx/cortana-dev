@@ -1,0 +1,20 @@
+🚀 Indie Hacker Monitor (2026-02-09 13:02)
+
+🔥 Hot Topics:
+  • solopreneur: 32 mentions
+  • side project: 21 mentions
+  • launch: 17 mentions
+  • build in public: 16 mentions
+  • bootstrapped: 12 mentions
+
+📈 Top Stories:
+  • [Hacker News] (914⬆): Vouch
+    https://github.com/mitchellh/vouch
+  • [Hacker News] (631⬆): Start all of your commands with a comma (2009)
+    https://rhodesmill.org/brandon/2009/commands-with-comma/
+  • [Hacker News] (454⬆): We mourn our craft
+    https://nolanlawson.com/2026/02/07/we-mourn-our-craft/
+  • [Hacker News] (412⬆): Art of Roads in Games
+    https://sandboxspirit.com/blog/art-of-roads-in-games/
+  • [Hacker News] (393⬆): Vocal Guide – belt sing without killing yourself
+    https://jesperordrup.github.io/vocal-guide/
