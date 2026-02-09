@@ -45,7 +45,7 @@
 		},
 		{
 			q: "How much of Ben's time goes into this?",
-			a: "Ben is in the community daily. Responds to questions, shares what he's working on, drops new resources in real time. Monthly live sessions happen on a regular cadence. This isn't a content dump with no one behind it."
+			a: "Ben is actively involved. He shares what he's building, drops new resources regularly, and runs live sessions. This isn't a content dump with no one behind it. But the community is designed to be valuable on its own -- members help each other, not just wait for Ben."
 		}
 	];
 </script>
@@ -186,7 +186,7 @@
 				{
 					problem: 'You get stuck and have nobody to ask.',
 					pain: 'Google gives you 2023 answers. Reddit threads end in arguments.',
-					solution: 'A community where people actually respond. Ben is in there daily. Ask a question, get a real answer from someone who\'s done it.'
+					solution: 'A community where people actually respond. Ask a question, get a real answer from someone who\'s done it.'
 				},
 				{
 					problem: 'No time to figure this out yourself.',
@@ -321,9 +321,9 @@
 				},
 				{
 					num: '04',
-					title: 'Community + Direct Access to Ben',
-					desc: 'Active channels where members ask questions, share wins, and help each other. Ben is present daily. Not a ghost town. Not a content dump. A room where you can ask "how do I do this?" and get an answer.',
-					examples: 'Help channel with real responses. Wins channel to share what you built. Monthly live sessions. All recordings archived for members.',
+					title: 'Community That Actually Helps',
+					desc: 'Active channels where members ask questions, share wins, and help each other figure things out. Not a ghost town. Not a content dump. A room full of people solving the same problems you are.',
+					examples: 'Help channel with real responses. Wins channel to share what you built. Live sessions. All recordings archived for members.',
 					badge: 'bg-cyan-light',
 					shadow: 'neo-card-cyan'
 				},
@@ -451,7 +451,7 @@
 							{#each [
 								'Full library: tutorials, prompt packs, tool guides',
 								'Permanent price lock at $29/mo',
-								'Community access with direct access to Ben',
+								'Active community of members helping each other',
 								'Exclusive tool deals and partner discounts',
 								'Founding member badge',
 								'Input on what gets built next',
@@ -536,7 +536,7 @@
 				Learn AI. Use it everywhere.
 			</h2>
 			<p class="mt-4 text-base text-muted md:text-lg">
-				50 founding spots. Tutorials, prompts, tool deals, and a community. Direct access to Ben. $29/mo locked forever.
+				50 founding spots. Tutorials, prompts, tool deals, and a community that actually helps. $29/mo locked forever.
 			</p>
 			<a
 				href="#founding"
