@@ -44,8 +44,8 @@
 			a: 'Yes. Monthly billing. No contracts. Founding member pricing is locked as long as you stay subscribed. If you cancel and come back later, you rejoin at whatever the current price is.'
 		},
 		{
-			q: "How much of Ben's time goes into this?",
-			a: "Ben is actively involved. He shares what he's building, drops new resources regularly, and runs live sessions. This isn't a content dump with no one behind it. But the community is designed to be valuable on its own -- members help each other, not just wait for Ben."
+			q: "Who runs this?",
+			a: "Ben built it and adds new resources regularly. But the community isn't built around one person. It's built around members helping each other, sharing what works, and getting better at using AI together."
 		}
 	];
 </script>
@@ -171,7 +171,7 @@
 				{
 					problem: '1,000 AI tools. No idea which ones are worth paying for.',
 					pain: 'You signed up for 3 different things last month. Used one of them twice. The rest are charging your card for nothing.',
-					solution: 'Honest monthly breakdowns of the tools Ben actually uses, what they cost, and whether they\'re worth it. No affiliate links. Plus member-only deals designed to save you more than $29/mo.'
+					solution: 'Honest monthly breakdowns of which tools are actually worth it, what they cost, and why. No affiliate links. Plus member-only deals designed to save you more than $29/mo.'
 				},
 				{
 					problem: 'You see what AI can do but can\'t replicate it.',
@@ -314,8 +314,8 @@
 				{
 					num: '03',
 					title: 'Honest Tool Breakdowns',
-					desc: 'Monthly roundups of the AI tools Ben actually uses, what they cost, and whether they\'re worth it. No affiliate links. No sponsorships. Just what works and what doesn\'t, from someone who uses these tools daily across client work, side projects, and family life.',
-					examples: 'The 12 AI tools I actually pay for (and the monthly damage). Best free AI tools for small business. When to use Claude vs ChatGPT vs Gemini. Tool deals that offset your membership cost.',
+					desc: 'Monthly roundups of which AI tools are actually worth paying for, what they cost, and honest verdicts. No affiliate links. No sponsorships. Just what works and what doesn\'t, tested across real work and real projects.',
+					examples: 'The AI tools actually worth paying for (and the monthly damage). Best free AI tools for small business. When to use Claude vs ChatGPT vs Gemini. Tool deals that offset your membership cost.',
 					badge: 'bg-pink-light',
 					shadow: 'neo-card-pink'
 				},
@@ -331,7 +331,7 @@
 					num: '05',
 					title: 'Exclusive Tool Deals',
 					desc: 'Discounts negotiated with AI tool companies, exclusively for members. The goal: the deals alone save you more than the $29/mo membership. The tutorials, prompts, and community are free upside.',
-					examples: 'Discounts on the tools Ben recommends in his roundups. Lifetime deal alerts before they go public. Partner pricing on AI platforms.',
+					examples: 'Discounts on the tools recommended in roundups. Lifetime deal alerts before they go public. Partner pricing on AI platforms.',
 					badge: 'bg-yellow-light',
 					shadow: 'neo-card-yellow'
 				},
