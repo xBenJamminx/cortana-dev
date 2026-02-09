@@ -45,7 +45,7 @@
 		},
 		{
 			q: "Who runs this?",
-			a: "Ben built it and adds new resources regularly. But the community isn't built around one person. It's built around members helping each other, sharing what works, and getting better at using AI together."
+			a: "BuildsByBen is run by Ben, a technical program manager and AI automation consultant who uses AI across client work, side projects, and family life. New resources are added weekly and the community has regular calls, active channels, and a growing library."
 		}
 	];
 </script>
@@ -248,7 +248,7 @@
 						'You know AI can save you time and money but don\'t know where to start',
 						'You\'re tired of hype and want to see what actually works',
 						'You need results this week, not a 12-week course',
-						'You want honest tool recommendations from someone with no agenda'
+						'You want honest tool recommendations with no affiliate links or agenda'
 					]
 				},
 				{
@@ -258,7 +258,7 @@
 					lines: [
 						'You have a full-time job and something you\'re building on the side',
 						'You have limited time and need to move fast without a team',
-						'You want to see how someone else is actually doing it solo',
+						'You want proven workflows from people actually doing it solo',
 						'You need the shortcut to "what tools do I use and how"'
 					]
 				}
@@ -321,9 +321,9 @@
 				},
 				{
 					num: '04',
-					title: 'Community That Actually Helps',
-					desc: 'Active channels where members ask questions, share wins, and help each other figure things out. Not a ghost town. Not a content dump. A room full of people solving the same problems you are.',
-					examples: 'Help channel with real responses. Wins channel to share what you built. Live sessions. All recordings archived for members.',
+					title: 'Weekly Calls + Active Community',
+					desc: 'Weekly community calls covering specific AI topics, workflows, and Q&amp;A. Plus active channels for questions, wins, and troubleshooting. Not a ghost town. Not a content dump.',
+					examples: 'Weekly topic-based calls (recorded). Help channel with real responses. Wins channel to share what you built. All session recordings archived.',
 					badge: 'bg-cyan-light',
 					shadow: 'neo-card-cyan'
 				},
@@ -381,26 +381,26 @@
 				Built by
 			</div>
 			<h2 class="mt-6 font-display text-3xl font-bold text-ink md:text-5xl">
-				A dad, a worker, a builder. In that order.
+				Built from real work, not theory.
 			</h2>
 		</div>
 
 		<div class="reveal mt-10 rounded-2xl border-3 border-ink bg-surface p-6 shadow-[8px_8px_0_theme(--color-cyan)] md:p-12">
 			<p class="text-base leading-relaxed text-ink md:text-xl">
-				Ben is 37. Two young sons. Long Island. Full-time at a tech startup Monday through Thursday. Runs a consulting business doing AI automation for real companies. Builds products on nights and weekends.
+				Everything in this community comes from hands-on experience. AI automation for enterprise clients. Consumer products used by thousands. Side projects built on nights and weekends. Even a bedtime story generator for the kids.
 			</p>
-			<p class="mt-4 font-display text-xl font-bold text-ink md:mt-6 md:text-3xl">He uses AI for all of it.</p>
+			<p class="mt-4 font-display text-xl font-bold text-ink md:mt-6 md:text-3xl">The resources reflect that range.</p>
 			<p class="mt-4 text-muted leading-relaxed">
-				Not as a hobby. As the core lever behind his work, his side business, his family life, and his creative projects. He built a bedtime story generator for his kids. He built document intelligence pipelines for enterprise clients. He built consumer products used by thousands of people. AI is involved in every layer.
+				From business operations to content creation to family life. The tutorials, prompts, and tool recommendations cover AI use cases most communities don't touch because they only focus on one niche.
 			</p>
 		</div>
 
 		<div class="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-5">
 			{#each [
-				{ label: 'Clients', text: 'Document intelligence pipelines. AI-powered brand sites. Automation saving companies dozens of hours per week.', color: 'bg-cyan-light', shadow: 'neo-card-cyan' },
-				{ label: 'Products', text: 'Retell (video intelligence). BookmarkIQ. Open-source tools used by thousands of people.', color: 'bg-yellow-light', shadow: 'neo-card-yellow' },
-				{ label: 'Family', text: 'Bedtime story generator. Activity engine. Birthday app. Learning tools. AI for the fun stuff too.', color: 'bg-pink-light', shadow: 'neo-card-pink' },
-				{ label: 'Meta', text: 'An AI operator named Cortana running 24/7. Automations monitoring, posting, and managing systems while he sleeps.', color: 'bg-green-light', shadow: 'neo-card' }
+				{ label: 'Work', text: 'AI for proposals, client delivery, meeting notes, competitive analysis, and saving hours every week.', color: 'bg-cyan-light', shadow: 'neo-card-cyan' },
+				{ label: 'Building', text: 'Tutorials on shipping products, automating workflows, and using AI as a solo builder.', color: 'bg-yellow-light', shadow: 'neo-card-yellow' },
+				{ label: 'Life', text: 'Prompts for family stuff, meal planning, learning tools, creative projects. AI beyond work.', color: 'bg-pink-light', shadow: 'neo-card-pink' },
+				{ label: 'Tools', text: 'Honest breakdowns of what to pay for, what to skip, and deals that save you money.', color: 'bg-green-light', shadow: 'neo-card' }
 			] as card, i}
 				<div class="reveal neo-card {card.shadow} rounded-xl p-5" style="transition-delay: {i * 60}ms;">
 					<span class="inline-block rounded-md border-2 border-ink {card.color} px-2.5 py-0.5 font-mono text-[0.65rem] font-bold uppercase tracking-wider">{card.label}</span>
@@ -451,7 +451,7 @@
 							{#each [
 								'Full library: tutorials, prompt packs, tool guides',
 								'Permanent price lock at $29/mo',
-								'Active community of members helping each other',
+								'Weekly community calls + active channels',
 								'Exclusive tool deals and partner discounts',
 								'Founding member badge',
 								'Input on what gets built next',
