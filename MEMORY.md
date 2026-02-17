@@ -4,7 +4,7 @@
 - **Twitter** (@xBenJamminx): AUTH_TOKEN/CT0 in ~/.bashrc
 - **YouTube**: OAuth in ~/.config/youtube/credentials.json
 - **GitHub**: gh CLI authenticated (read-only PAT)
-- **Airtable**: pat3nA8dDdC9DYf9C... | Base: appzyTeggE9zr0ZBm
+- **Airtable**: [REDACTED] | Base: appzyTeggE9zr0ZBm
 
 ## Active Projects
 - **Cortana Twitter** (@0xbenjammin): Taking over as AI account, pipeline in Airtable, need cookies to post

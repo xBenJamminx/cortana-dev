@@ -11,14 +11,33 @@ import subprocess
 from datetime import datetime, timedelta
 from pathlib import Path
 
+
+def _load_env():
+    import os as _os
+    env_path = _os.path.expanduser("~/.openclaw/.env")
+    if _os.path.exists(env_path):
+        with open(env_path) as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    key, _, val = line.partition("=")
+                    key = key.replace("export ", "").strip()
+                    if key and not _os.environ.get(key):
+                        _os.environ[key] = val
+_load_env()
+
 # Config
-BOT_TOKEN = "REDACTED_TELEGRAM_BOT_TOKEN"
-CHAT_ID = "1455611839"
+BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+CHAT_ID = "-1003856131939"
+BRIEFING_TOPIC_ID = 29  # Analytics & Monitoring topic
 MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
 GOOGLE_CREDS_FILE = "/root/.openclaw/google_credentials.json"
-USER_MD = Path("/root/clawd/USER.md")
-COMPOSIO_SCRIPT = "/root/clawd/skills/composio/composio-mcp.py"
-LOG_FILE = Path("/root/clawd/logs/briefing.log")
+USER_MD = Path("/root/.openclaw/workspace/USER.md")
+LOG_FILE = Path("/root/.openclaw/workspace/logs/briefing.log")
+BIRD_ENV = Path(os.path.expanduser("~/.bird-env"))
+AIRTABLE_PAT = os.environ.get("AIRTABLE_PAT", "")
+AIRTABLE_BASE_ID = "appdFTSkXnphHLwfl"
+AIRTABLE_TABLE_ID = "tblvLSX7DZxIRWU5g"
 
 def log(msg):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -28,77 +47,66 @@ def log(msg):
         f.write(f"[{timestamp}] {msg}\n")
 
 def send_telegram(message, parse_mode="Markdown"):
-    """Send message to Telegram, splitting if too long"""
+    """Send message to Telegram as one message, only split if over 4096 limit"""
     try:
         url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
+        MAX_LEN = 4000  # Telegram limit is 4096, small buffer
 
-        # Telegram limit is 4096, but stay safe at 3500
-        MAX_LEN = 3500
+        def _send(text, pm=parse_mode):
+            payload = {
+                "chat_id": CHAT_ID,
+                "text": text,
+                "parse_mode": pm,
+                "disable_web_page_preview": True,
+                "message_thread_id": BRIEFING_TOPIC_ID,
+            }
+            r = requests.post(url, json=payload, timeout=30)
+            resp = r.json()
+            if not resp.get("ok") and pm:
+                # Retry without markdown if parsing fails
+                payload.pop("parse_mode", None)
+                r = requests.post(url, json=payload, timeout=30)
+                return r.json().get("ok", False)
+            return resp.get("ok", False)
 
         if len(message) <= MAX_LEN:
-            r = requests.post(url, json={
-                "chat_id": CHAT_ID,
-                "text": message,
-                "parse_mode": parse_mode,
-                "disable_web_page_preview": True
-            }, timeout=30)
-            return r.json().get("ok", False)
-        else:
-            # Split into multiple messages by sections
-            import time
-            sections = message.split("\n\n")
-            current_msg = ""
-            success = True
+            return _send(message)
 
-            for section in sections:
-                if len(current_msg) + len(section) + 2 > MAX_LEN:
-                    # Send current message
-                    if current_msg.strip():
-                        r = requests.post(url, json={
-                            "chat_id": CHAT_ID,
-                            "text": current_msg,
-                            "parse_mode": parse_mode,
-                            "disable_web_page_preview": True
-                        }, timeout=30)
-                        success = success and r.json().get("ok", False)
-                        time.sleep(0.5)
-                    current_msg = section
-                else:
-                    current_msg = current_msg + "\n\n" + section if current_msg else section
+        # Only split if truly over limit — pack sections tightly
+        import time
+        sections = message.split("\n\n")
+        chunks = []
+        current = ""
+        for section in sections:
+            if current and len(current) + len(section) + 2 > MAX_LEN:
+                chunks.append(current)
+                current = section
+            else:
+                current = current + "\n\n" + section if current else section
+        if current:
+            chunks.append(current)
 
-            # Send remaining
-            if current_msg.strip():
-                r = requests.post(url, json={
-                    "chat_id": CHAT_ID,
-                    "text": current_msg,
-                    "parse_mode": parse_mode,
-                    "disable_web_page_preview": True
-                }, timeout=30)
-                success = success and r.json().get("ok", False)
-
-            return success
+        success = True
+        for chunk in chunks:
+            success = _send(chunk) and success
+            if len(chunks) > 1:
+                time.sleep(0.3)
+        return success
     except Exception as e:
         log(f"Telegram error: {e}")
         return False
 
-def composio_exec(tool, params=None):
-    """Execute a Composio tool"""
-    try:
-        cmd = [COMPOSIO_SCRIPT, "--exec", tool]
-        if params:
-            cmd.append(json.dumps(params))
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
-        if result.returncode == 0:
-            # Try to parse JSON from output
-            for line in result.stdout.strip().split("\n"):
-                try:
-                    return json.loads(line)
-                except:
-                    pass
-        return None
-    except Exception as e:
-        log(f"Composio error ({tool}): {e}")
-        return None
+def load_bird_env():
+    """Load Bird CLI credentials from ~/.bird-env"""
+    env = {}
+    if BIRD_ENV.exists():
+        with open(BIRD_ENV) as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    key, _, val = line.partition("=")
+                    env[key.strip()] = val.strip()
+    return env
 
 # ============= DATA GATHERING =============
 
@@ -152,96 +160,40 @@ def get_calendar_events():
         return []
 
 def get_twitter_stats():
-    """Get Twitter profile stats via Composio"""
-    try:
-        result = composio_exec("TWITTER_USER_LOOKUP_ME")
-        # Navigate nested response: data.results[0].response.data.data
-        if result and "data" in result:
-            results = result["data"].get("results", [])
-            if results:
-                inner = results[0].get("response", {}).get("data", {}).get("data", {})
-                metrics = inner.get("public_metrics", {})
-                return {
-                    "followers": metrics.get("followers_count", 0),
-                    "following": metrics.get("following_count", 0),
-                    "tweets": metrics.get("tweet_count", 0),
-                    "username": inner.get("username", "xBenJamminx"),
-                    "name": inner.get("name", "Ben"),
-                }
-        return None
-    except Exception as e:
-        log(f"Twitter stats error: {e}")
-        return None
+    """Get Twitter profile stats - not available via Bird CLI"""
+    return None
 
 def get_recent_tweets_engagement():
-    """Get engagement on recent tweets"""
-    try:
-        # Search for my recent tweets
-        result = composio_exec("TWITTER_RECENT_SEARCH", {
-            "query": "from:xBenJamminx",
-            "max_results": 10
-        })
-        if result and "data" in result:
-            tweets = result["data"]
-            total_likes = sum(t.get("public_metrics", {}).get("like_count", 0) for t in tweets)
-            total_retweets = sum(t.get("public_metrics", {}).get("retweet_count", 0) for t in tweets)
-            top_tweet = max(tweets, key=lambda t: t.get("public_metrics", {}).get("like_count", 0)) if tweets else None
-            top_tweet_url = None
-            if top_tweet:
-                tweet_id = top_tweet.get("id")
-                if tweet_id:
-                    top_tweet_url = f"https://twitter.com/xBenJamminx/status/{tweet_id}"
-            return {
-                "total_likes": total_likes,
-                "total_retweets": total_retweets,
-                "top_tweet": top_tweet.get("text", "") if top_tweet else None,
-                "top_tweet_url": top_tweet_url
-            }
-        return None
-    except Exception as e:
-        log(f"Twitter engagement error: {e}")
-        return None
+    """Get top tweets - DISABLED while @xBenJamminx is suspended"""
+    return None
 
 def get_airtable_content_queue():
-    """Get pending content from Airtable"""
+    """Get pending content from Airtable (direct API, no Composio)"""
     try:
-        # Navigate nested response
-        result = composio_exec("AIRTABLE_LIST_BASES")
-        if result and "data" in result:
-            results = result["data"].get("results", [])
-            if results:
-                bases_data = results[0].get("response", {}).get("data", {}).get("bases", [])
-                for base in bases_data:
-                    if "content" in base.get("name", "").lower():
-                        records_result = composio_exec("AIRTABLE_LIST_RECORDS", {
-                            "baseId": base["id"],
-                            "tableIdOrName": "Content"
-                        })
-                        if records_result and "data" in records_result:
-                            rec_results = records_result["data"].get("results", [])
-                            if rec_results:
-                                records = rec_results[0].get("response", {}).get("data", {}).get("records", [])
-                                pending = [r for r in records
-                                          if r.get("fields", {}).get("Status") in ["Draft", "Ready", "Scheduled", "Idea"]]
-                                return pending[:5]
-        return None
+        resp = requests.get(
+            f"https://api.airtable.com/v0/{AIRTABLE_BASE_ID}/{AIRTABLE_TABLE_ID}",
+            headers={"Authorization": f"Bearer {AIRTABLE_PAT}"},
+            params={
+                "filterByFormula": "OR(Status='💡 Idea', Status='📝 Draft', Status='👀 Review', Status='✅ Approved', Status='📢 GTM Launch')",
+                "pageSize": 10,
+                "sort[0][field]": "Status",
+                "sort[0][direction]": "asc"
+            },
+            timeout=15
+        )
+        if resp.status_code == 200:
+            records = resp.json().get("records", [])
+            return records[:8] if records else None
+        else:
+            log(f"Airtable API error: {resp.status_code}")
+            return None
     except Exception as e:
         log(f"Airtable error: {e}")
         return None
 
 def get_notion_tasks():
-    """Get pending tasks from Notion"""
-    try:
-        # Search for task-related pages
-        result = composio_exec("NOTION_SEARCH_NOTION_PAGE", {
-            "query": "tasks"
-        })
-        if result and "results" in result:
-            return result["results"][:5]
-        return None
-    except Exception as e:
-        log(f"Notion error: {e}")
-        return None
+    """Notion tasks - not currently connected"""
+    return None
 
 def get_trending_news():
     """Get trending news from our monitor with URLs"""
@@ -531,25 +483,18 @@ def build_briefing():
 
 _{openers.get(day_name, "Let's go.")}_""")
 
-    # Calendar
-    events = get_calendar_events()
-    if events:
-        cal_lines = ["📅 *Schedule*"]
-        for e in events[:5]:
-            cal_lines.append(f"• {e['time']}: {e['title']}")
-        sections.append("\n".join(cal_lines))
-    else:
-        sections.append("📅 *Schedule*\nNo meetings. Deep work day.")
 
-    # Twitter Performance (your stats)
-    twitter_stats = get_twitter_stats()
+    # Top Tweets (previous day)
     engagement = get_recent_tweets_engagement()
-    if twitter_stats or engagement:
-        twitter_lines = ["📊 *Your Twitter*"]
-        if twitter_stats:
-            twitter_lines.append(f"Followers: {twitter_stats.get('followers', '?'):,}")
-        if engagement:
-            twitter_lines.append(f"Recent: {engagement.get('total_likes', 0)} likes, {engagement.get('total_retweets', 0)} RTs")
+    if engagement and engagement.get("top_tweets"):
+        twitter_lines = ["📊 *Top Tweets*"]
+        for t in engagement["top_tweets"]:
+            text_preview = t["text"][:80].replace("\n", " ")
+            # Sanitize for Telegram Markdown - escape problematic chars
+            for ch in ['[', ']', '(', ')', '*', '_', '`']:
+                text_preview = text_preview.replace(ch, '')
+            twitter_lines.append(f"• {text_preview}")
+            twitter_lines.append(f"  {t['likes']}❤ {t['retweets']}🔄 {t['replies']}💬 [link]({t['url']})")
         sections.append("\n".join(twitter_lines))
 
     # CONTENT TOPICS from newsletters (primary source)
@@ -578,22 +523,41 @@ _{openers.get(day_name, "Let's go.")}_""")
                 topics_lines.append(f"  _{clean}_")
         sections.append("\n".join(topics_lines))
 
-    # NUGGETS from newsletters
+    # NUGGETS from newsletters — grouped by category, deduped
     nuggets = get_newsletter_nuggets()
     if nuggets:
-        cat_emoji = {
-            'TUTORIAL': 'how-to', 'TOOL': 'tool', 'FUNDING': 'funding',
-            'HIRING': 'hiring', 'PROMPT': 'prompt', 'TIP': 'tip', 'INSIGHT': 'insight'
+        cat_labels = {
+            'TUTORIAL': '📖 How-To', 'TOOL': '🛠 Tools', 'FUNDING': '💰 Funding',
+            'HIRING': '👔 Hiring', 'PROMPT': '💬 Prompts', 'TIP': '💡 Tips',
+            'INSIGHT': '🧠 Insights'
         }
-        nugget_lines = ["💎 *NUGGETS* (from your newsletters)"]
+        # Deduplicate by first 40 chars of content
+        seen = set()
+        deduped = []
         for n in nuggets:
-            cat = cat_emoji.get(n['category'], n['category'].lower())
-            url = n.get('url', '')
-            content = n['content'][:120]
-            if url:
-                nugget_lines.append(f"• [{cat}] [{content}]({url}) _({n['source']})_")
-            else:
-                nugget_lines.append(f"• [{cat}] {content} _({n['source']})_")
+            key = n['content'][:40].lower().strip()
+            if key not in seen:
+                seen.add(key)
+                deduped.append(n)
+
+        # Group by category
+        from collections import OrderedDict
+        grouped = OrderedDict()
+        for n in deduped[:15]:
+            cat = n['category']
+            grouped.setdefault(cat, []).append(n)
+
+        nugget_lines = ["💎 *NUGGETS* (from your newsletters)"]
+        for cat, items in grouped.items():
+            label = cat_labels.get(cat, cat.title())
+            nugget_lines.append(f"\n*{label}*")
+            for n in items[:3]:
+                url = n.get('url', '')
+                content = n['content'][:120]
+                if url:
+                    nugget_lines.append(f"  • [{content}]({url}) _({n['source']})_")
+                else:
+                    nugget_lines.append(f"  • {content} _({n['source']})_")
         sections.append("\n".join(nugget_lines))
 
     # Cross-platform trending (only if 3+ platforms, secondary signal)
@@ -638,30 +602,15 @@ _{openers.get(day_name, "Let's go.")}_""")
                 trend_lines.append(f"• {term}{traffic_str}")
         sections.append("\n".join(trend_lines))
 
-    # Dev Community (Dev.to / Hashnode)
-    dev_posts = get_devto_posts()
-    if dev_posts:
-        dev_lines = ["💻 *Dev Community*"]
-        for title, author, url, reactions, source in dev_posts[:4]:
-            title_short = title[:45] + "..." if len(title) > 45 else title
-            reactions_str = f" ({reactions}❤)" if reactions else ""
-            dev_lines.append(f"• [{title_short}]({url}){reactions_str}")
-        sections.append("\n".join(dev_lines))
-
-    # Content Pipeline (Airtable)
-    content = get_airtable_content_queue()
-    if content:
-        content_lines = ["📝 *Content Queue*"]
-        for item in content[:3]:
-            title = item.get("fields", {}).get("Title", "Untitled")
-            status = item.get("fields", {}).get("Status", "?")
-            content_lines.append(f"• {title} [{status}]")
-        sections.append("\n".join(content_lines))
-
-    # System Status
-    status = get_system_status()
-    status_emoji = "✅" if status == "healthy" else "⚠️"
-    sections.append(f"{status_emoji} Systems: {status}")
+    # System Status - check cron and key services
+    status_parts = []
+    try:
+        import subprocess as _sp
+        cron_check = _sp.run(["pgrep", "-x", "cron"], capture_output=True, timeout=5)
+        status_parts.append("cron ✅" if cron_check.returncode == 0 else "cron ❌")
+    except:
+        status_parts.append("cron ❓")
+    sections.append(f"⚙️ Systems: {', '.join(status_parts)}")
 
     # Footer
     sections.append("\n_I am your sword, I am your shield._")
@@ -672,17 +621,17 @@ def main():
     log("Morning briefing v2 starting...")
 
     # Run monitors first to refresh data
+    SCRIPTS_DIR = "/root/.openclaw/workspace/scripts"
     monitors = [
         # Data collection from all sources
-        ("/root/clawd/scripts/real-trends-monitor.py", "Real Trends (Google Daily, HN)"),
-        ("/root/clawd/scripts/competitor-monitor.py", "Competitors"),
-        ("/root/clawd/scripts/email-newsletter-monitor.py", "Email Newsletters"),
-        ("/root/clawd/scripts/indiehacker-monitor.py", "Indie Hacker"),
-        ("/root/clawd/scripts/producthunt-monitor.py", "Product Hunt"),
-        ("/root/clawd/scripts/youtube-trending-monitor.py", "YouTube"),
-        ("/root/clawd/scripts/devto-hashnode-monitor.py", "Dev.to/Hashnode"),
+        (f"{SCRIPTS_DIR}/real-trends-monitor.py", "Real Trends (Google Daily, HN)"),
+        (f"{SCRIPTS_DIR}/competitor-monitor.py", "Competitors"),
+        (f"{SCRIPTS_DIR}/email-newsletter-monitor.py", "Email Newsletters"),
+        (f"{SCRIPTS_DIR}/indiehacker-monitor.py", "Indie Hacker"),
+        (f"{SCRIPTS_DIR}/producthunt-monitor.py", "Product Hunt"),
+        (f"{SCRIPTS_DIR}/youtube-trending-monitor.py", "YouTube"),
         # CRITICAL: Topic aggregator runs LAST - finds cross-source hot topics
-        ("/root/clawd/scripts/topic-aggregator.py", "Topic Aggregator"),
+        (f"{SCRIPTS_DIR}/topic-aggregator.py", "Topic Aggregator"),
     ]
 
     for script, name in monitors:

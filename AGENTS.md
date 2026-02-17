@@ -47,6 +47,13 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - `trash` > `rm` (recoverable beats gone forever)
 - When in doubt, ask.
 
+## Credentials & Secrets
+
+- All API keys live in `/root/.openclaw/.env` -- **never hardcode credentials in scripts**
+- Load env at the top of every script using the `_load_env()` pattern (see `lib/alerting.py`)
+- If you discover a hardcoded credential in a script, flag it to Ben immediately
+- Never log or print credential values
+
 ## External vs Internal
 
 **Safe to do freely:**
@@ -108,13 +115,24 @@ On platforms that support reactions (Discord, Slack), use emoji reactions natura
 
 Skills provide your tools. When you need one, check its `SKILL.md`. Keep local notes in `TOOLS.md`.
 
-**Voice Storytelling:** If you have ElevenLabs TTS, use voice for stories and "storytime" moments. Way more engaging than walls of text.
-
 **Platform Formatting:**
 
 - **Discord/WhatsApp:** No markdown tables! Use bullet lists instead
 - **Discord links:** Wrap multiple links in `<>` to suppress embeds
 - **WhatsApp:** No headers -- use **bold** or CAPS for emphasis
+
+## Key Paths (Feb 2026 migration)
+
+Everything lives under `/root/.openclaw/` now. The old `/root/clawd/` directory has been deleted.
+
+- **Workspace:** `/root/.openclaw/workspace/`
+- **Scripts:** `/root/.openclaw/workspace/scripts/`
+- **Skills:** `/root/.openclaw/workspace/skills/`
+- **Lib:** `/root/.openclaw/workspace/lib/`
+- **Env:** `/root/.openclaw/.env`
+- **Config:** `/root/.openclaw/openclaw.json`
+
+If you see a reference to `/root/clawd/` anywhere, it's stale. Flag it or fix it.
 
 ## Heartbeats - Be Proactive
 
@@ -174,17 +192,21 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 
 ## Current Model Setup
 
-**Running on:** Claude Opus (via Claude Code CLI)
-- Using Ben's Claude Max subscription
-- No OpenRouter credits burned
-- Full Opus capabilities
+**Running on:** Claude Sonnet (via Claude Code CLI / OpenClaw v2026.2.15)
+- Using Ben's Claude Max subscription — no API costs
+- Auth: OAuth tokens in `~/.claude/.credentials.json`
+- OpenClaw gateway on port 18789 (loopback only)
+- systemd service: `openclaw-gateway.service`
 
-**Fallback chain:** Opus -> Haiku -> Gemini Flash (OpenRouter)
+**Watchdog:** `scripts/cortana_watchdog.py` — runs every 2 min via cron, restarts gateway if unhealthy
+
+**No external model routing** — all requests go to Claude via CLI backend.
 
 ## Subagents
-- Use sessions_spawn for parallel work or background tasks
+- Use OpenClaw subagent spawning for parallel work or background tasks
 - Heavy tool-calling workflows can use subagents
+- Subagents are ephemeral — they don't have persistent workspaces
 
 ---
 
-This is a starting point. Add your own conventions, style, and rules as you figure out what works.
+_Last updated: 2026-02-17_

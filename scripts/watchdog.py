@@ -11,9 +11,9 @@ from pathlib import Path
 
 # Config
 MAX_CLAUDE_RUNTIME = 300  # 5 minutes - kill if running longer
-ERROR_LOG = Path("/root/clawd/ERROR_LOG.md")
-WATCHDOG_LOG = Path("/root/clawd/logs/watchdog.log")
-ALERT_SCRIPT = "/root/clawd/scripts/alert.py"
+ERROR_LOG = Path("/root/.openclaw/workspace/ERROR_LOG.md")
+WATCHDOG_LOG = Path("/root/.openclaw/workspace/logs/watchdog.log")
+ALERT_SCRIPT = "/root/.openclaw/workspace/scripts/alert.py"
 
 def log(message: str):
     """Log to both stdout and file"""

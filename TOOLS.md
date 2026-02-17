@@ -12,7 +12,7 @@ Skills define *how* tools work. This file is for *your* specifics -- the stuff t
 - Use `/elevenlabs_tts` or the voice tool
 
 ## Voice Calls
-- ALWAYS use: `/root/clawd/skills/vapi-call/vapi-call <number> [message]`
+- ALWAYS use: `/root/.openclaw/workspace/skills/vapi-call/vapi-call <number> [message]`
 - NEVER craft custom VAPI curl calls
 
 ## Image Generation
@@ -22,7 +22,7 @@ Skills define *how* tools work. This file is for *your* specifics -- the stuff t
 ## Twitter/X
 - Posting: Use Composio `TWITTER_CREATION_OF_A_POST` or X OAuth
 - X OAuth tokens: `/root/.config/x-oauth/tokens.json`
-- Refresh: `python3 /root/clawd/scripts/x-oauth-setup.py --refresh`
+- Refresh: `python3 /root/.openclaw/workspace/scripts/cortana-x-oauth-setup.py --refresh`
 - Bird CLI: DEAD (discontinued by author)
 
 ## Content Pipeline

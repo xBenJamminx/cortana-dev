@@ -11,11 +11,24 @@ import requests
 from datetime import datetime
 from pathlib import Path
 
+def _load_env():
+    env_path = os.path.expanduser("~/.openclaw/.env")
+    if os.path.exists(env_path):
+        with open(env_path) as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    key, _, val = line.partition("=")
+                    key = key.replace("export ", "").strip()
+                    if key and not os.environ.get(key):
+                        os.environ[key] = val
+_load_env()
+
 # Config
-BOT_TOKEN = "REDACTED_TELEGRAM_BOT_TOKEN"
-CHAT_ID = "1455611839"
-ALERT_LOG = Path("/root/clawd/logs/alerts.log")
-ERROR_LOG = Path("/root/clawd/ERROR_LOG.md")
+BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "REDACTED_TELEGRAM_BOT_TOKEN")
+CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "-1003856131939")
+ALERT_LOG = Path("/root/.openclaw/workspace/logs/alerts.log")
+ERROR_LOG = Path("/root/.openclaw/workspace/ERROR_LOG.md")
 
 # Alert level emojis
 LEVEL_EMOJI = {
