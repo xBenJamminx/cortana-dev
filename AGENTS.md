@@ -271,3 +271,12 @@ Adjust the prompt to match the video theme.
 ```
 
 After spawning: tell Ben what step you kicked off + the sub-agent run ID, then stay available.
+
+## Video Work Rules — CRITICAL
+
+**Never initiate video assembly without an explicit instruction from Ben.**
+
+- If Ben gives feedback on a video ("the audio is broken", "screen is shaking"), that is NOT an instruction to re-assemble. Acknowledge it, diagnose the cause, and WAIT for Ben to say "fix it" or "make a new version."
+- If a previous session was assembling a video, do NOT resume that work automatically. Check `project_state.json` for status. If status is "complete", the work is done — stop.
+- Never call `assemble_sleep_video()` or `assemble()` directly from Python inline. Always use `sessions_spawn` with the templates above.
+- When resuming after a crash or gap, ask Ben what he needs NOW — don't pick up where the last session left off without checking.
