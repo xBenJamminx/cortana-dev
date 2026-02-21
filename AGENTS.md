@@ -241,7 +241,7 @@ Replace `PROJECT_PATH` with the actual project directory each time.
 **Image generation:**
 ```
 Task: Generate scene images for the sleep video project at PROJECT_PATH.
-Run: python3 /root/.openclaw/workspace/lib/sleep_interactive.py generate_images PROJECT_PATH
+Run: python3 /root/.openclaw/workspace/lib/sleep_pipeline.py images PROJECT_PATH
 The script loads its own env and sends each image to Telegram (topic 20) as it generates.
 If it errors, send the error text to Telegram topic 20 via lib/telegram.py.
 ```
@@ -249,7 +249,7 @@ If it errors, send the error text to Telegram topic 20 via lib/telegram.py.
 **Voice generation:**
 ```
 Task: Generate narration audio for the sleep video project at PROJECT_PATH.
-Run: python3 /root/.openclaw/workspace/lib/sleep_interactive.py generate_voice PROJECT_PATH frank
+Run: python3 /root/.openclaw/workspace/lib/sleep_pipeline.py voice PROJECT_PATH frank
 The script loads its own env and sends the audio file to Telegram (topic 20) when done.
 If it errors, send the error text to Telegram topic 20.
 ```
@@ -257,7 +257,7 @@ If it errors, send the error text to Telegram topic 20.
 **Video assembly:**
 ```
 Task: Assemble the final sleep video for the project at PROJECT_PATH.
-Run: python3 /root/.openclaw/workspace/lib/sleep_interactive.py assemble PROJECT_PATH
+Run: python3 /root/.openclaw/workspace/lib/sleep_pipeline.py assemble PROJECT_PATH
 The script loads its own env and sends the finished video to Telegram (topic 20) when done.
 Set runTimeoutSeconds: 3600 (1 hour max — kill if stuck).
 If it errors, send the error text to Telegram topic 20.
@@ -266,7 +266,7 @@ If it errors, send the error text to Telegram topic 20.
 **Ambient audio:**
 ```
 Task: Generate ambient background audio for the sleep video at PROJECT_PATH.
-Run: python3 /root/.openclaw/workspace/lib/sleep_interactive.py generate_ambient PROJECT_PATH "calm forest night"
+Run: python3 /root/.openclaw/workspace/lib/sleep_pipeline.py assemble PROJECT_PATH "calm forest night"
 Adjust the prompt to match the video theme.
 ```
 

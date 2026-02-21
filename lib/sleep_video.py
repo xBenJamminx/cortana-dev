@@ -553,7 +553,8 @@ EFFECTS_CYCLE = [
 
 def assemble_sleep_video(scenes, narration_path, output_path,
                          bg_music_path=None, title=None, subtitle=None,
-                         title_image=None, srt_path=None):
+                         title_image=None, srt_path=None,
+                         audio_pre_mixed=False):
     """Assemble a full sleep video from scenes, narration, and optional music.
 
     Args:
@@ -568,6 +569,8 @@ def assemble_sleep_video(scenes, narration_path, output_path,
         subtitle: Optional subtitle for title card
         title_image: Optional background image for title card
         srt_path: Optional SRT file path — burns subtitles into the final video
+        audio_pre_mixed: If True, audio is already padded/mixed. Skip audio
+            processing and subtract title duration for scene calculation.
 
     Returns:
         output_path
@@ -587,6 +590,13 @@ def assemble_sleep_video(scenes, narration_path, output_path,
     # Get total narration duration to split evenly across scenes
     total_duration = get_audio_duration(narration_path)
     n_scenes = len(scenes)
+
+    # If audio is pre-mixed (already padded with title silence + bg music),
+    # subtract title duration so scenes are sized to narration only.
+    if audio_pre_mixed and title:
+        title_padding = 8.0
+        total_duration = total_duration - title_padding
+        print(f"Audio pre-mixed: subtracting {title_padding}s title padding -> {total_duration:.1f}s for scenes")
 
     # Calculate per-scene duration (evenly split if not specified)
     scene_durations = []
@@ -661,8 +671,11 @@ def assemble_sleep_video(scenes, narration_path, output_path,
     # Calculate title card duration for audio delay
     title_dur = 8.0 if title else 0.0
 
-    # Mix narration with background music if provided
-    if bg_music_path and os.path.exists(bg_music_path):
+    # If audio is already mixed/padded by the caller, use it directly
+    if audio_pre_mixed:
+        print("Audio pre-mixed by caller -- skipping padding/mixing")
+        final_audio = narration_path
+    elif bg_music_path and os.path.exists(bg_music_path):
         print("Mixing narration with background music...")
         mixed_audio = os.path.join(tmpdir, "mixed_audio.aac")
         mix_audio(narration_path, bg_music_path, mixed_audio,
