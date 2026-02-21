@@ -1,4 +1,4 @@
-# MEMORY.md
+Cortana memory. Twitter auth: ~/.bashrc. YouTube OAuth: ~/.config/youtube/. Ask before committing.
 
 ## Auth & Access
 - **Twitter** (@xBenJamminx): AUTH_TOKEN/CT0 in ~/.bashrc
