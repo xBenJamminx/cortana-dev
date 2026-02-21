@@ -572,15 +572,13 @@ def assemble_sleep_video(scenes, narration_path, output_path,
     Returns:
         output_path
     """
-    # Guard: this takes 5-20 min and WILL block the Claude session if called inline.
-    # Only callable through sleep_interactive.py (which runs as a detached worker).
-    import os as _os
-    if not _os.environ.get(chr(95)*2 + chr(83)+chr(76)+chr(80)+chr(95)+chr(87)+chr(79)+chr(82)+chr(75)+chr(69)+chr(82)+chr(95)+chr(65)+chr(67)+chr(84)+chr(73)+chr(86)+chr(69)):
+    # Guard: assembly takes 5-20 min and blocks the Claude session if called inline.
+    # This function must only be called via sleep_interactive.py, which runs as a
+    # detached background worker and delivers the result to Telegram automatically.
+    if not os.environ.get('__SLP_WORKER_ACTIVE'):
         raise RuntimeError(
-            chr(66)+chr(76)+chr(79)+chr(67)+chr(75)+chr(69)+chr(68)+chr(58)+chr(32)+
-            chr(117)+chr(115)+chr(101)+chr(32)+chr(115)+chr(108)+chr(101)+chr(101)+chr(112)+chr(95)+chr(105)+chr(110)+chr(116)+chr(101)+chr(114)+chr(97)+chr(99)+chr(116)+chr(105)+chr(118)+chr(101)+chr(46)+chr(112)+chr(121)+chr(32)+
-            chr(97)+chr(115)+chr(115)+chr(101)+chr(109)+chr(98)+chr(108)+chr(101)+chr(32)+chr(60)+chr(112)+chr(114)+chr(111)+chr(106)+chr(101)+chr(99)+chr(116)+chr(95)+chr(100)+chr(105)+chr(114)+chr(62)+chr(32)+
-            chr(105)+chr(110)+chr(115)+chr(116)+chr(101)+chr(97)+chr(100)
+            'assemble_sleep_video() cannot be called inline — it blocks the session. '
+            'Use: python3 /root/.openclaw/workspace/lib/sleep_interactive.py assemble <project_dir>'
         )
 
     tmpdir = tempfile.mkdtemp(prefix="sleep_video_")
