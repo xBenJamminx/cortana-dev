@@ -674,6 +674,12 @@ class SleepProject:
             total_dur = nar_dur + title_duration
             fade_out_start = max(1, total_dur - 5)
 
+            # Delete any stale mixed_audio.aac before recreating — a leftover
+            # corrupted file would silently poison the scene duration calculation.
+            if os.path.exists(mixed_audio):
+                os.remove(mixed_audio)
+                print(f"  Removed stale {os.path.basename(mixed_audio)}")
+
             # Audio mixing filter:
             # 1. Narration: normalize loudness to -16 LUFS, then delay by title_duration
             # 2. Music: loop, set to low volume, fade in/out at start/end
@@ -697,7 +703,19 @@ class SleepProject:
                 "-map", "[out]", "-c:a", "aac", "-b:a", "192k",
                 "-t", str(total_dur), mixed_audio,
             ]
-            subprocess.run(cmd, capture_output=True, timeout=600)
+            result = subprocess.run(cmd, capture_output=True, timeout=600)
+            if result.returncode != 0 or not os.path.exists(mixed_audio):
+                raise RuntimeError(
+                    f"Audio mixing failed (rc={result.returncode}):\n"
+                    + result.stderr.decode(errors="replace")[-500:]
+                )
+            actual_dur = get_audio_duration(mixed_audio)
+            if abs(actual_dur - total_dur) > 5.0:
+                raise RuntimeError(
+                    f"mixed_audio.aac duration mismatch: expected {total_dur:.1f}s "
+                    f"but got {actual_dur:.1f}s — aborting to prevent wrong scene durations"
+                )
+            print(f"  Audio mixed: {actual_dur:.1f}s (expected {total_dur:.1f}s) ✓")
             final_audio = mixed_audio
         else:
             # No music — still need to pad narration for title card
