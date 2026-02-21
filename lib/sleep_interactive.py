@@ -383,12 +383,12 @@ class SleepProject:
         Auto-backgrounds itself — safe to call inline, will never block the session.
         """
         # Auto-background: spawn ourselves and return immediately
-        if not os.environ.get('_SLEEP_IMGGEN_BG'):
+        if not os.environ.get('__SLP_WORKER_ACTIVE'):
             import time as _t
             log_path = f'/tmp/imggen-{os.path.basename(str(self.project_dir))}-{int(_t.time())}.log'
             cmd = ['python3', __file__, 'generate_images', str(self.project_dir), '--model', model]
             env = dict(os.environ)
-            env['_SLEEP_IMGGEN_BG'] = '1'
+            env['__SLP_WORKER_ACTIVE'] = '1'
             with open(log_path, 'w') as _log:
                 proc = subprocess.Popen(
                     cmd, stdout=_log, stderr=_log,
@@ -628,7 +628,7 @@ class SleepProject:
             music_volume = MUSIC_VOLUME_DEFAULT
 
         # Auto-background: spawn ourselves and return immediately
-        if not os.environ.get('_SLEEP_ASSEMBLY_BG'):
+        if not os.environ.get('__SLP_WORKER_ACTIVE'):
             import time as _t
             log_path = f'/tmp/assembly-{os.path.basename(str(self.project_dir))}-{int(_t.time())}.log'
             cmd = [
@@ -636,7 +636,7 @@ class SleepProject:
                 '--music-volume', str(music_volume),
             ]
             env = dict(os.environ)
-            env['_SLEEP_ASSEMBLY_BG'] = '1'
+            env['__SLP_WORKER_ACTIVE'] = '1'
             with open(log_path, 'w') as _log:
                 proc = subprocess.Popen(
                     cmd, stdout=_log, stderr=_log,
@@ -669,7 +669,7 @@ class SleepProject:
             track_name = self.state.get("music_track", os.path.basename(music_path))
             print(f"Mixing narration with background music: {track_name}")
             print(f"  Music volume: {music_volume} (voice stays dominant)")
-            mixed_audio = str(self.project_dir / "mixed_audio.aac")
+            mixed_audio = str(self.project_dir / "mixed_audio.m4a")
             nar_dur = get_audio_duration(narration_path)
             total_dur = nar_dur + title_duration
             fade_out_start = max(1, total_dur - 5)
@@ -680,28 +680,65 @@ class SleepProject:
                 os.remove(mixed_audio)
                 print(f"  Removed stale {os.path.basename(mixed_audio)}")
 
-            # Audio mixing filter:
-            # 1. Narration: normalize loudness to -16 LUFS, then delay by title_duration
-            # 2. Music: loop, set to low volume, fade in/out at start/end
-            # 3. Mix with amix, narration always on top
-            cmd = [
+            # Two-step audio mixing for reliability:
+            # Step A: Normalize narration + prepend silence for title card
+            # Step B: Mix the padded narration with background music
+            #
+            # Doing it in two steps avoids loudnorm/adelay/amix interaction
+            # issues that cause duration mismatches.
+            padded_narration = str(self.project_dir / "padded_narration_normed.m4a")
+
+            # Step A: Normalize narration loudness, then prepend title silence
+            # Use .m4a (not raw .aac) so ffprobe can read duration metadata correctly.
+            normed_path = str(self.project_dir / "narration_normed.m4a")
+            cmd_norm = [
                 "ffmpeg", "-y",
                 "-i", narration_path,
+                "-af", "loudnorm=I=-16:TP=-1.5:LRA=11",
+                "-c:a", "aac", "-b:a", "192k",
+                normed_path,
+            ]
+            subprocess.run(cmd_norm, capture_output=True, timeout=120)
+            probe = subprocess.run(
+                ["ffprobe", "-v", "quiet", "-print_format", "json", "-show_streams", normed_path],
+                capture_output=True, text=True, timeout=15,
+            )
+            stream_info = json.loads(probe.stdout)["streams"][0]
+            sr = stream_info.get("sample_rate", "44100")
+            ch = "mono" if stream_info.get("channels", 2) == 1 else "stereo"
+
+            cmd_pad = [
+                "ffmpeg", "-y",
+                "-f", "lavfi", "-t", str(title_duration),
+                "-i", f"anullsrc=channel_layout={ch}:sample_rate={sr}",
+                "-i", normed_path,
+                "-filter_complex", "[0:a][1:a]concat=n=2:v=0:a=1[out]",
+                "-map", "[out]", "-c:a", "aac", "-b:a", "192k",
+                "-movflags", "+faststart",
+                padded_narration,
+            ]
+            subprocess.run(cmd_pad, capture_output=True, timeout=120)
+
+            padded_dur = get_audio_duration(padded_narration)
+            print(f"  Padded narration: {padded_dur:.1f}s")
+
+            # Step B: Mix padded narration with background music
+            fade_out_start = max(1, padded_dur - 5)
+            cmd = [
+                "ffmpeg", "-y",
+                "-i", padded_narration,
                 "-stream_loop", "-1", "-i", music_path,
                 "-filter_complex",
-                # Normalize narration loudness, then delay for title card
-                f"[0:a]loudnorm=I=-16:TP=-1.5:LRA=11,"
-                f"adelay={int(title_duration * 1000)}|{int(title_duration * 1000)},"
-                f"volume=1.0[narr];"
-                # Music: low volume + gentle fade in/out
-                f"[1:a]volume={music_volume},"
+                # Music: trim to narration length, low volume, fade in/out
+                f"[1:a]atrim=0:{padded_dur},asetpts=PTS-STARTPTS,"
+                f"volume={music_volume},"
                 f"afade=t=in:st=0:d=5,"
                 f"afade=t=out:st={fade_out_start}:d=5[music];"
-                # Mix: voice dominant, music underneath
-                f"[narr][music]amix=inputs=2:duration=longest:dropout_transition=3,"
+                # Mix: narration on top, trim to exact length
+                f"[0:a][music]amix=inputs=2:duration=first:dropout_transition=3,"
                 f"alimiter=limit=0.95[out]",
                 "-map", "[out]", "-c:a", "aac", "-b:a", "192k",
-                "-t", str(total_dur), mixed_audio,
+                "-t", str(padded_dur), mixed_audio,
             ]
             result = subprocess.run(cmd, capture_output=True, timeout=600)
             if result.returncode != 0 or not os.path.exists(mixed_audio):
@@ -710,12 +747,12 @@ class SleepProject:
                     + result.stderr.decode(errors="replace")[-500:]
                 )
             actual_dur = get_audio_duration(mixed_audio)
-            if abs(actual_dur - total_dur) > 5.0:
+            if abs(actual_dur - padded_dur) > 3.0:
                 raise RuntimeError(
-                    f"mixed_audio.aac duration mismatch: expected {total_dur:.1f}s "
-                    f"but got {actual_dur:.1f}s — aborting to prevent wrong scene durations"
+                    f"mixed_audio.aac duration mismatch: expected ~{padded_dur:.1f}s "
+                    f"but got {actual_dur:.1f}s — aborting"
                 )
-            print(f"  Audio mixed: {actual_dur:.1f}s (expected {total_dur:.1f}s) ✓")
+            print(f"  Audio mixed: {actual_dur:.1f}s (expected ~{padded_dur:.1f}s) ✓")
             final_audio = mixed_audio
         else:
             # No music — still need to pad narration for title card
@@ -992,6 +1029,11 @@ if __name__ == "__main__":
     parser.add_argument("--model", default=DEFAULT_IMAGE_MODEL)
     parser.add_argument("--music-volume", type=float, default=0.6)
     args = parser.parse_args()
+
+    # Mark this process as a worker so methods don't re-background themselves.
+    # This is the authoritative way to declare "I am the worker" — env var is
+    # internal and not meant to be set manually.
+    os.environ['__SLP_WORKER_ACTIVE'] = '1'
 
     project = SleepProject.load(args.project_dir)
 
