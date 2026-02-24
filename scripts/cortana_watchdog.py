@@ -3,7 +3,7 @@
 Cortana Watchdog v2 — Comprehensive health monitor and auto-recovery.
 
 Runs every 2 minutes via cron with flock to prevent duplicate execution:
-  */2 * * * * /usr/bin/flock -n /tmp/watchdog.lock python3 /root/clawd/scripts/watchdog.py >> /var/log/clawd/watchdog.log 2>&1
+  */2 * * * * /usr/bin/flock -n /tmp/watchdog.lock python3 /root/.openclaw/workspace/scripts/watchdog.py >> /var/log/clawd/watchdog.log 2>&1
 
 Features:
   - Gateway health: systemd state + HTTP probe
@@ -27,7 +27,7 @@ from datetime import datetime
 from pathlib import Path
 
 # Setup paths before importing lib
-sys.path.insert(0, "/root/clawd")
+sys.path.insert(0, "/root/.openclaw/workspace")
 
 from lib.alerting import send_alert, clear_alert
 from lib.health import (
@@ -43,15 +43,16 @@ from lib.health import (
 STATE_FILE = Path("/tmp/clawd-watchdog-state.json")
 LOG_DIR = Path("/var/log/clawd")
 MAX_CONSECUTIVE_FAILURES = 3
-MAX_CLAUDE_RUNTIME_SECS = 1800  # 30 min - kill stuck claude processes (was 600, too aggressive for long tasks)
+MAX_CLAUDE_RUNTIME_SECS = 3600  # 1 hour - kill truly stuck claude processes (not idle conversations)
 GATEWAY_PORT = 18789
 
 # Cron jobs to monitor for freshness (path, max_age_hours, description)
 CRON_JOBS = [
-    ("/root/clawd/logs/cron-morning.log", 26, "Morning briefing"),
-    ("/root/clawd/logs/cron-intel.log", 6, "Content intel"),
-    ("/root/clawd/logs/twitter-cron.log", 8, "Twitter monitor"),
-    ("/root/clawd/logs/youtube-cron.log", 8, "YouTube monitor"),
+    ("/root/.openclaw/workspace/logs/cron-morning.log", 26, "Morning briefing"),
+    ("/root/.openclaw/workspace/logs/cron-intel.log", 6, "Content intel"),
+    ("/root/.openclaw/workspace/logs/youtube-cron.log", 8, "YouTube monitor"),
+    ("/root/.openclaw/workspace/logs/email-newsletters.log", 6, "Newsletter monitor"),
+    ("/root/.openclaw/workspace/logs/reddit-monitor.log", 6, "Reddit monitor"),
     ("/var/log/clawd/watchdog.log", 0.1, "Watchdog itself"),
 ]
 
@@ -241,6 +242,14 @@ def check_stuck_processes():
                 level="warning",
                 cooldown=600,
             )
+
+            # Proactively restart the gateway so it recovers cleanly
+            time.sleep(2)
+            subprocess.run(
+                ["systemctl", "restart", "openclaw-gateway"],
+                capture_output=True, timeout=30,
+            )
+            log.info("Gateway restarted after killing stuck processes")
     except Exception as e:
         log.error("Stuck process check failed: %s", e)
 
@@ -289,12 +298,50 @@ def check_disk():
         clear_alert("disk_warning")
 
 
+
+# --- Log staleness / hung session detection ---
+LOG_STALE_SECS = 1800  # 30 min - allow idle conversations without restarting
+
+def check_log_staleness():
+    import glob
+    ps = subprocess.run(["ps", "-eo", "pid,cmd"], capture_output=True, text=True, timeout=10)
+    has_claude = any(
+        "claude" in line and "grep" not in line and "watchdog" not in line
+        for line in ps.stdout.splitlines()
+    )
+    if not has_claude:
+        return
+
+    log_files = sorted(glob.glob("/tmp/openclaw/openclaw-*.log"), reverse=True)
+    if not log_files:
+        return
+
+    try:
+        age_secs = time.time() - os.path.getmtime(log_files[0])
+    except OSError:
+        return
+
+    log.info("Log staleness: %.0fs (threshold %ds)", age_secs, LOG_STALE_SECS)
+
+    if age_secs > LOG_STALE_SECS:
+        log.warning("Hung session: claude active but log silent for %.0fs", age_secs)
+        send_alert(
+            "session_hung",
+            "Hung session detected: claude process active but log silent for {:.0f}s — restarting".format(age_secs),
+            level="warning",
+            cooldown=600,
+        )
+        subprocess.run(["systemctl", "restart", "openclaw-gateway"],
+                       capture_output=True, timeout=30)
+        log.info("Gateway restarted due to hung session")
+
 # --- Main ---
 def main():
     log.info("=== Watchdog v2 check ===")
 
     check_gateway()
     check_stuck_processes()
+    check_log_staleness()
     check_cron_freshness()
     check_disk()
 
