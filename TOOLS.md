@@ -6,9 +6,9 @@
 |------|----------|----------|
 | Read/send email | \ | composio direct |
 | Browse the web / sign up for a service | Playwright via Python (`from playwright.sync_api import sync_playwright`) | saying "no browser available" |
-| Calendar events | composio `GOOGLECALENDAR_*` | inbox-triage |
+| Calendar events | `python3 lib/gcal.py` | composio GOOGLECALENDAR_* directly |
 | Google Docs/Sheets | composio `GOOGLEDOCS_*` / `GOOGLESHEETS_*` | direct API |
-| Slack message | composio `SLACK_*` | inbox-triage |
+| Slack message | Slack API (SLACK_BOT_TOKEN) or composio SLACK_* | saying no access |
 | Web search | `skills/brave-search/` | composio |
 | Track follow-up | `skills/follow_up_tracker/` | memory file manually |
 | Meeting prep | `skills/meeting_prep/` | raw calendar API |
@@ -85,27 +85,22 @@ Use `lib/telegram.py` for all sends — it handles markdown escaping, splitting,
 
 ---
 
-## Sub-Agents (sessions_spawn)
+## Sub-Agents
 
-Use `sessions_spawn` for ANY task that takes more than ~5 seconds. It's the right tool — killable, monitorable, and reports back automatically when done.
+Use `spawn_task.sh` for any task that takes more than ~10 seconds.
 
-**How to spawn:** Call the `sessions_spawn` tool directly:
-- `task` (required): Full self-contained instructions — include file paths, exact steps, what to do when done. **Worker does NOT get SOUL.md**, only AGENTS.md + TOOLS.md.
-- `label` (optional): Human-readable name for monitoring (e.g. `"sleep-video-assembly"`)
-- `model` (optional): Inherits yours by default. Use `claude-cli/haiku` for simple tasks.
-- `runTimeoutSeconds` (optional): Auto-kill if stuck. Set this for all video jobs (e.g. `3600`).
+```bash
+bash /root/.openclaw/workspace/lib/spawn_task.sh <topic_id> "detailed task instructions"
+```
 
-**Monitor & control:**
-- `/subagents list` — see all running sub-agents
-- `/subagents log <id>` — tail a sub-agent's logs
-- `/subagents kill <id>` — kill a stuck sub-agent
-- `/subagents info <id>` — status, runtime, token stats
+- Worker runs as --agent worker (isolated, no Cortana session history)
+- Fresh session ID per run — no shared state between workers
+- Worker reports back to the Telegram topic when done
+- NEVER call spawn_task.sh from inside a worker (infinite loop)
+- sessions_spawn and run_in_background:true are BROKEN — do not use
 
-**When done:** Sub-agent announces result back to your chat automatically.
+Topics: 20=Content, 22=Research, 26=Ideas, 29=Analytics, 31=Business
 
-See task templates in AGENTS.md → "Sleep Video Sub-Agent Templates".
-
----
 
 ## Video Production Rules
 
@@ -115,5 +110,5 @@ Images: Always 16:9 horizontal for YouTube/sleep videos.
 Voice defaults: Stoic/Philosophy → Frank (V2bPluzT7MuirpucVAKH)
 Image count is DYNAMIC (based on script scenes) — never hardcode.
 
-**CRITICAL: Use sessions_spawn for all heavy pipeline steps.** Never run inline.
+**CRITICAL: Use spawn_task.sh for all heavy pipeline steps.** Never run inline.
 After spawning: tell Ben what you kicked off, then stay responsive.
