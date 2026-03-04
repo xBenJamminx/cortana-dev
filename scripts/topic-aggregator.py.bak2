@@ -15,7 +15,7 @@ from datetime import datetime
 from pathlib import Path
 
 MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/topic-aggregator.log")
+LOG_FILE = Path("/root/.openclaw/workspace/logs/topic-aggregator.log")
 
 def log(msg):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")

@@ -8,7 +8,7 @@ from datetime import datetime
 from pathlib import Path
 
 MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/trending-monitor.log")
+LOG_FILE = Path("/root/.openclaw/workspace/logs/trending-monitor.log")
 
 SEARCH_QUERIES = [
     "AI tools 2025",
@@ -106,7 +106,7 @@ def generate_summary():
     for title, source, url in news:
         summary += f"• {title}\n  _{source}_\n\n"
     
-    Path("/root/clawd/memory/trending_summary.md").write_text(summary)
+    Path("/root/.openclaw/workspace/memory/trending_summary.md").write_text(summary)
     return summary
 
 def main():

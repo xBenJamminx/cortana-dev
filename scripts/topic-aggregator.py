@@ -21,7 +21,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/topic-aggregator.log")
+LOG_FILE = Path("/root/.openclaw/workspace/logs/topic-aggregator.log")
 
 # Baseline engagement thresholds (what's "normal")
 # Anything significantly above this = exploding
@@ -151,7 +151,7 @@ def gather_all_content():
 
     # 1. REDDIT
     log("Fetching Reddit...")
-    reddit_subs = json.load(open("/root/clawd/config/high_signal_sources.json"))["reddit_subreddits"]
+    reddit_subs = json.load(open("/root/.openclaw/workspace/config/high_signal_sources.json"))["reddit_subreddits"]
     for sub in reddit_subs:
         posts = fetch_reddit_hot(sub)
         for p in posts[:8]:

@@ -1,7 +1,7 @@
 # Claude Code Skills System -- Our Playbook
 
 ## What Are Skills?
-A folder with a `SKILL.md` file that teaches Claude Code how to handle specific tasks. NOT the same as Cortana's operational tools in `/root/clawd/skills/`.
+A folder with a `SKILL.md` file that teaches Claude Code how to handle specific tasks. NOT the same as Cortana's operational tools in `/root/.openclaw/workspace/skills/`.
 
 **Location:** `~/.claude/skills/` (personal, all projects) or `.claude/skills/` (project-specific)
 

@@ -15,7 +15,7 @@ Run the content sweep script and return the results to the user.
 
 ## Script
 ```bash
-/root/clawd/scripts/content-sweep.py
+/root/.openclaw/workspace/scripts/content-sweep.py
 ```
 
 ## Response Format

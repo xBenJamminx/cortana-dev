@@ -38,7 +38,7 @@ DEFAULT_IMG_MODEL = 'imagen-4.0-generate-001'
 DEFAULT_DURATION  = 3    # minutes
 DEFAULT_SCENES    = 8
 DEFAULT_STYLE     = 'stoic'
-DEFAULT_MUSIC_VOL = 0.08
+DEFAULT_MUSIC_VOL = 5.0
 TITLE_DURATION    = 8.0  # seconds of silence before narration (for title card)
 TG_TOPIC          = 22   # Telegram thread for sleep videos
 
@@ -594,7 +594,7 @@ def _step_assemble(project, music_volume=DEFAULT_MUSIC_VOL):
         f'volume={music_volume},'
         f'afade=t=in:st=0:d=5,'
         f'afade=t=out:st={fade_out_start}:d=5[music];'
-        f'[0:a][music]amix=inputs=2:duration=first:dropout_transition=3,'
+        f'[0:a][music]amix=inputs=2:duration=first:dropout_transition=3:weights=1 0.8,'
         f'alimiter=limit=0.95[out]',
         '-map', '[out]', '-c:a', 'aac', '-b:a', '192k',
         '-t', str(padded_dur),

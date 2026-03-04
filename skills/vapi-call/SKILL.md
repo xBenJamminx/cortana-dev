@@ -10,11 +10,17 @@ Make outbound phone calls through Cortana via VAPI.
 
 ## Usage
 
+Call Ben (default - no number needed):
 ```bash
-/root/clawd/skills/vapi-call/vapi-call +15551234567 "Hey, this is Cortana calling on behalf of Ben"
+/root/.openclaw/workspace/skills/vapi-call/vapi-call
 ```
 
-- First argument: phone number (with country code)
+Call someone else:
+```bash
+/root/.openclaw/workspace/skills/vapi-call/vapi-call +15551234567 "Hey, this is Cortana calling on behalf of Ben"
+```
+
+- First argument (optional): phone number (defaults to Ben's number)
 - Second argument (optional): custom greeting message
 
 ## CRITICAL RULES
@@ -22,11 +28,12 @@ Make outbound phone calls through Cortana via VAPI.
 - ALWAYS use this script for outbound calls. It passes the correct assistantId and phoneNumberId.
 - NEVER construct your own curl calls to https://api.vapi.ai/call with inline assistant objects.
 - NEVER pass raw twilioAccountSid/twilioAuthToken in API calls - use phoneNumberId instead.
-- If you bypass this script, calls will connect but without the real Cortana assistant (no voice, no tools, no personality) and Twilio will play a "trial account" message.
+- When user says "call me" with no number, just run the script with NO arguments - it defaults to Ben's number.
+- NEVER guess or hallucinate phone numbers. If you don't know the number, use no arguments (defaults to Ben) or ask.
 
 ## Config
 
 - VAPI Assistant ID: 899db371-3ca9-44f6-8ad3-a70131af4987
 - VAPI Phone Number ID: 3d76fe66-e37e-4c9c-af92-695690631c9b
 - From number: +15164713637
-- Ben's number: +15168706749
+- Ben's number: +15168706749 (default - hardcoded in script)

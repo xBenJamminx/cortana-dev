@@ -8,8 +8,8 @@ from datetime import datetime
 from pathlib import Path
 
 MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/devto-hashnode-monitor.log")
-SUMMARY_FILE = Path("/root/clawd/memory/devto_hashnode_summary.md")
+LOG_FILE = Path("/root/.openclaw/workspace/logs/devto-hashnode-monitor.log")
+SUMMARY_FILE = Path("/root/.openclaw/workspace/memory/devto_hashnode_summary.md")
 
 # Tags to monitor
 TAGS = ["ai", "automation", "nocode", "productivity", "webdev", "programming"]

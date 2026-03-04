@@ -8,8 +8,8 @@ from datetime import datetime
 from pathlib import Path
 
 MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/google-trends-monitor.log")
-SUMMARY_FILE = Path("/root/clawd/memory/google_trends_summary.md")
+LOG_FILE = Path("/root/.openclaw/workspace/logs/google-trends-monitor.log")
+SUMMARY_FILE = Path("/root/.openclaw/workspace/memory/google_trends_summary.md")
 
 # Categories of interest
 CATEGORIES = [

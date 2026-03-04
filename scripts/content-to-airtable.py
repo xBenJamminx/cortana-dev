@@ -12,7 +12,7 @@ from pathlib import Path
 # Config
 AIRTABLE_BASE_ID = "appgqpqWgN7BcvKQ1"  # Content OS base
 AIRTABLE_TABLE = "Content Ideas"
-COMPOSIO_SCRIPT = "/root/clawd/skills/composio/composio-tool.py"
+COMPOSIO_SCRIPT = "/root/.openclaw/workspace/skills/composio/composio-tool.py"
 LOG_FILE = Path("/var/log/clawd/content-workflow.log")
 
 def log(msg):

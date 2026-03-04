@@ -11,9 +11,23 @@ from datetime import datetime
 from pathlib import Path
 from typing import List, Dict
 
+# Load env
+def _load_env():
+    env_path = os.path.expanduser("~/.openclaw/.env")
+    if os.path.exists(env_path):
+        with open(env_path) as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    key, _, val = line.partition("=")
+                    key = key.replace("export ", "").strip()
+                    if key and not os.environ.get(key):
+                        os.environ[key] = val
+_load_env()
+
 # Config
 MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/reddit-monitor.log")
+LOG_FILE = Path("/root/.openclaw/workspace/logs/reddit-monitor.log")
 
 # Subreddits to monitor
 SUBREDDITS = [
@@ -41,6 +55,28 @@ KEYWORDS = [
 ]
 
 MIN_SCORE = 50  # Minimum upvotes to track
+
+# Subreddits dominated by memes/rants need higher thresholds
+HIGH_NOISE_SUBS = {"ChatGPT", "OpenAI"}
+HIGH_NOISE_MIN_SCORE = 200
+
+# Quality filters — reject low-effort posts
+LOW_EFFORT_PATTERNS = [
+    # Too short to be substantive
+    lambda t: len(t.strip()) < 20,
+    # Pure reactions / memes
+    lambda t: t.strip().lower().startswith(("haha", "lol", "lmao", "bruh", "omg", "wtf")),
+    # Pure emoji posts
+    lambda t: len(t.replace(" ", "")) > 0 and sum(1 for c in t if c.isalpha()) < len(t) * 0.3,
+    # Rage / rant posts (low signal for content intel)
+    lambda t: any(p in t.lower() for p in ["i hate ", "i actually hate ", "is trash", "is garbage", "worst update"]),
+    # Just "Good job" / reaction posts
+    lambda t: len(t.strip()) < 40 and any(p in t.lower() for p in ["good job", "well done", "nice one", "👏"]),
+]
+
+def is_low_effort(title: str) -> bool:
+    """Check if a post title indicates low-effort/meme content"""
+    return any(check(title) for check in LOW_EFFORT_PATTERNS)
 
 def log(msg: str):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -82,12 +118,47 @@ def ensure_tables():
     conn.commit()
     conn.close()
 
-def fetch_subreddit_hot(subreddit: str, limit: int = 25) -> List[Dict]:
-    """Fetch hot posts from a subreddit using Reddit's JSON API (no auth needed)"""
+REDDIT_CONN_ID = "522f0562-b211-42dc-acc2-830d0518b3e9"
+
+def _get_reddit_token():
+    """Get Reddit OAuth token from Composio"""
     try:
-        url = f"https://www.reddit.com/r/{subreddit}/hot.json"
-        headers = {"User-Agent": "CortanaMonitor/1.0"}
+        api_key = os.environ.get("COMPOSIO_API_KEY", "")
+        resp = requests.get(
+            f"https://backend.composio.dev/api/v1/connectedAccounts/{REDDIT_CONN_ID}",
+            headers={"x-api-key": api_key},
+            timeout=10
+        )
+        return resp.json().get("connectionParams", {}).get("access_token", "")
+    except:
+        return ""
+
+_reddit_token = None
+
+def get_reddit_token(force_refresh=False):
+    """Get cached Reddit token, refreshing if needed"""
+    global _reddit_token
+    if _reddit_token is None or force_refresh:
+        _reddit_token = _get_reddit_token()
+    return _reddit_token
+
+def fetch_subreddit_hot(subreddit: str, limit: int = 25) -> List[Dict]:
+    """Fetch hot posts from a subreddit using Reddit OAuth API via Composio"""
+    token = get_reddit_token()
+    try:
+        url = f"https://oauth.reddit.com/r/{subreddit}/hot"
+        headers = {
+            "User-Agent": "CortanaMonitor/1.0",
+            "Authorization": f"Bearer {token}"
+        }
         r = requests.get(url, headers=headers, params={"limit": limit}, timeout=15)
+
+        # Token expired - refresh and retry once
+        if r.status_code in (401, 403):
+            log(f"  Token expired for r/{subreddit}, refreshing...")
+            token = get_reddit_token(force_refresh=True)
+            headers["Authorization"] = f"Bearer {token}"
+            r = requests.get(url, headers=headers, params={"limit": limit}, timeout=15)
 
         if r.status_code != 200:
             log(f"Error fetching r/{subreddit}: HTTP {r.status_code}")
@@ -150,20 +221,19 @@ def save_post(post: Dict, keywords: List[str]):
         return False
 
 def get_trending_summary() -> str:
-    """Generate a summary of trending topics"""
+    """Generate a summary of trending topics, diverse across subreddits"""
     try:
         conn = sqlite3.connect(MEMORY_DB)
         cursor = conn.cursor()
 
-        # Top posts from last 24 hours
+        # Get all posts from last 24 hours
         cursor.execute("""
             SELECT title, subreddit, score, keywords_matched
             FROM reddit_posts
             WHERE created_at > datetime('now', '-24 hours')
             ORDER BY score DESC
-            LIMIT 10
         """)
-        top_posts = cursor.fetchall()
+        all_posts = cursor.fetchall()
 
         # Keyword frequency
         cursor.execute("""
@@ -185,6 +255,16 @@ def get_trending_summary() -> str:
 
         top_keywords = sorted(keyword_counts.items(), key=lambda x: x[1], reverse=True)[:5]
 
+        # Diverse post selection: max 1 per sub for the summary
+        summary_posts = []
+        seen_subs = set()
+        for title, sub, score, kw in all_posts:
+            if sub not in seen_subs:
+                seen_subs.add(sub)
+                summary_posts.append((title, sub, score, kw))
+            if len(summary_posts) >= 8:
+                break
+
         summary = f"📊 Reddit Monitor Summary ({datetime.now().strftime('%Y-%m-%d %H:%M')})\n\n"
 
         if top_keywords:
@@ -193,9 +273,9 @@ def get_trending_summary() -> str:
                 summary += f"  • {kw}: {count} mentions\n"
             summary += "\n"
 
-        if top_posts:
-            summary += "📈 Top Posts:\n"
-            for title, sub, score, _ in top_posts[:5]:
+        if summary_posts:
+            summary += "📈 Top Posts (1 per sub):\n"
+            for title, sub, score, _ in summary_posts:
                 summary += f"  • r/{sub} ({score}⬆): {title[:60]}...\n"
 
         return summary
@@ -213,15 +293,24 @@ def main():
         posts = fetch_subreddit_hot(subreddit)
 
         for post in posts:
-            # Skip low-score posts
-            if post["score"] < MIN_SCORE:
+            sub = post.get("subreddit", subreddit)
+
+            # Higher bar for noisy subreddits
+            min_score = HIGH_NOISE_MIN_SCORE if sub in HIGH_NOISE_SUBS else MIN_SCORE
+            if post["score"] < min_score:
+                continue
+
+            # Skip memes, rants, and low-effort posts
+            if is_low_effort(post["title"]):
+                log(f"  Skipped (low-effort): {post['title'][:50]}...")
                 continue
 
             # Check for keyword matches
             keywords = match_keywords(post["title"])
 
-            # Save if it has keywords or high score
-            if keywords or post["score"] >= 100:
+            # Save if it has keywords or genuinely high score
+            save_threshold = 500 if sub in HIGH_NOISE_SUBS else 100
+            if keywords or post["score"] >= save_threshold:
                 if save_post(post, keywords):
                     total_saved += 1
                     if keywords:
@@ -234,7 +323,7 @@ def main():
     log(summary)
 
     # Save summary to file for morning briefing
-    summary_file = Path("/root/clawd/memory/reddit_daily_summary.txt")
+    summary_file = Path("/root/.openclaw/workspace/memory/reddit_daily_summary.txt")
     summary_file.parent.mkdir(parents=True, exist_ok=True)
     summary_file.write_text(summary)
 

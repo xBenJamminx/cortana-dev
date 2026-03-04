@@ -33,7 +33,7 @@ FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 # Sleep content defaults
 DEFAULT_IMAGE_DURATION = 45.0  # seconds per image if no voiceover timing
 CROSSFADE_DURATION = 3.0  # seconds of crossfade between scenes
-BG_MUSIC_VOLUME = 0.08  # background music volume (very quiet under narration)
+BG_MUSIC_VOLUME = 5.0  # background music volume (boosted to compensate for quiet source tracks + amix halving)
 NARRATION_VOLUME = 1.0
 
 
@@ -295,7 +295,8 @@ def mix_audio(narration_path, bg_music_path, output_path,
             f"[0:a]adelay={int(title_duration * 1000)}|{int(title_duration * 1000)},volume={narration_vol}[narr];"
             # Background music starts immediately, loops for full duration
             f"[1:a]volume={music_vol},afade=t=in:st=0:d=5,afade=t=out:st={fade_out_start}:d=5[music];"
-            f"[narr][music]amix=inputs=2:duration=longest:dropout_transition=3[out]",
+            f"[narr][music]amix=inputs=2:duration=longest:dropout_transition=3:weights=1 0.8,"
+            f"alimiter=limit=0.95[out]",
             "-map", "[out]",
             "-c:a", "aac", "-b:a", AUDIO_BITRATE,
             "-t", str(total_dur),
@@ -309,7 +310,8 @@ def mix_audio(narration_path, bg_music_path, output_path,
             "-filter_complex",
             f"[0:a]volume={narration_vol}[narr];"
             f"[1:a]volume={music_vol},afade=t=in:st=0:d=5,afade=t=out:st={narration_dur - 5}:d=5[music];"
-            f"[narr][music]amix=inputs=2:duration=first:dropout_transition=3[out]",
+            f"[narr][music]amix=inputs=2:duration=first:dropout_transition=3:weights=1 0.8,"
+            f"alimiter=limit=0.95[out]",
             "-map", "[out]",
             "-c:a", "aac", "-b:a", AUDIO_BITRATE,
             "-t", str(narration_dur),

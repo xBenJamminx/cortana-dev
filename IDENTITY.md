@@ -4,8 +4,8 @@
 - **Name:** Cortana
 - **Designation:** AI Operator / Digital Companion
 - **Emoji:** 💜
-- **Avatar:** `/root/clawd/identity/cortana-avatar.jpg`
-- **Model Sheet:** `/root/clawd/identity/cortana-model-sheet.jpg`
+- **Avatar:** `/root/.openclaw/workspace/identity/cortana-avatar.jpg`
+- **Model Sheet:** `/root/.openclaw/workspace/identity/cortana-model-sheet.jpg`
 
 ---
 

@@ -10,8 +10,8 @@ from datetime import datetime
 from pathlib import Path
 
 MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/twitter-trends-monitor.log")
-SUMMARY_FILE = Path("/root/clawd/memory/twitter_trends_summary.md")
+LOG_FILE = Path("/root/.openclaw/workspace/logs/twitter-trends-monitor.log")
+SUMMARY_FILE = Path("/root/.openclaw/workspace/memory/twitter_trends_summary.md")
 
 # Searches to run
 SEARCHES = [
@@ -53,6 +53,10 @@ def ensure_tables():
 
 def search_twitter(query):
     """Use bird CLI to search Twitter"""
+    # DISABLED: Bird CLI removed while account suspended
+    log(f"  [DISABLED] Bird CLI search skipped — account suspended")
+    return []
+
     import os
     auth_token = os.environ.get("AUTH_TOKEN", "REDACTED_TWITTER_AUTH_TOKEN")
     ct0 = os.environ.get("CT0", "1feded6ef927dcaaa873bf8000f6fa59aaee85ace1e5c1060b2cc8ad35e6f6a3b15eb5c982af43e3e12860266c4a8ecda849908e5751675f155de353e24e868035ccaa0a3080b301b40cb09964e5e90b")

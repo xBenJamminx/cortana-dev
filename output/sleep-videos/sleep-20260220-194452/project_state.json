@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "steps_completed": [
+    "create",
+    "voice",
+    "images",
+    "ambient",
+    "assemble"
+  ],
+  "topic": "The quiet strength of patience - a Stoic reflection on trusting the process, embracing stillness, and understanding that not every moment demands action. Sometimes the wisest thing is to wait, to breathe, and to let life unfold.",
+  "duration": 3,
+  "style": "stoic",
+  "created": "20260220-194452",
+  "script_path": "/root/.openclaw/workspace/output/sleep-videos/sleep-20260220-194452/script.json",
+  "title": "The Quiet Strength of Patience: A Stoic Sleep Story",
+  "num_scenes": 8,
+  "voice": "V2bPluzT7MuirpucVAKH",
+  "narration_path": "/root/.openclaw/workspace/output/sleep-videos/sleep-20260220-194452/full_narration.mp3",
+  "narration_duration": 135.732245,
+  "image_files": [
+    "/root/.openclaw/workspace/output/sleep-videos/sleep-20260220-194452/images/scene_000.png",
+    "/root/.openclaw/workspace/output/sleep-videos/sleep-20260220-194452/images/scene_001.png",
+    "/root/.openclaw/workspace/output/sleep-videos/sleep-20260220-194452/images/scene_002.png",
+    "/root/.openclaw/workspace/output/sleep-videos/sleep-20260220-194452/images/scene_003.png",
+    "/root/.openclaw/workspace/output/sleep-videos/sleep-20260220-194452/images/scene_004.png",
+    "/root/.openclaw/workspace/output/sleep-videos/sleep-20260220-194452/images/scene_005.png",
+    "/root/.openclaw/workspace/output/sleep-videos/sleep-20260220-194452/images/scene_006.png",
+    "/root/.openclaw/workspace/output/sleep-videos/sleep-20260220-194452/images/scene_007.png"
+  ],
+  "image_model": "imagen-4.0-generate-001",
+  "ambient_path": "/root/.openclaw/workspace/output/sleep-videos/sleep-20260220-194452/ambient/ambient_loop.mp3",
+  "output_path": "/root/.openclaw/workspace/output/sleep-videos/sleep-20260220-194452/final.mp4"
+}

@@ -14,7 +14,7 @@ from pathlib import Path
 
 log = logging.getLogger("cortana.health")
 
-DIAGNOSTICS_DIR = Path("/root/clawd/logs/diagnostics")
+DIAGNOSTICS_DIR = Path("/root/.openclaw/workspace/logs/diagnostics")
 
 
 def check_gateway_http(port: int = 18789, timeout: float = 5.0) -> dict:

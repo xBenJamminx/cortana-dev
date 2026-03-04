@@ -3,7 +3,7 @@
 import subprocess
 import json
 
-script = "/root/clawd/skills/composio/composio-mcp.py"
+script = "/root/.openclaw/workspace/skills/composio/composio-mcp.py"
 base_id = "appdFTSkXnphHLwfl"
 table_id = "tblvLSX7DZxIRWU5g"
 

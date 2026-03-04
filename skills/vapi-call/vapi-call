@@ -7,21 +7,19 @@ source /root/.openclaw/.env
 VAPI_API_KEY="${VAPI_API_KEY:?VAPI_API_KEY not set}"
 ASSISTANT_ID="899db371-3ca9-44f6-8ad3-a70131af4987"
 PHONE_NUMBER_ID="3d76fe66-e37e-4c9c-af92-695690631c9b"
+BEN_NUMBER="+15168706749"
 
 usage() {
-    echo "Usage: vapi-call <phone_number> [message]"
+    echo "Usage: vapi-call [phone_number] [message]"
     echo ""
     echo "Arguments:"
-    echo "  phone_number    Phone number to call (with country code, e.g. +15551234567)"
+    echo "  phone_number    Phone number to call (default: Ben's number)"
     echo "  message         Optional custom greeting message"
     exit 1
 }
 
-if [ -z "$1" ]; then
-    usage
-fi
-
-PHONE="$1"
+# Default to Ben's number if no arg given
+PHONE="${1:-$BEN_NUMBER}"
 MESSAGE="$2"
 
 # Build JSON payload
@@ -54,11 +52,11 @@ RESPONSE=$(curl -s -X POST "https://api.vapi.ai/call" \
 
 # Check result
 if echo "$RESPONSE" | grep -q id; then
-    CALL_ID=$(echo "$RESPONSE" | python3 -c "import sys,json; print(json.load(sys.stdin).get(id,))")
-    echo "📞 Calling $PHONE..."
+    CALL_ID=$(echo "$RESPONSE" | python3 -c "import sys,json; print(json.load(sys.stdin).get('id',''))")
+    echo "Calling $PHONE..."
     echo "Call ID: $CALL_ID"
 else
-    echo "❌ Call failed:"
+    echo "Call failed:"
     echo "$RESPONSE"
     exit 1
 fi

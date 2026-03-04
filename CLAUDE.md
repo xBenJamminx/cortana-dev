@@ -54,3 +54,20 @@
 - After creating research/drafts: update `memory/index.md`
 - Memory files are write-only graves unless indexed. Search the index first.
 - Cortana cannot read Telegram history. Memory files are the ONLY continuity.
+
+## Session Handoff (Critical)
+
+### On EVERY session end (after responding):
+Write/overwrite `memory/handoff.md`:
+
+- **Topic:** which Telegram topic (e.g. Research, Business)
+- **What we were doing:** 1-3 sentences on the task/conversation in progress
+- **Status:** Done / In progress / Blocked + next step
+- **Key context:** anything a fresh session needs to avoid 'what are you talking about'
+
+### On EVERY session start (before responding):
+1. Read `memory/handoff.md`
+2. If recent (same day or within 24h) AND relevant — resume naturally. Don't announce it, just know it.
+3. If stale or different topic — note it but don't force it.
+
+This is the ONLY continuity across gateway restarts. No exceptions.

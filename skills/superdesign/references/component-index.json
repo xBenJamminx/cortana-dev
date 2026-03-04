@@ -1,0 +1,991 @@
+[
+  {
+    "id": "5d8691d1-283b-4c85-8146-be5cd99d9a9d",
+    "title": "Play2LearnLandingPage",
+    "description": "[PAGE] A high-conversion landing page for Play2Learn's Industry vertical, focusing on safety training, operations, and onboarding. Features a dark, modern aesthetic with specific brand colors, rolepla...",
+    "tags": [],
+    "previewUrl": "https://component-9aa37695-84f0-4a4b-8d2d-bb10f8e8e806.preview.superdesign.dev/?projectId=e9dd4dfa-8cc2-42f4-9895-b830db7f8633"
+  },
+  {
+    "id": "b84eb857-558c-478d-a9e8-105a046e6a61",
+    "title": "NeumorphicTradeDashboard",
+    "description": "",
+    "tags": [],
+    "previewUrl": "https://component-eb470eab-f6f3-4d87-baeb-b5c639376bf4.preview.superdesign.dev/?projectId=bf4a89f2-92c3-41a2-92d6-f5536c19120e"
+  },
+  {
+    "id": "20410f94-56bd-401e-86e4-a6cb239d5e3a",
+    "title": "Red Noir Style",
+    "description": "A bold, dark-themed landing page featuring high-contrast red accents, glassmorphism, and smooth scroll animations. Designed for AI and tech products with a futuristic aesthetic.",
+    "tags": [
+      "style",
+      "landing page",
+      "page"
+    ],
+    "previewUrl": "https://component-4739694a-be35-4493-bdef-f43fd1d095ec.preview.superdesign.dev/?projectId=c636c30f-5d52-41e7-a197-20eb42f1c72d"
+  },
+  {
+    "id": "1b5a0ee2-e8d3-4293-b92a-5bccbd9e84dc",
+    "title": "Warm Industrial Gray Style",
+    "description": "A high-end, brutalist-inspired portfolio page. Designed for high-impact personal branding.",
+    "tags": [
+      "page",
+      "landing page",
+      "style"
+    ],
+    "previewUrl": "https://component-a46ada4e-ce09-4f5b-a5b8-04542e5c0af0.preview.superdesign.dev/?projectId=ba2c7920-c443-4e29-8f65-91edc6cc72db"
+  },
+  {
+    "id": "614ebe99-ac87-4187-af31-242cc085a0ec",
+    "title": "Force Field Background",
+    "description": "An interactive, particle-based force field background effect that reacts to mouse movement. Uses p5.js to render particles based on image brightness maps, creating a fluid, magnetic visual experience....",
+    "tags": [
+      "animation",
+      "background"
+    ],
+    "previewUrl": "https://component-f8ed68c7-e970-4fa3-85de-5064855eb254.preview.superdesign.dev/?projectId=8d58b9bc-b291-4ce9-a99b-0f442b4725a7"
+  },
+  {
+    "id": "b4289032-5303-460a-9280-e48841c3ee46",
+    "title": "Gooey Gradient Background",
+    "description": "A mesmerizing, interactive gooey liquid gradient background with animated blobs and mouse-following effect. Perfect for immersive landing pages.",
+    "tags": [
+      "animation",
+      "background"
+    ],
+    "previewUrl": "https://component-bf9ebe26-912e-4b09-bb2e-ec3fa8e42874.preview.superdesign.dev/?projectId=99b47969-703f-4baf-bab4-f50818541be1"
+  },
+  {
+    "id": "2f76b6c9-b262-42da-97f3-b3319ad13360",
+    "title": "Tubes Interactive Background",
+    "description": "A high-performance interactive 3D background featuring neon tubes that follow the cursor. Based on threejs-components, it includes a click interaction to randomize colors and a hero section overlay.\n\n...",
+    "tags": [
+      "animation",
+      "background"
+    ],
+    "previewUrl": "https://component-79f658a0-893a-4705-8427-831d1091c385.preview.superdesign.dev/?projectId=e3091b92-f856-4d62-a7a5-caaa3d7f929c"
+  },
+  {
+    "id": "ea8ba29c-c7c4-425f-8151-f6f3f11c95c9",
+    "title": "Parallax Stars Background",
+    "description": "A mesmerizing space-themed background with animated parallax pixel stars and a radial gradient atmosphere. Features three layers of stars moving at different speeds to create depth.",
+    "tags": [
+      "background",
+      "animation"
+    ],
+    "previewUrl": "https://component-53bf23cc-63df-4ab5-8c24-9b0a76739dbd.preview.superdesign.dev/?projectId=766c7a6d-f7c1-47b5-bf18-bf183a10d254"
+  },
+  {
+    "id": "a3f7c459-c577-44c9-9f15-08ae3b6530d9",
+    "title": "Pastel Gradient Background",
+    "description": "A soft, rotating pastel gradient background with blur effects and smooth animation.",
+    "tags": [
+      "background",
+      "animation"
+    ],
+    "previewUrl": "https://component-c4c91db6-76c4-4457-84b6-a5bfb65a32f8.preview.superdesign.dev/?projectId=71791e69-613a-40e3-b9dc-694a419712c2"
+  },
+  {
+    "id": "9df26185-f08a-4b3d-84d4-ec962533bb66",
+    "title": "SocialTaskSheet",
+    "description": "[COMPONENT] A semi-modal (bottom sheet) task list component for a social app. Features a progress tracker, gamified task list with status states, and a modern mobile-first design.",
+    "tags": [],
+    "previewUrl": "https://component-4499cef1-571a-4faa-ab46-abe6c4a69ed1.preview.superdesign.dev/?projectId=4a422c3c-5819-4030-9a6f-c142996a821f"
+  },
+  {
+    "id": "e6417c0d-e870-4e05-9780-e1a208d8ef6f",
+    "title": "Neo-Brutalism Style",
+    "description": "Defined by the raw, \"uncooked\" look\u2014thick borders, hard shadows (no blur), visible layout grids, and a rejection of traditional \"soft\" web design trends like rounded corners and gradients",
+    "tags": [
+      "page",
+      "landing page",
+      "style"
+    ],
+    "previewUrl": "https://component-1c76921c-a946-4613-b0f7-46285265389f.preview.superdesign.dev/?projectId=8b004ae9-3926-444c-9209-e6d30cb9236f"
+  },
+  {
+    "id": "9adec2ac-6685-4287-8958-63ee8da0db75",
+    "title": "Dark Avant-Garde Style",
+    "description": "A distinctive landing page includes serrated edge details, ticket-style UI elements, noise textures, and elegant parallax effects.",
+    "tags": [
+      "landing page",
+      "page",
+      "style"
+    ],
+    "previewUrl": "https://component-78ae4f2a-c55a-4f50-a0b1-17c67e8c277d.preview.superdesign.dev/?projectId=73c75e75-d290-43fd-a5fb-e73cc96eee4b"
+  },
+  {
+    "id": "c0a68739-bfa4-418c-9646-eab9b38d002b",
+    "title": "Cyber Serif Style",
+    "description": "A dark-themed, high-contrast landing page, featuring an elegant 'CyberSerif' aesthetic: a blend of classical serif typography (representing design heritage) and technical sans-serifs (representing AI ...",
+    "tags": [
+      "style",
+      "landing page",
+      "page"
+    ],
+    "previewUrl": "https://component-4a04a7c3-74ae-413c-a504-e727a63c9960.preview.superdesign.dev/?projectId=0a04dcd4-8049-425e-9839-27eff4259d82"
+  },
+  {
+    "id": "8b3ac420-03ac-411c-8cee-ee3c467994a7",
+    "title": "Pricing Section",
+    "description": "A premium, clean pricing section with vertically stacked cards. Features a distinct split layout within each card (plan details vs features), distinctive pill-shaped black buttons with 3D depth, and o...",
+    "tags": [
+      "ui component",
+      "pricing"
+    ],
+    "previewUrl": "https://component-21e1cdea-5d53-48f0-ac83-6c33e87dcf9e.preview.superdesign.dev/?projectId=ee196832-4cb7-49d2-b1a1-eab29183b02d"
+  },
+  {
+    "id": "3b6d1a8c-a18b-4cef-ac74-af961fe3010c",
+    "title": "Jelly Squish Button",
+    "description": "A high-fidelity interactive 3D jelly simulation that responds to vertical dragging and mouse movement. Uses GSAP for physics-based animation and optimized image sequencing. Perfect for playful hero se...",
+    "tags": [
+      "animation",
+      "ui component",
+      "button"
+    ],
+    "previewUrl": "https://component-b0075c5b-b831-42de-a742-cea683bcd77a.preview.superdesign.dev/?projectId=ee489d23-f844-4ea7-96e0-686beb45634d"
+  },
+  {
+    "id": "9d267b30-92e4-4805-a79b-ee7403372df5",
+    "title": "Radiant Prompt Input",
+    "description": "A high-fidelity, kinetic input interface featuring a mesmerizing, continuously rotating conic gradient border. Designed for next-generation AI interactions, this component elevates simple text entry i...",
+    "tags": [
+      "ui component",
+      "input"
+    ],
+    "previewUrl": "https://component-80ef4c96-3b67-465e-a056-30988465b642.preview.superdesign.dev/?projectId=0eb0a0bb-ac26-47cf-b23a-86362e0be979"
+  },
+  {
+    "id": "5454304e-a294-4412-8fd8-dc6395276138",
+    "title": "Creepy Button",
+    "description": "A playful, interactive button with eyes that blink and track the cursor movement. Perfect for gamified interfaces or playful call-to-actions.\n\nSource: https://codepen.io/jkantner/pen/ZYWKvqW",
+    "tags": [
+      "ui component",
+      "button"
+    ],
+    "previewUrl": "https://component-97285c29-328a-4502-85c2-e28274f55865.preview.superdesign.dev/?projectId=93c15bca-7aea-4c71-9e61-d4e48c03cb0c"
+  },
+  {
+    "id": "6efb1a53-3068-4bdd-a512-c6e46ffc959f",
+    "title": "Organic Modern Style",
+    "description": "It features a distinctive color palette (sage green/beige background with dark charcoal text), serif display fonts mixed with sans-serif body text, and hand-drawn accents. The layout includes a hero s...",
+    "tags": [
+      "style"
+    ],
+    "previewUrl": "https://component-614e0b67-c42f-4ba2-9151-e6e650714496.preview.superdesign.dev/?projectId=cdd038d4-1b4e-4d75-86fd-cec49f1b852e"
+  },
+  {
+    "id": "a9647123-bf61-402d-8afc-f42351654352",
+    "title": "Mixpanel Pricing",
+    "description": "A pixel-perfect recreation of the Mixpanel pricing section featuring a distinctive purple gradient curtain background, interactive pricing cards, and a dynamic usage estimator slider.",
+    "tags": [
+      "pricing",
+      "landing page",
+      "ui component"
+    ],
+    "previewUrl": "https://component-87eb65e8-2ab6-460c-9c0c-1552f097dc3d.preview.superdesign.dev/?projectId=44b04d26-dfdd-4005-aceb-f05adc47da38"
+  },
+  {
+    "id": "4cfddb15-6a7e-4dc1-88d7-c005e619395a",
+    "title": "Pricing",
+    "description": "A sophisticated pricing section featuring elegant serif typography, three distinct plan cards (Standard, Growth, Enterprise) with subtle gradient headers, feature comparison lists, and a responsive gr...",
+    "tags": [
+      "ui component",
+      "landing page",
+      "pricing"
+    ],
+    "previewUrl": "https://component-872edfe7-ad06-4107-b8eb-50a3cde5730f.preview.superdesign.dev/?projectId=fb3c25d1-be42-4407-a644-da0948007b48"
+  },
+  {
+    "id": "7ca022dc-8146-4daf-836b-1734fbfcde25",
+    "title": "Single Pricing",
+    "description": "[SECTION] A clean, two-column pricing section with a flat fee highlight and feature list. Mimics the AngelList SPV pricing design.",
+    "tags": [
+      "ui component",
+      "pricing",
+      "landing page"
+    ],
+    "previewUrl": "https://component-d81cca76-3815-4833-9962-0fc3b1140b71.preview.superdesign.dev/?projectId=c022f258-e3be-4e25-ac40-a6356fe3f65c"
+  },
+  {
+    "id": "33cba15a-f245-4c24-9b7a-75e4329de119",
+    "title": "ClickUp Pricing Calculator",
+    "description": "A cost savings calculator section comparing app spending vs ClickUp. Features an interactive app selection grid, user count input, and dynamic cost breakdown with a distinctive gradient border design.",
+    "tags": [
+      "ui component",
+      "landing page",
+      "pricing"
+    ],
+    "previewUrl": "https://component-34fd8e17-ed90-44d3-807d-4fbb7ae87edb.preview.superdesign.dev/?projectId=09ad27ed-b903-4fb7-b2f9-57ba6286749a"
+  },
+  {
+    "id": "f722c11a-3ce6-4d89-a413-4871fd5889a1",
+    "title": "Pricing Comparison Table",
+    "description": "A detailed, pixel-perfect pricing comparison table replicating the Mixpanel pricing page. Features sticky headers, collapsible sections (Usage, Analytics), tiered columns (Free, Growth, Enterprise), a...",
+    "tags": [
+      "ui component",
+      "pricing",
+      "landing page"
+    ],
+    "previewUrl": "https://component-cf8d44c6-2dfb-4036-b8b7-352fd8d2a8a0.preview.superdesign.dev/?projectId=3b71c39b-1757-4c5e-823a-79cf73a4c909"
+  },
+  {
+    "id": "b9bba062-fc90-45a8-a5e8-a045227edb2c",
+    "title": "Pricing",
+    "description": "A high-conversion pricing section with a toggle for monthly/annual billing. Features three tiers with a highlighted 'Pro' plan, glassmorphism effects, and smooth Framer Motion animations. Designed for...",
+    "tags": [
+      "ui component",
+      "pricing",
+      "landing page"
+    ],
+    "previewUrl": "https://component-a662421c-c5ab-4ec7-a9f3-808af5fa6f22.preview.superdesign.dev/?projectId=b2ca454e-ede0-46a3-ad22-b4dfaab6b7ed"
+  },
+  {
+    "id": "b5b98723-1457-4db6-8cc6-887db5c38363",
+    "title": "Red sun",
+    "description": "Features high-end typography, smooth animations, and a refined aesthetic using Coral and Ink colors.",
+    "tags": [
+      "landing page",
+      "page",
+      "style"
+    ],
+    "previewUrl": "https://component-ef333f5b-2ffb-4e78-9732-ec52dce4387e.preview.superdesign.dev/?projectId=bff2e6bc-2152-42f8-b6fb-7bb5d87b48ce"
+  },
+  {
+    "id": "bf7d931d-3f2e-46ea-a31d-8c14f206f3b3",
+    "title": "Clean fluid",
+    "description": "An aesthetic portfolio page featuring fluid animations, serif typography, and a distinctive curved layout.",
+    "tags": [
+      "landing page",
+      "style",
+      "page"
+    ],
+    "previewUrl": "https://component-eb313858-074f-4348-adcb-3e63ee5c4663.preview.superdesign.dev/?projectId=2406a21e-d8d9-49ab-9c20-e875eb674788"
+  },
+  {
+    "id": "0a3885c4-eb47-4a33-9d4c-abadea200e03",
+    "title": "Glassmorphism card",
+    "description": "A premium, high-converting landing page features a sophisticated card-based layout, glassmorphism effects, smooth entrance animations, and a clean, editorial aesthetic inspired by luxury real estate i...",
+    "tags": [
+      "landing page",
+      "page",
+      "style"
+    ],
+    "previewUrl": "https://component-1da3d31c-59bc-43d5-88b8-7cf7a488fd38.preview.superdesign.dev/?projectId=20a66f4d-9a92-40c1-9e71-8ef65a61a26e"
+  },
+  {
+    "id": "43ba6221-1a31-440e-914c-ceecd126ef3d",
+    "title": "Tech Editorial",
+    "description": "A high-end, editorial-style landing page features a minimalist grid-based layout, sophisticated scroll animations, and a focus on clarity and trust.",
+    "tags": [
+      "landing page",
+      "style",
+      "page"
+    ],
+    "previewUrl": "https://component-287dad7e-9177-4879-9d82-fe75a4a7e350.preview.superdesign.dev/?projectId=941209db-331a-45ba-9ec7-d8fb122d8edd"
+  },
+  {
+    "id": "b8087084-a925-4d33-87f5-e1f409339ede",
+    "title": "Light Beam Button",
+    "description": "A high-performance button with a rotating light beam border effect using CSS @property and conic gradients. Features a shiny hover state and gradient border animation.",
+    "tags": [
+      "button",
+      "ui component"
+    ],
+    "previewUrl": "https://component-b32e9000-c902-4d05-8327-41555bb98d3a.preview.superdesign.dev/?projectId=20ba74cd-5fb9-44d4-8796-f60249006ed9"
+  },
+  {
+    "id": "52a12b7e-377f-4265-9e5d-9f7f3089312b",
+    "title": "Synapse",
+    "description": "A futuristic, dark-themed fintech landing page featuring 'Instrument Serif' typography, glowing neon accents, glassmorphism effects, and advanced CSS animations (beams, sonar, shine).",
+    "tags": [
+      "landing page",
+      "page",
+      "style"
+    ],
+    "previewUrl": "https://component-4a21ea9b-938c-461e-ab42-63e07585d9ea.preview.superdesign.dev/?projectId=20ba74cd-5fb9-44d4-8796-f60249006ed9"
+  },
+  {
+    "id": "a3889263-2121-405d-83b6-3f065483c49b",
+    "title": "BroLabFanbase",
+    "description": "[PAGE] The main BroLab Fanbase application container including landing page, dashboards, and app shell.",
+    "tags": [],
+    "previewUrl": "https://component-5d8a88e6-e993-4c91-bfc7-b2167fef596c.preview.superdesign.dev/?projectId=1322d8b6-faf5-411d-b2e8-d3c89a86f0ab"
+  },
+  {
+    "id": "23bfef68-3e5b-4bbc-be97-ce420dda2e24",
+    "title": "DashboardPro",
+    "description": "",
+    "tags": [],
+    "previewUrl": "https://component-47217118-36d1-4873-9548-3065310a9de6.preview.superdesign.dev/?projectId=5e48805e-5e73-4413-b888-e1334a82434e"
+  },
+  {
+    "id": "4e9521ff-4fc7-4285-a960-b794d6500487",
+    "title": "DashboardPro",
+    "description": "",
+    "tags": [],
+    "previewUrl": "https://component-47217118-36d1-4873-9548-3065310a9de6.preview.superdesign.dev/?projectId=5e48805e-5e73-4413-b888-e1334a82434e"
+  },
+  {
+    "id": "5227bf60-127b-4498-8f44-6bee1cd92dd2",
+    "title": "Bold Retro-Modernism",
+    "description": "A high-end fashion landing page with bold retro-modern aesthetics, featuring hero banner, brand ticker, product grids, and featured sections.",
+    "tags": [
+      "style"
+    ],
+    "previewUrl": "https://component-8fd68427-ebe4-47db-8045-184c2bcc0e0c.preview.superdesign.dev/?projectId=72845434-060f-44d4-8762-a2a10a6d091a"
+  },
+  {
+    "id": "74278244-898e-44b0-878e-9acd89ee5cf7",
+    "title": "Grunge Collage Motion",
+    "description": "A high-energy, distressed collage style featuring raw textures, fragmented composition, and jittery stop-motion animation. Implements the 'Grunge Collage Motion Graphics' design system with bold typog...",
+    "tags": [
+      "style"
+    ],
+    "previewUrl": "https://component-f5b1aedc-bc25-489d-b56b-a8d7724f821b.preview.superdesign.dev/?projectId=98e43f8a-e117-47a1-9cf9-638c1dddb5a0"
+  },
+  {
+    "id": "d0e3f1c9-1c7f-4118-b53f-24c2022cc444",
+    "title": "Hyper-Saturated Fluid",
+    "description": "A landing page featuring a Hyper-Saturated Fluid design style. It uses a 'Cyber Yellow' primary color with organic 'liquid' sectioning, contrasting against a 'Deep Onyx' dark void. Includes glassmorph...",
+    "tags": [
+      "style"
+    ],
+    "previewUrl": "https://component-847c4d03-e56e-422b-ba8e-5f5262db3e3c.preview.superdesign.dev/?projectId=79ca941b-f561-4a90-b43e-28d327e48f23"
+  },
+  {
+    "id": "ad87802f-8942-4860-815b-62cedbcc197d",
+    "title": "Architectural Blueprint",
+    "description": "A technical, architectural blueprint style dashboard with grid systems, measurement markers, and drafting aesthetics.",
+    "tags": [
+      "style"
+    ],
+    "previewUrl": "https://component-b35cc7cd-d1da-48cd-9865-7445938e21bc.preview.superdesign.dev/?projectId=a1fe75e0-ba01-4dca-9403-f1faf8178671"
+  },
+  {
+    "id": "8cddc8c0-ce6d-43a8-addf-83b17c87a444",
+    "title": "Motion Music Player",
+    "description": "This is an UI component of music player",
+    "tags": [
+      "ui component"
+    ],
+    "previewUrl": "https://component-a364b5b0-acdd-4180-be14-bebf0bde70ee.preview.superdesign.dev/?projectId=3dc7ad44-0ad2-426f-8b89-45a3a4a9fe3b"
+  },
+  {
+    "id": "2443d4ce-d09f-49d7-a2fe-4e67d5796483",
+    "title": "Squares Background",
+    "description": "An animated grid of squares background with directional movement and hover interactions. Features a customizable speed, direction, and colors with a radial vignette effect.\n\nSource: ReactBits",
+    "tags": [
+      "animation",
+      "background"
+    ],
+    "previewUrl": "https://component-19161bfb-2fe5-4ec5-8c5b-e4486dfe7a2b.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "026a040f-9f19-4388-82b7-db31a1c27902",
+    "title": "Letter Glitch Background",
+    "description": "A high-end, minimalist letter glitch background effect with customizable speed, vignettes, and smooth transitions. Perfect for editorial-style hero sections or tech-focused landing pages.\n\nSource: Rea...",
+    "tags": [
+      "animation",
+      "background"
+    ],
+    "previewUrl": "https://component-d021fed3-2919-4ec7-95ae-9d49959ea5a8.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "630face8-2238-4dd4-b356-17f02e20374c",
+    "title": "Ballpit Background",
+    "description": "A high-performance 3D physics-based background effect with interactive bouncing spheres. Features a custom shader for scattering effects, Three.js instanced rendering for performance, and responsive p...",
+    "tags": [
+      "animation",
+      "background"
+    ],
+    "previewUrl": "https://component-d08056d4-7c81-4eaa-8200-291a943e0e7a.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "7de5ba9d-491b-496c-9d91-96b65c44553d",
+    "title": "Grid Distortion Background",
+    "description": "A high-performance WebGL-based grid distortion effect for background images, featuring interactive mouse-driven liquid-like ripples.\n\nSource: ReactBits",
+    "tags": [
+      "animation",
+      "background"
+    ],
+    "previewUrl": "https://component-234e8189-fb87-4f30-b5f3-f741e8375f85.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "41efa787-4b6f-4693-ada7-866e353b2ebd",
+    "title": "Interactive Waves Background",
+    "description": "An interactive, wavy background effect using Perlin noise and canvas. Responds to mouse movement with fluid physics.\n\nSource: ReactBits",
+    "tags": [
+      "animation",
+      "background"
+    ],
+    "previewUrl": "https://component-98e46b8c-bf11-4d02-a1ee-0d3656be6c8a.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "ade963c3-aaea-44a0-b690-bea0a5d5b988",
+    "title": "Hyperspeed Background",
+    "description": "A high-performance, Three.js-based warp speed/hyperspeed background effect with customizable distortions, colors, and motion parameters. Supports multiple presets for different visual styles.\n\nSource:...",
+    "tags": [
+      "animation",
+      "background"
+    ],
+    "previewUrl": "https://component-de9cdc4c-c94d-4bdf-908a-e9adcb24dbbe.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "daae3772-16ca-4cf9-b8a0-cb670162a26e",
+    "title": "Faulty Terminal Background",
+    "description": "A CRT/Terminal-style background with glitch effects, scanlines, and digital noise. Highly interactive with mouse movements and page load animations.\n\nSource: ReactBits",
+    "tags": [
+      "animation",
+      "background"
+    ],
+    "previewUrl": "https://component-8ecf25e3-8c12-4dc3-9e7c-20ec57606fe5.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "742c1c70-4c64-47ad-be9a-7e008b10271d",
+    "title": "Prismatic Burst Background",
+    "description": "A high-performance WebGL prismatic burst background effect with customizable animation types (rotate, rotate3d, hover), ray counts, and color palettes. Optimized with OGL for smooth 60fps performance....",
+    "tags": [
+      "animation",
+      "background"
+    ],
+    "previewUrl": "https://component-2336e547-8283-4cbf-8c48-f1a20b9e153d.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "01e0c0f7-3653-46f9-86db-ed11b801922b",
+    "title": "Lightning Background",
+    "description": "A high-performance WebGL-powered lightning/electric discharge background effect. Features adjustable hue, intensity, speed, and scale. Built with GLSL shaders for smooth atmospheric motion.\n\nSource: R...",
+    "tags": [
+      "animation",
+      "background"
+    ],
+    "previewUrl": "https://component-00117e27-23c2-4a53-ab12-215ab11cb228.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "9494c84b-9862-4be5-b910-be2d8919d88a",
+    "title": "Plasma Background",
+    "description": "A mesmerizing, high-performance plasma background effect using OGL (WebGL) with customizable color, speed, and mouse interaction. Follows Minimalist Showcase style.\n\nSource: ReactBits",
+    "tags": [
+      "background",
+      "animation"
+    ],
+    "previewUrl": "https://component-5125713f-d7ab-489a-ac83-67c9ab1295e7.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "8e492418-1431-4dce-ba6e-b8667101dc67",
+    "title": "Gradient Blinds Background",
+    "description": "A premium, minimalist showcase of the GradientBlinds background effect. Features a smooth, reactive blind-like gradient animation with spotlight effects and mouse interaction.\n\nSource: ReactBits",
+    "tags": [
+      "animation",
+      "background"
+    ],
+    "previewUrl": "https://component-decf5c8f-c671-4c68-8000-62d8c27953d3.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "577bb09a-bc95-4ad2-b46d-4ffe5abc1d0f",
+    "title": "Light Rays Background",
+    "description": "A minimalist showcase of a high-end WebGL light rays background effect with mouse interaction and atmospheric motion.\n\nSource: ReactBits",
+    "tags": [
+      "animation",
+      "background"
+    ],
+    "previewUrl": "https://component-8866b5a6-015d-42eb-9f05-37b1fa76f0e6.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "aca851d4-b130-47d2-8306-e236080ef83f",
+    "title": "Floating Lines Background",
+    "description": "A minimalist showcase of an interactive, shader-based floating lines background with wave-like motion and parallax effects.\n\nSource: ReactBits",
+    "tags": [
+      "background",
+      "animation"
+    ],
+    "previewUrl": "https://component-b94f5927-f470-48f9-ae01-da040d6d6c9c.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "41a6caaa-d781-4766-850f-5f102673da6b",
+    "title": "Prism Background",
+    "description": "A premium, high-performance WebGL prism/pyramid background effect using OGL. Supports multiple animation modes (rotate, hover, 3drotate) and extensive visual customization.\n\nSource: ReactBits",
+    "tags": [
+      "background",
+      "animation"
+    ],
+    "previewUrl": "https://component-0f8b52d4-dd1f-42f2-9263-3827b44c3fa2.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "784f3c99-472b-4cf4-b752-df72ab997fc5",
+    "title": "Liquid Ether Background",
+    "description": "A production-grade showcase for the LiquidEther fluid simulation background effect. Features a minimalist, premium layout that emphasizes the motion and fluid dynamics of the WebGL-based ether effect.",
+    "tags": [
+      "background",
+      "animation"
+    ],
+    "previewUrl": "https://component-36e61a97-6d36-4566-aeb8-7a1456e80343.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "f82c9b4b-59ac-4bc4-9f85-b45be46fd646",
+    "title": "Animated Stepper",
+    "description": "A reusable, animated stepper component with smooth slide transitions, progress indicators, and customizable step content. Follows a minimalist aesthetic with clean lines and refined motion.\n\nSource: R...",
+    "tags": [
+      "ui component"
+    ],
+    "previewUrl": "https://component-3420ef1d-633b-45bb-aae4-34f413835528.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "5f7f1f16-b6f7-4d35-ac55-411d49714338",
+    "title": "Counter",
+    "description": "A premium, high-performance rolling counter component with smooth mechanical-style transitions. Features automatic digit detection, customizable font sizes, and sleek gradient overlays for a professio...",
+    "tags": [
+      "ui component"
+    ],
+    "previewUrl": "https://component-c8ba7fa0-a77d-4d39-b5e6-6b89714613e1.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "1532c70a-46ed-4e83-95ae-070a8ae2cd1d",
+    "title": "Elastic Slider",
+    "description": "A premium, high-end elastic slider component with smooth motion, overflow physics, and haptic-like feedback icons. Perfect for high-end interfaces and luxury settings.\n\nSource: ReactBits",
+    "tags": [
+      "ui component"
+    ],
+    "previewUrl": "https://component-b93ff345-97d6-4239-a349-54954031a30b.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "475e0369-e9de-42c4-9b51-9804874f4b6c",
+    "title": "Flowing Menu",
+    "description": "A premium menu component with a flowing marquee effect on hover. Features smooth GSAP animations, directional edge detection for entry/exit transitions, and infinite scrolling image-text ribbons.\n\nSou...",
+    "tags": [
+      "ui component",
+      "nav"
+    ],
+    "previewUrl": "https://component-dcb75ac9-f017-4fc4-ba20-9c2f33152a85.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "631dfba0-6f1f-450e-9091-137487180a77",
+    "title": "Card Swap",
+    "description": "An elegant card swapping animation component with depth perception and perspective. Features automated cycling of cards with a premium floating feel.\n\nSource: ReactBits",
+    "tags": [
+      "ui component",
+      "animation",
+      "image gallery"
+    ],
+    "previewUrl": "https://component-55914fd9-558d-4495-89bb-4be8ba9a1330.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "7403e9be-2a76-4f3b-b32f-c5b7d72d00dc",
+    "title": "Flying Posters",
+    "description": "A high-end, high-performance WebGL-powered vertical poster gallery with 3D distortion and smooth scrolling. Uses OGL for efficient rendering and a minimalist presentation style.\n\nSource: ReactBits",
+    "tags": [
+      "ui component",
+      "animation",
+      "image gallery"
+    ],
+    "previewUrl": "https://component-0c9caa93-79d8-47df-8ed1-ab207ce762c7.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "159ad67b-fffb-43dd-afe6-f926b91aa0a1",
+    "title": "Magnification Dock",
+    "description": "A premium macOS-inspired dock component with fluid magnification effects, spring physics, and tooltips. Built with Framer Motion for high-performance interactions.",
+    "tags": [
+      "ui component",
+      "nav"
+    ],
+    "previewUrl": "https://component-a772c475-f8eb-4ddb-9599-b0814af270e0.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "3912a573-8413-49b2-8a73-66ab68f21f23",
+    "title": "Staggered Menu",
+    "description": "A premium staggered menu with multi-layer entrance animations using GSAP. Features social links, item numbering, and smooth transitions.\n\nSource: ReactBits",
+    "tags": [
+      "ui component",
+      "nav"
+    ],
+    "previewUrl": "https://component-0912dd96-8a4f-4dc9-9d69-73ce64e944ac.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "fa42af33-aa3b-4e30-b120-81594fb8988b",
+    "title": "Interactive Folder",
+    "description": "An interactive, premium folder component with a playful opening animation and drifting paper elements. Features smooth CSS transitions and mouse-tracking interactions.\n\nSource: ReactBits",
+    "tags": [
+      "animation",
+      "ui component"
+    ],
+    "previewUrl": "https://component-bcdbde6f-4476-4d1d-b592-565497cf85b1.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "e00854ad-e86a-4413-ada8-5e0dfb7e42a7",
+    "title": "Masonry Gallery",
+    "description": "A high-performance, GSAP-powered Masonry layout component with fluid animations, entrance effects (blur-to-focus, directional stagger), and interactive hover states. Supports responsive column counts ...",
+    "tags": [
+      "ui component",
+      "animation"
+    ],
+    "previewUrl": "https://component-fa4123bb-4fa1-42e6-9983-292c22fa83a9.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "27b26ff6-571f-40a3-9f7a-544730003847",
+    "title": "Tilted Card",
+    "description": "A premium tilted card component with 3D parallax effects, hover scaling, and a follow-the-cursor tooltip. Built with motion/react for smooth, physics-based interactions.",
+    "tags": [
+      "animation",
+      "ui component",
+      "card"
+    ],
+    "previewUrl": "https://component-3bc681a4-57c1-48ee-880c-52217a405a28.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "fb891737-2f02-4447-a271-b06ce9f19eb4",
+    "title": "Pill Nav",
+    "description": "A premium, minimalist pill-shaped navigation component with GSAP-powered hover effects, rotating logo animation, and responsive mobile menu. Features a unique 'rising circle' background effect on hove...",
+    "tags": [
+      "ui component",
+      "nav"
+    ],
+    "previewUrl": "https://component-45d9223f-1702-4aea-a78b-145c25add423.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "88ea3560-7740-45a5-ba18-beaea6df5864",
+    "title": "Interactive Card Stack",
+    "description": "A premium, interactive card stack component with drag-to-back physics, random rotations, and smooth motion transitions. Features autoplay, mobile-optimized interactions, and highly customizable animat...",
+    "tags": [
+      "ui component"
+    ],
+    "previewUrl": "https://component-37d55af3-d4d4-4c88-bebd-2385d53793d9.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "2281e17d-6607-49e3-a8d7-a7ec3b496105",
+    "title": "Card Nav",
+    "description": "A premium, expandable navigation component with card-based submenu reveals and GSAP-powered height transitions. Designed for a high-end, minimalist aesthetic.",
+    "tags": [
+      "ui component",
+      "nav"
+    ],
+    "previewUrl": "https://component-172e9bc4-b324-42ab-b021-d81ab76c702f.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "c55b3baa-21c2-4986-ac9d-e18d58687786",
+    "title": "Bubble Menu",
+    "description": "A playful and interactive bubble-style navigation menu with floating pill animations and staggered reveals. Uses GSAP for smooth, organic motion and hover effects.",
+    "tags": [
+      "ui component",
+      "nav"
+    ],
+    "previewUrl": "https://component-47fe1b6e-6994-4bc3-bc00-da02a689f467.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "c0168c86-0049-4a6e-81a5-4dfe9d269b0d",
+    "title": "Bento",
+    "description": "A high-end, minimalist bento grid component with advanced interactive effects including spotlight, border glow, particles (stars), tilt, and magnetism. Designed for modern dashboards and landing pages...",
+    "tags": [
+      "ui component",
+      "landing page"
+    ],
+    "previewUrl": "https://component-533ddced-6915-48a4-8198-6b3acea93d3e.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "0dd0d0b6-6584-463c-9c99-e0724f283897",
+    "title": "Image Trail",
+    "description": "A premium minimalist showcase for a high-end image trail animation effect. Features multiple animation variants (lerp-based movement, scaling, brightness shifts, 3D rotations) with a clean, editorial ...",
+    "tags": [
+      "ui component",
+      "landing page"
+    ],
+    "previewUrl": "https://component-bd9a29ca-417b-4e14-b217-aae83bd40638.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "2cd7249d-8241-4137-9039-8c9461e923a1",
+    "title": "Circular Gallery",
+    "description": "A high-end, WebGL-powered circular gallery with smooth scroll, image bending effects, and elegant typography. Ideal for immersive storytelling or creative portfolios.",
+    "tags": [
+      "ui component",
+      "landing page"
+    ],
+    "previewUrl": "https://component-e80245db-8f50-4772-ac88-0a351621274d.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "05ef47b8-dbc3-4513-8326-dbf3d60440ce",
+    "title": "Ribbon",
+    "description": "A premium minimalist showcase of an interactive ribbon effect using OGL (WebGL). It features fluid, mouse-following motion with a monochrome aesthetic and subtle floating framing.",
+    "tags": [
+      "animation",
+      "hover effect"
+    ],
+    "previewUrl": "https://component-eb340e60-8ec8-4478-9ae5-d1add42c0880.preview.superdesign.dev/?projectId=477d6239-9596-4e4b-a765-cd405af71799"
+  },
+  {
+    "id": "0d5b0cde-6a11-48c4-b4b3-119f85b2579e",
+    "title": "Ghost Cursor",
+    "description": "A fluid, smoky cursor trail effect using Three.js shader materials and post-processing bloom.",
+    "tags": [
+      "animation",
+      "background"
+    ],
+    "previewUrl": "https://component-20a19d2f-9a58-471d-b440-1b920e1ba9d9.preview.superdesign.dev/?projectId=1a6d8cbb-4610-4a01-b7a8-5024578fda56"
+  },
+  {
+    "id": "530f6737-e6c3-49fb-bdd2-96b968605607",
+    "title": "Laser Flow",
+    "description": "A WebGL-based laser flow effect using Three.js, featuring interactive mouse trails and volumetric fog.",
+    "tags": [
+      "animation",
+      "background"
+    ],
+    "previewUrl": "https://component-da1526be-271b-42d0-89a4-9ca966fc9ba9.preview.superdesign.dev/?projectId=1a6d8cbb-4610-4a01-b7a8-5024578fda56"
+  },
+  {
+    "id": "1bb61fdd-4601-433a-9407-aae673e3e265",
+    "title": "Electric Border",
+    "description": "A glowing, animated electric border effect wrapper component that uses HTML5 Canvas and noise algorithms to generate a dynamic, crackling energy field around its children. It supports customization of...",
+    "tags": [
+      "animation",
+      "border effect"
+    ],
+    "previewUrl": "https://component-4076677e-f2a8-4226-83dd-1cac37d8d69a.preview.superdesign.dev/?projectId=1a6d8cbb-4610-4a01-b7a8-5024578fda56"
+  },
+  {
+    "id": "4cc666c7-1686-4567-bbee-80f41228e08d",
+    "title": "Magnet Lines",
+    "description": "A grid of lines that rotate to point towards the cursor position, creating a magnetic field effect.",
+    "tags": [
+      "animation"
+    ],
+    "previewUrl": "https://component-548cbf1f-6b9d-4344-837e-68c4970d6b62.preview.superdesign.dev/?projectId=1a6d8cbb-4610-4a01-b7a8-5024578fda56"
+  },
+  {
+    "id": "614e2b88-79ce-484a-8368-d8dc042c419c",
+    "title": "Gradual Blur",
+    "description": "A production-grade gradual blur component that creates a smooth fading blur effect at the edges of a container. Perfect for scrollable areas, creating depth, and seamless content blending. Features co...",
+    "tags": [
+      "animation",
+      "scroll animation"
+    ],
+    "previewUrl": "https://component-a3aef9ad-02f1-4c2f-88b4-e131d1937e12.preview.superdesign.dev/?projectId=1a6d8cbb-4610-4a01-b7a8-5024578fda56"
+  },
+  {
+    "id": "861f3850-6e6a-4b8f-9728-21e5775028cb",
+    "title": "ASCII Text",
+    "description": "A 3D ASCII text effect using Three.js that renders text as a grid of characters with wave animations and mouse interaction.",
+    "tags": [
+      "animation",
+      "text animation"
+    ],
+    "previewUrl": "https://component-5a50576c-efde-422c-a27e-44f7a158865a.preview.superdesign.dev/?projectId=1a6d8cbb-4610-4a01-b7a8-5024578fda56"
+  },
+  {
+    "id": "7c68f7a8-10df-49a4-a3c4-1730bf6b2236",
+    "title": "Fuzzy Text",
+    "description": "A text component that renders a fuzzy/glitchy text effect using HTML5 Canvas. It supports hover effects, click interactions, and continuous glitch modes.",
+    "tags": [
+      "animation",
+      "text animation"
+    ],
+    "previewUrl": "https://component-df613147-6c40-4df1-8607-64132cdf413b.preview.superdesign.dev/?projectId=1a6d8cbb-4610-4a01-b7a8-5024578fda56"
+  },
+  {
+    "id": "28d57cab-5984-4e85-a5aa-40456a0a5e60",
+    "title": "Shiny Text",
+    "description": "A text component with a customizable shining gradient animation effect that sweeps across the text.",
+    "tags": [
+      "animation",
+      "text animation"
+    ],
+    "previewUrl": "https://component-3340c135-3df4-4db2-8965-bbde46276007.preview.superdesign.dev/?projectId=1a6d8cbb-4610-4a01-b7a8-5024578fda56"
+  },
+  {
+    "id": "84b8dc98-98e3-45a2-93a2-02681b0ddd31",
+    "title": "Text Pressure",
+    "description": "A typography component where characters react to mouse proximity by changing weight and width using variable font axes (pressure-sensitive effect).",
+    "tags": [
+      "animation",
+      "text animation"
+    ],
+    "previewUrl": "https://component-64b64d18-8cc2-426a-a116-8b4f963cc4ba.preview.superdesign.dev/?projectId=1a6d8cbb-4610-4a01-b7a8-5024578fda56"
+  },
+  {
+    "id": "411e2bab-5d3f-45fa-a434-9dcc0318f7f6",
+    "title": "Aurora background",
+    "description": "A WebGL-based aurora borealis effect using OGL. It creates a smooth, flowing gradient animation that simulates the northern lights.",
+    "tags": [
+      "animation",
+      "landing page"
+    ],
+    "previewUrl": "https://component-d315599d-db5c-44e2-9788-de0229579719.preview.superdesign.dev/?projectId=1a6d8cbb-4610-4a01-b7a8-5024578fda56"
+  },
+  {
+    "id": "cef4ec1b-539c-45e3-8f8f-baccc2bae58b",
+    "title": "Animated List",
+    "description": "A vertical list component with scroll-triggered animations, keyboard navigation, and gradient overflow effects. Features item scaling on scroll and hover.",
+    "tags": [
+      "ui component"
+    ],
+    "previewUrl": "https://component-38fac886-a64b-49e9-99c4-7b5cccdd8fb4.preview.superdesign.dev/?projectId=1a6d8cbb-4610-4a01-b7a8-5024578fda56"
+  },
+  {
+    "id": "71a41811-fa09-49a0-99d2-335adf59def8",
+    "title": "\"Exploded View\" Assembly",
+    "description": "A scroll-driven animation where a central product or UI element explodes into its constituent parts and then reassembles into a new layout. Perfect for 'how it works' or feature breakdown sections.",
+    "tags": [
+      "animation",
+      "scroll animation",
+      "landing page"
+    ],
+    "previewUrl": "https://component-6d21bf40-6b58-4965-85a0-d485018210d4.preview.superdesign.dev/?projectId=fa9a0ca3-9361-4934-8488-4a95ea016408"
+  },
+  {
+    "id": "39a40fa5-7712-40d9-a6d4-b6e1725e3059",
+    "title": "\"Spotlight\" Mask",
+    "description": "A scroll-driven interaction where a circular spotlight mask grows to reveal colorful UI content underneath a dark overlay.",
+    "tags": [
+      "animation",
+      "scroll animation",
+      "landing page"
+    ],
+    "previewUrl": "https://component-ea0ea6be-df72-421b-8f67-7d0532be7a54.preview.superdesign.dev/?projectId=fa9a0ca3-9361-4934-8488-4a95ea016408"
+  },
+  {
+    "id": "31d5413b-3ae2-48d8-88da-5497d96aea3c",
+    "title": "\"Parallax Tilt\" Grid",
+    "description": "A 3-column image grid with independent scroll speeds and 3D tilt effects on scroll.",
+    "tags": [
+      "animation",
+      "scroll animation",
+      "landing page"
+    ],
+    "previewUrl": "https://component-474584e9-8b8e-458f-8518-d9468bdf2210.preview.superdesign.dev/?projectId=fa9a0ca3-9361-4934-8488-4a95ea016408"
+  },
+  {
+    "id": "610d44b8-6fd9-4b7d-bcac-ab5aa744c5fa",
+    "title": "Typing animation",
+    "description": "A typing animation component that reveals each character of a headline with a 50ms delay, featuring a minimalist showcase and replay functionality.",
+    "tags": [
+      "animation",
+      "text animation"
+    ],
+    "previewUrl": "https://component-db1c2186-e864-4ce2-aa3d-e15da635a209.preview.superdesign.dev/?projectId=fa9a0ca3-9361-4934-8488-4a95ea016408"
+  },
+  {
+    "id": "098982ad-8810-49c4-978f-df27f2e6f089",
+    "title": "GhostScrollText",
+    "description": "[COMPONENT] A typography component where ghost layers trail and distort behind the main text based on scroll velocity, creating an ectoplasm effect.",
+    "tags": [],
+    "previewUrl": "https://component-b2c5fd65-161c-457a-b530-48b71f4e68be.preview.superdesign.dev/?projectId=fa9a0ca3-9361-4934-8488-4a95ea016408"
+  },
+  {
+    "id": "9d54ac63-43a2-45cd-bd9a-166784c9db85",
+    "title": "The \"Stacking Cards\" Effect",
+    "description": "A portfolio section where cards stack sticky at the top as the user scrolls, creating a deck-of-cards effect using GSAP.",
+    "tags": [
+      "animation",
+      "scroll animation",
+      "landing page"
+    ],
+    "previewUrl": "https://component-6b36e0d8-1a95-407d-90f0-ba0162768672.preview.superdesign.dev/?projectId=fa9a0ca3-9361-4934-8488-4a95ea016408"
+  },
+  {
+    "id": "c727f571-f463-431e-9e0d-fcc8543255fe",
+    "title": "Sticky Content Switch",
+    "description": "A split-screen section where the left-side heading remains sticky and updates dynamically as associated images scroll on the right side. Uses GSAP ScrollTrigger for precise synchronization.",
+    "tags": [
+      "animation",
+      "scroll animation",
+      "landing page"
+    ],
+    "previewUrl": "https://component-ae685855-358b-4a60-8cc9-c88ffd0c05de.preview.superdesign.dev/?projectId=fa9a0ca3-9361-4934-8488-4a95ea016408"
+  },
+  {
+    "id": "1d93d32f-752f-4aa8-a2c2-5b7a5861fc26",
+    "title": "Shrinking Sticky Header",
+    "description": "A sticky header that shrinks in height and transitions to a glassmorphism effect when scrolling down.",
+    "tags": [
+      "ui component"
+    ],
+    "previewUrl": "https://component-0c424c25-2e4e-48be-a9af-32c3de23245c.preview.superdesign.dev/?projectId=fa9a0ca3-9361-4934-8488-4a95ea016408"
+  },
+  {
+    "id": "c33ebc70-360a-4fec-9e4a-119c87c80f56",
+    "title": "FullScreenImageExpansion",
+    "description": "A scroll-driven interaction where a centered featured image expands smoothly to fill the entire browser viewport as the user scrolls.",
+    "tags": [
+      "animation",
+      "scroll animation"
+    ],
+    "previewUrl": "https://component-c4034116-d982-4d61-9a10-3ef4104d4eb7.preview.superdesign.dev/?projectId=fa9a0ca3-9361-4934-8488-4a95ea016408"
+  },
+  {
+    "id": "b9ef8f95-5175-4f65-a4bb-9d806a8d0d3d",
+    "title": "Hand Drawn Underline Headline",
+    "description": "A headline component with a cascading text effect and a hand-drawn SVG underline animation that triggers when scrolled into view.",
+    "tags": [
+      "animation",
+      "text animation"
+    ],
+    "previewUrl": "https://component-c688afbf-02c7-4106-9295-ecc9f42c0e2d.preview.superdesign.dev/?projectId=fa9a0ca3-9361-4934-8488-4a95ea016408"
+  },
+  {
+    "id": "e76d1f6a-460e-4644-b6e3-3f9ba211bdb8",
+    "title": "Scroll Journey Line",
+    "description": "An SVG line connector that animates/draws itself based on the user's scroll percentage using Framer Motion.",
+    "tags": [
+      "animation",
+      "scroll animation"
+    ],
+    "previewUrl": "https://component-2bf0e9ba-610f-4d55-97e9-bb459df5ac42.preview.superdesign.dev/?projectId=fa9a0ca3-9361-4934-8488-4a95ea016408"
+  },
+  {
+    "id": "63236c49-7438-4172-a91e-1d1d89d1bf6c",
+    "title": "Cinematic SlideUp Headline",
+    "description": "A premium headline animation where words slide up from behind an invisible mask with a cinematic ease.",
+    "tags": [
+      "animation",
+      "text animation"
+    ],
+    "previewUrl": "https://component-bc6bf1d7-8501-464b-9ea8-044446da9dcc.preview.superdesign.dev/?projectId=fa9a0ca3-9361-4934-8488-4a95ea016408"
+  },
+  {
+    "id": "a90fa366-c651-4039-9f5f-c2584471aa2d",
+    "title": "GhostScrollText",
+    "description": "[COMPONENT] A text component that creates a ghost trail effect when scrolling rapidly. The ghost layers lag behind the main text based on scroll velocity and disappear when scrolling stops.",
+    "tags": [],
+    "previewUrl": "https://component-735cf6de-1ee2-4751-abae-00ab7beaab59.preview.superdesign.dev/?projectId=fa9a0ca3-9361-4934-8488-4a95ea016408"
+  },
+  {
+    "id": "2099a2ef-7dd7-428d-a880-bfaad5216ece",
+    "title": "Rolodex Text",
+    "description": "A text component that cycles through words with a 3D physical slot machine/Rolodex flip animation. Features left-aligned text for inline use and preserved 3D perspective.",
+    "tags": [
+      "animation",
+      "text animation"
+    ],
+    "previewUrl": "https://component-c47714dd-fcab-44dc-ad87-d075f30ce93e.preview.superdesign.dev/?projectId=fa9a0ca3-9361-4934-8488-4a95ea016408"
+  },
+  {
+    "id": "86845e91-7d91-48ca-ab29-3ee94b89d239",
+    "title": "Horizontal Gallery",
+    "description": "A sticky section that locks vertical scroll and translates it into horizontal movement to showcase a gallery. Features robust GSAP ScrollTrigger initialization.",
+    "tags": [
+      "animation",
+      "scroll animation"
+    ],
+    "previewUrl": "https://component-3c2c325c-48bd-490e-845e-72ed1c50ee3c.preview.superdesign.dev/?projectId=fa9a0ca3-9361-4934-8488-4a95ea016408"
+  },
+  {
+    "id": "3cb30893-6414-4d03-bc55-6307e18b67b0",
+    "title": "Character Staggered Fade",
+    "description": "A heading component that reveals text character by character with a blur-to-focus effect and opacity transition.",
+    "tags": [
+      "animation",
+      "text animation"
+    ],
+    "previewUrl": "https://component-10692f14-7b31-4bde-9426-73806b78a0bb.preview.superdesign.dev/?projectId=fa9a0ca3-9361-4934-8488-4a95ea016408"
+  },
+  {
+    "id": "790e50dc-a9db-4254-bceb-0fc68a009563",
+    "title": "The \"Sticky\" Text Morph",
+    "description": "A text component that smoothly transitions font-weight from Light (300) to Extra Bold (800) based on scroll progress using GSAP ScrollTrigger.",
+    "tags": [
+      "animation",
+      "text animation",
+      "scroll animation"
+    ],
+    "previewUrl": "https://component-8f84ba7e-bccc-46e2-ae73-13e7a1198546.preview.superdesign.dev/?projectId=fa9a0ca3-9361-4934-8488-4a95ea016408"
+  }
+]

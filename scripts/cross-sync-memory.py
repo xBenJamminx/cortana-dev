@@ -14,9 +14,9 @@ from datetime import datetime
 from pathlib import Path
 
 MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-DOCS_DIR = Path("/root/clawd")
+DOCS_DIR = Path("/root/.openclaw/workspace")
 MEMORY_DIR = DOCS_DIR / "memory"
-VAPI_API_KEY = "REDACTED_VAPI_API_KEY"
+VAPI_API_KEY = os.environ.get("VAPI_API_KEY", "606642da-eb59-4211-a215-abc48e34d41e")
 ASSISTANT_ID = "899db371-3ca9-44f6-8ad3-a70131af4987"
 
 def get_db():

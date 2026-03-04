@@ -12,8 +12,8 @@ from pathlib import Path
 from collections import Counter
 
 MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/content-analytics.log")
-SUMMARY_FILE = Path("/root/clawd/memory/content_analytics_summary.txt")
+LOG_FILE = Path("/root/.openclaw/workspace/logs/content-analytics.log")
+SUMMARY_FILE = Path("/root/.openclaw/workspace/memory/content_analytics_summary.txt")
 
 def log(msg):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")

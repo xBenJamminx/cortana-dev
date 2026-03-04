@@ -3,7 +3,7 @@
 Cortana Watchdog v2 — Comprehensive health monitor and auto-recovery.
 
 Runs every 2 minutes via cron with flock to prevent duplicate execution:
-  */2 * * * * /usr/bin/flock -n /tmp/watchdog.lock python3 /root/clawd/scripts/watchdog.py >> /var/log/clawd/watchdog.log 2>&1
+  */2 * * * * /usr/bin/flock -n /tmp/watchdog.lock python3 /root/.openclaw/workspace/scripts/watchdog.py >> /var/log/clawd/watchdog.log 2>&1
 
 Features:
   - Gateway health: systemd state + HTTP probe
@@ -27,7 +27,7 @@ from datetime import datetime
 from pathlib import Path
 
 # Setup paths before importing lib
-sys.path.insert(0, "/root/clawd")
+sys.path.insert(0, "/root/.openclaw/workspace")
 
 from lib.alerting import send_alert, clear_alert
 from lib.health import (
@@ -48,10 +48,10 @@ GATEWAY_PORT = 18789
 
 # Cron jobs to monitor for freshness (path, max_age_hours, description)
 CRON_JOBS = [
-    ("/root/clawd/logs/cron-morning.log", 26, "Morning briefing"),
-    ("/root/clawd/logs/cron-intel.log", 6, "Content intel"),
-    ("/root/clawd/logs/twitter-cron.log", 8, "Twitter monitor"),
-    ("/root/clawd/logs/youtube-cron.log", 8, "YouTube monitor"),
+    ("/root/.openclaw/workspace/logs/cron-morning.log", 26, "Morning briefing"),
+    ("/root/.openclaw/workspace/logs/cron-intel.log", 6, "Content intel"),
+    ("/root/.openclaw/workspace/logs/twitter-cron.log", 8, "Twitter monitor"),
+    ("/root/.openclaw/workspace/logs/youtube-cron.log", 8, "YouTube monitor"),
     ("/var/log/clawd/watchdog.log", 0.1, "Watchdog itself"),
 ]
 

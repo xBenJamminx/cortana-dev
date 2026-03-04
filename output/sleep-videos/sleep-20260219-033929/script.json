@@ -1,0 +1,58 @@
+{
+  "title": "A Mountain Lake Stargazing Sleep Story",
+  "description": "Drift into peaceful slumber with this soothing sleep story. Imagine a tranquil evening by a mountain lake as stars gently appear, guiding you to deep relaxation and restful sleep. Let the calm of nature lull you to profound rest.",
+  "tags": [
+    "sleep story",
+    "bedtime story",
+    "relaxation",
+    "sleep meditation",
+    "mountain lake",
+    "stargazing",
+    "calm",
+    "deep sleep",
+    "peaceful",
+    "nature sounds"
+  ],
+  "scenes": [
+    {
+      "narration": "Imagine yourself... arriving at a still mountain lake... as the day's last light... paints the sky in soft hues. The air is cool... and fresh... carrying the scent of pine... a gentle welcome to this tranquil place. Feel the quiet settle around you...",
+      "image_prompt": "Photorealistic cinematic 16:9 shot of a serene mountain lake at golden hour, twilight just beginning. Soft, warm light casts long shadows. The water is perfectly still, reflecting the last orange and purple hues of the sky. Lush evergreen forest surrounds the lake. Calming colors: deep blues, soft purples, warm ambers, forest greens. No people, no text.",
+      "effect": "zoom_out"
+    },
+    {
+      "narration": "You find a comfortable spot... on a smooth, warm rock... or perhaps a soft patch of moss. The last whispers of twilight... begin to deepen... turning the sky from lavender... to a soft, inky blue. The lake surface... is a perfect mirror...",
+      "image_prompt": "Photorealistic cinematic 16:9 shot of a quiet, smooth rock on the edge of a mountain lake as twilight deepens. The sky is a soft, inky blue with hints of fading lavender. The water's surface is like a dark mirror. Focus on the textures of the rock and the calm water. Soft, cool evening light. Calming colors: deep blues, soft purples, grays, forest greens. No people, no text.",
+      "effect": "pan_right"
+    },
+    {
+      "narration": "Look up... and there... a tiny pinprick of light... the very first star... shyly appears. And then... another... reflected perfectly... in the dark glass of the lake below. A sense of wonder... begins to bloom within you...",
+      "image_prompt": "Photorealistic cinematic 16:9 shot of a mountain lake at early night, the sky a deep indigo. The very first tiny, bright star is visible in the sky, with its perfect, shimmering reflection visible on the still lake surface. The surrounding mountains are dark silhouettes. Soft, cool moonlight begins to cast a gentle glow. Calming colors: deep indigos, soft grays, hints of silver. No people, no text.",
+      "effect": "zoom_in"
+    },
+    {
+      "narration": "Slowly... steadily... more and more stars emerge... scattering across the darkening canvas. They twinkle softly... like distant diamonds... inviting your gaze... into the vast, peaceful expanse above. Feel yourself relax... deeper and deeper...",
+      "image_prompt": "Photorealistic cinematic 16:9 wide shot of a mountain lake at night, the sky now filled with countless softly twinkling stars. The Milky Way is faintly visible. The lake surface reflects the starry sky like a mosaic. Surrounding evergreen trees are dark, peaceful forms. Soft moonlight and starlight illuminate the scene gently. Calming colors: deep blues, purples, silver-white stars. No people, no text.",
+      "effect": "pan_up"
+    },
+    {
+      "narration": "A faint ripple... on the lake's surface... perhaps a fish... or a gentle breeze... barely whispers past. The cool night air... lightly brushes your skin... a comforting touch... as the world grows hushed... and still around you.",
+      "image_prompt": "Photorealistic cinematic 16:9 shot, close-up on the surface of a mountain lake at night. A very faint, gentle ripple expands outwards, subtly distorting the reflection of a few distant stars. The water's texture is soft and dark. Soft, ambient starlight and faint moonlight. Calming colors: deep blues, blacks, shimmering silver. No people, no text.",
+      "effect": "zoom_in"
+    },
+    {
+      "narration": "Your eyes trace the patterns... of these ancient lights... feeling a connection... to something timeless... and grand. You begin to feel... as if you are floating... gently amongst them... carried by their silent glow...",
+      "image_prompt": "Photorealistic cinematic 16:9 shot, an artistic, slightly abstract view of a starry night sky merging with its reflection on a mountain lake. The stars appear as soft, glowing orbs, some slightly blurred, creating a sense of floating. The boundary between sky and water is indistinct. Soft, ethereal starlight. Calming colors: deep blues, purples, soft white and silver glows. No people, no text.",
+      "effect": "pan_down"
+    },
+    {
+      "narration": "Each star... a soft, warm light... encouraging your eyelids... to grow heavy... and your breath... to deepen. The gentle shimmer... on the lake... becomes a lullaby... a quiet invitation... to rest now...",
+      "image_prompt": "Photorealistic cinematic 16:9 shot, a peaceful, dreamlike close-up of a cluster of soft, warm-toned stars in the night sky above a mountain lake. The stars glow gently, almost like embers. The surrounding sky is a deep, comforting velvet blue. Soft, warm starlight. Calming colors: deep velvety blues, soft gold, amber, and silver stars. No people, no text.",
+      "effect": "zoom_out"
+    },
+    {
+      "narration": "Let the vast, quiet beauty... wrap around you... like a cozy blanket. The stars continue their silent watch... as you drift... deeper... and deeper... into a peaceful, dreamless sleep. Rest now... sleep deeply...",
+      "image_prompt": "Photorealistic cinematic 16:9 shot, a deeply peaceful and dark scene of a mountain lake at late night. Only the faintest pinpricks of light from distant stars are visible, almost disappearing into the deep, dark blue and black of the sky and lake. The overall impression is one of profound calm and gentle darkness. Minimal, soft ambient light. Calming colors: very deep blues, blacks, tiny silver points. No people, no text.",
+      "effect": "zoom_in"
+    }
+  ]
+}

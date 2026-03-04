@@ -120,3 +120,23 @@
 - Usage: bash /root/.openclaw/workspace/lib/spawn_task.sh <topic_id> "task description"
 - Watchdog also lowered: fresh 300s→60s, maxMs 900s→180s (fail fast instead of hanging)
 - CLAUDE.md updated: Cortana is orchestrator not worker, anything >10s = spawn_task.sh
+
+### 14. OpenClaw default session config wipes context — change it immediately
+- **Date:** Mar 2026
+- **What happened:** Ben kept losing conversation context between messages, sometimes even minutes apart. Cortana would respond to "Huh?" with no idea what they'd been discussing. Multi-day conversations (like the 50 business ideas research) vanished completely after gaps.
+- **Root cause:** OpenClaw ships with session defaults that aggressively wipe sessions:
+  - `reset.mode: "daily"` — wipes ALL sessions at 4am every day
+  - `idleMinutes: 60` (default) — any gap >1 hour between messages = brand new session
+  - These defaults applied to ALL session types (direct, group, thread/topic)
+  - No `session` block existed in openclaw.json, so all defaults were active
+- **How sessions work:** Each Telegram message spawns a fresh `claude -p --resume {sessionId}` process. If the session is "fresh" (not stale per idle/daily rules), it reuses the existing Claude CLI session ID. If stale, it generates a new UUID and all prior context is gone.
+- **Fix applied:** Added `session` config block to `/root/.openclaw/openclaw.json`:
+  - `reset.mode: "idle"` (no more 4am daily wipe)
+  - `reset.idleMinutes: 1440` (24 hours instead of 60 minutes)
+  - Applied via `resetByType` to thread, group, and direct sessions
+- **Rule:** After any OpenClaw install or upgrade, check `openclaw.json` for a `session` block. If missing, add one with idle mode and a high timeout. The defaults are designed for casual chatbots, not persistent assistants.
+- **Key code locations:**
+  - Freshness check: `sessions-DOpDuDMA.js` line 327 `evaluateSessionFreshness()`
+  - Session key derivation: same file line 349 `deriveSessionKey()`
+  - CLI resume logic: `reply-YQvtZDnf.js` line 31339 `useResume` flag
+- **Note:** Gateway restart kills the current session (ironic when fixing session persistence). The fix survives restarts since it's in the config file. Gateway auto-restarts via systemd.

@@ -23,7 +23,7 @@ _load_env()
 
 BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
-LOG = "/root/clawd/logs/scheduled-posts.log"
+LOG = "/root/.openclaw/workspace/logs/scheduled-posts.log"
 
 draft = """Your @OpenClaw bot has a memory system out of the box. It indexes a few files and calls it a day.
 

@@ -1,20 +1,19 @@
-🚀 Indie Hacker Monitor (2026-02-09 13:02)
+🚀 Indie Hacker Monitor (2026-03-04 13:01)
 
 🔥 Hot Topics:
-  • solopreneur: 32 mentions
-  • side project: 21 mentions
-  • launch: 17 mentions
-  • build in public: 16 mentions
-  • bootstrapped: 12 mentions
+  • solopreneur: 9 mentions
+  • launch: 8 mentions
+  • bootstrapped: 5 mentions
+  • build in public: 2 mentions
 
 📈 Top Stories:
-  • [Hacker News] (914⬆): Vouch
-    https://github.com/mitchellh/vouch
-  • [Hacker News] (631⬆): Start all of your commands with a comma (2009)
-    https://rhodesmill.org/brandon/2009/commands-with-comma/
-  • [Hacker News] (454⬆): We mourn our craft
-    https://nolanlawson.com/2026/02/07/we-mourn-our-craft/
-  • [Hacker News] (412⬆): Art of Roads in Games
-    https://sandboxspirit.com/blog/art-of-roads-in-games/
-  • [Hacker News] (393⬆): Vocal Guide – belt sing without killing yourself
-    https://jesperordrup.github.io/vocal-guide/
+  • [Hacker News] (2230⬆): Motorola announces a partnership with GrapheneOS
+    https://motorolanews.com/motorola-three-new-b2b-solutions-at-mwc-2026/
+  • [Hacker News] (1194⬆): Meta’s AI smart glasses and data privacy concerns
+    https://www.svd.se/a/K8nrV4/metas-ai-smart-glasses-and-data-privacy-concerns-workers-say-we-see-everything
+  • [Hacker News] (904⬆): British Columbia is permanently adopting daylight time
+    https://www.cbc.ca/news/canada/british-columbia/b-c-adopting-year-round-daylight-time-9.7111657
+  • [Hacker News] (873⬆): Motorola GrapheneOS devices will be bootloader unlockable/relockable
+    https://grapheneos.social/@GrapheneOS/116160393783585567
+  • [Hacker News] (812⬆): MacBook Pro with M5 Pro and M5 Max
+    https://www.apple.com/newsroom/2026/03/apple-introduces-macbook-pro-with-all-new-m5-pro-and-m5-max/

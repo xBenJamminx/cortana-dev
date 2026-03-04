@@ -52,7 +52,6 @@ CRON_JOBS = [
     ("/root/.openclaw/workspace/logs/cron-intel.log", 6, "Content intel"),
     ("/root/.openclaw/workspace/logs/youtube-cron.log", 8, "YouTube monitor"),
     ("/root/.openclaw/workspace/logs/email-newsletters.log", 6, "Newsletter monitor"),
-    ("/root/.openclaw/workspace/logs/reddit-monitor.log", 6, "Reddit monitor"),
     ("/var/log/clawd/watchdog.log", 0.1, "Watchdog itself"),
 ]
 
@@ -143,6 +142,12 @@ def check_gateway():
     svc = check_systemd_service()
     log.info("Service: state=%s sub=%s restarts=%d",
              svc["state"], svc["sub_state"], svc["restart_count"])
+
+    # Skip check if gateway is in a transient state (mid-restart/stop)
+    # Intervening here caused the Feb 24 outage - watchdog killed a gracefully stopping gateway
+    if svc["state"] in ("deactivating", "activating", "reloading"):
+        log.info("Gateway in transient state (%s), skipping this check", svc["state"])
+        return
 
     # Check HTTP health
     http = check_gateway_http()
@@ -300,40 +305,10 @@ def check_disk():
 
 
 # --- Log staleness / hung session detection ---
-LOG_STALE_SECS = 1800  # 30 min - allow idle conversations without restarting
-
+# Disabled: idle sessions waiting for Telegram input are normal, not stuck.
+# The gateway handles its own session lifecycle. Restarting it kills active conversations.
 def check_log_staleness():
-    import glob
-    ps = subprocess.run(["ps", "-eo", "pid,cmd"], capture_output=True, text=True, timeout=10)
-    has_claude = any(
-        "claude" in line and "grep" not in line and "watchdog" not in line
-        for line in ps.stdout.splitlines()
-    )
-    if not has_claude:
-        return
-
-    log_files = sorted(glob.glob("/tmp/openclaw/openclaw-*.log"), reverse=True)
-    if not log_files:
-        return
-
-    try:
-        age_secs = time.time() - os.path.getmtime(log_files[0])
-    except OSError:
-        return
-
-    log.info("Log staleness: %.0fs (threshold %ds)", age_secs, LOG_STALE_SECS)
-
-    if age_secs > LOG_STALE_SECS:
-        log.warning("Hung session: claude active but log silent for %.0fs", age_secs)
-        send_alert(
-            "session_hung",
-            "Hung session detected: claude process active but log silent for {:.0f}s — restarting".format(age_secs),
-            level="warning",
-            cooldown=600,
-        )
-        subprocess.run(["systemctl", "restart", "openclaw-gateway"],
-                       capture_output=True, timeout=30)
-        log.info("Gateway restarted due to hung session")
+    pass
 
 # --- Main ---
 def main():

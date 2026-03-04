@@ -1,0 +1,58 @@
+{
+  "title": "Mountain Lake Starlight: A Gentle Sleep Story",
+  "description": "Drift into a peaceful slumber with this calming sleep story. Imagine a quiet evening by a serene mountain lake, as countless stars slowly emerge in the velvet sky. Let the gentle sounds and soft visuals guide you into deep relaxation and restorative sleep.",
+  "tags": [
+    "sleep story",
+    "bedtime story",
+    "relaxation",
+    "meditation",
+    "calm",
+    "insomnia relief",
+    "nature sounds",
+    "star gazing",
+    "mountain lake",
+    "peaceful sleep"
+  ],
+  "scenes": [
+    {
+      "narration": "Imagine yourself... gently settling down... by the edge of a tranquil mountain lake. The last sliver of daylight... a soft, golden glow... touches the distant peaks. A day full of thoughts... begins to fade... with the setting sun.",
+      "image_prompt": "A serene, cinematic 16:9 shot of a vast mountain lake at late golden hour. Distant, majestic mountains are silhouetted against a sky with soft orange and purple hues. The lake surface is perfectly still, reflecting the fading light. No people, no text. Soft, warm lighting, calming colors. Photorealistic.",
+      "effect": "pan_right"
+    },
+    {
+      "narration": "Feel the cool, clean air... a whisper against your skin... carrying the scent of pine and fresh water. Listen... to the soft, rhythmic lapping of tiny waves... against the shore. A gentle lullaby... from nature itself... soothing your senses.",
+      "image_prompt": "Close-up, cinematic 16:9 shot of the edge of a calm mountain lake at twilight. Gentle ripples barely disturb the surface. A few smooth, dark pebbles are visible at the water's edge. The light is soft blue-purple, reflecting the deepening sky. No people, no text. Calming, cool colors. Photorealistic.",
+      "effect": "zoom_in"
+    },
+    {
+      "narration": "Look up... as the sky deepens... from a gentle blue to a rich, velvety indigo. And there... high above... the very first star... a tiny, shimmering diamond... appears. Then another... and another... shyly greeting the night.",
+      "image_prompt": "A wide, cinematic 16:9 shot of a twilight sky over a mountain lake. The sky is transitioning from deep blue to indigo, with the first few bright stars just becoming visible. The distant mountain peaks are now dark silhouettes. The lake reflects the darkening sky. No people, no text. Soft, deep blue and purple hues. Photorealistic.",
+      "effect": "pan_up"
+    },
+    {
+      "narration": "With each passing moment... more stars emerge... scattering across the vast canvas above. Their gentle light... begins to dance... upon the still surface of the lake. A mirror... reflecting the heavens... twice the wonder.",
+      "image_prompt": "Cinematic 16:9 shot of a mountain lake at early night. Hundreds of stars are now visible in the dark sky, and their reflections twinkle softly on the calm lake surface. The distant mountains are barely visible as dark shapes. Soft, cool moonlight begins to cast a gentle sheen. No people, no text. Deep blues, subtle silvers. Photorealistic.",
+      "effect": "zoom_out"
+    },
+    {
+      "narration": "The night is now full... of a million tiny lights... each one a distant sun. They seem to whisper secrets... from across the universe... just for you. Bathed in their soft glow... feel utterly peaceful... utterly still.",
+      "image_prompt": "A breathtaking, cinematic 16:9 long exposure shot of a clear night sky over a serene mountain lake. Thousands of stars are visible, including parts of the Milky Way, gently arcing across the sky. The stars reflect brightly on the perfectly still lake. The scene is bathed in soft, ethereal moonlight. No people, no text. Deep, dark blues and purples with bright star points. Photorealistic.",
+      "effect": "pan_left"
+    },
+    {
+      "narration": "Let your gaze drift... among the constellations... tracing invisible lines. Feel the immense quiet... the vastness of space... surrounding you. All worries... become small and distant... like the furthest stars.",
+      "image_prompt": "A slightly tighter, cinematic 16:9 shot focusing on the star-filled sky directly above the lake. The Milky Way is prominent, and countless stars create a shimmering tapestry. The very top edge of the still lake, reflecting the stars, is just visible at the bottom. The lighting is purely starlight and soft moonlight. No people, no text. Dark, deep blues and purples. Photorealistic.",
+      "effect": "zoom_in"
+    },
+    {
+      "narration": "The mountains sleep now... dark, gentle giants... against the star-dusted sky. Their forms are soft... blurred at the edges... like a memory... or a half-dream. You are part of this quiet... part of this peace.",
+      "image_prompt": "A very soft, ethereal cinematic 16:9 shot of distant, rounded mountain silhouettes under a star-filled sky. The mountains are almost indistinguishable from the dark sky, appearing as soft, velvety shapes. The stars are slightly out of focus, creating a dreamy glow. The light is extremely dim, just moonlight and starlight. No people, no text. Very deep, muted blues and grays. Photorealistic.",
+      "effect": "pan_down"
+    },
+    {
+      "narration": "Allow your breath... to grow softer... slower... with each passing moment. The stars drift... and you drift... deeper into slumber. Floating... on the gentle currents... of a star-filled dream. Rest now... deeply... peacefully.",
+      "image_prompt": "An abstract, dreamlike cinematic 16:9 shot of swirling, soft blue and purple nebulae mixed with tiny, glittering star points, resembling a cosmic cloudscape or a dream. The edges are soft and blurred. There's a gentle, almost imperceptible movement implied. No discernible landscape features, just cosmic beauty. No people, no text. Soft, luminous, muted blues, purples, and silver points. Photorealistic.",
+      "effect": "zoom_out"
+    }
+  ]
+}

@@ -1,112 +1,53 @@
-# BuildsByBen Discord Server Structure
+# EverydayAI Discord Server Structure
 
-Last updated: 2026-02-07
+Last updated: 2026-02-20
 
----
+**Strategy:** Free community. No tiers, no paywall. Collect people organically over time.
 
-## Roles (Managed by Whop)
-
-| Role | Color | Source | Access Level |
-|------|-------|--------|-------------|
-| @Admin | Red | Manual | Everything |
-| @Founding-Member | Gold | Whop ($29/mo, 50 spots) | Core + Founders-only |
-| @Standard-Member | Blue | Whop ($49/mo) | Core + Premium |
-| @Free | Gray | Whop ($0) | Limited |
-| @everyone | Default | Discord | Public channels only |
+**Invite link:** https://discord.gg/GE38Fp686W
 
 ---
 
-## Channel Structure
+## Channel Structure (11 channels)
 
-### PUBLIC (visible to everyone, including non-members)
+### 📋 INFO
+- `#welcome` — What this place is, who Ben is, how to get started
+- `#announcements` — New drops, updates, anything important
+- `#introductions` — New members say hi, tell us who you are
+- `#rules` — Community guidelines (required by Discord community server)
 
-**WELCOME**
-- `#welcome` (read-only) -- Server rules, what this place is, how to get access
-- `#how-to-join` (read-only) -- Step-by-step: buy on Whop, click Claim Access, get your role
-- `#announcements` (read-only) -- Major updates, new content drops, events
+### 💬 COMMUNITY
+- `#general` — Main hangout, conversation, vibes
+- `#help` — "How do I do X?" questions, troubleshooting, advice
+- `#show-and-tell` — Members share what they built or automated
+- `#wins` — Celebrate what's working, big or small
 
-### FREE TIER (visible to @Free + all paid members)
-
-**COMMUNITY**
-- `#introductions` -- New member intros. Name, what you do, what you want to learn.
-- `#general-chat` -- Open conversation. AI, business, life. Low stakes.
-- `#share-your-wins` -- Ship something? Land a client? Automate a task? Post it here.
-
-### PAID TIER (visible to @Founding-Member + @Standard-Member)
-
-**LEARN AI**
-- `#prompt-engineering` -- Share prompts, ask for help, post results
-- `#tool-talk` -- Discuss AI tools, compare options, share discoveries
-- `#tutorials-and-guides` -- Written walkthroughs and how-tos (Ben + community)
-- `#show-and-tell` -- Show what you built or automated. Screenshots encouraged.
-
-**BUILD STUFF**
-- `#side-projects` -- Working on something? Get feedback, accountability, ideas.
-- `#automation-help` -- n8n, Make, Zapier, workflows. Ask questions, share solutions.
-- `#business-ops` -- Using AI for business? Client work, proposals, processes. Talk here.
-
-**RESOURCES**
-- `#tool-deals` -- Discounts, free tiers, limited offers. Vetted by Ben, not spam.
-- `#content-drops` (read-only) -- New prompt packs, tutorials, and guides as they ship.
-- `#links-and-bookmarks` -- Useful articles, videos, threads. Community-curated.
-
-### FOUNDERS ONLY (visible to @Founding-Member only)
-
-- `#founders-lounge` -- Smaller room. Direct access to Ben. Early previews. Candid conversation.
-- `#founders-feedback` -- Shape what gets built next. Your input directly influences the roadmap.
-
-### STANDARD + FOUNDERS (visible to @Standard-Member + @Founding-Member)
-
-- `#live-session-replays` -- Recordings from monthly AMAs and live builds
-- `#advanced-resources` -- Deeper content: multi-step workflows, complex automations, technical builds
-- `#ask-ben` -- Direct Q&A channel. Ben answers within 24 hours on weekdays.
-
-### ADMIN (visible to @Admin only)
-
-- `#admin-log` -- Bot activity, member joins/leaves, moderation actions
-- `#content-planning` -- What to build next, content calendar, ideas
+### 📦 RESOURCES
+- `#prompts` — Prompt packs, tips, and techniques
+- `#guides` — Tutorials, walkthroughs, and case studies
+- `#templates` — Airtable, Notion, spreadsheets, frameworks
+- `#tools` — Tool recommendations, deals, and reviews
 
 ---
 
-## Bot Setup
+## Growth Strategy
 
-### Required Bots
-1. **Whop Bot** -- Role assignment on purchase. Must be highest role in hierarchy.
-2. **MEE6 or Carl-bot** -- Welcome messages, auto-moderation, reaction roles (optional)
+- No launch event. Organic, 1-at-a-time collection.
+- Meet someone interesting? Share the invite link.
+- Good convo on LinkedIn/Reddit? Drop the invite.
+- P&T prospect not ready to buy? "Join the free community."
+- All deliverables (prompt packs, guides, templates) dropped in Resources channels for free.
 
-### Whop Bot Configuration
-- Founding Member product -> assigns @Founding-Member role
-- Standard Member product -> assigns @Standard-Member role
-- Free product -> assigns @Free role
-- On cancellation: "Remove given roles" (keeps them in server, removes channel access)
+## Future Additions (only when needed)
 
----
-
-## Channel Count: 20 total
-
-- 3 public
-- 3 free tier
-- 9 paid tier (shared)
-- 2 founders only
-- 3 standard + founders
-- 2 admin
-
-Lean on purpose. Easy to add channels later. Painful to remove them once people are using them.
+- Paid tier / Whop integration (when 50-100 active members)
+- Voice channels (when people ask for them)
+- More topic-specific channels (when conversations overflow)
+- `#off-topic` (when general gets too noisy)
 
 ---
 
-## Onboarding Flow
+## Bot: Cortana#5539
 
-1. User finds BuildsByBen (X, YouTube, landing page)
-2. Goes to Whop storefront, picks a tier
-3. Purchases on Whop
-4. Whop shows "Claim Access" button for Discord
-5. User clicks it, authorizes Whop Bot, gets role assigned
-6. Lands in #welcome which tells them to post in #introductions
-7. Ben (or Cortana) sends a DM welcoming them and pointing to key channels
-
-### Common friction point
-Users forget to click "Claim Access." Mitigation:
-- Post-purchase page on Whop prominently says "Click the button below to join Discord"
-- Welcome email includes direct Discord link + instructions
-- #how-to-join channel visible to everyone explains the process with screenshots
+- Discord bot token, guild ID, app ID in ~/.openclaw/.env
+- Server: EverydayAI (799385636515086336)

@@ -1,66 +1,188 @@
-# SketchMagic Style Guide
+# SketchMagic - Art Styles Guide
 
-## Art Styles & NB2 Prompt Templates
+## How NB2 Sketch-to-Art Works
 
-Each style transforms the user's sketch using a carefully crafted prompt sent to Nano Banana 2 (gemini-3.1-flash-image-preview).
+SketchMagic uses Google's Nano Banana 2 model (`gemini-3.1-flash-image-preview`) for image-to-image transformation. We send:
+1. The user's sketch as a PNG (base64 inline_data)
+2. A style-specific text prompt
 
-### Tips for Best Results with NB2
+NB2 interprets the sketch's composition, subjects, and layout, then regenerates the image in the requested style.
 
-- **Simple sketches work best** - NB2 excels at interpreting rough drawings, not detailed ones
-- **Clear subjects** - A recognizable shape (person, house, tree, animal) gives NB2 something to work with
-- **White background** - PencilKit exports with white bg, which NB2 handles well
-- **Composition matters** - Where things are placed in the sketch is preserved in the output
-- **Black pen recommended** - High contrast sketches give the clearest signal to NB2
+## All 10 Styles with Prompts
 
-### Style Definitions
+### 1. Photorealistic
+- **Icon:** SF Symbol `camera.fill`
+- **Color:** #2C3E50 (dark blue-gray)
+- **Description:** "Make it look real"
+- **Best for:** Animals, landscapes, objects, portraits
 
-#### 1. Photorealistic
-- **Best for:** Landscapes, portraits, animals, architecture
-- **Prompt:** "Transform this sketch into a photorealistic image. Make it look like a high-quality photograph with realistic lighting, textures, materials, and depth of field. Maintain the exact composition, subjects, and layout of the original drawing. Add realistic environmental details, shadows, and atmosphere."
+```
+Transform this sketch into a photorealistic image. Create a highly detailed,
+lifelike rendering with natural lighting, realistic textures, and accurate
+proportions. Maintain the exact composition and subject of the original drawing.
+The result should look like a professional photograph.
+```
 
-#### 2. Watercolor
-- **Best for:** Nature scenes, flowers, soft subjects
-- **Prompt:** "Transform this sketch into a beautiful watercolor painting. Use soft, translucent washes of color with visible paper texture. Include gentle color bleeds at edges, wet-on-wet effects, and subtle granulation. Maintain the composition of the original drawing."
+### 2. Watercolor
+- **Icon:** SF Symbol `paintpalette.fill`
+- **Color:** #3498DB (blue)
+- **Description:** "Soft, flowing colors"
+- **Best for:** Flowers, landscapes, animals, abstract shapes
 
-#### 3. Anime
-- **Best for:** Characters, action scenes, fantasy creatures
-- **Prompt:** "Transform this sketch into anime/manga style artwork. Use clean bold outlines, flat cel-shaded colors with sharp shadows, large expressive features, and vibrant saturated colors. Include anime-style highlights and shading. Maintain the composition of the original drawing. Style similar to Studio Ghibli or modern anime."
+```
+Transform this sketch into a beautiful watercolor painting. Use soft, flowing
+washes of color with visible brushstrokes and gentle color bleeding at the edges.
+Include subtle paper texture. Maintain the composition and subject of the original
+drawing. The style should feel like a hand-painted watercolor artwork with
+translucent layers.
+```
 
-#### 4. Pixel Art
-- **Best for:** Characters, simple objects, retro game scenes
-- **Prompt:** "Transform this sketch into pixel art. Use a limited color palette with clearly visible square pixels. Include pixel-perfect edges, dithering for gradients, and retro video game aesthetics. Maintain the composition of the original drawing. Style similar to 16-bit era SNES/Genesis games with rich detail."
+### 3. Anime
+- **Icon:** SF Symbol `sparkles`
+- **Color:** #E91E63 (pink)
+- **Description:** "Japanese animation style"
+- **Best for:** Characters, faces, action scenes, fantasy creatures
 
-#### 5. Fantasy
-- **Best for:** Castles, dragons, magical scenes, epic landscapes
-- **Prompt:** "Transform this sketch into epic fantasy artwork. Add magical glowing elements, dramatic lighting with volumetric rays, rich saturated colors, and an enchanted atmosphere. Include subtle magical particles, mystical fog, and ethereal lighting effects. Maintain the composition of the original drawing."
+```
+Transform this sketch into anime/manga style artwork. Use clean bold outlines,
+vibrant flat colors, large expressive eyes if characters are present, and dynamic
+shading typical of Japanese animation. Add subtle cel-shading and anime-style
+highlights. Maintain the composition and subject of the original drawing.
+```
 
-#### 6. Cartoon
-- **Best for:** Characters, funny scenes, animals, everyday objects
-- **Prompt:** "Transform this sketch into a vibrant cartoon illustration. Use bold black outlines, bright flat colors, exaggerated proportions, and playful details. Add fun expressions and dynamic energy. Maintain the composition of the original drawing."
+### 4. Pixel Art
+- **Icon:** SF Symbol `gamecontroller.fill`
+- **Color:** #27AE60 (green)
+- **Description:** "Retro video game pixels"
+- **Best for:** Characters, simple objects, icons, game sprites
 
-#### 7. Oil Painting
-- **Best for:** Portraits, landscapes, still life
-- **Prompt:** "Transform this sketch into a classical oil painting. Show visible impasto brushstrokes with thick paint texture, rich deep colors, dramatic chiaroscuro lighting, and masterful color blending. Maintain the composition of the original drawing."
+```
+Transform this sketch into detailed pixel art. Use a visible pixel grid with
+carefully chosen colors in a limited palette. The style should evoke classic
+16-bit era video games with clean, deliberate pixel placement. Maintain the
+composition and subject of the original drawing. Include subtle dithering
+for shading.
+```
 
-#### 8. Pencil Sketch (Enhanced)
-- **Best for:** Portraits, architecture, detailed subjects
-- **Prompt:** "Transform this sketch into a detailed, professional pencil drawing. Use precise graphite shading with smooth gradients, cross-hatching for shadows, fine linework for details, and realistic tonal values. Show paper texture beneath. Maintain the composition of the original drawing."
+### 5. Fantasy
+- **Icon:** SF Symbol `wand.and.stars`
+- **Color:** #9B59B6 (purple)
+- **Description:** "Enchanted and mystical"
+- **Best for:** Creatures, castles, magical scenes, characters with powers
 
-#### 9. Pop Art
-- **Best for:** Portraits, everyday objects, bold subjects
-- **Prompt:** "Transform this sketch into bold pop art. Use bright primary colors, thick black outlines, Ben-Day dots pattern, high contrast graphic shapes, and comic book aesthetics. Include halftone effects and bold color blocks. Maintain the composition of the original drawing."
+```
+Transform this sketch into a magical fantasy illustration. Add glowing magical
+effects, ethereal lighting, sparkling particles, and an enchanted atmosphere.
+Use rich, vibrant colors with magical auras and fantasy-style rendering. Maintain
+the composition and subject of the original drawing. The result should feel like
+concept art from a fantasy world.
+```
 
-#### 10. Storybook
-- **Best for:** Characters, animals, whimsical scenes (most kid-friendly)
-- **Prompt:** "Transform this sketch into a charming children's storybook illustration. Use warm, inviting colors with soft edges, gentle lighting, whimsical details, and a cozy magical atmosphere. Include delicate textures and hand-crafted feeling. Maintain the composition of the original drawing."
+### 6. Cartoon
+- **Icon:** SF Symbol `bubble.left.fill`
+- **Color:** #F39C12 (orange)
+- **Description:** "Bold and fun comic style"
+- **Best for:** People, animals, funny scenes, action
 
-#### 11. Cyberpunk
-- **Best for:** City scenes, robots, futuristic subjects
-- **Prompt:** "Transform this sketch into cyberpunk artwork. Add neon glowing lights in pink, blue, and purple, dark atmospheric backgrounds, futuristic technology elements, rain-slicked reflective surfaces, and holographic effects. Maintain the composition of the original drawing."
+```
+Transform this sketch into a bold cartoon/comic book style illustration. Use
+thick black outlines, vibrant flat colors, exaggerated proportions, and dynamic
+comic-style shading with halftone dots. Maintain the composition and subject of
+the original drawing. The style should feel like a modern cartoon or comic book panel.
+```
 
-#### 12. Impressionist
-- **Best for:** Outdoor scenes, gardens, water, light-focused subjects
-- **Prompt:** "Transform this sketch into an Impressionist painting. Use visible dappled brushstrokes, vibrant broken color, soft natural lighting capturing a specific moment, and a dreamy luminous quality. Show the interplay of light and color. Maintain the composition of the original drawing."
+### 7. Oil Painting
+- **Icon:** SF Symbol `paintbrush.fill`
+- **Color:** #8B4513 (brown)
+- **Description:** "Classical museum quality"
+- **Best for:** Portraits, landscapes, still life, dramatic scenes
+
+```
+Transform this sketch into a classical oil painting. Use rich, thick brushstrokes
+with visible texture and impasto technique. Include realistic lighting with dramatic
+chiaroscuro, warm tones, and the depth typical of old master paintings. Maintain
+the composition and subject of the original drawing. The result should look like
+it belongs in a museum.
+```
+
+### 8. Pencil Sketch (Enhanced)
+- **Icon:** SF Symbol `pencil.and.outline`
+- **Color:** #7F8C8D (gray)
+- **Description:** "Professional artist sketch"
+- **Best for:** Portraits, architecture, detailed objects, studies
+
+```
+Transform this rough sketch into a professional artist's pencil drawing. Use
+precise graphite pencil techniques with varied line weight, detailed cross-hatching
+for shading, and subtle blending. Add depth through careful tonal values from
+light to dark. Maintain the composition and subject of the original drawing. The
+result should look like a skilled artist's finished pencil illustration.
+```
+
+### 9. Pop Art
+- **Icon:** SF Symbol `star.fill`
+- **Color:** #E74C3C (red)
+- **Description:** "Bold like Warhol"
+- **Best for:** Faces, everyday objects, food, bold subjects
+
+```
+Transform this sketch into a vibrant pop art illustration in the style of Andy
+Warhol and Roy Lichtenstein. Use bold primary colors, thick black outlines,
+Ben-Day dots pattern, and high contrast. Include comic-style elements and dramatic
+color blocking. Maintain the composition and subject of the original drawing. The
+result should feel like iconic 1960s pop art.
+```
+
+### 10. Storybook
+- **Icon:** SF Symbol `book.fill`
+- **Color:** #1ABC9C (teal)
+- **Description:** "Like your favorite picture book"
+- **Best for:** Animals, characters, scenes, whimsical subjects
+
+```
+Transform this sketch into a charming children's storybook illustration. Use warm,
+inviting colors with soft textures and gentle shading. The style should feel like
+a beloved picture book with whimsical details, approachable characters, and a cozy
+atmosphere. Maintain the composition and subject of the original drawing. Add subtle
+background details that enhance the storybook feel.
+```
+
+## Prompt Engineering Tips for NB2 Sketch-to-Art
+
+### What Works Well
+1. **Always start with "Transform this sketch into..."** - This anchors NB2 to treat the input as a sketch to be transformed, not a reference photo.
+2. **End with "Maintain the composition and subject of the original drawing."** - This prevents NB2 from going off-script and generating something unrelated.
+3. **Be specific about visual techniques** - "thick brushstrokes", "cel-shading", "Ben-Day dots" give NB2 concrete visual targets.
+4. **Include texture/material references** - "paper texture", "impasto technique", "visible pixel grid" ground the output in physical media.
+
+### What to Avoid
+1. **Don't say "improve" or "fix"** - NB2 might try to "correct" the sketch rather than transform it into art.
+2. **Don't reference specific copyrighted characters** - "Like Studio Ghibli" is borderline. Use technique descriptions instead.
+3. **Don't use negative prompts** - NB2 doesn't support negative prompting in the same way as Stable Diffusion. State what you want, not what you don't.
+4. **Don't ask for text in the image** - NB2 handles text poorly. If the sketch contains writing, it may get garbled.
+
+### Sketch Quality Tips (for users)
+- **Bold, clear lines work best** - Use the medium or thick brush. Faint sketches produce weaker results.
+- **Fill in major areas** - A stick figure works, but a filled-in character with some shading produces dramatically better results.
+- **White background is key** - The canvas exports with white bg, which NB2 handles well. Don't fill the background with color.
+- **Simple is fine** - Even a basic house with a tree transforms beautifully. Kids' drawings are actually ideal input.
+- **Close your shapes** - Open outlines can confuse NB2 about what's foreground vs background.
+
+### Advanced: Custom Prompt Modifications (Future Feature)
+For power users, consider exposing a "prompt modifier" text field:
+- "...in the rain" adds weather
+- "...at sunset" changes lighting
+- "...with a galaxy background" changes the backdrop
+- "...as a baby version" makes the subject cuter
+
+These modifiers append to the base style prompt before the "Maintain the composition..." line.
+
+### NB2 Behavior Notes
+- **Response time:** 5-15 seconds typical, up to 30 seconds for complex scenes
+- **Safety filters:** NB2 will refuse to generate violent, explicit, or harmful content. Simple kid drawings always pass.
+- **Resolution:** NB2 returns images at roughly 1024px resolution by default
+- **Consistency:** Running the same sketch + prompt twice will produce similar but not identical results (this is a feature, not a bug, users can regenerate to get variations)
+- **Edge cases:** Very abstract/minimal sketches (single line, dots) may produce unexpected results. The loading screen should set expectations.
 
 ## Adding New Styles
 
@@ -69,4 +191,13 @@ To add a new style, update `ArtStyle.swift` with:
 2. Display name, icon (SF Symbol), accent color, description
 3. Full prompt template following the pattern above
 
-Key prompt structure: "Transform this sketch into [style]. [Style-specific details]. Maintain the composition of the original drawing. [Reference to known artists/styles]."
+Key prompt structure: `"Transform this sketch into [style]. [Style-specific details]. Maintain the composition and subject of the original drawing."`
+
+### Future Style Ideas
+- **Cyberpunk** - Neon lights, dark backgrounds, holographic effects
+- **Impressionist** - Dappled brushstrokes, broken color, light-focused
+- **Claymation** - 3D clay-like appearance, soft shadows
+- **Neon/Blacklight** - Glowing lines on dark background
+- **Vintage Photo** - Sepia tones, film grain, faded edges
+- **Low Poly** - Geometric triangulated 3D look
+- **Ukiyo-e** - Japanese woodblock print style

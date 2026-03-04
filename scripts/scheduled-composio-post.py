@@ -23,7 +23,7 @@ _load_env()
 
 BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
-LOG = "/root/clawd/logs/scheduled-posts.log"
+LOG = "/root/.openclaw/workspace/logs/scheduled-posts.log"
 
 draft = """The X API just went pay-per-use. Here's how to use it for $0.
 
@@ -51,7 +51,7 @@ The math: 20K reads through X = $100. 20K calls through Composio = $0.
 
 Here's the forked repo. Use it, build on it.
 
-https://github.com/rohunvora/x-research-skill
+https://github.com/xBenJamminx/x-research-skill
 
 Thanks @frankdegods for the original. This just makes it free."""
 
@@ -72,7 +72,7 @@ reminder = f"""Hey Ben, it's posting time.
 
 Here's your Composio X API article draft. Format it however you want and post when ready.
 
-TODO: Replace https://github.com/rohunvora/x-research-skill with the GitHub repo URL before posting.
+TODO: Replace https://github.com/xBenJamminx/x-research-skill with the GitHub repo URL before posting.
 
 ---
 

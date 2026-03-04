@@ -31,5 +31,5 @@
 
 1. **No more OpenRouter credit burn** - Using Claude Max subscription via Claude Code CLI
 2. Claude Code CLI runs with `-p --output-format json` flags
-3. Workspace: /root/clawd
+3. Workspace: /root/.openclaw/workspace
 4. Credentials: /root/.claude/.credentials.json (synced from Ben's local machine)

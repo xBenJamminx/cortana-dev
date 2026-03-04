@@ -12,7 +12,7 @@ from datetime import datetime
 from pathlib import Path
 
 MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/real-trends.log")
+LOG_FILE = Path("/root/.openclaw/workspace/logs/real-trends.log")
 
 # Our niche keywords for relevance scoring
 NICHE_KEYWORDS = [
@@ -198,6 +198,10 @@ def fetch_reddit_rising():
 
 def fetch_twitter_trending():
     """Fetch actual trending from Twitter via bird CLI"""
+    # DISABLED: Bird CLI removed while account suspended
+    log("  [DISABLED] Twitter trending fetch skipped — Bird CLI suspended")
+    return []
+
     results = []
     try:
         import subprocess
@@ -340,7 +344,7 @@ def main():
     print(report)
     
     # Save report
-    Path("/root/clawd/memory/real_trends_report.txt").write_text(report)
+    Path("/root/.openclaw/workspace/memory/real_trends_report.txt").write_text(report)
     
     log("Done")
 

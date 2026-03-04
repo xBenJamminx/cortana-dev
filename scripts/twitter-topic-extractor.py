@@ -20,7 +20,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/twitter-topic-extractor.log")
+LOG_FILE = Path("/root/.openclaw/workspace/logs/twitter-topic-extractor.log")
 
 # Tech-focused search queries
 SEARCHES = [
@@ -92,6 +92,9 @@ def log(msg):
 
 def search_twitter(query):
     """Search Twitter using bird CLI"""
+    # DISABLED: Bird CLI removed while account suspended
+    return []
+
     try:
         result = subprocess.run(
             ["bird", "search", query, "--json", "-n", "20",
@@ -355,7 +358,7 @@ def main():
     print(output)
 
     # Save to file
-    output_file = Path("/root/clawd/memory/twitter_topics.md")
+    output_file = Path("/root/.openclaw/workspace/memory/twitter_topics.md")
     output_file.parent.mkdir(parents=True, exist_ok=True)
     output_file.write_text(output)
 

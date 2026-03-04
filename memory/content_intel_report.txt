@@ -1,41 +1,41 @@
-🎯 *Content Intel* (2026-02-09 16:00)
+🎯 *Content Intel* (2026-03-04 12:05)
 
 *🔥 TRENDING TOPICS*
-🔴 *OPEN SOURCE* `[dev, hn, news]`
-   • [OpenCiv3: Open-source, cross-platform reimagining of Civiliz](https://openciv3.org/) (929⬆)
-   • [France's homegrown open source online office suite](https://github.com/suitenumerique) (662⬆)
-   • [DoNotNotify is now Open Source](https://donotnotify.com/opensource.html) (350⬆)
-
-🔴 *AI AGENTS* `[dev, hn, news, ph]`
-   • [Coding agents have replaced every framework I used](https://blog.alaindichiappari.dev/p/software-engineering-is-back) (283⬆)
-   • [GitHub Agentic Workflows](https://github.github.io/gh-aw/) (265⬆)
-   • [Software factories and the agentic moment](https://factory.strongdm.ai/) (257⬆)
-
-🔴 *TYPESCRIPT* `[dev, hn, news]`
-   • [Coding agents have replaced every framework I used](https://blog.alaindichiappari.dev/p/software-engineering-is-back) (283⬆)
-   • [TSMC to make advanced AI semiconductors in Japan](https://apnews.com/article/semiconductors-tsmc-japan-taiwan-ai-11256f2bfde73ca23d08331ad138d6d5) (183⬆)
-   • [Billing can be bypassed using a combo of subagents with an a](https://github.com/microsoft/vscode/issues/292452) (180⬆)
-
 🔴 *DEV TOOLS* `[dev, hn, news]`
-   • [Vocal Guide – belt sing without killing yourself](https://jesperordrup.github.io/vocal-guide/) (376⬆)
-   • [Reverse Engineering Raiders of the Lost Ark for the Atari 26](https://github.com/joshuanwalker/Raiders2600) (76⬆)
-   • [A tough labor market for white-collar workers has turned rec](https://www.wsj.com/lifestyle/careers/job-hunters-are-so-desperate-that-theyre-paying-to-get-recruited-44891ac2) (32⬆)
+   • [I'm reluctant to verify my identity or age for any online se](https://neilzone.co.uk/2026/03/im-struggling-to-think-of-any-online-services-for-which-id-be-willing-to-verify-my-identity-or-age/) (902⬆)
+   • [Physics Girl: Super-Kamiokande – Imaging the sun by detectin](https://www.youtube.com/watch?v=B3m3AMRlYfc) (442⬆)
+   • [Inside the M4 Apple Neural Engine, Part 1: Reverse Engineeri](https://maderix.substack.com/p/inside-the-m4-apple-neural-engine) (351⬆)
 
-🔴 *GPT* `[dev, hn, news, ph]`
-   • [Show HN: LocalGPT – A local-first AI assistant in Rust with ](https://github.com/localgpt-app/localgpt) (302⬆)
-   • [OpenAI Frontier](https://www.producthunt.com/products/openai) (13⬆)
-   • [OpenAI Frontier](https://www.producthunt.com/products/openai) (13⬆)
+🔴 *TYPESCRIPT* `[dev, hn, news, ph]`
+   • [Intel's make-or-break 18A process node debuts for data cente](https://www.tomshardware.com/pc-components/cpus/intels-make-or-break-18a-process-node-debuts-for-data-center-with-288-core-xeon-6-cpu-multi-chip-monster-sports-12-channels-of-ddr5-8000-foveros-direct-3d-packaging-tech) (279⬆)
+   • [Voxile: A ray-traced game made in its own engine and program](https://elbowgreasegames.substack.com/p/voxray-games-pushes-major-update) (210⬆)
+   • [Show HN: Govbase – Follow a bill from source text to news bi](https://govbase.com) (197⬆)
 
-🟡 *RUST* `[dev, hn]`
-   • [Show HN: LocalGPT – A local-first AI assistant in Rust with ](https://github.com/localgpt-app/localgpt) (302⬆)
-   • [Go Made Me Fast. Rust Made Me Care. AWS Made Me Pay.](https://dev.to/art_light/go-made-me-fast-rust-made-me-care-aws-made-me-pay-2f82) (62⬆)
-   • [Lessons from BF-Tree: Building a Concurrent Larger-Than-Memo](https://zhihanz.github.io/posts/bf-tree-rust-implementation/) (4⬆)
+🟡 *STARTUP* `[hn, news]`
+   • [Claude's Cycles [pdf]](https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf) (654⬆)
+   • [Launch HN: OctaPulse (YC W26) – Robotics and computer vision](https://news.ycombinator.com/item?id=47220320) (102⬆)
+   • [Launch HN: Cekura (YC F24) – Testing and monitoring for voic](https://news.ycombinator.com/item?id=47232903) (86⬆)
+
+🔴 *AI AGENTS* `[dev, hn, ph]`
+   • [Show HN: I built a sub-500ms latency voice agent from scratc](https://www.ntik.me/posts/voice-agent) (503⬆)
+   • [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/) (193⬆)
+   • [Parallel coding agents with tmux and Markdown specs](https://schipper.ai/posts/parallel-coding-agents/) (131⬆)
+
+🔴 *CLAUDE* `[dev, hn, news]`
+   • [Claude's Cycles [pdf]](https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf) (654⬆)
+   • [Elevated Errors in Claude.ai](https://status.claude.com/incidents/yf48hzysrvl5) (95⬆)
+   • [Why I use markdown plan files instead of Cursor and Claude's](https://dev.to/0xandrewshu/why-i-use-markdown-plan-files-instead-of-cursor-and-claudes-built-in-planning-35co) (2⬆)
+
+🔴 *OPEN SOURCE* `[dev, hn, news]`
+   • [I'm losing the SEO battle for my own open source project](https://twitter.com/Gavriel_Cohen/status/2028821432759717930) (424⬆)
+   • [GitHub Is Having Issues](https://www.githubstatus.com/incidents/n07yy1bk6kc4) (191⬆)
+   • [Physicists developing a quantum computer that’s entirely ope](https://physics.aps.org/articles/v19/24) (166⬆)
 
 *🚀 FRESH LAUNCHES*
-• [SuperX](https://www.producthunt.com/products/superx)
-• [DubStream by CAMB.AI](https://www.producthunt.com/products/dubstream-by-camb)
-• [OpenAI Frontier](https://www.producthunt.com/products/openai)
-• [Afterpage](https://www.producthunt.com/products/afterpage)
-• [ClawdTalk](https://www.producthunt.com/products/telnyx)
+• [Gemini 3.1 Flash-Lite](https://www.producthunt.com/products/gemini-6)
+• [Anything API](https://www.producthunt.com/products/notte)
+• [GPT‑5.3 Instant in ChatGPT](https://www.producthunt.com/products/openai)
+• [day1tabs](https://www.producthunt.com/products/day1tabs)
+• [Kodo](https://www.producthunt.com/products/kodo-3)
 
 _🔴 3+ platforms | 🟡 2 platforms | ⚪ 1 platform_

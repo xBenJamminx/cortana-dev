@@ -1,0 +1,49 @@
+{
+  "main": {
+    "id": "main",
+    "type": "split",
+    "children": [
+      {
+        "id": "leaf",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "memory/index.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ]
+  },
+  "left": {
+    "id": "left",
+    "type": "split",
+    "children": [
+      {
+        "id": "file-explorer",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer"
+        }
+      }
+    ],
+    "collapsed": false,
+    "width": 250
+  },
+  "right": {
+    "id": "right",
+    "type": "split",
+    "children": [
+      {
+        "id": "graph",
+        "type": "leaf",
+        "state": {
+          "type": "localgraph"
+        }
+      }
+    ],
+    "collapsed": false,
+    "width": 300
+  }
+}

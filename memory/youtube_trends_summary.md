@@ -1,32 +1,32 @@
 📺 YouTube - Latest from AI/Creator Channels
 
-• [The fastest way to get your first sale](https://www.youtube.com/shorts/H0F7Sjve7mw)
+• [This beats every productivity hack for your career](https://www.youtube.com/shorts/8WYYTBzCZVs)
   _Ali Abdaal_
 
-• [You don't need to be famous to get rich](https://www.youtube.com/shorts/M2M7tb2mTuM)
+• [Story of meeting Elton John | Rick Beato and Lex Fridman](https://www.youtube.com/watch?v=5CP-w04ejfI)
+  _Matt Wolfe_
+
+• [Lex Fridman on Metallica's legendary concert in Moscow in 1991 w/ crowd of 1.5 million people](https://www.youtube.com/watch?v=eF5ACrwkh1M)
+  _Matt Wolfe_
+
+• [Greatest rock stars of all time | Rick Beato and Lex Fridman](https://www.youtube.com/watch?v=NgAhPHVh-io)
+  _Matt Wolfe_
+
+• [I made my first $1,000,000 at 26. Here's how,](https://www.youtube.com/shorts/kxf02sHgam4)
   _Ali Abdaal_
 
-• [What would you do if you didn't care what people thought?](https://www.youtube.com/shorts/XQjjlGpsuLY)
-  _Ali Abdaal_
-
-• [Will AI scaling plateau (hit a wall)? | Lex Fridman Podcast](https://www.youtube.com/watch?v=1zwPS5WTkeg)
+• [The hardest jazz style to play: Why Charlie Parker was a genius | Rick Beato and Lex Fridman](https://www.youtube.com/watch?v=lK0peNOWvxo)
   _Matt Wolfe_
 
-• [Sam Altman Breaks Silence On The AI Chaos](https://www.youtube.com/watch?v=KlekiW3o-mY)
-  _TheAIGRID_
-
-• [My Honest Thoughts on the OpenClaw Hype…](https://www.youtube.com/watch?v=RXBjzT8gQ2g)
-  _Liam Ottley_
-
-• [How AI is trained: Pre-training, mid-training, and post-training explained | Lex Fridman Podcast](https://www.youtube.com/watch?v=MJxwtLtNyF8)
+• [What guitar Lex Fridman plays](https://www.youtube.com/watch?v=OCmam3xuP8g)
   _Matt Wolfe_
 
-• [Making $80,000 per year doing NOTHING](https://www.youtube.com/shorts/PTwg0cckLOI)
-  _My First Million_
-
-• [Will Apple buy Anthropic? | Lex Fridman Podcast](https://www.youtube.com/watch?v=8yqrpNekb6k)
+• [The genius of David Gilmour | Rick Beato and Lex Fridman](https://www.youtube.com/watch?v=8elyVwr_nOA)
   _Matt Wolfe_
 
-• [Have more kids, here's why](https://www.youtube.com/shorts/VHuZL8s78yM)
-  _David Ondrej_
+• [Cloudflare just slop forked Next.js…](https://www.youtube.com/watch?v=abbeIUOCzmw)
+  _Fireship_
+
+• [How Spotify changed music | Rick Beato and Lex Fridman](https://www.youtube.com/watch?v=Qq4ENZsmfeE)
+  _Matt Wolfe_
 

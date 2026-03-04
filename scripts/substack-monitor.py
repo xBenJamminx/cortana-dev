@@ -9,8 +9,8 @@ from datetime import datetime
 from pathlib import Path
 
 MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/substack-monitor.log")
-SUMMARY_FILE = Path("/root/clawd/memory/substack_summary.md")
+LOG_FILE = Path("/root/.openclaw/workspace/logs/substack-monitor.log")
+SUMMARY_FILE = Path("/root/.openclaw/workspace/memory/substack_summary.md")
 
 # Popular Substacks to monitor
 SUBSTACKS = [

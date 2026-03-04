@@ -10,8 +10,8 @@ from datetime import datetime
 from pathlib import Path
 
 MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/youtube-trending-monitor.log")
-SUMMARY_FILE = Path("/root/clawd/memory/youtube_trends_summary.md")
+LOG_FILE = Path("/root/.openclaw/workspace/logs/youtube-trending-monitor.log")
+SUMMARY_FILE = Path("/root/.openclaw/workspace/memory/youtube_trends_summary.md")
 
 # YouTube RSS feeds for channels/topics we care about
 # Format: (name, feed_url)

@@ -1,0 +1,11 @@
+{
+  "clients": {
+    "test-demo": {
+      "name": "Demo Coffee Shop",
+      "email": "benjoselson@gmail.com",
+      "slug": "test-demo",
+      "created_at": "2026-03-04T14:46:14.354015",
+      "active": true
+    }
+  }
+}

@@ -680,3 +680,36 @@ All three sub-agent mechanisms she was trying to use were broken:
 
 ### Verified working
 Test run: `spawn_task.sh 1 "run echo hello world and report back"` — sub-agent completed independently and sent results to Telegram topic.
+
+---
+
+## 2026-02-27 20:05:02: WARNING Alert
+
+**Message:** Killed 1 stuck claude process(es) running >3600s
+
+
+---
+
+## 2026-03-03 16:25:12: WARNING Alert
+
+**Message:** Gateway was down (failure #1) — auto-restarted successfully.
+Service was: active/running
+HTTP probe: <urlopen error [Errno 111] Connection refused>
+
+
+---
+
+## 2026-03-03 17:41:12: CRITICAL Alert
+
+**Message:** Gateway restart FAILED (failure #1).
+Service: active/running
+HTTP: <urlopen error [Errno 111] Connection refused>
+Manual intervention may be needed.
+
+
+---
+
+## 2026-03-04 12:31:02: WARNING Alert
+
+**Message:** Hung session detected: claude process active but log silent for 4057s — restarting
+

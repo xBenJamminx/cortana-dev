@@ -3,6 +3,7 @@
 Email Newsletter Monitor v3 - Extract individual stories from Ben's AI/creator newsletters
 Parses full newsletter content into separate stories with descriptions and article links
 """
+import os
 import sqlite3
 import json
 import re
@@ -10,16 +11,24 @@ import requests
 from datetime import datetime
 from pathlib import Path
 
-MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/email-newsletters.log")
+# Load env
+def _load_env():
+    env_path = os.path.expanduser("~/.openclaw/.env")
+    if os.path.exists(env_path):
+        with open(env_path) as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    key, _, val = line.partition("=")
+                    key = key.replace("export ", "").strip()
+                    if key and not os.environ.get(key):
+                        os.environ[key] = val
+_load_env()
 
-MCP_URL = 'https://backend.composio.dev/tool_router/trs_r19DmEN65WU9/mcp'
-API_KEY = 'REDACTED_COMPOSIO_MCP_KEY'
-HEADERS = {
-    'Content-Type': 'application/json',
-    'Accept': 'application/json, text/event-stream',
-    'x-api-key': API_KEY
-}
+MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
+LOG_FILE = Path("/root/.openclaw/workspace/logs/email-newsletters.log")
+
+GOOGLE_CONN_ID = "d0645ed1-9d77-45a0-9d8e-b2ddb3c64829"
 
 # AI/Creator newsletters we care about
 NEWSLETTER_WHITELIST = {
@@ -127,28 +136,28 @@ def ensure_tables():
     conn.close()
 
 
-def composio_call(tools):
+def _get_gmail_token():
+    """Get Gmail OAuth token from Composio Google Super connection"""
     try:
-        response = requests.post(MCP_URL, headers=HEADERS, json={
-            'jsonrpc': '2.0',
-            'method': 'tools/call',
-            'params': {
-                'name': 'COMPOSIO_MULTI_EXECUTE_TOOL',
-                'arguments': {'tools': tools}
-            },
-            'id': 1
-        }, timeout=60)
-
-        for line in response.text.split('\n'):
-            if line.startswith('data:'):
-                data = json.loads(line[5:])
-                text = data.get('result', {}).get('content', [{}])[0].get('text', '')
-                if text:
-                    return json.loads(text)
-        return None
+        api_key = os.environ.get("COMPOSIO_API_KEY", "")
+        resp = requests.get(
+            f"https://backend.composio.dev/api/v1/connectedAccounts/{GOOGLE_CONN_ID}",
+            headers={"x-api-key": api_key},
+            timeout=10
+        )
+        return resp.json().get("connectionParams", {}).get("access_token", "")
     except Exception as e:
-        log(f"Composio call error: {e}")
-        return None
+        log(f"Failed to get Gmail token: {e}")
+        return ""
+
+_gmail_token = None
+
+def get_gmail_token():
+    """Get cached Gmail token, refreshing if needed"""
+    global _gmail_token
+    if _gmail_token is None:
+        _gmail_token = _get_gmail_token()
+    return _gmail_token
 
 
 def is_whitelisted(sender_email):
@@ -650,55 +659,78 @@ Only include genuinely useful nuggets. Skip fluff, ads, and self-promotion. Aim 
         return []
 
 
-def fetch_gmail_with_retry(query, max_results=20, retries=2):
-    """Fetch emails with retry logic for flaky API. Returns list of messages."""
-    import time
-    for attempt in range(retries + 1):
-        result = composio_call([{
-            'tool_slug': 'GMAIL_FETCH_EMAILS',
-            'arguments': {
-                'max_results': max_results,
-                'query': query,
-                'include_payload': True,
-                'verbose': True
-            }
-        }])
+def _fix_mojibake(text):
+    """Fix double-encoded UTF-8 (mojibake) — e.g. 'ð§' -> '🧠', 'â' -> apostrophe"""
+    if not text:
+        return text
+    try:
+        # Detect mojibake: UTF-8 bytes misinterpreted as latin-1
+        # Try to re-encode as latin-1 and decode as UTF-8
+        fixed = text.encode('latin-1', errors='ignore').decode('utf-8', errors='ignore')
+        # Only use the fix if it actually produced valid content
+        if fixed and len(fixed) > len(text) * 0.5:
+            return fixed
+    except (UnicodeDecodeError, UnicodeEncodeError):
+        pass
+    return text
 
-        if not result or not result.get('successful'):
-            if attempt < retries:
-                log(f"  Query failed (attempt {attempt + 1}), retrying...")
-                time.sleep(2)
-                continue
-            return []
 
-        results = result.get('data', {}).get('results', [])
-        if not results:
-            if attempt < retries:
-                time.sleep(2)
-                continue
-            return []
+def _decode_body_data(raw_bytes):
+    """Decode email body bytes with mojibake detection"""
+    text = raw_bytes.decode('utf-8', errors='replace')
+    # Check for mojibake indicators (common patterns)
+    mojibake_indicators = ['â', 'ð', 'Â', 'â', 'â', 'Ã']
+    if any(indicator in text for indicator in mojibake_indicators):
+        fixed = _fix_mojibake(text)
+        if fixed != text:
+            return fixed
+    return text
 
-        resp = results[0].get('response', {})
-        messages = resp.get('data', {}).get('messages', [])
 
-        # If data is empty, try data_preview as fallback
-        if not messages:
-            messages = resp.get('data_preview', {}).get('messages', [])
+def _get_email_body(payload):
+    """Extract text body from Gmail message payload"""
+    import base64
+    parts = payload.get('parts', [])
+    if not parts:
+        body = payload.get('body', {}).get('data', '')
+        if body:
+            return _decode_body_data(base64.urlsafe_b64decode(body))
+        return ''
 
-        if messages:
-            return [m for m in messages if isinstance(m, dict)]
+    # Prefer text/plain
+    for part in parts:
+        mime = part.get('mimeType', '')
+        if mime == 'text/plain':
+            body = part.get('body', {}).get('data', '')
+            if body:
+                return _decode_body_data(base64.urlsafe_b64decode(body))
+        if mime.startswith('multipart/'):
+            result = _get_email_body(part)
+            if result:
+                return result
 
-        # Got a response but no messages - might be rate limited, retry
-        if attempt < retries:
-            log(f"  Empty response (attempt {attempt + 1}), retrying...")
-            time.sleep(3)
-
-    return []
+    # Fallback to first part with data
+    for part in parts:
+        body = part.get('body', {}).get('data', '')
+        if body:
+            return _decode_body_data(base64.urlsafe_b64decode(body))
+        if part.get('parts'):
+            result = _get_email_body(part)
+            if result:
+                return result
+    return ''
 
 
 def fetch_newsletter_emails():
-    """Fetch recent newsletter emails with full content, using multiple targeted queries for reliability"""
-    # Targeted queries by sender for consistent results
+    """Fetch recent newsletter emails via direct Gmail API using Google Super token"""
+    token = get_gmail_token()
+    if not token:
+        log("No Gmail token available")
+        return []
+
+    headers = {"Authorization": f"Bearer {token}"}
+
+    # Single query to grab all newsletters at once
     queries = [
         'newer_than:2d from:therundown',
         'newer_than:2d from:unwindai',
@@ -708,21 +740,68 @@ def fetch_newsletter_emails():
         'newer_than:2d from:dailybite',
         'newer_than:2d from:hypefury',
         'newer_than:2d from:lenny',
-        'newer_than:2d (from:beehiiv OR from:substack)',
-        'newer_than:2d (from:newsletter OR from:tinylaunch OR from:producthunt)',
+        'newer_than:2d from:beehiiv',
+        'newer_than:2d from:substack',
+        'newer_than:2d from:tinylaunch',
+        'newer_than:2d from:producthunt',
+        'newer_than:2d from:theneuron',
+        'newer_than:2d from:tldr',
+        'newer_than:2d from:superhuman',
+        'newer_than:2d from:bensbites',
+        'newer_than:2d from:kallaway',
+        'newer_than:2d from:marclou',
+        'newer_than:2d from:socialgrowthengineer',
     ]
 
     all_messages = []
     seen_ids = set()
 
     for query in queries:
-        messages = fetch_gmail_with_retry(query, max_results=20)
+        try:
+            r = requests.get(
+                'https://gmail.googleapis.com/gmail/v1/users/me/messages',
+                headers=headers,
+                params={'maxResults': 5, 'q': query},
+                timeout=10
+            )
+            if r.status_code != 200:
+                continue
 
-        for m in messages:
-            mid = m.get('messageId', m.get('id', ''))
-            if mid and mid not in seen_ids:
+            msg_list = r.json().get('messages', [])
+            for msg_stub in msg_list:
+                mid = msg_stub['id']
+                if mid in seen_ids:
+                    continue
                 seen_ids.add(mid)
-                all_messages.append(m)
+
+                # Fetch full message
+                r2 = requests.get(
+                    f'https://gmail.googleapis.com/gmail/v1/users/me/messages/{mid}',
+                    headers=headers,
+                    params={'format': 'full'},
+                    timeout=15
+                )
+                if r2.status_code != 200:
+                    continue
+
+                msg_data = r2.json()
+                hdrs = msg_data.get('payload', {}).get('headers', [])
+                subject = next((h['value'] for h in hdrs if h['name'].lower() == 'subject'), '')
+                sender = next((h['value'] for h in hdrs if h['name'].lower() == 'from'), '')
+                # Fix mojibake in subject lines
+                subject = _fix_mojibake(subject)
+                body = _get_email_body(msg_data.get('payload', {}))
+
+                all_messages.append({
+                    'id': mid,
+                    'messageId': mid,
+                    'subject': subject,
+                    'sender': sender,
+                    'from': sender,
+                    'messageText': body,
+                })
+        except Exception as e:
+            log(f"  Gmail query error ({query[:30]}): {e}")
 
     log(f"Fetched {len(all_messages)} unique newsletter emails across {len(queries)} queries")
     return all_messages
@@ -803,16 +882,28 @@ def process_messages(messages):
         except Exception:
             pass
 
-    # Second pass: extract nuggets from full newsletter content
-    log("Mining newsletters for nuggets...")
+    # Second pass: extract nuggets ONLY from newsletters not yet mined
+    log("Mining newsletters for nuggets (new emails only)...")
+
+    # Add a column to track nugget mining if it doesn't exist
+    try:
+        cursor.execute("ALTER TABLE newsletter_topics ADD COLUMN nuggets_mined INTEGER DEFAULT 0")
+        conn.commit()
+    except sqlite3.OperationalError:
+        pass  # Column already exists
+
     nl_records = []
     cursor.execute('''
-        SELECT sender_name, subject, content FROM newsletter_topics
-        WHERE created_at > datetime('now', '-36 hours')
+        SELECT email_id, sender_name, subject, content FROM newsletter_topics
+        WHERE created_at > datetime('now', '-4 hours')
         AND content IS NOT NULL AND length(content) > 100
+        AND COALESCE(nuggets_mined, 0) = 0
     ''')
-    for row in cursor.fetchall():
-        nl_records.append({'sender_name': row[0], 'subject': row[1], 'content': row[2]})
+    unmined_rows = cursor.fetchall()
+    unmined_email_ids = []
+    for row in unmined_rows:
+        unmined_email_ids.append(row[0])
+        nl_records.append({'sender_name': row[1], 'subject': row[2], 'content': row[3]})
 
     nuggets = extract_nuggets_with_llm(nl_records)
     saved_nuggets = 0
@@ -828,6 +919,12 @@ def process_messages(messages):
                 saved_nuggets += 1
         except Exception:
             pass
+
+    # Mark these emails as mined so we don't re-process them
+    if unmined_email_ids:
+        for eid in unmined_email_ids:
+            cursor.execute("UPDATE newsletter_topics SET nuggets_mined = 1 WHERE email_id = ?", (eid,))
+        log(f"Marked {len(unmined_email_ids)} emails as nugget-mined")
 
     conn.commit()
     conn.close()

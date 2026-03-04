@@ -3,7 +3,7 @@
 Cortana Daily Health Report — Telegram summary of system health.
 
 Runs daily at 7 AM ET (12:00 UTC) before morning briefing.
-Cron: 0 12 * * * /usr/bin/python3 /root/clawd/scripts/health-report.py >> /var/log/clawd/health-report.log 2>&1
+Cron: 0 12 * * * /usr/bin/python3 /root/.openclaw/workspace/scripts/health-report.py >> /var/log/clawd/health-report.log 2>&1
 """
 import json
 import logging
@@ -27,7 +27,7 @@ def _load_env():
                         os.environ[key] = val
 _load_env()
 
-sys.path.insert(0, "/root/clawd")
+sys.path.insert(0, "/root/.openclaw/workspace")
 
 from lib.health import (
     check_gateway_http,
@@ -48,7 +48,7 @@ BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 # Log directories
-CLAWD_LOGS = Path("/root/clawd/logs")
+CLAWD_LOGS = Path("/root/.openclaw/workspace/logs")
 SYSTEM_LOGS = Path("/var/log/clawd")
 GATEWAY_LOGS = Path("/tmp/openclaw")
 
@@ -170,12 +170,12 @@ def get_recent_alerts(hours: int = 24, limit: int = 5) -> list:
 def get_cron_freshness() -> list:
     """Check freshness of cron job outputs."""
     jobs = [
-        ("Morning briefing", "/root/clawd/logs/cron-morning.log", 26),
-        ("Content intel", "/root/clawd/logs/cron-intel.log", 6),
-        ("Twitter monitor", "/root/clawd/logs/twitter-cron.log", 8),
-        ("YouTube monitor", "/root/clawd/logs/youtube-cron.log", 8),
-        ("Content analytics", "/root/clawd/logs/analytics-cron.log", 26),
-        ("Reddit monitor", "/root/clawd/logs/reddit-monitor.log", 26),
+        ("Morning briefing", "/root/.openclaw/workspace/logs/cron-morning.log", 26),
+        ("Content intel", "/root/.openclaw/workspace/logs/cron-intel.log", 6),
+        ("Twitter monitor", "/root/.openclaw/workspace/logs/twitter-cron.log", 8),
+        ("YouTube monitor", "/root/.openclaw/workspace/logs/youtube-cron.log", 8),
+        ("Content analytics", "/root/.openclaw/workspace/logs/analytics-cron.log", 26),
+        ("Reddit monitor", "/root/.openclaw/workspace/logs/reddit-monitor.log", 26),
     ]
 
     results = []

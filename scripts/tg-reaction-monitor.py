@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Telegram Reaction Monitor v6
+Telegram Reaction Monitor v7
 
 Watches journalctl for openclaw gateway events.
 On cli exec: sends typing to all forum topics + reacts to incoming message.
@@ -189,19 +189,19 @@ def main():
 
             log(f'Watchdog timeout: model={model} after {timeout_s}s (alerted={already_alerted})')
             if not already_alerted:
-                send_to_all_topics(f'⚠️ {model} timed out — trying fallback...')
+                send_alert(f"⚠️ {model} timed out — trying fallback...", topic=1)
 
         # All models exhausted
         if 'All models failed' in line or 'Embedded agent failed before reply' in line:
             log('All models failed')
             stop_processing()
-            send_to_all_topics('❌ All models failed — I\'m back up but that message didn\'t get through. Please resend.')
+            send_alert('❌ All models failed — resend your last message.', topic=1)
 
         # Gateway restart mid-processing
         if 'starting provider' in line and 'Cortana_MoltBot' in line:
             if processing:
                 log('Gateway restarted while processing')
-                send_to_all_topics('⚠️ Gateway restarted mid-response — please resend your last message.')
+                send_alert('⚠️ Gateway restarted mid-response — please resend your last message.', topic=1)
                 stop_processing()
 
 if __name__ == '__main__':

@@ -20,15 +20,15 @@ from collections import defaultdict
 import time
 
 # Setup lib path
-sys.path.insert(0, "/root/clawd")
+sys.path.insert(0, "/root/.openclaw/workspace")
 from lib.retry import retry_with_backoff
 from lib.alerting import send_alert
 
 MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/highsignal-twitter.log")
+LOG_FILE = Path("/root/.openclaw/workspace/logs/highsignal-twitter.log")
 COOKIE_FILE = Path("/root/.config/bird/cookies.json")
-CONFIG_FILE = Path("/root/clawd/config/high_signal_sources.json")
-SUCCESS_MARKER = Path("/root/clawd/logs/.twitter-monitor-last-success")
+CONFIG_FILE = Path("/root/.openclaw/workspace/config/high_signal_sources.json")
+SUCCESS_MARKER = Path("/root/.openclaw/workspace/logs/.twitter-monitor-last-success")
 
 logging.basicConfig(
     level=logging.INFO,
@@ -278,6 +278,12 @@ def touch_success_marker():
     SUCCESS_MARKER.write_text(datetime.now().isoformat())
 
 def main():
+    # DISABLED: Bird CLI removed while account suspended
+    # All functionality depends on Bird CLI (fetch_user_tweets_bird).
+    # Re-enable when @xBenJamminx suspension is resolved.
+    log.info("[DISABLED] High-Signal Twitter Monitor disabled — Bird CLI suspended")
+    return
+
     log.info("High-Signal Twitter Monitor v3 (Bird CLI) starting...")
     ensure_tables()
 

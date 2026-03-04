@@ -1,0 +1,38 @@
+{
+  "status": "complete",
+  "steps_completed": [
+    "create",
+    "voice",
+    "voice",
+    "images",
+    "ambient",
+    "assemble",
+    "assemble"
+  ],
+  "topic": "Letting go of what you cannot control \u2014 a Stoic bedtime reflection on releasing worry, finding peace in acceptance, and trusting that you have done enough today",
+  "duration": 3,
+  "style": "stoic",
+  "created": "20260220-185715",
+  "script_path": "/root/.openclaw/workspace/output/sleep-videos/sleep-20260220-185715/script.json",
+  "title": "Stoic Bedtime Reflection: Letting Go of Worry Sleep Story",
+  "num_scenes": 8,
+  "voice": "V2bPluzT7MuirpucVAKH",
+  "narration_path": "/root/.openclaw/workspace/output/sleep-videos/sleep-20260220-185715/full_narration.mp3",
+  "narration_duration": 145.266939,
+  "image_files": [
+    "/root/.openclaw/workspace/output/sleep-videos/sleep-20260220-185715/images/scene_000.png",
+    "/root/.openclaw/workspace/output/sleep-videos/sleep-20260220-185715/images/scene_001.png",
+    "/root/.openclaw/workspace/output/sleep-videos/sleep-20260220-185715/images/scene_002.png",
+    "/root/.openclaw/workspace/output/sleep-videos/sleep-20260220-185715/images/scene_003.png",
+    "/root/.openclaw/workspace/output/sleep-videos/sleep-20260220-185715/images/scene_004.png",
+    "/root/.openclaw/workspace/output/sleep-videos/sleep-20260220-185715/images/scene_005.png",
+    "/root/.openclaw/workspace/output/sleep-videos/sleep-20260220-185715/images/scene_006.png",
+    "/root/.openclaw/workspace/output/sleep-videos/sleep-20260220-185715/images/scene_007.png"
+  ],
+  "image_model": "imagen-4.0-generate-001",
+  "ambient_path": "/root/.openclaw/workspace/output/sleep-videos/sleep-20260220-185715/ambient/ambient_loop.mp3",
+  "output_path": "/root/.openclaw/workspace/output/sleep-videos/sleep-20260220-185715/final.mp4",
+  "music_path": "/root/.openclaw/workspace/assets/music/choir-harp-ethereal.mp3",
+  "music_track": "Frozen Star by Kevin MacLeod",
+  "music_attribution": "\"Frozen Star\" by Kevin MacLeod (incompetech.com) - released under CC-BY 3.0."
+}

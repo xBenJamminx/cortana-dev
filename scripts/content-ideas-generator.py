@@ -10,8 +10,8 @@ from datetime import datetime
 from pathlib import Path
 
 MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/content-ideas.log")
-IDEAS_FILE = Path("/root/clawd/memory/daily_content_ideas.md")
+LOG_FILE = Path("/root/.openclaw/workspace/logs/content-ideas.log")
+IDEAS_FILE = Path("/root/.openclaw/workspace/memory/daily_content_ideas.md")
 
 # Ben's content pillars for relevance scoring
 BENS_PILLARS = [

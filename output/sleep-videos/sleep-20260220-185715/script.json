@@ -1,0 +1,58 @@
+{
+  "title": "Stoic Bedtime Reflection: Letting Go of Worry Sleep Story",
+  "description": "Drift into peaceful sleep with this Stoic bedtime reflection. Release the day's worries, find calm in acceptance, and trust that you have done enough. A soothing sleep story for deep relaxation and inner peace.",
+  "tags": [
+    "sleep story",
+    "bedtime story",
+    "stoicism",
+    "relaxation",
+    "letting go",
+    "mindfulness",
+    "peaceful sleep",
+    "stress relief",
+    "calm",
+    "guided meditation"
+  ],
+  "scenes": [
+    {
+      "narration": "Welcome... tonight, we explore one of the oldest and most liberating ideas ever offered to the restless mind. For thousands of years, the Stoic philosophers, people like Marcus Aurelius, Seneca, and Epictetus, returned to a single, powerful truth... that peace comes not from controlling the world around us, but from releasing our grip on what was never ours to hold. This is a reflection on letting go... on the quiet courage it takes to accept what you cannot change, and to trust that you have done enough today. So settle in... let your body grow heavy... and let these words carry you gently toward sleep.",
+      "image_prompt": "A candlelit ancient Roman study room at night, with weathered scrolls and leather-bound manuscripts on a heavy wooden desk, a bronze oil lamp casting warm golden light, marble columns visible in the background, classical Roman architecture, warm amber tones",
+      "effect": "zoom_out"
+    },
+    {
+      "narration": "Remember that true peace resides not in controlling the world around you, but in mastering your inner world. Your thoughts, your reactions... these are your domain. All else is beyond your reach, like the wind...",
+      "image_prompt": "A grand Roman courtyard garden at twilight, stone archways covered in ivy, a still reflecting pool in the center, marble bust of a philosopher on a pedestal, soft purple and blue dusk sky, Mediterranean cypress trees in the background",
+      "effect": "pan_right"
+    },
+    {
+      "narration": "Consider what you have accomplished today. You faced challenges, offered kindness, and pursued your path. You have done enough. Release the lingering need for perfection... and simply rest in the knowledge of your efforts.",
+      "image_prompt": "An ancient Roman forum at golden hour, tall marble columns casting long warm shadows, a stone pathway leading into the distance, golden sunlight illuminating inscriptions on weathered stone walls, sense of history and accomplishment",
+      "effect": "pan_left"
+    },
+    {
+      "narration": "The past is unchangeable, the future yet unwritten. Worrying about either only steals from this present moment, this precious now. Let the currents of time carry them away... as you anchor yourself in peace.",
+      "image_prompt": "A solitary marble meditation bench in an ancient Roman garden at night, moonlight streaming through stone arches, an hourglass on a small table, a still fountain nearby, deep blue moonlit atmosphere with soft silver highlights",
+      "effect": "zoom_in"
+    },
+    {
+      "narration": "Imagine your worries as fallen leaves upon a gentle stream... watch them drift away, carried by the current, becoming smaller and more distant with each passing moment. They are no longer yours to hold.",
+      "image_prompt": "An ancient stone bridge over a gentle stream in a Roman garden at dusk, autumn leaves floating on the water below, old stone carvings along the bridge railings, warm lantern light from the bridge, blending nature with classical architecture",
+      "effect": "pan_up"
+    },
+    {
+      "narration": "Feel the vastness of the night sky, the silent majesty of the world around you. In this grand scheme, your concerns are but fleeting whispers. Trust in the natural rhythm... of rest and renewal.",
+      "image_prompt": "View from the top of ancient Roman temple steps looking out at a vast starlit sky, crumbling marble columns framing the view, the Milky Way visible overhead, a sense of ancient wisdom meeting cosmic infinity, deep blues and subtle silver",
+      "effect": "zoom_out"
+    },
+    {
+      "narration": "Allow your breath to deepen, slowing with each gentle intake and release. Surrender to the embrace of quietude. Let your mind become like a calm, still pool... reflecting only peace.",
+      "image_prompt": "A cozy alcove in a Roman bathhouse, warm candlelight reflecting off still water, steam gently rising, mosaic tiles on the walls in deep blues and golds, an atmosphere of deep warmth and relaxation",
+      "effect": "pan_down"
+    },
+    {
+      "narration": "You are safe. You are at peace. Everything you need is within you, and all that is beyond... can wait until morning. Sleep now... deeply... peacefully. Rest.",
+      "image_prompt": "A peaceful Roman bedroom at night, soft linen drapes billowing gently from an open window, moonlight pouring in, a simple bed with warm blankets, an oil lamp burning low on a bedside table, sense of total safety and rest",
+      "effect": "zoom_in"
+    }
+  ]
+}

@@ -8,7 +8,7 @@ Usage:
   python3 twitter-cookie-manager.py --cron       # For cron: check + alert if expired
 
 Cron setup (check daily at 6am):
-  0 6 * * * /usr/bin/python3 /root/clawd/scripts/twitter-cookie-manager.py --cron
+  0 6 * * * /usr/bin/python3 /root/.openclaw/workspace/scripts/twitter-cookie-manager.py --cron
 """
 import os
 import sys
@@ -28,7 +28,7 @@ if env_file.exists():
             os.environ[k] = v.strip()
 
 COOKIE_FILE = Path("/root/.config/bird/cookies.json")
-LOG_FILE = Path("/root/clawd/logs/cookie-manager.log")
+LOG_FILE = Path("/root/.openclaw/workspace/logs/cookie-manager.log")
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 
@@ -163,6 +163,12 @@ async def refresh_cookies_interactive(account_name):
             return None, None
 
 def main():
+    # DISABLED: Bird CLI removed while account suspended
+    # Cookie validation and refresh all depend on Bird CLI.
+    # Re-enable when @xBenJamminx suspension is resolved.
+    print("[DISABLED] Twitter Cookie Manager disabled — Bird CLI suspended")
+    return
+
     if len(sys.argv) < 2:
         print(__doc__)
         return
@@ -193,7 +199,7 @@ def main():
                 f"Expired accounts: {', '.join(expired)}\n\n"
                 "Please refresh cookies:\n"
                 "`ssh openclaw`\n"
-                "`python3 /root/clawd/scripts/twitter-cookie-manager.py --refresh`"
+                "`python3 /root/.openclaw/workspace/scripts/twitter-cookie-manager.py --refresh`"
             )
             send_telegram_alert(message)
             log(f"Alert sent for expired cookies: {expired}")

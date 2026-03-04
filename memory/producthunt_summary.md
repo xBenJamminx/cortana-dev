@@ -1,68 +1,69 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [InspireNote](https://www.producthunt.com/products/inspirenote)
+• [Continue (Mission Control)](https://www.producthunt.com/products/continue)
   _<p>
-            Creative brainstorming card deck & notes app
+            Quality control for your software factory
           </p>
           <p>
-          _
+            <_
 
-• [Gravity DMG](https://www.producthunt.com/products/gravity-dmg)
+• [Qwen3.5 Small](https://www.producthunt.com/products/qwen3)
   _<p>
-            Sign, notarize, & design DMG packages for your macOS apps
-          </p>
-          <_
-
-• [NeuroBlock](https://www.producthunt.com/products/neuroblock)
-  _<p>
-            No-code AI Lab: Train models, access datasets, run inference
+            0.8B-9B native multimodal w/ more intelligence, less compute
           </p>
         _
 
-• [Quash](https://www.producthunt.com/products/quash-intent-driven-mobile-testing)
+• [getviktor.com](https://www.producthunt.com/products/viktor)
   _<p>
-            A mobile QA agent that runs tests without scripts
+            Your last hire. Launched from a warzone.
           </p>
           <p>
-     _
+            <a_
 
-• [PinMe](https://www.producthunt.com/products/pinme)
+• [Alexandria](https://www.producthunt.com/products/alexandria-3)
   _<p>
-            Zero-config frontend deployment with no servers or setup
-          </p>
-          <p_
-
-• [Melina Studio](https://www.producthunt.com/products/melina-studio)
-  _<p>
-            Cursor for canvas
+            Bring your knowledge and docs to life
           </p>
           <p>
-            <a href="https://www.prod_
+            <a hr_
 
-• [Felsius](https://www.producthunt.com/products/felsius)
+• [Krisp Accent Conversion](https://www.producthunt.com/products/krisp)
   _<p>
-            Never google “what’s 68°F in °C?” again
+            Understand accented speech in real time
           </p>
           <p>
             <a _
 
-• [LIAM](https://www.producthunt.com/products/liam-email-calendar-assistant)
+• [Deep Personality](https://www.producthunt.com/products/deep-personality)
   _<p>
-            Email drafts in your voice + inbox organising + scheduling
+            Science-backed personality insights for you and your partner
           </p>
-          _
+        _
 
-• [Nativeline](https://www.producthunt.com/products/nativeline)
+• [Lavalier AI](https://www.producthunt.com/products/textio)
   _<p>
-            Build native Swift iPhone, iPad, and Mac apps with AI
+            Interview Intelligence to hire with speed and confidence
+          </p>
+          <p_
+
+• [Mailercloud Email API Platform](https://www.producthunt.com/products/mailercloud)
+  _<p>
+            1,000+ Emails per Second with 99%+ Deliverability
           </p>
           <p>
- _
+     _
 
-• [Snap](https://www.producthunt.com/products/snap-8)
+• [Secret Sauce 3D](https://www.producthunt.com/products/secret-sauce-3d)
   _<p>
-            The floating dock for developers
+            AI tool suite for professional 3D artists
           </p>
           <p>
-            <a href="h_
+            <_
+
+• [Sequirly](https://www.producthunt.com/products/sequirly-ai-adoption-without-the-risk)
+  _<p>
+            Catch sensitive data before it reaches AI tools
+          </p>
+          <p>
+       _
 

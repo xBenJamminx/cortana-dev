@@ -30,7 +30,24 @@ enum ArtStyle: String, CaseIterable, Identifiable {
         }
     }
 
+    /// SF Symbol name for use in Image(systemName:)
     var icon: String {
+        switch self {
+        case .photorealistic: return "camera.fill"
+        case .watercolor: return "paintpalette.fill"
+        case .anime: return "sparkles"
+        case .pixelArt: return "gamecontroller.fill"
+        case .fantasy: return "wand.and.stars"
+        case .cartoon: return "bubble.left.fill"
+        case .oilPainting: return "paintbrush.fill"
+        case .pencilSketch: return "pencil.and.outline"
+        case .popArt: return "star.fill"
+        case .storybook: return "book.fill"
+        }
+    }
+
+    /// Emoji icon for display in text contexts
+    var emoji: String {
         switch self {
         case .photorealistic: return "\u{1F4F7}" // camera
         case .watercolor: return "\u{1F3A8}" // palette
@@ -74,6 +91,9 @@ enum ArtStyle: String, CaseIterable, Identifiable {
         case .storybook: return Color(hex: "1ABC9C")
         }
     }
+
+    /// Alias for previewColor, used by views
+    var accentColor: Color { previewColor }
 
     /// The full prompt sent to NB2 along with the sketch image.
     var promptTemplate: String {

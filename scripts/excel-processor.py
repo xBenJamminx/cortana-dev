@@ -11,14 +11,14 @@ from pathlib import Path
 from datetime import datetime
 
 # Use the workspace-os venv
-VENV_PATH = '/root/clawd/workspace-os/venv'
+VENV_PATH = '/root/.openclaw/workspace/workspace-os/venv'
 sys.path.insert(0, f'{VENV_PATH}/lib/python3.12/site-packages')
 
 import pandas as pd
 
 MEDIA_DIR = Path('/root/.openclaw/media/inbound')
 OUTPUT_DIR = Path('/root/.openclaw/media/processed')
-SUMMARY_DIR = Path('/root/clawd/memory/spreadsheets')
+SUMMARY_DIR = Path('/root/.openclaw/workspace/memory/spreadsheets')
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 SUMMARY_DIR.mkdir(parents=True, exist_ok=True)

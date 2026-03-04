@@ -1,0 +1,24 @@
+{
+  "hook": "My landlord said I can't change anything so I showed her what AI thinks it could look like",
+  "base_scene": "A small cluttered home office with a cheap desk, tangled cables, poor lighting, a window with blinds, a rolling office chair, and a bookshelf against the wall. The room is approximately 10x10 feet with beige carpet. Include everyday items like a coffee mug, a TV remote on the desk, and shoes by the door to make it feel lived-in and relatable.",
+  "slide_styles": [
+    "Current messy dated state \u2014 cluttered desk, tangled cables, dim overhead light, papers on floor, worn beige carpet, outdated furniture",
+    "Modern Scandinavian transformation \u2014 clean white desk, cable management, warm floor lamp, potted plants, light wood accents, fresh white walls, organized shelves",
+    "Cozy industrial loft style \u2014 exposed brick accent wall, warm Edison bulb lighting, dark metal desk frame with wood top, leather chair, warm rugs, art prints on wall",
+    "Minimalist Japanese-inspired \u2014 clean low-profile desk, natural wood tones, single plant, soft neutral palette, hidden storage, diffused warm light, calming and uncluttered",
+    "Dark moody executive study \u2014 rich walnut desk, leather chair, ambient wall sconces, deep charcoal walls, gold accents, built-in bookshelves, warm sophisticated lighting",
+    "Bright modern creative studio \u2014 standing desk option, colorful organized shelving, mood lighting strips, large monitor setup, plants, motivational art, energetic but clean"
+  ],
+  "product_name": "an AI room design app",
+  "niche": "homedecor",
+  "model": "imagen-4.0-generate-001",
+  "slides": [
+    "output/larry-repro/slide_01.png",
+    "output/larry-repro/slide_02.png",
+    "output/larry-repro/slide_03.png",
+    "output/larry-repro/slide_04.png",
+    "output/larry-repro/slide_05.png",
+    "output/larry-repro/slide_06.png"
+  ],
+  "caption": "My landlord said I can't change anything so I showed her what AI thinks it could look like\n\nI used an AI room design app and honestly wasn't expecting much but look at this.\n\n#AI #homedecor #fyp #viral #tech"
+}

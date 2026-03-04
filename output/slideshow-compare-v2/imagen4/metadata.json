@@ -1,0 +1,24 @@
+{
+  "hook": "My landlord said I can't change anything...",
+  "base_scene": "A small cluttered home office with a cheap desk, tangled cables, poor lighting, a window with blinds, a rolling office chair, and a bookshelf against the wall. The room is approximately 10x10 feet with beige carpet.",
+  "slide_styles": [
+    "Current messy state \u2014 cluttered desk, tangled cables, dim overhead light, papers everywhere",
+    "Clean minimalist Scandinavian \u2014 white desk, cable management, warm lamp, plants, light wood accents",
+    "Dark moody executive \u2014 walnut desk, leather chair, ambient wall sconces, dark walls, gold accents",
+    "Cozy creative studio \u2014 standing desk, mood lighting, art on walls, warm tones, organized shelves",
+    "High-tech futuristic \u2014 LED strips, ultrawide monitor, smart lights, floating shelves, dark minimal",
+    "Japandi zen \u2014 low desk, natural materials, shoji screen, bonsai, neutral palette, floor cushion"
+  ],
+  "product_name": "",
+  "niche": "homeoffice",
+  "model": "imagen-4.0-generate-001",
+  "slides": [
+    "output/slideshow-compare-v2/imagen4/slide_01.png",
+    "output/slideshow-compare-v2/imagen4/slide_02.png",
+    "output/slideshow-compare-v2/imagen4/slide_03.png",
+    "output/slideshow-compare-v2/imagen4/slide_04.png",
+    "output/slideshow-compare-v2/imagen4/slide_05.png",
+    "output/slideshow-compare-v2/imagen4/slide_06.png"
+  ],
+  "caption": "My landlord said I can't change anything...\n\nI used  and honestly wasn't expecting much but look at this.\n\n#AI #homeoffice #fyp #viral #tech"
+}

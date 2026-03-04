@@ -25,7 +25,7 @@ DEDUP_STATE_FILE = Path("/tmp/clawd-alert-dedup.json")
 DEFAULT_COOLDOWN = 1800  # 30 minutes
 
 # Import the existing alert.py send_alert
-sys.path.insert(0, "/root/clawd/scripts")
+sys.path.insert(0, "/root/.openclaw/workspace/scripts")
 try:
     from alert import send_alert as _raw_send_alert
 except ImportError:

@@ -10,8 +10,8 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 
 MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/exploding-topics-monitor.log")
-SUMMARY_FILE = Path("/root/clawd/memory/exploding_topics_summary.md")
+LOG_FILE = Path("/root/.openclaw/workspace/logs/exploding-topics-monitor.log")
+SUMMARY_FILE = Path("/root/.openclaw/workspace/memory/exploding_topics_summary.md")
 
 # Categories to check
 CATEGORIES = [

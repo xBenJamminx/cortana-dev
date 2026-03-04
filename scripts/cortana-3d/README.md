@@ -11,7 +11,7 @@ A lightweight CLI tool for orchestrating 3D development workflows.
 Add the tool to your path or run it directly:
 ```bash
 # Direct run
-/root/clawd/scripts/cortana-3d/cortana-3d --help
+/root/.openclaw/workspace/scripts/cortana-3d/cortana-3d --help
 ```
 
 ## Usage

@@ -14,7 +14,7 @@ from typing import List, Dict
 
 # Config
 MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/indiehacker-monitor.log")
+LOG_FILE = Path("/root/.openclaw/workspace/logs/indiehacker-monitor.log")
 
 # Keywords to track
 KEYWORDS = [
@@ -244,7 +244,7 @@ def main():
     summary = get_daily_summary()
     log(summary)
 
-    summary_file = Path("/root/clawd/memory/indiehacker_daily_summary.txt")
+    summary_file = Path("/root/.openclaw/workspace/memory/indiehacker_daily_summary.txt")
     summary_file.parent.mkdir(parents=True, exist_ok=True)
     summary_file.write_text(summary)
 

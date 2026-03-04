@@ -26,10 +26,10 @@ def _load_env():
 _load_env()
 
 # CortanaOps Composio connection
-CONNECTED_ACCOUNT_ID = "1fc9b642-233c-41c0-b754-3879b85ec0bb"
+CONNECTED_ACCOUNT_ID = "2aea494d-2229-40b5-b07b-e1bbeac730af"
 COMPOSIO_API_KEY = os.environ["COMPOSIO_MCP_API_KEY"]
 BASE_URL = "https://backend.composio.dev/api"
-LOG = "/root/clawd/logs/cortana-posts.log"
+LOG = "/root/.openclaw/workspace/logs/cortana-posts.log"
 
 def log(msg):
     ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")

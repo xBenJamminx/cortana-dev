@@ -1,0 +1,11 @@
+{
+  "useMarkdownLinks": false,
+  "newLinkFormat": "shortest",
+  "showLineNumber": true,
+  "spellcheck": true,
+  "defaultViewMode": "preview",
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "memory/inbox",
+  "attachmentFolderPath": "assets"
+}

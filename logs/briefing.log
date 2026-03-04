@@ -99,3 +99,400 @@
 [2026-02-09 13:02:50] Calendar error: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
 [2026-02-09 13:02:53] Briefing built (14995 chars)
 [2026-02-09 13:02:55] ❌ Failed to send
+[2026-02-10 13:03:13] Morning briefing v2 starting...
+[2026-02-10 13:03:18] Real Trends (Google Daily, HN) data refreshed
+[2026-02-10 13:04:42] Competitors data refreshed
+[2026-02-10 13:05:27] Email Newsletters data refreshed
+[2026-02-10 13:05:38] Indie Hacker data refreshed
+[2026-02-10 13:05:39] Product Hunt data refreshed
+[2026-02-10 13:05:40] YouTube data refreshed
+[2026-02-10 13:05:40] Topic Aggregator data refreshed
+[2026-02-10 13:05:51] Calendar error: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+[2026-02-10 13:05:52] Briefing built (1682 chars)
+[2026-02-10 13:05:53] ✅ Briefing sent
+[2026-02-10 13:06:37] Morning briefing v2 starting...
+[2026-02-10 13:06:42] Real Trends (Google Daily, HN) data refreshed
+[2026-02-10 13:08:06] Competitors data refreshed
+[2026-02-10 13:12:14] Morning briefing v2 starting...
+[2026-02-10 13:12:19] Real Trends (Google Daily, HN) data refreshed
+[2026-02-10 13:13:43] Competitors data refreshed
+[2026-02-10 13:14:28] Email Newsletters data refreshed
+[2026-02-10 13:14:39] Indie Hacker data refreshed
+[2026-02-10 13:14:39] Product Hunt data refreshed
+[2026-02-10 13:14:40] YouTube data refreshed
+[2026-02-10 13:14:45] Topic Aggregator data refreshed
+[2026-02-10 13:14:55] Calendar: skipped (Google token expired)
+[2026-02-10 13:15:02] Briefing built (1682 chars)
+[2026-02-10 13:15:02] ✅ Briefing sent
+[2026-02-10 13:15:47] Morning briefing v2 starting...
+[2026-02-10 13:15:51] Real Trends (Google Daily, HN) data refreshed
+[2026-02-10 13:17:15] Competitors data refreshed
+[2026-02-10 13:18:00] Email Newsletters data refreshed
+[2026-02-10 13:18:12] Indie Hacker data refreshed
+[2026-02-10 13:18:12] Product Hunt data refreshed
+[2026-02-10 13:18:13] YouTube data refreshed
+[2026-02-10 13:18:18] Topic Aggregator data refreshed
+[2026-02-10 13:18:29] Calendar: skipped (Google token expired)
+[2026-02-10 13:18:32] Briefing built (2610 chars)
+[2026-02-10 13:18:33] ✅ Briefing sent
+[2026-02-10 13:31:54] Morning briefing v2 starting...
+[2026-02-10 13:31:59] Real Trends (Google Daily, HN) data refreshed
+[2026-02-10 13:33:23] Competitors data refreshed
+[2026-02-10 13:34:46] Email Newsletters data refreshed
+[2026-02-10 13:34:58] Indie Hacker data refreshed
+[2026-02-10 13:34:59] Product Hunt data refreshed
+[2026-02-10 13:35:00] YouTube data refreshed
+[2026-02-10 13:35:05] Topic Aggregator data refreshed
+[2026-02-10 13:35:16] Briefing built (8534 chars)
+[2026-02-10 13:35:18] ✅ Briefing sent
+[2026-02-10 14:16:15] Morning briefing v2 starting...
+[2026-02-10 14:16:21] Real Trends (Google Daily, HN) data refreshed
+[2026-02-10 14:17:45] Competitors data refreshed
+[2026-02-10 14:19:13] Email Newsletters data refreshed
+[2026-02-10 14:19:24] Indie Hacker data refreshed
+[2026-02-10 14:19:24] Product Hunt data refreshed
+[2026-02-10 14:19:26] YouTube data refreshed
+[2026-02-10 14:19:31] Topic Aggregator data refreshed
+[2026-02-10 14:19:50] Briefing built (11456 chars)
+[2026-02-10 14:19:52] ❌ Failed to send
+[2026-02-10 14:20:08] Morning briefing v2 starting...
+[2026-02-10 14:20:14] Real Trends (Google Daily, HN) data refreshed
+[2026-02-10 14:21:38] Competitors data refreshed
+[2026-02-10 14:23:03] Email Newsletters data refreshed
+[2026-02-10 14:23:12] Indie Hacker data refreshed
+[2026-02-10 14:23:13] Product Hunt data refreshed
+[2026-02-10 14:23:14] YouTube data refreshed
+[2026-02-10 14:23:19] Topic Aggregator data refreshed
+[2026-02-10 14:23:27] Briefing built (13844 chars)
+[2026-02-10 14:23:29] ❌ Failed to send
+[2026-02-10 14:23:41] Morning briefing v2 starting...
+[2026-02-10 14:23:47] Real Trends (Google Daily, HN) data refreshed
+[2026-02-10 14:25:11] Competitors data refreshed
+[2026-02-10 14:26:36] Email Newsletters data refreshed
+[2026-02-10 14:26:49] Indie Hacker data refreshed
+[2026-02-10 14:26:49] Product Hunt data refreshed
+[2026-02-10 14:26:50] YouTube data refreshed
+[2026-02-10 14:26:55] Topic Aggregator data refreshed
+[2026-02-10 14:27:05] Briefing built (16246 chars)
+[2026-02-10 14:27:07] ❌ Failed to send
+[2026-02-10 14:27:32] Morning briefing v2 starting...
+[2026-02-10 14:27:37] Real Trends (Google Daily, HN) data refreshed
+[2026-02-10 14:29:00] Competitors data refreshed
+[2026-02-10 14:30:27] Email Newsletters data refreshed
+[2026-02-10 14:30:39] Indie Hacker data refreshed
+[2026-02-10 14:30:40] Product Hunt data refreshed
+[2026-02-10 14:30:41] YouTube data refreshed
+[2026-02-10 14:30:46] Topic Aggregator data refreshed
+[2026-02-10 14:30:59] Briefing built (18059 chars)
+[2026-02-10 14:31:02] ❌ Failed to send
+[2026-02-10 14:31:39] Morning briefing v2 starting...
+[2026-02-10 14:31:44] Real Trends (Google Daily, HN) data refreshed
+[2026-02-10 14:33:08] Competitors data refreshed
+[2026-02-10 14:34:36] Email Newsletters data refreshed
+[2026-02-10 14:34:49] Indie Hacker data refreshed
+[2026-02-10 14:34:49] Product Hunt data refreshed
+[2026-02-10 14:34:51] YouTube data refreshed
+[2026-02-10 14:34:56] Topic Aggregator data refreshed
+[2026-02-10 14:35:10] Briefing built (5821 chars)
+[2026-02-10 14:35:12] ✅ Briefing sent
+[2026-02-10 14:35:49] Morning briefing v2 starting...
+[2026-02-10 14:35:54] Real Trends (Google Daily, HN) data refreshed
+[2026-02-10 14:37:18] Competitors data refreshed
+[2026-02-10 14:37:28] Morning briefing v2 starting...
+[2026-02-10 14:37:33] Real Trends (Google Daily, HN) data refreshed
+[2026-02-10 14:38:46] Email Newsletters data refreshed
+[2026-02-10 14:38:57] Competitors data refreshed
+[2026-02-10 14:38:59] Indie Hacker data refreshed
+[2026-02-10 14:38:59] Product Hunt data refreshed
+[2026-02-10 14:39:00] YouTube data refreshed
+[2026-02-10 14:39:05] Topic Aggregator data refreshed
+[2026-02-10 14:39:18] Briefing built (5797 chars)
+[2026-02-10 14:39:19] ✅ Briefing sent
+[2026-02-10 14:40:49] Email Newsletters data refreshed
+[2026-02-10 14:41:00] Indie Hacker data refreshed
+[2026-02-10 14:41:01] Product Hunt data refreshed
+[2026-02-10 14:41:02] YouTube data refreshed
+[2026-02-10 14:41:07] Topic Aggregator data refreshed
+[2026-02-10 14:41:26] Briefing built (5176 chars)
+[2026-02-10 14:41:27] ✅ Briefing sent
+[2026-02-10 14:46:45] Morning briefing v2 starting...
+[2026-02-10 14:46:51] Real Trends (Google Daily, HN) data refreshed
+[2026-02-10 14:48:15] Competitors data refreshed
+[2026-02-10 14:49:49] Email Newsletters data refreshed
+[2026-02-10 14:50:02] Indie Hacker data refreshed
+[2026-02-10 14:50:03] Product Hunt data refreshed
+[2026-02-10 14:50:04] YouTube data refreshed
+[2026-02-10 14:50:09] Topic Aggregator data refreshed
+[2026-02-10 14:50:19] Briefing built (4961 chars)
+[2026-02-10 14:50:20] ✅ Briefing sent
+[2026-02-11 13:50:50] Morning briefing v2 starting...
+[2026-02-11 13:50:55] Real Trends (Google Daily, HN) data refreshed
+[2026-02-11 13:51:54] Morning briefing v2 starting...
+[2026-02-11 13:51:58] Real Trends (Google Daily, HN) data refreshed
+[2026-02-11 13:52:19] Competitors data refreshed
+[2026-02-11 13:53:22] Competitors data refreshed
+[2026-02-11 13:56:01] Morning briefing v2 starting...
+[2026-02-11 13:56:06] Real Trends (Google Daily, HN) data refreshed
+[2026-02-11 13:57:30] Competitors data refreshed
+[2026-02-11 13:58:12] Email Newsletters data refreshed
+[2026-02-11 13:58:25] Indie Hacker data refreshed
+[2026-02-11 13:58:25] Product Hunt data refreshed
+[2026-02-11 13:58:26] YouTube data refreshed
+[2026-02-11 13:58:31] Topic Aggregator data refreshed
+[2026-02-11 13:58:47] Briefing built (4136 chars)
+[2026-02-11 13:58:48] ✅ Briefing sent
+[2026-02-17 16:32:36] Morning briefing v2 starting...
+[2026-02-17 16:32:41] Real Trends (Google Daily, HN) data refreshed
+[2026-02-17 16:34:41] Competitors monitor failed: Command '['python3', '/root/.openclaw/workspace/scripts/competitor-monitor.py']' timed out after 120 seconds
+[2026-02-17 16:36:18] Email Newsletters data refreshed
+[2026-02-17 16:36:31] Indie Hacker data refreshed
+[2026-02-17 16:36:31] Product Hunt data refreshed
+[2026-02-17 16:36:32] YouTube data refreshed
+[2026-02-17 16:36:38] Topic Aggregator data refreshed
+[2026-02-17 16:36:46] Briefing built (3523 chars)
+[2026-02-17 16:36:46] ✅ Briefing sent
+[2026-02-17 23:43:33] Morning briefing v2 starting...
+[2026-02-17 23:43:39] Real Trends (Google Daily, HN) data refreshed
+[2026-02-17 23:43:41] Competitors data refreshed
+[2026-02-17 23:45:41] Email Newsletters monitor failed: Command '['python3', '/root/.openclaw/workspace/scripts/email-newsletter-monitor.py']' timed out after 120 seconds
+[2026-02-17 23:45:53] Indie Hacker data refreshed
+[2026-02-17 23:45:53] Product Hunt data refreshed
+[2026-02-17 23:45:54] YouTube data refreshed
+[2026-02-17 23:46:00] Topic Aggregator data refreshed
+[2026-02-17 23:46:06] Briefing built (4037 chars)
+[2026-02-17 23:46:07] ✅ Briefing sent
+[2026-02-17 23:46:20] Morning briefing v2 starting...
+[2026-02-17 23:46:25] Real Trends (Google Daily, HN) data refreshed
+[2026-02-17 23:46:26] Competitors data refreshed
+[2026-02-17 23:47:24] Morning briefing v2 starting...
+[2026-02-17 23:47:29] Real Trends (Google Daily, HN) data refreshed
+[2026-02-17 23:47:31] Competitors data refreshed
+[2026-02-18 10:04:23] Morning briefing v2 starting...
+[2026-02-18 10:04:28] Real Trends data refreshed
+[2026-02-18 10:04:30] Competitors data refreshed
+[2026-02-18 10:05:15] Email Newsletters timed out (45s), using cached data
+[2026-02-18 10:05:29] Indie Hacker data refreshed
+[2026-02-18 10:05:31] Product Hunt data refreshed
+[2026-02-18 10:05:33] YouTube data refreshed
+[2026-02-18 10:05:40] Topic Aggregator data refreshed
+[2026-02-18 10:05:43] Briefing built (4096 chars)
+[2026-02-18 10:05:45] ✅ Briefing sent
+[2026-02-18 11:18:38] Morning briefing v2 starting...
+[2026-02-18 11:18:43] Real Trends data refreshed
+[2026-02-18 11:18:45] Competitors data refreshed
+[2026-02-18 11:20:24] Email Newsletters data refreshed
+[2026-02-18 11:20:38] Indie Hacker data refreshed
+[2026-02-18 11:20:38] Product Hunt data refreshed
+[2026-02-18 11:20:41] YouTube data refreshed
+[2026-02-18 11:20:47] Topic Aggregator data refreshed
+[2026-02-18 11:20:57] Briefing built (4247 chars)
+[2026-02-18 11:20:58] ✅ Briefing sent
+[2026-02-18 13:00:02] Morning briefing v2 starting...
+[2026-02-18 13:00:07] Real Trends data refreshed
+[2026-02-18 13:00:10] Competitors data refreshed
+[2026-02-18 13:01:59] Email Newsletters data refreshed
+[2026-02-18 13:02:11] Indie Hacker data refreshed
+[2026-02-18 13:02:11] Product Hunt data refreshed
+[2026-02-18 13:02:12] YouTube data refreshed
+[2026-02-18 13:02:18] Topic Aggregator data refreshed
+[2026-02-18 13:02:28] Briefing built (4067 chars)
+[2026-02-18 13:02:30] ✅ Briefing sent
+[2026-02-19 13:00:01] Morning briefing v2 starting...
+[2026-02-19 13:00:06] Real Trends data refreshed
+[2026-02-19 13:00:08] Competitors data refreshed
+[2026-02-19 13:01:15] Email Newsletters data refreshed
+[2026-02-19 13:01:26] Reddit data refreshed
+[2026-02-19 13:01:38] Indie Hacker data refreshed
+[2026-02-19 13:01:38] Product Hunt data refreshed
+[2026-02-19 13:01:39] YouTube data refreshed
+[2026-02-19 13:01:45] Topic Aggregator data refreshed
+[2026-02-19 13:01:56] Briefing built (5016 chars)
+[2026-02-19 13:01:58] ✅ Briefing sent
+[2026-02-19 15:34:35] Morning briefing v2 starting...
+[2026-02-19 15:34:40] Real Trends data refreshed
+[2026-02-19 15:34:42] Competitors data refreshed
+[2026-02-19 15:35:29] Email Newsletters data refreshed
+[2026-02-19 15:35:40] Reddit data refreshed
+[2026-02-19 15:35:52] Indie Hacker data refreshed
+[2026-02-19 15:35:53] Product Hunt data refreshed
+[2026-02-19 15:35:54] YouTube data refreshed
+[2026-02-19 15:35:59] Topic Aggregator data refreshed
+[2026-02-19 15:36:03] Briefing built (5523 chars)
+[2026-02-19 15:36:04] ✅ Briefing sent
+[2026-02-19 15:42:54] Morning briefing v2 starting...
+[2026-02-19 15:42:58] Real Trends data refreshed
+[2026-02-19 15:42:59] Competitors data refreshed
+[2026-02-19 15:43:25] Email Newsletters data refreshed
+[2026-02-19 15:43:35] Reddit data refreshed
+[2026-02-19 15:43:48] Indie Hacker data refreshed
+[2026-02-19 15:43:48] Product Hunt data refreshed
+[2026-02-19 15:43:49] YouTube data refreshed
+[2026-02-19 15:43:54] Topic Aggregator data refreshed
+[2026-02-19 15:44:02] Briefing built (6708 chars)
+[2026-02-19 15:44:04] ✅ Briefing sent
+[2026-02-19 15:46:07] Morning briefing v2 starting...
+[2026-02-19 15:46:13] Real Trends data refreshed
+[2026-02-19 15:46:14] Competitors data refreshed
+[2026-02-19 15:46:39] Email Newsletters data refreshed
+[2026-02-19 15:46:49] Reddit data refreshed
+[2026-02-19 15:46:59] Indie Hacker data refreshed
+[2026-02-19 15:46:59] Product Hunt data refreshed
+[2026-02-19 15:47:00] YouTube data refreshed
+[2026-02-19 15:47:06] Topic Aggregator data refreshed
+[2026-02-19 15:47:12] Briefing built (5882 chars)
+[2026-02-19 15:47:14] ✅ Briefing sent
+[2026-02-19 15:59:43] Morning briefing v2 starting...
+[2026-02-19 15:59:48] Real Trends data refreshed
+[2026-02-19 15:59:50] Competitors data refreshed
+[2026-02-20 13:00:02] Morning briefing v2 starting...
+[2026-02-20 13:00:06] Real Trends data refreshed
+[2026-02-20 13:00:08] Competitors data refreshed
+[2026-02-20 13:00:52] Email Newsletters data refreshed
+[2026-02-20 13:01:04] Reddit data refreshed
+[2026-02-20 13:01:16] Indie Hacker data refreshed
+[2026-02-20 13:01:16] Product Hunt data refreshed
+[2026-02-20 13:01:17] YouTube data refreshed
+[2026-02-20 13:01:22] Topic Aggregator data refreshed
+[2026-02-20 13:01:38] Briefing built (6193 chars)
+[2026-02-20 13:01:40] ✅ Briefing sent
+[2026-02-21 13:00:01] Morning briefing v2 starting...
+[2026-02-21 13:00:06] Real Trends data refreshed
+[2026-02-21 13:00:08] Competitors data refreshed
+[2026-02-21 13:00:42] Email Newsletters data refreshed
+[2026-02-21 13:00:54] Reddit data refreshed
+[2026-02-21 13:01:04] Indie Hacker data refreshed
+[2026-02-21 13:01:05] Product Hunt data refreshed
+[2026-02-21 13:01:06] YouTube data refreshed
+[2026-02-21 13:01:12] Topic Aggregator data refreshed
+[2026-02-21 13:01:22] Weather: wttr.in timed out (10s)
+[2026-02-21 13:01:22] Briefing built (6265 chars)
+[2026-02-21 13:01:24] ✅ Briefing sent
+[2026-02-22 13:00:01] Morning briefing v2 starting...
+[2026-02-22 13:00:06] Real Trends data refreshed
+[2026-02-22 13:00:07] Competitors data refreshed
+[2026-02-22 13:00:42] Email Newsletters data refreshed
+[2026-02-22 13:00:53] Reddit data refreshed
+[2026-02-22 13:01:06] Indie Hacker data refreshed
+[2026-02-22 13:01:07] Product Hunt data refreshed
+[2026-02-22 13:01:08] YouTube data refreshed
+[2026-02-22 13:01:12] Topic Aggregator data refreshed
+[2026-02-22 13:01:27] Briefing built (5150 chars)
+[2026-02-22 13:01:29] ✅ Briefing sent
+[2026-02-23 13:00:02] Morning briefing v2 starting...
+[2026-02-23 13:00:06] Real Trends data refreshed
+[2026-02-23 13:00:08] Competitors data refreshed
+[2026-02-23 13:00:36] Email Newsletters data refreshed
+[2026-02-23 13:00:47] Reddit data refreshed
+[2026-02-23 13:01:00] Indie Hacker data refreshed
+[2026-02-23 13:01:01] Product Hunt data refreshed
+[2026-02-23 13:01:02] YouTube data refreshed
+[2026-02-23 13:01:07] Topic Aggregator data refreshed
+[2026-02-23 13:01:26] Weather: wttr.in timed out (10s)
+[2026-02-23 13:01:26] Briefing built (5500 chars)
+[2026-02-23 13:01:28] ✅ Briefing sent
+[2026-02-24 13:00:02] Morning briefing v2 starting...
+[2026-02-24 13:00:06] Real Trends data refreshed
+[2026-02-24 13:00:08] Competitors data refreshed
+[2026-02-24 13:00:40] Email Newsletters data refreshed
+[2026-02-24 13:00:52] Reddit data refreshed
+[2026-02-24 13:01:03] Indie Hacker data refreshed
+[2026-02-24 13:01:03] Product Hunt data refreshed
+[2026-02-24 13:01:04] YouTube data refreshed
+[2026-02-24 13:01:09] Topic Aggregator data refreshed
+[2026-02-24 13:01:22] Weather: wttr.in timed out (10s)
+[2026-02-24 13:01:22] Briefing built (7079 chars)
+[2026-02-24 13:01:23] ✅ Briefing sent
+[2026-02-25 13:00:01] Morning briefing v2 starting...
+[2026-02-25 13:00:07] Real Trends data refreshed
+[2026-02-25 13:00:08] Competitors data refreshed
+[2026-02-25 13:00:47] Email Newsletters data refreshed
+[2026-02-25 13:01:00] Reddit data refreshed
+[2026-02-25 13:01:13] Indie Hacker data refreshed
+[2026-02-25 13:01:14] Product Hunt data refreshed
+[2026-02-25 13:01:15] YouTube data refreshed
+[2026-02-25 13:01:20] Topic Aggregator data refreshed
+[2026-02-25 13:01:28] Briefing built (6848 chars)
+[2026-02-25 13:01:30] ✅ Briefing sent
+[2026-02-26 13:00:01] Morning briefing v2 starting...
+[2026-02-26 13:00:08] Real Trends data refreshed
+[2026-02-26 13:00:12] Competitors data refreshed
+[2026-02-26 13:00:43] Email Newsletters data refreshed
+[2026-02-26 13:00:57] Reddit data refreshed
+[2026-02-26 13:01:12] Indie Hacker data refreshed
+[2026-02-26 13:01:12] Product Hunt data refreshed
+[2026-02-26 13:01:14] YouTube data refreshed
+[2026-02-26 13:01:19] Topic Aggregator data refreshed
+[2026-02-26 13:01:29] Weather: wttr.in timed out (10s)
+[2026-02-26 13:01:29] Briefing built (6154 chars)
+[2026-02-26 13:01:31] ✅ Briefing sent
+[2026-02-27 13:00:01] Morning briefing v2 starting...
+[2026-02-27 13:00:07] Real Trends data refreshed
+[2026-02-27 13:00:10] Competitors data refreshed
+[2026-02-27 13:00:47] Email Newsletters data refreshed
+[2026-02-27 13:00:59] Reddit data refreshed
+[2026-02-27 13:01:21] Indie Hacker data refreshed
+[2026-02-27 13:01:21] Product Hunt data refreshed
+[2026-02-27 13:01:24] YouTube data refreshed
+[2026-02-27 13:01:28] Topic Aggregator data refreshed
+[2026-02-27 13:01:43] Weather: wttr.in timed out (10s)
+[2026-02-27 13:01:43] Briefing built (6362 chars)
+[2026-02-27 13:01:45] ✅ Briefing sent
+[2026-02-28 13:00:01] Morning briefing v2 starting...
+[2026-02-28 13:00:07] Real Trends data refreshed
+[2026-02-28 13:00:10] Competitors data refreshed
+[2026-02-28 13:00:38] Email Newsletters data refreshed
+[2026-02-28 13:00:49] Reddit data refreshed
+[2026-02-28 13:01:07] Indie Hacker data refreshed
+[2026-02-28 13:01:07] Product Hunt data refreshed
+[2026-02-28 13:01:10] YouTube data refreshed
+[2026-02-28 13:01:15] Topic Aggregator data refreshed
+[2026-02-28 13:01:35] Briefing built (6737 chars)
+[2026-02-28 13:01:38] ✅ Briefing sent
+[2026-03-01 13:00:01] Morning briefing v2 starting...
+[2026-03-01 13:00:07] Real Trends data refreshed
+[2026-03-01 13:00:09] Competitors data refreshed
+[2026-03-01 13:00:36] Email Newsletters data refreshed
+[2026-03-01 13:00:47] Reddit data refreshed
+[2026-03-01 13:01:02] Indie Hacker data refreshed
+[2026-03-01 13:01:02] Product Hunt data refreshed
+[2026-03-01 13:01:05] YouTube data refreshed
+[2026-03-01 13:01:10] Topic Aggregator data refreshed
+[2026-03-01 13:01:21] Weather: wttr.in timed out (10s)
+[2026-03-01 13:01:21] Briefing built (5378 chars)
+[2026-03-01 13:01:23] ✅ Briefing sent
+[2026-03-02 13:00:01] Morning briefing v2 starting...
+[2026-03-02 13:00:08] Real Trends data refreshed
+[2026-03-02 13:00:11] Competitors data refreshed
+[2026-03-02 13:01:08] Email Newsletters data refreshed
+[2026-03-02 13:01:20] Reddit data refreshed
+[2026-03-02 13:01:36] Indie Hacker data refreshed
+[2026-03-02 13:01:37] Product Hunt data refreshed
+[2026-03-02 13:01:39] YouTube data refreshed
+[2026-03-02 13:01:44] Topic Aggregator data refreshed
+[2026-03-02 13:01:54] Weather: wttr.in timed out (10s)
+[2026-03-02 13:01:54] Briefing built (6126 chars)
+[2026-03-02 13:01:56] ✅ Briefing sent
+[2026-03-03 13:00:01] Morning briefing v2 starting...
+[2026-03-03 13:00:07] Real Trends data refreshed
+[2026-03-03 13:00:11] Competitors data refreshed
+[2026-03-03 13:00:45] Email Newsletters data refreshed
+[2026-03-03 13:00:57] Reddit data refreshed
+[2026-03-03 13:01:16] Indie Hacker data refreshed
+[2026-03-03 13:01:16] Product Hunt data refreshed
+[2026-03-03 13:01:19] YouTube data refreshed
+[2026-03-03 13:01:24] Topic Aggregator data refreshed
+[2026-03-03 13:01:34] Weather: wttr.in timed out (10s)
+[2026-03-03 13:01:34] Briefing built (6451 chars)
+[2026-03-03 13:01:37] ✅ Briefing sent
+[2026-03-04 13:00:01] Morning briefing v2 starting...
+[2026-03-04 13:00:07] Real Trends data refreshed
+[2026-03-04 13:00:10] Competitors data refreshed
+[2026-03-04 13:00:53] Email Newsletters data refreshed
+[2026-03-04 13:01:07] Reddit data refreshed
+[2026-03-04 13:01:25] Indie Hacker data refreshed
+[2026-03-04 13:01:25] Product Hunt data refreshed
+[2026-03-04 13:01:27] YouTube data refreshed
+[2026-03-04 13:01:32] Topic Aggregator data refreshed
+[2026-03-04 13:01:42] Weather: wttr.in timed out (10s)
+[2026-03-04 13:01:42] Briefing built (6322 chars)
+[2026-03-04 13:01:44] ✅ Briefing sent

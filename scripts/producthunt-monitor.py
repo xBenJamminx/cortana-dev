@@ -8,8 +8,8 @@ from datetime import datetime
 from pathlib import Path
 
 MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/producthunt-monitor.log")
-SUMMARY_FILE = Path("/root/clawd/memory/producthunt_summary.md")
+LOG_FILE = Path("/root/.openclaw/workspace/logs/producthunt-monitor.log")
+SUMMARY_FILE = Path("/root/.openclaw/workspace/memory/producthunt_summary.md")
 
 # Product Hunt doesn't require auth for basic RSS/frontpage scraping
 PH_API = "https://www.producthunt.com/frontend/graphql"

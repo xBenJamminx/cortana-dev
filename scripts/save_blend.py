@@ -48,4 +48,4 @@ bpy.ops.object.light_add(type='POINT', location=(2, 2, 2))
 bpy.data.objects['Point'].data.energy = 1000
 
 # SAVE FILE
-bpy.ops.wm.save_as_mainfile(filepath="/root/clawd/cortana_humanoid.blend")
+bpy.ops.wm.save_as_mainfile(filepath="/root/.openclaw/workspace/cortana_humanoid.blend")
