@@ -1,2 +1,19 @@
 .obsidian/
 projects/review-monitor/scraper/
+
+# Large files
+*.mp3
+*.mp4
+*.wav
+*.ogg
+*.webm
+*.mov
+*.avi
+*.mkv
+*.zip
+*.tar.gz
+*.bin
+media/inbound/
+lib/__pycache__/
+**/__pycache__/
+*.pyc
