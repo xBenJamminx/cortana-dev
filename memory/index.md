@@ -12,9 +12,11 @@ Search this index first. Read only the specific file you need.
 | 2026-02-26 | [[2026-02-26]] | Apollo Prospect Search System Built | `2026-02-26.md` |
 | 2026-02-04 | [[2026-02-04]] | Twitter Account Cleanup, Morning Briefing, Content Strategy | `2026-02-04.md` |
 | 2026-02-03 | [[2026-02-03]] | Claude Max Subscription, Bird CLI, Server Access | `2026-02-03.md` |
-| 2026-01-30 | [[2026-01-30]] | Major Pivot Day, X/Twitter Strategy, OpenRouter | `2026-01-30.md` |
-| 2026-01-29 | [[2026-01-29]] | Content Pipeline, Identity Locked In, Model Router | `2026-01-29.md` |
-| 2026-01-28 | [[2026-01-28]] | First Boot + Full Setup, Identity, Auth | `2026-01-28.md` |
+
+### Archived (30+ days old → `archive/2026-01/`)
+| 2026-01-30 | [[archive/2026-01/2026-01-30]] | Major Pivot Day, X/Twitter Strategy, OpenRouter | `archive/2026-01/` |
+| 2026-01-29 | [[archive/2026-01/2026-01-29]] | Content Pipeline, Identity Locked In, Model Router | `archive/2026-01/` |
+| 2026-01-28 | [[archive/2026-01/2026-01-28]] | First Boot + Full Setup, Identity, Auth | `archive/2026-01/` |
 
 ## Research & Analysis
 
