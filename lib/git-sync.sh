@@ -5,9 +5,11 @@ cd /root/.openclaw/workspace
 # Pull first to avoid conflicts
 git pull origin master --rebase -q 2>/dev/null
 
-# Stage and commit any changes
-if ! git diff --quiet || ! git diff --staged --quiet; then
-    git add -A
-    git commit -m "auto: workspace sync 2026-03-04 10:40" -q
+# Stage all changes (including untracked files)
+git add -A
+
+# Commit if there's anything staged
+if ! git diff --staged --quiet; then
+    git commit -m "auto: workspace sync $(date '+%Y-%m-%d %H:%M')" -q
     git push origin master -q
 fi

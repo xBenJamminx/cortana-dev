@@ -57,17 +57,24 @@
 
 ## Session Handoff (Critical)
 
+**Handoff file:** `memory/handoff.md` — this is in the GIT REPO, not local `.claude/` auto-memory.
+Both server-Cortana and local-Cortana read/write the same file via git.
+
 ### On EVERY session end (after responding):
-Write/overwrite `memory/handoff.md`:
+Write/overwrite `memory/handoff.md` (in the workspace git repo):
 
 - **Topic:** which Telegram topic (e.g. Research, Business)
+- **When:** date
+- **Who:** Server Cortana or Local Cortana
 - **What we were doing:** 1-3 sentences on the task/conversation in progress
 - **Status:** Done / In progress / Blocked + next step
 - **Key context:** anything a fresh session needs to avoid 'what are you talking about'
 
+Then ensure it gets committed and pushed so the other Cortana can see it.
+
 ### On EVERY session start (before responding):
-1. Read `memory/handoff.md`
+1. Read `memory/handoff.md` from the workspace git repo
 2. If recent (same day or within 24h) AND relevant — resume naturally. Don't announce it, just know it.
 3. If stale or different topic — note it but don't force it.
 
-This is the ONLY continuity across gateway restarts. No exceptions.
+**Why this matters:** There are two Cortanas (server + local Claude Code). The git repo is the ONLY shared state. Local `.claude/` directories are invisible to each other. No exceptions.
