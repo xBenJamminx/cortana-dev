@@ -1,5 +1,11 @@
 📺 YouTube - Latest from AI/Creator Channels
 
+• [Best recording setup for guitar (equipment and software) | Rick Beato and Lex Fridman](https://www.youtube.com/watch?v=pcJKVBgymV4)
+  _Matt Wolfe_
+
+• [The corruption of YouTube copyright strikes explained | Rick Beato and Lex Fridman](https://www.youtube.com/watch?v=l3pvsT5SW3Q)
+  _Matt Wolfe_
+
 • [This beats every productivity hack for your career](https://www.youtube.com/shorts/8WYYTBzCZVs)
   _Ali Abdaal_
 
@@ -22,11 +28,5 @@
   _Matt Wolfe_
 
 • [The genius of David Gilmour | Rick Beato and Lex Fridman](https://www.youtube.com/watch?v=8elyVwr_nOA)
-  _Matt Wolfe_
-
-• [Cloudflare just slop forked Next.js…](https://www.youtube.com/watch?v=abbeIUOCzmw)
-  _Fireship_
-
-• [How Spotify changed music | Rick Beato and Lex Fridman](https://www.youtube.com/watch?v=Qq4ENZsmfeE)
   _Matt Wolfe_
 
