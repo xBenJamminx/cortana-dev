@@ -1,5 +1,8 @@
 📺 YouTube - Latest from AI/Creator Channels
 
+• [Lex Fridman on Metallica](https://www.youtube.com/watch?v=I8GkyeGhoOE)
+  _Matt Wolfe_
+
 • [Best recording setup for guitar (equipment and software) | Rick Beato and Lex Fridman](https://www.youtube.com/watch?v=pcJKVBgymV4)
   _Matt Wolfe_
 
@@ -25,8 +28,5 @@
   _Matt Wolfe_
 
 • [What guitar Lex Fridman plays](https://www.youtube.com/watch?v=OCmam3xuP8g)
-  _Matt Wolfe_
-
-• [The genius of David Gilmour | Rick Beato and Lex Fridman](https://www.youtube.com/watch?v=8elyVwr_nOA)
   _Matt Wolfe_
 
