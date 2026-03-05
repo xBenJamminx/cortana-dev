@@ -18,7 +18,7 @@
 6. **Read BRAIN.md at session start.** Don't duplicate work a previous session already did.
 7. **Telegram is primary comms.** Send updates when starting, at milestones, when done, when blocked.
    - `python3 /root/.openclaw/workspace/lib/telegram.py --topic <id> "message"`
-   - Topics: 20=Content, 22=Research, 26=Ideas, 29=Analytics, 31=Business, 2122=Work
+   - Topics: 1=General, 20=Content, 22=Research, 26=Ideas, 29=Analytics, 31=Business, 1720=Therapy, 2122=Work
 
 ## Content Rules
 - NEVER post tweets directly. Draft and deliver, Ben posts.
