@@ -8,7 +8,7 @@
 | Browse the web / sign up for a service | Playwright via Python (`from playwright.sync_api import sync_playwright`) | saying "no browser available" |
 | Calendar events | `python3 lib/gcal.py` | composio GOOGLECALENDAR_* directly |
 | Google Docs/Sheets | composio `GOOGLEDOCS_*` / `GOOGLESHEETS_*` | direct API |
-| Slack message | Slack API (SLACK_BOT_TOKEN) or composio SLACK_* | saying no access |
+| Slack message | python3 lib/slack.py <channel> [limit] | saying no access |
 | Web search | `skills/brave-search/` | composio |
 | Track follow-up | `skills/follow_up_tracker/` | memory file manually |
 | Meeting prep | `skills/meeting_prep/` | raw calendar API |

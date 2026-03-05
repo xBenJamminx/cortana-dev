@@ -61,6 +61,9 @@
 - Bot: cortana (user_id=U0ABR0SER62, bot_id=B0ABWKXBFEG)
 - Workspace: smartcompanionpoc.slack.com (team_id=T08K8GFMEEQ)
 - Token: SLACK_BOT_TOKEN in ~/.openclaw/.env
+- HOW TO USE: python3 lib/slack.py meeting-notes 10
+- List channels: python3 lib/slack.py --list
+- DO NOT use MCP tools or composio for Slack. Use lib/slack.py.
 - YOU HAVE FULL ACCESS. You have been reading #meeting-notes and updating Notion all week.
 - Key channels:
   - #meeting-notes  C09J78SH2FM
