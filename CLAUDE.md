@@ -38,6 +38,7 @@
 
 | If the task involves... | Read these files |
 |------------------------|-----------------|
+| FAM POC / standup notes / Notion updates | context/fam-poc.md |
 | Sleep/meditation video | context/sleep-video.md |
 | Content drafting/posting/strategy | context/content-pipeline.md |
 | P&T outreach/sales | context/parker-taylor.md |
@@ -54,6 +55,7 @@
 - After creating research/drafts: update `memory/index.md`
 - Memory files are write-only graves unless indexed. Search the index first.
 - Cortana cannot read Telegram history. Memory files are the ONLY continuity.
+- **After ANY repeated workflow** (standup updates, Slack reads, Notion changes): write the workflow to a context/ file so you never ask Ben how to do it again. If you did it twice, it should be documented.
 
 ## Session Handoff (Critical)
 
