@@ -713,3 +713,11 @@ Manual intervention may be needed.
 
 **Message:** Hung session detected: claude process active but log silent for 4057s — restarting
 
+
+---
+
+## 2026-03-05 20:11:02: WARNING Alert
+
+**Message:** Stale cron jobs detected:
+  - YouTube monitor: 8.0h old (max 8h)
+
