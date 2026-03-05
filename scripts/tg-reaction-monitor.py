@@ -19,7 +19,7 @@ from threading import Timer, Lock
 BOT_TOKEN = '8553187574:AAFDKi7lik8TXLIbed3rWcPsLry8E4MuJyg'
 API = f'https://api.telegram.org/bot{BOT_TOKEN}'
 GROUP_CHAT_ID = -1003856131939
-TOPICS = [1, 20, 22, 26, 29, 31]
+TOPICS = [1, 20, 22, 26, 29, 31, 2122]
 TYPING_INTERVAL = 4
 EYES = '👀'
 
