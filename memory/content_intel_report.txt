@@ -1,4 +1,4 @@
-🎯 *Content Intel* (2026-03-05 04:05)
+🎯 *Content Intel* (2026-03-05 08:05)
 
 *🔥 TRENDING TOPICS*
 🔴 *TYPESCRIPT* `[dev, hn, news, ph]`
@@ -6,36 +6,36 @@
    • [Intel's make-or-break 18A process node debuts for data cente](https://www.tomshardware.com/pc-components/cpus/intels-make-or-break-18a-process-node-debuts-for-data-center-with-288-core-xeon-6-cpu-multi-chip-monster-sports-12-channels-of-ddr5-8000-foveros-direct-3d-packaging-tech) (279⬆)
    • [Voxile: A ray-traced game made in its own engine and program](https://elbowgreasegames.substack.com/p/voxray-games-pushes-major-update) (210⬆)
 
-🟡 *STARTUP* `[hn, news]`
+🔴 *STARTUP* `[hn, news, ph]`
    • [Claude's Cycles [pdf]](https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf) (713⬆)
-   • [Glaze by Raycast](https://www.glazeapp.com/) (204⬆)
+   • [Glaze by Raycast](https://www.glazeapp.com/) (214⬆)
    • [Launch HN: Cekura (YC F24) – Testing and monitoring for voic](https://news.ycombinator.com/item?id=47232903) (86⬆)
 
-🔴 *DEV TOOLS* `[dev, hn, news]`
+🔴 *LLM* `[dev, hn, ph]`
+   • [Something is afoot in the land of Qwen](https://simonwillison.net/2026/Mar/4/qwen/) (643⬆)
+   • [Qwen3.5 Fine-Tuning Guide](https://unsloth.ai/docs/models/qwen3.5/fine-tune) (328⬆)
+   • [NanoGPT Slowrun: Language Modeling with Limited Data, Infini](https://qlabs.sh/slowrun) (158⬆)
+
+🔴 *DEV TOOLS* `[dev, hn, news, ph]`
    • [I'm reluctant to verify my identity or age for any online se](https://neilzone.co.uk/2026/03/im-struggling-to-think-of-any-online-services-for-which-id-be-willing-to-verify-my-identity-or-age/) (902⬆)
    • [Physics Girl: Super-Kamiokande – Imaging the sun by detectin](https://www.youtube.com/watch?v=B3m3AMRlYfc) (442⬆)
-   • [Qwen3.5 Fine-Tuning Guide](https://unsloth.ai/docs/models/qwen3.5/fine-tune) (300⬆)
+   • [Qwen3.5 Fine-Tuning Guide](https://unsloth.ai/docs/models/qwen3.5/fine-tune) (328⬆)
 
 🔴 *CLAUDE* `[dev, hn, news]`
    • [Claude's Cycles [pdf]](https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf) (713⬆)
-   • [Jensen Huang says Nvidia is pulling back from OpenAI and Ant](https://techcrunch.com/2026/03/04/jensen-huang-says-nvidia-is-pulling-back-from-openai-and-anthropic-but-his-explanation-raises-more-questions-than-it-answers/) (34⬆)
-   • [Building a Local PR Review Interface for Claude Code Plans](https://dev.to/eduardmaghakyan/building-a-local-pr-review-interface-for-claude-code-plans-57o2) (2⬆)
-
-🔴 *LLM* `[dev, hn, ph]`
-   • [Something is afoot in the land of Qwen](https://simonwillison.net/2026/Mar/4/qwen/) (568⬆)
-   • [Qwen3.5 Fine-Tuning Guide](https://unsloth.ai/docs/models/qwen3.5/fine-tune) (300⬆)
-   • [NanoGPT Slowrun: Language Modeling with Limited Data, Infini](https://qlabs.sh/slowrun) (136⬆)
+   • [Jensen Huang says Nvidia is pulling back from OpenAI and Ant](https://techcrunch.com/2026/03/04/jensen-huang-says-nvidia-is-pulling-back-from-openai-and-anthropic-but-his-explanation-raises-more-questions-than-it-answers/) (138⬆)
+   • [The Secret Life of Claude Code: Skill Is Not What You Think ](https://dev.to/aaron_rose_0787cc8b4775a0/the-secret-life-of-claude-code-skill-is-not-what-you-think-it-is-5045) (12⬆)
 
 🔴 *GPT* `[hn, news, ph]`
+   • [Dario Amodei calls OpenAI’s messaging around military deal ‘](https://techcrunch.com/2026/03/04/anthropic-ceo-dario-amodei-calls-openais-messaging-around-military-deal-straight-up-lies-report-says/) (503⬆)
    • [GPT‑5.3 Instant](https://openai.com/index/gpt-5-3-instant/) (363⬆)
-   • [Dario Amodei calls OpenAI’s messaging around military deal ‘](https://techcrunch.com/2026/03/04/anthropic-ceo-dario-amodei-calls-openais-messaging-around-military-deal-straight-up-lies-report-says/) (325⬆)
-   • [NanoGPT Slowrun: Language Modeling with Limited Data, Infini](https://qlabs.sh/slowrun) (136⬆)
+   • [NanoGPT Slowrun: Language Modeling with Limited Data, Infini](https://qlabs.sh/slowrun) (158⬆)
 
 *🚀 FRESH LAUNCHES*
-• [ClawOffice](https://www.producthunt.com/products/clawoffice)
-• [Floyd enterprise world model](https://www.producthunt.com/products/floyd-enterprise-world-model)
-• [agile.flights](https://www.producthunt.com/products/agile-flights)
-• [Picsart Persona &amp; Storyline](https://www.producthunt.com/products/picsart)
-• [Vocova](https://www.producthunt.com/products/vocova)
+• [HookLens](https://www.producthunt.com/products/hooklens)
+• [Parsewise](https://www.producthunt.com/products/parsewise)
+• [Step 3.5 Flash](https://www.producthunt.com/products/step-3-5-flash)
+• [Hermit](https://www.producthunt.com/products/hermit-2)
+• [Itchy](https://www.producthunt.com/products/itchy-2)
 
 _🔴 3+ platforms | 🟡 2 platforms | ⚪ 1 platform_
