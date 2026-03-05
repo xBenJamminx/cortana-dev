@@ -49,9 +49,6 @@ GATEWAY_PORT = 18789
 # Cron jobs to monitor for freshness (path, max_age_hours, description)
 CRON_JOBS = [
     ("/root/.openclaw/workspace/logs/cron-morning.log", 26, "Morning briefing"),
-    ("/root/.openclaw/workspace/logs/cron-intel.log", 6, "Content intel"),
-    ("/root/.openclaw/workspace/logs/youtube-cron.log", 8, "YouTube monitor"),
-    ("/root/.openclaw/workspace/logs/email-newsletters.log", 6, "Newsletter monitor"),
     ("/var/log/clawd/watchdog.log", 0.1, "Watchdog itself"),
 ]
 
