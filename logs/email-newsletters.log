@@ -16511,3 +16511,187 @@ NUGGETS (25)
 [2026-03-05 13:00:36] Mining newsletters for nuggets (new emails only)...
 [2026-03-05 13:00:36] Saved 0 emails, 0 stories, 0 nuggets | Skipped: 2 blacklisted
 [2026-03-05 13:00:36] Done
+[2026-03-05 17:00:01] Newsletter Monitor v3 starting...
+[2026-03-05 17:00:08] Fetched 11 unique newsletter emails across 19 queries
+[2026-03-05 17:00:08]   The Rundown AI:  Amodei torches OpenAI in leaked memo -> 4 stories extracted
+[2026-03-05 17:00:08]   The Rundown AI:  OpenAI scrambles to fix its Pentagon problem -> 22 stories extracted
+[2026-03-05 17:00:08]   AI For Work: The AI safety debate just got a lot more real -> 2 stories extracted
+[2026-03-05 17:00:08]   Snack Prompt:  GPT-5.3: Instant Upgrade  -> 6 stories extracted
+[2026-03-05 17:00:08]   Snack Prompt:  Everybody Hates ChatGPT  -> 6 stories extracted
+[2026-03-05 17:00:08]   Hypefury:  The Creator Advantage Nobody Can Automate -> 2 stories extracted
+[2026-03-05 17:00:08]   Lenny's Newsletter: Three Job Searches, Three AI Roles: What Actually  -> 0 stories extracted
+[2026-03-05 17:00:08]   Social Growth Engineers: The Trend Radar: 95M views -> 2 stories extracted
+[2026-03-05 17:00:08]   Marily’s AI Product Academy Newsletter: Hello from the AI PM Academy! -> 473 stories extracted
+[2026-03-05 17:00:08] Analyzing 517 total stories with LLM...
+[2026-03-05 17:00:08] Claude analysis error: [Errno 7] Argument list too long: 'claude'
+[2026-03-05 17:00:08] Mining newsletters for nuggets (new emails only)...
+[2026-03-05 17:00:25] Extracted 6 nuggets from newsletters
+[2026-03-05 17:00:25] Marked 1 emails as nugget-mined
+[2026-03-05 17:00:25] Saved 1 emails, 6 stories, 6 nuggets | Skipped: 2 blacklisted
+[2026-03-05 17:00:01] Newsletter Monitor v3 starting...
+[2026-03-05 17:00:08] Fetched 11 unique newsletter emails across 19 queries
+[2026-03-05 17:00:08]   The Rundown AI:  Amodei torches OpenAI in leaked memo -> 4 stories extracted
+[2026-03-05 17:00:08]   The Rundown AI:  OpenAI scrambles to fix its Pentagon problem -> 22 stories extracted
+[2026-03-05 17:00:08]   AI For Work: The AI safety debate just got a lot more real -> 2 stories extracted
+[2026-03-05 17:00:08]   Snack Prompt:  GPT-5.3: Instant Upgrade  -> 6 stories extracted
+[2026-03-05 17:00:08]   Snack Prompt:  Everybody Hates ChatGPT  -> 6 stories extracted
+[2026-03-05 17:00:08]   Hypefury:  The Creator Advantage Nobody Can Automate -> 2 stories extracted
+[2026-03-05 17:00:08]   Lenny's Newsletter: Three Job Searches, Three AI Roles: What Actually  -> 0 stories extracted
+[2026-03-05 17:00:08]   Social Growth Engineers: The Trend Radar: 95M views -> 2 stories extracted
+[2026-03-05 17:00:08]   Marily’s AI Product Academy Newsletter: Hello from the AI PM Academy! -> 473 stories extracted
+[2026-03-05 17:00:08] Analyzing 517 total stories with LLM...
+[2026-03-05 17:00:08] Claude analysis error: [Errno 7] Argument list too long: 'claude'
+[2026-03-05 17:00:08] Mining newsletters for nuggets (new emails only)...
+[2026-03-05 17:00:25] Extracted 6 nuggets from newsletters
+[2026-03-05 17:00:25] Marked 1 emails as nugget-mined
+[2026-03-05 17:00:25] Saved 1 emails, 6 stories, 6 nuggets | Skipped: 2 blacklisted
+
+======================================================================
+TOP STORIES (15)
+======================================================================
+
+[85] ChatGPT upgrade fixes the ‘cringe’ problem
+    Source: The Rundown AI
+    ChatGPT upgrade that fixes the 'cringe' problem addresses a pain point many users experience when generating content with AI.
+
+[82] Google’s new 3.1 Flash-Lite pairs speed, cost, intelligence
+    Source: The Rundown AI
+    Google's new 3.1 Flash-Lite model offers a balance of speed, cost, and intelligence that matters for budget-conscious builders.
+
+[80] whimsical, hand-drawn storybook illustration
+    Source: Snack Prompt
+    Prompt for creating whimsical storybook illustrations is a concrete, usable creative tool for Ben's vibecoding audience.
+    https://snackprompt.com/e/prompt/beautiful-hand-drawn-childrens-book-illustrations-EKwkkF9iy
+
+[73] DeepSeek V4
+    Source: Snack Prompt
+    DeepSeek V4 launching as multimodal model gives builders another powerful option for AI projects.
+    https://www.apple.com/newsroom/2026/03/apple-introduces-the-new-ipad-air-powered-by-m4/
+
+[68] On Saturday (28), U.S. users
+    Source: Snack Prompt
+    ChatGPT uninstalls spiking 295% above normal is cultural signal about AI tool switching behavior worth discussing.
+
+[65] Create killer thumbnails with Midjourney
+    Source: The Rundown AI
+    Tutorial on creating killer thumbnails with Midjourney addresses a practical need for content creators in Ben's audience.
+
+[62] push frontier AI systems into every sector.
+    Source: Snack Prompt
+    OpenAI's global expansion plan to 'scale AI for everyone' signals broader access to advanced models for everyday builders.
+    https://openai.com/index/scaling-ai-for-everyone/
+
+[60] HYPEFURY 2 IS LIVE
+    Source: Hypefury
+    Hypefury 2 launch is relevant for creators doing social media automation and growth.
+
+[58] Supreme Court ducks AI copyright question
+    Source: The Rundown AI
+    Supreme Court avoiding AI copyright question leaves builders in continued uncertainty about training and using AI tools
+
+[50] OpenAI ships GPT-5.3
+    Source: Snack Prompt
+    OpenAI ships GPT-5.3 Instant, calls the last one “cringe”
+
+[50] In the days following
+    Source: Snack Prompt
+    In the days following OpenAI's Pentagon deal, a structured boycott campaign called QuitGPT emerged as the organized face of user backlash.
+
+[50] ChatWithAds
+    Source: Snack Prompt
+    🧬 Aura Semantic version control for AI code. Hashes the AST (not lines) to trace AI-generated changes, block undocumented commits, and rewind broken functions.
+    https://www.producthunt.com/products/chatwithads
+
+[50] Brazil's antitrust tribunal
+    Source: Snack Prompt
+    Brazil's antitrust tribunal CADE unanimously upheld a preventive measure blocking Meta from enforcing new WhatsApp Business terms of use that would have banned competing AI chatbots from the platform.
+
+[50] OpenAI Ships GPT-5.3 Instant, Calls Previous Version "Cringe"
+    Source: Snack Prompt
+    🤖 OpenAI Ships GPT-5.3 Instant, Calls Previous Version "Cringe" → Fewer refusals, no preachy preambles, 26.8% fewer hallucinations on web answers. GPT-5.4 already teased for this week.
+    https://9to5mac.com/2026/03/03/openai-releases-gpt-5-3-instant-update-to-make-chatgpt-less-cringe/
+
+[50] Trade FCCN Here
+    Source: Snack Prompt
+    Snack Prompt & The Daily Bite Ticker: FCCN | Trade FCCN Here Follow Along: FCCN on Yahoo Finance
+    https://www.interactivebrokers.com/en/trading/products-exchanges.php
+
+======================================================================
+NUGGETS (31)
+======================================================================
+
+  [how-to]
+    - The Rundown AI is launching an OpenClaw course on March 11 covering agent setup to real workflow integration across three hands-on sessions for building autonomous AI assistants. -> https://app.therundown.ai/courses/openclaw-build-your-own-autonomous-ai-assistant-michael-shimeles
+      (The Rundown AI)
+    - Tutorial available on creating killer thumbnails using Midjourney for content creators.
+      (The Rundown AI)
+
+  [tool]
+    - OpenAI shipped GPT-5.3 Instant, positioning it as an upgrade over the previous version which they described as 'cringe'.
+      (Snack Prompt)
+    - OpenAI is building its own GitHub-like platform to reduce dependency on Microsoft's infrastructure, marking a significant shift in their technical architecture.
+      (The Rundown AI)
+    - Anthropic launched free tool to help ChatGPT users import their conversation history when switching to Claude.
+      (Snack Prompt)
+    - Apple released M5 Pro and M5 Max chips in MacBook Pro, designed specifically to run large AI models locally and handle heavier AI workloads.
+      (AI For Work)
+    - Alibaba entered smartglasses race with Qwen AI glasses featuring in-lens displays and swappable batteries.
+      (AI For Work)
+    - Google released Gemini 3.1 Flash-Lite, a new model that balances speed, cost, and intelligence for developers.
+      (The Rundown AI)
+    - ChatGPT received an upgrade that fixes the 'cringe' problem in its responses, improving output quality.
+      (The Rundown AI)
+
+  [funding]
+    - NVIDIA invested $4B in photonics technology for next-generation AI infrastructure development.
+      (Snack Prompt)
+
+  [hiring]
+    - AI companies seek complementary skills over AI expertise. Candidates with strong product thinking, growth expertise, and learning velocity are landing AI roles without deep AI backgrounds. -> https://www.lennysnewsletter.com/cp/189898375
+      (Lenny's Newsletter)
+
+  [tip]
+    - QuitGPT campaign recommends Claude, Gemini, or open-source alternatives as ChatGPT replacements, while explicitly warning against Grok as an alternative.
+      (Snack Prompt)
+    - High agency differentiates job candidates: go beyond baseline prototypes by researching specific company challenges and commercialization strategies to show you've 'already mentally started the job.' -> https://www.lennysnewsletter.com/cp/189898375
+      (Lenny's Newsletter)
+    - Optimize for learning over title progression. Transitioning from director to IC at a cutting-edge AI company can provide more value than climbing the ladder at a traditional company. -> https://www.lennysnewsletter.com/cp/189898375
+      (Lenny's Newsletter)
+    - Accelerate job searches by clarifying your non-negotiable requirement first. Identify what your next role must provide that your current role lacks, then optimize within that constraint. -> https://www.lennysnewsletter.com/cp/189898375
+      (Lenny's Newsletter)
+[2026-03-05 17:00:25] Done
+    - Network building is engineered over years, not luck. Maintain authentic relationships long before you need them—connections made years prior can open doors to top roles. -> https://www.lennysnewsletter.com/cp/189898375
+      (Lenny's Newsletter)
+    - To test if AI writing sounds like you: read your last 5 posts out loud and ask a trusted reader to compare AI vs authentic versions. Audiences can detect generic AI content even when creators can't.
+      (Hypefury)
+    - ASAPP's framework for selecting AI use cases: assess impact, complexity, data readiness, and operational fit rather than choosing what's flashy or trendy. Data-driven prioritization prevents stalled pilots. -> https://www.asapp.com/ebooks/identifying-the-ideal-use-cases-for-generativeagent
+      (AI For Work)
+
+  [insight]
+    - QuitGPT campaign claims 1.5M actions (cancellations, signups, shares) but represents under 0.2% of ChatGPT's 900M weekly user base - the real impact is creating organized civil opposition infrastructure with brand, website, and street presence rather than actual defection numbers. -> https://www.euronews.com/next/2026/03/02/cancel-chatgpt-ai-boycott-surges-after-openai-pentagon-military-deal
+      (Snack Prompt)
+    - The QuitGPT campaign's primary audience isn't ChatGPT users but regulators, journalists, and enterprise buyers watching whether AI safety concerns can generate sustained public pressure - a test that's still ongoing.
+      (Snack Prompt)
+    - Brazil forced Meta to allow rival AI bots on WhatsApp, signaling regulatory pressure for AI platform interoperability.
+      (Snack Prompt)
+    - Dario Amodei described OpenAI's Pentagon deal as '80% safety theater and 20% real' in a leaked internal memo, revealing deep rifts in how AI companies approach defense partnerships and safety messaging. -> https://www.theinformation.com/articles/read-anthropic-ceos-memo-attacking-openais-mendacious-pentagon-announcement
+      (The Rundown AI)
+    - AI PM Academy newsletter focuses on helping product managers navigate AI product development, suggesting growing demand for structured AI product management education and frameworks.
+      (Marily's AI Product Academy Newsletter)
+    - Over 90% of OpenAI's interview process is live problem-solving rather than behavioral questions. Companies now prioritize demonstration over storytelling, expecting candidates to think through actual company problems in real-time. -> https://www.lennysnewsletter.com/cp/189898375
+      (Lenny's Newsletter)
+    - For AI role interviews, prepare to discuss specifics like what to build first, experimental hypotheses, and demonstrate first-principles thinking rather than relying on past accomplishments. -> https://www.lennysnewsletter.com/cp/189898375
+      (Lenny's Newsletter)
+    - ChatGPT uninstalls surged 295% after OpenAI's DoD deal, while Claude hit #1 on App Store after Anthropic refused similar contract. First time values-based positioning directly converted to market share shift in AI tools. -> https://techcrunch.com/2026/03/02/chatgpt-uninstalls-surged-by-295-after-dod-deal/
+      (Snack Prompt)
+    - OpenAI and Google both released faster, lighter models optimizing for speed, lower inference costs, and higher-volume workloads - showing clear industry shift toward efficiency over raw capability.
+      (AI For Work)
+    - Research showed 6 out of 8 regular readers could identify authentic creator content vs AI-generated posts. AI writing averaged 16.8 words/sentence vs creator's 11.3, and 52% contraction use vs 89%. -> https://dev.to/adrianvegaresearch/i-fed-my-10-best-blog-posts-to-5-different-ai-writing-tools-none-of-them-nailed-my-voice-47hc
+      (Hypefury)
+    - Tech writer with large following lost audience trust after switching to AI-generated posts - Reddit called him 'karma farmer' and Medium readers described content as 'incoherent, ambiguous and GenAI-like'. -> https://cobusgreyling.substack.com/p/i-have-to-confess-i-have-stopped
+      (Hypefury)
+    - OpenAI's Pentagon deal went from announcement to complete revision in less than a week due to employee protests, user cancellations, and mass sign-ups to Anthropic, revealing significant brand vulnerability despite market dominance. -> https://x.com/sama/status/2028640354912923739?s=20
+      (The Rundown AI)
+    - Sam Altman admitted OpenAI's Pentagon contract was 'rushed' and 'opportunistic and sloppy,' finalized within 24 hours after the Pentagon banned Anthropic, demonstrating how competitive pressure can lead to poor decision-making. -> https://x.com/sama/status/2028640354912923739?s=20
+      (The Rundown AI)
+[2026-03-05 17:00:25] Done
