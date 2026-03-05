@@ -540,3 +540,12 @@
 [2026-03-04 13:00:07] Total: 40 items
 [2026-03-04 13:00:07] Saved: 40 new items
 [2026-03-04 13:00:07] Done
+[2026-03-05 13:00:01] Real Trends Monitor starting...
+[2026-03-05 13:00:02] Google Daily: 10 trends
+[2026-03-05 13:00:09] HN: 30 stories
+[2026-03-05 13:00:10] Reddit: 0 posts from 13 subs
+[2026-03-05 13:00:10]   [DISABLED] Twitter trending fetch skipped — Bird CLI suspended
+[2026-03-05 13:00:10] Total: 40 items
+[2026-03-05 13:00:15] Save error: database is locked
+[2026-03-05 13:00:19] Saved: 39 new items
+[2026-03-05 13:00:19] Done
