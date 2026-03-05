@@ -721,3 +721,11 @@ Manual intervention may be needed.
 **Message:** Stale cron jobs detected:
   - YouTube monitor: 8.0h old (max 8h)
 
+
+---
+
+## 2026-03-05 21:11:02: WARNING Alert
+
+**Message:** Stale cron jobs detected:
+  - YouTube monitor: 9.0h old (max 8h)
+
