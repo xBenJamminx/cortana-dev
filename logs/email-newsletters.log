@@ -15772,3 +15772,208 @@ NUGGETS (37)
     - Supreme Court declined to hear the Thaler v. Copyright Office case, letting stand the ruling that only humans can be authors under U.S. copyright law. This leaves AI-generated content in legal limbo and signals the 'humans only' copyright standard remains for now. -> https://www.reuters.com/legal/government/us-supreme-court-declines-hear-dispute-over-copyrights-ai-generated-material-2026-03-02/
       (The Rundown AI)
 [2026-03-04 21:01:09] Done
+[2026-03-05 01:00:01] Newsletter Monitor v3 starting...
+[2026-03-05 01:00:08] Fetched 13 unique newsletter emails across 19 queries
+[2026-03-05 01:00:08]   The Rundown AI:  OpenAI scrambles to fix its Pentagon problem -> 22 stories extracted
+[2026-03-05 01:00:08]   The Rundown AI:  Copyright law wasn't built for AI -> 26 stories extracted
+[2026-03-05 01:00:08]   AI For Work: The AI safety debate just got a lot more real -> 2 stories extracted
+[2026-03-05 01:00:08]   Snack Prompt:  Everybody Hates ChatGPT  -> 6 stories extracted
+[2026-03-05 01:00:08]   Snack Prompt:  Humans Optional by 2030?  -> 6 stories extracted
+[2026-03-05 01:00:08]   Hypefury:  The Creator Advantage Nobody Can Automate -> 2 stories extracted
+[2026-03-05 01:00:08]   Lenny's Newsletter: Three Job Searches, Three AI Roles: What Actually  -> 0 stories extracted
+[2026-03-05 01:00:08]   Lenny's Newsletter: How to debug a team that isnt working: the Waterli -> 12 stories extracted
+[2026-03-05 01:00:08]   Social Growth Engineers: The Trend Radar: 95M views -> 2 stories extracted
+[2026-03-05 01:00:08]   Creator Spotlight:  Paying journalists like startup employees -> 2 stories extracted
+[2026-03-05 01:00:08]   Marily’s AI Product Academy Newsletter: Hello from the AI PM Academy! -> 473 stories extracted
+[2026-03-05 01:00:08]   TinyLaunch: TinyLog: Stop Building Web Apps -> 12 stories extracted
+[2026-03-05 01:00:08] Analyzing 565 total stories with LLM...
+[2026-03-05 01:00:08] Claude analysis error: [Errno 7] Argument list too long: 'claude'
+[2026-03-05 01:00:08] Mining newsletters for nuggets (new emails only)...
+[2026-03-05 01:00:17] Extracted 1 nuggets from newsletters
+[2026-03-05 01:00:17] Marked 1 emails as nugget-mined
+[2026-03-05 01:00:17] Saved 1 emails, 390 stories, 1 nuggets | Skipped: 1 blacklisted
+[2026-03-05 01:00:01] Newsletter Monitor v3 starting...
+[2026-03-05 01:00:08] Fetched 13 unique newsletter emails across 19 queries
+[2026-03-05 01:00:08]   The Rundown AI:  OpenAI scrambles to fix its Pentagon problem -> 22 stories extracted
+[2026-03-05 01:00:08]   The Rundown AI:  Copyright law wasn't built for AI -> 26 stories extracted
+[2026-03-05 01:00:08]   AI For Work: The AI safety debate just got a lot more real -> 2 stories extracted
+[2026-03-05 01:00:08]   Snack Prompt:  Everybody Hates ChatGPT  -> 6 stories extracted
+[2026-03-05 01:00:08]   Snack Prompt:  Humans Optional by 2030?  -> 6 stories extracted
+[2026-03-05 01:00:08]   Hypefury:  The Creator Advantage Nobody Can Automate -> 2 stories extracted
+[2026-03-05 01:00:08]   Lenny's Newsletter: Three Job Searches, Three AI Roles: What Actually  -> 0 stories extracted
+[2026-03-05 01:00:08]   Lenny's Newsletter: How to debug a team that isnt working: the Waterli -> 12 stories extracted
+[2026-03-05 01:00:08]   Social Growth Engineers: The Trend Radar: 95M views -> 2 stories extracted
+[2026-03-05 01:00:08]   Creator Spotlight:  Paying journalists like startup employees -> 2 stories extracted
+[2026-03-05 01:00:08]   Marily’s AI Product Academy Newsletter: Hello from the AI PM Academy! -> 473 stories extracted
+[2026-03-05 01:00:08]   TinyLaunch: TinyLog: Stop Building Web Apps -> 12 stories extracted
+[2026-03-05 01:00:08] Analyzing 565 total stories with LLM...
+[2026-03-05 01:00:08] Claude analysis error: [Errno 7] Argument list too long: 'claude'
+[2026-03-05 01:00:08] Mining newsletters for nuggets (new emails only)...
+[2026-03-05 01:00:17] Extracted 1 nuggets from newsletters
+[2026-03-05 01:00:17] Marked 1 emails as nugget-mined
+[2026-03-05 01:00:17] Saved 1 emails, 390 stories, 1 nuggets | Skipped: 1 blacklisted
+
+======================================================================
+TOP STORIES (15)
+======================================================================
+
+[92] [MULTI-SOURCE] #### 🧠 **_Anthropic wants your ChatGPT memories
+    Source: Unwind AI, The Rundown AI
+    Anthropic's new memory import feature lets users easily switch to Claude from ChatGPT with one prompt - highly practical for Ben's audience already using AI assistants.
+    https://claude.com/import-memory
+
+[85] ChatGPT upgrade fixes the ‘cringe’ problem
+    Source: The Rundown AI
+    ChatGPT upgrade that fixes the 'cringe' problem addresses a pain point many users experience when generating content with AI.
+
+[82] Google’s new 3.1 Flash-Lite pairs speed, cost, intelligence
+    Source: The Rundown AI
+    Google's new 3.1 Flash-Lite model offers a balance of speed, cost, and intelligence that matters for budget-conscious builders.
+
+[80] whimsical, hand-drawn storybook illustration
+    Source: Snack Prompt
+    Prompt for creating whimsical storybook illustrations is a concrete, usable creative tool for Ben's vibecoding audience.
+    https://snackprompt.com/e/prompt/beautiful-hand-drawn-childrens-book-illustrations-EKwkkF9iy
+
+[73] DeepSeek V4
+    Source: Snack Prompt
+    DeepSeek V4 launching as multimodal model gives builders another powerful option for AI projects.
+    https://www.apple.com/newsroom/2026/03/apple-introduces-the-new-ipad-air-powered-by-m4/
+
+[68] On Saturday (28), U.S. users
+    Source: Snack Prompt
+    ChatGPT uninstalls spiking 295% above normal is cultural signal about AI tool switching behavior worth discussing.
+
+[65] Create killer thumbnails with Midjourney
+    Source: The Rundown AI
+    Tutorial on creating killer thumbnails with Midjourney addresses a practical need for content creators in Ben's audience.
+
+[62] push frontier AI systems into every sector.
+    Source: Snack Prompt
+    OpenAI's global expansion plan to 'scale AI for everyone' signals broader access to advanced models for everyday builders.
+    https://openai.com/index/scaling-ai-for-everyone/
+
+[62] Gojiberry AI
+    Source: Snack Prompt
+    Gojiberry AI automates B2B lead finding and outreach drafting - practical automation tool for solopreneurs and creators.
+    https://www.producthunt.com/products/gojiberry
+
+[60] HYPEFURY 2 IS LIVE
+    Source: Hypefury
+    Hypefury 2 launch is relevant for creators doing social media automation and growth.
+
+[58] Supreme Court ducks AI copyright question
+    Source: The Rundown AI
+    Supreme Court avoiding AI copyright question leaves builders in continued uncertainty about training and using AI tools
+
+[58] Stop Building Web Apps
+    Source: TinyLaunch
+    Case study on why some apps need to be native (not web) with real success story - perspective for builders choosing platforms.
+    https://link.sbstck.com/redirect/120e12dc-651b-45ff-a102-bd3af7659656
+
+[55] Last week’s winners
+    Source: TinyLaunch
+    Launch week winners featuring AI platforms for building software and productivity tools - inspiration for what's working in indie hacking
+    https://link.sbstck.com/redirect/98167cea-8922-4722-9f6e-a00834c6119f
+
+[55] DockFlow - Instantly switch between macOS dock presets to supercharge your workflow.
+    Source: TinyLaunch
+    RubyOnVibes wins product launch - AI platform specifically for building real software, relevant for no-code/vibecoding audience.
+    https://link.sbstck.com/redirect/98167cea-8922-4722-9f6e-a00834c6119f
+
+[52] From Zero to Web2App Profitability in 90 Days
+    Source: Social Growth Engineers
+    Web2App profitability strategy relevant for Ben's audience building apps and looking to monetize beyond single platforms.
+    https://greatapps.com/
+
+======================================================================
+NUGGETS (37)
+======================================================================
+
+  [how-to]
+    - Tutorial available on creating killer thumbnails using Midjourney for content creators.
+      (The Rundown AI)
+
+  [tool]
+    - Anthropic launched free tool to help ChatGPT users import their conversation history when switching to Claude.
+      (Snack Prompt)
+    - Apple released M5 Pro and M5 Max chips in MacBook Pro, designed specifically to run large AI models locally and handle heavier AI workloads.
+      (AI For Work)
+    - Alibaba entered smartglasses race with Qwen AI glasses featuring in-lens displays and swappable batteries.
+      (AI For Work)
+    - Google released Gemini 3.1 Flash-Lite, a new model that balances speed, cost, and intelligence for developers.
+      (The Rundown AI)
+    - ChatGPT received an upgrade that fixes the 'cringe' problem in its responses, improving output quality.
+      (The Rundown AI)
+    - Great Apps offers a complete Web2App funnel solution for health, learning, and self-improvement apps. They handle quiz funnels, optimized paywalls, and ad creation end-to-end, with users paying via Stripe/PayPal before being redirected to the app as paid users. Currently offering up to $50K in free ad spend for eligible apps until March 30th. -> https://greatapps.com/?utm_source=socialgrowthengineers&utm_medium=newsletter&utm_campaign=sge-nl-3-3-26
+      (Social Growth Engineers: The Trend Radar)
+    - Huawei unveiled upgraded AI voice interaction system for AICC platform at MWC 2026 - analyzes voice tone and intent in real-time for more natural, emotionally aware customer service calls with context-aware dialogue and fewer handoffs to humans. -> https://www.huawei.com/en/news/2026/3/mwc-voice-interaction-aicc
+      (Snack Prompt: Humans Optional by 2030?)
+    - TinyShots launched - a free screenshot beautifier with independent image movement, built-in crop/censor, custom backgrounds, and markup. No signup required, now being converted to native Mac app. -> https://link.sbstck.com/redirect/2d427a53-a8f7-4c6b-a030-f477ca875cd0?j=eyJ1IjoiaDA5eXYifQ.jZUB9aTIiZcsP3YcQm_vrrcS8CPWbmH_y_jOeOWH-EI
+      (TinyLaunch: TinyLog: Stop Building Web Apps)
+    - RubyOnVibes - AI platform for building real software (won first place in TinyLaunch's weekly launch competition). -> https://link.sbstck.com/redirect/98167cea-8922-4722-9f6e-a00834c6119f?j=eyJ1IjoiaDA5eXYifQ.jZUB9aTIiZcsP3YcQm_vrrcS8CPWbmH_y_jOeOWH-EI
+      (TinyLaunch: TinyLog: Stop Building Web Apps)
+[2026-03-05 01:00:17] Done
+    - DockFlow - macOS app that lets you instantly switch between dock presets to optimize your workflow for different tasks.
+      (TinyLaunch: TinyLog: Stop Building Web Apps)
+    - Telemetry Studio - syncs cycling data with video footage and creates high-quality overlays ready for social media. -> https://link.sbstck.com/redirect/af9454a8-6a31-4ea4-a088-8f6c44867467?j=eyJ1IjoiaDA5eXYifQ.jZUB9aTIiZcsP3YcQm_vrrcS8CPWbmH_y_jOeOWH-EI
+      (TinyLaunch: TinyLog: Stop Building Web Apps)
+
+  [funding]
+    - Caper, a new food-world media business, launched with $2.5 million in funding and an eight-person founding team including three staff journalists. -> https://caper.media/
+      (Creator Spotlight)
+
+  [hiring]
+    - AI companies seek complementary skills over AI expertise. Candidates with strong product thinking, growth expertise, and learning velocity are landing AI roles without deep AI backgrounds. -> https://www.lennysnewsletter.com/cp/189898375
+      (Lenny's Newsletter)
+
+  [tip]
+    - High agency differentiates job candidates: go beyond baseline prototypes by researching specific company challenges and commercialization strategies to show you've 'already mentally started the job.' -> https://www.lennysnewsletter.com/cp/189898375
+      (Lenny's Newsletter)
+    - Optimize for learning over title progression. Transitioning from director to IC at a cutting-edge AI company can provide more value than climbing the ladder at a traditional company. -> https://www.lennysnewsletter.com/cp/189898375
+      (Lenny's Newsletter)
+    - Accelerate job searches by clarifying your non-negotiable requirement first. Identify what your next role must provide that your current role lacks, then optimize within that constraint. -> https://www.lennysnewsletter.com/cp/189898375
+      (Lenny's Newsletter)
+    - Network building is engineered over years, not luck. Maintain authentic relationships long before you need them—connections made years prior can open doors to top roles. -> https://www.lennysnewsletter.com/cp/189898375
+      (Lenny's Newsletter)
+    - To test if AI writing sounds like you: read your last 5 posts out loud and ask a trusted reader to compare AI vs authentic versions. Audiences can detect generic AI content even when creators can't.
+      (Hypefury)
+    - ASAPP's framework for selecting AI use cases: assess impact, complexity, data readiness, and operational fit rather than choosing what's flashy or trendy. Data-driven prioritization prevents stalled pilots. -> https://www.asapp.com/ebooks/identifying-the-ideal-use-cases-for-generativeagent
+      (AI For Work)
+    - The 'not drunk, just together' trend has been consistently pulling solid numbers for months. Creators can show bonding moments with friends/partners doing fun activities, then tie it together with the hook. Works particularly well for travel, couple, and friend group apps to instantly sell the vibe. -> https://www.tiktok.com/@_giulialanza/video/7351745642378677537
+      (Social Growth Engineers: The Trend Radar)
+    - Caper is betting on building a prosumer audience (professionals and enthusiasts) rather than general consumers for their food journalism business. -> https://www.youtube.com/watch?v=rY-O5ASon_k&t=225s
+      (Creator Spotlight)
+    - Some product ideas fundamentally can't work as web apps - Klack (keyboard sound app) needs system-level keystroke access, Screen Studio needs system screen recording access. Don't default to web apps for every idea.
+      (TinyLaunch: TinyLog: Stop Building Web Apps)
+    - Hacker Residency offers one-month program in Da Nang, Vietnam (May 2026) - ten founders in a villa with ocean views, completely free with no equity or revenue share, focused purely on building. -> https://link.sbstck.com/redirect/e0e5fda3-1ace-4633-9289-aa20a78610eb?j=eyJ1IjoiaDA5eXYifQ.jZUB9aTIiZcsP3YcQm_vrrcS8CPWbmH_y_jOeOWH-EI
+      (TinyLaunch: TinyLog: Stop Building Web Apps)
+
+  [insight]
+    - AI PM Academy newsletter focuses on helping product managers navigate AI product development, suggesting growing demand for structured AI product management education and frameworks.
+      (Marily's AI Product Academy Newsletter)
+    - Over 90% of OpenAI's interview process is live problem-solving rather than behavioral questions. Companies now prioritize demonstration over storytelling, expecting candidates to think through actual company problems in real-time. -> https://www.lennysnewsletter.com/cp/189898375
+      (Lenny's Newsletter)
+    - For AI role interviews, prepare to discuss specifics like what to build first, experimental hypotheses, and demonstrate first-principles thinking rather than relying on past accomplishments. -> https://www.lennysnewsletter.com/cp/189898375
+      (Lenny's Newsletter)
+    - ChatGPT uninstalls surged 295% after OpenAI's DoD deal, while Claude hit #1 on App Store after Anthropic refused similar contract. First time values-based positioning directly converted to market share shift in AI tools. -> https://techcrunch.com/2026/03/02/chatgpt-uninstalls-surged-by-295-after-dod-deal/
+      (Snack Prompt)
+    - OpenAI and Google both released faster, lighter models optimizing for speed, lower inference costs, and higher-volume workloads - showing clear industry shift toward efficiency over raw capability.
+      (AI For Work)
+    - Research showed 6 out of 8 regular readers could identify authentic creator content vs AI-generated posts. AI writing averaged 16.8 words/sentence vs creator's 11.3, and 52% contraction use vs 89%. -> https://dev.to/adrianvegaresearch/i-fed-my-10-best-blog-posts-to-5-different-ai-writing-tools-none-of-them-nailed-my-voice-47hc
+      (Hypefury)
+    - Tech writer with large following lost audience trust after switching to AI-generated posts - Reddit called him 'karma farmer' and Medium readers described content as 'incoherent, ambiguous and GenAI-like'. -> https://cobusgreyling.substack.com/p/i-have-to-confess-i-have-stopped
+      (Hypefury)
+    - OpenAI's Pentagon deal went from announcement to complete revision in less than a week due to employee protests, user cancellations, and mass sign-ups to Anthropic, revealing significant brand vulnerability despite market dominance. -> https://x.com/sama/status/2028640354912923739?s=20
+      (The Rundown AI)
+    - Sam Altman admitted OpenAI's Pentagon contract was 'rushed' and 'opportunistic and sloppy,' finalized within 24 hours after the Pentagon banned Anthropic, demonstrating how competitive pressure can lead to poor decision-making. -> https://x.com/sama/status/2028640354912923739?s=20
+      (The Rundown AI)
+    - Apps without a web funnel are reportedly leaving 70% of their revenue on the table, particularly for health, learning, and self-improvement categories. Web2App funnels can be the difference between moderate growth and massive scale.
+      (Social Growth Engineers: The Trend Radar)
+    - Caper is using a rare equity-based compensation model for founding journalists, treating them like startup employees rather than traditional media workers. -> https://www.youtube.com/watch?v=rY-O5ASon_k&t=449s
+      (Creator Spotlight)
+    - Call centers are one of the largest entry-level job pipelines globally - as AI handles more customer calls convincingly, the workforce shifts from large teams answering phones to smaller teams supervising AI systems and stepping in only when models fail.
+      (Snack Prompt: Humans Optional by 2030?)
+    - Klack keyboard sound app ($5) was originally built as a demo for a SaaS product but the demo blew up bigger than the actual product - got Apple featured and Forbes coverage, proving sometimes side demos become the main product. -> https://link.sbstck.com/redirect/120e12dc-651b-45ff-a102-bd3af7659656?j=eyJ1IjoiaDA5eXYifQ.jZUB9aTIiZcsP3YcQm_vrrcS8CPWbmH_y_jOeOWH-EI
+      (TinyLaunch: TinyLog: Stop Building Web Apps)
+[2026-03-05 01:00:17] Done
