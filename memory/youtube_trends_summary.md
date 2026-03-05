@@ -1,5 +1,11 @@
 📺 YouTube - Latest from AI/Creator Channels
 
+• [Flea's jazz influence: Bass guitar is the most underrated instrument | Rick Beato and Lex Fridman](https://www.youtube.com/watch?v=Mby0x_Q3iY0)
+  _Matt Wolfe_
+
+• [Perfect pitch vs relative pitch explained | Rick Beato and Lex Fridman](https://www.youtube.com/watch?v=rmB4OV_et-s)
+  _Matt Wolfe_
+
 • [Lex Fridman on Metallica](https://www.youtube.com/watch?v=I8GkyeGhoOE)
   _Matt Wolfe_
 
@@ -23,10 +29,4 @@
 
 • [I made my first $1,000,000 at 26. Here's how,](https://www.youtube.com/shorts/kxf02sHgam4)
   _Ali Abdaal_
-
-• [The hardest jazz style to play: Why Charlie Parker was a genius | Rick Beato and Lex Fridman](https://www.youtube.com/watch?v=lK0peNOWvxo)
-  _Matt Wolfe_
-
-• [What guitar Lex Fridman plays](https://www.youtube.com/watch?v=OCmam3xuP8g)
-  _Matt Wolfe_
 
