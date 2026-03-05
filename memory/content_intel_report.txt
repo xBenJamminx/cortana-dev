@@ -1,10 +1,10 @@
-🎯 *Content Intel* (2026-03-05 12:05)
+🎯 *Content Intel* (2026-03-05 16:05)
 
 *🔥 TRENDING TOPICS*
 🔴 *LLM* `[dev, hn, ph]`
-   • [Something is afoot in the land of Qwen](https://simonwillison.net/2026/Mar/4/qwen/) (689⬆)
+   • [Something is afoot in the land of Qwen](https://simonwillison.net/2026/Mar/4/qwen/) (742⬆)
+   • [The L in "LLM" Stands for Lying](https://acko.net/blog/the-l-in-llm-stands-for-lying/) (482⬆)
    • [Qwen3.5 Fine-Tuning Guide](https://unsloth.ai/docs/models/qwen3.5/fine-tune) (350⬆)
-   • [The L in "LLM" Stands for Lying](https://acko.net/blog/the-l-in-llm-stands-for-lying/) (252⬆)
 
 🔴 *TYPESCRIPT* `[dev, hn, news, ph]`
    • [Nobody Gets Promoted for Simplicity](https://terriblesoftware.org/2026/03/03/nobody-gets-promoted-for-simplicity/) (684⬆)
@@ -29,13 +29,13 @@
 🔴 *CLAUDE* `[dev, hn, news]`
    • [Claude's Cycles [pdf]](https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf) (713⬆)
    • [Jensen Huang says Nvidia is pulling back from OpenAI and Ant](https://techcrunch.com/2026/03/04/jensen-huang-says-nvidia-is-pulling-back-from-openai-and-anthropic-but-his-explanation-raises-more-questions-than-it-answers/) (138⬆)
-   • [The Secret Life of Claude Code: Skill Is Not What You Think ](https://dev.to/aaron_rose_0787cc8b4775a0/the-secret-life-of-claude-code-skill-is-not-what-you-think-it-is-5045) (16⬆)
+   • [The Secret Life of Claude Code: Skill Is Not What You Think ](https://dev.to/aaron_rose_0787cc8b4775a0/the-secret-life-of-claude-code-skill-is-not-what-you-think-it-is-5045) (17⬆)
 
 *🚀 FRESH LAUNCHES*
 • [Aident AI Beta 2](https://www.producthunt.com/products/aident-ai)
-• [Itchy](https://www.producthunt.com/products/itchy-2)
-• [GitSync Lite for macOS](https://www.producthunt.com/products/gitsync-lite-for-macos)
-• [Vois](https://www.producthunt.com/products/vois)
-• [HookLens](https://www.producthunt.com/products/hooklens)
+• [Itsyconnect](https://www.producthunt.com/products/itsyconnect)
+• [MacBook Neo](https://www.producthunt.com/products/apple)
+• [Parsewise](https://www.producthunt.com/products/parsewise)
+• [Spoke](https://www.producthunt.com/products/spoke-hold-speak-done)
 
 _🔴 3+ platforms | 🟡 2 platforms | ⚪ 1 platform_
