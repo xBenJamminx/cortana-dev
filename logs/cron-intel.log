@@ -5704,3 +5704,53 @@ _🔴 3+ platforms | 🟡 2 platforms | ⚪ 1 platform_
 
 _🔴 3+ platforms | 🟡 2 platforms | ⚪ 1 platform_
 [2026-03-05 08:05:21] Content intel complete
+[2026-03-05 12:05:01] Content intel starting...
+[2026-03-05 12:05:01] Fetching Hacker News...
+[2026-03-05 12:05:06] Fetching Product Hunt...
+[2026-03-05 12:05:06] Fetching Dev.to...
+[2026-03-05 12:05:06] Fetching news...
+/root/.openclaw/workspace/scripts/content-intel.py:169: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+[2026-03-05 12:05:17] Total items: 85
+🎯 *Content Intel* (2026-03-05 12:05)
+
+*🔥 TRENDING TOPICS*
+🔴 *LLM* `[dev, hn, ph]`
+   • [Something is afoot in the land of Qwen](https://simonwillison.net/2026/Mar/4/qwen/) (689⬆)
+   • [Qwen3.5 Fine-Tuning Guide](https://unsloth.ai/docs/models/qwen3.5/fine-tune) (350⬆)
+   • [The L in "LLM" Stands for Lying](https://acko.net/blog/the-l-in-llm-stands-for-lying/) (252⬆)
+
+🔴 *TYPESCRIPT* `[dev, hn, news, ph]`
+   • [Nobody Gets Promoted for Simplicity](https://terriblesoftware.org/2026/03/03/nobody-gets-promoted-for-simplicity/) (684⬆)
+   • [Intel's make-or-break 18A process node debuts for data cente](https://www.tomshardware.com/pc-components/cpus/intels-make-or-break-18a-process-node-debuts-for-data-center-with-288-core-xeon-6-cpu-multi-chip-monster-sports-12-channels-of-ddr5-8000-foveros-direct-3d-packaging-tech) (279⬆)
+   • [Voxile: A ray-traced game made in its own engine and program](https://elbowgreasegames.substack.com/p/voxray-games-pushes-major-update) (210⬆)
+
+🔴 *DEV TOOLS* `[dev, hn, news, ph]`
+   • [I'm reluctant to verify my identity or age for any online se](https://neilzone.co.uk/2026/03/im-struggling-to-think-of-any-online-services-for-which-id-be-willing-to-verify-my-identity-or-age/) (902⬆)
+   • [Physics Girl: Super-Kamiokande – Imaging the sun by detectin](https://www.youtube.com/watch?v=B3m3AMRlYfc) (442⬆)
+   • [Qwen3.5 Fine-Tuning Guide](https://unsloth.ai/docs/models/qwen3.5/fine-tune) (350⬆)
+
+🔴 *STARTUP* `[hn, news, ph]`
+   • [Claude's Cycles [pdf]](https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf) (713⬆)
+   • [Glaze by Raycast](https://www.glazeapp.com/) (214⬆)
+   • [Launch HN: Cekura (YC F24) – Testing and monitoring for voic](https://news.ycombinator.com/item?id=47232903) (86⬆)
+
+🔴 *GPT* `[hn, news, ph]`
+   • [Dario Amodei calls OpenAI’s messaging around military deal ‘](https://techcrunch.com/2026/03/04/anthropic-ceo-dario-amodei-calls-openais-messaging-around-military-deal-straight-up-lies-report-says/) (624⬆)
+   • [GPT‑5.3 Instant](https://openai.com/index/gpt-5-3-instant/) (363⬆)
+   • [NanoGPT Slowrun: Language Modeling with Limited Data, Infini](https://qlabs.sh/slowrun) (158⬆)
+
+🔴 *CLAUDE* `[dev, hn, news]`
+   • [Claude's Cycles [pdf]](https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf) (713⬆)
+   • [Jensen Huang says Nvidia is pulling back from OpenAI and Ant](https://techcrunch.com/2026/03/04/jensen-huang-says-nvidia-is-pulling-back-from-openai-and-anthropic-but-his-explanation-raises-more-questions-than-it-answers/) (138⬆)
+   • [The Secret Life of Claude Code: Skill Is Not What You Think ](https://dev.to/aaron_rose_0787cc8b4775a0/the-secret-life-of-claude-code-skill-is-not-what-you-think-it-is-5045) (16⬆)
+
+*🚀 FRESH LAUNCHES*
+• [Aident AI Beta 2](https://www.producthunt.com/products/aident-ai)
+• [Itchy](https://www.producthunt.com/products/itchy-2)
+• [GitSync Lite for macOS](https://www.producthunt.com/products/gitsync-lite-for-macos)
+• [Vois](https://www.producthunt.com/products/vois)
+• [HookLens](https://www.producthunt.com/products/hooklens)
+
+_🔴 3+ platforms | 🟡 2 platforms | ⚪ 1 platform_
+[2026-03-05 12:05:17] Content intel complete
