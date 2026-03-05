@@ -1,4 +1,4 @@
-🎯 *Content Intel* (2026-03-04 20:05)
+🎯 *Content Intel* (2026-03-05 00:05)
 
 *🔥 TRENDING TOPICS*
 🔴 *TYPESCRIPT* `[dev, hn, news, ph]`
@@ -6,36 +6,36 @@
    • [Intel's make-or-break 18A process node debuts for data cente](https://www.tomshardware.com/pc-components/cpus/intels-make-or-break-18a-process-node-debuts-for-data-center-with-288-core-xeon-6-cpu-multi-chip-monster-sports-12-channels-of-ddr5-8000-foveros-direct-3d-packaging-tech) (279⬆)
    • [Voxile: A ray-traced game made in its own engine and program](https://elbowgreasegames.substack.com/p/voxray-games-pushes-major-update) (210⬆)
 
+🟡 *STARTUP* `[hn, news]`
+   • [Claude's Cycles [pdf]](https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf) (713⬆)
+   • [Glaze by Raycast](https://www.glazeapp.com/) (185⬆)
+   • [Launch HN: Cekura (YC F24) – Testing and monitoring for voic](https://news.ycombinator.com/item?id=47232903) (86⬆)
+
 🔴 *DEV TOOLS* `[dev, hn, news]`
    • [I'm reluctant to verify my identity or age for any online se](https://neilzone.co.uk/2026/03/im-struggling-to-think-of-any-online-services-for-which-id-be-willing-to-verify-my-identity-or-age/) (902⬆)
    • [Physics Girl: Super-Kamiokande – Imaging the sun by detectin](https://www.youtube.com/watch?v=B3m3AMRlYfc) (442⬆)
-   • [Inside the M4 Apple Neural Engine, Part 1: Reverse Engineeri](https://maderix.substack.com/p/inside-the-m4-apple-neural-engine) (351⬆)
-
-🟡 *STARTUP* `[hn, news]`
-   • [Claude's Cycles [pdf]](https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf) (713⬆)
-   • [Glaze by Raycast](https://www.glazeapp.com/) (150⬆)
-   • [Launch HN: OctaPulse (YC W26) – Robotics and computer vision](https://news.ycombinator.com/item?id=47220320) (102⬆)
-
-🔴 *AI AGENTS* `[dev, hn, ph]`
-   • [Show HN: I built a sub-500ms latency voice agent from scratc](https://www.ntik.me/posts/voice-agent) (503⬆)
-   • [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/) (435⬆)
-   • [Parallel coding agents with tmux and Markdown specs](https://schipper.ai/posts/parallel-coding-agents/) (131⬆)
+   • [Qwen3.5 Fine-Tuning Guide – Unsloth Documentation](https://unsloth.ai/docs/models/qwen3.5/fine-tune) (251⬆)
 
 🔴 *CLAUDE* `[dev, hn, news]`
    • [Claude's Cycles [pdf]](https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf) (713⬆)
-   • [Elevated Errors in Claude.ai](https://status.claude.com/incidents/yf48hzysrvl5) (95⬆)
-   • [Why I use markdown plan files instead of Cursor and Claude's](https://dev.to/0xandrewshu/why-i-use-markdown-plan-files-instead-of-cursor-and-claudes-built-in-planning-35co) (2⬆)
+   • [Building a Local PR Review Interface for Claude Code Plans](https://dev.to/eduardmaghakyan/building-a-local-pr-review-interface-for-claude-code-plans-57o2) (2⬆)
+   • [Anthropic's Claude AI being used in Iran war by U.S. militar](https://www.msn.com/en-us/news/world/anthropics-claude-ai-being-used-in-iran-war-by-us-military-sources-say/ar-AA1Xsljt)
 
-🔴 *OPEN SOURCE* `[dev, hn, news]`
-   • [I'm losing the SEO battle for my own open source project](https://twitter.com/Gavriel_Cohen/status/2028821432759717930) (424⬆)
-   • [GitHub Is Having Issues](https://www.githubstatus.com/incidents/n07yy1bk6kc4) (191⬆)
-   • [Physicists developing a quantum computer that’s entirely ope](https://physics.aps.org/articles/v19/24) (166⬆)
+🔴 *AI AGENTS* `[dev, hn, ph]`
+   • [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/) (435⬆)
+   • [I Created An Enterprise MCP Gateway](https://dev.to/anthonymax/i-created-an-enterprise-mcp-gateway-bg) (103⬆)
+   • [Launch HN: Cekura (YC F24) – Testing and monitoring for voic](https://news.ycombinator.com/item?id=47232903) (86⬆)
+
+🔴 *LLM* `[dev, hn, ph]`
+   • [Something is afoot in the land of Qwen](https://simonwillison.net/2026/Mar/4/qwen/) (470⬆)
+   • [Qwen3.5 Fine-Tuning Guide – Unsloth Documentation](https://unsloth.ai/docs/models/qwen3.5/fine-tune) (251⬆)
+   • [NanoGPT Slowrun: Language Modeling with Limited Data, Infini](https://qlabs.sh/slowrun) (107⬆)
 
 *🚀 FRESH LAUNCHES*
-• [Woven](https://www.producthunt.com/products/woven-launch)
-• [Picsart Persona &amp; Storyline](https://www.producthunt.com/products/picsart)
-• [Locally AI + Qwen](https://www.producthunt.com/products/locally-ai-for-mac)
-• [Gemini Code Harvester](https://www.producthunt.com/products/gemini-code-harvester)
+• [Gemini 3.1 Flash-Lite](https://www.producthunt.com/products/gemini-6)
+• [Fix in Cursor](https://www.producthunt.com/products/fix-in-cursor)
+• [moltdj](https://www.producthunt.com/products/moltdj)
+• [NOVA](https://www.producthunt.com/products/nova-18)
 • [Personal AI Memory](https://www.producthunt.com/products/personal-ai-memory)
 
 _🔴 3+ platforms | 🟡 2 platforms | ⚪ 1 platform_

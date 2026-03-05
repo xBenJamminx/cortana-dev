@@ -5554,3 +5554,53 @@ _🔴 3+ platforms | 🟡 2 platforms | ⚪ 1 platform_
 
 _🔴 3+ platforms | 🟡 2 platforms | ⚪ 1 platform_
 [2026-03-04 20:05:16] Content intel complete
+[2026-03-05 00:05:02] Content intel starting...
+[2026-03-05 00:05:02] Fetching Hacker News...
+[2026-03-05 00:05:06] Fetching Product Hunt...
+[2026-03-05 00:05:06] Fetching Dev.to...
+[2026-03-05 00:05:07] Fetching news...
+/root/.openclaw/workspace/scripts/content-intel.py:169: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+[2026-03-05 00:05:17] Total items: 84
+🎯 *Content Intel* (2026-03-05 00:05)
+
+*🔥 TRENDING TOPICS*
+🔴 *TYPESCRIPT* `[dev, hn, news, ph]`
+   • [Nobody Gets Promoted for Simplicity](https://terriblesoftware.org/2026/03/03/nobody-gets-promoted-for-simplicity/) (684⬆)
+   • [Intel's make-or-break 18A process node debuts for data cente](https://www.tomshardware.com/pc-components/cpus/intels-make-or-break-18a-process-node-debuts-for-data-center-with-288-core-xeon-6-cpu-multi-chip-monster-sports-12-channels-of-ddr5-8000-foveros-direct-3d-packaging-tech) (279⬆)
+   • [Voxile: A ray-traced game made in its own engine and program](https://elbowgreasegames.substack.com/p/voxray-games-pushes-major-update) (210⬆)
+
+🟡 *STARTUP* `[hn, news]`
+   • [Claude's Cycles [pdf]](https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf) (713⬆)
+   • [Glaze by Raycast](https://www.glazeapp.com/) (185⬆)
+   • [Launch HN: Cekura (YC F24) – Testing and monitoring for voic](https://news.ycombinator.com/item?id=47232903) (86⬆)
+
+🔴 *DEV TOOLS* `[dev, hn, news]`
+   • [I'm reluctant to verify my identity or age for any online se](https://neilzone.co.uk/2026/03/im-struggling-to-think-of-any-online-services-for-which-id-be-willing-to-verify-my-identity-or-age/) (902⬆)
+   • [Physics Girl: Super-Kamiokande – Imaging the sun by detectin](https://www.youtube.com/watch?v=B3m3AMRlYfc) (442⬆)
+   • [Qwen3.5 Fine-Tuning Guide – Unsloth Documentation](https://unsloth.ai/docs/models/qwen3.5/fine-tune) (251⬆)
+
+🔴 *CLAUDE* `[dev, hn, news]`
+   • [Claude's Cycles [pdf]](https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf) (713⬆)
+   • [Building a Local PR Review Interface for Claude Code Plans](https://dev.to/eduardmaghakyan/building-a-local-pr-review-interface-for-claude-code-plans-57o2) (2⬆)
+   • [Anthropic's Claude AI being used in Iran war by U.S. militar](https://www.msn.com/en-us/news/world/anthropics-claude-ai-being-used-in-iran-war-by-us-military-sources-say/ar-AA1Xsljt)
+
+🔴 *AI AGENTS* `[dev, hn, ph]`
+   • [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/) (435⬆)
+   • [I Created An Enterprise MCP Gateway](https://dev.to/anthonymax/i-created-an-enterprise-mcp-gateway-bg) (103⬆)
+   • [Launch HN: Cekura (YC F24) – Testing and monitoring for voic](https://news.ycombinator.com/item?id=47232903) (86⬆)
+
+🔴 *LLM* `[dev, hn, ph]`
+   • [Something is afoot in the land of Qwen](https://simonwillison.net/2026/Mar/4/qwen/) (470⬆)
+   • [Qwen3.5 Fine-Tuning Guide – Unsloth Documentation](https://unsloth.ai/docs/models/qwen3.5/fine-tune) (251⬆)
+   • [NanoGPT Slowrun: Language Modeling with Limited Data, Infini](https://qlabs.sh/slowrun) (107⬆)
+
+*🚀 FRESH LAUNCHES*
+• [Gemini 3.1 Flash-Lite](https://www.producthunt.com/products/gemini-6)
+• [Fix in Cursor](https://www.producthunt.com/products/fix-in-cursor)
+• [moltdj](https://www.producthunt.com/products/moltdj)
+• [NOVA](https://www.producthunt.com/products/nova-18)
+• [Personal AI Memory](https://www.producthunt.com/products/personal-ai-memory)
+
+_🔴 3+ platforms | 🟡 2 platforms | ⚪ 1 platform_
+[2026-03-05 00:05:17] Content intel complete
