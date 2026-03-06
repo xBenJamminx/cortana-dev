@@ -1,66 +1,68 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [Gemini 3.1 Flash-Lite](https://www.producthunt.com/products/gemini-6)
+• [GitSync Lite for macOS](https://www.producthunt.com/products/gitsync-lite-for-macos)
   _<p>
-            Best-in-class intelligence for your high-volume workloads
+            Monitor, sync & back up your git repos from the menu bar
+          </p>
+          <p_
+
+• [Itchy](https://www.producthunt.com/products/itchy-2)
+  _<p>
+            Free macOS notch app with 12+ modules & custom SDK
+          </p>
+          <p>
+    _
+
+• [HookLens](https://www.producthunt.com/products/hooklens)
+  _<p>
+            Hook. Body. CTA. Know exactly where your ad fails.
+          </p>
+          <p>
+    _
+
+• [Vois](https://www.producthunt.com/products/vois)
+  _<p>
+            Studio-quality voice AI that runs locally on your desktop.
+          </p>
+          _
+
+• [Spoke](https://www.producthunt.com/products/spoke-hold-speak-done)
+  _<p>
+            Private voice-to-text for macOS. Hold a key, speak, done.
           </p>
           <_
 
-• [Maxclaw on Mobile](https://www.producthunt.com/products/maxclaw-on-mobile)
+• [Willow Voice for Teams](https://www.producthunt.com/products/willow-voice)
   _<p>
-            Build apps, research deeply and automate multi-step tasks
-          </p>
-          <_
-
-• [day1tabs](https://www.producthunt.com/products/day1tabs)
-  _<p>
-            Your tabs close at midnight.See which ones you actually used
-          </p>
-        _
-
-• [Enia Code](https://www.producthunt.com/products/enia-code)
-  _<p>
-            Proactive AI that refines code & learns your standards
+            Kill the keyboard for your team with voice AI
           </p>
           <p>
-_
+         _
 
-• [Fix in Cursor](https://www.producthunt.com/products/fix-in-cursor)
+• [Hermit](https://www.producthunt.com/products/hermit-2)
   _<p>
-            GitHub PR comment to Cursor prompt in one click
-          </p>
-          <p>
-       _
-
-• [ScreenTranslate](https://www.producthunt.com/products/screentranslate)
-  _<p>
-            Translate any on-screen text with a simple drag
-          </p>
-          <p>
-       _
-
-• [Personal AI Memory](https://www.producthunt.com/products/personal-ai-memory)
-  _<p>
-            Captures and stores your chat from various AI platforms
-          </p>
-          <p>_
-
-• [Anything API](https://www.producthunt.com/products/notte)
-  _<p>
-            Any website. We deliver the API.
-          </p>
-          <p>
-            <a href="h_
-
-• [AssemblyAI](https://www.producthunt.com/products/assemblyai)
-  _<p>
-             The most accurate streaming speech model for voice agents.
+            Leave ChatGPT while keeping everything it learned about you
           </p>
          _
 
-• [Projekt](https://www.producthunt.com/products/projekt-design-engineered)
+• [Supa Social](https://www.producthunt.com/products/supa-social-by-once-ui)
   _<p>
-            All-in-one workspace for building with AI coding agents
+            Self-host your community platform
           </p>
-          <p>_
+          <p>
+            <a href="_
+
+• [Parsewise](https://www.producthunt.com/products/parsewise)
+  _<p>
+            Cursor for document work
+          </p>
+          <p>
+            <a href="https://w_
+
+• [Golf](https://www.producthunt.com/products/golf)
+  _<p>
+            Enterprise MCP Control Plane
+          </p>
+          <p>
+            <a href="https_
 

@@ -16854,3 +16854,19 @@ NUGGETS (17)
     - AI PM Academy newsletter focuses on helping product managers navigate AI product development, suggesting growing demand for structured AI product management education and frameworks.
       (Marily's AI Product Academy Newsletter)
 [2026-03-06 12:15:25] Done
+[2026-03-06 13:00:20] Newsletter Monitor v3 starting...
+[2026-03-06 13:00:28] Fetched 11 unique newsletter emails across 19 queries
+[2026-03-06 13:00:28]   The Rundown AI:  GPT-5.4 passes the human bar on desktop work -> 3 stories extracted
+[2026-03-06 13:00:28]   The Rundown AI:  Amodei torches OpenAI in leaked memo -> 4 stories extracted
+[2026-03-06 13:00:28]   AI For Work: The AI safety debate just got a lot more real -> 2 stories extracted
+[2026-03-06 13:00:28]   Snack Prompt:  GPT-5.3: Instant Upgrade  -> 6 stories extracted
+[2026-03-06 13:00:28]   Snack Prompt:  Everybody Hates ChatGPT  -> 6 stories extracted
+[2026-03-06 13:00:28]   Hypefury:  The Creator Advantage Nobody Can Automate -> 2 stories extracted
+[2026-03-06 13:00:28]   Lenny's Newsletter: Three Job Searches, Three AI Roles: What Actually  -> 0 stories extracted
+[2026-03-06 13:00:28]   Social Growth Engineers: One Founder Marketing 9 Apps -> 2 stories extracted
+[2026-03-06 13:00:28]   Marily’s AI Product Academy Newsletter: Hello from the AI PM Academy! -> 473 stories extracted
+[2026-03-06 13:00:28] Analyzing 498 total stories with LLM...
+[2026-03-06 13:00:28] Claude analysis error: [Errno 7] Argument list too long: 'claude'
+[2026-03-06 13:00:28] Mining newsletters for nuggets (new emails only)...
+[2026-03-06 13:00:28] Saved 0 emails, 0 stories, 0 nuggets | Skipped: 2 blacklisted
+[2026-03-06 13:00:28] Done
