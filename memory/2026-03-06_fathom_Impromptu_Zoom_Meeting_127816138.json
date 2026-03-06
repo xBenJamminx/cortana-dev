@@ -1,0 +1,5690 @@
+{
+  "source": "fathom",
+  "received_at": "2026-03-06T16:10:01.840527",
+  "processed": false,
+  "meeting": {
+    "title": "Impromptu Zoom Meeting",
+    "recording_id": 127816138,
+    "created_at": "2026-03-06T15:47:51Z",
+    "url": "https://fathom.video/calls/592258618",
+    "share_url": "https://fathom.video/share/Bqp_3ef6z4L_vePmhSsjphztmH9KLmuR",
+    "recorded_by": {
+      "name": "Ben Jammin",
+      "email": "ben@kaleidoco.com",
+      "email_domain": "kaleidoco.com",
+      "team": null
+    },
+    "calendar_invitees": [
+      {
+        "name": "Ben Jammin",
+        "email": "ben@kaleidoco.com",
+        "email_domain": "kaleidoco.com",
+        "is_external": false,
+        "matched_speaker_display_name": "Ben Jammin"
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Fathom, I was like, I agree.",
+      "timestamp": "00:00:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "like TLDR, please.",
+      "timestamp": "00:00:01"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah, it was actually really cool.",
+      "timestamp": "00:00:05"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "My main takeaway from it is that I think everyone's like in your position where it wasn't a group of everyone talking about how they're using it.",
+      "timestamp": "00:00:08"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "It was a group of everyone trying to figure out how other people are using it.",
+      "timestamp": "00:00:19"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Most people are like, yeah, I've heard about it.",
+      "timestamp": "00:00:24"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "It's really interesting, but like I don't know what I'm supposed to be doing with it, and it's really cool, and I like it, but like help me figure out like what you're doing so I can know what I should be doing with it.",
+      "timestamp": "00:00:26"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And so I realized I'm like a top 1.1% power user of it compared to everyone else.",
+      "timestamp": "00:00:37"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Okay.",
+      "timestamp": "00:00:44"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And the demand was insane, 700 people.",
+      "timestamp": "00:00:45"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "It was like almost 2,000 hours per week.",
+      "timestamp": "00:00:49"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Was or New York?",
+      "timestamp": "00:00:52"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "It was in New York City.",
+      "timestamp": "00:00:53"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay.",
+      "timestamp": "00:00:54"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "It was like almost 2,000 people RSVP'd, 700 people.",
+      "timestamp": "00:00:56"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "People were there.",
+      "timestamp": "00:00:59"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "They're doing 40 meetups over across six cities.",
+      "timestamp": "00:01:01"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "All of them are booked, packed, and they're willing to sponsor other people that want to create their own events.",
+      "timestamp": "00:01:06"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So this is just like, it's like almost like a zeitgeist moment.",
+      "timestamp": "00:01:14"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "me to them?",
+      "timestamp": "00:01:16"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I'd love to see if I can attend or sponsor some of them.",
+      "timestamp": "00:01:17"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah.",
+      "timestamp": "00:01:23"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah, I'll send it to you because they sent a follow-up to us about it.",
+      "timestamp": "00:01:24"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah, I'd love, like, I'd like our fund maybe to get involved because I'm sure there's going to be, it's not really a hackathon though, right?",
+      "timestamp": "00:01:29"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "It's just like a meetup?",
+      "timestamp": "00:01:36"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "It was, it was just a meetup.",
+      "timestamp": "00:01:37"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Drew was actually there with me.",
+      "timestamp": "00:01:39"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Oh, cool.",
+      "timestamp": "00:01:41"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And he said, he said it's like early 2021 NFT movement.",
+      "timestamp": "00:01:42"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like, that's what the energy felt like.",
+      "timestamp": "00:01:47"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah.",
+      "timestamp": "00:01:49"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And it was, it was, it was really surprising, honestly.",
+      "timestamp": "00:01:50"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Like, I met a friend, I saw a friend of mine from high school there.",
+      "timestamp": "00:01:53"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Five years or whatever.",
+      "timestamp": "00:01:58"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "20 years.",
+      "timestamp": "00:02:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And it was, I was just surprised by the energy around it.",
+      "timestamp": "00:02:01"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Like, people are wearing lobster hats and necklaces and all this kind of stuff.",
+      "timestamp": "00:02:05"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So pretty crazy.",
+      "timestamp": "00:02:09"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "But here, let me let me forward this message to you.",
+      "timestamp": "00:02:12"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah, a lot of energy around it, way more than I expected.",
+      "timestamp": "00:02:20"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "All right.",
+      "timestamp": "00:02:26"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah, they had, they had a couple of sponsors.",
+      "timestamp": "00:02:28"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So then, all right, you can see the event if you click on it.",
+      "timestamp": "00:02:31"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "All right, Open Claw Meetups.",
+      "timestamp": "00:02:35"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Okay, Luma.com slash claw.",
+      "timestamp": "00:02:37"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Oh, here, let's see.",
+      "timestamp": "00:02:41"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Luma.com slash claw.",
+      "timestamp": "00:02:42"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Luma.",
+      "timestamp": "00:02:46"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Luma.",
+      "timestamp": "00:02:49"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Slash claw, right?",
+      "timestamp": "00:02:51"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Mm-hmm.",
+      "timestamp": "00:02:53"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay.",
+      "timestamp": "00:02:54"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay.",
+      "timestamp": "00:02:57"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Um.",
+      "timestamp": "00:02:59"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "But, yeah, like, a lot of energy around it, a lot of people that I knew there and recognized.",
+      "timestamp": "00:03:01"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Matt Medved from NFT Now was there.",
+      "timestamp": "00:03:10"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "friend.",
+      "timestamp": "00:03:13"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah, he's profiled us.",
+      "timestamp": "00:03:14"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Nice.",
+      "timestamp": "00:03:17"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Actually, my co-founder invested in Luma.",
+      "timestamp": "00:03:17"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Oh, really?",
+      "timestamp": "00:03:20"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah, Bill.",
+      "timestamp": "00:03:21"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Oh, cool.",
+      "timestamp": "00:03:23"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I gotta, I'm gonna see how we can, okay, so it's these, it's these Open Claw Meetups, right?",
+      "timestamp": "00:03:23"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah, it was, it was sponsored by Kilo Claw and Jelly, Jelly Jelly, which Jelly Jelly is from the, one of the founders of Venmo, I believe.",
+      "timestamp": "00:03:31"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay.",
+      "timestamp": "00:03:43"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And Kilo Code or something did, like, a quick, a quick presentation because they were a sponsor, but for the most of the time, I was just walking around just networking and just talking to people.",
+      "timestamp": "00:03:46"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Benmo co-founder Ikram Magdon Ismael.",
+      "timestamp": "00:04:01"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "He now founded Jelly Jelly, which is like a social media app, and they sponsored part of it.",
+      "timestamp": "00:04:07"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay.",
+      "timestamp": "00:04:13"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I'd love to meet whoever organizes it.",
+      "timestamp": "00:04:19"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah.",
+      "timestamp": "00:04:23"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah, the guy, Michael, I forwarded you the email from him.",
+      "timestamp": "00:04:24"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay.",
+      "timestamp": "00:04:33"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah, it's Michael Galpert.",
+      "timestamp": "00:04:35"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay.",
+      "timestamp": "00:04:43"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "He sent it directly from Luma, so his email isn't on there.",
+      "timestamp": "00:04:44"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "But I'm sure you can get in touch with him.",
+      "timestamp": "00:04:50"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Plum Alley Ventures, Graycroft, and Klaus were also sponsors.",
+      "timestamp": "00:04:53"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So they had six different sponsors.",
+      "timestamp": "00:05:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "They were serving lobster.",
+      "timestamp": "00:05:02"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Whole tables full of lobster.",
+      "timestamp": "00:05:05"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Oh, my God.",
+      "timestamp": "00:05:07"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Oh, my God.",
+      "timestamp": "00:05:09"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I'm just telling my co-founder, we're wearing lobster hats, lobster claw hats.",
+      "timestamp": "00:05:11"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Oh, my God.",
+      "timestamp": "00:05:20"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I wish I was there.",
+      "timestamp": "00:05:21"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Where are you located?",
+      "timestamp": "00:05:24"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Minnesota, but I'll come to one of these.",
+      "timestamp": "00:05:26"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Oh, cool.",
+      "timestamp": "00:05:29"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Or maybe run your own.",
+      "timestamp": "00:05:34"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "They were talking about that.",
+      "timestamp": "00:05:36"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah, they're going to do one in Barbados.",
+      "timestamp": "00:05:38"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So Bill knows Prime Minister Motley, and they're going to do it with like the Interdevelopmental Bank in Barbados and do like a hackathon with claw.",
+      "timestamp": "00:05:41"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Oh, cool.",
+      "timestamp": "00:05:54"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So, yeah.",
+      "timestamp": "00:05:56"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah, um...",
+      "timestamp": "00:05:58"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I would love to do one of those.",
+      "timestamp": "00:06:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay, anyways.",
+      "timestamp": "00:06:06"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "She's running in Barbados today.",
+      "timestamp": "00:06:09"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Anyway.",
+      "timestamp": "00:06:13"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Who is Fathom?",
+      "timestamp": "00:06:17"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "anyways, so talk to me.",
+      "timestamp": "00:06:18"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah.",
+      "timestamp": "00:06:24"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Talk to me about.",
+      "timestamp": "00:06:26"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I think I sent you.",
+      "timestamp": "00:06:32"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I don't know if you had a chance.",
+      "timestamp": "00:06:33"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "probably just didn't get on it right now.",
+      "timestamp": "00:06:34"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I read it this morning.",
+      "timestamp": "00:06:35"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I plan to do more of a deep dive into it, but it's going to be I can tell you.",
+      "timestamp": "00:06:38"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I mean, so I did talk to a guy that works at Salesforce who we were thinking about trying to hire into MetaGood to help us with the biz dev.",
+      "timestamp": "00:06:42"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Just because it's really like enterprise sales, right?",
+      "timestamp": "00:06:50"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like we had a great call with Fidelity.",
+      "timestamp": "00:06:55"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "We have a call with the New York Stock Exchange.",
+      "timestamp": "00:06:57"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like we're literally.",
+      "timestamp": "00:06:59"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like",
+      "timestamp": "00:06:59"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Meeting with, like, the largest FinServe clients, I am just a little bit, like, this should be my full-time job, basically, BD, to get in front of every major financial services firm and tell them that we're doing tokenization and get us into meetings with them because they are either, you know, they're either like, whoa, we've heard about tokenization, what is it, what should we be doing?",
+      "timestamp": "00:07:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So, like, consultative, we can help them.",
+      "timestamp": "00:07:24"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "They're, like, already partnered with people and they're like, well, come back in three months if these people can't deliver, we want to talk to you.",
+      "timestamp": "00:07:27"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Or, you know, like, they literally, like, actively have RFPs out, like, timing is of the essence that we get in front of these clients and get Danny and me in front of as many as possible.",
+      "timestamp": "00:07:33"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Or, like, you know, it's also driving our product development, right?",
+      "timestamp": "00:07:45"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "And, you know, like, they literally sent us an RFP, we wrote our product spec off of it, and the customer's, like, it's, like, one of the largest transfer agents, you probably know, like, chance.",
+      "timestamp": "00:07:48"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Retroagents basically are the record of stocks moving around.",
+      "timestamp": "00:08:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "It needs to move on chain for tokenization to happen, right?",
+      "timestamp": "00:08:04"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So anyways, so long story short, so originally I talked to one of the funds we work with and I'm like, hey, who's your best BD person that you've worked with that has FinServe experience?",
+      "timestamp": "00:08:07"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "They recommend this guy.",
+      "timestamp": "00:08:32"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "He's an enterprise sales guy at salesforce.com.",
+      "timestamp": "00:08:33"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I'm like, I don't honestly know if we need him.",
+      "timestamp": "00:08:37"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "If we can set up the systems right, it's literally just like email outreach and help us set up meetings, right?",
+      "timestamp": "00:08:39"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "In a personalized way.",
+      "timestamp": "00:08:49"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Anyway, do have, anyway, so, but, you know, when I got on the call with him, he was like, oh, all of.",
+      "timestamp": "00:08:51"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "This is automated through Google.",
+      "timestamp": "00:09:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "If you use Google Meets, then Gemini summarizes your meetings and it all connects to your calendar.",
+      "timestamp": "00:09:01"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like if you basically use Google, which we don't, we use Zoom right now.",
+      "timestamp": "00:09:09"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "But I like your setup, like Zoom, I don't know if it's into Notion or what, but let me just share the few things that I'm- I usually use Meet for what it's worth, Google Meets.",
+      "timestamp": "00:09:13"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "You use Meets.",
+      "timestamp": "00:09:24"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah.",
+      "timestamp": "00:09:25"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah.",
+      "timestamp": "00:09:26"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Although I haven't done that whole connection through all the Google stuff, even though I use Google.",
+      "timestamp": "00:09:28"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "He was saying, I mean, he's saying that's what they do at Salesforce.com.",
+      "timestamp": "00:09:33"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "That's a good idea, actually.",
+      "timestamp": "00:09:37"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "That's how they're all connected, basically.",
+      "timestamp": "00:09:38"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "And it's probably, maybe that's cleaner than like having all these different systems.",
+      "timestamp": "00:09:41"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "But let me just open up.",
+      "timestamp": "00:09:47"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "maybe, I mean, we could probably just replicate it.",
+      "timestamp": "00:09:50"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Like if you don't want to change your tooling and services, we could probably just replicate it because of whoever Fernando Moy.",
+      "timestamp": "00:09:53"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Maria has commented, talking about connecting Fathom with Claude.",
+      "timestamp": "00:10:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And I just looked it up, and Fathom actually does have an API.",
+      "timestamp": "00:10:04"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So you can just connect directly to Fathom.",
+      "timestamp": "00:10:06"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "You don't actually need to do the whole download the transcript, bring it in, all that kind of stuff.",
+      "timestamp": "00:10:09"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So I'm going to do that for myself.",
+      "timestamp": "00:10:15"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I think it makes sense.",
+      "timestamp": "00:10:18"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay, yeah.",
+      "timestamp": "00:10:21"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So Fernando is a guy I have, we were just all over in Antigua.",
+      "timestamp": "00:10:22"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "He's from Chile.",
+      "timestamp": "00:10:27"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Chile, we're considering investing in his company.",
+      "timestamp": "00:10:28"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I'll just show you real quick, and then let's hop into some of these use cases so you get a sense of like why I have kind of, I'm talking to you and him, but he has more than what we need.",
+      "timestamp": "00:10:32"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like he has these, hold on.",
+      "timestamp": "00:10:42"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Why is my computer so close?",
+      "timestamp": "00:10:45"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Oculus Solutions?",
+      "timestamp": "00:10:46"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "They literally have like these AI agents for customer service.",
+      "timestamp": "00:10:47"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "They're almost a million, they're at like 780k ARR.",
+      "timestamp": "00:10:52"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "And it's for customer service.",
+      "timestamp": "00:10:56"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "They're based out of LatAm.",
+      "timestamp": "00:10:58"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "They have 45 clients.",
+      "timestamp": "00:11:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "They're trying to expand in the U.S.",
+      "timestamp": "00:11:01"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So, like, they have basically these human replicas that can do customer service for you.",
+      "timestamp": "00:11:03"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "But they can also, like, do a lot of this, you know, basically marketing automation.",
+      "timestamp": "00:11:08"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "They're the ones that are, like, I just set up N8N, Apollo, OpenAI, API, and they're going to help me set up a workflow for this.",
+      "timestamp": "00:11:16"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Meta Good, FinServe email outreach because I feel like, yeah, like, I don't need, like, they're basically way more than I need.",
+      "timestamp": "00:11:30"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I don't need all of this, obviously.",
+      "timestamp": "00:11:38"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I don't need a digital experience right now as much as I'd love to have a digital experience to all my fund calls and, like, meeting with companies.",
+      "timestamp": "00:11:39"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "But I don't need it.",
+      "timestamp": "00:11:47"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I mean, we could hack this together.",
+      "timestamp": "00:11:49"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Huh?",
+      "timestamp": "00:11:51"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "What they've done as a business, we could hack together with tools that already do this stuff.",
+      "timestamp": "00:11:52"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like Eleven Labs has their own agents.",
+      "timestamp": "00:12:01"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah.",
+      "timestamp": "00:12:05"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And Vappy is a phone call service.",
+      "timestamp": "00:12:06"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So like right now I could tell my agent, my assistant to call me on the phone and she will.",
+      "timestamp": "00:12:09"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "She has her own phone number.",
+      "timestamp": "00:12:14"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay.",
+      "timestamp": "00:12:16"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Just saying.",
+      "timestamp": "00:12:18"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay.",
+      "timestamp": "00:12:19"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Wait, so who are the people that you would have, who would, if you wanted to hack it, who would that be?",
+      "timestamp": "00:12:24"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So Eleven Labs, they have their own agents.",
+      "timestamp": "00:12:30"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "They're called Eleven Agents that actually have Eleven Agents for support.",
+      "timestamp": "00:12:32"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So here, let me share that.",
+      "timestamp": "00:12:39"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "But then on top of that, which I find interesting, which I need to catch up on, because I think this is the next thing, is they also are creating a citizenship protocol for AI agents.",
+      "timestamp": "00:12:41"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So it's basically verifiable identity.",
+      "timestamp": "00:12:56"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "get Go.",
+      "timestamp": "00:12:59"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Explicit Permissions, Declared Intent, Auditable Action Trails.",
+      "timestamp": "00:13:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "This is all important, right?",
+      "timestamp": "00:13:04"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "And then ultimately, yeah, so it's not just models compute energy.",
+      "timestamp": "00:13:05"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "It's an infrastructure, right?",
+      "timestamp": "00:13:13"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Which I think, like, we could hack it, obviously.",
+      "timestamp": "00:13:16"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "But as you talk about corporates, they want, like, a solution all in one.",
+      "timestamp": "00:13:19"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Anyways, this is a side note, but this is something that I'm, like, considering investing.",
+      "timestamp": "00:13:24"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "That's why they're just, like, helping me do all of this, basically, for free.",
+      "timestamp": "00:13:29"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "And also, for what their cap is, it's, like, they're already almost at a million ARR.",
+      "timestamp": "00:13:33"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "It's a really, it's a good deal for, like, it's a 6.5 million cap to come in.",
+      "timestamp": "00:13:39"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So, like, I think we're going to probably invest.",
+      "timestamp": "00:13:45"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "But I do hear what you're saying, that, like, you could probably hack this whole thing together, right?",
+      "timestamp": "00:13:49"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah, I mean, it's a hot sector, for sure.",
+      "timestamp": "00:13:55"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And if, like, it's seamless.",
+      "timestamp": "00:13:58"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And it's just plug and play, then I could definitely see the value, you know.",
+      "timestamp": "00:14:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So I'm a very different person than most business owners would be.",
+      "timestamp": "00:14:06"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So like my first thought is how can I do this myself?",
+      "timestamp": "00:14:10"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I know delegation and outsourcing is a very valuable skill to do to save time and money.",
+      "timestamp": "00:14:14"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So I don't dismiss that in any way.",
+      "timestamp": "00:14:23"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "But my first thoughts are usually like, can I spin this up quickly myself?",
+      "timestamp": "00:14:26"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay.",
+      "timestamp": "00:14:32"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So just throwing that out there because that's, you'll see.",
+      "timestamp": "00:14:33"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah, well, I'm just saying, I think there are companies who are going to want a solution, right?",
+      "timestamp": "00:14:36"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "And if they have 45 enterprise customers, including like Samsung, and then they, this is more from like in my VC perspective.",
+      "timestamp": "00:14:43"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I'm like, if they can scale that out, that's powerful.",
+      "timestamp": "00:14:51"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I don't know if anyone else is doing all of this.",
+      "timestamp": "00:14:56"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "If you hear of anybody, let me.",
+      "timestamp": "00:14:58"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "No, it sounds like 11 labs, basically.",
+      "timestamp": "00:15:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I think a friend of mine is actually working at a company like that.",
+      "timestamp": "00:15:04"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Let me look him up real quick.",
+      "timestamp": "00:15:07"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Because this is not, like, in my view, rocket science, per se.",
+      "timestamp": "00:15:11"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "You know?",
+      "timestamp": "00:15:16"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Aircall?",
+      "timestamp": "00:15:17"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Have you heard of Aircall?",
+      "timestamp": "00:15:18"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Aircall?",
+      "timestamp": "00:15:20"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah.",
+      "timestamp": "00:15:22"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Let's see.",
+      "timestamp": "00:15:23"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "What's the website?",
+      "timestamp": "00:15:24"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Aircall.com?",
+      "timestamp": "00:15:27"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Transform Your Sales and Customer Support, AI-Powered Customer Conversations Made Easy, yeah, aircall.ai, and it takes you to aircall.io.",
+      "timestamp": "00:15:31"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah, aircall.io.",
+      "timestamp": "00:15:43"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah, a friend of mine works in GoToMarket there.",
+      "timestamp": "00:15:46"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah, I don't know, I, I...",
+      "timestamp": "00:15:58"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I haven't even talked to him about it.",
+      "timestamp": "00:16:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I just started using LinkedIn more so recently, and I saw him post about it.",
+      "timestamp": "00:16:01"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I was like, wow, you're into this stuff too?",
+      "timestamp": "00:16:06"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "One of my friends is doing marketing for Genie's AI.",
+      "timestamp": "00:16:08"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "One of my friends is doing Aircall.",
+      "timestamp": "00:16:12"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Another one of my friends is doing it for his own app.",
+      "timestamp": "00:16:14"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "It's interesting to see people who I never would have expected really getting into this stuff.",
+      "timestamp": "00:16:17"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "But yeah, so like when I say hack it together, I'm going up to like embed good solution, like for just you guys, not necessarily like something scalable.",
+      "timestamp": "00:16:26"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Sorry, 11 Labs is doing, are they creating AI voice agents, right?",
+      "timestamp": "00:16:35"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "But 11 Labs is freaking huge, right?",
+      "timestamp": "00:16:47"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah.",
+      "timestamp": "00:16:50"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah, it's not, it's more of a like a use them play, not an invest in there.",
+      "timestamp": "00:16:54"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "A round play.",
+      "timestamp": "00:17:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah.",
+      "timestamp": "00:17:01"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay.",
+      "timestamp": "00:17:03"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay.",
+      "timestamp": "00:17:05"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So anyway, so let's, let's.",
+      "timestamp": "00:17:05"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah, let's actually jump into this.",
+      "timestamp": "00:17:08"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So, okay.",
+      "timestamp": "00:17:10"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So obviously MetaGood.",
+      "timestamp": "00:17:11"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay.",
+      "timestamp": "00:17:14"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So they're helping me.",
+      "timestamp": "00:17:15"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "They are helping me with this.",
+      "timestamp": "00:17:16"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I'll just put like ocular solution helping here is helping here.",
+      "timestamp": "00:17:18"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like they're doing it now.",
+      "timestamp": "00:17:29"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "And then.",
+      "timestamp": "00:17:31"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I think they can help me with this too.",
+      "timestamp": "00:17:33"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Unless you, unless you have some edge with the family office thing.",
+      "timestamp": "00:17:45"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Um, I don't, I, all, everything I have is warm leads.",
+      "timestamp": "00:17:49"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Like I just have someone introduce me to someone else.",
+      "timestamp": "00:17:54"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "They get excited about it and say yes.",
+      "timestamp": "00:17:56"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "And I haven't even had to do outbound.",
+      "timestamp": "00:17:58"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "said said yes.",
+      "timestamp": "00:17:59"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Thank",
+      "timestamp": "00:17:59"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I mean, family offices to invest in my fund?",
+      "timestamp": "00:18:02"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "No, I'm have, like, a database of family offices or something like that, right?",
+      "timestamp": "00:18:07"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "No, no.",
+      "timestamp": "00:18:12"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "But I was planning to use Apollo for my outreach.",
+      "timestamp": "00:18:13"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "You're going to use Apollo.",
+      "timestamp": "00:18:17"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Okay.",
+      "timestamp": "00:18:17"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah.",
+      "timestamp": "00:18:18"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So this.",
+      "timestamp": "00:18:18"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I just haven't.",
+      "timestamp": "00:18:21"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I basically just need to get Danny onto Calendly.",
+      "timestamp": "00:18:22"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "But even this, like, for AI Assistant, like, can I set this up with my Google Calendar so that, like, I don't have to, or can this happen through Chrome?",
+      "timestamp": "00:18:27"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like, let me just show you, like, for example, like, this is what always happens, right?",
+      "timestamp": "00:18:43"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Oops, hold on.",
+      "timestamp": "00:18:47"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Oh, shoot.",
+      "timestamp": "00:18:49"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "What am I doing?",
+      "timestamp": "00:18:49"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Ah.",
+      "timestamp": "00:18:50"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Nope.",
+      "timestamp": "00:18:51"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I don't want to open that.",
+      "timestamp": "00:18:51"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Hold on.",
+      "timestamp": "00:18:52"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Where did my.",
+      "timestamp": "00:18:54"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay.",
+      "timestamp": "00:18:55"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Browser.",
+      "timestamp": "00:18:56"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Oh, Google Chrome quit unexpectedly.",
+      "timestamp": "00:18:57"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "All right.",
+      "timestamp": "00:19:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Do you use Discord or Telegram more?",
+      "timestamp": "00:19:04"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I use Discord, but, yeah.",
+      "timestamp": "00:19:08"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "You can have your assistant live right in Discord and have, like, its own separate channels and stuff like that.",
+      "timestamp": "00:19:13"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I mean, I'd love, I would love a summary of everything in OnChainMonkey's Discord, but then that requires an agent to have access into Discord, right?",
+      "timestamp": "00:19:22"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Which Danny's always been wary of from a security standpoint.",
+      "timestamp": "00:19:32"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah, I mean, yeah, you could definitely do it.",
+      "timestamp": "00:19:36"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Like, my, I created an app with my agent who runs my Discord for me.",
+      "timestamp": "00:19:39"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Like, I, she, she set up the entire thing.",
+      "timestamp": "00:19:44"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "She comments in it.",
+      "timestamp": "00:19:47"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "She set all the rules and everything like that.",
+      "timestamp": "00:19:48"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "didn't even have to touch it.",
+      "timestamp": "00:19:51"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I'm just gonna ask, um, Danny, um.",
+      "timestamp": "00:19:53"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah.",
+      "timestamp": "00:20:03"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So basically everything that you have on here, we can do.",
+      "timestamp": "00:20:05"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay.",
+      "timestamp": "00:20:10"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Like there's nothing that I saw as limited, as limiting here.",
+      "timestamp": "00:20:11"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Plus all the other stuff that we could do too, that you probably, one of those like maybe you don't know what you don't know kind of things in terms of use cases.",
+      "timestamp": "00:20:17"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yep.",
+      "timestamp": "00:20:27"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "But yeah, all of this can definitely do.",
+      "timestamp": "00:20:29"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay.",
+      "timestamp": "00:20:34"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Like my agent has its own email and own phone number too.",
+      "timestamp": "00:20:35"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like let me just show you an example of what I find.",
+      "timestamp": "00:20:40"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like this is a small thing, but let's see.",
+      "timestamp": "00:20:43"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Let's say it was Penrose.",
+      "timestamp": "00:20:47"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like I get all of these things all the time where it's like.",
+      "timestamp": "00:20:52"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like this.",
+      "timestamp": "00:20:59"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "It's just like.",
+      "timestamp": "00:20:59"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like, you have anything open this Friday?",
+      "timestamp": "00:21:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "And then I have to go look.",
+      "timestamp": "00:21:01"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I literally have to go here into my Calendly and be like, okay, what's, this is my day.",
+      "timestamp": "00:21:03"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like, where are Danny and I free?",
+      "timestamp": "00:21:09"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "And then I'm like, literally like physically responding.",
+      "timestamp": "00:21:10"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Like, here are our openings.",
+      "timestamp": "00:21:12"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Right.",
+      "timestamp": "00:21:15"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like, I just want, can I just have an agent, like, somehow look at these two, right?",
+      "timestamp": "00:21:16"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Because this is in my Gmail and just reply.",
+      "timestamp": "00:21:22"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Or, you know, like Fidelity, like, or not Fidelity, who else was I trying to say?",
+      "timestamp": "00:21:25"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "And Dante from, he's the Chief Strategy Officer of Circle, right?",
+      "timestamp": "00:21:30"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So, it's just like this.",
+      "timestamp": "00:21:36"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like, sorry, you know, we couldn't regroup.",
+      "timestamp": "00:21:38"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So, I mean, it's just annoying for me to have to go in.",
+      "timestamp": "00:21:41"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "And then I'm like, literally, physically writing, here's our avail from like looking at this.",
+      "timestamp": "00:21:44"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Can I have an agent that just, like, on this type of thing, I would just, I don't know what I do.",
+      "timestamp": "00:21:50"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "But I, like, reply, like, whatever I do.",
+      "timestamp": "00:21:57"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Just get them to freaking reply with our availability for the next seven days.",
+      "timestamp": "00:22:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So there's a few ways to go about it.",
+      "timestamp": "00:22:03"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So, for example, I have one of my email accounts.",
+      "timestamp": "00:22:06"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Every time I get like the email account that you send an email to, the Mimu one, when I get an email there, it sends that email into my Telegram with the bot.",
+      "timestamp": "00:22:13"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And I could just say, hey, look at this.",
+      "timestamp": "00:22:22"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I need you to do research on this person for me.",
+      "timestamp": "00:22:24"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And it could go like that.",
+      "timestamp": "00:22:27"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Or like if it's something where it says, hey, trying to schedule for it, be like, oh, look at this message, go look at my calendar, see what's available, send them back the times or something.",
+      "timestamp": "00:22:29"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Like these are all things we can do.",
+      "timestamp": "00:22:43"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Just keep in mind stuff like this that we're talking about, I would have to build.",
+      "timestamp": "00:22:45"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "But then once I build it, it's ready for you to do.",
+      "timestamp": "00:22:50"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "But right now, it's like we would have to just set it up in the first place.",
+      "timestamp": "00:22:54"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Right.",
+      "timestamp": "00:22:59"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So like the whole process of this would be like the setup of the agent and then me and you walk through like what specific things you would want done that may not be included already.",
+      "timestamp": "00:23:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So for example, this specific thing, like can I have an agent reply with Danny and my availability, like can an agent go here through my browser or whatever and see here's where I'm available and, you know.",
+      "timestamp": "00:23:16"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah.",
+      "timestamp": "00:23:30"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah, definitely.",
+      "timestamp": "00:23:31"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay.",
+      "timestamp": "00:23:33"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So can you help me?",
+      "timestamp": "00:23:33"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "That's like one thing that would just save me time, like especially when I'm traveling.",
+      "timestamp": "00:23:34"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I don't have my laptop in front of me.",
+      "timestamp": "00:23:38"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "have to.",
+      "timestamp": "00:23:40"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Danny does not like to set up meetings.",
+      "timestamp": "00:23:41"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I literally have to wait till in front of my laptop because I can't see both calendars on my phone.",
+      "timestamp": "00:23:42"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Right.",
+      "timestamp": "00:23:46"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So it depends how you'd want to go about it.",
+      "timestamp": "00:23:47"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Like, I don't know if he wants his email connected to your agent, for example.",
+      "timestamp": "00:23:50"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "But.",
+      "timestamp": "00:23:58"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "know wants if if he he he he",
+      "timestamp": "00:23:59"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "there's a Calendly API if we wanted to use that.",
+      "timestamp": "00:24:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "You could always have some kind of shared calendar together.",
+      "timestamp": "00:24:04"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah, I mean, any, I'm just thinking like brainstorming like which ways to do it, but regardless, there's a solution.",
+      "timestamp": "00:24:11"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "We could have it done, and maybe the details don't matter as much specifically.",
+      "timestamp": "00:24:19"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "But I would walk through like, all right, do you use, and this is just hypothetically, I know you do, but like, do you use Calendly?",
+      "timestamp": "00:24:25"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yes, okay.",
+      "timestamp": "00:24:33"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Do you use Gmail?",
+      "timestamp": "00:24:34"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yes, okay.",
+      "timestamp": "00:24:35"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Let's connect to these things.",
+      "timestamp": "00:24:36"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Let's give your agent an email so it can respond for you if you wanted that.",
+      "timestamp": "00:24:38"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Or you could just say, hey, what's on my calendar?",
+      "timestamp": "00:24:43"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Find me an open spot, and it'll just give it back to you.",
+      "timestamp": "00:24:48"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Or if someone says, hey, here's my availability, you could feed that to your assistant.",
+      "timestamp": "00:24:52"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "It could check your calendar and find me.",
+      "timestamp": "00:24:57"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Mutual opening, things like that.",
+      "timestamp": "00:25:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay.",
+      "timestamp": "00:25:04"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Whatever you think is best.",
+      "timestamp": "00:25:07"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "You just, this is the problem I'm trying to solve and I just want to get it going.",
+      "timestamp": "00:25:08"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah.",
+      "timestamp": "00:25:12"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah, like I can find the solutions for you.",
+      "timestamp": "00:25:13"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Again, it's just about like, we would need to do some kind of audit together about like, what tools you already use that you want to stick with, what things that you don't mind switching, if there's a better solution.",
+      "timestamp": "00:25:15"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Things like that.",
+      "timestamp": "00:25:28"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "that's part of like, the white glove hand-holding aspect of this is that, you know, there's a lot of solutions to be able to just set up an assistant.",
+      "timestamp": "00:25:30"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "But then what do you do after that?",
+      "timestamp": "00:25:40"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Like, how do you connect everything?",
+      "timestamp": "00:25:42"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "How do you get the workflows going?",
+      "timestamp": "00:25:43"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And so that's the kind of thing that this particular service that I'm setting up would do.",
+      "timestamp": "00:25:45"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So I would walk through with you like, all right, what specifically is your solution?",
+      "timestamp": "00:25:50"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Let's reverse engineer and work backwards from there to figure out like, do you, do you want an agent?",
+      "timestamp": "00:25:54"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "To do this, all of this for you.",
+      "timestamp": "00:26:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Do you still want to email manually back to them?",
+      "timestamp": "00:26:01"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Like, regardless, like, it's about, like, what you want the final solution to be, and I'll figure out the details in between.",
+      "timestamp": "00:26:05"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And then you just, we set it up once, and then you just work with your assistant on that, right?",
+      "timestamp": "00:26:14"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Like, so we set up the workflows, we integrate whatever the tools is, and then once it's like, okay, we've tested this, this works, now you can just talk to your assistant, and it's connected to everything, and should be able to just handle it for you automatically.",
+      "timestamp": "00:26:20"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay.",
+      "timestamp": "00:26:36"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So that's definitely something we could do.",
+      "timestamp": "00:26:38"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay, so that, this is just, yeah, so let's see, this is one thing.",
+      "timestamp": "00:26:41"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Sorry, I'm getting pinged from my co-founder.",
+      "timestamp": "00:26:46"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So it sounds like, just like, they are, yeah, doing a call, um.",
+      "timestamp": "00:26:49"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "let's let's let's see, see, see, see",
+      "timestamp": "00:26:58"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So Dave is, Dave Marin is a founding independent board member of the Open Claw Foundation.",
+      "timestamp": "00:27:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So Bill's already gotten Dave involved in this.",
+      "timestamp": "00:27:07"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Oh, wow.",
+      "timestamp": "00:27:11"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah.",
+      "timestamp": "00:27:12"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Move quick.",
+      "timestamp": "00:27:13"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "And the next one we'll include, yeah, he funded Maltbook, the agent social network.",
+      "timestamp": "00:27:14"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "He has a fund too.",
+      "timestamp": "00:27:19"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So, yeah.",
+      "timestamp": "00:27:21"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah.",
+      "timestamp": "00:27:24"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Anyway, we move fast.",
+      "timestamp": "00:27:30"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah, I see that.",
+      "timestamp": "00:27:32"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I like that.",
+      "timestamp": "00:27:33"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I need agents to help me move faster.",
+      "timestamp": "00:27:34"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "But yeah, that's definitely something we could do.",
+      "timestamp": "00:27:38"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "It's just a matter of how we want to do it.",
+      "timestamp": "00:27:40"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay.",
+      "timestamp": "00:27:43"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I just want to get it done.",
+      "timestamp": "00:27:44"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I don't really care.",
+      "timestamp": "00:27:47"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I just want to get it done.",
+      "timestamp": "00:27:48"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So that's easy.",
+      "timestamp": "00:27:51"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay, it's one.",
+      "timestamp": "00:27:52"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So this.",
+      "timestamp": "00:27:53"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I want Fathom to join calls, which they do.",
+      "timestamp": "00:27:55"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Right now, literally have to go into Fathom.",
+      "timestamp": "00:28:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I cut and paste.",
+      "timestamp": "00:28:04"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I don't know where these can be stored, if it's a Google Doc or what's the best, but this would be for MetaGood.",
+      "timestamp": "00:28:07"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Every time we meet with a company, I don't want to have to literally go into Fathom and figure out what the heck the call was named and summarize the notes.",
+      "timestamp": "00:28:15"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like, I'd like it to go into something.",
+      "timestamp": "00:28:28"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "It doesn't have to be Notion, but just something, you know?",
+      "timestamp": "00:28:30"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah, no, I can definitely do that.",
+      "timestamp": "00:28:34"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "They have API connections, so we just connect right to that.",
+      "timestamp": "00:28:36"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "We give the access to the assistant.",
+      "timestamp": "00:28:41"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "We give access to Notion or Google Sheets or Google Docs or Airtable, wherever you want it stored.",
+      "timestamp": "00:28:43"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Like, this is the most important part for me.",
+      "timestamp": "00:28:51"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "It's like, what you already use and are comfortable with, I want things to live there for you.",
+      "timestamp": "00:28:53"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "If you don't have",
+      "timestamp": "00:28:58"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "If a preference, then I would make an executive decision.",
+      "timestamp": "00:29:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay.",
+      "timestamp": "00:29:03"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I am using, like, Google Sheets right now for MetaGood, but I'm open to trying to find some, like, I know people love Notion.",
+      "timestamp": "00:29:04"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I've just never gotten on it.",
+      "timestamp": "00:29:16"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I'm just late to that game, but I'm happy to learn it if it's better.",
+      "timestamp": "00:29:17"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Happy to do that.",
+      "timestamp": "00:29:21"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I love Notion.",
+      "timestamp": "00:29:23"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Notion's great.",
+      "timestamp": "00:29:24"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay.",
+      "timestamp": "00:29:25"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "And then, you know, for my fund, same thing.",
+      "timestamp": "00:29:26"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I do have an air table.",
+      "timestamp": "00:29:30"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I just never really got into it, but I want to, every time I meet with a company, I would like basically to capture a bunch of information.",
+      "timestamp": "00:29:32"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "These are the main ones, but I would like, I'd like to somehow have some type of database of all the companies I'm meeting with.",
+      "timestamp": "00:29:45"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Because right now, I literally use a Google Doc, and then I remember the name of the company.",
+      "timestamp": "00:29:52"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like, I know the name of the company, and I, you know, from one meeting.",
+      "timestamp": "00:29:57"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "We don't always invest in one call.",
+      "timestamp": "00:30:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Usually it's like four or five calls.",
+      "timestamp": "00:30:02"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I just put in the ocular solution and then I go back and I look at the notes.",
+      "timestamp": "00:30:03"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "It should be way more organized.",
+      "timestamp": "00:30:09"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "And also if it's possible to get a pre, like a, let me call it, like information before, like sometimes when I'm on the call, I literally put in a chat GPT with the URL, what are the investment considerations for ocular solution, right?",
+      "timestamp": "00:30:13"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "And then chat GPT is like, oh, I'd love to have that in advance of the call or at least during the call for that to pop up, which should be easy, right?",
+      "timestamp": "00:30:37"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like it's literally the prompt is what are the investment considerations for this space or like, you know, chat GPT is really good at it.",
+      "timestamp": "00:30:46"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I don't know if Claude, Claude's probably okay too.",
+      "timestamp": "00:30:54"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I haven't tested all of them, but I'd like to have like a, a",
+      "timestamp": "00:30:57"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So that type of thing going to the call instead of me spending my first five minutes while someone's giving an intro doing it like me manually putting into chat GPT.",
+      "timestamp": "00:31:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "And then like I have a bunch of companies that we're considering investment with or that we've already made investment for the next fund.",
+      "timestamp": "00:31:11"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "This should be easy.",
+      "timestamp": "00:31:22"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I'd like, you know, investment memos written.",
+      "timestamp": "00:31:23"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "You know, I can give some prompts on like high level, like what they should be, but I would like, here, like, let me show you an example.",
+      "timestamp": "00:31:26"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "But I'd like it to be written pretty much through chat GPT.",
+      "timestamp": "00:31:37"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "All this stuff I feel like is easy.",
+      "timestamp": "00:31:43"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I just want it to be more automated than like, like, for example, here, like this was our first fund newsletter.",
+      "timestamp": "00:31:45"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like here, I wrote this little blurb on, so this is actually, and you should come to this.",
+      "timestamp": "00:31:54"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "This March 25th, if you're interested in the New York Stock Exchange, there's this company called, well, it's called now ICME, but they're basically, they launched meme coins for nonprofits, and 1% of the trading would go into the nonprofit, whether it goes up or down.",
+      "timestamp": "00:32:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So they raised like $300,000 for this developer camp, $120,000 to save the children.",
+      "timestamp": "00:32:18"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Now they're working with a woman that was literally tapped to replace Gensler on a non-dilutive way for startups to raise money.",
+      "timestamp": "00:32:24"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So they're doing a party March 25th at the New York Stock Exchange, where they'll literally be talking to startups about basically e-IPO-ing, kind of like revolutionizing the ICO market, using Solana meme coins.",
+      "timestamp": "00:32:32"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Oh, interesting.",
+      "timestamp": "00:32:48"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah.",
+      "timestamp": "00:32:49"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So anyways, this, I could just feed this in, and I want this to become like a full investment memo.",
+      "timestamp": "00:32:50"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "And like, just to give you a sense, like you probably know this, but Solana meme coins volume traded with...",
+      "timestamp": "00:32:55"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Something like 7 to 8 trillion, I believe, I need a troubled check.",
+      "timestamp": "00:33:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "But then all of the stocks traded in the New York Stock Exchange is like 80 trillion.",
+      "timestamp": "00:33:04"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So it's literally on the map now of what's being traded in the regular finish.",
+      "timestamp": "00:33:09"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So this is one thing.",
+      "timestamp": "00:33:16"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I love this.",
+      "timestamp": "00:33:18"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "There's another one.",
+      "timestamp": "00:33:19"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "We're doing AI Green Data Centers in Australia.",
+      "timestamp": "00:33:20"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I even have like a whole like video that I, you know, like interviewed them.",
+      "timestamp": "00:33:26"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I have a deck.",
+      "timestamp": "00:33:33"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I want to be able to put the deck in and then just like have it spit out an investment memo.",
+      "timestamp": "00:33:34"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "That should be easy.",
+      "timestamp": "00:33:42"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I mean, I could probably just do it in ChachiPT now.",
+      "timestamp": "00:33:43"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah.",
+      "timestamp": "00:33:47"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So that's another thing.",
+      "timestamp": "00:33:48"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "But that's it.",
+      "timestamp": "00:33:51"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like, how do we, how do, like, how can I get this stuff going easiest?",
+      "timestamp": "00:33:52"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I don't.",
+      "timestamp": "00:33:59"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I think I need the full, like, claw, like, agentic, like, these are just, like, they're basically just workflows with, I believe, some integrations, either clawed or open AI, API, I don't know, I don't know, like, I don't know how to, from here, you know, like, I play with this.",
+      "timestamp": "00:34:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Mm-hmm.",
+      "timestamp": "00:34:24"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Now I'm on the API, but, because I said, but anyways, I just need help set up, that's it.",
+      "timestamp": "00:34:25"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I don't think I need, like, the full, like, the thing that you talked about, like, the full solution of you rolling out a bunch of stuff, every, every product, necessarily.",
+      "timestamp": "00:34:31"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I just need, like, You need very specific workflows for now?",
+      "timestamp": "00:34:39"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah, those workflows, I think, are the main ones.",
+      "timestamp": "00:34:45"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Okay.",
+      "timestamp": "00:34:48"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah.",
+      "timestamp": "00:34:49"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Um, so, there's, there's two, two ways I envision this.",
+      "timestamp": "00:34:50"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So, let me just explain the differences between what I, what I do.",
+      "timestamp": "00:34:55"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And what what I how I think we can offer.",
+      "timestamp": "00:35:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So first of all, the the open claw Mimu aspect of it that Drew introduced you to with me, that's what me and Drew are running.",
+      "timestamp": "00:35:02"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And that's a full setup of a digital assistant that is on 24-7 and you connect to all your different integrations and you can do basically any of this that you want at any given time.",
+      "timestamp": "00:35:11"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And it's dynamic and you can say one time, hey, you know, write this investor memo and send an email or put it into Notion or put it into Airtable and you could switch back and forth whenever you want.",
+      "timestamp": "00:35:22"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "It's just about telling it what you want at that time.",
+      "timestamp": "00:35:35"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Separately, what I do for the family offices is I create static workflows where it's automated through something like an N8N and it it's the same thing every single time.",
+      "timestamp": "00:35:38"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So it's you you start here with fathom and then you go into Google Sheets and then you go into sending the newsletter and then you go into storing this in a.",
+      "timestamp": "00:35:49"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And every time it's the same exact thing, but it is automated.",
+      "timestamp": "00:36:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So you set up like an individual automation that does the same thing every time.",
+      "timestamp": "00:36:04"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "It's just the inputs change and the outputs change.",
+      "timestamp": "00:36:08"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So there are different things, right?",
+      "timestamp": "00:36:13"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Like the digital assistant can do everything that you want for you continuously, dynamically.",
+      "timestamp": "00:36:15"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "You can change where you want things to be stored, what you want to be doing at any given time.",
+      "timestamp": "00:36:22"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Then there's the separate automation thing, which is like my other business that I just straight up make automations that are static and they don't really change at all.",
+      "timestamp": "00:36:28"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So like what you're saying is that if you know every time it's going to be a Fathom call and then it's going to you're going to need to take that transcript and like research the company, turn that into an investor memo and send out a newsletter for it.",
+      "timestamp": "00:36:38"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And every time it's going to be like the same setup, then that's something I can make as an individual.",
+      "timestamp": "00:36:55"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Google Static Automation.",
+      "timestamp": "00:37:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah, and I think what I'd actually really like, and I know this might take a little bit more time, but what would be most educational for me, instead of, and this is Danny pushing me, he's like, don't just have everyone just set it up for you, like, don't be lazy.",
+      "timestamp": "00:37:01"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like, I would like to learn from you, if you could help me, I know it might take a little longer than you do it yourself, but like, we spent some time in Zoom, and you helped me set it up, so I'm doing it with you, so I'm actually like learning how to do it.",
+      "timestamp": "00:37:17"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Because he said the models are going to keep getting better, they're going to keep doing more, so what I'm hoping is not, it's not like fully static, but like, once I, like, work with you, and it's set up on my machine, then as the models get better, and it does more, it will integrate more, right, into that, right?",
+      "timestamp": "00:37:30"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Um, it's, well, are you talking about, like, setting up OpenClaw and using it in, like, Azure systems?",
+      "timestamp": "00:37:53"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I open claw.",
+      "timestamp": "00:38:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like, I don't, I think it's just like clawed co-work is what my co-founder is saying right now.",
+      "timestamp": "00:38:01"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "You can use clawed co-work for things.",
+      "timestamp": "00:38:06"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "It's not as powerful and, what's the word?",
+      "timestamp": "00:38:08"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I mean, I'm happy to go buy, what do you call it, one of those Mac minis, if you think.",
+      "timestamp": "00:38:15"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "No, you don't need that.",
+      "timestamp": "00:38:22"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "What I prefer to, I'm trying to do is like, have you coach me and teach me how to fish a little bit versus just setting up for me.",
+      "timestamp": "00:38:23"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "And then I don't have the understanding of how it, like, I want to actually learn how to set it up, if that makes sense.",
+      "timestamp": "00:38:31"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah, I mean, I'm, I'm very flexible.",
+      "timestamp": "00:38:39"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So just to be completely candid, so I have a job as a technical program manager working for a company called Kaleidoco and we make AI smart companions, which is different from like this whole open claw thing.",
+      "timestamp": "00:38:42"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah.",
+      "timestamp": "00:38:54"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And then I, I run my, my business that I do the automations for the family office.",
+      "timestamp": "00:38:54"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And then me and Drew are setting up this digital assistant based on OpenClaw for people to have their own digital assistants in their pocket.",
+      "timestamp": "00:39:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So I touch every aspect of like all this AI stuff.",
+      "timestamp": "00:39:08"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And I'm flexible where if you want to create static automations, I can do that for you.",
+      "timestamp": "00:39:13"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "That's what I do for companies.",
+      "timestamp": "00:39:18"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "If you need consulting, I can do that for you.",
+      "timestamp": "00:39:20"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "That's what I've done for the last like 10 years on and off.",
+      "timestamp": "00:39:22"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I have my own NFT consulting company I've been doing since 2021.",
+      "timestamp": "00:39:25"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And then we have the digital assistant if you want the full scope and power of that, which is what me and Drew are doing, which is what I'm I'm trying to create a business around that.",
+      "timestamp": "00:39:30"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "But if you if you don't think you need that, which personally, it's so valuable to me that if if I didn't have it already, I would I would want to learn how to do it.",
+      "timestamp": "00:39:42"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "But but any of these are open and from from my perspective, Drew may not like that because he.",
+      "timestamp": "00:39:52"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Wants to get this business off the ground, but I could do any one of those.",
+      "timestamp": "00:40:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So, like, if you want just consulting to figure it out yourself, I do that.",
+      "timestamp": "00:40:04"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "If you want static automations and the workflows based on what's in the document, I could do that.",
+      "timestamp": "00:40:09"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And if you want the full-fledged digital assistant that we can integrate with everything, I could do that, too.",
+      "timestamp": "00:40:14"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So it's really about, like, what you really need.",
+      "timestamp": "00:40:20"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "certain work.",
+      "timestamp": "00:40:23"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like, I don't know if I need the full digital assistant.",
+      "timestamp": "00:40:23"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I just know that, um, what do I know?",
+      "timestamp": "00:40:26"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Is a digital assistant doing trading for you, too?",
+      "timestamp": "00:40:34"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Is it doing, like, stock trading or no?",
+      "timestamp": "00:40:37"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Not yet.",
+      "timestamp": "00:40:39"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I don't.",
+      "timestamp": "00:40:39"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "It could.",
+      "timestamp": "00:40:41"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I just...",
+      "timestamp": "00:40:42"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Because I always read these things on X and I'm like, is that even real or is this all fake?",
+      "timestamp": "00:40:43"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Like, .",
+      "timestamp": "00:40:47"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah, no, it's real.",
+      "timestamp": "00:40:47"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "dollars off of predictive markets.",
+      "timestamp": "00:40:49"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "It's all real.",
+      "timestamp": "00:40:51"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Um, it just, a lot of that, it requires setup and maintenance and things like that.",
+      "timestamp": "00:40:52"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Like, poly, poly...",
+      "timestamp": "00:40:58"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Market arbitrage.",
+      "timestamp": "00:41:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "You could be betting on those kind of things.",
+      "timestamp": "00:41:01"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "You could trade stocks and meme coins.",
+      "timestamp": "00:41:05"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "That's the thing.",
+      "timestamp": "00:41:09"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "The digital assistant is just think of it mental model-wise, totally open.",
+      "timestamp": "00:41:10"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "If you had an assistant that sat next to you at all times that doesn't eat or sleep and has access to all of your tools as much as you want to give it, it could do anything for you, that you would do yourself.",
+      "timestamp": "00:41:15"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "If you want the static workflows, they, like I explained, you set it up once and it just works with, you know, different inputs and different outputs, but they're very different things, right?",
+      "timestamp": "00:41:31"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So just trying to explain what the difference is.",
+      "timestamp": "00:41:43"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Like if you want to just have the workflows.",
+      "timestamp": "00:41:48"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay, how much does it cost then for the assistant?",
+      "timestamp": "00:41:50"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So the way that we're setting it up is we do a setup fee of $2,500.",
+      "timestamp": "00:41:54"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And then monthly is $1,000.",
+      "timestamp": "00:42:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So if you were going to pay an assistant to do all of what it can do that also has to sleep and eat and take vacations and breaks, it be a lot more than $1,000.",
+      "timestamp": "00:42:02"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And not as intelligent, not as understanding of the tools and all that kind of stuff.",
+      "timestamp": "00:42:15"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So like I, as a retainer for my company that I make workflows for small businesses, I do $6,500 a month retainer to create automations for them continuously.",
+      "timestamp": "00:42:20"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So when we're done with one, we move on to the next one and it's just continuously optimizing their business, giving them what I like to say is like whatever I'm charging, I typically am able to get like 3x the value for them in terms of their time back.",
+      "timestamp": "00:42:36"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So the company that I'm doing it for now, I'm saving, I would say, I don't know, like 30.",
+      "timestamp": "00:42:53"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "They're probably making $200 to $300 an hour, you know, like just off the top of my head.",
+      "timestamp": "00:43:01"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "But so that's the way that I'm trying to position it because I charge a lot more to do the workflows and the automations for companies.",
+      "timestamp": "00:43:10"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And this, it's different, but it's also cheaper, which me and Drew have been talking about that.",
+      "timestamp": "00:43:19"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Like we probably should be charging a lot more, but we're just getting off the ground now.",
+      "timestamp": "00:43:26"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So we haven't really gotten into like, we haven't gotten into altering the pricing.",
+      "timestamp": "00:43:31"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "We came up with this price of $2,500 setup and 1K per month.",
+      "timestamp": "00:43:41"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And then if you need like priority customer support or help actually building things that require our time, we would charge more.",
+      "timestamp": "00:43:45"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I feel like what I want is honestly just, I want to learn how to do it myself as much as possible.",
+      "timestamp": "00:43:54"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like that's what I should be doing, not just outsourcing it.",
+      "timestamp": "00:44:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah, I mean, I can help you with any, really anything you need, I can help you with.",
+      "timestamp": "00:44:06"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "It just, it's like, it depends on what you want out of it.",
+      "timestamp": "00:44:10"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "then do we need to sit next, I mean, because I'm going to be in New York on March 19th, but that's like two weeks from now.",
+      "timestamp": "00:44:13"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So I don't know if like, how much we can just do on Zoom together and you help me set it up for these workflows.",
+      "timestamp": "00:44:18"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I mean, we could do a bunch of stuff on Zoom.",
+      "timestamp": "00:44:26"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I don't know, like monetarily what I would charge or how long things would take to do this kind of stuff.",
+      "timestamp": "00:44:29"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Because I haven't done it yet.",
+      "timestamp": "00:44:37"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "We could definitely talk about that.",
+      "timestamp": "00:44:39"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "But like, if that's the route you want to go, we could definitely discuss like what that entails, for sure.",
+      "timestamp": "00:44:42"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I think, I mean, I think what I'm looking for is honestly just like the use cases that are, which I don't think these are that hard.",
+      "timestamp": "00:44:48"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like my co-founder keeps telling me just get on  cloud.",
+      "timestamp": "00:44:56"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Thank",
+      "timestamp": "00:44:59"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "You-work and just do it yourself, but every time I try to connect, it doesn't just do it, and he's like, you have to do it like 50 times.",
+      "timestamp": "00:45:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I'm just trying to like, he's like, it's like a kid, you talk to it like a kid, it forgets it did something, you have to remind it.",
+      "timestamp": "00:45:09"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So what I'm looking for is honestly just a ramp of that, like I'm trying to learn how to surf, instead of just giving me a board and making me like hack it on the waves.",
+      "timestamp": "00:45:16"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "You're a really good surfer, you help me get up to speed faster.",
+      "timestamp": "00:45:27"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Right.",
+      "timestamp": "00:45:33"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "With whatever tricks you've already mastered, because you've done it, and you just say, okay, hey, open this, or do that, or reboot, do that, like, you know, whatever we have to do just to get these things up and running.",
+      "timestamp": "00:45:33"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "But that's why I've learned how to do it.",
+      "timestamp": "00:45:44"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Okay, so let's just say, let's say these are the only use cases you need, right?",
+      "timestamp": "00:45:46"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like, there's a lot more things that can be done, more down the line, but I'm also not a big corporate, like 6,500 a month.",
+      "timestamp": "00:45:53"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like, I just, I'm.",
+      "timestamp": "00:45:59"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "not going to do that.",
+      "timestamp": "00:46:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I can't do that.",
+      "timestamp": "00:46:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I'm not going to do I understand.",
+      "timestamp": "00:46:01"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "That's what I charge the family offices for creating automations for them.",
+      "timestamp": "00:46:03"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And again, it's a lot different than what this is.",
+      "timestamp": "00:46:08"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So, for example, the first client that I had had some similar things like this, and I charged a $2,500 one-time fee to create a big automation for them that took me about a month.",
+      "timestamp": "00:46:13"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I feel like this should be, like, three hours, right?",
+      "timestamp": "00:46:28"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Maybe?",
+      "timestamp": "00:46:33"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Four hours max?",
+      "timestamp": "00:46:34"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I mean, I'm a lot better at it now than I was when I first started, but...",
+      "timestamp": "00:46:35"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah.",
+      "timestamp": "00:46:40"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah, like, for something like this, let's see, all this, I would probably charge...",
+      "timestamp": "00:46:40"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Well, if, let's, let's say the first and the second would probably be, like, tied together, I would say.",
+      "timestamp": "00:46:47"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "The three through five would be separate things that I would, they would be separate workflows.",
+      "timestamp": "00:46:54"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah, but, like, number three and number five, I already have people, like, Ocular's gonna do it all for free.",
+      "timestamp": "00:47:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So I just need...",
+      "timestamp": "00:47:08"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I'm just saying, like, if I was looking at this, that's how I would, like, separate them out, where one and two would probably be, like, the same kind of thing, maybe, tied together.",
+      "timestamp": "00:47:09"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And then the others would each be individual stuff.",
+      "timestamp": "00:47:20"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah.",
+      "timestamp": "00:47:24"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "But, like, yeah, I mean, I guess it just depends, like, what route you want to go.",
+      "timestamp": "00:47:24"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I don't know what I would do consulting-wise, or, like, how much I would charge for that.",
+      "timestamp": "00:47:28"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I'd be happy to, like...",
+      "timestamp": "00:47:32"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I'm always down to help, but also, I'm also very busy, too.",
+      "timestamp": "00:47:34"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah, I know.",
+      "timestamp": "00:47:39"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So I'm trying to figure what that looks like.",
+      "timestamp": "00:47:40"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "So it's, like, literally these three things, like, these three things.",
+      "timestamp": "00:47:42"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So, let's see.",
+      "timestamp": "00:47:46"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So AI assistant, email replies with the calendar, look at the calendar, look at Danny's calendar, be able to reply.",
+      "timestamp": "00:47:51"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So we could set up an automation that's not as smart as using an assistant.",
+      "timestamp": "00:48:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "It's just like, all right, step one, look at what my calendar availability is and log it.",
+      "timestamp": "00:48:07"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So I know exactly at any point in time what my availability is.",
+      "timestamp": "00:48:13"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Then the step two would be, so reply to your email.",
+      "timestamp": "00:48:18"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Reply from, sorry, or reply from, yeah.",
+      "timestamp": "00:48:26"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Reply from your email.",
+      "timestamp": "00:48:30"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah, to emails.",
+      "timestamp": "00:48:32"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "With available times.",
+      "timestamp": "00:48:33"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "That's, it's a pretty easy setup, if I had to say.",
+      "timestamp": "00:48:35"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So that, like if we wanted to just make a workflow that doesn't involve an assistant, I would use N8N, which is an automation tool.",
+      "timestamp": "00:48:38"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "already have N8N.",
+      "timestamp": "00:48:48"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So I would connect that with the calendar, connect that with his calendar, look at them, feed that into, like, in N8N.",
+      "timestamp": "00:48:49"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And you could add like an agent or open AI API that could just read the output.",
+      "timestamp": "00:49:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So it would look at the calendars and have an output of like, here's what his is, here's what yours is, feed that into the N8N agent, which is on there, and do the calculation for you of what spots mutually are available for you guys.",
+      "timestamp": "00:49:06"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "And then send the email back to or from your email to, I mean, you wouldn't want that static because I would say send it to yourself probably, but you can send it from someone, but then you would have to go in each time and change the email that you want it to do because it's a static workflow, right?",
+      "timestamp": "00:49:25"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Like you, you would have to say, send it to this person.",
+      "timestamp": "00:49:48"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So you have to go in and edit it for which email you want to be outgoing.",
+      "timestamp": "00:49:52"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "If you want to send from Amanda to the.",
+      "timestamp": "00:49:56"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "The person that just emailed you, right?",
+      "timestamp": "00:50:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Yeah.",
+      "timestamp": "00:50:02"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So that wouldn't be the approach I would take with that personally.",
+      "timestamp": "00:50:03"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "I would say if you wanted, you could just have it output into a file that you could read yourself and then you would just email it back to them.",
+      "timestamp": "00:50:08"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "But if, you know what I'm saying?",
+      "timestamp": "00:50:15"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Because like if you get a different email, you have to send it to each time.",
+      "timestamp": "00:50:17"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "You would have to edit the workflow every time to send it to that email to tell it.",
+      "timestamp": "00:50:21"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Because you could say, hey, look at all the incoming inbox that I have, but it wouldn't be able to tell you, like it wouldn't be able to figure out who you wanted to send to.",
+      "timestamp": "00:50:27"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "You would have to go send it.",
+      "timestamp": "00:50:37"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "So NNN wouldn't be good for that, but it could be good for finding the mutual spots in your calendar and just giving you output for that.",
+      "timestamp": "00:50:38"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "But then you would have to go send the email directly.",
+      "timestamp": "00:50:48"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "got to hop to another call.",
+      "timestamp": "00:50:50"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I mean, take a look at this.",
+      "timestamp": "00:50:53"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Just tell me what you're thinking and then like let me know, you know, otherwise like I'll.",
+      "timestamp": "00:50:54"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Try to find someone who can help me with this, but just give me, if you can, like, what you think it would take time-wise, and, you know, if you want to give me some pricing, that's great.",
+      "timestamp": "00:51:00"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "If you tell me you're too busy because you've got stuff going on with Drew, that's fine, too.",
+      "timestamp": "00:51:09"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I think I can find someone to help me with this stuff.",
+      "timestamp": "00:51:12"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I don't think this is, like, super hard to do.",
+      "timestamp": "00:51:15"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "No, no, it's not.",
+      "timestamp": "00:51:17"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "These are the things I need help with.",
+      "timestamp": "00:51:17"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Okay.",
+      "timestamp": "00:51:19"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Okay.",
+      "timestamp": "00:51:20"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah, I just meant, like, ongoing regular consulting would be difficult to do.",
+      "timestamp": "00:51:20"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "No, I don't think I need ongoing.",
+      "timestamp": "00:51:26"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "I think this is what I need for now.",
+      "timestamp": "00:51:28"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "And then if I do, like, what I want to learn is how to do it myself, so I can, you show me an N8A, and maybe, like, I have another idea, and I figure out how to do it myself.",
+      "timestamp": "00:51:29"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Like, that's my goal, is try to learn how to do it myself.",
+      "timestamp": "00:51:37"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Okay.",
+      "timestamp": "00:51:40"
+    },
+    {
+      "speaker": {
+        "display_name": "Ben Jammin",
+        "matched_calendar_invitee_email": "ben@kaleidoco.com"
+      },
+      "text": "Yeah, I can think about that.",
+      "timestamp": "00:51:41"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay, think about it.",
+      "timestamp": "00:51:42"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Let me know, and we can chat more next week.",
+      "timestamp": "00:51:43"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Okay, sounds good.",
+      "timestamp": "00:51:46"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "All right, have a good weekend.",
+      "timestamp": "00:51:47"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Sorry, I've to hop.",
+      "timestamp": "00:51:48"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "nine minutes late.",
+      "timestamp": "00:51:49"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Thank you.",
+      "timestamp": "00:51:49"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "All no problem.",
+      "timestamp": "00:51:50"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Bye.",
+      "timestamp": "00:51:50"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Bye.",
+      "timestamp": "00:51:51"
+    },
+    {
+      "speaker": {
+        "display_name": "Amanda Terry",
+        "matched_calendar_invitee_email": null
+      },
+      "text": "Bye.",
+      "timestamp": "00:51:51"
+    }
+  ],
+  "summary": {
+    "template_name": "Chronological",
+    "markdown_formatted": "### [Open Claw Meetup Recap @ 0:00](https://fathom.video/share/Bqp_3ef6z4L_vePmhSsjphztmH9KLmuR?tab=summary&timestamp=0)\n\nBen attended an Open Claw meetup in New York City that had over 700 attendees, much more than expected. He described the event as having a lot of energy, with people wearing lobster-themed attire. The meetup was sponsored by Kilo Claw and Jelly Jelly (founded by a Venmo co-founder). Ben said the demand and attendance was \"insane\" and that it felt like the early 2021 NFT movement.\n\n### [Automating Meeting Notes and Summaries @ 11:15](https://fathom.video/share/Bqp_3ef6z4L_vePmhSsjphztmH9KLmuR?tab=summary&timestamp=675)\n\nAmanda wants to automate the process of capturing meeting notes and summaries from Fathom calls. Currently she has to manually copy and paste the information from Fathom into a document, which is time-consuming. She would like an agent or automated workflow to handle this, integrating the Fathom data into a tool like Notion or Google Sheets.\n\n### [Scheduling Assistance and Calendar Integration @ 20:43](https://fathom.video/share/Bqp_3ef6z4L_vePmhSsjphztmH9KLmuR?tab=summary&timestamp=1243)\n\nAmanda struggles with the back-and-forth of scheduling meetings, having to manually check calendars and coordinate availability. She would like an agent or automated workflow that can interface with her and Danny's calendars, determine mutual availability, and respond to scheduling requests on her behalf.\n\n### [Automating Investment Memos and Fund Updates @ 31:11](https://fathom.video/share/Bqp_3ef6z4L_vePmhSsjphztmH9KLmuR?tab=summary&timestamp=1871)\n\nAmanda also wants to automate the process of generating investment memos and fund updates. She has examples of content she would like to turn into more comprehensive memos, and would like to leverage AI tools like ChatGPT to help draft these materials. She is open to using Notion or other tools to organize this information.\n\n### [Consulting vs. Automated Workflows @ 34:39](https://fathom.video/share/Bqp_3ef6z4L_vePmhSsjphztmH9KLmuR?tab=summary&timestamp=2079)\n\nBen discussed the differences between providing ongoing consulting versus building static automated workflows. He offered to help Amanda set up the specific workflows she needs, while also suggesting she could learn to do some of this herself using tools like N8N. They discussed pricing and time estimates for the different approaches.\n"
+  },
+  "action_items": []
+}
