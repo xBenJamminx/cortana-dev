@@ -2744,3 +2744,60 @@ Indexed: 0 new, 0 updated, 1 unchanged, 0 removed
 ✓ All collections updated.
 
 Run 'qmd embed' to update embeddings (216 unique hashes need vectors)
+Updating 11 collection(s)...
+
+[1/11] workspace-core (*.md)
+Collection: /root/.openclaw/workspace (*.md)
+]9;4;3]9;4;1;6Indexing: 1/17        ]9;4;1;12Indexing: 2/17        ]9;4;1;18Indexing: 3/17 ETA: 0s        ]9;4;1;24Indexing: 4/17 ETA: 0s        ]9;4;1;29Indexing: 5/17 ETA: 0s        ]9;4;1;35Indexing: 6/17 ETA: 0s        ]9;4;1;41Indexing: 7/17 ETA: 0s        ]9;4;1;47Indexing: 8/17 ETA: 0s        ]9;4;1;53Indexing: 9/17 ETA: 0s        ]9;4;1;59Indexing: 10/17 ETA: 0s        ]9;4;1;65Indexing: 11/17 ETA: 0s        ]9;4;1;71Indexing: 12/17 ETA: 0s        ]9;4;1;76Indexing: 13/17 ETA: 0s        ]9;4;1;82Indexing: 14/17 ETA: 0s        ]9;4;1;88Indexing: 15/17 ETA: 0s        ]9;4;1;94Indexing: 16/17 ETA: 0s        ]9;4;1;100Indexing: 17/17 ETA: 0s        ]9;4;0
+Indexed: 0 new, 1 updated, 16 unchanged, 0 removed
+Cleaned up 1 orphaned content hash(es)
+
+[2/11] skills (**/*.md)
+Collection: /root/.openclaw/workspace/skills (**/*.md)
+]9;4;3]9;4;1;1Indexing: 1/99        ]9;4;1;2Indexing: 2/99        ]9;4;1;3Indexing: 3/99 ETA: 0s        ]9;4;1;4Indexing: 4/99 ETA: 0s        ]9;4;1;5Indexing: 5/99 ETA: 0s        ]9;4;1;6Indexing: 6/99 ETA: 0s        ]9;4;1;7Indexing: 7/99 ETA: 0s        ]9;4;1;8Indexing: 8/99 ETA: 0s        ]9;4;1;9Indexing: 9/99 ETA: 0s        ]9;4;1;10Indexing: 10/99 ETA: 0s        ]9;4;1;11Indexing: 11/99 ETA: 0s        ]9;4;1;12Indexing: 12/99 ETA: 0s        ]9;4;1;13Indexing: 13/99 ETA: 0s        ]9;4;1;14Indexing: 14/99 ETA: 0s        ]9;4;1;15Indexing: 15/99 ETA: 0s        ]9;4;1;16Indexing: 16/99 ETA: 0s        ]9;4;1;17Indexing: 17/99 ETA: 0s        ]9;4;1;18Indexing: 18/99 ETA: 0s        ]9;4;1;19Indexing: 19/99 ETA: 0s        ]9;4;1;20Indexing: 20/99 ETA: 0s        ]9;4;1;21Indexing: 21/99 ETA: 0s        ]9;4;1;22Indexing: 22/99 ETA: 0s        ]9;4;1;23Indexing: 23/99 ETA: 0s        ]9;4;1;24Indexing: 24/99 ETA: 0s        ]9;4;1;25Indexing: 25/99 ETA: 0s        ]9;4;1;26Indexing: 26/99 ETA: 0s        ]9;4;1;27Indexing: 27/99 ETA: 0s        ]9;4;1;28Indexing: 28/99 ETA: 0s        ]9;4;1;29Indexing: 29/99 ETA: 0s        ]9;4;1;30Indexing: 30/99 ETA: 0s        ]9;4;1;31Indexing: 31/99 ETA: 0s        ]9;4;1;32Indexing: 32/99 ETA: 0s        ]9;4;1;33Indexing: 33/99 ETA: 0s        ]9;4;1;34Indexing: 34/99 ETA: 0s        ]9;4;1;35Indexing: 35/99 ETA: 0s        ]9;4;1;36Indexing: 36/99 ETA: 0s        ]9;4;1;37Indexing: 37/99 ETA: 0s        ]9;4;1;38Indexing: 38/99 ETA: 0s        ]9;4;1;39Indexing: 39/99 ETA: 0s        ]9;4;1;40Indexing: 40/99 ETA: 0s        ]9;4;1;41Indexing: 41/99 ETA: 0s        ]9;4;1;42Indexing: 42/99 ETA: 0s        ]9;4;1;43Indexing: 43/99 ETA: 0s        ]9;4;1;44Indexing: 44/99 ETA: 0s        ]9;4;1;45Indexing: 45/99 ETA: 0s        ]9;4;1;46Indexing: 46/99 ETA: 0s        ]9;4;1;47Indexing: 47/99 ETA: 0s        ]9;4;1;48Indexing: 48/99 ETA: 0s        ]9;4;1;49Indexing: 49/99 ETA: 0s        ]9;4;1;51Indexing: 50/99 ETA: 0s        ]9;4;1;52Indexing: 51/99 ETA: 0s        ]9;4;1;53Indexing: 52/99 ETA: 0s        ]9;4;1;54Indexing: 53/99 ETA: 0s        ]9;4;1;55Indexing: 54/99 ETA: 0s        ]9;4;1;56Indexing: 55/99 ETA: 0s        ]9;4;1;57Indexing: 56/99 ETA: 0s        ]9;4;1;58Indexing: 57/99 ETA: 0s        ]9;4;1;59Indexing: 58/99 ETA: 0s        ]9;4;1;60Indexing: 59/99 ETA: 0s        ]9;4;1;61Indexing: 60/99 ETA: 0s        ]9;4;1;62Indexing: 61/99 ETA: 0s        ]9;4;1;63Indexing: 62/99 ETA: 0s        ]9;4;1;64Indexing: 63/99 ETA: 0s        ]9;4;1;65Indexing: 64/99 ETA: 0s        ]9;4;1;66Indexing: 65/99 ETA: 0s        ]9;4;1;67Indexing: 66/99 ETA: 0s        ]9;4;1;68Indexing: 67/99 ETA: 0s        ]9;4;1;69Indexing: 68/99 ETA: 0s        ]9;4;1;70Indexing: 69/99 ETA: 0s        ]9;4;1;71Indexing: 70/99 ETA: 0s        ]9;4;1;72Indexing: 71/99 ETA: 0s        ]9;4;1;73Indexing: 72/99 ETA: 0s        ]9;4;1;74Indexing: 73/99 ETA: 0s        ]9;4;1;75Indexing: 74/99 ETA: 0s        ]9;4;1;76Indexing: 75/99 ETA: 0s        ]9;4;1;77Indexing: 76/99 ETA: 0s        ]9;4;1;78Indexing: 77/99 ETA: 0s        ]9;4;1;79Indexing: 78/99 ETA: 0s        ]9;4;1;80Indexing: 79/99 ETA: 0s        ]9;4;1;81Indexing: 80/99 ETA: 0s        ]9;4;1;82Indexing: 81/99 ETA: 0s        ]9;4;1;83Indexing: 82/99 ETA: 0s        ]9;4;1;84Indexing: 83/99 ETA: 0s        ]9;4;1;85Indexing: 84/99 ETA: 0s        ]9;4;1;86Indexing: 85/99 ETA: 0s        ]9;4;1;87Indexing: 86/99 ETA: 0s        ]9;4;1;88Indexing: 87/99 ETA: 0s        ]9;4;1;89Indexing: 88/99 ETA: 0s        ]9;4;1;90Indexing: 89/99 ETA: 0s        ]9;4;1;91Indexing: 90/99 ETA: 0s        ]9;4;1;92Indexing: 91/99 ETA: 0s        ]9;4;1;93Indexing: 92/99 ETA: 0s        ]9;4;1;94Indexing: 93/99 ETA: 0s        ]9;4;1;95Indexing: 94/99 ETA: 0s        ]9;4;1;96Indexing: 95/99 ETA: 0s        ]9;4;1;97Indexing: 96/99 ETA: 0s        ]9;4;1;98Indexing: 97/99 ETA: 0s        ]9;4;1;99Indexing: 98/99 ETA: 0s        ]9;4;1;100Indexing: 99/99 ETA: 0s        ]9;4;0
+Indexed: 0 new, 0 updated, 99 unchanged, 0 removed
+
+[3/11] system-memory (**/*.md)
+Collection: /root/.openclaw/workspace/config (**/*.md)
+]9;4;3]9;4;0No files found matching pattern.
+
+[4/11] memory-root-main (MEMORY.md)
+Collection: /root/.openclaw/workspace (MEMORY.md)
+]9;4;3]9;4;1;100Indexing: 1/1        ]9;4;0
+Indexed: 0 new, 0 updated, 1 unchanged, 0 removed
+
+[5/11] memory-alt-main (memory.md)
+Collection: /root/.openclaw/workspace (memory.md)
+]9;4;3]9;4;0No files found matching pattern.
+
+[6/11] memory-dir-main (**/*.md)
+Collection: /root/.openclaw/workspace/memory (**/*.md)
+]9;4;3]9;4;1;1Indexing: 1/91        ]9;4;1;2Indexing: 2/91        ]9;4;1;3Indexing: 3/91 ETA: 0s        ]9;4;1;4Indexing: 4/91 ETA: 0s        ]9;4;1;5Indexing: 5/91 ETA: 0s        ]9;4;1;7Indexing: 6/91 ETA: 0s        ]9;4;1;8Indexing: 7/91 ETA: 0s        ]9;4;1;9Indexing: 8/91 ETA: 0s        ]9;4;1;10Indexing: 9/91 ETA: 0s        ]9;4;1;11Indexing: 10/91 ETA: 0s        ]9;4;1;12Indexing: 11/91 ETA: 0s        ]9;4;1;13Indexing: 12/91 ETA: 0s        ]9;4;1;14Indexing: 13/91 ETA: 0s        ]9;4;1;15Indexing: 14/91 ETA: 0s        ]9;4;1;16Indexing: 15/91 ETA: 0s        ]9;4;1;18Indexing: 16/91 ETA: 0s        ]9;4;1;19Indexing: 17/91 ETA: 0s        ]9;4;1;20Indexing: 18/91 ETA: 0s        ]9;4;1;21Indexing: 19/91 ETA: 0s        ]9;4;1;22Indexing: 20/91 ETA: 0s        ]9;4;1;23Indexing: 21/91 ETA: 0s        ]9;4;1;24Indexing: 22/91 ETA: 0s        ]9;4;1;25Indexing: 23/91 ETA: 0s        ]9;4;1;26Indexing: 24/91 ETA: 0s        ]9;4;1;27Indexing: 25/91 ETA: 0s        ]9;4;1;29Indexing: 26/91 ETA: 0s        ]9;4;1;30Indexing: 27/91 ETA: 0s        ]9;4;1;31Indexing: 28/91 ETA: 0s        ]9;4;1;32Indexing: 29/91 ETA: 0s        ]9;4;1;33Indexing: 30/91 ETA: 0s        ]9;4;1;34Indexing: 31/91 ETA: 0s        ]9;4;1;35Indexing: 32/91 ETA: 0s        ]9;4;1;36Indexing: 33/91 ETA: 0s        ]9;4;1;37Indexing: 34/91 ETA: 0s        ]9;4;1;38Indexing: 35/91 ETA: 0s        ]9;4;1;40Indexing: 36/91 ETA: 0s        ]9;4;1;41Indexing: 37/91 ETA: 0s        ]9;4;1;42Indexing: 38/91 ETA: 0s        ]9;4;1;43Indexing: 39/91 ETA: 0s        ]9;4;1;44Indexing: 40/91 ETA: 0s        ]9;4;1;45Indexing: 41/91 ETA: 0s        ]9;4;1;46Indexing: 42/91 ETA: 0s        ]9;4;1;47Indexing: 43/91 ETA: 0s        ]9;4;1;48Indexing: 44/91 ETA: 0s        ]9;4;1;49Indexing: 45/91 ETA: 0s        ]9;4;1;51Indexing: 46/91 ETA: 0s        ]9;4;1;52Indexing: 47/91 ETA: 0s        ]9;4;1;53Indexing: 48/91 ETA: 0s        ]9;4;1;54Indexing: 49/91 ETA: 0s        ]9;4;1;55Indexing: 50/91 ETA: 0s        ]9;4;1;56Indexing: 51/91 ETA: 0s        ]9;4;1;57Indexing: 52/91 ETA: 0s        ]9;4;1;58Indexing: 53/91 ETA: 0s        ]9;4;1;59Indexing: 54/91 ETA: 0s        ]9;4;1;60Indexing: 55/91 ETA: 0s        ]9;4;1;62Indexing: 56/91 ETA: 0s        ]9;4;1;63Indexing: 57/91 ETA: 0s        ]9;4;1;64Indexing: 58/91 ETA: 0s        ]9;4;1;65Indexing: 59/91 ETA: 0s        ]9;4;1;66Indexing: 60/91 ETA: 0s        ]9;4;1;67Indexing: 61/91 ETA: 0s        ]9;4;1;68Indexing: 62/91 ETA: 0s        ]9;4;1;69Indexing: 63/91 ETA: 0s        ]9;4;1;70Indexing: 64/91 ETA: 0s        ]9;4;1;71Indexing: 65/91 ETA: 0s        ]9;4;1;73Indexing: 66/91 ETA: 0s        ]9;4;1;74Indexing: 67/91 ETA: 0s        ]9;4;1;75Indexing: 68/91 ETA: 0s        ]9;4;1;76Indexing: 69/91 ETA: 0s        ]9;4;1;77Indexing: 70/91 ETA: 0s        ]9;4;1;78Indexing: 71/91 ETA: 0s        ]9;4;1;79Indexing: 72/91 ETA: 0s        ]9;4;1;80Indexing: 73/91 ETA: 0s        ]9;4;1;81Indexing: 74/91 ETA: 0s        ]9;4;1;82Indexing: 75/91 ETA: 0s        ]9;4;1;84Indexing: 76/91 ETA: 0s        ]9;4;1;85Indexing: 77/91 ETA: 0s        ]9;4;1;86Indexing: 78/91 ETA: 0s        ]9;4;1;87Indexing: 79/91 ETA: 0s        ]9;4;1;88Indexing: 80/91 ETA: 0s        ]9;4;1;89Indexing: 81/91 ETA: 0s        ]9;4;1;90Indexing: 82/91 ETA: 0s        ]9;4;1;91Indexing: 83/91 ETA: 0s        ]9;4;1;92Indexing: 84/91 ETA: 0s        ]9;4;1;93Indexing: 85/91 ETA: 0s        ]9;4;1;95Indexing: 86/91 ETA: 0s        ]9;4;1;96Indexing: 87/91 ETA: 0s        ]9;4;1;97Indexing: 88/91 ETA: 0s        ]9;4;1;98Indexing: 89/91 ETA: 0s        ]9;4;1;99Indexing: 90/91 ETA: 0s        ]9;4;1;100Indexing: 91/91 ETA: 0s        ]9;4;0
+Indexed: 0 new, 1 updated, 90 unchanged, 0 removed
+Cleaned up 1 orphaned content hash(es)
+
+[7/11] sessions-main (**/*.md)
+Collection: /root/.openclaw/agents/main/qmd/sessions (**/*.md)
+]9;4;3]9;4;1;20Indexing: 1/5        ]9;4;1;40Indexing: 2/5        ]9;4;1;60Indexing: 3/5 ETA: 0s        ]9;4;1;80Indexing: 4/5 ETA: 0s        ]9;4;1;100Indexing: 5/5 ETA: 0s        ]9;4;0
+Indexed: 0 new, 0 updated, 5 unchanged, 0 removed
+
+[8/11] memory-root-worker (MEMORY.md)
+Collection: /root/.openclaw/workspace-worker (MEMORY.md)
+]9;4;3]9;4;0No files found matching pattern.
+
+[9/11] memory-alt-worker (memory.md)
+Collection: /root/.openclaw/workspace-worker (memory.md)
+]9;4;3]9;4;0No files found matching pattern.
+
+[10/11] memory-dir-worker (**/*.md)
+Collection: /root/.openclaw/workspace-worker/memory (**/*.md)
+]9;4;3]9;4;0No files found matching pattern.
+
+[11/11] sessions-worker (**/*.md)
+Collection: /root/.openclaw/agents/worker/qmd/sessions (**/*.md)
+]9;4;3]9;4;1;100Indexing: 1/1        ]9;4;0
+Indexed: 0 new, 0 updated, 1 unchanged, 0 removed
+
+✓ All collections updated.
+
+Run 'qmd embed' to update embeddings (216 unique hashes need vectors)
