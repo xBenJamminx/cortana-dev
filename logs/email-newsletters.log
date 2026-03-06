@@ -16695,3 +16695,162 @@ NUGGETS (31)
     - Sam Altman admitted OpenAI's Pentagon contract was 'rushed' and 'opportunistic and sloppy,' finalized within 24 hours after the Pentagon banned Anthropic, demonstrating how competitive pressure can lead to poor decision-making. -> https://x.com/sama/status/2028640354912923739?s=20
       (The Rundown AI)
 [2026-03-05 17:00:25] Done
+[2026-03-06 12:15:01] Newsletter Monitor v3 starting...
+[2026-03-06 12:15:08] Fetched 11 unique newsletter emails across 19 queries
+[2026-03-06 12:15:08]   The Rundown AI:  GPT-5.4 passes the human bar on desktop work -> 3 stories extracted
+[2026-03-06 12:15:08]   The Rundown AI:  Amodei torches OpenAI in leaked memo -> 4 stories extracted
+[2026-03-06 12:15:08]   AI For Work: The AI safety debate just got a lot more real -> 2 stories extracted
+[2026-03-06 12:15:08]   Snack Prompt:  GPT-5.3: Instant Upgrade  -> 6 stories extracted
+[2026-03-06 12:15:08]   Snack Prompt:  Everybody Hates ChatGPT  -> 6 stories extracted
+[2026-03-06 12:15:08]   Hypefury:  The Creator Advantage Nobody Can Automate -> 2 stories extracted
+[2026-03-06 12:15:08]   Lenny's Newsletter: Three Job Searches, Three AI Roles: What Actually  -> 0 stories extracted
+[2026-03-06 12:15:08]   Social Growth Engineers: One Founder Marketing 9 Apps -> 2 stories extracted
+[2026-03-06 12:15:08]   Marily’s AI Product Academy Newsletter: Hello from the AI PM Academy! -> 473 stories extracted
+[2026-03-06 12:15:08] Analyzing 498 total stories with LLM...
+[2026-03-06 12:15:08] Claude analysis error: [Errno 7] Argument list too long: 'claude'
+[2026-03-06 12:15:08] Mining newsletters for nuggets (new emails only)...
+[2026-03-06 12:15:25] Extracted 7 nuggets from newsletters
+[2026-03-06 12:15:25] Marked 2 emails as nugget-mined
+[2026-03-06 12:15:25] Saved 2 emails, 5 stories, 7 nuggets | Skipped: 2 blacklisted
+[2026-03-06 12:15:01] Newsletter Monitor v3 starting...
+[2026-03-06 12:15:08] Fetched 11 unique newsletter emails across 19 queries
+[2026-03-06 12:15:08]   The Rundown AI:  GPT-5.4 passes the human bar on desktop work -> 3 stories extracted
+[2026-03-06 12:15:08]   The Rundown AI:  Amodei torches OpenAI in leaked memo -> 4 stories extracted
+[2026-03-06 12:15:08]   AI For Work: The AI safety debate just got a lot more real -> 2 stories extracted
+[2026-03-06 12:15:08]   Snack Prompt:  GPT-5.3: Instant Upgrade  -> 6 stories extracted
+[2026-03-06 12:15:08]   Snack Prompt:  Everybody Hates ChatGPT  -> 6 stories extracted
+[2026-03-06 12:15:08]   Hypefury:  The Creator Advantage Nobody Can Automate -> 2 stories extracted
+[2026-03-06 12:15:08]   Lenny's Newsletter: Three Job Searches, Three AI Roles: What Actually  -> 0 stories extracted
+[2026-03-06 12:15:08]   Social Growth Engineers: One Founder Marketing 9 Apps -> 2 stories extracted
+[2026-03-06 12:15:08]   Marily’s AI Product Academy Newsletter: Hello from the AI PM Academy! -> 473 stories extracted
+[2026-03-06 12:15:08] Analyzing 498 total stories with LLM...
+[2026-03-06 12:15:08] Claude analysis error: [Errno 7] Argument list too long: 'claude'
+[2026-03-06 12:15:08] Mining newsletters for nuggets (new emails only)...
+[2026-03-06 12:15:25] Extracted 7 nuggets from newsletters
+[2026-03-06 12:15:25] Marked 2 emails as nugget-mined
+[2026-03-06 12:15:25] Saved 2 emails, 5 stories, 7 nuggets | Skipped: 2 blacklisted
+
+======================================================================
+TOP STORIES (15)
+======================================================================
+
+[50] GPT-5.4 beats humans at their own desktops
+    Source: The Rundown AI
+    OpenAI just rolled out GPT-5.4, the company’s new top model with major upgrades on desktop tasks, coding, reasoning, science, math, and more — with VP of Science Kevin Weil calling it "our best model ever".
+    https://openai.com/index/introducing-gpt-5-4/
+
+[50] Netflix acquires Ben Affleck&39;s AI filmmaking startup
+    Source: The Rundown AI
+    Netflix just acquired InterPositive, a stealth AI filmmaking company Ben Affleck started in 2022 — bringing all 16 staffers and Affleck himself aboard as senior adviser in a rare acquisition for a streaming giant.
+    https://about.netflix.com/en/news/why-interpositive-is-joining-netflix
+
+[50] Anthropic’s early-warning system for AI job loss
+    Source: The Rundown AI
+    Anthropic published a study on AI’s job impact, cross-referencing what AI could automate against what people are using Claude for — finding that while mass layoffs haven't hit, the youngest workers in are already getting squeezed out.
+    https://cdn.sanity.io/files/4zrzovbb/website/dc7bcd0224644fce97cecb7f9e68dcd8434b35f1.pdf
+
+[50] Crying is the new viral
+    Source: Social Growth Engineers
+    Next time you’re having a bad day, turn on your camera and record yourself crying.
+
+[50] Save Your Seat
+    Source: Social Growth Engineers
+    Short-form is more competitive than ever, but the opportunity is still massive if you know how to play it.
+    https://www.appstoretracker.com/app/homegen-ai-interior-decor-6670685694
+
+[50] OpenAI ships GPT-5.3
+    Source: Snack Prompt
+    OpenAI ships GPT-5.3 Instant, calls the last one “cringe”
+
+[50] In the days following
+    Source: Snack Prompt
+    In the days following OpenAI's Pentagon deal, a structured boycott campaign called QuitGPT emerged as the organized face of user backlash.
+
+[50] ChatWithAds
+    Source: Snack Prompt
+    🧬 Aura Semantic version control for AI code. Hashes the AST (not lines) to trace AI-generated changes, block undocumented commits, and rewind broken functions.
+    https://www.producthunt.com/products/chatwithads
+
+[50] Brazil's antitrust tribunal
+    Source: Snack Prompt
+    Brazil's antitrust tribunal CADE unanimously upheld a preventive measure blocking Meta from enforcing new WhatsApp Business terms of use that would have banned competing AI chatbots from the platform.
+
+[50] OpenAI Ships GPT-5.3 Instant, Calls Previous Version "Cringe"
+    Source: Snack Prompt
+    🤖 OpenAI Ships GPT-5.3 Instant, Calls Previous Version "Cringe" → Fewer refusals, no preachy preambles, 26.8% fewer hallucinations on web answers. GPT-5.4 already teased for this week.
+    https://9to5mac.com/2026/03/03/openai-releases-gpt-5-3-instant-update-to-make-chatgpt-less-cringe/
+
+[50] Trade FCCN Here
+    Source: Snack Prompt
+    Snack Prompt & The Daily Bite Ticker: FCCN | Trade FCCN Here Follow Along: FCCN on Yahoo Finance
+    https://www.interactivebrokers.com/en/trading/products-exchanges.php
+
+[50] Amodei memo rips OAI-Pentagon deal as ‘safety theater’
+    Source: The Rundown AI
+    Anthropic CEO Dario Amodei sent an internal memo on Friday calling OpenAI's Pentagon AI deal "maybe 20% real and 80% safety theater” while also taking direct shots at Sam Altman in the 1,600-word document released by The Information.
+    https://www.theinformation.com/articles/read-anthropic-ceos-memo-attacking-openais-mendacious-pentagon-announcement
+
+[50] OpenAI building its own GitHub to ditch Microsoft
+    Source: The Rundown AI
+    OpenAI is reportedly building an internal code repository platform to replace Microsoft's GitHub, according to The Information — a move that could pit it (once again) against one of its biggest financial backers.
+    https://www.theinformation.com/articles/openai-developing-alternative-microsofts-github
+
+[50] Turn any CSV into an Excel dashboard
+    Source: The Rundown AI
+    In this guide, you will learn copy-paste prompts that turn any raw CSV into a clean dashboard using Claude in Excel. We tested them on World Bank GDP data and NBA player stats.
+    https://app.therundown.ai/guides/4-prompts-that-turn-any-csv-into-an-excel-dashboard-claude-in-excel-tutorial
+
+[50] New framework tests if AI helps students learn
+    Source: The Rundown AI
+    OpenAI published a new framework built with Stanford and Estonia's University of Tartu to track whether ChatGPT helps people learn over time — the company’s first attempt to measure AI's impact on how students retain knowledge.
+    https://openai.com/index/understanding-ai-and-learning-outcomes/
+
+======================================================================
+NUGGETS (17)
+======================================================================
+
+  [how-to]
+    - The Rundown AI is launching an OpenClaw course on March 11 covering agent setup to real workflow integration across three hands-on sessions for building autonomous AI assistants. -> https://app.therundown.ai/courses/openclaw-build-your-own-autonomous-ai-assistant-michael-shimeles
+      (The Rundown AI)
+
+  [tool]
+    - GPT-5.4 launched with major upgrades including 75% score on OSWorld-V (real desktop navigation), 1M token context, and new x-high reasoning effort setting for multi-hour agent tasks. Beats humans 83% of the time on professional job evaluations. -> https://openai.com/index/introducing-gpt-5-4/
+      (The Rundown AI)
+    - OpenAI shipped GPT-5.3 Instant, positioning it as an upgrade over the previous version which they described as 'cringe'.
+      (Snack Prompt)
+    - OpenAI is building its own GitHub-like platform to reduce dependency on Microsoft's infrastructure, marking a significant shift in their technical architecture.
+      (The Rundown AI)
+
+  [funding]
+    - Netflix acquired Ben Affleck's AI filmmaking startup, signaling major studio investment in AI-powered content creation tools.
+      (The Rundown AI)
+    - NVIDIA invested $4B in photonics technology for next-generation AI infrastructure development.
+      (Snack Prompt)
+
+  [tip]
+    - Crying reaction videos dramatically outperform faceless content on social media. A French learning app saw their first crying post hit 869k views (166x their previous 20k average) after switching from slideshows to emotional UGC content.
+      (Social Growth Engineers)
+[2026-03-06 12:15:25] Done
+    - Instagram consistently outperforms TikTok for app distribution in consumer apps. Founder Kaml Abdel-Kader uses Instagram as primary viral channel across 9 apps while TikTok accounts see low viewership, using mix of headshot reactions and faceless demos.
+      (Social Growth Engineers)
+    - Real human emotional reactions dramatically outperform AI-generated or faceless content for social media engagement. Authentic crying reactions added 385k additional views for one app after initial viral success. -> https://dansugc.com/free/crying-reactions
+      (Social Growth Engineers)
+    - QuitGPT campaign recommends Claude, Gemini, or open-source alternatives as ChatGPT replacements, while explicitly warning against Grok as an alternative.
+      (Snack Prompt)
+
+  [insight]
+    - Solo founder successfully markets 9 consumer apps simultaneously using repeatable Instagram-led distribution system: build app, film reaction videos, post to matching social accounts. Spans music, AI productivity, interior design, habits, and lifestyle niches since 2023.
+      (Social Growth Engineers)
+    - OpenAI researcher Noam Brown states 'We see no wall' regarding AI scaling after GPT-5.4's performance gains across math, science, coding, and reasoning benchmarks.
+      (The Rundown AI)
+    - QuitGPT campaign claims 1.5M actions (cancellations, signups, shares) but represents under 0.2% of ChatGPT's 900M weekly user base - the real impact is creating organized civil opposition infrastructure with brand, website, and street presence rather than actual defection numbers. -> https://www.euronews.com/next/2026/03/02/cancel-chatgpt-ai-boycott-surges-after-openai-pentagon-military-deal
+      (Snack Prompt)
+    - The QuitGPT campaign's primary audience isn't ChatGPT users but regulators, journalists, and enterprise buyers watching whether AI safety concerns can generate sustained public pressure - a test that's still ongoing.
+      (Snack Prompt)
+    - Brazil forced Meta to allow rival AI bots on WhatsApp, signaling regulatory pressure for AI platform interoperability.
+      (Snack Prompt)
+    - Dario Amodei described OpenAI's Pentagon deal as '80% safety theater and 20% real' in a leaked internal memo, revealing deep rifts in how AI companies approach defense partnerships and safety messaging. -> https://www.theinformation.com/articles/read-anthropic-ceos-memo-attacking-openais-mendacious-pentagon-announcement
+      (The Rundown AI)
+    - AI PM Academy newsletter focuses on helping product managers navigate AI product development, suggesting growing demand for structured AI product management education and frameworks.
+      (Marily's AI Product Academy Newsletter)
+[2026-03-06 12:15:25] Done
