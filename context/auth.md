@@ -53,6 +53,19 @@
 ## Google Calendar
 - Full API access via `/root/.openclaw/google_credentials.json`
 
+## Fathom (meeting recordings)
+- API key: FATHOM_API_KEY in `~/.openclaw/.env`
+- Webhook secret: FATHOM_WEBHOOK_SECRET in `~/.openclaw/.env`
+- Base URL: `https://api.fathom.ai/external/v1`
+- Helper: `python3 /root/.openclaw/workspace/lib/fathom.py`
+  - `fathom.py meetings [--limit N]` — list recent meetings
+  - `fathom.py today` — today's meetings
+  - `fathom.py meeting <recording_id>` — full meeting with transcript + summary + actions
+  - `fathom.py transcript <recording_id>` — just transcript
+  - `fathom.py summary <recording_id>` — summary + action items
+  - `fathom.py search <query>` — search by title
+- Use this INSTEAD of Slack #meeting-notes for getting meeting content directly
+
 ## Composio
 - MCP_URL + API_KEY in `~/.openclaw/.env`
 - CortanaOps connection: `2aea494d-2229-40b5-b07b-e1bbeac730af`
