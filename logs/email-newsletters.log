@@ -16870,3 +16870,135 @@ NUGGETS (17)
 [2026-03-06 13:00:28] Mining newsletters for nuggets (new emails only)...
 [2026-03-06 13:00:28] Saved 0 emails, 0 stories, 0 nuggets | Skipped: 2 blacklisted
 [2026-03-06 13:00:28] Done
+[2026-03-07 12:15:01] Newsletter Monitor v3 starting...
+[2026-03-07 12:15:07] Fetched 6 unique newsletter emails across 19 queries
+[2026-03-07 12:15:07]   Snack Prompt:  GPT-5.3: Instant Upgrade  -> 6 stories extracted
+[2026-03-07 12:15:07]   Creator Spotlight:  100! Episodes! -> 2 stories extracted
+[2026-03-07 12:15:07]   Social Growth Engineers: One Founder Marketing 9 Apps -> 2 stories extracted
+[2026-03-07 12:15:07]   Marily’s AI Product Academy Newsletter: Youre unsubscribed. -> 473 stories extracted
+[2026-03-07 12:15:07]   Marily’s AI Product Academy Newsletter: That weird, modern anxiety of building with AI. -> 65 stories extracted
+[2026-03-07 12:15:07] Analyzing 548 total stories with LLM...
+[2026-03-07 12:15:07] Claude analysis error: [Errno 7] Argument list too long: 'claude'
+[2026-03-07 12:15:07] Mining newsletters for nuggets (new emails only)...
+[2026-03-07 12:15:24] Extracted 6 nuggets from newsletters
+[2026-03-07 12:15:24] Marked 3 emails as nugget-mined
+[2026-03-07 12:15:24] Saved 3 emails, 387 stories, 6 nuggets | Skipped: 1 blacklisted
+[2026-03-07 12:15:01] Newsletter Monitor v3 starting...
+[2026-03-07 12:15:07] Fetched 6 unique newsletter emails across 19 queries
+[2026-03-07 12:15:07]   Snack Prompt:  GPT-5.3: Instant Upgrade  -> 6 stories extracted
+[2026-03-07 12:15:07]   Creator Spotlight:  100! Episodes! -> 2 stories extracted
+[2026-03-07 12:15:07]   Social Growth Engineers: One Founder Marketing 9 Apps -> 2 stories extracted
+[2026-03-07 12:15:07]   Marily’s AI Product Academy Newsletter: Youre unsubscribed. -> 473 stories extracted
+[2026-03-07 12:15:07]   Marily’s AI Product Academy Newsletter: That weird, modern anxiety of building with AI. -> 65 stories extracted
+[2026-03-07 12:15:07] Analyzing 548 total stories with LLM...
+[2026-03-07 12:15:07] Claude analysis error: [Errno 7] Argument list too long: 'claude'
+[2026-03-07 12:15:07] Mining newsletters for nuggets (new emails only)...
+[2026-03-07 12:15:24] Extracted 6 nuggets from newsletters
+[2026-03-07 12:15:24] Marked 3 emails as nugget-mined
+[2026-03-07 12:15:24] Saved 3 emails, 387 stories, 6 nuggets | Skipped: 1 blacklisted
+
+======================================================================
+TOP STORIES (15)
+======================================================================
+
+[50] Takes 20 seconds — please vote!
+    Source: Creator Spotlight
+    Incidentally, we were also nominated for the Best Business Podcast category at the NYC Podcast Awards. They’re doing audience-choice awards … it would mean a lot to me if you voted for us. Takes 20 seconds — please vote!
+    https://www.silver-nyc.com/nycpodcastawards/vote
+
+[50] what exactly defines a
+    Source: Creator Spotlight
+    This past Tuesday, we published the 100th episode of _The Creator Spotlight Podcast_.
+    https://www.creatorspotlight.com/p/what-is-a-creator-2026
+
+[50] @media (max-width: 1024px) {
+    Source: Marily’s AI Product Academy Newsletter
+    .typography .pullquote-align-left, .typography.editor .pullquote-align-left, .typography .pullquote-align-right, .typography.editor .pullquote-align-right, .typography .pullquote-align-wide, .typography.editor .pullquote-align-wide, .typography .pullquote-align-center,
+
+[50] .typography .pullquote-align-left,
+    Source: Marily’s AI Product Academy Newsletter
+    .typography.editor .pullquote-align-left, .typography .pullquote-align-right, .typography.editor .pullquote-align-right, .typography .pullquote-align-wide, .typography.editor .pullquote-align-wide, .typography .pullquote-align-center, .typography.editor .pullquote-align-center {
+
+[50] .typography.editor .pullquote-align-left,
+    Source: Marily’s AI Product Academy Newsletter
+    .typography .pullquote-align-right, .typography.editor .pullquote-align-right, .typography .pullquote-align-wide, .typography.editor .pullquote-align-wide, .typography .pullquote-align-center, .typography.editor .pullquote-align-center { float: none;
+
+[50] .typography .pullquote-align-right,
+    Source: Marily’s AI Product Academy Newsletter
+    .typography.editor .pullquote-align-right, .typography .pullquote-align-wide, .typography.editor .pullquote-align-wide, .typography .pullquote-align-center, .typography.editor .pullquote-align-center { float: none; margin: 0 auto;
+
+[50] .typography.editor .pullquote-align-right,
+    Source: Marily’s AI Product Academy Newsletter
+    .typography .pullquote-align-wide, .typography.editor .pullquote-align-wide, .typography .pullquote-align-center, .typography.editor .pullquote-align-center { float: none; margin: 0 auto; width: 100%;
+
+[50] .typography .pullquote-align-wide,
+    Source: Marily’s AI Product Academy Newsletter
+    .typography.editor .pullquote-align-wide, .typography .pullquote-align-center, .typography.editor .pullquote-align-center { float: none; margin: 0 auto; width: 100%; max-width: 100%;
+
+[50] .typography.editor .pullquote-align-wide,
+    Source: Marily’s AI Product Academy Newsletter
+    .typography .pullquote-align-center, .typography.editor .pullquote-align-center { float: none; margin: 0 auto; width: 100%; max-width: 100%;
+
+[50] .typography .pullquote-align-center,
+    Source: Marily’s AI Product Academy Newsletter
+    .typography.editor .pullquote-align-center { float: none; margin: 0 auto; width: 100%; max-width: 100%;
+
+[50] .typography.editor .pullquote-align-center {
+    Source: Marily’s AI Product Academy Newsletter
+    float: none; margin: 0 auto; width: 100%; max-width: 100%; @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+[50] margin: 0 auto;
+    Source: Marily’s AI Product Academy Newsletter
+    width: 100%; max-width: 100%; @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { .typography .markup table.image-wrapper img, .typography.editor .markup table.image-wrapper img,
+
+[50] max-width: 100%;
+    Source: Marily’s AI Product Academy Newsletter
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { .typography .markup table.image-wrapper img, .typography.editor .markup table.image-wrapper img, .typography .markup table.kindle-wrapper img, .typography.editor .markup table.kindle-wrapper img {
+
+[50] @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    Source: Marily’s AI Product Academy Newsletter
+    .typography .markup table.image-wrapper img, .typography.editor .markup table.image-wrapper img, .typography .markup table.kindle-wrapper img, .typography.editor .markup table.kindle-wrapper img { max-width: 550px;
+
+[50] .typography .markup table.image-wrapper img,
+    Source: Marily’s AI Product Academy Newsletter
+    .typography.editor .markup table.image-wrapper img, .typography .markup table.kindle-wrapper img, .typography.editor .markup table.kindle-wrapper img { max-width: 550px; @media (min-width: 1024px) {
+
+======================================================================
+NUGGETS (13)
+======================================================================
+
+  [tool]
+    - OpenClaw workshop for product managers (13k signups) with deeper masterclass combining Claude Code + OpenClaw where students literally get a Mac mini shipped to them to build AI leverage.
+      (Marily's AI Product Academy Newsletter)
+    - GPT-5.4 launched with major upgrades including 75% score on OSWorld-V (real desktop navigation), 1M token context, and new x-high reasoning effort setting for multi-hour agent tasks. Beats humans 83% of the time on professional job evaluations. -> https://openai.com/index/introducing-gpt-5-4/
+      (The Rundown AI)
+
+  [funding]
+    - Netflix acquired Ben Affleck's AI filmmaking startup, signaling major studio investment in AI-powered content creation tools.
+      (The Rundown AI)
+
+  [tip]
+    - Build in alignment with eudaimonia (Greek for 'life well lived') - focus on living in alignment with values, building with purpose, and making choices that compound capability and calm rather than chasing tool chaos.
+      (Marily's AI Product Academy Newsletter)
+    - Education vs. entertainment balance in podcasting - understanding what a podcast is and is not helps define content strategy and audience expectations for creator content.
+      (Creator Spotlight)
+    - Crying reaction videos dramatically outperform faceless content on social media. A French learning app saw their first crying post hit 869k views (166x their previous 20k average) after switching from slideshows to emotional UGC content.
+      (Social Growth Engineers)
+    - Instagram consistently outperforms TikTok for app distribution in consumer apps. Founder Kaml Abdel-Kader uses Instagram as primary viral channel across 9 apps while TikTok accounts see low viewership, using mix of headshot reactions and faceless demos.
+      (Social Growth Engineers)
+    - Real human emotional reactions dramatically outperform AI-generated or faceless content for social media engagement. Authentic crying reactions added 385k additional views for one app after initial viral success. -> https://dansugc.com/free/crying-reactions
+      (Social Growth Engineers)
+
+  [insight]
+[2026-03-07 12:15:24] Done
+    - Tool anxiety in AI comes from decision fatigue disguised as ambition - when the solution space explodes with infinite options, people get stuck choosing rather than building. The goal is a stable inner system that can handle a fast outer world.
+      (Marily's AI Product Academy Newsletter)
+    - In the AI era, it's no longer 'big eats small' but 'fast eats slow' - however, chasing speed through more tools and tabs doesn't make you faster, it makes you noisier. Real edge comes from throughput, not AI tips.
+      (Marily's AI Product Academy Newsletter)
+    - After 100 podcast episodes, key learnings include: understanding medium definition, balancing education/entertainment, sustainable guest booking, preparation methods, video decisions, in-person vs remote trade-offs, guest guidelines, hosting formats, team building, and newsletter-podcast integration.
+      (Creator Spotlight)
+    - Solo founder successfully markets 9 consumer apps simultaneously using repeatable Instagram-led distribution system: build app, film reaction videos, post to matching social accounts. Spans music, AI productivity, interior design, habits, and lifestyle niches since 2023.
+      (Social Growth Engineers)
+    - OpenAI researcher Noam Brown states 'We see no wall' regarding AI scaling after GPT-5.4's performance gains across math, science, coding, and reasoning benchmarks.
+      (The Rundown AI)
+[2026-03-07 12:15:24] Done
