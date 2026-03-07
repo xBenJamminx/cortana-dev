@@ -1,68 +1,68 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [GitSync Lite for macOS](https://www.producthunt.com/products/gitsync-lite-for-macos)
+• [Pitwall F1](https://www.producthunt.com/products/pitwall-f1-macos-app)
   _<p>
-            Monitor, sync & back up your git repos from the menu bar
-          </p>
-          <p_
-
-• [Itchy](https://www.producthunt.com/products/itchy-2)
-  _<p>
-            Free macOS notch app with 12+ modules & custom SDK
+            Live F1 timing & standings in your Mac menu bar
           </p>
           <p>
-    _
+       _
 
-• [HookLens](https://www.producthunt.com/products/hooklens)
+• [Cockpit](https://www.producthunt.com/products/cockpit-3)
   _<p>
-            Hook. Body. CTA. Know exactly where your ad fails.
-          </p>
-          <p>
-    _
-
-• [Vois](https://www.producthunt.com/products/vois)
-  _<p>
-            Studio-quality voice AI that runs locally on your desktop.
-          </p>
-          _
-
-• [Spoke](https://www.producthunt.com/products/spoke-hold-speak-done)
-  _<p>
-            Private voice-to-text for macOS. Hold a key, speak, done.
+            Transform your VPS into a powerful desktop-like interface
           </p>
           <_
 
-• [Willow Voice for Teams](https://www.producthunt.com/products/willow-voice)
+• [VolumeGlass](https://www.producthunt.com/products/volume-glass)
   _<p>
-            Kill the keyboard for your team with voice AI
+            Beautiful volume control for macOS
           </p>
           <p>
-         _
+            <a href=_
 
-• [Hermit](https://www.producthunt.com/products/hermit-2)
+• [Zesty](https://www.producthunt.com/products/zesty-local-food-discovery-2)
   _<p>
-            Leave ChatGPT while keeping everything it learned about you
-          </p>
-         _
-
-• [Supa Social](https://www.producthunt.com/products/supa-social-by-once-ui)
-  _<p>
-            Self-host your community platform
+            Your personal restaurant concierge
           </p>
           <p>
-            <a href="_
+            <a href=_
 
-• [Parsewise](https://www.producthunt.com/products/parsewise)
+• [CoChat](https://www.producthunt.com/products/cochat)
   _<p>
-            Cursor for document work
+            Openclaw for Teams that is secure, collaborative, autonomous
+          </p>
+        _
+
+• [SuperPowers AI](https://www.producthunt.com/products/superpowers-ai-2)
+  _<p>
+            Real time ambient visual agents for phones and wearables
+          </p>
+          <p_
+
+• [Gemlet](https://www.producthunt.com/products/gemlet)
+  _<p>
+            Native, keyboard-first Gemini client for macOS
           </p>
           <p>
-            <a href="https://w_
+        _
 
-• [Golf](https://www.producthunt.com/products/golf)
+• [ChatGPT for Excel](https://www.producthunt.com/products/chatgpt-for-excel-3)
   _<p>
-            Enterprise MCP Control Plane
+            Build and update spreadsheets with ChatGPT in real time
+          </p>
+          <p>_
+
+• [Vet](https://www.producthunt.com/products/imbue-7)
+  _<p>
+            Keep your coding agents honest
           </p>
           <p>
-            <a href="https_
+            <a href="htt_
+
+• [Woz](https://www.producthunt.com/products/woz)
+  _<p>
+            Build App That Earn
+          </p>
+          <p>
+            <a href="https://www.pr_
 

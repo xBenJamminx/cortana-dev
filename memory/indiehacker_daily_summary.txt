@@ -1,19 +1,19 @@
-🚀 Indie Hacker Monitor (2026-03-06 13:00)
+🚀 Indie Hacker Monitor (2026-03-07 13:00)
 
 🔥 Hot Topics:
-  • solopreneur: 8 mentions
-  • bootstrapped: 5 mentions
-  • launch: 4 mentions
-  • side project: 2 mentions
-  • build in public: 1 mentions
+  • bootstrapped: 7 mentions
+  • launch: 5 mentions
+  • solopreneur: 4 mentions
+  • side project: 4 mentions
+  • build in public: 2 mentions
 
 📈 Top Stories:
-  • [Hacker News] (1819⬆): MacBook Neo
-    https://www.apple.com/newsroom/2026/03/say-hello-to-macbook-neo/
   • [Hacker News] (989⬆): Wikipedia was in read-only mode following mass admin account compromise
     https://www.wikimediastatus.net
   • [Hacker News] (983⬆): Judge orders government to begin refunding more than $130B in tariffs
     https://www.wsj.com/politics/policy/judge-orders-government-to-begin-refunding-more-than-130-billion-in-tariffs-fdc1e62c
+  • [Hacker News] (929⬆): Tech employment now significantly worse than the 2008 or 2020 recessions
+    https://twitter.com/JosephPolitano/status/2029916364664611242
   • [Hacker News] (882⬆): GPT-5.4
     https://openai.com/index/introducing-gpt-5-4/
   • [Hacker News] (719⬆): 10% of Firefox crashes are caused by bitflips
