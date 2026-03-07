@@ -110,16 +110,39 @@ def load_bird_env():
 # ============= DATA GATHERING =============
 
 def get_weather():
+    """Get current weather using Open-Meteo API (free, no API key needed)"""
     try:
-        r = requests.get("https://wttr.in/Carle+Place+NY?format=j1", timeout=10)
+        # Open-Meteo API - free, no key required
+        url = "https://api.open-meteo.com/v1/forecast?latitude=40.75&longitude=-73.61&current_weather=true&temperature_unit=fahrenheit&timezone=America/New_York"
+        r = requests.get(url, timeout=10)
         r.raise_for_status()
-        c = r.json().get("current_condition", [{}])[0]
-        return f"{c.get('temp_F', '?')}°F, {c.get('weatherDesc', [{}])[0].get('value', 'Unknown')}"
+        data = r.json()
+        current = data.get("current_weather", {})
+        temp = current.get("temperature", "?")
+        code = current.get("weathercode", 0)
+        
+        # WMO Weather interpretation codes
+        weather_map = {
+            0: "Clear sky",
+            1: "Mainly clear", 2: "Partly cloudy", 3: "Overcast",
+            45: "Fog", 48: "Depositing rime fog",
+            51: "Light drizzle", 53: "Moderate drizzle", 55: "Dense drizzle",
+            56: "Light freezing drizzle", 57: "Dense freezing drizzle",
+            61: "Slight rain", 63: "Moderate rain", 65: "Heavy rain",
+            66: "Light freezing rain", 67: "Heavy freezing rain",
+            71: "Slight snow", 73: "Moderate snow", 75: "Heavy snow",
+            77: "Snow grains",
+            80: "Slight rain showers", 81: "Moderate rain showers", 82: "Violent rain showers",
+            85: "Slight snow showers", 86: "Heavy snow showers",
+            95: "Thunderstorm", 96: "Thunderstorm with hail", 99: "Thunderstorm with heavy hail"
+        }
+        condition = weather_map.get(code, "Unknown")
+        return f"{int(temp)}°F, {condition}"
     except requests.exceptions.Timeout:
-        log("Weather: wttr.in timed out (10s)")
+        log("Weather: Open-Meteo timed out (10s)")
         return "Weather unavailable (timeout)"
     except requests.exceptions.HTTPError as e:
-        log(f"Weather: wttr.in HTTP error: {e}")
+        log(f"Weather: Open-Meteo HTTP error: {e}")
         return "Weather unavailable"
     except Exception as e:
         log(f"Weather: unexpected error: {e}")
