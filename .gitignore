@@ -31,3 +31,7 @@ canvas/
 
 # Empty scratch files
 Untitled.canvas
+
+# FAM project files (belong in smart-companion repo)
+personas/
+assets/
