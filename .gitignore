@@ -25,3 +25,9 @@ canvas/
 *.db-shm
 *.db-wal
 *.blend
+
+# Obsidian local config
+.obsidian/
+
+# Empty scratch files
+Untitled.canvas
