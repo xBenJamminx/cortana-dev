@@ -1,0 +1,234 @@
+<script src="https://cdn.tailwindcss.com">
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js">
+
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400&display=swap');
+
+        :root {
+            --accent-cyan: #00afec;
+            --accent-pink: #eb198b;
+            --neutral: #6d727c;
+            --bg: #000000;
+            --text: #ffffff;
+        }
+
+        body {
+            font-family: 'Titillium Web', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .display-font {
+            font-family: 'Dosis', sans-serif;
+            line-height: 0.85;
+            font-weight: 700;
+        }
+
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 2rem;
+        }
+
+        .vertical-text {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+        }
+
+        .hover-underline:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            display: block;
+            margin-top: 5px;
+            right: 0;
+            background: var(--accent-cyan);
+            transition: width .3s ease;
+        }
+
+        .hover-underline:hover:after {
+            width: 100%;
+            left: 0;
+            background: var(--accent-cyan);
+        }
+
+        .border-fine {
+            border-color: rgba(255,255,255,0.15);
+        }
+
+        .logo-white {
+            filter: invert(1) brightness(2);
+        }
+    </style>
+
+    <div class="min-h-screen">
+        <!-- NAVIGATION -->
+        <nav class="fixed top-0 left-0 w-full z-50 bg-black border-b border-fine">
+            <div class="max-w-[1440px] mx-auto px-10 h-20 flex items-center justify-between">
+                <a href="#" id="nav-logo" class="block">
+                    <img src="https://cdn.prod.website-files.com/620180d2ae54a4a3c90377e0/620bbe1dda4a007560d0f1e6_logo%20horisontal.svg" class="h-6 w-auto logo-white" alt="Kaleidoco">
+                </a>
+                <div class="hidden md:flex gap-12">
+                    <a href="#" id="nav-about" class="text-[10px] uppercase tracking-[0.25em] font-bold relative hover-underline">About</a>
+                    <a href="#" id="nav-capabilities" class="text-[10px] uppercase tracking-[0.25em] font-bold relative hover-underline">Capabilities</a>
+                    <a href="#" id="nav-mission" class="text-[10px] uppercase tracking-[0.25em] font-bold relative hover-underline">Mission</a>
+                    <a href="#" id="nav-contact" class="text-[10px] uppercase tracking-[0.25em] font-bold relative hover-underline">Contact</a>
+                </div>
+                <a href="#" id="nav-cta-header" class="bg-[#00afec] text-black px-6 py-2.5 text-[10px] uppercase tracking-widest font-extrabold hover:bg-[#eb198b] hover:text-white transition-all duration-300">
+                    Start Inquiring
+                </a>
+            </div>
+        </nav>
+
+        <main class="pt-20">
+            <!-- HERO SECTION -->
+            <section class="relative min-h-[90vh] flex flex-col justify-end px-10 py-20 overflow-hidden bg-black">
+                <div class="absolute top-0 right-0 w-1/2 h-full hidden lg:block">
+                    <img src="https://cdn.prod.website-files.com/620180d2ae54a4a3c90377e0/67c7d346d46d1682bb421717_Comp3-ezgif.com-optimize(1).gif" alt="Kaleidoco AI Companion Visual" class="w-full h-full object-cover grayscale brightness-125 contrast-125 mix-blend-screen opacity-60">
+                </div>
+                
+                <div class="relative z-10 lg:w-3/4">
+                    <h1 class="display-font text-[8rem] lg:text-[13rem] tracking-tighter uppercase leading-[0.8] mb-12">
+                        Smart<br>
+                        Companions<br>
+                        <span class="text-[#eb198b]">Built For</span><br>
+                        The Real World
+                    </h1>
+                    <div class="flex flex-col md:flex-row items-baseline gap-12 mt-20 border-t border-fine pt-12">
+                        <p class="italic text-3xl md:text-4xl max-w-2xl leading-tight text-gray-300">
+                            Intelligent, adaptive, and designed to transform how we experience physical and digital spaces.
+                        </p>
+                        <a href="#" id="hero-cta-link" class="text-[#00afec] text-sm uppercase tracking-[0.3em] font-black border-b-2 border-[#00afec] pb-2 hover:opacity-70 transition-opacity whitespace-nowrap">
+                            Start a Conversation â†’
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABOUT US SECTION -->
+            <section class="px-10 py-40 border-t border-fine">
+                <div class="editorial-grid">
+                    <div class="col-span-1 hidden lg:block">
+                        <span class="vertical-text text-[10px] uppercase tracking-[0.5em] font-black text-[#6d727c]">About Us</span>
+                    </div>
+                    <div class="col-span-12 lg:col-span-6">
+                        <h2 class="text-6xl md:text-8xl display-font uppercase tracking-tighter mb-16">
+                            Redefining the <br><span class="italic font-light normal-case text-[#00afec]">Human-AI Interface</span>
+                        </h2>
+                        <div class="max-w-4xl pr-8">
+                            <p class="text-4xl md:text-5xl font-light leading-[1.15] text-white">
+                                Kaleidoco develops adaptive AI companions that interact naturally with people and environments across destinations, venues, and digital platforms.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-5 mt-12 lg:mt-0">
+                        <div class="aspect-[3/4] overflow-hidden bg-zinc-900 border border-fine">
+                            <img src="https://cdn.prod.website-files.com/620180d2ae54a4a3c90377e0/62068335d0435813adc5c6cf_Slice%201.jpg" class="w-full h-full object-cover hover:scale-105 grayscale hover:grayscale-0 transition-all duration-700 opacity-80 hover:opacity-100" alt="Editorial AI Spread">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- IMAGE SPREAD -->
+            <section class="px-10 pb-40">
+                <div class="grid grid-cols-12 gap-8 min-h-[600px]">
+                    <div class="col-span-12 lg:col-span-8 bg-zinc-900 overflow-hidden relative group border border-fine">
+                         <img src="https://cdn.prod.website-files.com/620180d2ae54a4a3c90377e0/62064684349d2918d1b1d59c_IMAGE5.jpg" alt="Kaleidoco Environment" class="w-full h-full object-cover grayscale brightness-90 group-hover:brightness-100 group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105">
+                         <div class="absolute bottom-10 left-10 text-white z-10">
+                             <span class="text-[10px] uppercase tracking-widest bg-black/50 backdrop-blur-sm px-4 py-2">Volume 01 / Spatial Computing</span>
+                         </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-4 bg-zinc-800 overflow-hidden relative group border border-fine">
+                         <img src="https://cdn.prod.website-files.com/620180d2ae54a4a3c90377e0/6206468479c14862aa9f825e_IMAGE4.jpg" alt="Digital Interface" class="w-full h-full object-cover grayscale brightness-75 group-hover:brightness-100 group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110">
+                    </div>
+                </div>
+            </section>
+
+            <!-- CAPABILITIES SECTION -->
+            <section class="px-10 py-40 bg-[#0a0a0a] text-white">
+                <div class="flex justify-between items-end mb-24">
+                    <h3 class="display-font text-6xl md:text-8xl uppercase tracking-tighter">Capabilities</h3>
+                    <span class="hidden md:block text-[10px] tracking-[0.4em] uppercase text-[#6d727c] mb-4">Core Verticals</span>
+                </div>
+                <div class="border-t border-white/10">
+                    <div class="group cursor-pointer border-b border-white/10 py-12 flex items-center justify-between hover:bg-white/5 transition-colors px-4">
+                        <span class="text-lg opacity-40 font-mono">01</span>
+                        <h4 class="text-3xl md:text-5xl display-font uppercase tracking-tight group-hover:text-[#00afec] transition-colors">Adaptive, Expressive AI Companions</h4>
+                        <iconify-icon icon="lucide:arrow-up-right" class="text-4xl text-[#00afec] opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1 group-hover:-translate-y-1"></iconify-icon>
+                    </div>
+                    <div class="group cursor-pointer border-b border-white/10 py-12 flex items-center justify-between hover:bg-white/5 transition-colors px-4">
+                        <span class="text-lg opacity-40 font-mono">02</span>
+                        <h4 class="text-3xl md:text-5xl display-font uppercase tracking-tight group-hover:text-[#eb198b] transition-colors">Environmental Intelligence</h4>
+                        <iconify-icon icon="lucide:arrow-up-right" class="text-4xl text-[#eb198b] opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1 group-hover:-translate-y-1"></iconify-icon>
+                    </div>
+                    <div class="group cursor-pointer border-b border-white/10 py-12 flex items-center justify-between hover:bg-white/5 transition-colors px-4">
+                        <span class="text-lg opacity-40 font-mono">03</span>
+                        <h4 class="text-3xl md:text-5xl display-font uppercase tracking-tight group-hover:text-[#00afec] transition-colors">Multimodal Presence</h4>
+                        <iconify-icon icon="lucide:arrow-up-right" class="text-4xl text-[#00afec] opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1 group-hover:-translate-y-1"></iconify-icon>
+                    </div>
+                    <div class="group cursor-pointer border-b border-white/10 py-12 flex items-center justify-between hover:bg-white/5 transition-colors px-4">
+                        <span class="text-lg opacity-40 font-mono">04</span>
+                        <h4 class="text-3xl md:text-5xl display-font uppercase tracking-tight group-hover:text-[#eb198b] transition-colors">Seamlessly Connected Systems</h4>
+                        <iconify-icon icon="lucide:arrow-up-right" class="text-4xl text-[#eb198b] opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1 group-hover:-translate-y-1"></iconify-icon>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MISSION SECTION -->
+            <section class="px-10 py-60 border-y border-fine flex items-center justify-center text-center bg-black">
+                <div class="max-w-6xl">
+                    <iconify-icon icon="ri:double-quotes-l" class="text-6xl text-[#eb198b] mb-12"></iconify-icon>
+                    <blockquote class="display-font text-5xl md:text-7xl uppercase leading-none tracking-tighter">
+                        To bring adaptive, contextual AI into the real world while helping enterprises create more intuitive, connected, and meaningful experiences at scale.
+                    </blockquote>
+                </div>
+            </section>
+
+            <!-- CONTACT SECTION -->
+            <section class="px-10 py-40 editorial-grid items-center">
+                <div class="col-span-12 lg:col-span-5 mb-12 lg:mb-0">
+                    <div class="aspect-[4/5] overflow-hidden border border-fine">
+                        <img src="https://cdn.prod.website-files.com/620180d2ae54a4a3c90377e0/6206843fba98f4bb2ad6e4aa_Want%20to%20talk_.jpg" class="w-full h-full object-cover grayscale opacity-80" alt="Contact Kaleidoco">
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-start-7 lg:col-span-6">
+                    <h2 class="display-font text-7xl uppercase tracking-tighter mb-4 leading-none">Get in Touch</h2>
+                    <p class="text-2xl italic text-[#6d727c] mb-12 font-light">Inquire about enterprise integration and bespoke companion development.</p>
+                    <form class="space-y-12">
+                        <div class="relative">
+                            <input type="text" placeholder="NAME" class="w-full bg-transparent border-b border-white/30 py-4 px-2 placeholder:text-[10px] placeholder:tracking-[0.4em] placeholder:font-black placeholder:text-[#6d727c] focus:outline-none focus:border-[#00afec] transition-colors uppercase text-sm text-white">
+                        </div>
+                        <div class="relative">
+                            <input type="email" placeholder="EMAIL ADDRESS" class="w-full bg-transparent border-b border-white/30 py-4 px-2 placeholder:text-[10px] placeholder:tracking-[0.4em] placeholder:font-black placeholder:text-[#6d727c] focus:outline-none focus:border-[#eb198b] transition-colors uppercase text-sm text-white">
+                        </div>
+                        <div class="relative">
+                            <textarea placeholder="PROJECT BRIEF" rows="4" class="w-full bg-transparent border-b border-white/30 py-4 px-2 placeholder:text-[10px] placeholder:tracking-[0.4em] placeholder:font-black placeholder:text-[#6d727c] focus:outline-none focus:border-[#00afec] transition-colors uppercase text-sm resize-none text-white"></textarea>
+                        </div>
+                        <button type="submit" id="contact-submit-btn" class="w-full py-6 border border-white display-font text-2xl uppercase tracking-widest hover:bg-[#00afec] hover:border-[#00afec] hover:text-black transition-all duration-500">
+                            Send Inquiry
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="px-10 py-20 border-t border-fine bg-black">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
+                <div>
+                    <img src="https://cdn.prod.website-files.com/620180d2ae54a4a3c90377e0/620bbe1dda4a007560d0f1e6_logo%20horisontal.svg" class="h-6 w-auto mb-8 logo-white" alt="Kaleidoco">
+                    <div class="flex gap-8 text-[10px] uppercase tracking-widest font-black">
+                        <a href="#" id="footer-twitter" class="hover:text-[#00afec] transition-colors">Twitter</a>
+                        <a href="#" id="footer-linkedin" class="hover:text-[#eb198b] transition-colors">LinkedIn</a>
+                        <a href="#" id="footer-instagram" class="hover:text-[#00afec] transition-colors">Instagram</a>
+                    </div>
+                </div>
+                <div class="text-left md:text-right">
+                    <p class="text-[10px] uppercase tracking-[0.2em] font-medium text-[#6d727c] mb-2">Based in Los Angeles / Worldwide</p>
+                    <p class="text-[10px] uppercase tracking-[0.2em] font-medium text-white/50">&copy; 2024 Kaleidoco Research Corp. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>

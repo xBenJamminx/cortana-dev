@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "data": {
+    "colors": {
+      "background": "#000000",
+      "foreground": "#ffffff",
+      "primary": "#0000ee",
+      "secondary": "#00afec",
+      "accent": "#eb198b",
+      "neutral": "#6d727c"
+    },
+    "fonts": [
+      "Arial",
+      "Dosis",
+      "webflow-icons",
+      "Titillium Web"
+    ],
+    "logo": {
+      "url": "https://cdn.prod.website-files.com/620180d2ae54a4a3c90377e0/620bbe1dda4a007560d0f1e6_logo%20horisontal.svg",
+      "needsDarkBackground": false
+    },
+    "screenshot": {
+      "url": "https://pquxfbbxflqvtidtlrhl.supabase.co/storage/v1/object/public/hmac-uploads/brand/660f95f4-0d95-47d0-ae2c-01d28ed5e52c/screenshot.png",
+      "width": 1920,
+      "height": 1080,
+      "sizeBytes": 333696,
+      "uploadedAt": "2026-03-17T15:16:46.070Z"
+    }
+  }
+}
