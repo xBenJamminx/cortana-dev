@@ -6,6 +6,27 @@ This process keeps Notion, the QA Sheet, and Slack channels in sync. Run after e
 
 ---
 
+## Non-Negotiable Behavior Rules
+
+**1. Ask before you do anything — including pulling data.**
+The very first thing you do when this process is triggered is confirm with Ben before starting. Say: "I'm ready to run the FAM sync — pull channels, check Notion and QA Sheet, and build the change plan. Good to proceed?" Then stop and wait. Do not pull a single API call until Ben says go. Once he confirms, run Steps 1–3, present the plan, wait for a second confirmation, then execute Steps 4–8.
+
+This matters because once you start a response you cannot be stopped. The confirmation must happen before any work begins.
+
+**2. Present a plan, not options.**
+Don't ask "Want me to do X or Y?" — tell Ben what you're going to do and ask if he's good to proceed. One clear proposed action, not a menu.
+
+**3. Verify before declaring something new.**
+Before saying an item is "not yet tracked," check BOTH Notion and the QA Sheet. Match by semantic meaning, not exact string. If you are not sure whether it's tracked, search Notion by keyword before creating a duplicate.
+
+**4. Both systems always. No exceptions.**
+Every create, update, and rename touches QA Sheet first, then Notion. If you update one, you update the other in the same run.
+
+**5. No partial execution.**
+Once Ben confirms, run Steps 4–8 completely before reporting back. Don't stop mid-way to ask again unless something unexpected comes up.
+
+---
+
 ## When to Run
 
 - After every standup (meeting notes posted in #meeting-notes)
@@ -133,38 +154,11 @@ When checking for duplicates, match by **semantic meaning** — not exact string
 
 ---
 
-### STEP 4 — Update Notion first
+### STEP 4 — Update QA Sheet first
 
-For every item in the delta list, update Notion before touching the QA Sheet.
+The QA Sheet is the working document updated directly by developers. It is updated first.
 
-**Creating new tasks** — use `NOTION_INSERT_ROW_DATABASE`:
-
-```text
-database_id: 26c4666bd1ca807b930dca5ffff9c8e9
-Properties:
-  - Name:     [FULL task name — exact wording from meeting notes, no abbreviation]
-  - Status:   [correct status from mapping rules above]
-  - Priority: [Top / High / Medium / Low]
-  - Assigned: [person user ID from team table]
-  - Project:  [relation — FAM POC project ID: 26c4666b-d1ca-80e5-a4cd-fc007ab84486]
-```
-
-Every new task MUST have all five fields set before moving on. A task missing any of these is incomplete.
-
-**Updating existing tasks** — use `NOTION_UPDATE_PAGE`:
-
-```text
-page_id: [existing page ID]
-Properties to update:
-  - Status:   [new status]
-  - Comments: [add evidence — e.g. "Gemini migration complete (Tram, Mar 11 update)"]
-```
-
----
-
-### STEP 5 — Update QA Sheet second
-
-After Notion is updated, mirror all changes to the **"In Progress"** tab of the QA Sheet.
+Mirror all new items and status changes to the **"In Progress"** tab of the QA Sheet.
 
 **Sheet column layout:**
 
@@ -184,6 +178,37 @@ A: Feature  |  B: Condition  |  C: Expectation  |  D: Example 1  |  E: Example 2
 
 - Find the row by matching the Feature name in column A
 - Update only the changed columns using `first_cell_location` (e.g. `"In Progress!G7"` to update just the Status cell)
+
+---
+
+### STEP 5 — Sync Notion from QA Sheet
+
+After QA Sheet is updated, sync all changes to Notion.
+
+**Creating new tasks** — use `NOTION_INSERT_ROW_DATABASE`:
+
+```text
+database_id: 26c4666bd1ca807b930dca5ffff9c8e9
+Properties:
+  - Name:     [FULL task name — exact wording from meeting notes, no abbreviation]
+  - Status:   [correct status from mapping rules above]
+  - Priority: [Top / High / Medium / Low]
+  - Assigned: [person user ID from team table — required, never leave blank]
+  - Project:  [relation — FAM POC project ID: 26c4666b-d1ca-80e5-a4cd-fc007ab84486]
+```
+
+Every new task MUST have all five fields set. A task missing any of these is incomplete.
+
+**Updating existing tasks** — use `NOTION_UPDATE_PAGE`:
+
+```text
+page_id: [existing page ID]
+Properties to update:
+  - Status:   [new status]
+  - Comments: [add evidence — e.g. "Gemini migration complete (Tram, Mar 11 update)"]
+```
+
+If a Notion task has a different status than the QA Sheet with no Slack evidence to explain it — update Notion to match the QA Sheet, not the other way around.
 
 ---
 
@@ -232,6 +257,48 @@ Keep it tight. Ben reads this to understand what changed, not to re-read the mee
 
 ---
 
+## Build Regression Handling
+
+When a new build is posted in #updates or a bug is reported in #testing against a specific build version:
+
+- If a feature **worked in a previous build and is broken in the new one** — it is a regression. Status = **In Progress**. Add to Comments: `"Regression in Build X — worked in Build Y"`. Do NOT mark it Not Started.
+- If a feature is **partially working** (e.g. lip sync works for Moca and female but not Ape and Lightling) — status stays **In Progress**. Add to Comments which parts work and which don't.
+- If a feature is **completely broken in the active testing build** — mark as **In Progress** regardless of what Notion previously said.
+- The active testing build is always the highest numbered build in #updates unless Ben or Cassandra says otherwise.
+
+---
+
+## Deduplication Rules
+
+Before creating any new task, search Notion for it. A task is a duplicate if:
+
+- It describes the same fix, feature, or action even with different wording
+- Examples of semantic duplicates:
+  - "Fix auto-spawn bug" = "Implement automatic avatar spawn on app launch"
+  - "Ape textures wrong" = "Fix ape textures rendering correctly on avatar selection screen"
+  - "Remove Lightling eyes" = "Replace Particle Ink character eyes with glasses/visor"
+
+If a duplicate exists: **update the existing task**, do not create a new one. If the existing task name is less descriptive than the meeting notes wording, rename it to match the meeting notes.
+
+---
+
+## QA Sheet ↔ Notion Mismatch Handling
+
+The QA Sheet is updated directly by the developers (Steven, Tram, Bilal). Notion is synced from it. When statuses conflict, use this hierarchy to determine what's correct:
+
+1. **Slack first** — if there is explicit channel evidence (test report, build changelog, status update), that wins above everything
+2. **QA Sheet second** — developers update this directly, so it reflects the most current dev state
+3. **Notion last** — it is the management view and should be brought in line with the above, not the other way around
+
+When fixing a mismatch:
+
+- Update Notion to match the QA Sheet (unless Slack evidence says otherwise)
+- Add a comment with the source of truth (e.g. `"Corrected — QA Sheet showed In Testing, Notion was In Progress. Aligned to QA Sheet per developer update."`)
+- Never downgrade a QA Sheet status to match a stale Notion entry
+- **If Notion shows a higher status than QA Sheet with no Slack evidence** — it means a previous sync session updated Notion incorrectly without updating the sheet. Treat the QA Sheet as correct. Update Notion downward to match. Do not propagate the error by updating the sheet upward to match Notion.
+
+---
+
 ## Common Mistakes to Avoid
 
 1. **Never shorten task names.** Use the exact wording from the meeting notes, every time.
@@ -239,8 +306,10 @@ Keep it tight. Ben reads this to understand what changed, not to re-read the mee
 3. **Never create a task without all five fields.** Name + Status + Priority + Assigned + Project.
 4. **Don't re-add items that already exist.** Check for semantic duplicates before creating.
 5. **Shipped ≠ Done.** A feature appearing in a build changelog moves to In Testing, not Done.
-6. **Don't summarize Slack data before extracting action items.** Read the raw text first.
-7. **Composio BATCH_UPDATE quirk:** The `range` parameter is ignored. Always use `first_cell_location`.
-8. **Steven = Cao Tan Luc** in Notion. All backend work belongs to him. Do not create a new user.
-9. **Bilal owns all frontend/Unity work.** If it's a UI, animation, AR, or build issue — it's Bilal.
-10. **Ben owns product tasks** — naming conventions, QA sheet updates, descriptions, clarifications with the team.
+6. **Partial completion ≠ In Testing.** If a feature works for some cases but not others, it stays In Progress.
+7. **Don't summarize Slack data before extracting action items.** Read the raw text first.
+8. **Composio BATCH_UPDATE quirk:** The `range` parameter is ignored. Always use `first_cell_location`.
+9. **Steven = Cao Tan Luc** in Notion. All backend work belongs to him. Do not create a new user.
+10. **Bilal owns all frontend/Unity work.** If it's a UI, animation, AR, or build issue — it's Bilal.
+11. **Ben owns product tasks** — naming conventions, QA sheet updates, descriptions, clarifications with the team.
+12. **Do not ask Ben which option he prefers.** Make the call, execute, flag ambiguity in the report.
