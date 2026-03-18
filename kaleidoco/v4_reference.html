@@ -1,0 +1,155 @@
+<!-- V4: V3 EDITORIAL BASE + V2 MOTION ENERGY + V1 ATTITUDE -->
+<script src="https://cdn.tailwindcss.com">
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400&display=swap');
+  :root { --cyan:#00afec; --pink:#eb198b; --neutral:#6d727c; }
+  body { font-family:'Titillium Web',sans-serif; background:#000; color:#fff; -webkit-font-smoothing:antialiased; cursor:crosshair; }
+  .df { font-family:'Dosis',sans-serif; font-weight:800; line-height:0.85; }
+  .bb4 { border:4px solid #fff; }
+  .bb4c { border:4px solid #00afec; }
+  .bb4p { border:4px solid #eb198b; }
+  .sh-c { box-shadow:8px 8px 0 #00afec; }
+  .sh-p { box-shadow:8px 8px 0 #eb198b; }
+  .fine { border-color:rgba(255,255,255,0.15); }
+  .kc { transition:all .4s cubic-bezier(.4,0,.2,1); }
+  .kc:hover { transform:translateY(-8px); box-shadow:-6px 6px 0 #eb198b; }
+  .s1 { animation:fiu .8s ease .1s both; }
+  .s2 { animation:fiu .8s ease .25s both; }
+  .s3 { animation:fiu .8s ease .4s both; }
+  @keyframes fiu { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:none} }
+  .diag-b { clip-path:polygon(0 0,100% 0,100% 93%,0 100%); }
+</style>
+
+<div id="v4-root" class="min-h-screen">
+<!-- NAV -->
+<nav id="v4-nav" style="position:fixed;top:0;left:0;width:100%;z-index:50;background:#000;border-bottom:4px solid #fff">
+  <div style="max-width:1440px;margin:0 auto;padding:0 2.5rem;height:5rem;display:flex;align-items:center;justify-content:space-between">
+    <a href="#"><img src="https://cdn.prod.website-files.com/620180d2ae54a4a3c90377e0/620bbe1dda4a007560d0f1e6_logo%20horisontal.svg" style="height:1.75rem;filter:invert(1) brightness(2)" alt="Kaleidoco"></a>
+    <div style="display:flex;gap:3rem;align-items:center">
+      <a href="#v4-about" style="font-size:.625rem;text-transform:uppercase;letter-spacing:.25em;font-weight:800;color:#fff;text-decoration:none" onmouseover="this.style.color='#00afec'" onmouseout="this.style.color='#fff'">About</a>
+      <a href="#v4-caps" style="font-size:.625rem;text-transform:uppercase;letter-spacing:.25em;font-weight:800;color:#fff;text-decoration:none" onmouseover="this.style.color='#00afec'" onmouseout="this.style.color='#fff'">Capabilities</a>
+      <a href="#v4-mission" style="font-size:.625rem;text-transform:uppercase;letter-spacing:.25em;font-weight:800;color:#fff;text-decoration:none" onmouseover="this.style.color='#00afec'" onmouseout="this.style.color='#fff'">Mission</a>
+      <a href="#v4-contact" style="font-size:.625rem;text-transform:uppercase;letter-spacing:.25em;font-weight:800;color:#fff;text-decoration:none" onmouseover="this.style.color='#00afec'" onmouseout="this.style.color='#fff'">Contact</a>
+    </div>
+    <a href="#v4-contact" style="background:#00afec;color:#000;padding:.75rem 1.75rem;font-size:.625rem;text-transform:uppercase;letter-spacing:.15em;font-weight:900;text-decoration:none;transition:all .3s" onmouseover="this.style.background='#eb198b';this.style.color='#fff'" onmouseout="this.style.background='#00afec';this.style.color='#000'">Start Inquiring</a>
+  </div>
+</nav>
+
+<!-- HERO: V3 layout + V2 stagger animation + V1 brutalist accent border -->
+<section id="v4-hero" style="position:relative;min-height:90vh;display:flex;flex-direction:column;justify-content:flex-end;padding:5rem 2.5rem;overflow:hidden;background:#000;margin-top:5rem">
+  <div style="position:absolute;top:0;right:0;width:50%;height:100%">
+    <img src="https://cdn.prod.website-files.com/620180d2ae54a4a3c90377e0/69262068df2a40f9e9414505_triofix1-ezgif.com-optimize-2.gif" style="width:100%;height:100%;object-fit:cover;opacity:.55;filter:grayscale(1) brightness(1.2)" alt="">
+  </div>
+  <div style="position:absolute;top:0;right:0;width:50%;height:100%;border-left:4px solid #eb198b;pointer-events:none"></div>
+  <div style="position:relative;z-index:10;width:60%" class="s1">
+    <h1 class="df s1" style="font-size:clamp(5rem,11vw,13rem);text-transform:uppercase;margin-bottom:3rem">
+      Smart<br>Companions<br><span style="color:#eb198b">Built For</span><br>The Real World
+    </h1>
+    <div style="display:flex;align-items:baseline;gap:3rem;margin-top:5rem;border-top:4px solid #fff;padding-top:3rem" class="s2">
+      <p style="font-style:italic;font-size:clamp(1.25rem,2.5vw,2rem);max-width:40rem;line-height:1.3;color:#ccc">Intelligent, adaptive, and designed to transform how we experience physical and digital spaces.</p>
+      <a href="#v4-contact" class="s3" style="background:#00afec;color:#000;border:4px solid #fff;padding:1.25rem 2.5rem;font-size:1.25rem;font-weight:900;text-transform:uppercase;text-decoration:none;box-shadow:8px 8px 0 #eb198b;transition:all .2s;white-space:nowrap" onmouseover="this.style.background='#fff'" onmouseout="this.style.background='#00afec'">Start a Conversation</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT: V3 editorial 12-col + V1 brutalist border image frame -->
+<section id="v4-about" style="padding:6rem 2.5rem;border-top:4px solid #fff">
+  <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:2rem;max-width:1440px;margin:0 auto">
+    <div style="grid-column:span 1;display:flex;align-items:flex-start">
+      <span style="writing-mode:vertical-rl;transform:rotate(180deg);font-size:.625rem;text-transform:uppercase;letter-spacing:.5em;font-weight:900;color:#6d727c">About Us</span>
+    </div>
+    <div style="grid-column:span 6">
+      <h2 class="df" style="font-size:clamp(3rem,7vw,7rem);text-transform:uppercase;margin-bottom:3rem">Redefining<br>the <span style="font-style:italic;font-weight:300;text-transform:none;color:#00afec">Human&#8209;AI Interface</span></h2>
+      <p style="font-size:clamp(1.25rem,2.5vw,2rem);font-weight:300;line-height:1.4;color:#fff">Kaleidoco develops adaptive AI companions that interact naturally with people and environments across destinations, venues, and digital platforms.</p>
+    </div>
+    <div style="grid-column:span 5;margin-top:1rem">
+      <div style="aspect-ratio:3/4;overflow:hidden;border:4px solid #eb198b;box-shadow:8px 8px 0 #00afec">
+        <img src="https://cdn.prod.website-files.com/620180d2ae54a4a3c90377e0/67c7d346d46d1682bb421717_Comp3-ezgif.com-optimize(1).gif" style="width:100%;height:100%;object-fit:cover;filter:grayscale(1) brightness(1.1)" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGE SPREAD with good images -->
+<section style="padding:0 2.5rem 6rem">
+  <div style="display:grid;grid-template-columns:8fr 4fr;gap:2rem;min-height:500px">
+    <div style="overflow:hidden;position:relative;border:1px solid rgba(255,255,255,.15)">
+      <img src="https://cdn.prod.website-files.com/620180d2ae54a4a3c90377e0/69262068df2a40f9e9414505_triofix1-ezgif.com-optimize-2.gif" style="width:100%;height:100%;object-fit:cover;filter:grayscale(.3) brightness(.85)" alt="">
+      <span style="position:absolute;bottom:2rem;left:2rem;font-size:.625rem;text-transform:uppercase;letter-spacing:.2em;background:rgba(0,0,0,.5);padding:.5rem 1rem">Volume 01 / Spatial Computing</span>
+    </div>
+    <div style="overflow:hidden;border:1px solid rgba(255,255,255,.15)">
+      <img src="https://cdn.prod.website-files.com/620180d2ae54a4a3c90377e0/6925b6f457e7aa8a201cb6fd_tedvsmall-ezgif.com-optimize.gif" style="width:100%;height:100%;object-fit:cover;filter:grayscale(.3) brightness(.8)" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- CAPABILITIES: V1 brutalist numbered grid -->
+<section id="v4-caps" style="border-top:4px solid #fff;border-bottom:4px solid #fff">
+  <div style="padding:2rem 2.5rem;border-bottom:4px solid #fff;background:#fff">
+    <h2 class="df" style="font-size:clamp(3rem,7vw,7rem);text-transform:uppercase;color:#000">Capabilities</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr)">
+    <div class="kc" style="border:1px solid #fff;padding:3rem;background:#000;display:flex;flex-direction:column;height:22rem;justify-content:space-between">
+      <span class="df" style="font-size:3.5rem">01</span>
+      <h3 class="df" style="font-size:1.75rem;text-transform:uppercase">Adaptive, Expressive AI Companions</h3>
+    </div>
+    <div class="kc" style="border:1px solid #fff;padding:3rem;background:#000;display:flex;flex-direction:column;height:22rem;justify-content:space-between">
+      <span class="df" style="font-size:3.5rem">02</span>
+      <h3 class="df" style="font-size:1.75rem;text-transform:uppercase">Environmental Intelligence</h3>
+    </div>
+    <div class="kc" style="border:1px solid #fff;padding:3rem;background:#000;display:flex;flex-direction:column;height:22rem;justify-content:space-between">
+      <span class="df" style="font-size:3.5rem">03</span>
+      <h3 class="df" style="font-size:1.75rem;text-transform:uppercase">Multimodal Presence</h3>
+    </div>
+    <div class="kc" style="border:1px solid #fff;padding:3rem;background:#000;display:flex;flex-direction:column;height:22rem;justify-content:space-between">
+      <span class="df" style="font-size:3.5rem">04</span>
+      <h3 class="df" style="font-size:1.75rem;text-transform:uppercase">Seamlessly Connected Systems</h3>
+    </div>
+    <div class="kc" style="border:1px solid #fff;padding:3rem;background:#000;display:flex;flex-direction:column;height:22rem;justify-content:space-between">
+      <span class="df" style="font-size:3.5rem">05</span>
+      <h3 class="df" style="font-size:1.75rem;text-transform:uppercase">Global&#8209;Scale Performance</h3>
+    </div>
+    <div class="kc" style="border:1px solid #fff;padding:3rem;background:#000;display:flex;flex-direction:column;height:22rem;justify-content:space-between">
+      <span class="df" style="font-size:3.5rem">06</span>
+      <h3 class="df" style="font-size:1.75rem;text-transform:uppercase">Ethical, Human&#8209;Centered Design</h3>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION: V1 pink bg + V3 editorial quote -->
+<section id="v4-mission" style="background:#eb198b;color:#000;padding:8rem 2.5rem;text-align:center;border-bottom:4px solid #fff">
+  <div style="max-width:72rem;margin:0 auto">
+    <iconify-icon icon="ri:double-quotes-l" style="font-size:4rem;color:rgba(0,0,0,.3);display:block;margin-bottom:3rem"></iconify-icon>
+    <blockquote class="df" style="font-size:clamp(2.5rem,5vw,5rem);text-transform:uppercase">"To bring adaptive, contextual AI into the real world while helping enterprises create more intuitive, connected, and meaningful experiences at scale."</blockquote>
+  </div>
+</section>
+
+<!-- CONTACT: V3 form + V1 bold CTA -->
+<section id="v4-contact" style="padding:6rem 2.5rem;display:grid;grid-template-columns:5fr 7fr;gap:4rem;align-items:center">
+  <div style="border:4px solid #00afec;box-shadow:8px 8px 0 #eb198b;overflow:hidden;aspect-ratio:4/5">
+    <img src="https://cdn.prod.website-files.com/620180d2ae54a4a3c90377e0/6206843fba98f4bb2ad6e4aa_Want%20to%20talk_.jpg" style="width:100%;height:100%;object-fit:cover;filter:grayscale(1);opacity:.8" alt="">
+  </div>
+  <div>
+    <h2 class="df" style="font-size:clamp(3rem,5vw,5.5rem);text-transform:uppercase;margin-bottom:1rem">Get in Touch</h2>
+    <p style="font-size:1.5rem;font-style:italic;color:#6d727c;margin-bottom:3rem">Inquire about enterprise integration and bespoke companion development.</p>
+    <form style="display:flex;flex-direction:column;gap:2.5rem">
+      <input type="text" placeholder="NAME" style="background:transparent;border-bottom:1px solid rgba(255,255,255,.3);padding:.75rem .5rem;font-size:.875rem;text-transform:uppercase;color:#fff;outline:none">
+      <input type="email" placeholder="EMAIL ADDRESS" style="background:transparent;border-bottom:1px solid rgba(255,255,255,.3);padding:.75rem .5rem;font-size:.875rem;text-transform:uppercase;color:#fff;outline:none">
+      <textarea placeholder="PROJECT BRIEF" rows="4" style="background:transparent;border-bottom:1px solid rgba(255,255,255,.3);padding:.75rem .5rem;font-size:.875rem;text-transform:uppercase;color:#fff;outline:none;resize:none"></textarea>
+      <button type="submit" style="background:#00afec;color:#000;border:4px solid #fff;padding:1.5rem;font-size:1.5rem;font-weight:900;text-transform:uppercase;cursor:pointer;box-shadow:8px 8px 0 #eb198b;transition:all .2s" onmouseover="this.style.background='#fff'" onmouseout="this.style.background='#00afec'">Send Inquiry</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="padding:3rem 2.5rem;border-top:4px solid #fff;background:#000;display:flex;justify-content:space-between;align-items:center">
+  <img src="https://cdn.prod.website-files.com/620180d2ae54a4a3c90377e0/620bbe1dda4a007560d0f1e6_logo%20horisontal.svg" style="height:1.5rem;filter:invert(1) brightness(2)" alt="Kaleidoco">
+  <div style="display:flex;gap:2rem;font-size:.625rem;text-transform:uppercase;letter-spacing:.2em;font-weight:900">
+    <a href="#" style="color:#fff;text-decoration:none">Twitter</a>
+    <a href="#" style="color:#fff;text-decoration:none">LinkedIn</a>
+    <a href="#" style="color:#fff;text-decoration:none">Instagram</a>
+  </div>
+  <p style="font-size:.625rem;text-transform:uppercase;letter-spacing:.15em;color:#6d727c">&copy; 2024 Kaleidoco Research Corp.</p>
+</footer>
+</div>
