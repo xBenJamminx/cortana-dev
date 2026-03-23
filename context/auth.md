@@ -41,8 +41,9 @@
 - API base: `https://api.agentmail.to/v0`
 - Endpoints: /inboxes, /inboxes/{id}/messages/send, /inboxes/{id}/messages, /inboxes/{id}/threads
 
-## Notion (two workspaces)
-- Main (benjoselson@gmail.com): NOTION_API_KEY in `~/.openclaw/.env`
+## Notion (three keys)
+- Home (benjoselson@gmail.com): NOTION_API_KEY in `~/.openclaw/.env`
+- Work / FAM: NOTION_API_KEY_WORK -- USE THIS for FAM POC database (26c4666bd1ca807b930dca5ffff9c8e9)
 - Products (bjoselson27@gmail.com): NOTION_PRODUCTS_API_KEY in `~/.openclaw/.env`
 - Creator Brain DB IDs: `/tmp/creator_brain_ids.json`
 
@@ -65,6 +66,48 @@
   - `fathom.py summary <recording_id>` — summary + action items
   - `fathom.py search <query>` — search by title
 - Use this INSTEAD of Slack #meeting-notes for getting meeting content directly
+
+## Firecrawl (web scraping/search)
+- API key: FIRECRAWL_API_KEY in `~/.openclaw/.env`
+- CLI: `firecrawl` (installed globally via npm)
+- **Free tier: 500 page cap. Use wisely.**
+- Commands:
+  - `firecrawl <url>` — scrape any page to markdown
+  - `firecrawl search "query" --limit N` — web search
+  - `firecrawl map <url>` — discover all URLs on a site
+  - `firecrawl crawl <url>` — spider a site
+  - `firecrawl browser` — cloud browser sessions
+- Tip: X/Twitter is blocked by Firecrawl directly. Use nitter.net mirror: `firecrawl https://nitter.net/user/status/ID`
+- ALWAYS set `export FIRECRAWL_API_KEY=fc-...` before running commands
+- Check credits: `firecrawl --status`
+
+## Scrapling (stealth local scraping)
+- Python package: `from scrapling import Fetcher, StealthFetcher, PlayWrightFetcher`
+- **Free, open-source, runs locally — no credits/limits**
+- Best for: anti-bot bypass, adaptive element tracking, dynamic content
+- StealthFetcher handles Cloudflare/bot protection
+- Use BEFORE Firecrawl when possible to save credits
+
+## Scrapy (heavy-duty crawling)
+- Python package: `import scrapy`
+- **Free, open-source, runs locally — no credits/limits**
+- Best for: large-scale structured data extraction, spider frameworks
+- Use for bulk crawling jobs (competitor sites, data pipelines)
+
+## Cloudflare Browser Rendering /crawl
+- Endpoint: `POST /accounts/{account_id}/browser-rendering/crawl`
+- **Free on Workers (Free + Paid plans)**
+- Best for: bulk website crawling, sitemaps, incremental updates
+- Returns HTML, Markdown, or structured JSON
+- Supports `modifiedSince` / `maxAge` for incremental crawls
+- Needs: Cloudflare account_id + API token in env
+- PARKED — account_id + token in env but auth failing. Revisit later.
+
+## Web Scraping Decision Tree
+1. **Quick URL read or web search** → Firecrawl (costs 1 credit)
+2. **Anti-bot / protected site** → Scrapling StealthFetcher (free)
+3. **Bulk crawl / full site** → Cloudflare /crawl or Scrapy (free)
+4. **X/Twitter post** → Firecrawl via nitter mirror (1 credit)
 
 ## Composio
 - MCP_URL + API_KEY in `~/.openclaw/.env`

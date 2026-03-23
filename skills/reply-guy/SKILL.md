@@ -58,7 +58,7 @@ Full aggregated scan. Options:
 
 Run the script with matching args:
 ```bash
-python3 /root/.openclaw/workspace/scripts/reply-radar.py --send [OPTIONS]
+python3 /root/.openclaw/workspace/automation/social/reply-radar.py --send [OPTIONS]
 ```
 
 **Argument mapping:**

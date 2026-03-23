@@ -4,18 +4,60 @@
 
 | Task | Use This | NOT This |
 |------|----------|----------|
-| Read/send email | \ | composio direct |
+| Read/send email | Composio skill | composio direct |
 | Browse the web / sign up for a service | Playwright via Python (`from playwright.sync_api import sync_playwright`) | saying "no browser available" |
-| Calendar events | `python3 lib/gcal.py` | composio GOOGLECALENDAR_* directly |
+| Calendar events | `python3 core/integrations/gcal.py` | composio GOOGLECALENDAR_* directly |
 | Google Docs/Sheets | composio `GOOGLEDOCS_*` / `GOOGLESHEETS_*` | direct API |
-| Slack message | python3 lib/slack.py <channel> [limit] | saying no access |
+| Slack message | `python3 core/integrations/slack.py <channel> [limit]` | saying no access |
 | Web search | `skills/brave-search/` | composio |
 | Track follow-up | `skills/follow_up_tracker/` | memory file manually |
 | Meeting prep | `skills/meeting_prep/` | raw calendar API |
-| Morning briefing | `scripts/morning-briefing.py` | (cron-driven, don't call manually) |
-| Evening recap | `scripts/evening-recap.py` | (cron-driven, don't call manually) |
+| Morning briefing | `automation/reporting/morning-briefing.py` | (cron-driven, don't call manually) |
 
 > **Rule**: Always check this table before picking a tool. Skills define *how*. This table defines *which*.
+
+---
+
+## Directory Structure
+
+```
+core/                    # Core system modules
+├── integrations/        # Third-party API wrappers
+│   ├── telegram.py      # Telegram bot API
+│   ├── slack.py         # Slack API
+│   ├── bird.py          # Twitter/X (Bird CLI)
+│   ├── elevenlabs.py    # Text-to-speech
+│   ├── gcal.py          # Google Calendar
+│   └── pexels.py        # Stock video/images
+├── content/             # Content creation tools
+│   ├── sleep/           # Sleep video pipeline
+│   │   ├── pipeline.py  # Main orchestrator
+│   │   └── video.py     # Video assembly
+│   ├── imagegen.py      # Image generation
+│   ├── slideshow.py     # TikTok slideshows
+│   └── tiktok_video.py  # TikTok video tools
+├── fathom/              # Fathom meeting tools
+│   ├── client.py
+│   ├── webhook.py
+│   ├── server.py
+│   ├── poll.py
+│   └── register.py
+├── monitoring/          # Health & alerting
+│   ├── alerting.py
+│   ├── health.py
+│   └── retry.py
+└── utils/               # Utilities
+    ├── env.py           # Environment loading
+    ├── spawn_task.sh    # Sub-agent spawner
+    └── git-sync.sh
+
+automation/              # Runnable automation scripts
+├── content/             # Content generation
+├── social/              # Social media tools
+├── monitoring/          # Trend/news monitors
+├── reporting/           # Reports & briefings
+└── infra/               # Infrastructure & health
+```
 
 ---
 
@@ -38,36 +80,15 @@ To call Composio actions, use the Composio skill:
 
 ---
 
-## Follow-Up Tracker
-
-Database: `memory/follow-ups.db` (SQLite)
-
-| Column | Description |
-|--------|-------------|
-| id | Auto-increment |
-| description | What was promised |
-| direction | "we_owe" or "they_owe" |
-| contact | Who's involved |
-| due_date | When (ISO 8601) |
-| source | Email subject / Slack thread / Telegram msg |
-| status | open / reminded / done |
-| created_at | When logged |
-
-Add a follow-up: `skills/follow_up_tracker/ --add`
-Check due today: `skills/follow_up_tracker/ --due-today`
-Mark done: `skills/follow_up_tracker/ --done <id>`
-
----
-
 ## Secrets
 
-All credentials: `.env` (in workspace root, chmod 600)
+All credentials: `.env` (in `~/.openclaw/`, chmod 600)
 
 Loading pattern (Python):
 ```python
-from lib.env import _load_env
-_load_env()
-# Checks ~/.openclaw/.env first (production), then workspace root .env (dev)
+from core.utils.env import load_env
+load_env()
+# Checks ~/.openclaw/.env first, then workspace root .env (dev)
 ```
 
 ---
@@ -78,10 +99,7 @@ Bot token: `.env` as `TELEGRAM_BOT_TOKEN`
 Chat ID: `.env` as `TELEGRAM_CHAT_ID`
 Thread IDs (topics): `.env` as `TELEGRAM_TOPIC_BRIEFING`, `TELEGRAM_TOPIC_ALERTS`
 
-Use `lib/telegram.py` for all sends — it handles markdown escaping, splitting, retry.
-
----
-
+Use `core/integrations/telegram.py` for all sends — it handles markdown escaping, splitting, retry.
 
 ---
 
@@ -90,17 +108,17 @@ Use `lib/telegram.py` for all sends — it handles markdown escaping, splitting,
 Use `spawn_task.sh` for any task that takes more than ~10 seconds.
 
 ```bash
-bash /root/.openclaw/workspace/lib/spawn_task.sh <topic_id> "detailed task instructions"
+bash /root/.openclaw/workspace/core/utils/spawn_task.sh <topic_id> "detailed task instructions"
 ```
 
 - Worker runs as --agent worker (isolated, no Cortana session history)
 - Fresh session ID per run — no shared state between workers
 - Worker reports back to the Telegram topic when done
 - NEVER call spawn_task.sh from inside a worker (infinite loop)
-- sessions_spawn and run_in_background:true are BROKEN — do not use
 
 Topics: 20=Content, 22=Research, 26=Ideas, 29=Analytics, 31=Business
 
+---
 
 ## Video Production Rules
 

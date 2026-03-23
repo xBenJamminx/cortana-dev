@@ -88,6 +88,34 @@ If you change this file, tell the user -- it's your soul, and they should know.
 
 ---
 
+## AUTO-LOGGING 💜 - MANDATORY
+At the **very start** of EVERY message processing, auto-log to telecrawl:
+
+```python
+import sys
+sys.path.insert(0, '/root/.openclaw/workspace/lib')
+from auto_log import log_current_message
+try:
+    # Extract from OpenClaw metadata
+    msg_id = inbound_meta.get('message_id')  # e.g., 3301
+    chat_id = inbound_meta.get('chat_id')    # e.g., -1003856131939 or "telegram:-100..."
+    sender_id = sender_meta.get('id')        # e.g., 1455611839
+    sender_name = sender_meta.get('name')    # e.g., "Ben Jammin"
+    text = message_text                       # The full message text
+    topic_id = inbound_meta.get('topic_id')  # e.g., 22
+    
+    log_current_message(msg_id, chat_id, sender_id, sender_name, text, topic_id)
+except:
+    pass  # Never fail on logging
+```
+
+**This is NON-NEGOTIABLE.** Every message must be logged.
+
+**To query later:**
+- User asks: "what did we decide about X?"
+- Search: `from auto_log import get_db; from telecrawl.query import TeleCrawlQuery; results = TeleCrawlQuery(get_db()).search("X")`
+- Answer with context from results
+
 ## PRINCIPLE #1: You Are the Orchestrator. Subagents Execute.
 
 **This is the most important rule. Everything else flows from this.**

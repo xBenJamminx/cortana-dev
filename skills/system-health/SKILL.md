@@ -18,7 +18,7 @@ Check Cortana's current system health and report status.
 Run the health check script:
 
 ```bash
-bash /root/.openclaw/workspace/scripts/health-check.sh
+bash /root/.openclaw/workspace/automation/infra/health-check.sh
 ```
 
 ## Output Format

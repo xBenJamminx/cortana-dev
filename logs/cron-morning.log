@@ -262,3 +262,19 @@
 [2026-03-07 13:01:10] Weather: wttr.in timed out (10s)
 [2026-03-07 13:01:10] Briefing built (5849 chars)
 [2026-03-07 13:01:13] ✅ Briefing sent
+/bin/sh: 1: /root/.openclaw/workspace/scripts/morning-briefing.py: not found
+/bin/sh: 1: /root/.openclaw/workspace/scripts/morning-briefing.py: not found
+/bin/sh: 1: /root/.openclaw/workspace/scripts/morning-briefing.py: not found
+/bin/sh: 1: /root/.openclaw/workspace/scripts/morning-briefing.py: not found
+/bin/sh: 1: /root/.openclaw/workspace/scripts/morning-briefing.py: not found
+/bin/sh: 1: /root/.openclaw/workspace/scripts/morning-briefing.py: not found
+/bin/sh: 1: /root/.openclaw/workspace/scripts/morning-briefing.py: not found
+/bin/sh: 1: /root/.openclaw/workspace/scripts/morning-briefing.py: not found
+/bin/sh: 1: /root/.openclaw/workspace/scripts/morning-briefing.py: not found
+/bin/sh: 1: /root/.openclaw/workspace/scripts/morning-briefing.py: not found
+/bin/sh: 1: /root/.openclaw/workspace/scripts/morning-briefing.py: not found
+/bin/sh: 1: /root/.openclaw/workspace/scripts/morning-briefing.py: not found
+/bin/sh: 1: /root/.openclaw/workspace/scripts/morning-briefing.py: not found
+/bin/sh: 1: /root/.openclaw/workspace/scripts/morning-briefing.py: not found
+/bin/sh: 1: /root/.openclaw/workspace/scripts/morning-briefing.py: not found
+/bin/sh: 1: /root/.openclaw/workspace/scripts/morning-briefing.py: not found

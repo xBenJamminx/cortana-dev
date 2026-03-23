@@ -50,7 +50,7 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 ## Credentials & Secrets
 
 - All API keys live in `/root/.openclaw/.env` -- **never hardcode credentials in scripts**
-- Load env at the top of every script using the `_load_env()` pattern (see `lib/alerting.py`)
+- Load env at the top of every script using the `load_env()` pattern (see `core/utils/env.py`)
 - If you discover a hardcoded credential in a script, flag it to Ben immediately
 - Never log or print credential values
 
@@ -123,16 +123,16 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 
 ## Key Paths (Feb 2026 migration)
 
-Everything lives under `/root/.openclaw/` now. The old `/root/.openclaw/workspace/` directory has been deleted.
+Everything lives under `/root/.openclaw/` now.
 
 - **Workspace:** `/root/.openclaw/workspace/`
-- **Scripts:** `/root/.openclaw/workspace/scripts/`
+- **Core:** `/root/.openclaw/workspace/core/` (integrations, content, fathom, monitoring, utils)
+- **Automation:** `/root/.openclaw/workspace/automation/` (content, social, monitoring, reporting, infra)
 - **Skills:** `/root/.openclaw/workspace/skills/`
-- **Lib:** `/root/.openclaw/workspace/lib/`
 - **Env:** `/root/.openclaw/.env`
 - **Config:** `/root/.openclaw/openclaw.json`
 
-If you see a reference to `/root/.openclaw/workspace/` anywhere, it's stale. Flag it or fix it.
+If you see a reference to old paths (`lib/`, `scripts/`), it's stale. Flag it or fix it.
 
 ## Heartbeats - Be Proactive
 
@@ -241,15 +241,15 @@ Replace `PROJECT_PATH` with the actual project directory each time.
 **Image generation:**
 ```
 Task: Generate scene images for the sleep video project at PROJECT_PATH.
-Run: python3 /root/.openclaw/workspace/lib/sleep_pipeline.py images PROJECT_PATH
+Run: python3 /root/.openclaw/workspace/core/content/sleep/pipeline.py images PROJECT_PATH
 The script loads its own env and sends each image to Telegram (topic 20) as it generates.
-If it errors, send the error text to Telegram topic 20 via lib/telegram.py.
+If it errors, send the error text to Telegram topic 20 via core/integrations/telegram.py.
 ```
 
 **Voice generation:**
 ```
 Task: Generate narration audio for the sleep video project at PROJECT_PATH.
-Run: python3 /root/.openclaw/workspace/lib/sleep_pipeline.py voice PROJECT_PATH frank
+Run: python3 /root/.openclaw/workspace/core/content/sleep/pipeline.py voice PROJECT_PATH frank
 The script loads its own env and sends the audio file to Telegram (topic 20) when done.
 If it errors, send the error text to Telegram topic 20.
 ```
@@ -257,7 +257,7 @@ If it errors, send the error text to Telegram topic 20.
 **Video assembly:**
 ```
 Task: Assemble the final sleep video for the project at PROJECT_PATH.
-Run: python3 /root/.openclaw/workspace/lib/sleep_pipeline.py assemble PROJECT_PATH
+Run: python3 /root/.openclaw/workspace/core/content/sleep/pipeline.py assemble PROJECT_PATH
 The script loads its own env and sends the finished video to Telegram (topic 20) when done.
 Set runTimeoutSeconds: 3600 (1 hour max — kill if stuck).
 If it errors, send the error text to Telegram topic 20.
@@ -266,7 +266,7 @@ If it errors, send the error text to Telegram topic 20.
 **Ambient audio:**
 ```
 Task: Generate ambient background audio for the sleep video at PROJECT_PATH.
-Run: python3 /root/.openclaw/workspace/lib/sleep_pipeline.py assemble PROJECT_PATH "calm forest night"
+Run: python3 /root/.openclaw/workspace/core/content/sleep/pipeline.py assemble PROJECT_PATH "calm forest night"
 Adjust the prompt to match the video theme.
 ```
 

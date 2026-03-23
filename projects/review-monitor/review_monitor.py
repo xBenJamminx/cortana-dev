@@ -439,7 +439,7 @@ def send_telegram_alert(message, topic_id=31):
     """Send alert via Telegram."""
     try:
         subprocess.run(
-            ["/usr/bin/python3", "/root/.openclaw/workspace/lib/telegram.py",
+            ["/usr/bin/python3", "/root/.openclaw/workspace/core/integrations/telegram.py",
              "--topic", str(topic_id), message],
             capture_output=True, timeout=30
         )

@@ -738,3 +738,12 @@ Manual intervention may be needed.
   - Content intel: 6.1h old (max 6h)
   - YouTube monitor: 10.0h old (max 8h)
 
+
+---
+
+## 2026-03-12 03:35:12: WARNING Alert
+
+**Message:** Gateway was down (failure #1) — auto-restarted successfully.
+Service was: active/running
+HTTP probe: <urlopen error [Errno 111] Connection refused>
+

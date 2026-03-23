@@ -48,3 +48,46 @@ Build -> Notice -> Abstract -> Teach
 - NO fabricated stats or claims
 - NO tech jargon in client-facing content
 - ALWAYS set context/expectations at the start of content
+
+## Viral Hook Playbook
+
+### The 7 Hook Patterns That Stop Scrolling
+1. **Curiosity gap**: "Most people don't know this about [X], but..."
+2. **Contrarian**: "[Common belief] is wrong."
+3. **Specific number + outcome**: "I went from [bad] to [good] in [timeframe]"
+4. **Direct address**: "If you're [situation], this is for you"
+5. **Story opener**: "Three years ago I [X]. Last week I [Y]."
+6. **Insider secret**: "Nobody talks about this, but..."
+7. **Urgency/threat**: "You're probably making this mistake right now"
+
+### Proven Hook (Watchdog Post -- 67 likes, 109 bookmarks in <2hrs)
+"There's a problem nobody warns you about with @OpenClaw bots."
+- Combined: direct address + insider secret + threat
+- Bookmark-to-like ratio 2:1 = people saving, not just engaging
+
+### Post Structure Template
+```
+[One-line hook]
+[2-3 sentences describing the pain. Make it visceral. They should nod.]
+[1 sentence: what you did about it]
+[How it works -- show the experience, not the commands]
+[Social proof -- real numbers, first person, real experience]
+[CTA / repo link / "steal this"]
+[Closer -- one line, confident]
+```
+
+### Key Rules (Ben's Feedback)
+- Hook must be ONE line, short
+- Don't make it about "I" -- make it about what THEY can do
+- Don't make things seem harder than they are
+- First person for the story, frame the value for them
+- CLI commands are what the agent uses, not what the user types. Show the experience.
+- Content drafts get room to breathe -- brevity rules apply to Cortana replies, not long-form posts
+
+### Hook Bank
+**Tested:** "There's a problem nobody warns you about with [X]." (PROVEN)
+**Tested:** "Does your OpenClaw bot on Telegram forget everything between sessions?" (telecrawl post)
+**Untested:**
+- "You have no idea what your @OpenClaw bot is actually doing."
+- "Your @OpenClaw bot can't reach you outside of chat."
+- "Stop copy-pasting deploy commands. Your bot can do it."

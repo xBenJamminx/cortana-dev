@@ -2,30 +2,39 @@
 
 > Read at session start. Update after completing work. Keep under 60 lines.
 
+## Telecrawl Active 💜
+- **What:** Real-time message memory for Telegram groups (like discrawl)
+- **DB:** `~/.openclaw/memory/telecrawl.db` (SQLite + FTS5)
+- **Repo:** https://github.com/xBenJamminx/telecrawl
+- **Natural language:** Just ask me "what did we decide about X?" and I'll search
+- **Code:** `from core.utils.memory_helper import search_conversation_memory`
+
+## Memory Usage
+- I auto-log all messages to telecrawl.db with chat_id + topic_id
+- Ask naturally: "what did we say about telegaf yesterday?" or "remind me of that decision"
+- I query internally and surface relevant context
+
 ## Active Projects
 - **Cortana sub-agents:** FIXED 2026-03-03. Use spawn_task.sh → --agent worker. Works.
 - **MiMoo:** Same fixes deployed. GitHub updated. Both servers in sync.
 - **Context Engine Phase 1:** Complete. context/ files live. CLAUDE.md slimmed.
 
-## Last Completed (2026-03-03)
-- Sub-agent infinite recursion FIXED: was using --agent main (shared session = recursion)
-- Fix: spawn_task.sh now uses --agent worker + fresh --session-id per run
-- worker agent added to openclaw.json (isolated session, no Cortana history contamination)
-- Google Calendar via Composio: gcal.py written, create+patch attendee fix working
-- tg-reaction-monitor v7: debounced — one alert per incident, not per model retry
-- Fixed duplicate monitor process (was doubling every alert)
-- MiMoo workspace template: gcal.py, spawn_task.sh, AGENTS.md, TOOLS.md all updated
-- Pushed to GitHub (xBenJamminx/mimoo commits fa48d79 + 865b1c3)
+## Last Completed (2026-03-08)
+- **Workspace Refactor:** lib/ → core/, scripts/ → automation/
+- New structure: core/{integrations,content,fathom,monitoring,utils}
+- All imports updated: `from lib.X` → `from core.Y.X`
+- TOOLS.md and AGENTS.md updated with new paths
+- Git history preserved via git mv
 
 ## How Sub-Agents Work (CRITICAL — read before delegating)
-- Command: bash /root/.openclaw/workspace/lib/spawn_task.sh <topic_id> task
+- Command: bash /root/.openclaw/workspace/core/utils/spawn_task.sh <topic_id> task
 - Uses --agent worker (NOT --agent main — that causes infinite recursion)
 - Each spawn gets a fresh session ID — no shared history between workers
 - Worker knows it's a worker: has anti-recursion preamble in task
 - NEVER call spawn_task.sh from inside a worker
 
 ## Google Calendar
-- Script: python3 /root/.openclaw/workspace/lib/gcal.py
+- Script: python3 /root/.openclaw/workspace/core/integrations/gcal.py
 - Commands: list | events primary 7 | create_one '{...}'
 - Calendars: benjoselson@gmail.com (primary), ben@kaleidoco.com, ben@mimoo.ai
 - Timezone: America/New_York
