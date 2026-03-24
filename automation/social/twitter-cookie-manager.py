@@ -8,7 +8,7 @@ Usage:
   python3 twitter-cookie-manager.py --cron       # For cron: check + alert if expired
 
 Cron setup (check daily at 6am):
-  0 6 * * * /usr/bin/python3 /root/.openclaw/workspace/scripts/twitter-cookie-manager.py --cron
+  0 6 * * * /usr/bin/python3 /root/.openclaw/workspace/automation/social/twitter-cookie-manager.py --cron
 """
 import os
 import sys
@@ -199,7 +199,7 @@ def main():
                 f"Expired accounts: {', '.join(expired)}\n\n"
                 "Please refresh cookies:\n"
                 "`ssh openclaw`\n"
-                "`python3 /root/.openclaw/workspace/scripts/twitter-cookie-manager.py --refresh`"
+                "`python3 /root/.openclaw/workspace/automation/social/twitter-cookie-manager.py --refresh`"
             )
             send_telegram_alert(message)
             log(f"Alert sent for expired cookies: {expired}")

@@ -3,7 +3,7 @@
 Cortana Daily Health Report — Telegram summary of system health.
 
 Runs daily at 7 AM ET (12:00 UTC) before morning briefing.
-Cron: 0 12 * * * /usr/bin/python3 /root/.openclaw/workspace/scripts/health-report.py >> /var/log/clawd/health-report.log 2>&1
+Cron: 0 12 * * * /usr/bin/python3 /root/.openclaw/workspace/automation/infra/health-report.py >> /var/log/clawd/health-report.log 2>&1
 """
 import json
 import logging

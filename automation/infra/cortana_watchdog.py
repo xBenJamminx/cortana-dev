@@ -3,7 +3,7 @@
 Cortana Watchdog v2 — Comprehensive health monitor and auto-recovery.
 
 Runs every 2 minutes via cron with flock to prevent duplicate execution:
-  */2 * * * * /usr/bin/flock -n /tmp/watchdog.lock python3 /root/.openclaw/workspace/scripts/watchdog.py >> /var/log/clawd/watchdog.log 2>&1
+  */2 * * * * /usr/bin/flock -n /tmp/watchdog.lock python3 /root/.openclaw/workspace/automation/infra/watchdog.py >> /var/log/clawd/watchdog.log 2>&1
 
 Features:
   - Gateway health: systemd state + HTTP probe
