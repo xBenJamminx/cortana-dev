@@ -10,7 +10,7 @@ Read, preview, and process Excel and CSV files.
 ## Usage
 
 ```bash
-python3 /root/.openclaw/workspace/scripts/excel-processor.py <filepath>
+python3 /root/.openclaw/workspace/automation/utils/excel-processor.py <filepath>
 ```
 
 Processes the file and creates a readable summary with:

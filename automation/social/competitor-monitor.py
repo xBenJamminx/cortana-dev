@@ -22,7 +22,7 @@ import feedparser
 from datetime import datetime
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(0, "/root/.openclaw/workspace")
 from core.integrations.bird import (
     bird_user_tweets, normalize_tweet, send_telegram, log as bird_log,
     BirdError, BirdRateLimited,

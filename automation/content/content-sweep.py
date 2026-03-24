@@ -12,12 +12,12 @@ from pathlib import Path
 
 MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
 MONITORS = [
-    ("/root/.openclaw/workspace/scripts/real-trends-monitor.py", "Trends"),
-    ("/root/.openclaw/workspace/scripts/indiehacker-monitor.py", "IndieHacker/HN"),
-    ("/root/.openclaw/workspace/scripts/producthunt-monitor.py", "Product Hunt"),
-    ("/root/.openclaw/workspace/scripts/devto-hashnode-monitor.py", "Dev.to"),
+    ("/root/.openclaw/workspace/automation/monitoring/real-trends-monitor.py", "Trends"),
+    ("/root/.openclaw/workspace/automation/monitoring/indiehacker-monitor.py", "IndieHacker/HN"),
+    ("/root/.openclaw/workspace/automation/monitoring/producthunt-monitor.py", "Product Hunt"),
+    ("/root/.openclaw/workspace/automation/monitoring/devto-hashnode-monitor.py", "Dev.to"),
 ]
-TOPIC_AGGREGATOR = "/root/.openclaw/workspace/scripts/topic-aggregator.py"
+TOPIC_AGGREGATOR = "/root/.openclaw/workspace/automation/social/topic-aggregator.py"
 
 def refresh_data():
     """Run monitors to gather fresh data"""

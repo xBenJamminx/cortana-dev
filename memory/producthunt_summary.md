@@ -1,68 +1,71 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [Pitwall F1](https://www.producthunt.com/products/pitwall-f1-macos-app)
+• [Flux](https://www.producthunt.com/products/replay-production-api-failures-locally)
   _<p>
-            Live F1 timing & standings in your Mac menu bar
+            Fix production bugs by replaying them locally
           </p>
           <p>
-       _
+         _
 
-• [Cockpit](https://www.producthunt.com/products/cockpit-3)
+• [BotBoard](https://www.producthunt.com/products/botboard)
   _<p>
-            Transform your VPS into a powerful desktop-like interface
-          </p>
-          <_
-
-• [VolumeGlass](https://www.producthunt.com/products/volume-glass)
-  _<p>
-            Beautiful volume control for macOS
+            Task management for the age of agents
           </p>
           <p>
-            <a href=_
+            <a hr_
 
-• [Zesty](https://www.producthunt.com/products/zesty-local-food-discovery-2)
+• [Maestri](https://www.producthunt.com/products/maestri)
   _<p>
-            Your personal restaurant concierge
+            An infinite canvas where coding agents work in concert
           </p>
           <p>
-            <a href=_
+_
 
-• [CoChat](https://www.producthunt.com/products/cochat)
+• [jared.so](https://www.producthunt.com/products/jared-so)
   _<p>
-            Openclaw for Teams that is secure, collaborative, autonomous
+            AI that monitors convos & proactively jumps in when needed
           </p>
-        _
+          _
 
-• [SuperPowers AI](https://www.producthunt.com/products/superpowers-ai-2)
+• [What The Duck!](https://www.producthunt.com/products/what-the-duck-2)
   _<p>
-            Real time ambient visual agents for phones and wearables
-          </p>
-          <p_
-
-• [Gemlet](https://www.producthunt.com/products/gemlet)
-  _<p>
-            Native, keyboard-first Gemini client for macOS
+            Duck Hunt but with your finger and custom targets
           </p>
           <p>
-        _
+     _
 
-• [ChatGPT for Excel](https://www.producthunt.com/products/chatgpt-for-excel-3)
+• [GitLaw Integrations](https://www.producthunt.com/products/gitlaw)
   _<p>
-            Build and update spreadsheets with ChatGPT in real time
-          </p>
-          <p>_
-
-• [Vet](https://www.producthunt.com/products/imbue-7)
-  _<p>
-            Keep your coding agents honest
+            Trigger AI legal doc creation/review from 7,000+ apps
           </p>
           <p>
-            <a href="htt_
+ _
 
-• [Woz](https://www.producthunt.com/products/woz)
+• [Redbean](https://www.producthunt.com/products/redbean-ai)
   _<p>
-            Build App That Earn
+            Bring your original characters to life
           </p>
           <p>
-            <a href="https://www.pr_
+            <a h_
+
+• [TeamPrompt](https://www.producthunt.com/products/teamprompt-2)
+  _<p>
+            AI DLP & prompt management for your team
+          </p>
+          <p>
+            <a_
+
+• [Ordo](https://www.producthunt.com/products/ordo)
+  _<p>
+            Finally a saving app that works
+          </p>
+          <p>
+            <a href="ht_
+
+• [ChatWithAds for Klaviyo](https://www.producthunt.com/products/chatwithads)
+  _<p>
+            AI agent that turns ad data into answers
+          </p>
+          <p>
+            <a_
 

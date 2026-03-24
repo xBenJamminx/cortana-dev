@@ -762,16 +762,15 @@ def main():
     log("Morning briefing v2 starting...")
 
     # Run monitors to refresh data (short timeouts, they also run on their own cron schedules)
-    SCRIPTS_DIR = "/root/.openclaw/workspace/scripts"
     monitors = [
-        (f"{SCRIPTS_DIR}/real-trends-monitor.py", "Real Trends"),
-        (f"{SCRIPTS_DIR}/competitor-monitor.py", "Competitors"),
-        (f"{SCRIPTS_DIR}/email-newsletter-monitor.py", "Email Newsletters"),
-        (f"{SCRIPTS_DIR}/reddit-monitor.py", "Reddit"),
-        (f"{SCRIPTS_DIR}/indiehacker-monitor.py", "Indie Hacker"),
-        (f"{SCRIPTS_DIR}/producthunt-monitor.py", "Product Hunt"),
-        (f"{SCRIPTS_DIR}/youtube-trending-monitor.py", "YouTube"),
-        (f"{SCRIPTS_DIR}/topic-aggregator.py", "Topic Aggregator"),
+        ("/root/.openclaw/workspace/automation/monitoring/real-trends-monitor.py", "Real Trends"),
+        ("/root/.openclaw/workspace/automation/social/competitor-monitor.py", "Competitors"),
+        ("/root/.openclaw/workspace/automation/social/email-newsletter-monitor.py", "Email Newsletters"),
+        ("/root/.openclaw/workspace/automation/monitoring/reddit-monitor.py", "Reddit"),
+        ("/root/.openclaw/workspace/automation/monitoring/indiehacker-monitor.py", "Indie Hacker"),
+        ("/root/.openclaw/workspace/automation/monitoring/producthunt-monitor.py", "Product Hunt"),
+        ("/root/.openclaw/workspace/automation/monitoring/youtube-trending-monitor.py", "YouTube"),
+        ("/root/.openclaw/workspace/automation/social/topic-aggregator.py", "Topic Aggregator"),
     ]
 
     failed = []

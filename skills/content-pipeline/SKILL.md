@@ -39,7 +39,7 @@ NEVER use Write tool for content. This is THE ONLY WAY.
 ## Usage
 
 ```bash
-/root/.openclaw/workspace/scripts/content-to-airtable.py "<title>" "<content>" [status] [type]
+/root/.openclaw/workspace/automation/content/content-to-airtable.py "<title>" "<content>" [status] [type]
 ```
 
 ## Parameters
@@ -53,18 +53,18 @@ NEVER use Write tool for content. This is THE ONLY WAY.
 
 ### Article Draft
 ```bash
-/root/.openclaw/workspace/scripts/content-to-airtable.py \
+/root/.openclaw/workspace/automation/content/content-to-airtable.py \
   "10 Lessons from Building AI Agents" \
   "Heres what I learned after 6 months...   Draft   Article
 bash
-/root/.openclaw/workspace/scripts/content-to-airtable.py   AI agents replacing workflows   The best AI agents dont assist you. They replace entire workflows." \
+/root/.openclaw/workspace/automation/content/content-to-airtable.py   AI agents replacing workflows   The best AI agents dont assist you. They replace entire workflows." \
   "Ready" \
   "Tweet"
 ```
 
 ### Content Idea
 ```bash
-/root/.openclaw/workspace/scripts/content-to-airtable.py \
+/root/.openclaw/workspace/automation/content/content-to-airtable.py \
   "Video: How I built Cortana" \
   "Behind the scenes of building an AI operator..." \
   "Idea" \

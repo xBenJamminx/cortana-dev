@@ -5,7 +5,7 @@
 - CHAT_ID = group `-1003856131939` (NOT Ben's DM)
 - ALWAYS reply to same topic: check topic ID, use `--topic <id>`
 - Topics: 20=Content, 22=Research, 26=Ideas, 29=Analytics, 31=Business
-- Text: `python3 /root/.openclaw/workspace/lib/telegram.py --topic <id> "message"`
+- Text: `python3 /root/.openclaw/workspace/core/integrations/telegram.py --topic <id> "message"`
 - Images: `curl -s -X POST "https://api.telegram.org/bot$TOKEN/sendPhoto" -F "chat_id=$CHAT_ID" -F "message_thread_id=$TOPIC" -F "photo=@/path/to/image.png" -F "caption=text"`
 
 ## Twitter (@xBenJamminx) -- SUSPENDED
@@ -23,11 +23,11 @@
 - Content Pipeline table: `tblvLSX7DZxIRWU5g`
 
 ## Image Generation (Gemini/Imagen)
-- `generate_image_gemini(prompt, output_path, model, aspect_ratio)` in `lib/imagegen.py`
+- `generate_image_gemini(prompt, output_path, model, aspect_ratio)` in `core/integrations/imagegen.py`
 - Models: `imagen-4.0-ultra-generate-001` ($0.06), `imagen-4.0-generate-001` ($0.04), `imagen-4.0-fast-generate-001` ($0.02), `gemini-3-pro-image-preview`
 - Auth: `GEMINI_API_KEY` in `~/.openclaw/.env`
 - Aspect ratios: "16:9", "9:16", "3:4", "1:1"
-- Fallbacks: OpenAI DALL-E (`lib/slideshow.py`), Pexels stock (`lib/pexels.py`)
+- Fallbacks: OpenAI DALL-E (`core/integrations/slideshow.py`), Pexels stock (`core/integrations/pexels.py`)
 
 ## YouTube
 - OAuth in `~/.config/youtube/credentials.json` + `/root/.openclaw/google_credentials.json`
@@ -58,7 +58,7 @@
 - API key: FATHOM_API_KEY in `~/.openclaw/.env`
 - Webhook secret: FATHOM_WEBHOOK_SECRET in `~/.openclaw/.env`
 - Base URL: `https://api.fathom.ai/external/v1`
-- Helper: `python3 /root/.openclaw/workspace/lib/fathom.py`
+- Helper: `python3 /root/.openclaw/workspace/core/fathom/client.py`
   - `fathom.py meetings [--limit N]` — list recent meetings
   - `fathom.py today` — today's meetings
   - `fathom.py meeting <recording_id>` — full meeting with transcript + summary + actions
@@ -117,9 +117,9 @@
 - Bot: cortana (user_id=U0ABR0SER62, bot_id=B0ABWKXBFEG)
 - Workspace: smartcompanionpoc.slack.com (team_id=T08K8GFMEEQ)
 - Token: SLACK_BOT_TOKEN in ~/.openclaw/.env
-- HOW TO USE: python3 lib/slack.py meeting-notes 10
-- List channels: python3 lib/slack.py --list
-- DO NOT use MCP tools or composio for Slack. Use lib/slack.py.
+- HOW TO USE: python3 core/integrations/slack.py meeting-notes 10
+- List channels: python3 core/integrations/slack.py --list
+- DO NOT use MCP tools or composio for Slack. Use core/integrations/slack.py.
 - YOU HAVE FULL ACCESS. You have been reading #meeting-notes and updating Notion all week.
 - Key channels:
   - #meeting-notes  C09J78SH2FM

@@ -116,8 +116,8 @@
   - Task message embeds reporting instructions (use telegram.py --topic X to send results)
   - Returns in milliseconds, Cortana stays available
   - Sub-agent reports back to the right Telegram topic when done
-- Location: /root/.openclaw/workspace/lib/spawn_task.sh
-- Usage: bash /root/.openclaw/workspace/lib/spawn_task.sh <topic_id> "task description"
+- Location: /root/.openclaw/workspace/core/utils/spawn_task.sh
+- Usage: bash /root/.openclaw/workspace/core/utils/spawn_task.sh <topic_id> "task description"
 - Watchdog also lowered: fresh 300s→60s, maxMs 900s→180s (fail fast instead of hanging)
 - CLAUDE.md updated: Cortana is orchestrator not worker, anything >10s = spawn_task.sh
 

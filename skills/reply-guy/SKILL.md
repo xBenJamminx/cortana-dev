@@ -110,4 +110,4 @@ List available content pillars:
 
 ## Script Location
 
-`/root/.openclaw/workspace/scripts/reply-radar.py`
+`/root/.openclaw/workspace/automation/social/reply-radar.py`

@@ -18,7 +18,7 @@ import sys, time, argparse, re
 from pathlib import Path
 from datetime import datetime
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(0, "/root/.openclaw/workspace")
 from core.integrations.bird import (
     bird_search, bird_thread, normalize_tweet, send_telegram, log,
     BirdError, retry_on_rate_limit,

@@ -1,61 +1,77 @@
-# Meeting Action Items Workflow
+# Meeting Wrap-Up Workflow
 
 > **Full sync process (Slack → Notion → QA Sheet):** see `context/fam-sync-process.md`
-> This file covers just the action item generation + Slack posting piece.
 
 ## Trigger
-Ben says "process the meeting" (or similar)
+Ben says "meeting wrap up" (or similar: "process the meeting", "summarize the meeting", etc.)
 
-## Source
-Fathom transcript + summary from the most recent meeting. Pull via Fathom API or Ben provides the link.
+## Process
 
-## Slack Channel
-#meeting-notes (C09J78SH2FM)
+### 1. Pull the meeting
+- Run `python3 core/fathom/client.py meetings --limit 5` to list recent meetings
+- Confirm which meeting (usually the most recent)
+- Pull full data: `python3 core/fathom/client.py meeting <recording_id>`
+- Pull summary: `python3 core/fathom/client.py summary <recording_id>`
 
-## Format
-The Fathom summary gets posted first (Fathom bot or Ben does this), then action items follow.
-
-### Action Items Structure
+### 2. Draft the Summary Message
+Format matches previous #meeting-notes posts:
 ```
-*Action Items*
+*Meeting Title - Month DD*
 
-*Person Name* (or *Person Name (Role)*)
-• Top-level task with **bold key terms**
-• Another task
+*<FATHOM_SHARE_URL|VIEW RECORDING - X mins (No highlights)>* *<!channel>*
+<FATHOM_SHARE_URL?tab=summary&timestamp=0|Section title @ 0:00>
+Description paragraph.
+<FATHOM_SHARE_URL?tab=summary&timestamp=XXX|Section title @ MM:SS>
+Description paragraph.
+...
+```
+- Use the Fathom chronological summary sections with timestamped links
+- Each section has a linked header and a paragraph description
+
+### 3. Draft the Action Items Message
+Separate message from summary. Format:
+```
+Meeting Title - Month DD
+
+*Action Items <!channel>*
+
+*Person Name*
 *Area sub-header:*
-• Task grouped under area
-    ◦ Sub-detail
+• Action item with **bold key terms**
+• Another action item
     ◦ Sub-detail
 *Another area:*
-• Task
+• Action item
 ```
 
-### Formatting Rules
-- Group by person/team first
-- Within each person, use bold italic area sub-headers to categorize (e.g. *UI fixes:*, *Bug fixes to investigate:*, *Build management:*, *Proactivity:*)
+#### Formatting Rules
+- Group by person first
+- Within each person, use italic area sub-headers to categorize (e.g. *Bug fixes:*, *UI fixes:*, *Testing:*)
 - Top-level tasks that don't fit a category go before the area sub-headers
 - Bold key terms/features/objects within each task line
 - Sub-bullets (◦) for nested details, edge cases, partial behavior
 - Actionable language — what to DO, not what was discussed
 - Specific enough to be trackable
 - When a bug has partial behavior, describe what works AND what doesn't
+- NO editorializing (no "PRIORITY", "Decision needed ASAP", etc.) — just the action items
+- NO role descriptions in parentheses after names
 
-### Team Members (FAM POC)
+### 4. Send BOTH drafts to Ben in Telegram
+- Post the summary draft and action items draft in the current Telegram topic
+- Ben reviews and posts them to Slack himself
+- NEVER post directly to Slack without explicit confirmation
+
+## Slack Channel
+#meeting-notes (C09J78SH2FM)
+
+## Team Members (FAM POC)
 - **Ben** — PM, coordination, QA sheet, Notion updates, follow-ups
 - **Bilal** — Frontend / Unity (avatars, AR, UI, builds, TestFlight)
-- **Steven, Tram, Khan** — Backend team (LLM, sentiment, sub-agents, proactivity, voice)
+- **Steven** — Backend lead (LLM, sentiment, sub-agents, proactivity, voice)
+- **Tram, Khan** — Backend team
 - **Joel** — UI/UX Design
 - **Cassandra** — Strategy, investor relations, product direction
 - **Team** — items that apply to everyone
-
-### Process
-1. Pull Fathom transcript for the meeting
-2. Read through transcript identifying decisions, assignments, requests, and action items
-3. Attribute each action to the right person based on who it was assigned to or who owns that area
-4. Group by person, then by functional area within that person
-5. Bold the key objects/features being acted on
-6. Add sub-bullets for specifics or edge cases
-7. Draft and send to Ben for review before posting to Slack
 
 ## Notes
 - Fathom free tier generates action items ~first few meetings per month, then runs out

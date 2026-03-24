@@ -17,7 +17,7 @@ import sys, argparse, sqlite3
 from pathlib import Path
 from datetime import datetime, timedelta
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(0, "/root/.openclaw/workspace")
 from core.integrations.bird import (
     bird_user_tweets, normalize_tweet, send_telegram, log,
     BirdError,

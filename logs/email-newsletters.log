@@ -17030,3 +17030,8 @@ NUGGETS (13)
 /usr/bin/python3: can't open file '/root/.openclaw/workspace/scripts/email-newsletter-monitor.py': [Errno 2] No such file or directory
 /usr/bin/python3: can't open file '/root/.openclaw/workspace/scripts/email-newsletter-monitor.py': [Errno 2] No such file or directory
 /usr/bin/python3: can't open file '/root/.openclaw/workspace/scripts/email-newsletter-monitor.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/root/.openclaw/workspace/scripts/email-newsletter-monitor.py': [Errno 2] No such file or directory
+[2026-03-24 18:13:21] Newsletter Monitor v3 starting...
+[2026-03-24 18:13:24] Fetched 0 unique newsletter emails across 19 queries
+[2026-03-24 18:13:24] No newsletter messages found
+[2026-03-24 18:13:24] Done

@@ -21,7 +21,7 @@
 - Watchdog: fresh 60s timeout, maxMs 180s (fail fast)
 
 ## Sub-Agent Spawning
-- `bash /root/.openclaw/workspace/lib/spawn_task.sh <topic_id> "task"`
+- `bash /root/.openclaw/workspace/core/utils/spawn_task.sh <topic_id> "task"`
 - Wraps `openclaw agent --agent main --message "task"` in nohup
 - Returns immediately, sub-agent runs independently
 - Sub-agent reports to Telegram topic when done

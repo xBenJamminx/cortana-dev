@@ -4,7 +4,7 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
 WATCH_FILES = {"USER.md", "IDENTITY.md", "CLAUDE.md", "MEMORY.md"}
-SYNC_SCRIPT = "/root/.openclaw/workspace/scripts/cross-sync-memory.py"
+SYNC_SCRIPT = "/root/.openclaw/workspace/automation/infra/cross-sync-memory.py"
 
 class Handler(FileSystemEventHandler):
     def __init__(self):

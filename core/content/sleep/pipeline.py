@@ -407,9 +407,10 @@ def _send_script_to_telegram(script, project_dir):
 
 def _step_voice(project, voice=DEFAULT_VOICE):
     """Generate narration for all scenes via ElevenLabs, concat, send to Telegram."""
-    sys.path.insert(0, str(WORKSPACE / 'lib'))
+    sys.path.insert(0, str(WORKSPACE / 'core/integrations'))
+    sys.path.insert(0, str(WORKSPACE / 'core/content/sleep'))
     from elevenlabs import text_to_speech
-    from sleep_video import concat_audio_files, get_audio_duration
+    from video import concat_audio_files, get_audio_duration
 
     script = project.get_script()
     scenes = script['scenes']
@@ -473,7 +474,7 @@ def _split_text(text, max_chars):
 
 def _step_images(project, model=DEFAULT_IMG_MODEL):
     """Generate scene images via Gemini Imagen, send each to Telegram immediately."""
-    sys.path.insert(0, str(WORKSPACE / 'lib'))
+    sys.path.insert(0, str(WORKSPACE / 'core/content'))
     from imagegen import generate_image_gemini
 
     script = project.get_script()
@@ -530,8 +531,9 @@ def _make_placeholder(path, label):
 
 def _step_assemble(project, music_volume=DEFAULT_MUSIC_VOL):
     """Full video assembly: audio mixing → scene clips → concat → mux → deliver."""
-    sys.path.insert(0, str(WORKSPACE / 'lib'))
-    from sleep_video import (
+    sys.path.insert(0, str(WORKSPACE / 'core/content/sleep'))
+    sys.path.insert(0, str(WORKSPACE / 'core/content'))
+    from video import (
         image_to_scene, concatenate_with_crossfade, add_title_card,
         add_audio_to_video, get_audio_duration,
     )

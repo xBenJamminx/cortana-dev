@@ -14,7 +14,7 @@ import urllib.request
 CASHCLAW_API = "http://127.0.0.1:3777"
 POLL_INTERVAL = 30  # seconds
 SEEN_FILE = "/tmp/cashclaw-seen-tasks.json"
-TG_SCRIPT = "/root/.openclaw/workspace/lib/telegram.py"
+TG_SCRIPT = "/root/.openclaw/workspace/core/integrations/telegram.py"
 TG_TOPIC = "31"  # Business
 
 

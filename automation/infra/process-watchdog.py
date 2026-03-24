@@ -13,7 +13,7 @@ from pathlib import Path
 MAX_CLAUDE_RUNTIME = 600  # 10 minutes - kill if running longer
 ERROR_LOG = Path("/root/.openclaw/workspace/ERROR_LOG.md")
 WATCHDOG_LOG = Path("/root/.openclaw/workspace/logs/watchdog.log")
-ALERT_SCRIPT = "/root/.openclaw/workspace/scripts/alert.py"
+ALERT_SCRIPT = "/root/.openclaw/workspace/automation/infra/alert.py"
 
 def log(message: str):
     """Log to both stdout and file"""

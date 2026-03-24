@@ -532,3 +532,25 @@
 [2026-03-07 13:01:10] Weather: wttr.in timed out (10s)
 [2026-03-07 13:01:10] Briefing built (5849 chars)
 [2026-03-07 13:01:13] ✅ Briefing sent
+[2026-03-24 18:12:36] Morning briefing v2 starting...
+[2026-03-24 18:12:37] Real Trends failed (exit 2)
+[2026-03-24 18:12:37] Competitors failed (exit 2)
+[2026-03-24 18:12:37] Email Newsletters failed (exit 2)
+[2026-03-24 18:12:37] Reddit failed (exit 2)
+[2026-03-24 18:12:37] Indie Hacker failed (exit 2)
+[2026-03-24 18:12:37] Product Hunt failed (exit 2)
+[2026-03-24 18:12:37] YouTube failed (exit 2)
+[2026-03-24 18:12:37] Topic Aggregator failed (exit 2)
+[2026-03-24 18:12:37] Briefing built (134 chars)
+[2026-03-24 18:12:38] ✅ Briefing sent
+[2026-03-24 18:13:14] Morning briefing v2 starting...
+[2026-03-24 18:13:20] Real Trends data refreshed
+[2026-03-24 18:13:21] Competitors failed (exit 1)
+[2026-03-24 18:13:24] Email Newsletters data refreshed
+[2026-03-24 18:13:35] Reddit data refreshed
+[2026-03-24 18:13:51] Indie Hacker data refreshed
+[2026-03-24 18:13:51] Product Hunt data refreshed
+[2026-03-24 18:13:54] YouTube data refreshed
+[2026-03-24 18:13:58] Topic Aggregator data refreshed
+[2026-03-24 18:13:59] Briefing built (1896 chars)
+[2026-03-24 18:14:00] ✅ Briefing sent

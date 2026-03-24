@@ -19,7 +19,7 @@ Usage:
 import sys, time, argparse, math
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(0, "/root/.openclaw/workspace")
 from core.integrations.bird import (
     bird_search, normalize_tweet, send_telegram, log,
     BirdRateLimited, BirdError, retry_on_rate_limit,
