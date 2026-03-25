@@ -17049,3 +17049,19 @@ No content extracted yet
 [2026-03-25 13:00:13] Fetched 0 unique newsletter emails across 19 queries
 [2026-03-25 13:00:13] No newsletter messages found
 [2026-03-25 13:00:13] Done
+[2026-03-25 14:18:55] Newsletter Monitor v3 starting...
+[2026-03-25 14:19:04] Fetched 15 unique newsletter emails across 19 queries
+[2026-03-25 14:19:05]   The Rundown AI:  OpenAI's Sora gets the axe -> 4 stories extracted
+[2026-03-25 14:19:05]   The Rundown AI:  Anthropic ships Claude computer control -> 2 stories extracted
+[2026-03-25 14:19:05]   AI For Work: Anthropic just gave its coding tool more freedom -> 2 stories extracted
+[2026-03-25 14:19:05]   AI For Work: Lovable is on the hunt -> 17 stories extracted
+[2026-03-25 14:19:05]   Snack Prompt:  Musk Just Dropped Something Big  -> 6 stories extracted
+[2026-03-25 14:19:05]   Snack Prompt:  This Court Case Changes AI Forever  -> 6 stories extracted
+[2026-03-25 14:19:05]   Hypefury:  The Boring AI Setup That Beats Every 'Power User' -> 3 stories extracted
+[2026-03-25 14:19:05]   Lenny's Newsletter: State of the product job market in early 2026 -> 21 stories extracted
+[2026-03-25 14:19:05]   Lenny's Newsletter:  This week on How I AI: How Microsoft's AI VP auto -> 1 stories extracted
+[2026-03-25 14:19:05]   Social Growth Engineers: The Trend Radar: 188M views -> 2 stories extracted
+[2026-03-25 14:19:05]   What's Up in AI: Claude's New Jaw Dropping Feature ?!  -> 6 stories extracted
+[2026-03-25 14:19:05]   TinyLaunch: TinyLog: My Hero Section Went Viral -> 6 stories extracted
+[2026-03-25 14:19:05]   Social Growth Engineers: 3 Paths to $500K MRR -> 2 stories extracted
+[2026-03-25 14:19:05] Analyzing 70 total stories with LLM...

@@ -28,7 +28,7 @@ _load_env()
 MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
 LOG_FILE = Path("/root/.openclaw/workspace/logs/email-newsletters.log")
 
-GOOGLE_CONN_ID = "942900ef-f2fc-4f33-9867-66a3a4d82232"
+GOOGLE_CONN_ID = "d0645ed1-9d77-45a0-9d8e-b2ddb3c64829"
 
 # AI/Creator newsletters we care about
 NEWSLETTER_WHITELIST = {
@@ -492,7 +492,7 @@ Respond ONLY with valid JSON - no markdown, no code fences. Format:
 
     try:
         result = subprocess.run(
-            ['claude', '-p', '--output-format', 'json', '--model', 'sonnet'], input=prompt,
+            ['claude', '-p', '--output-format', 'json', '--model', 'sonnet', prompt],
             capture_output=True, text=True, timeout=120
         )
 
@@ -622,7 +622,7 @@ Only include genuinely useful nuggets. Skip fluff, ads, and self-promotion. Aim 
 
     try:
         result = subprocess.run(
-            ['claude', '-p', '--output-format', 'json', '--model', 'sonnet'], input=prompt,
+            ['claude', '-p', '--output-format', 'json', '--model', 'sonnet', prompt],
             capture_output=True, text=True, timeout=120
         )
 
@@ -828,16 +828,6 @@ def process_messages(messages):
                 skipped_blacklist += 1
                 continue
 
-            # Skip unsubscribe confirmations and junk subjects
-            subject_lower = subject.lower()
-            if any(junk in subject_lower for junk in [
-                'unsubscrib', 'confirm your', 'verify your email',
-                'welcome to', 'subscription confirmed', 'you are unsubscribed',
-                'manage preferences', 'update your preferences'
-            ]):
-                log(f"  Skipping junk subject: {subject[:60]}")
-                continue
-
             sender_name = get_sender_name(sender_raw)
 
             # Save the newsletter record (tracks what we've processed)
@@ -859,8 +849,7 @@ def process_messages(messages):
             stories = extract_stories_from_newsletter(sender_name, subject, message_text or '')
             for story in stories:
                 story['email_id'] = email_id
-            # Cap at 15 stories per newsletter to prevent runaway parsing
-            all_stories.extend(stories[:15])
+            all_stories.extend(stories)
 
             log(f"  {sender_name}: {subject[:50]} -> {len(stories)} stories extracted")
 
