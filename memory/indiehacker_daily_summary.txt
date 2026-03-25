@@ -1,19 +1,20 @@
-🚀 Indie Hacker Monitor (2026-03-24 18:13)
+🚀 Indie Hacker Monitor (2026-03-25 13:00)
 
 🔥 Hot Topics:
-  • solopreneur: 5 mentions
-  • bootstrapped: 2 mentions
-  • revenue: 1 mentions
-  • side project: 1 mentions
+  • solopreneur: 10 mentions
+  • bootstrapped: 7 mentions
+  • saas: 3 mentions
+  • launch: 2 mentions
+  • build in public: 2 mentions
 
 📈 Top Stories:
+  • [Hacker News] (1032⬆): Wine 11 rewrites how Linux runs Windows games at kernel with massive speed gains
+    https://www.xda-developers.com/wine-11-rewrites-linux-runs-windows-games-speed-gains/
+  • [Hacker News] (812⬆): Goodbye to Sora
+    https://twitter.com/soraofficialapp/status/2036532795984715896
   • [Hacker News] (786⬆): Microsoft's "Fix" for Windows 11: Flowers After the Beating
     https://www.sambent.com/microsofts-plan-to-fix-windows-11-is-gaslighting/
+  • [Hacker News] (745⬆): Tell HN: Litellm 1.82.7 and 1.82.8 on PyPI are compromised
+    https://github.com/BerriAI/litellm/issues/24512
   • [Hacker News] (671⬆): LiteLLM Python package compromised by supply-chain attack
     https://github.com/BerriAI/litellm/issues/24512
-  • [Hacker News] (272⬆): Log File Viewer for the Terminal
-    https://lnav.org/
-  • [Hacker News] (268⬆): Ripgrep is faster than grep, ag, git grep, ucg, pt, sift (2016)
-    https://burntsushi.net/ripgrep/
-  • [Hacker News] (266⬆): So where are all the AI apps?
-    https://www.answer.ai/posts/2026-03-12-so-where-are-all-the-ai-apps.html

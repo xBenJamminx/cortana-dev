@@ -1,5 +1,14 @@
 📺 YouTube - Latest from AI/Creator Channels
 
+• [The Competition Paradox](https://www.youtube.com/shorts/N7Qk0A94-wc)
+  _Ali Abdaal_
+
+• [NVIDIA CEO on why TSMC and Taiwan are incredibly successful | Jensen Huang and Lex Fridman](https://www.youtube.com/watch?v=PBqXRVPxxgE)
+  _Matt Wolfe_
+
+• [Tech bros optimized war… and it’s working](https://www.youtube.com/watch?v=nxwkn9Dt9-I)
+  _Fireship_
+
 • [The Crab Bucket Mentality](https://www.youtube.com/shorts/8fxN1RVg0z0)
   _Ali Abdaal_
 
@@ -20,13 +29,4 @@
 
 • [NVIDIA’s New AI Just Cracked The Hardest Part Of Self Driving](https://www.youtube.com/watch?v=s9SnEE7JXU4)
   _Two Minute Papers_
-
-• [This Physics Breakthrough Looks Impossible](https://www.youtube.com/watch?v=RDQ4vHAPNls)
-  _Two Minute Papers_
-
-• [DeepSeek Just Fixed One Of The Biggest Problems With AI](https://www.youtube.com/watch?v=DmtoVnTkQnM)
-  _Two Minute Papers_
-
-• [How to burn $30m on a JavaScript framework...](https://www.youtube.com/watch?v=ReAnFFqvCeA)
-  _Fireship_
 
