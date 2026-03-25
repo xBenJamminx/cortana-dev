@@ -17065,3 +17065,9 @@ No content extracted yet
 [2026-03-25 14:19:05]   TinyLaunch: TinyLog: My Hero Section Went Viral -> 6 stories extracted
 [2026-03-25 14:19:05]   Social Growth Engineers: 3 Paths to $500K MRR -> 2 stories extracted
 [2026-03-25 14:19:05] Analyzing 70 total stories with LLM...
+[2026-03-25 14:20:02] LLM analysis: 70 stories -> 12 kept
+[2026-03-25 14:20:02] Mining newsletters for nuggets (new emails only)...
+[2026-03-25 14:20:41] Extracted 11 nuggets from newsletters
+[2026-03-25 14:20:41] Marked 13 emails as nugget-mined
+[2026-03-25 14:20:41] Saved 13 emails, 12 stories, 11 nuggets | Skipped: 2 blacklisted
+[2026-03-25 14:20:41] Done
