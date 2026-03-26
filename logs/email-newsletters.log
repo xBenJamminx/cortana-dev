@@ -17236,3 +17236,24 @@ NUGGETS (17)
     - CLI tools with AI create better interfaces than traditional GUIs for complex tasks like Azure permissions management — AI can abstract away design challenges that are nearly impossible to solve with graphical interfaces.
       (Lenny's Newsletter: How Microsoft's AI VP automates everything with Warp)
 [2026-03-26 12:16:15] Done
+[2026-03-26 13:00:11] Newsletter Monitor v3 starting...
+[2026-03-26 13:00:20] Fetched 14 unique newsletter emails across 19 queries
+[2026-03-26 13:00:20]   The Rundown AI:  ARC-AGI-3 resets frontier AI scoreboard -> 2 stories extracted
+[2026-03-26 13:00:20]   The Rundown AI:  OpenAI's Sora gets the axe -> 4 stories extracted
+[2026-03-26 13:00:20]   Unwind AI: Stack Overflow for AI Agents -> 9 stories extracted
+[2026-03-26 13:00:20]   AI For Work: Anthropic just gave its coding tool more freedom -> 2 stories extracted
+[2026-03-26 13:00:20]   AI For Work: Lovable is on the hunt -> 17 stories extracted
+[2026-03-26 13:00:20]   Snack Prompt:  Musk Just Dropped Something Big  -> 6 stories extracted
+[2026-03-26 13:00:20]   Snack Prompt:  This Court Case Changes AI Forever  -> 6 stories extracted
+[2026-03-26 13:00:20]   Hypefury:  The Boring AI Setup That Beats Every 'Power User' -> 3 stories extracted
+[2026-03-26 13:00:20]   Tyler @ beehiiv 🐝: Tech and Tranquilty: Youre missing out on free gro -> 2 stories extracted
+[2026-03-26 13:00:20]   What's Up in AI: OpenAI declares Sora DEAD  -> 6 stories extracted
+[2026-03-26 13:00:20]   TinyLaunch: TinyLog: My Hero Section Went Viral -> 6 stories extracted
+[2026-03-26 13:00:20]   Social Growth Engineers: The Trend Radar: 188M views -> 2 stories extracted
+[2026-03-26 13:00:20] Analyzing 63 total stories with LLM...
+[2026-03-26 13:01:07] LLM analysis: 63 stories -> 14 kept
+[2026-03-26 13:01:07] Mining newsletters for nuggets (new emails only)...
+[2026-03-26 13:01:22] Extracted 6 nuggets from newsletters
+[2026-03-26 13:01:22] Marked 1 emails as nugget-mined
+[2026-03-26 13:01:22] Saved 1 emails, 7 stories, 6 nuggets | Skipped: 2 blacklisted
+[2026-03-26 13:01:22] Done

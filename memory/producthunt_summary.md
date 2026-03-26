@@ -1,71 +1,67 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [Flux](https://www.producthunt.com/products/replay-production-api-failures-locally)
+• [CronBox](https://www.producthunt.com/products/cronbox-2)
   _<p>
-            Fix production bugs by replaying them locally
+            Where AI agents work at a schedule in the cloud
           </p>
           <p>
+       _
+
+• [Facts...No Bullsh*t](https://www.producthunt.com/products/facts-no-bullsh-t)
+  _<p>
+            Stop BS in real-time with AI that fact-checks as you listen
+          </p>
          _
 
-• [BotBoard](https://www.producthunt.com/products/botboard)
+• [Agentplace AI Agents](https://www.producthunt.com/products/agentplace)
   _<p>
-            Task management for the age of agents
+            Create specialized AI agents for real tasks and workflows
+          </p>
+          <_
+
+• [Splitsense](https://www.producthunt.com/products/splitsense)
+  _<p>
+            AI that turns traffic into more revenue while you sleep
+          </p>
+          <p>_
+
+• [Keystone](https://www.producthunt.com/products/imbue-7)
+  _<p>
+            Teach your repo how to run itself
           </p>
           <p>
-            <a hr_
+            <a href="_
 
-• [Maestri](https://www.producthunt.com/products/maestri)
+• [Magine](https://www.producthunt.com/products/magine)
   _<p>
-            An infinite canvas where coding agents work in concert
+            Spawn vision-enabled AI agents autonomously browsing the web
+          </p>
+        _
+
+• [Descent](https://www.producthunt.com/products/descent-2)
+  _<p>
+            Set a budget and get alerted when flights get cheap
           </p>
           <p>
-_
+   _
 
-• [jared.so](https://www.producthunt.com/products/jared-so)
+• [Coddo](https://www.producthunt.com/products/coddo)
   _<p>
-            AI that monitors convos & proactively jumps in when needed
-          </p>
-          _
-
-• [What The Duck!](https://www.producthunt.com/products/what-the-duck-2)
-  _<p>
-            Duck Hunt but with your finger and custom targets
+            Your tasks are the interface
           </p>
           <p>
-     _
+            <a href="https_
 
-• [GitLaw Integrations](https://www.producthunt.com/products/gitlaw)
+• [TurboQuant](https://www.producthunt.com/products/turboquant)
   _<p>
-            Trigger AI legal doc creation/review from 7,000+ apps
+             New LLM compression algorithm by Google 
           </p>
           <p>
- _
+            <_
 
-• [Redbean](https://www.producthunt.com/products/redbean-ai)
+• [Pendium](https://www.producthunt.com/products/pendium-ai)
   _<p>
-            Bring your original characters to life
+            Help AI agents recommend you more often to the right people
           </p>
-          <p>
-            <a h_
-
-• [TeamPrompt](https://www.producthunt.com/products/teamprompt-2)
-  _<p>
-            AI DLP & prompt management for your team
-          </p>
-          <p>
-            <a_
-
-• [Ordo](https://www.producthunt.com/products/ordo)
-  _<p>
-            Finally a saving app that works
-          </p>
-          <p>
-            <a href="ht_
-
-• [ChatWithAds for Klaviyo](https://www.producthunt.com/products/chatwithads)
-  _<p>
-            AI agent that turns ad data into answers
-          </p>
-          <p>
-            <a_
+         _
 
