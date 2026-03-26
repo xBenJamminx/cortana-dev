@@ -72,6 +72,10 @@ Cassandra
 - NO role descriptions in parentheses after names
 - Keep it clean and copy-pasteable -- Ben posts these directly to Slack
 
+#### Assignment Rules
+- Tram's testing items go under Ben -- Tram reports testing priorities but Ben is the one who does the testing. Merge Tram's items into Ben's section. Do NOT create a separate Tram section.
+- Only include action items for current team members -- if someone is interviewing, onboarding, or not yet hired, do not give them their own section. Mention them in other people's items if relevant (e.g. "Add Ian to GitHub repos" under Steven).
+
 ### 4. Send BOTH drafts to Ben in Telegram
 - Post the summary draft and action items draft in the current Telegram topic
 - Ben reviews and posts them to Slack himself
