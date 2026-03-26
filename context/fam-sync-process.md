@@ -183,6 +183,11 @@ Properties to update:
 
 After Notion is updated, add/update ONLY dev-priority tasks in the **"In Progress"** tab of the QA Sheet. The Sheet is a focused view for what Steven and Bilal should be actively working on — NOT a full mirror of Notion. General project tasks, Ben's tasks, Cassandra's tasks, and low-priority items stay in Notion only.
 
+**CRITICAL: When moving items to Done, you MUST:**
+1. Copy the full row data to the **"Done"** tab first (append to next empty row)
+2. Then clear the row from the "In Progress" tab
+3. Never delete from In Progress without adding to Done first — the Done tab is the historical record
+
 **Sheet column layout:**
 
 ```text
