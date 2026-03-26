@@ -17071,3 +17071,168 @@ No content extracted yet
 [2026-03-25 14:20:41] Marked 13 emails as nugget-mined
 [2026-03-25 14:20:41] Saved 13 emails, 12 stories, 11 nuggets | Skipped: 2 blacklisted
 [2026-03-25 14:20:41] Done
+[2026-03-26 12:15:02] Newsletter Monitor v3 starting...
+[2026-03-26 12:15:10] Fetched 14 unique newsletter emails across 19 queries
+[2026-03-26 12:15:10]   The Rundown AI:  ARC-AGI-3 resets frontier AI scoreboard -> 2 stories extracted
+[2026-03-26 12:15:10]   The Rundown AI:  OpenAI's Sora gets the axe -> 4 stories extracted
+[2026-03-26 12:15:10]   AI For Work: Anthropic just gave its coding tool more freedom -> 2 stories extracted
+[2026-03-26 12:15:10]   AI For Work: Lovable is on the hunt -> 17 stories extracted
+[2026-03-26 12:15:10]   Snack Prompt:  Musk Just Dropped Something Big  -> 6 stories extracted
+[2026-03-26 12:15:10]   Snack Prompt:  This Court Case Changes AI Forever  -> 6 stories extracted
+[2026-03-26 12:15:10]   Hypefury:  The Boring AI Setup That Beats Every 'Power User' -> 3 stories extracted
+[2026-03-26 12:15:10]   Lenny's Newsletter: State of the product job market in early 2026 -> 21 stories extracted
+[2026-03-26 12:15:10]   Tyler @ beehiiv 🐝: Tech and Tranquilty: Youre missing out on free gro -> 2 stories extracted
+[2026-03-26 12:15:10]   What's Up in AI: OpenAI declares Sora DEAD  -> 6 stories extracted
+[2026-03-26 12:15:10]   TinyLaunch: TinyLog: My Hero Section Went Viral -> 6 stories extracted
+[2026-03-26 12:15:10]   Social Growth Engineers: The Trend Radar: 188M views -> 2 stories extracted
+[2026-03-26 12:15:10] Analyzing 69 total stories with LLM...
+[2026-03-26 12:15:48] LLM analysis: 69 stories -> 10 kept
+[2026-03-26 12:15:48] Mining newsletters for nuggets (new emails only)...
+[2026-03-26 12:16:15] Extracted 6 nuggets from newsletters
+[2026-03-26 12:16:15] Marked 3 emails as nugget-mined
+[2026-03-26 12:16:15] Saved 3 emails, 2 stories, 6 nuggets | Skipped: 2 blacklisted
+[2026-03-26 12:15:02] Newsletter Monitor v3 starting...
+[2026-03-26 12:15:10] Fetched 14 unique newsletter emails across 19 queries
+[2026-03-26 12:15:10]   The Rundown AI:  ARC-AGI-3 resets frontier AI scoreboard -> 2 stories extracted
+[2026-03-26 12:15:10]   The Rundown AI:  OpenAI's Sora gets the axe -> 4 stories extracted
+[2026-03-26 12:15:10]   AI For Work: Anthropic just gave its coding tool more freedom -> 2 stories extracted
+[2026-03-26 12:15:10]   AI For Work: Lovable is on the hunt -> 17 stories extracted
+[2026-03-26 12:15:10]   Snack Prompt:  Musk Just Dropped Something Big  -> 6 stories extracted
+[2026-03-26 12:15:10]   Snack Prompt:  This Court Case Changes AI Forever  -> 6 stories extracted
+[2026-03-26 12:15:10]   Hypefury:  The Boring AI Setup That Beats Every 'Power User' -> 3 stories extracted
+[2026-03-26 12:15:10]   Lenny's Newsletter: State of the product job market in early 2026 -> 21 stories extracted
+[2026-03-26 12:15:10]   Tyler @ beehiiv 🐝: Tech and Tranquilty: Youre missing out on free gro -> 2 stories extracted
+[2026-03-26 12:15:10]   What's Up in AI: OpenAI declares Sora DEAD  -> 6 stories extracted
+[2026-03-26 12:15:10]   TinyLaunch: TinyLog: My Hero Section Went Viral -> 6 stories extracted
+[2026-03-26 12:15:10]   Social Growth Engineers: The Trend Radar: 188M views -> 2 stories extracted
+[2026-03-26 12:15:10] Analyzing 69 total stories with LLM...
+[2026-03-26 12:15:48] LLM analysis: 69 stories -> 10 kept
+[2026-03-26 12:15:48] Mining newsletters for nuggets (new emails only)...
+[2026-03-26 12:16:15] Extracted 6 nuggets from newsletters
+[2026-03-26 12:16:15] Marked 3 emails as nugget-mined
+[2026-03-26 12:16:15] Saved 3 emails, 2 stories, 6 nuggets | Skipped: 2 blacklisted
+
+======================================================================
+TOP STORIES (14)
+======================================================================
+
+[91] [MULTI-SOURCE] Nvidia CEO Jensen Huang
+    Source: What's Up in AI, The Rundown AI
+    Jensen Huang claiming 'we've achieved AGI' on Lex Fridman is a massive hot-take moment covered by multiple newsletters — perfect for Ben to react to and discuss what AGI means for everyday builders.
+    https://www.rundown.ai/
+
+[89] Spotify Engineers Stop Writing Code
+    Source: Snack Prompt
+    Spotify's top engineers haven't written a single line of code since December — this is the exact vibecoding proof point Ben's audience needs to hear to feel validated and inspired.
+    https://techcrunch.com/2026/02/12/spotify-says-its-best-developers-havent-written-a-line-of-code-since-december-thanks-to-ai/
+
+[84] NEWS CREATORS SHOULD KNOW ABOUT
+    Source: Hypefury
+    AI coding tools are now cheaper than paying for SaaS — directly argues why Ben's audience should be building their own tools instead of subscribing, a core message for vibe-coders.
+    https://www.elliotcsmith.com/build-saas-with-strong-opinions/
+
+[82] Fig Prompt
+    Source: Snack Prompt
+    Fig Prompt lets designers describe a Figma plugin in plain English and get working code instantly — essentially vibecoding for designers, highly actionable for Ben's non-technical audience.
+    https://www.producthunt.com/products/fig-prompt
+
+[76] Zuck ramps up Meta’s internal AI agent use
+    Source: The Rundown AI
+    Zuckerberg building a personal 'CEO agent' to shortcut his own chain of command is a relatable, concrete example of how AI agents actually get used to automate real work.
+    https://www.wsj.com/tech/ai/mark-zuckerberg-is-building-an-ai-agent-to-help-him-be-ceo-eddab2d5
+
+[72] OpenAI winds down Sora to prioritize ‘Spud’
+    Source: The Rundown AI
+    OpenAI axing Sora to prioritize its next major model 'Spud' is a newsworthy pivot that shows how fast the AI landscape shifts — good context for builders choosing tools.
+    https://x.com/soraofficialapp/status/2036546752535470382
+
+[70] 2 LATEST IN AI TODAY
+    Source: What's Up in AI
+    Luma's Uni 1 is a new reasoning-first image model that outscores Google and OpenAI — a practical new tool everyday creators can test for visual content generation.
+    https://venturebeat.com/technology/luma-ai-launches-uni-1-a-model-that-outscores-google-and-openai-while
+
+[67] BRAIN BOOST
+    Source: What's Up in AI
+    'AI will eliminate 300M jobs in 5 years' is a hot-take discussion starter that resonates with Ben's audience learning to stay ahead
+    https://magic.beehiiv.com/v1/faa6a747-8c1c-43c1-8155-91aa43268f01
+
+[66] Use it to:
+    Source: Snack Prompt
+    Two ready-to-use creative AI image prompts (isometric diorama, hand-carved wood) from Snack Prompt are immediately actionable content ideas Ben's audience can copy and try today.
+    https://snackprompt.com/e/prompt/jxZq1ZGwq9j5f-3d-isometric-diorama
+
+[65] Accenture tells senior staff: use AI or don't get promoted
+    Source: AI For Work
+    Accenture telling senior staff 'use AI or don't get promoted' signals that AI adoption is now a career requirement, reinforcing urgency for Ben's audience to start building.
+
+[60] Apple’s standalone Siri app, chatbot for iOS 27
+    Source: The Rundown AI
+    Apple testing a standalone Siri app with a new chatbot experience for iOS 27 means AI tools are coming natively to every iPhone user — relevant for Ben's mainstream audience.
+    https://www.bloomberg.com/news/articles/2026-03-24/ios-27-features-apple-ai-reboot-with-siri-app-new-interface-ask-siri-button
+
+[57] Personal favorite
+    Source: TinyLaunch
+    Copreneur is an AI co-founder that learns your business and surfaces your top priority daily — a practical builder tool that resonates with solo creators in Ben's community.
+    https://link.sbstck.com/redirect/9a706126-7883-4260-a78e-a48c27df6f31
+
+[53] OpenAI Plans Massive Hiring Push
+    Source: Snack Prompt
+    OpenAI pushing toward 8,000 employees and focusing on enterprise signals where AI investment is headed, useful context for Ben discussing the state of the AI industry.
+    https://www.ft.com/content/7ffea5b4-e8bc-47cd-adb4-257f84c8028b
+
+[52] ARC’s new AGI test stumps every frontier AI
+    Source: The Rundown AI
+    ARC-AGI-3 benchmark showing AI still can't match humans on reasoning tasks gives Ben a grounded counter-narrative to AI hype
+    https://arcprize.org/arc-agi/3
+
+======================================================================
+NUGGETS (17)
+======================================================================
+
+  [how-to]
+    - Live workshop (Part 3 of Intro to Vibe Coding) covering how to take AI-built apps to production for real users and workflows, not just prototypes. Today at 2 PM EST. -> https://app.therundown.ai/calendar-events/6999c561b50d65f757a93c88
+      (The Rundown AI)
+    - Boris Cherny's planning loop to take AI task success rate from 30% to 80%: (1) outline the plan, (2) review it, (3) adjust it, (4) then let the AI execute. Never let AI start without agreeing on a specific approach first.
+      (Hypefury: The Boring AI Setup That Beats Every 'Power User')
+    - Microsoft's AI VP Marco Casalaina uses Warp terminal to create ad-hoc 'micro-agents' on the fly — e.g., he asked it to compress a 1.7GB video and it identified the issue and re-encoded it to 13MB using FFmpeg automatically. -> https://www.chatprd.ai/how-i-ai/microsofts-ai-vp-automates-everything-with-5-micro-agent-workflows
+      (Lenny's Newsletter: How Microsoft's AI VP automates everything with Warp)
+
+  [tool]
+    - New tool to create branded reaction GIFs for Slack — useful for teams and creators building branded community experiences.
+      (The Rundown AI)
+    - Anthropic released remote computer use for Claude — lets it click, type, and navigate across any Mac app while you manage tasks from your phone via the Dispatch app. Available to Pro/Max plan users through Cowork and Claude Code. -> https://x.com/claudeai/status/2036195789601374705
+      (The Rundown AI: Anthropic ships Claude computer control)
+[2026-03-26 12:16:15] Done
+    - ReelClaw turns any AI agent into a 'reel factory' — upload a product demo and it pulls UGC reaction hooks, finds trending sounds, extracts best moments with Gemini, cuts with FFmpeg, and publishes to TikTok/Reels/Shorts automatically. -> https://dansugc.com/skills/reelclaw
+      (Social Growth Engineers: The Trend Radar)
+
+  [funding]
+    - Captions rebranded as Mirage and raised $75M from General Catalyst, pivoting from a video editing app to a full AI lab building foundation models for short-form video pacing, framing, and attention dynamics.
+      (AI For Work: Lovable is on the hunt)
+
+  [hiring]
+    - Job market data from TrueUp: PM openings are at highest levels in 3+ years, AI roles are 'absolutely exploding,' and software engineering demand hasn't slowed yet despite AI. Design roles have plateaued. Remote work opportunities continue to decline. -> https://www.lennysnewsletter.com/p/state-of-the-product-job-market-in-ee9
+      (Lenny's Newsletter: State of the product job market in early 2026)
+
+  [tip]
+    - Filling out beehiiv's 'Top 4' newsletter recommendations is a free, 10-second growth tactic that gets your newsletter surfaced to other creators' audiences through mutual cross-promotion. -> https://app.beehiiv.com/recommendations
+      (Tyler @ beehiiv)
+    - Boris Cherny (creator of Claude Code) calls cheap AI models a 'correction tax' — the time spent fixing bad output costs more than the money saved. Always use the most capable model available.
+      (Hypefury: The Boring AI Setup That Beats Every 'Power User')
+    - Viral launch tactic from TinyShots: show your product doing the thing in an animated hero section video with zero words. Creator got 30K impressions and $500+ in sales at launch — treat hero sections like YouTube thumbnails (some creators spend 50% of effort there).
+      (TinyLaunch: TinyLog: My Hero Section Went Viral)
+
+  [insight]
+    - Google found a way to shrink AI memory with zero accuracy loss — a signal that model efficiency (not just raw power) is becoming a serious research frontier.
+      (The Rundown AI)
+    - ARC-AGI-3 shows the best frontier AI models score below 1% on a benchmark humans solve 100% of the time on the first try — a useful reality check against AGI hype to share with students. -> https://arcprize.org/arc-agi/3
+      (The Rundown AI)
+    - OpenAI is shutting down Sora as a standalone product — a reminder for creators teaching AI tools that even flagship launches can be short-lived, and building on top of specific products carries platform risk. -> https://www.nbcnews.com/tech/tech-news/openai-shuttering-sora-video-generating-service-rcna264989
+      (What's Up in AI)
+    - When AI production is nearly free, taste becomes the only moat. Boris Cherny's team kills ~80% of what they build — the ability to judge which 20% is worth shipping is now the real competitive edge.
+      (Hypefury: The Boring AI Setup That Beats Every 'Power User')
+    - AI coding security report: 87% of pull requests from Claude, Codex, and Gemini introduced at least one security vulnerability across 143 issues in 38 scans. Common flaws: insecure JWT defaults, weak refresh token handling, missing rate limiting. -> https://na2.hubs.ly/H04skpR0
+      (AI For Work: Anthropic just gave its coding tool more freedom)
+    - CLI tools with AI create better interfaces than traditional GUIs for complex tasks like Azure permissions management — AI can abstract away design challenges that are nearly impossible to solve with graphical interfaces.
+      (Lenny's Newsletter: How Microsoft's AI VP automates everything with Warp)
+[2026-03-26 12:16:15] Done
