@@ -179,9 +179,9 @@ Properties to update:
 
 ---
 
-### STEP 5 — Update QA Sheet second
+### STEP 5 — Update QA Sheet second (DEV PRIORITIES ONLY)
 
-After Notion is updated, mirror all changes to the **"In Progress"** tab of the QA Sheet.
+After Notion is updated, add/update ONLY dev-priority tasks in the **"In Progress"** tab of the QA Sheet. The Sheet is a focused view for what Steven and Bilal should be actively working on — NOT a full mirror of Notion. General project tasks, Ben's tasks, Cassandra's tasks, and low-priority items stay in Notion only.
 
 **Sheet column layout:**
 
