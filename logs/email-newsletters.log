@@ -17257,3 +17257,168 @@ NUGGETS (17)
 [2026-03-26 13:01:22] Marked 1 emails as nugget-mined
 [2026-03-26 13:01:22] Saved 1 emails, 7 stories, 6 nuggets | Skipped: 2 blacklisted
 [2026-03-26 13:01:22] Done
+[2026-03-27 12:15:01] Newsletter Monitor v3 starting...
+[2026-03-27 12:15:09] Fetched 12 unique newsletter emails across 19 queries
+[2026-03-27 12:15:09]   The Rundown AI:  Meta's new open-source brain AI -> 2 stories extracted
+[2026-03-27 12:15:09]   The Rundown AI:  ARC-AGI-3 resets frontier AI scoreboard -> 2 stories extracted
+[2026-03-27 12:15:09]   Unwind AI: Stack Overflow for AI Agents -> 9 stories extracted
+[2026-03-27 12:15:09]   AI For Work: Your next coworker might have a cloned voice -> 16 stories extracted
+[2026-03-27 12:15:09]   AI For Work: Anthropic just gave its coding tool more freedom -> 2 stories extracted
+[2026-03-27 12:15:09]   Snack Prompt:  OpenAI Just Killed Its Own Product  -> 6 stories extracted
+[2026-03-27 12:15:09]   Snack Prompt:  Musk Just Dropped Something Big  -> 6 stories extracted
+[2026-03-27 12:15:09]   Hypefury:  The Boring AI Setup That Beats Every 'Power User' -> 3 stories extracted
+[2026-03-27 12:15:09]   Social Growth Engineers: April in Consumer App Growth -> 3 stories extracted
+[2026-03-27 12:15:09]   Ollie Raps: A new idea I want you to be part of... -> 12 stories extracted
+[2026-03-27 12:15:09] Analyzing 60 total stories with LLM...
+[2026-03-27 12:15:49] LLM analysis: 60 stories -> 12 kept
+[2026-03-27 12:15:49] Mining newsletters for nuggets (new emails only)...
+[2026-03-27 12:16:10] Extracted 9 nuggets from newsletters
+[2026-03-27 12:16:10] Marked 5 emails as nugget-mined
+[2026-03-27 12:16:10] Saved 5 emails, 5 stories, 9 nuggets | Skipped: 2 blacklisted
+[2026-03-27 12:15:01] Newsletter Monitor v3 starting...
+[2026-03-27 12:15:09] Fetched 12 unique newsletter emails across 19 queries
+[2026-03-27 12:15:09]   The Rundown AI:  Meta's new open-source brain AI -> 2 stories extracted
+[2026-03-27 12:15:09]   The Rundown AI:  ARC-AGI-3 resets frontier AI scoreboard -> 2 stories extracted
+[2026-03-27 12:15:09]   Unwind AI: Stack Overflow for AI Agents -> 9 stories extracted
+[2026-03-27 12:15:09]   AI For Work: Your next coworker might have a cloned voice -> 16 stories extracted
+[2026-03-27 12:15:09]   AI For Work: Anthropic just gave its coding tool more freedom -> 2 stories extracted
+[2026-03-27 12:15:09]   Snack Prompt:  OpenAI Just Killed Its Own Product  -> 6 stories extracted
+[2026-03-27 12:15:09]   Snack Prompt:  Musk Just Dropped Something Big  -> 6 stories extracted
+[2026-03-27 12:15:09]   Hypefury:  The Boring AI Setup That Beats Every 'Power User' -> 3 stories extracted
+[2026-03-27 12:15:09]   Social Growth Engineers: April in Consumer App Growth -> 3 stories extracted
+[2026-03-27 12:15:09]   Ollie Raps: A new idea I want you to be part of... -> 12 stories extracted
+[2026-03-27 12:15:09] Analyzing 60 total stories with LLM...
+[2026-03-27 12:15:49] LLM analysis: 60 stories -> 12 kept
+[2026-03-27 12:15:49] Mining newsletters for nuggets (new emails only)...
+[2026-03-27 12:16:10] Extracted 9 nuggets from newsletters
+[2026-03-27 12:16:10] Marked 5 emails as nugget-mined
+[2026-03-27 12:16:10] Saved 5 emails, 5 stories, 9 nuggets | Skipped: 2 blacklisted
+
+======================================================================
+TOP STORIES (14)
+======================================================================
+
+[92] How I Built an Autonomous AI Agent Team That Runs 24/7
+    Source: Unwind AI
+    Step-by-step breakdown of building a 24/7 autonomous AI agent team is exactly the kind of aspirational, actionable content Ben's vibe-coding audience wants to replicate.
+    https://www.theunwindai.com/p/how-i-built-an-autonomous-ai-agent-team-that-runs-24-7
+
+[88] Background agent that whispers to Claude Code
+    Source: Unwind AI
+    Letta's Claude Code 'subconscious' background agent is a novel, builder-relevant tool covered by two sources — high signal for anyone using Claude Code to build.
+    https://github.com/letta-ai/claude-subconscious
+
+[87] Agents, meet the Figma canvas
+    Source: Unwind AI
+    Figma's canvas now open to AI agents (Claude Code, Cursor, Codex) is a major platform shift that directly affects non-technical builders who design and vibe-code.
+    https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/
+
+[82] Mistral Vibe: Build, Maintain, and Ship Code Faster
+    Source: Unwind AI
+    Mistral Vibe is a new terminal-native coding agent that reads files, runs commands, and handles multi-step tasks — a direct competitor/alternative builders will want to try.
+    https://mistral.ai/products/vibe
+
+[74] Apple to unlock Siri for rival AI assistants
+    Source: The Rundown AI
+    Apple opening Siri to rival AIs in iOS 27 is a big consumer moment that signals AI assistants are becoming user-choice utilities — great explainer content for everyday folks.
+    https://www.bloomberg.com/news/articles/2026-03-26/apple-plans-to-open-up-siri-to-rival-ai-assistants-beyond-chatgpt-in-ios-27
+
+[72] Stack Overflow for AI Agents
+    Source: Unwind AI
+    Stack Overflow for AI agents fills the gap left when LLMs killed Stack Overflow — a fascinating story about how the dev-help ecosystem is being rebuilt for the AI era.
+    https://blog.mozilla.ai/cq-stack-overflow-for-agents/
+
+[68] announced that
+    Source: Snack Prompt
+    OpenAI shutting down Sora six months after launch is notable product news that sparks discussion about AI product staying power and what builders should bet on.
+
+[67] BRAIN BOOST
+    Source: What's Up in AI
+    'AI will eliminate 300M jobs in 5 years' is a hot-take discussion starter that resonates with Ben's audience learning to stay ahead
+    https://magic.beehiiv.com/v1/faa6a747-8c1c-43c1-8155-91aa43268f01
+
+[65] Wikipedia bans AI from writing its articles
+    Source: The Rundown AI
+    Wikipedia banning AI-written articles is a punchy hot take topic — raises questions about AI content quality that Ben's audience actively debates.
+    https://en.wikipedia.org/wiki/Wikipedia:Writing_articles_with_large_language_models
+
+[58] Awesome LLM Apps
+    Source: Unwind AI
+    Awesome LLM Apps is a curated list of real AI app examples — useful as inspiration and reference for non-technical builders looking for project ideas.
+    https://github.com/Shubhamsaboo/awesome-llm-apps
+
+[55] Cohere launches an open-source voice model that tops the transcription leaderboard
+    Source: AI For Work
+    Cohere's open-source voice model topping the transcription leaderboard is relevant for builders exploring voice-driven AI apps and automations.
+
+[52] 25+ Hours of Research Just Turned Into 5 Messages
+    Source: Social Growth Engineers
+    An AI agent that compresses 25+ hours of TikTok research into 5 messages is a relatable automation win for creator-audience members trying to grow on social.
+
+[52] ARC’s new AGI test stumps every frontier AI
+    Source: The Rundown AI
+    ARC-AGI-3 benchmark showing AI still can't match humans on reasoning tasks gives Ben a grounded counter-narrative to AI hype
+    https://arcprize.org/arc-agi/3
+
+[51] Use it to:
+    Source: Snack Prompt
+    Hand-carved wooden image prompt is another plug-and-play creative prompt — lower novelty but still actionable for Ben's visually-oriented audience.
+    https://snackprompt.com/e/prompt/SgnYUqEMfTqKU-become-a-hand-carved-legend
+
+======================================================================
+NUGGETS (21)
+======================================================================
+
+  [how-to]
+    - Step-by-step guide on building an autonomous team of 6 AI agents that runs 24/7 — handling research, content drafting, code review, and newsletter prep while you sleep, using Telegram for morning updates. -> https://www.theunwindai.com/p/how-i-built-an-autonomous-ai-agent-team-that-runs-24-7
+      (Unwind AI)
+    - Live workshop (Part 3 of Intro to Vibe Coding) covering how to take AI-built apps to production for real users and workflows, not just prototypes. Today at 2 PM EST. -> https://app.therundown.ai/calendar-events/6999c561b50d65f757a93c88
+      (The Rundown AI)
+
+  [tool]
+    - Meta open-sourced TRIBE v2, an AI model trained on 1,000+ hours of brain scan data from 700+ people that simulates neural activity across vision, hearing, and language — its synthetic predictions outperform real fMRI recordings. -> https://ai.meta.com/research/publications/a-foundation-model-of-vision-audition-and-language-for-in-silico-neuroscience/
+      (The Rundown AI)
+    - Mistral released a lean text-to-speech model aimed at hands-free productivity, entering the voice AI space with a lightweight approach rather than a massive model.
+      (AI For Work)
+    - Mistral Vibe is a terminal-native, open-source (Apache 2.0) coding agent that reads your file structure, executes shell commands, patches files, and manages multi-step tasks through natural language — self-hostable and extensible. -> https://mistral.ai/products/vibe
+      (Unwind AI)
+    - Claude Subconscious is an open-source background agent that runs alongside Claude Code, silently observing and whispering context/suggestions to improve coding sessions. -> https://github.com/letta-ai/claude-subconscious
+      (Unwind AI)
+    - Mozilla AI launched CQ, a Stack Overflow-style knowledge base designed specifically for AI agents — letting agents query and contribute structured Q&A during task execution. -> https://blog.mozilla.ai/cq-stack-overflow-for-agents/
+      (Unwind AI)
+    - GitAgent is an open-source 'Docker for AI agents' — a containerization layer that gives AI agents isolated, reproducible environments to run code safely, similar to how Docker sandboxes apps. -> https://github.com/open-gitagent/gitagent
+      (Unwind AI)
+    - New tool to create branded reaction GIFs for Slack — useful for teams and creators building branded community experiences.
+[2026-03-27 12:16:10] Done
+      (The Rundown AI)
+
+  [funding]
+    - OpenAI raised $110B in recent funding at a ~$730B valuation, yet shut down Sora — illustrating that even the best-funded AI companies are now ruthlessly cutting products that don't show a clear path to recurring revenue.
+      (Snack Prompt)
+
+  [tip]
+    - Filling out beehiiv's 'Top 4' newsletter recommendations is a free, 10-second growth tactic that gets your newsletter surfaced to other creators' audiences through mutual cross-promotion. -> https://app.beehiiv.com/recommendations
+      (Tyler @ beehiiv)
+
+  [insight]
+    - OpenAI shut down Sora after just 6 months — downloads dropped from 3.3M to 1.1M and total in-app purchases were only $2.1M, signaling that AI video generation at scale costs more than it earns and the 'ship everything' era in AI is ending. -> https://www.cnbc.com/2026/03/24/openai-shutters-short-form-video-app-sora-as-company-reels-in-costs.html
+      (Snack Prompt)
+    - Anthropic's strategy of never building image or video products — staying focused on text/reasoning — is looking prescient as OpenAI retreats from Sora and pivots to enterprise productivity ahead of IPO.
+      (Snack Prompt)
+    - Small, task-specific AI models are emerging as one of the most effective ways to cut inference costs and scale AI in 2026 — the era of one giant model doing everything is over, per Neurometric CEO Rob May.
+      (AI For Work)
+    - Apple is opening Siri to rival AI assistants, signaling a shift toward AI interoperability on consumer devices that could give third-party AI tools a major distribution boost.
+      (The Rundown AI)
+    - In consumer app creator networks, the number of accounts consistently dropped while output per creator increased — apps are moving from scattered UGC networks toward smaller, more controlled creator systems with repeatable formats.
+      (Social Growth Engineers)
+    - Wikipedia has banned AI from writing its articles, drawing a clear line between AI-assisted research and AI-generated content in trusted reference contexts.
+      (The Rundown AI)
+    - A single poisoned npm package with 95 million downloads highlights the growing supply chain security risk in AI-assisted development, where devs move fast and may not vet dependencies carefully. -> https://x.com/karpathy/status/2036487306585268612
+      (Unwind AI)
+    - Google found a way to shrink AI memory with zero accuracy loss — a signal that model efficiency (not just raw power) is becoming a serious research frontier.
+      (The Rundown AI)
+    - ARC-AGI-3 shows the best frontier AI models score below 1% on a benchmark humans solve 100% of the time on the first try — a useful reality check against AGI hype to share with students. -> https://arcprize.org/arc-agi/3
+      (The Rundown AI)
+    - OpenAI is shutting down Sora as a standalone product — a reminder for creators teaching AI tools that even flagship launches can be short-lived, and building on top of specific products carries platform risk. -> https://www.nbcnews.com/tech/tech-news/openai-shuttering-sora-video-generating-service-rcna264989
+      (What's Up in AI)
+[2026-03-27 12:16:10] Done
