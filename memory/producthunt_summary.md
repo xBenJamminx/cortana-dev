@@ -1,67 +1,70 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [CronBox](https://www.producthunt.com/products/cronbox-2)
+• [Ikuna](https://www.producthunt.com/products/ikuna)
   _<p>
-            Where AI agents work at a schedule in the cloud
+            A workspace memory for your Mac for focused work
+          </p>
+          <p>
+      _
+
+• [Arm AGI CPU](https://www.producthunt.com/products/arm-agi-cpu)
+  _<p>
+            The world’s most efficient agentic CPU
+          </p>
+          <p>
+            <a h_
+
+• [YouTube Transcript Tool](https://www.producthunt.com/products/youtube-transcript-tool-2)
+  _<p>
+            Convert YouTube videos to text instantly
+          </p>
+          <p>
+            <a_
+
+• [vit](https://www.producthunt.com/products/vit)
+  _<p>
+            git for video editing.
+          </p>
+          <p>
+            <a href="https://www_
+
+• [Eron](https://www.producthunt.com/products/eron)
+  _<p>
+            Portable Ollama instance for working with your own Al
+          </p>
+          <p>
+ _
+
+• [Littlebird](https://www.producthunt.com/products/littlebird)
+  _<p>
+            Full context AI that can recall details from your screen
+          </p>
+          <p_
+
+• [Jentic Mini](https://www.producthunt.com/products/jentic-mini)
+  _<p>
+            Give your AI agents safe access to 10,000+ APIs
           </p>
           <p>
        _
 
-• [Facts...No Bullsh*t](https://www.producthunt.com/products/facts-no-bullsh-t)
+• [Inspekt](https://www.producthunt.com/products/inspekt)
   _<p>
-            Stop BS in real-time with AI that fact-checks as you listen
-          </p>
-         _
-
-• [Agentplace AI Agents](https://www.producthunt.com/products/agentplace)
-  _<p>
-            Create specialized AI agents for real tasks and workflows
+            AI-powered API proxy for automated debugging and security
           </p>
           <_
 
-• [Splitsense](https://www.producthunt.com/products/splitsense)
+• [Appoval](https://www.producthunt.com/products/appoval)
   _<p>
-            AI that turns traffic into more revenue while you sleep
-          </p>
-          <p>_
-
-• [Keystone](https://www.producthunt.com/products/imbue-7)
-  _<p>
-            Teach your repo how to run itself
+            Ship to the App Store with confidence
           </p>
           <p>
-            <a href="_
+            <a hr_
 
-• [Magine](https://www.producthunt.com/products/magine)
+• [Anvil](https://www.producthunt.com/products/anvil-5)
   _<p>
-            Spawn vision-enabled AI agents autonomously browsing the web
-          </p>
-        _
-
-• [Descent](https://www.producthunt.com/products/descent-2)
-  _<p>
-            Set a budget and get alerted when flights get cheap
+            Run a fleet of parallel Claude Codes 
           </p>
           <p>
-   _
-
-• [Coddo](https://www.producthunt.com/products/coddo)
-  _<p>
-            Your tasks are the interface
-          </p>
-          <p>
-            <a href="https_
-
-• [TurboQuant](https://www.producthunt.com/products/turboquant)
-  _<p>
-             New LLM compression algorithm by Google 
-          </p>
-          <p>
-            <_
-
-• [Pendium](https://www.producthunt.com/products/pendium-ai)
-  _<p>
-            Help AI agents recommend you more often to the right people
-          </p>
-         _
+            <a hr_
 

@@ -17422,3 +17422,20 @@ NUGGETS (21)
     - OpenAI is shutting down Sora as a standalone product — a reminder for creators teaching AI tools that even flagship launches can be short-lived, and building on top of specific products carries platform risk. -> https://www.nbcnews.com/tech/tech-news/openai-shuttering-sora-video-generating-service-rcna264989
       (What's Up in AI)
 [2026-03-27 12:16:10] Done
+[2026-03-27 13:00:12] Newsletter Monitor v3 starting...
+[2026-03-27 13:00:21] Fetched 12 unique newsletter emails across 19 queries
+[2026-03-27 13:00:21]   The Rundown AI:  Meta's new open-source brain AI -> 2 stories extracted
+[2026-03-27 13:00:21]   The Rundown AI:  ARC-AGI-3 resets frontier AI scoreboard -> 2 stories extracted
+[2026-03-27 13:00:21]   Unwind AI: Stack Overflow for AI Agents -> 9 stories extracted
+[2026-03-27 13:00:21]   AI For Work: Your next coworker might have a cloned voice -> 16 stories extracted
+[2026-03-27 13:00:21]   AI For Work: Anthropic just gave its coding tool more freedom -> 2 stories extracted
+[2026-03-27 13:00:21]   Snack Prompt:  OpenAI Just Killed Its Own Product  -> 6 stories extracted
+[2026-03-27 13:00:21]   Snack Prompt:  Musk Just Dropped Something Big  -> 6 stories extracted
+[2026-03-27 13:00:21]   Hypefury:  The Boring AI Setup That Beats Every 'Power User' -> 3 stories extracted
+[2026-03-27 13:00:21]   Social Growth Engineers: April in Consumer App Growth -> 3 stories extracted
+[2026-03-27 13:00:21]   Ollie Raps: A new idea I want you to be part of... -> 12 stories extracted
+[2026-03-27 13:00:21] Analyzing 60 total stories with LLM...
+[2026-03-27 13:01:02] LLM analysis: 60 stories -> 13 kept
+[2026-03-27 13:01:02] Mining newsletters for nuggets (new emails only)...
+[2026-03-27 13:01:02] Saved 0 emails, 2 stories, 0 nuggets | Skipped: 2 blacklisted
+[2026-03-27 13:01:02] Done

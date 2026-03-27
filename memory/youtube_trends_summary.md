@@ -1,32 +1,32 @@
 📺 YouTube - Latest from AI/Creator Channels
 
+• [How I'd Create Content in 2026 (If I Had To Start Over)](https://www.youtube.com/watch?v=A8PxRHQrLJ8)
+  _Ali Abdaal_
+
+• [The Successful Method to Get Hired](https://www.youtube.com/shorts/0mnu3Xv-3Rg)
+  _Ali Abdaal_
+
+• [Two AI Models Set to “stir government urgency”, But Will This Challenge Undo Them?](https://www.youtube.com/watch?v=s4tptozUJ8Y)
+  _AI Explained_
+
+• [Does money and power corrupt? | Jensen Huang and Lex Fridman](https://www.youtube.com/watch?v=sAKKQuNXyOk)
+  _Matt Wolfe_
+
+• [The limits of AI scaling laws - NVIDIA CEO explains | Jensen Huang and Lex Fridman](https://www.youtube.com/watch?v=WoNSsBWFyEk)
+  _Matt Wolfe_
+
+• [Jensen Huang on his mortality and future of NVIDIA | Lex Fridman Podcast Clips](https://www.youtube.com/watch?v=M4f0MxhvyUo)
+  _Matt Wolfe_
+
+• [The Algorithm That Made Me Cry](https://www.youtube.com/watch?v=XL5bq8DRn64)
+  _Two Minute Papers_
+
+• [Anthropic just released the real Claude Bot...](https://www.youtube.com/watch?v=wfeiCZK0mNs)
+  _Fireship_
+
 • [The secret to NVIDIA's success: Inside the mind of Jensen Huang | Lex Fridman Podcast Clips](https://www.youtube.com/watch?v=peaL1uF5MO0)
   _Matt Wolfe_
 
 • [NVIDIA CEO responds to DLSS 5 drama about AI slop | Jensen Huang and Lex Fridman](https://www.youtube.com/watch?v=MH_beCDBtJc)
-  _Matt Wolfe_
-
-• [NVIDIA's supply chain risks - CEO explains | Jensen Huang and Lex Fridman](https://www.youtube.com/watch?v=dO3Qis4UkBw)
-  _Matt Wolfe_
-
-• [The Competition Paradox](https://www.youtube.com/shorts/N7Qk0A94-wc)
-  _Ali Abdaal_
-
-• [NVIDIA CEO on why TSMC and Taiwan are incredibly successful | Jensen Huang and Lex Fridman](https://www.youtube.com/watch?v=PBqXRVPxxgE)
-  _Matt Wolfe_
-
-• [Tech bros optimized war… and it’s working](https://www.youtube.com/watch?v=nxwkn9Dt9-I)
-  _Fireship_
-
-• [The Crab Bucket Mentality](https://www.youtube.com/shorts/8fxN1RVg0z0)
-  _Ali Abdaal_
-
-• [My AI strategy for staying relevant](https://www.youtube.com/shorts/X-HtE248JPM)
-  _Ali Abdaal_
-
-• [The One Thing Rule](https://www.youtube.com/shorts/WGUfrwKdG50)
-  _Ali Abdaal_
-
-• [Why China is successful in tech - NVIDIA CEO explains | Jensen Huang and Lex Fridman](https://www.youtube.com/watch?v=LpkmUa-CqaE)
   _Matt Wolfe_
 
