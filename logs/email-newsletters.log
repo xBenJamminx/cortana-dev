@@ -17439,3 +17439,142 @@ NUGGETS (21)
 [2026-03-27 13:01:02] Mining newsletters for nuggets (new emails only)...
 [2026-03-27 13:01:02] Saved 0 emails, 2 stories, 0 nuggets | Skipped: 2 blacklisted
 [2026-03-27 13:01:02] Done
+[2026-03-28 12:15:01] Newsletter Monitor v3 starting...
+[2026-03-28 12:15:09] Fetched 11 unique newsletter emails across 19 queries
+[2026-03-28 12:15:09]   The Rundown AI:  Meta's new open-source brain AI -> 2 stories extracted
+[2026-03-28 12:15:09]   Unwind AI: Stack Overflow for AI Agents -> 9 stories extracted
+[2026-03-28 12:15:09]   AI For Work: OpenAI killed 3 products in a week. Google and App -> 24 stories extracted
+[2026-03-28 12:15:09]   AI For Work: Your next coworker might have a cloned voice -> 16 stories extracted
+[2026-03-28 12:15:09]   Snack Prompt:  This Apple Move Changes Everything  -> 5 stories extracted
+[2026-03-28 12:15:09]   Snack Prompt:  OpenAI Just Killed Its Own Product  -> 6 stories extracted
+[2026-03-28 12:15:09]   What's Up in AI: every top model failed this benchmark -> 6 stories extracted
+[2026-03-28 12:15:09]   Social Growth Engineers: 8 Viral Hits You Missed This Week -> 27 stories extracted
+[2026-03-28 12:15:09]   Social Growth Engineers: April in Consumer App Growth -> 3 stories extracted
+[2026-03-28 12:15:09]   Skipping junk subject: Welcome to the Level Up Newsletter!
+[2026-03-28 12:15:09] Analyzing 76 total stories with LLM...
+[2026-03-28 12:15:45] LLM analysis: 76 stories -> 13 kept
+[2026-03-28 12:15:45] Mining newsletters for nuggets (new emails only)...
+[2026-03-28 12:16:10] Extracted 12 nuggets from newsletters
+[2026-03-28 12:16:10] Marked 4 emails as nugget-mined
+[2026-03-28 12:16:10] Saved 4 emails, 3 stories, 12 nuggets | Skipped: 1 blacklisted
+[2026-03-28 12:15:01] Newsletter Monitor v3 starting...
+[2026-03-28 12:15:09] Fetched 11 unique newsletter emails across 19 queries
+[2026-03-28 12:15:09]   The Rundown AI:  Meta's new open-source brain AI -> 2 stories extracted
+[2026-03-28 12:15:09]   Unwind AI: Stack Overflow for AI Agents -> 9 stories extracted
+[2026-03-28 12:15:09]   AI For Work: OpenAI killed 3 products in a week. Google and App -> 24 stories extracted
+[2026-03-28 12:15:09]   AI For Work: Your next coworker might have a cloned voice -> 16 stories extracted
+[2026-03-28 12:15:09]   Snack Prompt:  This Apple Move Changes Everything  -> 5 stories extracted
+[2026-03-28 12:15:09]   Snack Prompt:  OpenAI Just Killed Its Own Product  -> 6 stories extracted
+[2026-03-28 12:15:09]   What's Up in AI: every top model failed this benchmark -> 6 stories extracted
+[2026-03-28 12:15:09]   Social Growth Engineers: 8 Viral Hits You Missed This Week -> 27 stories extracted
+[2026-03-28 12:15:09]   Social Growth Engineers: April in Consumer App Growth -> 3 stories extracted
+[2026-03-28 12:15:09]   Skipping junk subject: Welcome to the Level Up Newsletter!
+[2026-03-28 12:15:09] Analyzing 76 total stories with LLM...
+[2026-03-28 12:15:45] LLM analysis: 76 stories -> 13 kept
+[2026-03-28 12:15:45] Mining newsletters for nuggets (new emails only)...
+[2026-03-28 12:16:10] Extracted 12 nuggets from newsletters
+[2026-03-28 12:16:10] Marked 4 emails as nugget-mined
+[2026-03-28 12:16:10] Saved 4 emails, 3 stories, 12 nuggets | Skipped: 1 blacklisted
+
+======================================================================
+TOP STORIES (10)
+======================================================================
+
+[78] [MULTI-SOURCE] OpenAI kills erotic mode, Sora, and Instant Checkout in a single week
+    Source: AI For Work, Snack Prompt
+    OpenAI killing Sora after only six months is a hot-take goldmine about product strategy, AI video hype, and what it means for creator tools.
+
+[74] Apple to unlock Siri for rival AI assistants
+    Source: The Rundown AI
+    Apple opening Siri to rival AIs in iOS 27 is a big consumer moment that signals AI assistants are becoming user-choice utilities — great explainer content for everyday folks.
+    https://www.bloomberg.com/news/articles/2026-03-26/apple-plans-to-open-up-siri-to-rival-ai-assistants-beyond-chatgpt-in-ios-27
+
+[72] Google makes it easy to ditch ChatGPT and Claude by importing your chats into Gemini
+    Source: AI For Work
+    Google letting users import ChatGPT and Claude chats into Gemini lowers the switching barrier and signals intensifying competition for AI assistant users.
+
+[68] announced that
+    Source: Snack Prompt
+    OpenAI shutting down Sora six months after launch is notable product news that sparks discussion about AI product staying power and what builders should bet on.
+
+[65] Apple has full access to the Gemini model
+    Source: Snack Prompt
+    Apple reportedly having full access to the Gemini model (deeper than disclosed) adds intrigue to the Apple AI story and matters for builders on the Apple ecosystem.
+    https://offers.hubspot.com/matg-ai-strategies
+
+[65] Wikipedia bans AI from writing its articles
+    Source: The Rundown AI
+    Wikipedia banning AI-written articles is a punchy hot take topic — raises questions about AI content quality that Ben's audience actively debates.
+    https://en.wikipedia.org/wiki/Wikipedia:Writing_articles_with_large_language_models
+
+[63] Mistral releases an open-source text-to-speech model small enough for a smartwatch
+    Source: AI For Work
+    Mistral's open-source text-to-speech model small enough for a smartwatch is a tool everyday builders can plug into their apps for free.
+
+[55] Cohere launches an open-source voice model that tops the transcription leaderboard
+    Source: AI For Work
+    Cohere's open-source voice model topping the transcription leaderboard is relevant for builders exploring voice-driven AI apps and automations.
+
+[52] Anthropic says AI hasn't killed jobs yet — but the skills gap is already widening
+    Source: AI For Work
+    Anthropic's report that AI hasn't killed jobs yet but the skills gap is widening is a timely discussion starter for Ben's audience who are learning to build with AI.
+
+[52] 25+ Hours of Research Just Turned Into 5 Messages
+    Source: Social Growth Engineers
+    An AI agent that compresses 25+ hours of TikTok research into 5 messages is a relatable automation win for creator-audience members trying to grow on social.
+
+======================================================================
+NUGGETS (21)
+======================================================================
+
+  [tool]
+    - Google launched 'switching tools' for Gemini that let users transfer memories and entire chat histories from ChatGPT and Claude via a prompt-paste workflow or zip file upload. -> https://gemini.google.com/
+      (AI For Work)
+    - Rime offers enterprise AI voices with low latency, on-prem or cloud hosting — in independent testing 61% of listeners preferred Rime over Google and ElevenLabs voices. -> https://rime.ai/
+      (AI For Work)
+    - Google released TurboQuant, a quantization technique delivering 8× speed boost for running models — making inference dramatically faster and cheaper.
+      (What's Up in AI)
+    - Rork Max moves the entire Apple development stack to the cloud — build iOS/iPadOS/watchOS/tvOS/visionOS apps in a browser, test on a real streaming iPhone, publish to App Store in two clicks. -> https://rork.com/max
+      (Social Growth Engineers)
+    - Meta open-sourced TRIBE v2, an AI model trained on 1,000+ hours of brain scan data from 700+ people that simulates neural activity across vision, hearing, and language — its synthetic predictions outperform real fMRI recordings. -> https://ai.meta.com/research/publications/a-foundation-model-of-vision-audition-and-language-for-in-silico-neuroscience/
+      (The Rundown AI)
+    - Mistral released a lean text-to-speech model aimed at hands-free productivity, entering the voice AI space with a lightweight approach rather than a massive model.
+      (AI For Work)
+
+  [funding]
+    - OpenAI raised $110B in recent funding at a ~$730B valuation, yet shut down Sora — illustrating that even the best-funded AI companies are now ruthlessly cutting products that don't show a clear path to recurring revenue.
+      (Snack Prompt)
+
+  [tip]
+    - UGC reaction videos with relatable pain points can go massively viral even from tiny accounts — Noozr's alarm app video hit 14.8M views from an account with only 2.3k followers. -> https://www.tiktok.com/@quinnwakingup/video/7620526109016263966
+      (Social Growth Engineers)
+    - Fast-paced, slightly overwhelming demo videos (constant talking + hand tricks + quick site cut) can drive strong retention and 240k+ views for AI tool promotions on TikTok. -> https://www.tiktok.com/@savdoesmath/video/7619140276375833869
+      (Social Growth Engineers)
+
+  [insight]
+    - Apple is using Google's Gemini as a 'teacher model' to distill smaller, task-specific models that run on-device — letting them call it 'Apple Intelligence' while technically using Google's AI internally. -> https://9to5mac.com/2026/03/25/new-details-on-apple-google-ai-deal-revealed-including-gemini-changes-report/
+      (Snack Prompt)
+    - Model distillation lets a large model transfer its internal reasoning process (not just outputs) to a smaller model — more effective than traditional compression and key to on-device AI.
+      (Snack Prompt)
+    - Apple has full data-center access to Gemini, not just API rights — enabling distillation of frontier-model intelligence into private, fast, offline-capable device models.
+      (Snack Prompt)
+    - AI resolving 88% of support tickets while 22% of customers still churn shows that efficiency metrics (handle time, containment rate) don't capture customer loyalty — teams are measuring the wrong things.
+      (What's Up in AI)
+    - Apple's strategic move signals that the smartest AI play may be owning the interface and routing to best-in-class models, rather than trying to win the foundation model race outright.
+      (AI For Work)
+[2026-03-28 12:16:10] Done
+    - A new benchmark shows humans still outperform top AI models, highlighting that despite benchmark progress, true reasoning remains out of reach for current models.
+      (What's Up in AI)
+    - OpenAI shut down Sora after just 6 months — downloads dropped from 3.3M to 1.1M and total in-app purchases were only $2.1M, signaling that AI video generation at scale costs more than it earns and the 'ship everything' era in AI is ending. -> https://www.cnbc.com/2026/03/24/openai-shutters-short-form-video-app-sora-as-company-reels-in-costs.html
+      (Snack Prompt)
+    - Anthropic's strategy of never building image or video products — staying focused on text/reasoning — is looking prescient as OpenAI retreats from Sora and pivots to enterprise productivity ahead of IPO.
+      (Snack Prompt)
+    - Small, task-specific AI models are emerging as one of the most effective ways to cut inference costs and scale AI in 2026 — the era of one giant model doing everything is over, per Neurometric CEO Rob May.
+      (AI For Work)
+    - Apple is opening Siri to rival AI assistants, signaling a shift toward AI interoperability on consumer devices that could give third-party AI tools a major distribution boost.
+      (The Rundown AI)
+    - In consumer app creator networks, the number of accounts consistently dropped while output per creator increased — apps are moving from scattered UGC networks toward smaller, more controlled creator systems with repeatable formats.
+      (Social Growth Engineers)
+    - Wikipedia has banned AI from writing its articles, drawing a clear line between AI-assisted research and AI-generated content in trusted reference contexts.
+      (The Rundown AI)
+[2026-03-28 12:16:10] Done
