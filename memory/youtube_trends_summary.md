@@ -1,5 +1,23 @@
 📺 YouTube - Latest from AI/Creator Channels
 
+• [The Richest People Follow This Salary Rule](https://www.youtube.com/shorts/g2et3Qm19mM)
+  _Ali Abdaal_
+
+• [My $2,000 business rule](https://www.youtube.com/shorts/Rniqr2zRsqE)
+  _Ali Abdaal_
+
+• [Future of AI clusters in space | Jensen Huang and Lex Fridman](https://www.youtube.com/watch?v=s5Jzr-eZNOA)
+  _Matt Wolfe_
+
+• [Did NVIDIA predict OpenClaw? | Jensen Huang and Lex Fridman](https://www.youtube.com/watch?v=VHg7g7N1Axs)
+  _Matt Wolfe_
+
+• [Nemotron 3: NVIDIA's new open-source AI model explained | Jensen Huang and Lex Fridman](https://www.youtube.com/watch?v=RIIY6PVC3wg)
+  _Matt Wolfe_
+
+• [DeepMind’s New AI Just Changed Science Forever](https://www.youtube.com/watch?v=Io_GqmbNBbY)
+  _Two Minute Papers_
+
 • [How I'd Create Content in 2026 (If I Had To Start Over)](https://www.youtube.com/watch?v=A8PxRHQrLJ8)
   _Ali Abdaal_
 
@@ -10,23 +28,5 @@
   _AI Explained_
 
 • [Does money and power corrupt? | Jensen Huang and Lex Fridman](https://www.youtube.com/watch?v=sAKKQuNXyOk)
-  _Matt Wolfe_
-
-• [The limits of AI scaling laws - NVIDIA CEO explains | Jensen Huang and Lex Fridman](https://www.youtube.com/watch?v=WoNSsBWFyEk)
-  _Matt Wolfe_
-
-• [Jensen Huang on his mortality and future of NVIDIA | Lex Fridman Podcast Clips](https://www.youtube.com/watch?v=M4f0MxhvyUo)
-  _Matt Wolfe_
-
-• [The Algorithm That Made Me Cry](https://www.youtube.com/watch?v=XL5bq8DRn64)
-  _Two Minute Papers_
-
-• [Anthropic just released the real Claude Bot...](https://www.youtube.com/watch?v=wfeiCZK0mNs)
-  _Fireship_
-
-• [The secret to NVIDIA's success: Inside the mind of Jensen Huang | Lex Fridman Podcast Clips](https://www.youtube.com/watch?v=peaL1uF5MO0)
-  _Matt Wolfe_
-
-• [NVIDIA CEO responds to DLSS 5 drama about AI slop | Jensen Huang and Lex Fridman](https://www.youtube.com/watch?v=MH_beCDBtJc)
   _Matt Wolfe_
 

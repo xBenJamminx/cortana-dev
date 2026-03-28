@@ -17578,3 +17578,19 @@ NUGGETS (21)
     - Wikipedia has banned AI from writing its articles, drawing a clear line between AI-assisted research and AI-generated content in trusted reference contexts.
       (The Rundown AI)
 [2026-03-28 12:16:10] Done
+[2026-03-28 13:00:10] Newsletter Monitor v3 starting...
+[2026-03-28 13:00:17] Fetched 10 unique newsletter emails across 19 queries
+[2026-03-28 13:00:17]   The Rundown AI:  Meta's new open-source brain AI -> 2 stories extracted
+[2026-03-28 13:00:17]   AI For Work: OpenAI killed 3 products in a week. Google and App -> 24 stories extracted
+[2026-03-28 13:00:17]   AI For Work: Your next coworker might have a cloned voice -> 16 stories extracted
+[2026-03-28 13:00:17]   Snack Prompt:  This Apple Move Changes Everything  -> 5 stories extracted
+[2026-03-28 13:00:17]   Snack Prompt:  OpenAI Just Killed Its Own Product  -> 6 stories extracted
+[2026-03-28 13:00:17]   What's Up in AI: every top model failed this benchmark -> 6 stories extracted
+[2026-03-28 13:00:17]   Social Growth Engineers: 8 Viral Hits You Missed This Week -> 27 stories extracted
+[2026-03-28 13:00:17]   Social Growth Engineers: April in Consumer App Growth -> 3 stories extracted
+[2026-03-28 13:00:17]   Skipping junk subject: Welcome to the Level Up Newsletter!
+[2026-03-28 13:00:17] Analyzing 67 total stories with LLM...
+[2026-03-28 13:00:53] LLM analysis: 67 stories -> 12 kept
+[2026-03-28 13:00:53] Mining newsletters for nuggets (new emails only)...
+[2026-03-28 13:00:53] Saved 0 emails, 5 stories, 0 nuggets | Skipped: 1 blacklisted
+[2026-03-28 13:00:53] Done

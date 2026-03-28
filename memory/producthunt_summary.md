@@ -1,70 +1,71 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [Ikuna](https://www.producthunt.com/products/ikuna)
+• [Hunna](https://www.producthunt.com/products/hunna)
   _<p>
-            A workspace memory for your Mac for focused work
+            Profit App for Business Founders
           </p>
           <p>
-      _
+            <a href="h_
 
-• [Arm AGI CPU](https://www.producthunt.com/products/arm-agi-cpu)
+• [Web Rewind](https://www.producthunt.com/products/web-rewind)
   _<p>
-            The world’s most efficient agentic CPU
+            An interactive journey through 30 years of the web
           </p>
           <p>
-            <a h_
+    _
 
-• [YouTube Transcript Tool](https://www.producthunt.com/products/youtube-transcript-tool-2)
+• [Focus Flow 6.7 (Jira Plugin)](https://www.producthunt.com/products/focus-flow)
   _<p>
-            Convert YouTube videos to text instantly
+            Plan vs reality and multi-team epic reviews in Jira
           </p>
           <p>
-            <a_
+   _
 
-• [vit](https://www.producthunt.com/products/vit)
+• [DashPane](https://www.producthunt.com/products/dashpane)
   _<p>
-            git for video editing.
+            Switch apps at the speed of thought
           </p>
           <p>
-            <a href="https://www_
+            <a href_
 
-• [Eron](https://www.producthunt.com/products/eron)
+• [Playtester.gg](https://www.producthunt.com/products/playtester-gg)
   _<p>
-            Portable Ollama instance for working with your own Al
+            Fresh and verified playtesters for your Indie Game
           </p>
           <p>
- _
+    _
 
-• [Littlebird](https://www.producthunt.com/products/littlebird)
+• [InsideOrg](https://www.producthunt.com/products/insideorg)
   _<p>
-            Full context AI that can recall details from your screen
-          </p>
-          <p_
-
-• [Jentic Mini](https://www.producthunt.com/products/jentic-mini)
-  _<p>
-            Give your AI agents safe access to 10,000+ APIs
+            Free organization chart viewer for any company
           </p>
           <p>
-       _
+        _
 
-• [Inspekt](https://www.producthunt.com/products/inspekt)
+• [Claude Code auto-fix](https://www.producthunt.com/products/claude-code-auto-fix-in-the-cloud)
   _<p>
-            AI-powered API proxy for automated debugging and security
-          </p>
-          <_
-
-• [Appoval](https://www.producthunt.com/products/appoval)
-  _<p>
-            Ship to the App Store with confidence
+            Auto-fix PRs in the cloud while you stay hands-off
           </p>
           <p>
-            <a hr_
+    _
 
-• [Anvil](https://www.producthunt.com/products/anvil-5)
+• [Google Gemini Memory Import](https://www.producthunt.com/products/gemini-memory-import)
   _<p>
-            Run a fleet of parallel Claude Codes 
+            Switch to Gemini without losing your AI memories 
           </p>
           <p>
-            <a hr_
+     _
+
+• [Voxtral TTS by Mistral AI](https://www.producthunt.com/products/mistral-7b)
+  _<p>
+            Multilingual TTS model with realistic and expressive speech
+          </p>
+         _
+
+• [Audos Publishing House](https://www.producthunt.com/products/socap)
+  _<p>
+            Build an AI business, get up to $100K. No equity taken
+          </p>
+          <p>
+_
 
