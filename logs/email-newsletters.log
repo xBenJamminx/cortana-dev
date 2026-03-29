@@ -17594,3 +17594,138 @@ NUGGETS (21)
 [2026-03-28 13:00:53] Mining newsletters for nuggets (new emails only)...
 [2026-03-28 13:00:53] Saved 0 emails, 5 stories, 0 nuggets | Skipped: 1 blacklisted
 [2026-03-28 13:00:53] Done
+[2026-03-29 12:15:01] Newsletter Monitor v3 starting...
+[2026-03-29 12:15:08] Fetched 8 unique newsletter emails across 19 queries
+[2026-03-29 12:15:08]   The Rundown AI: An exclusive Q&A with alibaba.com's Kuo Zhang -> 5 stories extracted
+[2026-03-29 12:15:08]   AI For Work: OpenAI killed 3 products in a week. Google and App -> 24 stories extracted
+[2026-03-29 12:15:08]   Snack Prompt:  This Apple Move Changes Everything  -> 5 stories extracted
+[2026-03-29 12:15:08]   Lenny's Newsletter:  Community Wisdom: When AI velocity outpaces your  -> 27 stories extracted
+[2026-03-29 12:15:08]   What's Up in AI: ai takes over (product edition) -> 4 stories extracted
+[2026-03-29 12:15:08]   What's Up in AI: every top model failed this benchmark -> 6 stories extracted
+[2026-03-29 12:15:08]   Social Growth Engineers: 8 Viral Hits You Missed This Week -> 27 stories extracted
+[2026-03-29 12:15:08]   Skipping junk subject: Welcome to the Level Up Newsletter!
+[2026-03-29 12:15:08] Analyzing 65 total stories with LLM...
+[2026-03-29 12:15:45] LLM analysis: 65 stories -> 10 kept
+[2026-03-29 12:15:45] Mining newsletters for nuggets (new emails only)...
+[2026-03-29 12:16:01] Extracted 8 nuggets from newsletters
+[2026-03-29 12:16:01] Marked 3 emails as nugget-mined
+[2026-03-29 12:16:01] Saved 3 emails, 2 stories, 8 nuggets | Skipped: 0 blacklisted
+[2026-03-29 12:15:01] Newsletter Monitor v3 starting...
+[2026-03-29 12:15:08] Fetched 8 unique newsletter emails across 19 queries
+[2026-03-29 12:15:08]   The Rundown AI: An exclusive Q&A with alibaba.com's Kuo Zhang -> 5 stories extracted
+[2026-03-29 12:15:08]   AI For Work: OpenAI killed 3 products in a week. Google and App -> 24 stories extracted
+[2026-03-29 12:15:08]   Snack Prompt:  This Apple Move Changes Everything  -> 5 stories extracted
+[2026-03-29 12:15:08]   Lenny's Newsletter:  Community Wisdom: When AI velocity outpaces your  -> 27 stories extracted
+[2026-03-29 12:15:08]   What's Up in AI: ai takes over (product edition) -> 4 stories extracted
+[2026-03-29 12:15:08]   What's Up in AI: every top model failed this benchmark -> 6 stories extracted
+[2026-03-29 12:15:08]   Social Growth Engineers: 8 Viral Hits You Missed This Week -> 27 stories extracted
+[2026-03-29 12:15:08]   Skipping junk subject: Welcome to the Level Up Newsletter!
+[2026-03-29 12:15:08] Analyzing 65 total stories with LLM...
+[2026-03-29 12:15:45] LLM analysis: 65 stories -> 10 kept
+[2026-03-29 12:15:45] Mining newsletters for nuggets (new emails only)...
+[2026-03-29 12:16:01] Extracted 8 nuggets from newsletters
+[2026-03-29 12:16:01] Marked 3 emails as nugget-mined
+[2026-03-29 12:16:01] Saved 3 emails, 2 stories, 8 nuggets | Skipped: 0 blacklisted
+
+======================================================================
+TOP STORIES (10)
+======================================================================
+
+[88] ^_In partnership with Rork  _^
+    Source: Social Growth Engineers
+    Rork Max lets anyone build real iOS apps (iPhone, iPad, Apple Watch, Vision Pro) from a browser with no Mac required — a massive unlock for vibecoding builders who want to ship native apps.
+
+[82] Key Features:
+    Source: What's Up in AI
+    'Anything' builds mobile apps, websites, and full products from a prompt with zero terminal or framework knowledge — ideal content for non-technical builders who want to ship fast.
+    https://www.createanything.com/
+
+[78] [MULTI-SOURCE] OpenAI kills erotic mode, Sora, and Instant Checkout in a single week
+    Source: AI For Work, Snack Prompt
+    OpenAI killing Sora after only six months is a hot-take goldmine about product strategy, AI video hype, and what it means for creator tools.
+
+[72] Google makes it easy to ditch ChatGPT and Claude by importing your chats into Gemini
+    Source: AI For Work
+    Google letting users import ChatGPT and Claude chats into Gemini lowers the switching barrier and signals intensifying competition for AI assistant users.
+
+[68] Pairing Claude Code with Codex
+    Source: Lenny's Newsletter
+    Real discussion about pairing Claude Code and Codex in a workflow — exactly the kind of practical AI coding tool comparison Ben's audience of vibecoder learners wants.
+    https://substack.com/redirect/5755de73-3f56-49f1-9dd6-8deafb3f9275
+
+[65] Apple has full access to the Gemini model
+    Source: Snack Prompt
+    Apple reportedly having full access to the Gemini model (deeper than disclosed) adds intrigue to the Apple AI story and matters for builders on the Apple ecosystem.
+    https://offers.hubspot.com/matg-ai-strategies
+
+[60] Use it to:
+    Source: Snack Prompt
+    A working prompt for restoring old/damaged photos is a delightful, immediately usable tip that everyday people can apply today.
+    https://snackprompt.com/e/prompt/perfect-photo-restoration-hwxwlE055
+
+[58] SuperTurtle
+    Source: Snack Prompt
+    SuperTurtle automates social media replies and audience growth — directly useful for creators in Ben's community trying to grow on autopilot.
+    https://www.producthunt.com/products/superturtle
+
+[52] 1 LATEST IN AI TODAY
+    Source: What's Up in AI
+    ARC-AGI-3 benchmark showing top AI models still struggle on tasks humans find easy is a great hook for a hot-take on AI hype vs. reality.
+    https://arcprize.org/arc-agi/3
+
+[50] CompetitorWrapped
+    Source: Snack Prompt
+    CompetitorWrapped turning any domain into a live competitive intel feed is a practical no-code tool for indie builders and creators tracking their space.
+    https://www.producthunt.com/products/competitorwrapped
+
+======================================================================
+NUGGETS (20)
+======================================================================
+
+  [tool]
+    - Accio Work by alibaba.com is a new agentic system that deploys a team of digital employees to handle complex business tasks 24/7, going beyond AI assistants to full AI operators. -> https://www.accio.com/work
+      (The Rundown AI)
+    - This week's tool deep dive covers three categories worth exploring: custom AI workers, design-to-code automation, and document intelligence tools that replace hours of manual work. -> https://whatsupinai.beehiiv.com
+      (What's Up in AI)
+    - Clerk now supports MCP server integration, allowing AI agents to authenticate and act on behalf of users — a signal that auth infrastructure is becoming AI-agent-aware. -> https://clerk.com
+      (Lenny's Newsletter)
+    - Google launched 'switching tools' for Gemini that let users transfer memories and entire chat histories from ChatGPT and Claude via a prompt-paste workflow or zip file upload. -> https://gemini.google.com/
+      (AI For Work)
+    - Rime offers enterprise AI voices with low latency, on-prem or cloud hosting — in independent testing 61% of listeners preferred Rime over Google and ElevenLabs voices. -> https://rime.ai/
+      (AI For Work)
+    - Google released TurboQuant, a quantization technique delivering 8× speed boost for running models — making inference dramatically faster and cheaper.
+      (What's Up in AI)
+    - Rork Max moves the entire Apple development stack to the cloud — build iOS/iPadOS/watchOS/tvOS/visionOS apps in a browser, test on a real streaming iPhone, publish to App Store in two clicks. -> https://rork.com/max
+      (Social Growth Engineers)
+
+  [tip]
+    - When evaluating AI tools, the recommended approach is to pick one tool and run it for a focused 30-minute session before deciding if it fits your workflow — bias toward action over research.
+      (What's Up in AI)
+    - UGC reaction videos with relatable pain points can go massively viral even from tiny accounts — Noozr's alarm app video hit 14.8M views from an account with only 2.3k followers. -> https://www.tiktok.com/@quinnwakingup/video/7620526109016263966
+      (Social Growth Engineers)
+    - Fast-paced, slightly overwhelming demo videos (constant talking + hand tricks + quick site cut) can drive strong retention and 240k+ views for AI tool promotions on TikTok. -> https://www.tiktok.com/@savdoesmath/video/7619140276375833869
+      (Social Growth Engineers)
+
+  [insight]
+    - To move from AI assistant to AI operator, companies must shift focus from activity (speed, output) to business value — the mindset change required before handing core operations to an agent.
+      (The Rundown AI)
+    - Agent-to-agent communication is seen as the future of B2B commerce, where AI systems from different companies negotiate and transact autonomously.
+      (The Rundown AI)
+    - 88% of AI customer service tickets get resolved, but only 22% of customers stay loyal — efficiency metrics can look great while quietly eroding customer trust and retention. -> https://www.gladly.ai/resources/customer-service-reports-guides/leveraging-ai-automation/customer-expectations-report-2026/
+      (What's Up in AI)
+    - AI velocity is outpacing product strategy for many teams — a key challenge discussed in Lenny's community is how to maintain strategic direction when AI lets you ship faster than you can think. -> https://www.lennysnewsletter.com/p/community-wisdom-when-ai-velocity
+      (Lenny's Newsletter)
+    - Apple is using Google's Gemini as a 'teacher model' to distill smaller, task-specific models that run on-device — letting them call it 'Apple Intelligence' while technically using Google's AI internally. -> https://9to5mac.com/2026/03/25/new-details-on-apple-google-ai-deal-revealed-including-gemini-changes-report/
+      (Snack Prompt)
+[2026-03-29 12:16:01] Done
+    - Model distillation lets a large model transfer its internal reasoning process (not just outputs) to a smaller model — more effective than traditional compression and key to on-device AI.
+      (Snack Prompt)
+    - Apple has full data-center access to Gemini, not just API rights — enabling distillation of frontier-model intelligence into private, fast, offline-capable device models.
+      (Snack Prompt)
+    - AI resolving 88% of support tickets while 22% of customers still churn shows that efficiency metrics (handle time, containment rate) don't capture customer loyalty — teams are measuring the wrong things.
+      (What's Up in AI)
+    - Apple's strategic move signals that the smartest AI play may be owning the interface and routing to best-in-class models, rather than trying to win the foundation model race outright.
+      (AI For Work)
+    - A new benchmark shows humans still outperform top AI models, highlighting that despite benchmark progress, true reasoning remains out of reach for current models.
+      (What's Up in AI)
+[2026-03-29 12:16:01] Done
