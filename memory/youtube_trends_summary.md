@@ -1,5 +1,17 @@
 📺 YouTube - Latest from AI/Creator Channels
 
+• [The Side Hustle Trilemma](https://www.youtube.com/shorts/8ZgsTp7ezwQ)
+  _Ali Abdaal_
+
+• [Greatest game of all time - according to NVIDIA CEO | Jensen Huang and Lex Fridman](https://www.youtube.com/watch?v=B_iAd54w6Cs)
+  _Matt Wolfe_
+
+• [How NVIDIA almost went bankrupt: The big CUDA bet | Jensen Huang and Lex Fridman](https://www.youtube.com/watch?v=ZUSPpDBEfmQ)
+  _Matt Wolfe_
+
+• [NVIDIA CEO on Elon Musk, xAI, Colossus supercomputer and systems engineering | Jensen Huang](https://www.youtube.com/watch?v=5XgpESmjBqE)
+  _Matt Wolfe_
+
 • [The Richest People Follow This Salary Rule](https://www.youtube.com/shorts/g2et3Qm19mM)
   _Ali Abdaal_
 
@@ -17,16 +29,4 @@
 
 • [DeepMind’s New AI Just Changed Science Forever](https://www.youtube.com/watch?v=Io_GqmbNBbY)
   _Two Minute Papers_
-
-• [How I'd Create Content in 2026 (If I Had To Start Over)](https://www.youtube.com/watch?v=A8PxRHQrLJ8)
-  _Ali Abdaal_
-
-• [The Successful Method to Get Hired](https://www.youtube.com/shorts/0mnu3Xv-3Rg)
-  _Ali Abdaal_
-
-• [Two AI Models Set to “stir government urgency”, But Will This Challenge Undo Them?](https://www.youtube.com/watch?v=s4tptozUJ8Y)
-  _AI Explained_
-
-• [Does money and power corrupt? | Jensen Huang and Lex Fridman](https://www.youtube.com/watch?v=sAKKQuNXyOk)
-  _Matt Wolfe_
 

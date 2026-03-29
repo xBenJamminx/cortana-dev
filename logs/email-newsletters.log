@@ -17729,3 +17729,21 @@ NUGGETS (20)
     - A new benchmark shows humans still outperform top AI models, highlighting that despite benchmark progress, true reasoning remains out of reach for current models.
       (What's Up in AI)
 [2026-03-29 12:16:01] Done
+[2026-03-29 13:00:10] Newsletter Monitor v3 starting...
+[2026-03-29 13:00:18] Fetched 9 unique newsletter emails across 19 queries
+[2026-03-29 13:00:18]   The Rundown AI: An exclusive Q&A with alibaba.com's Kuo Zhang -> 5 stories extracted
+[2026-03-29 13:00:18]   AI For Work: OpenAI killed 3 products in a week. Google and App -> 24 stories extracted
+[2026-03-29 13:00:18]   Snack Prompt:  This Apple Move Changes Everything  -> 5 stories extracted
+[2026-03-29 13:00:18]   Lenny's Newsletter: From skeptic to true believer: How OpenClaw change -> 6 stories extracted
+[2026-03-29 13:00:18]   Lenny's Newsletter:  Community Wisdom: When AI velocity outpaces your  -> 27 stories extracted
+[2026-03-29 13:00:18]   What's Up in AI: ai takes over (product edition) -> 4 stories extracted
+[2026-03-29 13:00:18]   What's Up in AI: every top model failed this benchmark -> 6 stories extracted
+[2026-03-29 13:00:18]   Social Growth Engineers: 8 Viral Hits You Missed This Week -> 27 stories extracted
+[2026-03-29 13:00:18]   Skipping junk subject: Welcome to the Level Up Newsletter!
+[2026-03-29 13:00:18] Analyzing 71 total stories with LLM...
+[2026-03-29 13:00:56] LLM analysis: 71 stories -> 11 kept
+[2026-03-29 13:00:56] Mining newsletters for nuggets (new emails only)...
+[2026-03-29 13:01:11] Extracted 6 nuggets from newsletters
+[2026-03-29 13:01:11] Marked 1 emails as nugget-mined
+[2026-03-29 13:01:11] Saved 1 emails, 3 stories, 6 nuggets | Skipped: 0 blacklisted
+[2026-03-29 13:01:11] Done

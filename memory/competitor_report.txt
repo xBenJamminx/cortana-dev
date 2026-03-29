@@ -1,9 +1,17 @@
 👀 *COMPETITOR WATCH*
 
-Updated: 2026-03-28 13:00
+Updated: 2026-03-29 13:00
 
 
 📺 YOUTUBE:
+  Wes Roth: Claude MYTHOS is Anthropic's MOST DANGEROUS Model
+    Published: 2026-03-28
+  WorldofAI: Gemini 3.5? NEW Gemini Stealth Model Is POWERFUL & Fast! (Fu
+    Published: 2026-03-29
+  Matt Wolfe: How NVIDIA almost went bankrupt: The big CUDA bet | Jensen H
+    Published: 2026-03-29
+  Matt Wolfe: NVIDIA CEO on Elon Musk, xAI, Colossus supercomputer and sys
+    Published: 2026-03-29
   WorldofAI: Claude Mythos 5: Most Powerful Model Ever! AGI, GLM 5.1, Cla
     Published: 2026-03-28
   David Ondrej: AutoResearch Clearly Explained (and how to use it)
@@ -15,12 +23,4 @@ Updated: 2026-03-28 13:00
   My First Million: Nonprofit makes $90 MILLION per year selling barcodes
     Published: 2026-03-28
   The AI Advantage: New ChatGPT Library Explained & More AI News You Can Use
-    Published: 2026-03-27
-  Matt Wolfe: Did NVIDIA predict OpenClaw? | Jensen Huang and Lex Fridman
-    Published: 2026-03-28
-  Matt Wolfe: Nemotron 3: NVIDIA's new open-source AI model explained | Je
-    Published: 2026-03-28
-  TheAIGRID: The Real Reason Humanoid Robots Keep Failing in the Real Wor
-    Published: 2026-03-26
-  TheAIGRID: Claude Mythos - Anthropic Just Leaked The Worlds Most Powerf
     Published: 2026-03-27

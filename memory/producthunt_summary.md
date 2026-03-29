@@ -1,71 +1,69 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [Hunna](https://www.producthunt.com/products/hunna)
+• [Expect](https://www.producthunt.com/products/expect)
   _<p>
-            Profit App for Business Founders
+            Let agents test your code in a real browser
           </p>
           <p>
-            <a href="h_
+           _
 
-• [Web Rewind](https://www.producthunt.com/products/web-rewind)
+• [Able](https://www.producthunt.com/products/able-3)
   _<p>
-            An interactive journey through 30 years of the web
+            One-click WCAG & ADA accessibility audits for any webpage
           </p>
-          <p>
-    _
+          <_
 
-• [Focus Flow 6.7 (Jira Plugin)](https://www.producthunt.com/products/focus-flow)
+• [RepoLens](https://www.producthunt.com/products/repolens)
   _<p>
-            Plan vs reality and multi-team epic reviews in Jira
+            Know what changed and what matters across your codebase
           </p>
-          <p>
-   _
+          <p>_
 
-• [DashPane](https://www.producthunt.com/products/dashpane)
+• [Cohere Transcribe](https://www.producthunt.com/products/cohere-2)
   _<p>
-            Switch apps at the speed of thought
-          </p>
-          <p>
-            <a href_
-
-• [Playtester.gg](https://www.producthunt.com/products/playtester-gg)
-  _<p>
-            Fresh and verified playtesters for your Indie Game
-          </p>
-          <p>
-    _
-
-• [InsideOrg](https://www.producthunt.com/products/insideorg)
-  _<p>
-            Free organization chart viewer for any company
-          </p>
-          <p>
-        _
-
-• [Claude Code auto-fix](https://www.producthunt.com/products/claude-code-auto-fix-in-the-cloud)
-  _<p>
-            Auto-fix PRs in the cloud while you stay hands-off
-          </p>
-          <p>
-    _
-
-• [Google Gemini Memory Import](https://www.producthunt.com/products/gemini-memory-import)
-  _<p>
-            Switch to Gemini without losing your AI memories 
-          </p>
-          <p>
-     _
-
-• [Voxtral TTS by Mistral AI](https://www.producthunt.com/products/mistral-7b)
-  _<p>
-            Multilingual TTS model with realistic and expressive speech
-          </p>
-         _
-
-• [Audos Publishing House](https://www.producthunt.com/products/socap)
-  _<p>
-            Build an AI business, get up to $100K. No equity taken
+            New state-of-the-art in open source speech recognition
           </p>
           <p>
 _
+
+• [WordPress Studio CLI](https://www.producthunt.com/products/wordpress-studio-cli)
+  _<p>
+            WordPress Studio now has an independently installable CLI
+          </p>
+          <_
+
+• [Apparent for Gmail](https://www.producthunt.com/products/apparent-for-gmail)
+  _<p>
+            Make Gmail easier to read and manage.
+          </p>
+          <p>
+            <a hr_
+
+• [CrabTalk](https://www.producthunt.com/products/crabtalk)
+  _<p>
+            The agent daemon that hides nothing. 8MB. Open Source
+          </p>
+          <p>
+ _
+
+• [Lexaclaw](https://www.producthunt.com/products/lexaclaw)
+  _<p>
+            Startup legal compliance built on OpenClaw
+          </p>
+          <p>
+            _
+
+• [Crossnode](https://www.producthunt.com/products/crossnode)
+  _<p>
+            Vibe code AI agents and put them behind a payment wall
+          </p>
+          <p>
+_
+
+• [SlapMac](https://www.producthunt.com/products/slapmac)
+  _<p>
+            Slap your MacBook. It screams back. That's it.
+          </p>
+          <p>
+        _
 
