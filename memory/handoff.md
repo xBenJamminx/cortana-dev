@@ -1,22 +1,32 @@
 # Session Handoff
 
-**Topic:** Research (topic 22)
-**When:** 2026-03-04
-**Who:** Server Cortana (openclaw workspace)
+**Topic:** Business (topic 31)
+**When:** 2026-03-30 19:00 UTC
+**Who:** Server Cortana
 
 ## What we were doing
-Ben asked for an audit of the Obsidian vault setup and file storage optimization. Also identified that handoff.md was broken — never existed in the git repo, so server and local Cortana had zero shared state.
+FAM POC sync — executing approved Notion + QA Sheet changes from Mar 30 standup.
 
 ## Status
-In progress — fixing handoff system now. Obsidian optimizations identified but not yet implemented.
+Done — all changes applied successfully.
 
-## Key context
-- Obsidian sync script exists (`scripts/obsidian-sync.sh`) but is NOT in cron and bare repo doesn't exist
-- 2MB of PNG images in `memory/content-drafts/` should move to `assets/`
-- Stale JSON/TXT dumps (~700KB) in `memory/` should archive
-- `.obsidian/` config exists but unclear if Ben actually uses Obsidian app
-- Ben confirmed handoff should live at `memory/handoff.md` (git-tracked)
+## Key decisions
+- Ben approved a specific list of 17 new tasks + 1 status update
+- Steven/Bilal In Progress tasks go to QA Sheet; Ben/Cassandra tasks Notion only
+- All 18 writes completed without errors
 
-## Pending decisions
-- Whether to enable Obsidian auto-sync (cron + bare repo) or skip it
-- Whether to implement vault cleanup (move images, archive stale files)
+## What was written
+
+### Notion (18 operations)
+1. Updated "Complete written North Star document" status to In Progress
+2-6. Created 5 Steven tasks (3 High, 2 Medium)
+7-10. Created 4 Bilal tasks (1 Top, 1 High, 2 Medium)
+11-16. Created 6 Ben tasks (all High, Notion only)
+17-18. Created 2 Cassandra tasks (1 High, 1 Medium, Notion only)
+
+### QA Sheet (5 rows added, rows 39-43)
+- 3 Steven In Progress tasks
+- 2 Bilal In Progress tasks
+
+## Pending
+- Nothing from this sync. All approved changes applied.
