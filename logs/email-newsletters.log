@@ -17747,3 +17747,110 @@ NUGGETS (20)
 [2026-03-29 13:01:11] Marked 1 emails as nugget-mined
 [2026-03-29 13:01:11] Saved 1 emails, 3 stories, 6 nuggets | Skipped: 0 blacklisted
 [2026-03-29 13:01:11] Done
+[2026-03-30 12:15:01] Newsletter Monitor v3 starting...
+[2026-03-30 12:15:08] Fetched 5 unique newsletter emails across 19 queries
+[2026-03-30 12:15:08]   The Rundown AI:  Anthropic's secret 'Mythos' model -> 3 stories extracted
+[2026-03-30 12:15:08]   The Rundown AI: An exclusive Q&A with alibaba.com's Kuo Zhang -> 5 stories extracted
+[2026-03-30 12:15:08]   Lenny's Newsletter: From skeptic to true believer: How OpenClaw change -> 6 stories extracted
+[2026-03-30 12:15:08]   Lenny's Newsletter:  Community Wisdom: When AI velocity outpaces your  -> 27 stories extracted
+[2026-03-30 12:15:08]   What's Up in AI: ai takes over (product edition) -> 4 stories extracted
+[2026-03-30 12:15:08] Analyzing 33 total stories with LLM...
+[2026-03-30 12:15:46] LLM analysis: 33 stories -> 9 kept
+[2026-03-30 12:15:46] Mining newsletters for nuggets (new emails only)...
+[2026-03-30 12:16:07] Nugget parse error: Extra data: line 21 column 1 (char 1250)
+[2026-03-30 12:16:07] Marked 1 emails as nugget-mined
+[2026-03-30 12:16:07] Saved 1 emails, 2 stories, 0 nuggets | Skipped: 0 blacklisted
+[2026-03-30 12:16:07] Done
+[2026-03-30 12:15:01] Newsletter Monitor v3 starting...
+[2026-03-30 12:15:08] Fetched 5 unique newsletter emails across 19 queries
+[2026-03-30 12:15:08]   The Rundown AI:  Anthropic's secret 'Mythos' model -> 3 stories extracted
+[2026-03-30 12:15:08]   The Rundown AI: An exclusive Q&A with alibaba.com's Kuo Zhang -> 5 stories extracted
+[2026-03-30 12:15:08]   Lenny's Newsletter: From skeptic to true believer: How OpenClaw change -> 6 stories extracted
+[2026-03-30 12:15:08]   Lenny's Newsletter:  Community Wisdom: When AI velocity outpaces your  -> 27 stories extracted
+[2026-03-30 12:15:08]   What's Up in AI: ai takes over (product edition) -> 4 stories extracted
+[2026-03-30 12:15:08] Analyzing 33 total stories with LLM...
+[2026-03-30 12:15:46] LLM analysis: 33 stories -> 9 kept
+[2026-03-30 12:15:46] Mining newsletters for nuggets (new emails only)...
+[2026-03-30 12:16:07] Nugget parse error: Extra data: line 21 column 1 (char 1250)
+[2026-03-30 12:16:07] Marked 1 emails as nugget-mined
+[2026-03-30 12:16:07] Saved 1 emails, 2 stories, 0 nuggets | Skipped: 0 blacklisted
+
+======================================================================
+TOP STORIES (7)
+======================================================================
+
+[82] The exact step-by-step process to install and set up OpenClaw (it’s easier than you think)
+    Source: Lenny's Newsletter
+    Claire Vo's practical guide to OpenClaw shows non-technical builders how to set up multiple specialized AI agents instead of one general-purpose agent — actionable and directly teachable.
+    https://substack.com/redirect/d6b75522-14df-444a-8bf3-159430acc599
+
+[82] Key Features:
+    Source: What's Up in AI
+    'Anything' builds mobile apps, websites, and full products from a prompt with zero terminal or framework knowledge — ideal content for non-technical builders who want to ship fast.
+    https://www.createanything.com/
+
+[76] Anthropic accidentally leaks ‘Mythos’ AI details
+    Source: The Rundown AI
+    Leaked details on Anthropic's next flagship model Claude Mythos teases a 'step change' in capabilities — big news for anyone building with Claude.
+    https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities/
+
+[68] Pairing Claude Code with Codex
+    Source: Lenny's Newsletter
+    Real discussion about pairing Claude Code and Codex in a workflow — exactly the kind of practical AI coding tool comparison Ben's audience of vibecoder learners wants.
+    https://substack.com/redirect/5755de73-3f56-49f1-9dd6-8deafb3f9275
+
+[57] When AI velocity outpaces your product strategy
+    Source: Lenny's Newsletter
+    AI is accelerating product roadmaps so fast teams can't keep up — a hot discussion topic for builders experiencing this firsthand.
+    https://substack.com/redirect/2a1ee9c6-2046-4186-961a-c984c5552e81
+
+[51] The personal war behind OpenAI and Anthropic
+    Source: The Rundown AI
+    The Altman vs Amodei rivalry story could spark a hot take on how founder drama shapes the AI tools builders depend on.
+    https://www.wsj.com/tech/ai/the-decadelong-feud-shaping-the-future-of-ai-7075acde
+
+[51] From AI assistants to operators
+    Source: The Rundown AI
+    Agent-to-agent workflows and 'digital workforce' framing give Ben accessible language to explain where agentic AI is heading for small businesses.
+    https://www.accio.com/work
+
+======================================================================
+NUGGETS (14)
+======================================================================
+
+  [how-to]
+    - Claire Vo shares her exact step-by-step process to install and set up OpenClaw (AI agents), covering setup, common mistakes to avoid, and real-world use cases — available on YouTube, Spotify, and Apple Podcasts. -> https://www.lennysnewsletter.com/p/how-openclaw-changed-my-life-claire-vo
+      (Lenny's Newsletter)
+
+  [tool]
+    - ChatPRD (chatprd.ai) is an AI tool built by Claire Vo for product managers — worth noting as a real business run almost entirely by AI agents, a model for everyday builders. -> https://www.chatprd.ai
+      (Lenny's Newsletter)
+    - Accio Work by alibaba.com is a new agentic system that deploys a team of digital employees to handle complex business tasks 24/7, going beyond AI assistants to full AI operators. -> https://www.accio.com/work
+      (The Rundown AI)
+    - This week's tool deep dive covers three categories worth exploring: custom AI workers, design-to-code automation, and document intelligence tools that replace hours of manual work. -> https://whatsupinai.beehiiv.com
+      (What's Up in AI)
+    - Clerk now supports MCP server integration, allowing AI agents to authenticate and act on behalf of users — a signal that auth infrastructure is becoming AI-agent-aware. -> https://clerk.com
+      (Lenny's Newsletter)
+
+  [tip]
+    - Don't install autonomous AI agents on your main computer — use dedicated old laptops or Mac Minis to contain the blast radius if something goes wrong (e.g. an agent accidentally deleted Claire's family calendar on first use). -> https://www.lennysnewsletter.com/p/how-openclaw-changed-my-life-claire-vo
+      (Lenny's Newsletter)
+    - Practical AI agent use cases for everyday life: family scheduling, handling inbound sales emails, podcast guest prep, and online course management — all automatable with persistent background agents. -> https://www.lennysnewsletter.com/p/how-openclaw-changed-my-life-claire-vo
+      (Lenny's Newsletter)
+    - When evaluating AI tools, the recommended approach is to pick one tool and run it for a focused 30-minute session before deciding if it fits your workflow — bias toward action over research.
+      (What's Up in AI)
+
+  [insight]
+    - Multiple specialized AI agents beat one general-purpose agent — Claire Vo runs 9 separate OpenClaw agents each with a focused job (family scheduling, inbound sales, podcast prep, course management) rather than one agent trying to do everything. -> https://www.lennysnewsletter.com/p/how-openclaw-changed-my-life-claire-vo
+      (Lenny's Newsletter)
+    - Browser limitations and memory issues are the main practical friction points with AI agents today — knowing workarounds for these in advance saves significant frustration for new adopters. -> https://www.lennysnewsletter.com/p/how-openclaw-changed-my-life-claire-vo
+      (Lenny's Newsletter)
+    - To move from AI assistant to AI operator, companies must shift focus from activity (speed, output) to business value — the mindset change required before handing core operations to an agent.
+      (The Rundown AI)
+    - Agent-to-agent communication is seen as the future of B2B commerce, where AI systems from different companies negotiate and transact autonomously.
+      (The Rundown AI)
+    - 88% of AI customer service tickets get resolved, but only 22% of customers stay loyal — efficiency metrics can look great while quietly eroding customer trust and retention. -> https://www.gladly.ai/resources/customer-service-reports-guides/leveraging-ai-automation/customer-expectations-report-2026/
+      (What's Up in AI)
+    - AI velocity is outpacing product strategy for many teams — a key challenge discussed in Lenny's community is how to maintain strategic direction when AI lets you ship faster than you can think. -> https://www.lennysnewsletter.com/p/community-wisdom-when-ai-velocity
+      (Lenny's Newsletter)
+[2026-03-30 12:16:07] Done
