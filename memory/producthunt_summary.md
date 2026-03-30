@@ -1,69 +1,70 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [Expect](https://www.producthunt.com/products/expect)
+• [Pensieve](https://www.producthunt.com/products/pensieve-5)
   _<p>
-            Let agents test your code in a real browser
+            Full company context for every AI agent
           </p>
           <p>
-           _
+            <a _
 
-• [Able](https://www.producthunt.com/products/able-3)
+• [Parallel Code](https://www.producthunt.com/products/parallel-code)
   _<p>
-            One-click WCAG & ADA accessibility audits for any webpage
-          </p>
-          <_
-
-• [RepoLens](https://www.producthunt.com/products/repolens)
-  _<p>
-            Know what changed and what matters across your codebase
-          </p>
-          <p>_
-
-• [Cohere Transcribe](https://www.producthunt.com/products/cohere-2)
-  _<p>
-            New state-of-the-art in open source speech recognition
-          </p>
-          <p>
-_
-
-• [WordPress Studio CLI](https://www.producthunt.com/products/wordpress-studio-cli)
-  _<p>
-            WordPress Studio now has an independently installable CLI
-          </p>
-          <_
-
-• [Apparent for Gmail](https://www.producthunt.com/products/apparent-for-gmail)
-  _<p>
-            Make Gmail easier to read and manage.
-          </p>
-          <p>
-            <a hr_
-
-• [CrabTalk](https://www.producthunt.com/products/crabtalk)
-  _<p>
-            The agent daemon that hides nothing. 8MB. Open Source
-          </p>
-          <p>
- _
-
-• [Lexaclaw](https://www.producthunt.com/products/lexaclaw)
-  _<p>
-            Startup legal compliance built on OpenClaw
-          </p>
-          <p>
-            _
-
-• [Crossnode](https://www.producthunt.com/products/crossnode)
-  _<p>
-            Vibe code AI agents and put them behind a payment wall
-          </p>
-          <p>
-_
-
-• [SlapMac](https://www.producthunt.com/products/slapmac)
-  _<p>
-            Slap your MacBook. It screams back. That's it.
+            Use Claude Code, Codex, and Gemini in parallel
           </p>
           <p>
         _
+
+• [Cline Kanban](https://www.producthunt.com/products/cline-4)
+  _<p>
+            CLI-agnostic kanban for multi-agent orchestration
+          </p>
+          <p>
+     _
+
+• [Google Search Live](https://www.producthunt.com/products/google-search-live)
+  _<p>
+             Interactive, multimodal conversation in AI Mode
+          </p>
+          <p>
+      _
+
+• [Genzi](https://www.producthunt.com/products/genzi)
+  _<p>
+            The social app built around music
+          </p>
+          <p>
+            <a href="_
+
+• [Clico](https://www.producthunt.com/products/clico)
+  _<p>
+            Every textbox, supercharged
+          </p>
+          <p>
+            <a href="https:_
+
+• [Sheet Ninja](https://www.producthunt.com/products/sheet-ninja-2)
+  _<p>
+            Ship vibe-coded apps. Your data stays in Google Sheets.
+          </p>
+          <p>_
+
+• [CodingPrep](https://www.producthunt.com/products/codingprep)
+  _<p>
+            Open Source coding interview prep tool with AI interviewer
+          </p>
+          _
+
+• [GuideYou](https://www.producthunt.com/products/guideyou)
+  _<p>
+            Guidance for everyday technology
+          </p>
+          <p>
+            <a href="h_
+
+• [SUN (a16z Speedrun 006)](https://www.producthunt.com/products/sun-ai)
+  _<p>
+            Personalized AI audio lessons generated on demand
+          </p>
+          <p>
+     _
 

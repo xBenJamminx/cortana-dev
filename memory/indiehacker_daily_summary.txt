@@ -1,20 +1,20 @@
-🚀 Indie Hacker Monitor (2026-03-29 13:01)
+🚀 Indie Hacker Monitor (2026-03-30 13:01)
 
 🔥 Hot Topics:
   • solopreneur: 10 mentions
-  • bootstrapped: 5 mentions
+  • launch: 4 mentions
   • build in public: 4 mentions
-  • launch: 3 mentions
+  • bootstrapped: 2 mentions
   • side project: 2 mentions
 
 📈 Top Stories:
   • [Hacker News] (1155⬆): Founder of GitLab battles cancer by founding companies
     https://sytse.com/cancer/
+  • [Hacker News] (825⬆): Copilot edited an ad into my PR
+    https://notes.zachmanson.com/copilot-edited-an-ad-into-my-pr/
+  • [Hacker News] (753⬆): ChatGPT won't let you type until Cloudflare reads your React state
+    https://www.buchodi.com/chatgpt-wont-let-you-type-until-cloudflare-reads-your-react-state-i-decrypted-the-program-that-does-it/
   • [Hacker News] (679⬆): AI overly affirms users asking for personal advice
     https://news.stanford.edu/stories/2026/03/ai-advice-sycophantic-models-research
-  • [Hacker News] (552⬆): I decompiled the White House's new app
-    https://thereallo.dev/blog/decompiling-the-white-house-app
-  • [Hacker News] (516⬆): Anatomy of the .claude/ folder
-    https://blog.dailydoseofds.com/p/anatomy-of-the-claude-folder
-  • [Hacker News] (441⬆): Make macOS consistently bad unironically
-    https://lr0.org/blog/p/macos/
+  • [Hacker News] (585⬆): Voyager 1 runs on 69 KB of memory and an 8-track tape recorder
+    https://techfixated.com/a-1977-time-capsule-voyager-1-runs-on-69-kb-of-memory-and-an-8-track-tape-recorder-4/

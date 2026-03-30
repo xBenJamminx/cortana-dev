@@ -17854,3 +17854,18 @@ NUGGETS (14)
     - AI velocity is outpacing product strategy for many teams — a key challenge discussed in Lenny's community is how to maintain strategic direction when AI lets you ship faster than you can think. -> https://www.lennysnewsletter.com/p/community-wisdom-when-ai-velocity
       (Lenny's Newsletter)
 [2026-03-30 12:16:07] Done
+[2026-03-30 13:00:12] Newsletter Monitor v3 starting...
+[2026-03-30 13:00:19] Fetched 6 unique newsletter emails across 19 queries
+[2026-03-30 13:00:19]   The Rundown AI:  Anthropic's secret 'Mythos' model -> 3 stories extracted
+[2026-03-30 13:00:19]   The Rundown AI: An exclusive Q&A with alibaba.com's Kuo Zhang -> 5 stories extracted
+[2026-03-30 13:00:19]   Unwind AI: Sandboxing AI Agents, 100x Faster -> 9 stories extracted
+[2026-03-30 13:00:19]   Lenny's Newsletter: From skeptic to true believer: How OpenClaw change -> 6 stories extracted
+[2026-03-30 13:00:19]   Lenny's Newsletter:  Community Wisdom: When AI velocity outpaces your  -> 27 stories extracted
+[2026-03-30 13:00:19]   What's Up in AI: ai takes over (product edition) -> 4 stories extracted
+[2026-03-30 13:00:19] Analyzing 42 total stories with LLM...
+[2026-03-30 13:00:58] LLM analysis: 42 stories -> 13 kept
+[2026-03-30 13:00:58] Mining newsletters for nuggets (new emails only)...
+[2026-03-30 13:01:13] Extracted 6 nuggets from newsletters
+[2026-03-30 13:01:13] Marked 1 emails as nugget-mined
+[2026-03-30 13:01:13] Saved 1 emails, 6 stories, 6 nuggets | Skipped: 0 blacklisted
+[2026-03-30 13:01:13] Done
