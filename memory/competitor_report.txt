@@ -1,9 +1,13 @@
 👀 *COMPETITOR WATCH*
 
-Updated: 2026-03-30 13:00
+Updated: 2026-03-31 13:00
 
 
 📺 YOUTUBE:
+  WorldofAI: Claude Code Computer Use Can Control Your ENTIRE Computer! A
+    Published: 2026-03-31
+  My First Million: World’s #1 Mentalist: How To Read Minds, Convince Anyone, an
+    Published: 2026-03-30
   TheAIGRID: Did OpenAI Just Quietly Build AGI?
     Published: 2026-03-29
   Wes Roth: Google's TurboQuant Crashed the AI Chip Market
@@ -18,9 +22,3 @@ Updated: 2026-03-30 13:00
     Published: 2026-03-30
   Matt Wolfe: The biggest barriers to AI scaling laws - NVIDIA CEO explain
     Published: 2026-03-30
-  Wes Roth: Claude MYTHOS is Anthropic's MOST DANGEROUS Model
-    Published: 2026-03-28
-  WorldofAI: Gemini 3.5? NEW Gemini Stealth Model Is POWERFUL & Fast! (Fu
-    Published: 2026-03-29
-  Matt Wolfe: How NVIDIA almost went bankrupt: The big CUDA bet | Jensen H
-    Published: 2026-03-29

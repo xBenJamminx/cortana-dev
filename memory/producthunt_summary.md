@@ -1,70 +1,70 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [Pensieve](https://www.producthunt.com/products/pensieve-5)
+• [VibeTalent](https://www.producthunt.com/products/vibetalent)
   _<p>
-            Full company context for every AI agent
+            Find vibe coders who actually ship
           </p>
           <p>
-            <a _
+            <a href=_
 
-• [Parallel Code](https://www.producthunt.com/products/parallel-code)
+• [nCompass AI Assistant](https://www.producthunt.com/products/ncompass-tech)
   _<p>
-            Use Claude Code, Codex, and Gemini in parallel
+            Enabling everyone to write GPU kernels
           </p>
           <p>
-        _
+            <a h_
 
-• [Cline Kanban](https://www.producthunt.com/products/cline-4)
+• [dictate.](https://www.producthunt.com/products/dictate)
   _<p>
-            CLI-agnostic kanban for multi-agent orchestration
+            Replace your iPhone keyboard with AI voice typing
           </p>
           <p>
      _
 
-• [Google Search Live](https://www.producthunt.com/products/google-search-live)
+• [Letterbook](https://www.producthunt.com/products/letterbook)
   _<p>
-             Interactive, multimodal conversation in AI Mode
+            AI support platform built for founders
           </p>
           <p>
-      _
+            <a h_
 
-• [Genzi](https://www.producthunt.com/products/genzi)
+• [Streva](https://www.producthunt.com/products/streva)
   _<p>
-            The social app built around music
+            Instant Translation, Anywhere you type
           </p>
           <p>
-            <a href="_
+            <a h_
 
-• [Clico](https://www.producthunt.com/products/clico)
+• [Notion MCP](https://www.producthunt.com/products/notion-mcp)
   _<p>
-            Every textbox, supercharged
+            Your Notion workspace, inside every AI agent
           </p>
           <p>
-            <a href="https:_
-
-• [Sheet Ninja](https://www.producthunt.com/products/sheet-ninja-2)
-  _<p>
-            Ship vibe-coded apps. Your data stays in Google Sheets.
-          </p>
-          <p>_
-
-• [CodingPrep](https://www.producthunt.com/products/codingprep)
-  _<p>
-            Open Source coding interview prep tool with AI interviewer
-          </p>
           _
 
-• [GuideYou](https://www.producthunt.com/products/guideyou)
+• [Invoke](https://www.producthunt.com/products/invoke-studio)
   _<p>
-            Guidance for everyday technology
+            Agentic coding IDE with visual planning boards and canvas
           </p>
-          <p>
-            <a href="h_
+          <_
 
-• [SUN (a16z Speedrun 006)](https://www.producthunt.com/products/sun-ai)
+• [FreeCAD 1.1](https://www.producthunt.com/products/freecad-2)
   _<p>
-            Personalized AI audio lessons generated on demand
+            Extremely powerful, completely free 3D CAD modeling
           </p>
           <p>
-     _
+   _
+
+• [Goals](https://www.producthunt.com/products/goals)
+  _<p>
+            AI turns your goal into one daily action.
+          </p>
+          <p>
+            <_
+
+• [PopTask](https://www.producthunt.com/products/poptask-menu-bar-task-manager)
+  _<p>
+            Light menu bar task manager for quickly capturing tasks
+          </p>
+          <p>_
 

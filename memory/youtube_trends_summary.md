@@ -1,5 +1,8 @@
 📺 YouTube - Latest from AI/Creator Channels
 
+• [The Strategic Imbalance Paradox](https://www.youtube.com/shorts/6iIBRvdJfgk)
+  _Ali Abdaal_
+
 • [Don't Take Advice From Naysayers](https://www.youtube.com/shorts/zQGhVx9_oKM)
   _Ali Abdaal_
 
@@ -26,7 +29,4 @@
 
 • [NVIDIA CEO on Elon Musk, xAI, Colossus supercomputer and systems engineering | Jensen Huang](https://www.youtube.com/watch?v=5XgpESmjBqE)
   _Matt Wolfe_
-
-• [The Richest People Follow This Salary Rule](https://www.youtube.com/shorts/g2et3Qm19mM)
-  _Ali Abdaal_
 

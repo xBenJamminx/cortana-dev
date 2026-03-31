@@ -18031,3 +18031,23 @@ NUGGETS (18)
     - An OpenClaw tool grew 3,606% overnight — a signal that open-source AI tooling can achieve viral distribution without marketing spend when it solves a sharp pain point for builders. -> https://unicorne.beehiiv.com/p/an-openclaw-tool-just-grew-3606-overnight
       (Marc Lou)
 [2026-03-31 12:16:23] Done
+[2026-03-31 13:00:09] Newsletter Monitor v3 starting...
+[2026-03-31 13:00:15] Fetched 11 unique newsletter emails across 19 queries
+[2026-03-31 13:00:15]   The Rundown AI:  OpenAI's $1B Disney blindside -> 3 stories extracted
+[2026-03-31 13:00:15]   The Rundown AI:  Anthropic's secret 'Mythos' model -> 3 stories extracted
+[2026-03-31 13:00:15]   Unwind AI: Sandboxing AI Agents, 100x Faster -> 9 stories extracted
+[2026-03-31 13:00:15]   AI For Work: Anthropic is growing faster than ever. OpenAI is s -> 2 stories extracted
+[2026-03-31 13:00:15]   Snack Prompt:  Anthropic Leaked WHAT?!   -> 6 stories extracted
+[2026-03-31 13:00:15]   Lenny's Newsletter: OpenClaw: The complete guide to building, training -> 89 stories extracted
+[2026-03-31 13:00:15]   Lenny's Newsletter:  This week on How I AI: How Stripe built minionsAI -> 1 stories extracted
+[2026-03-31 13:00:15]   Social Growth Engineers: One TikTok Formula, 115 Million Views -> 43 stories extracted
+[2026-03-31 13:00:15]   What's Up in AI: anthropic's secret weapon revealed -> 7 stories extracted
+[2026-03-31 13:00:15]   Marc Lou: An OpenClaw tool just grew 3606% overnight -> 0 stories extracted
+[2026-03-31 13:00:15]   Level Up Newsletter: What Makes a Senior Manager Stand Out -> 12 stories extracted
+[2026-03-31 13:00:15] Analyzing 73 total stories with LLM...
+[2026-03-31 13:01:02] LLM analysis: 73 stories -> 15 kept
+[2026-03-31 13:01:02] Mining newsletters for nuggets (new emails only)...
+[2026-03-31 13:01:31] Extracted 8 nuggets from newsletters
+[2026-03-31 13:01:31] Marked 2 emails as nugget-mined
+[2026-03-31 13:01:31] Saved 2 emails, 2 stories, 8 nuggets | Skipped: 0 blacklisted
+[2026-03-31 13:01:31] Done
