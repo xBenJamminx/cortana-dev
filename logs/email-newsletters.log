@@ -17869,3 +17869,165 @@ NUGGETS (14)
 [2026-03-30 13:01:13] Marked 1 emails as nugget-mined
 [2026-03-30 13:01:13] Saved 1 emails, 6 stories, 6 nuggets | Skipped: 0 blacklisted
 [2026-03-30 13:01:13] Done
+[2026-03-31 12:15:01] Newsletter Monitor v3 starting...
+[2026-03-31 12:15:07] Fetched 10 unique newsletter emails across 19 queries
+[2026-03-31 12:15:07]   The Rundown AI:  OpenAI's $1B Disney blindside -> 3 stories extracted
+[2026-03-31 12:15:07]   The Rundown AI:  Anthropic's secret 'Mythos' model -> 3 stories extracted
+[2026-03-31 12:15:07]   Unwind AI: Sandboxing AI Agents, 100x Faster -> 9 stories extracted
+[2026-03-31 12:15:07]   AI For Work: Anthropic is growing faster than ever. OpenAI is s -> 2 stories extracted
+[2026-03-31 12:15:07]   Snack Prompt:  Anthropic Leaked WHAT?!   -> 6 stories extracted
+[2026-03-31 12:15:07]   Lenny's Newsletter:  This week on How I AI: How Stripe built minionsAI -> 1 stories extracted
+[2026-03-31 12:15:07]   Lenny's Newsletter: From skeptic to true believer: How OpenClaw change -> 6 stories extracted
+[2026-03-31 12:15:07]   Social Growth Engineers: One TikTok Formula, 115 Million Views -> 43 stories extracted
+[2026-03-31 12:15:07]   What's Up in AI: anthropic's secret weapon revealed -> 7 stories extracted
+[2026-03-31 12:15:07]   Marc Lou: An OpenClaw tool just grew 3606% overnight -> 0 stories extracted
+[2026-03-31 12:15:07] Analyzing 52 total stories with LLM...
+[2026-03-31 12:15:55] LLM analysis: 52 stories -> 14 kept
+[2026-03-31 12:15:55] Mining newsletters for nuggets (new emails only)...
+[2026-03-31 12:16:23] Extracted 12 nuggets from newsletters
+[2026-03-31 12:16:23] Marked 7 emails as nugget-mined
+[2026-03-31 12:16:23] Saved 7 emails, 6 stories, 12 nuggets | Skipped: 0 blacklisted
+[2026-03-31 12:15:01] Newsletter Monitor v3 starting...
+[2026-03-31 12:15:07] Fetched 10 unique newsletter emails across 19 queries
+[2026-03-31 12:15:07]   The Rundown AI:  OpenAI's $1B Disney blindside -> 3 stories extracted
+[2026-03-31 12:15:07]   The Rundown AI:  Anthropic's secret 'Mythos' model -> 3 stories extracted
+[2026-03-31 12:15:07]   Unwind AI: Sandboxing AI Agents, 100x Faster -> 9 stories extracted
+[2026-03-31 12:15:07]   AI For Work: Anthropic is growing faster than ever. OpenAI is s -> 2 stories extracted
+[2026-03-31 12:15:07]   Snack Prompt:  Anthropic Leaked WHAT?!   -> 6 stories extracted
+[2026-03-31 12:15:07]   Lenny's Newsletter:  This week on How I AI: How Stripe built minionsAI -> 1 stories extracted
+[2026-03-31 12:15:07]   Lenny's Newsletter: From skeptic to true believer: How OpenClaw change -> 6 stories extracted
+[2026-03-31 12:15:07]   Social Growth Engineers: One TikTok Formula, 115 Million Views -> 43 stories extracted
+[2026-03-31 12:15:07]   What's Up in AI: anthropic's secret weapon revealed -> 7 stories extracted
+[2026-03-31 12:15:07]   Marc Lou: An OpenClaw tool just grew 3606% overnight -> 0 stories extracted
+[2026-03-31 12:15:07] Analyzing 52 total stories with LLM...
+[2026-03-31 12:15:55] LLM analysis: 52 stories -> 14 kept
+[2026-03-31 12:15:55] Mining newsletters for nuggets (new emails only)...
+[2026-03-31 12:16:23] Extracted 12 nuggets from newsletters
+[2026-03-31 12:16:23] Marked 7 emails as nugget-mined
+[2026-03-31 12:16:23] Saved 7 emails, 6 stories, 12 nuggets | Skipped: 0 blacklisted
+
+======================================================================
+TOP STORIES (14)
+======================================================================
+
+[84] Voxtral TTS: Clone any voice in 9 languages, at 3x industry speed
+    Source: Unwind AI
+    Voxtral TTS offers voice cloning in 9 languages at 3x speed — a genuinely accessible new tool creators and builders can use right now.
+    https://console.mistral.ai/build/audio/text-to-speech
+
+[81] How I Built an Autonomous AI Agent Team That Runs 24/7
+    Source: Unwind AI
+    Step-by-step guide to building an autonomous AI agent team that runs 24/7 — exactly the kind of tutorial Ben's audience wants to replicate.
+    https://www.theunwindai.com/p/how-i-built-an-autonomous-ai-agent-team-that-runs-24-7
+
+[76] Anthropic accidentally leaks ‘Mythos’ AI details
+    Source: The Rundown AI
+    Leaked details on Anthropic's next flagship model Claude Mythos teases a 'step change' in capabilities — big news for anyone building with Claude.
+    https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities/
+
+[70] Invoke Studio
+    Source: Snack Prompt
+    Notion MCP lets anyone plug Claude directly into their Notion workspace to query docs and automate workflows — a zero-code-friendly AI integration that Ben's audience will actually use.
+    https://www.producthunt.com/products/invoke-studio
+
+[65] nick vasilescu
+    Source: Unwind AI
+    The claim that a well-organized Obsidian vault accelerates personal AGI is a provocative, discussion-sparking idea for non-technical builders.
+    https://x.com/nickvasiles/status/2038136699511844951
+
+[63] save you 10+ hours each week
+    Source: What's Up in AI
+    AI agents already driving 10+ hours of weekly time savings is a compelling hook for Ben to discuss why now is the time to start building and automating.
+    https://finance.yahoo.com/sectors/technology/articles/ai-agents-already-driving-10-133000562.html
+
+[62] Sandboxing AI agents, 100x faster
+    Source: Unwind AI
+    Cloudflare's Dynamic Workers enabling disposable sandboxes for AI agents at massive scale — accessible framing of an infrastructure shift affecting all AI app builders.
+    https://blog.cloudflare.com/dynamic-workers/
+
+[60] 2026 state of agentic integrations report.
+    Source: AI For Work
+    2026 state of agentic integrations report offers data-backed insights on how AI agents are being adopted — good source material for Ben to contextualize trends for his audience.
+    https://www.merge.dev/soai-2026
+
+[60] Local document parsing for AI Agents
+    Source: Unwind AI
+    LiteParse open-sources local PDF/doc parsing for AI agents — a practical tool for builders who want to feed documents into their AI workflows.
+    https://www.llamaindex.ai/blog/liteparse-local-document-parsing-for-ai-agents
+
+[58] Use it to:
+    Source: Snack Prompt
+    Retro logo mascot prompt is a fun, instantly usable creative example that demonstrates what's possible with prompting — great low-barrier content for Ben's non-technical audience.
+    https://snackprompt.com/e/prompt/very-cute-retro-logo-art-rDPpuNIH1
+
+[55] Open-Weight Agentic Search Model by Chroma
+    Source: Unwind AI
+    Chroma's open-weight agentic search model is a notable launch from a popular dev tool team — signals that the search+agent space is maturing and opening up to everyday builders.
+    https://www.trychroma.com/research/context-1
+
+[55] Awesome LLM Apps
+    Source: Unwind AI
+    Awesome LLM Apps repo showcases creative AI agent projects including multi-agent terminal collaboration — good inspiration content for Ben's audience.
+    https://github.com/Shubhamsaboo/awesome-llm-apps
+
+[52] Microsoft pits Claude against ChatGPT for research
+    Source: The Rundown AI
+    Microsoft's multi-model Copilot Researcher (Claude vs. ChatGPT side-by-side) is a useful signal that multi-agent, multi-model setups are going mainstream — good discussion fodder for Ben.
+    https://techcommunity.microsoft.com/blog/microsoft365copilotblog/introducing-multi-model-intelligence-in-researcher/4506011
+
+[51] The personal war behind OpenAI and Anthropic
+    Source: The Rundown AI
+    The Altman vs Amodei rivalry story could spark a hot take on how founder drama shapes the AI tools builders depend on.
+    https://www.wsj.com/tech/ai/the-decadelong-feud-shaping-the-future-of-ai-7075acde
+
+======================================================================
+NUGGETS (18)
+======================================================================
+
+  [how-to]
+    - Step-by-step guide on building a team of 6 autonomous AI agents that runs 24/7 — handling research, content drafting, code review, and newsletter prep while you sleep. -> https://www.theunwindai.com/p/how-i-built-an-autonomous-ai-agent-team-that-runs-24-7
+      (Unwind AI)
+
+  [tool]
+    - Perplexity Computer can now build travel itineraries end-to-end — a practical demo of agentic AI doing real-world research and planning tasks for everyday users.
+      (The Rundown AI)
+    - OpenAI released new Codex plugins targeting enterprise use cases, signaling a pivot from AI as novelty to AI as serious engineering utility inside company workflows.
+      (AI For Work)
+    - Cloudflare Dynamic Worker Loader is now in open beta, allowing you to spin up V8 isolate sandboxes on the fly for every user request — enabling safe execution of AI-generated code at scale (up to 1M requests/sec). -> https://blog.cloudflare.com/dynamic-workers/
+      (Unwind AI)
+    - Mistral now offers voice cloning in 9 languages, 3x faster than before, via their text-to-speech console. -> https://console.mistral.ai/build/audio/text-to-speech
+      (Unwind AI)
+    - Chroma released Context-1, an open-weight agentic search model designed for retrieval and context-building tasks. -> https://www.trychroma.com/research/context-1
+      (Unwind AI)
+    - smux lets Claude Code and OpenAI Codex communicate with each other, enabling multi-agent coding workflows across different AI systems. -> https://github.com/ShawnPana/smux/
+      (Unwind AI)
+    - Agent-Reach is a free CLI tool that lets AI agents read and pull content from X, Reddit, YouTube, and GitHub without any API costs. -> https://github.com/Panniantong/Agent-Reach
+      (Unwind AI)
+
+  [funding]
+    - Blessed reached $60K MRR in just 365 days by partnering with viral faith creators for distribution — a case study in using influencer-led growth to scale a niche app fast. -> https://www.socialgrowthengineers.com/365-days-many-prayers-later-blessed-hits-60k-mrr[2026-03-31 12:16:23] Done
+
+      (Social Growth Engineers)
+
+  [tip]
+    - TikTok creator Dolphin SAT nearly doubled engagement rate in 8 days by repeating one specific format: dramatic score-jump posts showing before/after results. Consistency in a single proven format beats variety for algorithmic growth. -> https://www.socialgrowthengineers.com/how-relatable-cycle-moments-became-a-tiktok-force
+      (Social Growth Engineers)
+    - StudyFetch drove 6.5M views in 30 days by copying a viral study format that already worked, then adding their own spin. A repeatable growth tactic: find proven formats in adjacent niches, remix them for your audience. -> https://www.socialgrowthengineers.com/they-copied-a-viral-study-format-and-turned-it-into-6-5m-views
+      (Social Growth Engineers)
+
+  [insight]
+    - Stripe's AI coding agents ('minions') ship ~1,300 pull requests per week, often triggered by a single Slack emoji reaction. The key insight: investments in developer experience (docs, CI/CD, tooling) directly improve AI agent success rates. -> https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-how-stripe
+      (Lenny's Newsletter)
+    - Stripe engineer Steve Kaliski hasn't opened a text editor in months — work begins in Slack threads, Google Docs, or support tickets. Lowering 'activation energy' between idea and code is now the real bottleneck, not coding speed. -> https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-how-stripe
+      (Lenny's Newsletter)
+    - Cloud development environments are non-negotiable for multi-threaded AI workflows — they let AI agents (and humans) work on multiple tasks in parallel without conflicts, a prerequisite for Stripe's high-volume PR output. -> https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-how-stripe
+      (Lenny's Newsletter)
+    - Stanford research exposes AI's 'people-pleasing problem' — models are trained to agree with users rather than give accurate answers, a concrete risk for anyone relying on AI for decisions or feedback.
+      (The Rundown AI)
+    - Claude's explosive growth has pushed uptime below 99% and introduced peak-hour usage pricing (surge pricing for chatbots). A signal that AI infrastructure is now a real bottleneck for teams depending on it.
+      (AI For Work)
+    - Anthropic's leaked 'Claude Mythos' (internal tier: Capybara) is described as a step above Opus in capability and price, with dramatic gains in coding, academic reasoning, and cybersecurity — and flagged as 'very expensive to serve.' -> https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities/
+      (Snack Prompt)
+    - An OpenClaw tool grew 3,606% overnight — a signal that open-source AI tooling can achieve viral distribution without marketing spend when it solves a sharp pain point for builders. -> https://unicorne.beehiiv.com/p/an-openclaw-tool-just-grew-3606-overnight
+      (Marc Lou)
+[2026-03-31 12:16:23] Done
