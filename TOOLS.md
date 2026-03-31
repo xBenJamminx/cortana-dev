@@ -130,3 +130,19 @@ Image count is DYNAMIC (based on script scenes) — never hardcode.
 
 **CRITICAL: Use spawn_task.sh for all heavy pipeline steps.** Never run inline.
 After spawning: tell Ben what you kicked off, then stay responsive.
+
+
+## Voice Messages (Incoming)
+
+When you receive a voice message, OpenClaw saves the audio file to `~/.openclaw/media/inbound/`. To read what the user said:
+
+```bash
+python3 skills/groq-stt/stt.py ~/.openclaw/media/inbound/<latest .ogg file>
+```
+
+Find the most recent `.ogg` file:
+```bash
+ls -t ~/.openclaw/media/inbound/*.ogg | head -1
+```
+
+**Rule:** Never say you cannot transcribe audio. Always transcribe incoming voice messages before responding.
