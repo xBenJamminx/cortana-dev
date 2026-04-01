@@ -1,70 +1,66 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [VibeTalent](https://www.producthunt.com/products/vibetalent)
+• [Qwen3.5-Omni](https://www.producthunt.com/products/qwen3)
   _<p>
-            Find vibe coders who actually ship
+            A native omni model for voice, video, and tools
           </p>
           <p>
-            <a href=_
+       _
 
-• [nCompass AI Assistant](https://www.producthunt.com/products/ncompass-tech)
+• [Solvea](https://www.producthunt.com/products/solvea)
   _<p>
-            Enabling everyone to write GPU kernels
+            Create your AI receptionist that answers, books, and sells
           </p>
-          <p>
-            <a h_
-
-• [dictate.](https://www.producthunt.com/products/dictate)
-  _<p>
-            Replace your iPhone keyboard with AI voice typing
-          </p>
-          <p>
-     _
-
-• [Letterbook](https://www.producthunt.com/products/letterbook)
-  _<p>
-            AI support platform built for founders
-          </p>
-          <p>
-            <a h_
-
-• [Streva](https://www.producthunt.com/products/streva)
-  _<p>
-            Instant Translation, Anywhere you type
-          </p>
-          <p>
-            <a h_
-
-• [Notion MCP](https://www.producthunt.com/products/notion-mcp)
-  _<p>
-            Your Notion workspace, inside every AI agent
-          </p>
-          <p>
           _
 
-• [Invoke](https://www.producthunt.com/products/invoke-studio)
+• [Pixero AI](https://www.producthunt.com/products/pixero-ai-2)
   _<p>
-            Agentic coding IDE with visual planning boards and canvas
-          </p>
-          <_
-
-• [FreeCAD 1.1](https://www.producthunt.com/products/freecad-2)
-  _<p>
-            Extremely powerful, completely free 3D CAD modeling
+            OpenClaw for AI Ads
           </p>
           <p>
-   _
+            <a href="https://www.pr_
 
-• [Goals](https://www.producthunt.com/products/goals)
+• [Computer Use in Claude Code](https://www.producthunt.com/products/claude)
   _<p>
-            AI turns your goal into one daily action.
+            Let Claude use your computer from the CLI
           </p>
           <p>
             <_
 
-• [PopTask](https://www.producthunt.com/products/poptask-menu-bar-task-manager)
+• [Dictura](https://www.producthunt.com/products/dictura)
   _<p>
-            Light menu bar task manager for quickly capturing tasks
+            Hold a key, speak, release- translated text at your cursor
+          </p>
+          _
+
+• [Metabase Data Studio](https://www.producthunt.com/products/metabase)
+  _<p>
+            Build the semantic layer that makes AI analytics trustworthy
+          </p>
+        _
+
+• [Google Ads MCP Server](https://www.producthunt.com/products/google-ads-mcp-server)
+  _<p>
+            Run Google Ads from your choice of AI. Skip the UI maze
           </p>
           <p>_
+
+• [Arlopass](https://www.producthunt.com/products/arlopass)
+  _<p>
+            AI wallet that lets web apps use your models, not your keys
+          </p>
+         _
+
+• [Viktor for Media Buyers](https://www.producthunt.com/products/viktor)
+  _<p>
+            Manages your Meta and Google Ads from Slack
+          </p>
+          <p>
+           _
+
+• [Stamp](https://www.producthunt.com/products/stamp-4)
+  _<p>
+            The AI Secretary that thinks, writes, and works like you
+          </p>
+          <p_
 

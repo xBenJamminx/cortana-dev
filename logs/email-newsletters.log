@@ -18246,3 +18246,26 @@ NUGGETS (28)
     - An OpenClaw tool grew 3,606% overnight — a signal that open-source AI tooling can achieve viral distribution without marketing spend when it solves a sharp pain point for builders. -> https://unicorne.beehiiv.com/p/an-openclaw-tool-just-grew-3606-overnight
       (Marc Lou)
 [2026-04-01 12:16:48] Done
+[2026-04-01 13:00:11] Newsletter Monitor v3 starting...
+[2026-04-01 13:00:19] Fetched 14 unique newsletter emails across 19 queries
+[2026-04-01 13:00:19]   The Rundown AI:  OpenAIs new 'superapp' roadmap -> 4 stories extracted
+[2026-04-01 13:00:19]   The Rundown AI:  OpenAI's $1B Disney blindside -> 3 stories extracted
+[2026-04-01 13:00:19]   Unwind AI: Anthropic Accidentally Leaked Claude Code's Entire -> 8 stories extracted
+[2026-04-01 13:00:19]   AI For Work: 15% of Americans would rather report to a robot -> 22 stories extracted
+[2026-04-01 13:00:19]   AI For Work: Anthropic is growing faster than ever. OpenAI is s -> 2 stories extracted
+[2026-04-01 13:00:19]   Snack Prompt:  125,000 People Did WHAT?  -> 5 stories extracted
+[2026-04-01 13:00:19]   Snack Prompt:  Anthropic Leaked WHAT?!   -> 6 stories extracted
+[2026-04-01 13:00:19]   Lenny's Newsletter: OpenClaw: The complete guide to building, training -> 89 stories extracted
+[2026-04-01 13:00:19]   Lenny's Newsletter:  This week on How I AI: How Stripe built minionsAI -> 1 stories extracted
+[2026-04-01 13:00:19]   What's Up in AI: robots are cooking means now?  -> 5 stories extracted
+[2026-04-01 13:00:19]   Social Growth Engineers: The Trend Radar: 99.1M Views -> 3 stories extracted
+[2026-04-01 13:00:19]   TinyLaunch: TinyLog: TinyShots Made $1K in Its First Week. Her -> 7 stories extracted
+[2026-04-01 13:00:19]   Level Up Newsletter: What Makes a Senior Manager Stand Out -> 12 stories extracted
+[2026-04-01 13:00:19]   Social Growth Engineers: One TikTok Formula, 115 Million Views -> 43 stories extracted
+[2026-04-01 13:00:19] Analyzing 101 total stories with LLM...
+[2026-04-01 13:01:08] LLM analysis: 101 stories -> 14 kept
+[2026-04-01 13:01:08] Mining newsletters for nuggets (new emails only)...
+[2026-04-01 13:01:26] Extracted 6 nuggets from newsletters
+[2026-04-01 13:01:26] Marked 1 emails as nugget-mined
+[2026-04-01 13:01:26] Saved 1 emails, 4 stories, 6 nuggets | Skipped: 0 blacklisted
+[2026-04-01 13:01:26] Done

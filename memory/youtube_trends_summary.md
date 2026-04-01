@@ -1,5 +1,11 @@
 📺 YouTube - Latest from AI/Creator Channels
 
+• [How to effortlessly read 50 books a year](https://www.youtube.com/shorts/hA7_WVO1lWo)
+  _Ali Abdaal_
+
+• [Millions of JS devs just got penetrated by a RAT…](https://www.youtube.com/watch?v=o7NYXvYohYk)
+  _Fireship_
+
 • [The Strategic Imbalance Paradox](https://www.youtube.com/shorts/6iIBRvdJfgk)
   _Ali Abdaal_
 
@@ -16,17 +22,5 @@
   _Matt Wolfe_
 
 • [The biggest barriers to AI scaling laws - NVIDIA CEO explains | Jensen Huang and Lex Fridman](https://www.youtube.com/watch?v=Mf2u2b1bogE)
-  _Matt Wolfe_
-
-• [The Side Hustle Trilemma](https://www.youtube.com/shorts/8ZgsTp7ezwQ)
-  _Ali Abdaal_
-
-• [Greatest game of all time - according to NVIDIA CEO | Jensen Huang and Lex Fridman](https://www.youtube.com/watch?v=B_iAd54w6Cs)
-  _Matt Wolfe_
-
-• [How NVIDIA almost went bankrupt: The big CUDA bet | Jensen Huang and Lex Fridman](https://www.youtube.com/watch?v=ZUSPpDBEfmQ)
-  _Matt Wolfe_
-
-• [NVIDIA CEO on Elon Musk, xAI, Colossus supercomputer and systems engineering | Jensen Huang](https://www.youtube.com/watch?v=5XgpESmjBqE)
   _Matt Wolfe_
 
