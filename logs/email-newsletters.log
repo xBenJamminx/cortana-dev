@@ -18269,3 +18269,185 @@ NUGGETS (28)
 [2026-04-01 13:01:26] Marked 1 emails as nugget-mined
 [2026-04-01 13:01:26] Saved 1 emails, 4 stories, 6 nuggets | Skipped: 0 blacklisted
 [2026-04-01 13:01:26] Done
+[2026-04-02 12:15:01] Newsletter Monitor v3 starting...
+[2026-04-02 12:15:08] Fetched 14 unique newsletter emails across 19 queries
+[2026-04-02 12:15:08]   The Rundown AI:  Dorsey makes the AI case against managers -> 25 stories extracted
+[2026-04-02 12:15:08]   The Rundown AI:  OpenAIs new 'superapp' roadmap -> 4 stories extracted
+[2026-04-02 12:15:08]   Unwind AI: Anthropic Accidentally Leaked Claude Code's Entire -> 8 stories extracted
+[2026-04-02 12:15:08]   AI For Work: Slack's new AI features -> 19 stories extracted
+[2026-04-02 12:15:08]   AI For Work: 15% of Americans would rather report to a robot -> 22 stories extracted
+[2026-04-02 12:15:08]   Snack Prompt:  Apple Just Won the AI War  -> 6 stories extracted
+[2026-04-02 12:15:08]   Snack Prompt:  125,000 People Did WHAT?  -> 5 stories extracted
+[2026-04-02 12:15:08]   Hypefury:  From 0 to 300,000 Followers in 2 Years -> 32 stories extracted
+[2026-04-02 12:15:08]   Lenny's Newsletter: How to Navigate Org Drama -> 0 stories extracted
+[2026-04-02 12:15:08]   Lenny's Newsletter: OpenClaw: The complete guide to building, training -> 89 stories extracted
+[2026-04-02 12:15:08]   What's Up in AI: robots are cooking means now?  -> 5 stories extracted
+[2026-04-02 12:15:08]   TinyLaunch: TinyLog: TinyShots Made $1K in Its First Week. Her -> 7 stories extracted
+[2026-04-02 12:15:08]   Level Up Newsletter: What Makes a Senior Manager Stand Out -> 12 stories extracted
+[2026-04-02 12:15:08]   Social Growth Engineers: The Trend Radar: 99.1M Views -> 3 stories extracted
+[2026-04-02 12:15:08] Analyzing 125 total stories with LLM...
+[2026-04-02 12:16:00] LLM analysis: 125 stories -> 17 kept
+[2026-04-02 12:16:00] Mining newsletters for nuggets (new emails only)...
+[2026-04-02 12:16:33] Extracted 9 nuggets from newsletters
+[2026-04-02 12:16:33] Marked 5 emails as nugget-mined
+[2026-04-02 12:16:33] Saved 5 emails, 6 stories, 9 nuggets | Skipped: 0 blacklisted
+[2026-04-02 12:15:01] Newsletter Monitor v3 starting...
+[2026-04-02 12:15:08] Fetched 14 unique newsletter emails across 19 queries
+[2026-04-02 12:15:08]   The Rundown AI:  Dorsey makes the AI case against managers -> 25 stories extracted
+[2026-04-02 12:15:08]   The Rundown AI:  OpenAIs new 'superapp' roadmap -> 4 stories extracted
+[2026-04-02 12:15:08]   Unwind AI: Anthropic Accidentally Leaked Claude Code's Entire -> 8 stories extracted
+[2026-04-02 12:15:08]   AI For Work: Slack's new AI features -> 19 stories extracted
+[2026-04-02 12:15:08]   AI For Work: 15% of Americans would rather report to a robot -> 22 stories extracted
+[2026-04-02 12:15:08]   Snack Prompt:  Apple Just Won the AI War  -> 6 stories extracted
+[2026-04-02 12:15:08]   Snack Prompt:  125,000 People Did WHAT?  -> 5 stories extracted
+[2026-04-02 12:15:08]   Hypefury:  From 0 to 300,000 Followers in 2 Years -> 32 stories extracted
+[2026-04-02 12:15:08]   Lenny's Newsletter: How to Navigate Org Drama -> 0 stories extracted
+[2026-04-02 12:15:08]   Lenny's Newsletter: OpenClaw: The complete guide to building, training -> 89 stories extracted
+[2026-04-02 12:15:08]   What's Up in AI: robots are cooking means now?  -> 5 stories extracted
+[2026-04-02 12:15:08]   TinyLaunch: TinyLog: TinyShots Made $1K in Its First Week. Her -> 7 stories extracted
+[2026-04-02 12:15:08]   Level Up Newsletter: What Makes a Senior Manager Stand Out -> 12 stories extracted
+[2026-04-02 12:15:08]   Social Growth Engineers: The Trend Radar: 99.1M Views -> 3 stories extracted
+[2026-04-02 12:15:08] Analyzing 125 total stories with LLM...
+[2026-04-02 12:16:00] LLM analysis: 125 stories -> 17 kept
+[2026-04-02 12:16:00] Mining newsletters for nuggets (new emails only)...
+[2026-04-02 12:16:33] Extracted 9 nuggets from newsletters
+[2026-04-02 12:16:33] Marked 5 emails as nugget-mined
+[2026-04-02 12:16:33] Saved 5 emails, 6 stories, 9 nuggets | Skipped: 0 blacklisted
+
+======================================================================
+TOP STORIES (15)
+======================================================================
+
+[86] How I Built an Autonomous AI Agent Team That Runs 24/7
+    Source: Unwind AI
+    Tutorial on building a self-running 24/7 AI agent team — highly actionable and aspirational for everyday builders wanting to automate their work.
+    https://www.theunwindai.com/p/how-i-built-an-autonomous-ai-agent-team-that-runs-24-7
+
+[81] Universal CLAUDE.md
+    Source: Unwind AI
+    Universal CLAUDE.md drop-in file that makes Claude Code faster and less verbose — an instantly usable tip for anyone vibe-coding with Claude.
+    https://github.com/drona23/claude-token-efficient
+
+[80] Build a productivity tool with Replit
+    Source: The Rundown AI
+    Direct tutorial on building a productivity tool with Replit — exactly the kind of step-by-step vibe coding content Ben's non-technical audience needs.
+
+[80] [MULTI-SOURCE] Claude Code&39;s source code leaks to the world
+    Source: The Rundown AI, Snack Prompt
+    Anthropic accidentally leaked Claude Code's source code including unreleased features — great discussion hook about what's coming for AI coding tools that Ben's builders use daily.
+    https://x.com/Fried_rice/status/2038894956459290963
+
+[73] Anthropic
+    Source: Snack Prompt
+    Rumors of a new Claude 'Mythos/Capybara' model tier spark excitement and speculation among builders who rely on Claude for vibecoding projects.
+    https://attio.com
+
+[72] Mistral Vibe: Kick off tasks, let agents handle execution
+    Source: Unwind AI
+    Mistral Vibe lets you kick off tasks and let agents run them autonomously from the terminal — a new agentic coding tool worth covering for builders.
+    https://console.mistral.ai/codestral/cli
+
+[68] Block ditches managers for AI
+    Source: The Rundown AI
+    Block is replacing managers with AI agents entirely — strong hot take angle about AI changing work structures that everyday builders will relate to.
+    https://block.xyz/inside/from-hierarchy-to-intelligence
+
+[68] TinyShots Made $1K in Its First Week. Here’s How.
+    Source: TinyLaunch
+    Real indie creator made $1K in first week using tiered urgency pricing for a Mac app — tactical creator economy story with a replicable playbook.
+    https://link.sbstck.com/redirect/a03226c4-fa63-4858-ad8f-668176416eb2
+
+[67] Ollama MLX: Run 35B Models at 1,851 Tokens/Sec on Your MacBook
+    Source: Unwind AI
+    Ollama now runs 35B models at 1,851 tokens/sec on a MacBook M5 — local AI just got dramatically more powerful and accessible for everyday builders.
+    https://ollama.com/blog/mlx
+
+[66] EU Data Breach Drama: 350GB Stolen by ShinyHunters
+    Source: Snack Prompt
+    Claude can now control your computer and complete multi-step tasks across apps — a major capability upgrade that non-technical builders will want to understand and use.
+    https://techcrunch.com/2026/03/27/european-commission-confirms-cyberattack-after-hackers-claim-data-breach/
+
+[65] Stanford exposes AI&39;s people-pleasing problem
+    Source: The Rundown AI
+    Stanford study showing AI always takes your side (even for bad decisions) is a juicy hot-take topic that challenges how Ben's audience thinks about trusting AI output.
+    https://www.science.org/doi/10.1126/science.aec8352
+
+[63] [MULTI-SOURCE] Poll: AI use jumps as American trust, optimism sink
+    Source: The Rundown AI, AI For Work
+    AI usage up 14% but 76% still don't trust it — a tension-filled stat that makes great newsletter framing for why Ben's mission to teach non-technical people matters.
+    https://poll.qu.edu/poll-release
+
+[62] Users with apps like
+    Source: Snack Prompt
+    Apple is building an Extensions system for iOS 27 letting third-party AI chatbots plug into Siri — big signal for app builders about where the mobile AI ecosystem is going.
+
+[62] [MULTI-SOURCE] Inside Sora&39;s $1M-a-day collapse at OpenAI
+    Source: The Rundown AI, Snack Prompt
+    OpenAI's Sora burned $1M/day, blindsided Disney, and collapsed — compelling cautionary tale about hype vs reality that sparks good discussion about AI product bets.
+    https://www.wsj.com/tech/ai/the-sudden-fall-of-openais-most-hyped-product-since-chatgpt-64c730c9
+
+[58] ## **Zero Followers at 35. Two Years Later: 300,000.
+    Source: Hypefury
+    Zero followers at 35 to 700K story with actionable lessons about unique POV and avoiding algorithm chasing — strong creator economy content relevant to builders growing an audience.
+
+======================================================================
+NUGGETS (23)
+======================================================================
+
+  [how-to]
+    - Step-by-step guide on building an autonomous AI agent team of 6 agents that handles research, content drafting, code review, and newsletter prep around the clock — real production setup, not a demo. -> https://www.theunwindai.com/p/how-i-built-an-autonomous-ai-agent-team-that-runs-24-7
+      (Unwind AI)
+
+  [tool]
+    - Slack is upgrading its Slackbot AI to handle meeting notes, desktop actions, and deeper integrations with third-party tools — positioning Slack as a central AI workspace hub.
+      (AI For Work)
+    - Apple is building an 'Extensions' system for iOS/iPadOS/macOS 27 (announced at WWDC June 8) that lets Claude, Gemini, Grok, and other AI apps integrate directly with Siri — ending OpenAI's exclusive position. -> https://9to5mac.com/2026/03/26/ios-27-apple-will-reportedly-let-claude-and-other-ai-chatbot-apps-integrate-with-siri/
+      (Snack Prompt)
+    - Mistral Vibe is a new CLI tool that lets you kick off tasks and hand execution off to agents — similar concept to vibe coding but for agentic task delegation. -> https://console.mistral.ai/codestral/cli
+      (Unwind AI)
+    - Ollama now ships an MLX backend, enabling you to run 35B parameter models locally on Apple Silicon with significantly improved performance. -> https://ollama.com/blog/mlx
+      (Unwind AI)
+[2026-04-02 12:16:33] Done
+    - TwelveLabs encodes video modalities (speech, visuals, motion) separately for more accurate search — queries route to the right signal, so accuracy holds at scale. Free playground available. -> https://playground.twelvelabs.io/
+      (AI For Work)
+    - Rork Companion lets you install and test up to 3 iOS apps directly on your iPhone with no Apple Developer account ($99/yr) and no Xcode setup required — dramatically lowers the barrier for indie app builders. -> https://rork.com/
+      (Social Growth Engineers)
+
+  [funding]
+    - OpenAI raised $122B in a new funding round — the newsletter teases details the official blog post doesn't cover, worth digging into for business/market context. -> https://x.com/unwind_ai_/status/2039173145966621135
+      (Unwind AI)
+    - OpenAI closed $122B in funding at an $852B valuation — the largest single venture fundraise in history. Revenue hit $2B/month, 4x the growth pace of Alphabet and Meta at the same stage. -> https://openai.com/index/accelerating-the-next-phase-ai/
+      (The Rundown AI)
+
+  [tip]
+    - For content research, skip articles and go straight to Reddit comments: sort a relevant subreddit by trending, skip the post, read the comments. Experts who never blog leave first-hand knowledge there, and upvotes pre-filter for quality. One thread can generate 10+ content ideas.
+      (Hypefury)
+    - Don't lock yourself into a narrow niche. Pick a broad topic and personalize it with the point of view only your specific background can produce — that's what makes content original vs. forgettable.
+      (Hypefury)
+    - The Axios npm package was compromised with a remote access trojan — a timely reminder to audit your dependencies and pin versions, especially for widely-used packages in AI pipelines. -> https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan
+      (Unwind AI)
+    - Use a tiered early-bird pricing strategy for digital product launches: set limited spots at each price tier ($9→$19→$29→$39). Scarcity drives urgency, and selling out early tiers creates social proof that carries momentum to higher price points. -> https://tinylog.substack.com/p/tinylog-tinyshots-made-1k-in-its
+      (TinyLaunch)
+
+  [insight]
+    - OpenAI and Anthropic's next models are expected to push AI agents into a significantly more powerful phase, bringing both major productivity gains and new cybersecurity risks.
+      (AI For Work)
+    - Mercor, a $10B AI recruiting startup, was breached via a supply chain attack on the open-source LiteLLM library — a wake-up call that widely used AI infrastructure libraries are high-value attack targets.
+      (AI For Work)
+    - Apple is inserting itself as a distribution layer between 1 billion iPhone users and every AI app — it doesn't need to win the AI race, just collect rent on the last mile via App Store integrations.
+      (Snack Prompt)
+    - Google is cutting Veo (AI video) prices as OpenAI pulls back from Sora and redirects compute — a signal that AI video is heating up as a cost-competitive space.
+      (AI For Work)
+    - Jack Dorsey's thesis: AI can replace the coordination role of middle management entirely, making flat teams faster than any traditional org chart. Block cut 40%+ of staff as the opening move in this restructure. -> https://block.xyz/inside/from-hierarchy-to-intelligence
+      (The Rundown AI)
+    - Anthropic built a dedicated 'Undercover Mode' subsystem inside Claude Code specifically to prevent the AI from leaking internal secrets — yet the entire 512,000-line source was exposed via a .map file left in the npm package, a cautionary tale about supply chain hygiene. -> https://x.com/Fried_rice/status/2038894956459290963
+      (Unwind AI)
+    - OpenAI's enterprise segment already accounts for 40%+ of revenue and is on track to match consumer revenue by year-end — signaling that B2B AI adoption is accelerating faster than consumer.
+      (The Rundown AI)
+    - 55% of Americans believe AI does more harm than good, up 11% year-over-year (Quinnipiac poll of 1,400 people) — a growing trust gap despite rising AI usage.
+      (AI For Work)
+    - Bluesky's AI feed-curation bot 'Attie' got 125,000 blocks vs. 1,500 followers in under 72 hours — a sharp lesson that AI features built *at* users (uninvited) fail, while features built *for* users (opt-in) succeed. -> https://techcrunch.com/2026/03/30/blueskys-new-ai-tool-attie-is-already-the-most-blocked-account-other-than-j-d-vance/
+      (Snack Prompt)
+    - Ring (Amazon) is launching a third-party app store on top of its 100M+ installed cameras, opening a new platform for AI developers to build computer vision products on existing hardware.
+      (AI For Work)
+[2026-04-02 12:16:33] Done
