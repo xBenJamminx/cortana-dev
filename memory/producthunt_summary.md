@@ -1,66 +1,69 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [Qwen3.5-Omni](https://www.producthunt.com/products/qwen3)
+• [traceAI](https://www.producthunt.com/products/future-agi)
   _<p>
-            A native omni model for voice, video, and tools
+            Open-source LLM tracing that speaks GenAI, not HTTP.
           </p>
           <p>
-       _
+  _
 
-• [Solvea](https://www.producthunt.com/products/solvea)
+• [Elephant Folio](https://www.producthunt.com/products/elephant-folio)
   _<p>
-            Create your AI receptionist that answers, books, and sells
-          </p>
-          _
-
-• [Pixero AI](https://www.producthunt.com/products/pixero-ai-2)
-  _<p>
-            OpenClaw for AI Ads
+            The PDF Library that automatically organizes itself
           </p>
           <p>
-            <a href="https://www.pr_
+   _
 
-• [Computer Use in Claude Code](https://www.producthunt.com/products/claude)
+• [Ollama v0.19](https://www.producthunt.com/products/ollama)
   _<p>
-            Let Claude use your computer from the CLI
+            Massive local model speedup on Apple Silicon with MLX
           </p>
           <p>
-            <_
+ _
 
-• [Dictura](https://www.producthunt.com/products/dictura)
+• [ClawMetry for NVIDIA NemoClaw](https://www.producthunt.com/products/clawmetry)
   _<p>
-            Hold a key, speak, release- translated text at your cursor
+            Know what's happening inside your NemoClaw sandboxes
           </p>
-          _
+          <p>
+  _
 
-• [Metabase Data Studio](https://www.producthunt.com/products/metabase)
+• [The White House](https://www.producthunt.com/products/the-white-house)
   _<p>
-            Build the semantic layer that makes AI analytics trustworthy
+            Get direct, unfiltered access to the People's House
           </p>
-        _
+          <p>
+   _
 
-• [Google Ads MCP Server](https://www.producthunt.com/products/google-ads-mcp-server)
+• [Noiz Easter Voice](https://www.producthunt.com/products/noiz-studio)
   _<p>
-            Run Google Ads from your choice of AI. Skip the UI maze
-          </p>
-          <p>_
-
-• [Arlopass](https://www.producthunt.com/products/arlopass)
-  _<p>
-            AI wallet that lets web apps use your models, not your keys
-          </p>
-         _
-
-• [Viktor for Media Buyers](https://www.producthunt.com/products/viktor)
-  _<p>
-            Manages your Meta and Google Ads from Slack
+            Crack an Easter egg to generate an AI voice
           </p>
           <p>
            _
 
-• [Stamp](https://www.producthunt.com/products/stamp-4)
+• [zero](https://www.producthunt.com/products/zero-deploy-apps-to-your-own-server)
   _<p>
-            The AI Secretary that thinks, writes, and works like you
+            One command to deploy Docker containers to your own server
+          </p>
+          _
+
+• [Claudoscope](https://www.producthunt.com/products/claudoscope)
+  _<p>
+            Browse, search & track costs across Claude Code sessions
           </p>
           <p_
+
+• [Prospecting by Clarify](https://www.producthunt.com/products/clarify-6)
+  _<p>
+            Source leads, send outbound, grow pipeline. All in your CRM.
+          </p>
+        _
+
+• [Google Veo 3.1 Lite](https://www.producthunt.com/products/google-pay-2)
+  _<p>
+            Google's most cost-effective video generation model
+          </p>
+          <p>
+   _
 

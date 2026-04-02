@@ -18451,3 +18451,26 @@ NUGGETS (23)
     - Ring (Amazon) is launching a third-party app store on top of its 100M+ installed cameras, opening a new platform for AI developers to build computer vision products on existing hardware.
       (AI For Work)
 [2026-04-02 12:16:33] Done
+[2026-04-02 13:00:09] Newsletter Monitor v3 starting...
+[2026-04-02 13:00:16] Fetched 14 unique newsletter emails across 19 queries
+[2026-04-02 13:00:16]   The Rundown AI:  Dorsey makes the AI case against managers -> 25 stories extracted
+[2026-04-02 13:00:16]   The Rundown AI:  OpenAIs new 'superapp' roadmap -> 4 stories extracted
+[2026-04-02 13:00:16]   Unwind AI: Anthropic Accidentally Leaked Claude Code's Entire -> 8 stories extracted
+[2026-04-02 13:00:16]   AI For Work: Slack's new AI features -> 19 stories extracted
+[2026-04-02 13:00:16]   AI For Work: 15% of Americans would rather report to a robot -> 22 stories extracted
+[2026-04-02 13:00:16]   Snack Prompt:  Apple Just Won the AI War  -> 6 stories extracted
+[2026-04-02 13:00:16]   Snack Prompt:  125,000 People Did WHAT?  -> 5 stories extracted
+[2026-04-02 13:00:16]   Hypefury:  From 0 to 300,000 Followers in 2 Years -> 32 stories extracted
+[2026-04-02 13:00:16]   Lenny's Newsletter: An AI state of the union: Weve passed the inflecti -> 7 stories extracted
+[2026-04-02 13:00:16]   Lenny's Newsletter: How to Navigate Org Drama -> 0 stories extracted
+[2026-04-02 13:00:16]   Tyler from beehiiv:  Podcasts -> 2 stories extracted
+[2026-04-02 13:00:16]   Level Up Newsletter: 15 Insider Negotiating Secrets for Higher Compensa -> 27 stories extracted
+[2026-04-02 13:00:16]   TinyLaunch: TinyLog: TinyShots Made $1K in Its First Week. Her -> 7 stories extracted
+[2026-04-02 13:00:16]   Social Growth Engineers: The Trend Radar: 99.1M Views -> 3 stories extracted
+[2026-04-02 13:00:16] Analyzing 117 total stories with LLM...
+[2026-04-02 13:01:14] LLM analysis: 117 stories -> 18 kept
+[2026-04-02 13:01:14] Mining newsletters for nuggets (new emails only)...
+[2026-04-02 13:01:36] Extracted 7 nuggets from newsletters
+[2026-04-02 13:01:36] Marked 3 emails as nugget-mined
+[2026-04-02 13:01:36] Saved 3 emails, 3 stories, 7 nuggets | Skipped: 0 blacklisted
+[2026-04-02 13:01:36] Done
