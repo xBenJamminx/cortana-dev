@@ -1,69 +1,69 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [traceAI](https://www.producthunt.com/products/future-agi)
+• [DemoVeil](https://www.producthunt.com/products/demoveil)
   _<p>
-            Open-source LLM tracing that speaks GenAI, not HTTP.
+            Prepare your Mac screen for calls, demos, and captures
           </p>
           <p>
-  _
+_
 
-• [Elephant Folio](https://www.producthunt.com/products/elephant-folio)
+• [Flowith Canvas](https://www.producthunt.com/products/flowith)
   _<p>
-            The PDF Library that automatically organizes itself
+            A new way to interact with AI beyond traditional chats
           </p>
           <p>
-   _
+_
 
-• [Ollama v0.19](https://www.producthunt.com/products/ollama)
+• [OpenYak](https://www.producthunt.com/products/openyak)
   _<p>
-            Massive local model speedup on Apple Silicon with MLX
+            The open-source Claude Desktop with any model you want
           </p>
           <p>
- _
+_
 
-• [ClawMetry for NVIDIA NemoClaw](https://www.producthunt.com/products/clawmetry)
+• [GLM-5V-Turbo](https://www.producthunt.com/products/z-ai)
   _<p>
-            Know what's happening inside your NemoClaw sandboxes
+            Vision-to-code foundation model for real GUI automation
+          </p>
+          <p>_
+
+• [Lightning V3](https://www.producthunt.com/products/smallest-ai)
+  _<p>
+            Text-to-Speech built for Voice Agents
           </p>
           <p>
-  _
+            <a hr_
 
-• [The White House](https://www.producthunt.com/products/the-white-house)
+• [Mngr](https://www.producthunt.com/products/imbue-7)
   _<p>
-            Get direct, unfiltered access to the People's House
+            Run 100s of Claude agents in parallel
           </p>
           <p>
-   _
+            <a hr_
 
-• [Noiz Easter Voice](https://www.producthunt.com/products/noiz-studio)
+• [Denovo](https://www.producthunt.com/products/denovo)
   _<p>
-            Crack an Easter egg to generate an AI voice
+            Build and run your business while you sleep.
           </p>
           <p>
-           _
-
-• [zero](https://www.producthunt.com/products/zero-deploy-apps-to-your-own-server)
-  _<p>
-            One command to deploy Docker containers to your own server
-          </p>
           _
 
-• [Claudoscope](https://www.producthunt.com/products/claudoscope)
+• [Grok 4.2 Beta 2](https://www.producthunt.com/products/grok-4-2-beta-2)
   _<p>
-            Browse, search & track costs across Claude Code sessions
+            Real-time multi-agent AI that debates itself to find truth.
           </p>
-          <p_
+         _
 
-• [Prospecting by Clarify](https://www.producthunt.com/products/clarify-6)
+• [Syncly Social](https://www.producthunt.com/products/syncly)
   _<p>
-            Source leads, send outbound, grow pipeline. All in your CRM.
-          </p>
-        _
-
-• [Google Veo 3.1 Lite](https://www.producthunt.com/products/google-pay-2)
-  _<p>
-            Google's most cost-effective video generation model
+            Find creators by what's actually in their content
           </p>
           <p>
-   _
+     _
+
+• [Mac Pet](https://www.producthunt.com/products/mac-pet)
+  _<p>
+            A pixel pet for your menu bar or MacBook notch w/ Pomodoro 
+          </p>
+         _
 

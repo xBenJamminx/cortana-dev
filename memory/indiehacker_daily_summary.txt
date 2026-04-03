@@ -1,18 +1,17 @@
-🚀 Indie Hacker Monitor (2026-04-02 13:02)
+🚀 Indie Hacker Monitor (2026-04-03 13:01)
 
 🔥 Hot Topics:
-  • launch: 3 mentions
-  • side project: 2 mentions
-  • revenue: 1 mentions
+  • launch: 1 mentions
+  • maker: 1 mentions
 
 📈 Top Stories:
-  • [Hacker News] (1866⬆): Axios compromised on NPM – Malicious versions drop remote access trojan
-    https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan
-  • [Hacker News] (1240⬆): The Claude Code Source Leak: fake tools, frustration regexes, undercover mode
-    https://alex000kim.com/posts/2026-03-31-claude-code-source-leak/
+  • [Hacker News] (1790⬆): LinkedIn is searching your browser extensions
+    https://browsergate.eu/
+  • [Hacker News] (1572⬆): Google releases Gemma 4 open models
+    https://deepmind.google/models/gemma/gemma-4/
   • [Hacker News] (975⬆): Artemis II Launch Day Updates
     https://www.nasa.gov/blogs/missions/2026/04/01/live-artemis-ii-launch-day-updates/
-  • [Hacker News] (632⬆): Claude Code Unpacked : A visual guide
-    https://ccunpacked.dev/
+  • [Hacker News] (906⬆): Decisions that eroded trust in Azure – by a former Azure Core engineer
+    https://isolveproblems.substack.com/p/how-microsoft-vaporized-a-trillion
   • [Hacker News] (603⬆): EmDash – A spiritual successor to WordPress that solves plugin security
     https://blog.cloudflare.com/emdash-wordpress/

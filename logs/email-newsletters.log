@@ -18658,3 +18658,25 @@ NUGGETS (26)
     - Jack Dorsey's thesis: AI can replace the coordination role of middle management entirely, making flat teams faster than any traditional org chart. Block cut 40%+ of staff as the opening move in this restructure. -> https://block.xyz/inside/from-hierarchy-to-intelligence
       (The Rundown AI)
 [2026-04-03 12:16:18] Done
+[2026-04-03 13:00:11] Newsletter Monitor v3 starting...
+[2026-04-03 13:00:17] Fetched 13 unique newsletter emails across 19 queries
+[2026-04-03 13:00:17]   The Rundown AI:  The one person, billion-dollar AI-first business -> 3 stories extracted
+[2026-04-03 13:00:17]   The Rundown AI:  Dorsey makes the AI case against managers -> 25 stories extracted
+[2026-04-03 13:00:17]   Unwind AI: Gemma 4 Runs on Your Phone -> 9 stories extracted
+[2026-04-03 13:00:17]   AI For Work: Claude Code source code leaked -> 18 stories extracted
+[2026-04-03 13:00:17]   AI For Work: Slack's new AI features -> 19 stories extracted
+[2026-04-03 13:00:17]   Snack Prompt:  OpenAIs $852B Boom  -> 6 stories extracted
+[2026-04-03 13:00:17]   Snack Prompt:  Apple Just Won the AI War  -> 6 stories extracted
+[2026-04-03 13:00:17]   Hypefury:  From 0 to 300,000 Followers in 2 Years -> 32 stories extracted
+[2026-04-03 13:00:17]   Lenny's Newsletter: An AI state of the union: Weve passed the inflecti -> 7 stories extracted
+[2026-04-03 13:00:17]   Lenny's Newsletter: How to Navigate Org Drama -> 0 stories extracted
+[2026-04-03 13:00:17]   Social Growth Engineers: Why Apps Are Highjacking This Niche -> 39 stories extracted
+[2026-04-03 13:00:17]   What's Up in AI: claude code got exposed -> 4 stories extracted
+[2026-04-03 13:00:17]   Level Up Newsletter: 15 Insider Negotiating Secrets for Higher Compensa -> 27 stories extracted
+[2026-04-03 13:00:17] Analyzing 125 total stories with LLM...
+[2026-04-03 13:00:57] LLM analysis: 125 stories -> 15 kept
+[2026-04-03 13:00:57] Mining newsletters for nuggets (new emails only)...
+[2026-04-03 13:01:14] Extracted 7 nuggets from newsletters
+[2026-04-03 13:01:14] Marked 1 emails as nugget-mined
+[2026-04-03 13:01:14] Saved 1 emails, 8 stories, 7 nuggets | Skipped: 0 blacklisted
+[2026-04-03 13:01:14] Done
