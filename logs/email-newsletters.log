@@ -18855,3 +18855,17 @@ NUGGETS (24)
     - Apps outside the 'relationship drama' category (Bible apps, widget apps) are successfully hijacking viral TikTok relationship hooks to drive downloads — the narrative matters more than the product category for top-of-funnel growth.
       (Social Growth Engineers)
 [2026-04-04 12:16:05] Done
+[2026-04-04 13:00:10] Newsletter Monitor v3 starting...
+[2026-04-04 13:00:15] Fetched 7 unique newsletter emails across 19 queries
+[2026-04-04 13:00:15]   The Rundown AI:  The one person, billion-dollar AI-first business -> 3 stories extracted
+[2026-04-04 13:00:15]   AI For Work: Claude Code source code leaked -> 18 stories extracted
+[2026-04-04 13:00:15]   Snack Prompt:  OpenAIs $852B Boom  -> 6 stories extracted
+[2026-04-04 13:00:15]   Social Growth Engineers: 8 Viral Hits You Missed This Week -> 26 stories extracted
+[2026-04-04 13:00:15]   Social Growth Engineers: Why Apps Are Highjacking This Niche -> 39 stories extracted
+[2026-04-04 13:00:15]   What's Up in AI: claude code got exposed -> 4 stories extracted
+[2026-04-04 13:00:15]   Page One: Some Thoughts on Things -> 3 stories extracted
+[2026-04-04 13:00:15] Analyzing 61 total stories with LLM...
+[2026-04-04 13:00:46] LLM analysis: 61 stories -> 9 kept
+[2026-04-04 13:00:46] Mining newsletters for nuggets (new emails only)...
+[2026-04-04 13:00:46] Saved 0 emails, 2 stories, 0 nuggets | Skipped: 0 blacklisted
+[2026-04-04 13:00:46] Done

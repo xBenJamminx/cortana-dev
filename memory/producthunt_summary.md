@@ -1,69 +1,69 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [DemoVeil](https://www.producthunt.com/products/demoveil)
+• [Quip Network](https://www.producthunt.com/products/quip-network)
   _<p>
-            Prepare your Mac screen for calls, demos, and captures
+            Open-source distributed quantum compute network
           </p>
           <p>
-_
+       _
 
-• [Flowith Canvas](https://www.producthunt.com/products/flowith)
+• [HoloTutor by VictoryXR](https://www.producthunt.com/products/holotutor-by-victoryxr)
   _<p>
-            A new way to interact with AI beyond traditional chats
+            The immersive AI tutor
           </p>
           <p>
-_
+            <a href="https://www_
 
-• [OpenYak](https://www.producthunt.com/products/openyak)
+• [Codictate](https://www.producthunt.com/products/codictate)
   _<p>
-            The open-source Claude Desktop with any model you want
+            Free dictation for Any language and any application
           </p>
           <p>
-_
+   _
 
-• [GLM-5V-Turbo](https://www.producthunt.com/products/z-ai)
+• [Straude](https://www.producthunt.com/products/straude)
   _<p>
-            Vision-to-code foundation model for real GUI automation
+            Strava for Claude Code / Global Tokenmaxxing Leaderboard
           </p>
-          <p>_
+          <p_
 
-• [Lightning V3](https://www.producthunt.com/products/smallest-ai)
+• [Sublime](https://www.producthunt.com/products/sublime-4)
   _<p>
-            Text-to-Speech built for Voice Agents
-          </p>
-          <p>
-            <a hr_
-
-• [Mngr](https://www.producthunt.com/products/imbue-7)
-  _<p>
-            Run 100s of Claude agents in parallel
-          </p>
-          <p>
-            <a hr_
-
-• [Denovo](https://www.producthunt.com/products/denovo)
-  _<p>
-            Build and run your business while you sleep.
+            AI that makes real-world commitments for you
           </p>
           <p>
           _
 
-• [Grok 4.2 Beta 2](https://www.producthunt.com/products/grok-4-2-beta-2)
+• [GeneratePPT](https://www.producthunt.com/products/generateppt)
   _<p>
-            Real-time multi-agent AI that debates itself to find truth.
-          </p>
-         _
-
-• [Syncly Social](https://www.producthunt.com/products/syncly)
-  _<p>
-            Find creators by what's actually in their content
+            Instantly generated simple, design-forward slides
           </p>
           <p>
      _
 
-• [Mac Pet](https://www.producthunt.com/products/mac-pet)
+• [ZooClaw](https://www.producthunt.com/products/zooclaw)
   _<p>
-            A pixel pet for your menu bar or MacBook notch w/ Pomodoro 
+            Your proactive team of AI specialists in one place
           </p>
+          <p>
+    _
+
+• [Google Gemma 4](https://www.producthunt.com/products/google-gemma)
+  _<p>
+            Google's most intelligent open models to date
+          </p>
+          <p>
          _
+
+• [Cursor 3](https://www.producthunt.com/products/cursor-3)
+  _<p>
+            Unified workspace for parallel local/cloud agents and MCPs
+          </p>
+          _
+
+• [ChatGPT on CarPlay](https://www.producthunt.com/products/openai)
+  _<p>
+            ChatGPT voice in CarPlay for hands-free driving AI on the go
+          </p>
+        _
 

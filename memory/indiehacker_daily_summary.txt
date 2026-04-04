@@ -1,7 +1,6 @@
-🚀 Indie Hacker Monitor (2026-04-03 13:01)
+🚀 Indie Hacker Monitor (2026-04-04 13:01)
 
 🔥 Hot Topics:
-  • launch: 1 mentions
   • maker: 1 mentions
 
 📈 Top Stories:
@@ -9,9 +8,9 @@
     https://browsergate.eu/
   • [Hacker News] (1572⬆): Google releases Gemma 4 open models
     https://deepmind.google/models/gemma/gemma-4/
-  • [Hacker News] (975⬆): Artemis II Launch Day Updates
-    https://www.nasa.gov/blogs/missions/2026/04/01/live-artemis-ii-launch-day-updates/
   • [Hacker News] (906⬆): Decisions that eroded trust in Azure – by a former Azure Core engineer
     https://isolveproblems.substack.com/p/how-microsoft-vaporized-a-trillion
-  • [Hacker News] (603⬆): EmDash – A spiritual successor to WordPress that solves plugin security
-    https://blog.cloudflare.com/emdash-wordpress/
+  • [Hacker News] (833⬆): Artemis II crew take “spectacular” image of Earth
+    https://www.bbc.com/news/articles/ce8jzr423p9o
+  • [Hacker News] (809⬆): Tell HN: Anthropic no longer allowing Claude Code subscriptions to use OpenClaw
+    https://news.ycombinator.com/item?id=47633396

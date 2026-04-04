@@ -1,5 +1,8 @@
 📺 YouTube - Latest from AI/Creator Channels
 
+• [My surprising energy lesson](https://www.youtube.com/shorts/3HWvOdAcd18)
+  _Ali Abdaal_
+
 • [10 Rules to Read More Books](https://www.youtube.com/watch?v=f5_mihqjOGw)
   _Ali Abdaal_
 
@@ -16,11 +19,5 @@
   _Two Minute Papers_
 
 • [Tragic mistake... Anthropic leaks Claude’s source code](https://www.youtube.com/watch?v=mBHRPeg8zPU)
-  _Fireship_
-
-• [How to effortlessly read 50 books a year](https://www.youtube.com/shorts/hA7_WVO1lWo)
-  _Ali Abdaal_
-
-• [Millions of JS devs just got penetrated by a RAT…](https://www.youtube.com/watch?v=o7NYXvYohYk)
   _Fireship_
 
