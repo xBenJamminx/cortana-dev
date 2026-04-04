@@ -18680,3 +18680,178 @@ NUGGETS (26)
 [2026-04-03 13:01:14] Marked 1 emails as nugget-mined
 [2026-04-03 13:01:14] Saved 1 emails, 8 stories, 7 nuggets | Skipped: 0 blacklisted
 [2026-04-03 13:01:14] Done
+[2026-04-04 12:15:01] Newsletter Monitor v3 starting...
+[2026-04-04 12:15:07] Fetched 9 unique newsletter emails across 19 queries
+[2026-04-04 12:15:07]   The Rundown AI:  The one person, billion-dollar AI-first business -> 3 stories extracted
+[2026-04-04 12:15:07]   AI For Work: Claude Code source code leaked -> 18 stories extracted
+[2026-04-04 12:15:07]   Snack Prompt:  OpenAIs $852B Boom  -> 6 stories extracted
+[2026-04-04 12:15:07]   Lenny's Newsletter: An AI state of the union: Weve passed the inflecti -> 7 stories extracted
+[2026-04-04 12:15:07]   Social Growth Engineers: 8 Viral Hits You Missed This Week -> 26 stories extracted
+[2026-04-04 12:15:07]   Social Growth Engineers: Why Apps Are Highjacking This Niche -> 39 stories extracted
+[2026-04-04 12:15:07]   What's Up in AI: claude code got exposed -> 4 stories extracted
+[2026-04-04 12:15:07]   Page One: Some Thoughts on Things -> 3 stories extracted
+[2026-04-04 12:15:07]   Level Up Newsletter: 15 Insider Negotiating Secrets for Higher Compensa -> 27 stories extracted
+[2026-04-04 12:15:07] Analyzing 83 total stories with LLM...
+[2026-04-04 12:15:41] LLM analysis: 83 stories -> 9 kept
+[2026-04-04 12:15:41] Mining newsletters for nuggets (new emails only)...
+[2026-04-04 12:16:05] Extracted 7 nuggets from newsletters
+[2026-04-04 12:16:05] Marked 2 emails as nugget-mined
+[2026-04-04 12:16:05] Saved 2 emails, 3 stories, 7 nuggets | Skipped: 0 blacklisted
+[2026-04-04 12:15:01] Newsletter Monitor v3 starting...
+[2026-04-04 12:15:07] Fetched 9 unique newsletter emails across 19 queries
+[2026-04-04 12:15:07]   The Rundown AI:  The one person, billion-dollar AI-first business -> 3 stories extracted
+[2026-04-04 12:15:07]   AI For Work: Claude Code source code leaked -> 18 stories extracted
+[2026-04-04 12:15:07]   Snack Prompt:  OpenAIs $852B Boom  -> 6 stories extracted
+[2026-04-04 12:15:07]   Lenny's Newsletter: An AI state of the union: Weve passed the inflecti -> 7 stories extracted
+[2026-04-04 12:15:07]   Social Growth Engineers: 8 Viral Hits You Missed This Week -> 26 stories extracted
+[2026-04-04 12:15:07]   Social Growth Engineers: Why Apps Are Highjacking This Niche -> 39 stories extracted
+[2026-04-04 12:15:07]   What's Up in AI: claude code got exposed -> 4 stories extracted
+[2026-04-04 12:15:07]   Page One: Some Thoughts on Things -> 3 stories extracted
+[2026-04-04 12:15:07]   Level Up Newsletter: 15 Insider Negotiating Secrets for Higher Compensa -> 27 stories extracted
+[2026-04-04 12:15:07] Analyzing 83 total stories with LLM...
+[2026-04-04 12:15:41] LLM analysis: 83 stories -> 9 kept
+[2026-04-04 12:15:41] Mining newsletters for nuggets (new emails only)...
+[2026-04-04 12:16:05] Extracted 7 nuggets from newsletters
+[2026-04-04 12:16:05] Marked 2 emails as nugget-mined
+[2026-04-04 12:16:05] Saved 2 emails, 3 stories, 7 nuggets | Skipped: 0 blacklisted
+
+======================================================================
+TOP STORIES (15)
+======================================================================
+
+[93] Stop Editing Code and Start Managing Agents with Cursor 3
+    Source: Unwind AI
+    Cursor 3's multi-agent fleet management is a major leap for vibecoding — everyday builders can now run parallel AI workers instead of one at a time, directly relevant to Ben's audience.
+    https://cursor.com/blog/cursor-3
+
+[92] AI turns solo founder into $1.8B operator
+    Source: The Rundown AI
+    Perfect inspiration story for Ben's audience — solo founder uses AI to scale to $1.8B, directly validates the 'AI as co-founder' narrative his audience wants to believe in.
+    https://www.nytimes.com/2026/04/02/technology/ai-billion-dollar-company-medvi.html
+
+[87] Karpathy’s workflow for building self-improving wikis
+    Source: Unwind AI
+    Karpathy's LLM-powered personal wiki workflow is a practical, copy-paste-able system for building with AI that non-technical builders can actually use — covered by multiple newsletters.
+    https://x.com/karpathy/status/2039805659525644595
+
+[85] How I Built an Autonomous AI Agent Team That Runs 24/7
+    Source: Unwind AI
+    Step-by-step tutorial on building an autonomous 24/7 AI agent team is exactly the kind of actionable content Ben's vibecoding audience craves.
+    https://www.theunwindai.com/p/how-i-built-an-autonomous-ai-agent-team-that-runs-24-7
+
+[72] #### 🏗️ _Block ditches managers for AI
+    Source: The Rundown AI
+    Block eliminating managers in favor of AI is a provocative business story that sparks great discussion about AI replacing traditional roles — strong hot-take material.
+    https://block.xyz/inside/from-hierarchy-to-intelligence
+
+[68] Google's AI Inbox comes to Gmail — but only for $250/month Ultra subscribers
+    Source: AI For Work
+    Gmail's AI Inbox feature is a concrete, everyday-use AI tool that Ben's non-technical audience can immediately relate to and try.
+
+[63] Anthropic Ships NOFLICKER Mode for Claude Code
+    Source: Unwind AI
+    Claude Code's NOFLICKER terminal mode is a quality-of-life upgrade worth knowing about for builders using Claude Code daily.
+    https://x.com/bcherny/status/2039421575422980329
+
+[63] Google’s powerful new open-source family
+    Source: The Rundown AI
+    Google Gemma 4 open-source family with Apache 2.0 licensing removes legal barriers for builders shipping commercial products with open models.
+    https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
+
+[60] Use it to:
+    Source: Snack Prompt
+    A ready-to-use Midjourney prompt for pencil illustration style is exactly the kind of practical, shareable prompt tip Ben's audience loves.
+    https://snackprompt.com/e/prompt/3bgCTsmBlYYaP-midjourney-pencil-illustration
+
+[60] OpenAI acquires TBPN in first media deal
+    Source: The Rundown AI
+    OpenAI buying a media company signals a push into content/creator space — worth a hot take for Ben's creator-focused audience.
+    https://openai.com/index/openai-acquires-tbpn/
+
+[60] Claude Code's Full Source Code Leaked via npm
+    Source: Unwind AI
+    Claude Code 'Undercover Mode' leak is a fascinating behind-the-scenes story about how AI tools are built — great for sparking curiosity in Ben's audience.
+    https://x.com/Fried_rice/status/2038894956459290963
+
+[58] $122 billion
+    Source: Snack Prompt
+    OpenAI's $122B raise at an $852B valuation is landmark business news that contextualizes the AI arms race for everyday followers.
+    https://offers.hubspot.com/matg-ai-strategies
+
+[58] gave Claude agents $50,000 to invest
+    Source: What's Up in AI
+    Giving Claude agents $50K to invest autonomously is a viral, entertaining proof-of-concept that shows what AI agents can do in the real world.
+    https://x.com/theaiportfolios/status/2039006300441620782
+
+[55] Alexa+ can now order food from Uber Eats and Grubhub through conversation
+    Source: AI For Work
+    Alexa+ ordering food via conversation is a tangible example of AI agents handling real-world tasks that non-technical audiences can immediately relate to.
+
+[54] [MULTI-SOURCE] OpenAI just raised $122B (what the blog post won't cover!)
+    Source: Unwind AI, Snack Prompt
+    OpenAI's $122B raise at an $852B valuation is the kind of macro context that helps Ben's audience understand why now is the moment to build with AI.
+    https://x.com/unwind_ai_/status/2039173145966621135
+
+======================================================================
+NUGGETS (24)
+======================================================================
+
+  [how-to]
+    - Karpathy shared his workflow for building self-improving wikis using AI — a system where the knowledge base gets smarter over time automatically. -> https://x.com/karpathy/status/2039805659525644595
+      (Unwind AI)
+    - Step-by-step breakdown of building a 6-agent autonomous team that handles research, content drafting, code review, and newsletter prep while you sleep — delivered via Telegram each morning. -> https://www.theunwindai.com/p/how-i-built-an-autonomous-ai-agent-team-that-runs-24-7
+      (Unwind AI)
+
+  [tool]
+    - Sherlock is an AI face search app that went viral on TikTok at just 70 days old, racking up 7.3M views on a single video — worth watching as a case study in rapid AI app growth. -> https://www.tiktok.com/@alyyycole1/video/7622826190243368222
+      (Social Growth Engineers)
+    - BoldVoice is an AI pronunciation coaching app whose creator went viral (7.4M views) by showing real-time pronunciation scores and error breakdowns in a 'long word road' format. -> https://www.tiktok.com/@boldvoice.gina/video/7622278863128644878
+      (Social Growth Engineers)
+    - Cupidly is an AI 'rizz keyboard' that suggests dating app messages in real time — their top video hit 459K views using a format they iterated on 30+ times before it broke through. -> https://www.tiktok.com/@rizzlord836/video/7622417684419906847
+      (Social Growth Engineers)
+    - Gemma 4 is Google's new open-source model family (2B–31B) under Apache 2.0. The 2B model runs on a Raspberry Pi, and the 31B ranks #3 on Arena AI's text leaderboard — built on the same research as Gemini 3. -> https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
+      (Unwind AI)
+    - Cursor 3 shifts the paradigm from editing code yourself to managing AI agents that do it for you — a major product evolution for the popular AI code editor. -> https://cursor.com/blog/cursor-3
+      (Unwind AI)
+    - Anthropic shipped NO_FLICKER mode for Claude Code, reducing visual noise during agentic coding sessions. -> https://x.com/bcherny/status/2039421575422980329
+      (Unwind AI)
+[2026-04-04 12:16:05] Done
+    - Pika Labs released a Skill that lets you video chat with your OpenClaw AI agents, adding a real-time visual interface to agentic workflows. -> https://x.com/pika_labs/status/2039804583862796345
+      (Unwind AI)
+    - Medvi's stack for a solo AI-first business: ChatGPT/Claude/Grok (code), Midjourney/Runway (ad creatives), ElevenLabs (voice/customer service), custom AI agents (ops) — a replicable blueprint for lean operators.
+      (The Rundown AI)
+    - Google quietly upgraded its AI Pro plan from 2TB to 5TB of storage at the same $19.99/month price, bundling Google One benefits with Gemini AI credits — better value for creators already in the Google ecosystem.
+      (AI For Work)
+
+  [funding]
+    - OpenAI closed a $122B funding round at an $852B valuation — the largest private raise in history — with Amazon ($50B), Nvidia ($30B), and SoftBank ($30B) as lead investors, framing it as a pre-IPO floor-setting move. -> https://www.businesstoday.com.my/2026/04/01/openai-valued-at-us852-billion-after-completing-us122-billion-round/
+      (Snack Prompt)
+
+  [tip]
+    - Viral AI app videos that show the actual app feature in action (like BoldVoice's live scoring) drive comment-section demand for the app naturally — build content around the feature, not the brand.
+      (Social Growth Engineers)
+    - Repeating and iterating a single content format 30+ times before it breaks through is a documented growth tactic among top consumer AI apps — volume and consistency beat one-off creative swings.
+      (Social Growth Engineers)
+    - The April Growth Guide from Social Growth Engineers covers a month of content strategy patterns across 7+ consumer app niches — useful for anyone building or marketing an AI product. -> https://www.socialgrowthengineers.com/april-in-consumer-app-growth
+      (Social Growth Engineers)
+    - Relationship drama hooks (cheating, breakups, partner tracking) are the dominant viral content format on TikTok right now — any app that can insert itself into that story arc gains outsized organic reach, regardless of app category.
+      (Social Growth Engineers)
+
+  [insight]
+    - Consumer AI apps are cracking TikTok virality by using classic drama/entertainment hooks (cheating exposés, pronunciation games) rather than product demos — the AI is the tool, not the star.
+      (Social Growth Engineers)
+    - Gemma 4's smallest 2B model running on a Raspberry Pi signals that capable open-source AI is now truly edge-deployable — no cloud required for everyday agentic tasks. -> https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
+      (Unwind AI)
+    - Matthew Gallagher built Medvi to $1.8B in projected annual sales using only AI tools — ChatGPT, Claude, Grok for code; Midjourney and Runway for ad creatives; ElevenLabs and custom AI agents for customer service — with zero traditional corporate workforce. -> https://www.nytimes.com/2026/04/02/technology/ai-billion-dollar-company-medvi.html
+      (The Rundown AI)
+    - AI coding is expanding demand for developers, not shrinking it — most engineers now work alongside agents and ship AI-generated code to production, yet hiring has grown rather than contracted.
+      (AI For Work)
+    - Apple is cracking down on 'vibe-coded' apps that bypass its app review process, signaling that AI-generated apps face platform-level security scrutiny as a growing concern.
+      (AI For Work)
+    - OpenAI's advertising pilot inside ChatGPT generated over $100M in annualized recurring revenue in just six weeks — a signal that AI-native ad formats may be a major future revenue stream.
+      (Snack Prompt)
+    - OpenAI's Codex coding agent surpassed 2 million weekly users and APIs now process over 15 billion tokens per minute, reflecting the scale at which AI coding tools are being adopted in production.
+      (Snack Prompt)
+    - Apps outside the 'relationship drama' category (Bible apps, widget apps) are successfully hijacking viral TikTok relationship hooks to drive downloads — the narrative matters more than the product category for top-of-funnel growth.
+      (Social Growth Engineers)
+[2026-04-04 12:16:05] Done
