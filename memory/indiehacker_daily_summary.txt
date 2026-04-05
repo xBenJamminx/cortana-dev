@@ -1,16 +1,13 @@
-🚀 Indie Hacker Monitor (2026-04-04 13:01)
-
-🔥 Hot Topics:
-  • maker: 1 mentions
+🚀 Indie Hacker Monitor (2026-04-05 13:01)
 
 📈 Top Stories:
-  • [Hacker News] (1790⬆): LinkedIn is searching your browser extensions
-    https://browsergate.eu/
-  • [Hacker News] (1572⬆): Google releases Gemma 4 open models
-    https://deepmind.google/models/gemma/gemma-4/
-  • [Hacker News] (906⬆): Decisions that eroded trust in Azure – by a former Azure Core engineer
-    https://isolveproblems.substack.com/p/how-microsoft-vaporized-a-trillion
   • [Hacker News] (833⬆): Artemis II crew take “spectacular” image of Earth
     https://www.bbc.com/news/articles/ce8jzr423p9o
+  • [Hacker News] (812⬆): Show HN: A game where you build a GPU
+    https://jaso1024.com/mvidia/
   • [Hacker News] (809⬆): Tell HN: Anthropic no longer allowing Claude Code subscriptions to use OpenClaw
     https://news.ycombinator.com/item?id=47633396
+  • [Hacker News] (722⬆): Show HN: I built a frontpage for personal blogs
+    https://text.blogosphere.app/
+  • [Hacker News] (698⬆): How many products does Microsoft have named 'Copilot'?
+    https://teybannerman.com/strategy/2026/03/31/how-many-microsoft-copilot-are-there.html

@@ -1,69 +1,69 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [Quip Network](https://www.producthunt.com/products/quip-network)
+• [APImage](https://www.producthunt.com/products/apimage)
   _<p>
-            Open-source distributed quantum compute network
+            Create Images that Amaze
           </p>
           <p>
-       _
+            <a href="https://w_
 
-• [HoloTutor by VictoryXR](https://www.producthunt.com/products/holotutor-by-victoryxr)
+• [Vista](https://www.producthunt.com/products/vista-4)
   _<p>
-            The immersive AI tutor
+            The image viewer macOS should have built.
           </p>
           <p>
-            <a href="https://www_
+            <_
 
-• [Codictate](https://www.producthunt.com/products/codictate)
+• [Klick AI Camera Assistant](https://www.producthunt.com/products/klick-1-ai-camera-assistant)
   _<p>
-            Free dictation for Any language and any application
+            Real-time AI camera that teaches you composition live
+          </p>
+          <p>
+ _
+
+• [Faahh](https://www.producthunt.com/products/faahh-app-that-roasts-you-back-to-work)
+  _<p>
+            Slap your desk. Unplug distractions. Get back to focus.
+          </p>
+          <p>_
+
+• [OpenGyver](https://www.producthunt.com/products/opengyver)
+  _<p>
+            Turn CLI / AI agents into McGyver
+          </p>
+          <p>
+            <a href="_
+
+• [Otto by Audos.com](https://www.producthunt.com/products/socap)
+  _<p>
+            Your AI co-founder that builds, launches, and sells for you
+          </p>
+         _
+
+• [Package Mate](https://www.producthunt.com/products/package-mate-open-source-cli-for-macos)
+  _<p>
+            Master your macOS dev environment from the terminal
           </p>
           <p>
    _
 
-• [Straude](https://www.producthunt.com/products/straude)
+• [Shotwell](https://www.producthunt.com/products/shotwell)
   _<p>
-            Strava for Claude Code / Global Tokenmaxxing Leaderboard
-          </p>
-          <p_
-
-• [Sublime](https://www.producthunt.com/products/sublime-4)
-  _<p>
-            AI that makes real-world commitments for you
+            The screenshot editor for iPhone.
           </p>
           <p>
-          _
+            <a href="_
 
-• [GeneratePPT](https://www.producthunt.com/products/generateppt)
+• [CatBar](https://www.producthunt.com/products/catbar)
   _<p>
-            Instantly generated simple, design-forward slides
+            RevenueCat stats in your macOS menu bar.
           </p>
           <p>
-     _
+            <a_
 
-• [ZooClaw](https://www.producthunt.com/products/zooclaw)
+• [Handle Extension](https://www.producthunt.com/products/tonkotsu)
   _<p>
-            Your proactive team of AI specialists in one place
+            Refine UI in the browser, feed changes to your coding agent
           </p>
-          <p>
-    _
-
-• [Google Gemma 4](https://www.producthunt.com/products/google-gemma)
-  _<p>
-            Google's most intelligent open models to date
-          </p>
-          <p>
          _
-
-• [Cursor 3](https://www.producthunt.com/products/cursor-3)
-  _<p>
-            Unified workspace for parallel local/cloud agents and MCPs
-          </p>
-          _
-
-• [ChatGPT on CarPlay](https://www.producthunt.com/products/openai)
-  _<p>
-            ChatGPT voice in CarPlay for hands-free driving AI on the go
-          </p>
-        _
 

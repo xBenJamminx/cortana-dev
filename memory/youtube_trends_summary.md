@@ -15,9 +15,3 @@
 • [He just crawled through hell to fix the browser…](https://www.youtube.com/watch?v=vd14EElCRvs)
   _Fireship_
 
-• [Google’s New AI Just Broke My Brain](https://www.youtube.com/watch?v=7YVrb3-ABYE)
-  _Two Minute Papers_
-
-• [Tragic mistake... Anthropic leaks Claude’s source code](https://www.youtube.com/watch?v=mBHRPeg8zPU)
-  _Fireship_
-

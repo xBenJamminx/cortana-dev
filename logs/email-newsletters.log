@@ -18997,3 +18997,18 @@ NUGGETS (14)
     - Consumer AI apps are cracking TikTok virality by using classic drama/entertainment hooks (cheating exposés, pronunciation games) rather than product demos — the AI is the tool, not the star.
       (Social Growth Engineers)
 [2026-04-05 12:15:53] Done
+[2026-04-05 13:00:10] Newsletter Monitor v3 starting...
+[2026-04-05 13:00:15] Fetched 6 unique newsletter emails across 19 queries
+[2026-04-05 13:00:15]   AI For Work: Control LLM reliability and spend from one place -> 3 stories extracted
+[2026-04-05 13:00:15]   Lenny's Newsletter: Anthropics $1B to $19B growth run: how Claude beca -> 8 stories extracted
+[2026-04-05 13:00:15]   Lenny's Newsletter:  Community Wisdom: Evaluating startup equity, navi -> 31 stories extracted
+[2026-04-05 13:00:15]   What's Up in AI: BREAKING: Gemini just launched Gemma 4 -> 6 stories extracted
+[2026-04-05 13:00:15]   Social Growth Engineers: 8 Viral Hits You Missed This Week -> 26 stories extracted
+[2026-04-05 13:00:15]   Page One: Some Thoughts on Things -> 3 stories extracted
+[2026-04-05 13:00:15] Analyzing 50 total stories with LLM...
+[2026-04-05 13:00:50] LLM analysis: 50 stories -> 9 kept
+[2026-04-05 13:00:50] Mining newsletters for nuggets (new emails only)...
+[2026-04-05 13:01:05] Extracted 8 nuggets from newsletters
+[2026-04-05 13:01:05] Marked 1 emails as nugget-mined
+[2026-04-05 13:01:05] Saved 1 emails, 3 stories, 8 nuggets | Skipped: 0 blacklisted
+[2026-04-05 13:01:05] Done
