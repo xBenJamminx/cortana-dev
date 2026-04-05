@@ -18869,3 +18869,131 @@ NUGGETS (24)
 [2026-04-04 13:00:46] Mining newsletters for nuggets (new emails only)...
 [2026-04-04 13:00:46] Saved 0 emails, 2 stories, 0 nuggets | Skipped: 0 blacklisted
 [2026-04-04 13:00:46] Done
+[2026-04-05 12:15:02] Newsletter Monitor v3 starting...
+[2026-04-05 12:15:06] Fetched 5 unique newsletter emails across 19 queries
+[2026-04-05 12:15:06]   AI For Work: Control LLM reliability and spend from one place -> 3 stories extracted
+[2026-04-05 12:15:06]   Lenny's Newsletter:  Community Wisdom: Evaluating startup equity, navi -> 31 stories extracted
+[2026-04-05 12:15:06]   What's Up in AI: BREAKING: Gemini just launched Gemma 4 -> 6 stories extracted
+[2026-04-05 12:15:06]   Social Growth Engineers: 8 Viral Hits You Missed This Week -> 26 stories extracted
+[2026-04-05 12:15:06]   Page One: Some Thoughts on Things -> 3 stories extracted
+[2026-04-05 12:15:06] Analyzing 42 total stories with LLM...
+[2026-04-05 12:15:38] LLM analysis: 42 stories -> 8 kept
+[2026-04-05 12:15:38] Mining newsletters for nuggets (new emails only)...
+[2026-04-05 12:15:53] Extracted 7 nuggets from newsletters
+[2026-04-05 12:15:53] Marked 3 emails as nugget-mined
+[2026-04-05 12:15:53] Saved 3 emails, 7 stories, 7 nuggets | Skipped: 0 blacklisted
+[2026-04-05 12:15:02] Newsletter Monitor v3 starting...
+[2026-04-05 12:15:06] Fetched 5 unique newsletter emails across 19 queries
+[2026-04-05 12:15:06]   AI For Work: Control LLM reliability and spend from one place -> 3 stories extracted
+[2026-04-05 12:15:06]   Lenny's Newsletter:  Community Wisdom: Evaluating startup equity, navi -> 31 stories extracted
+[2026-04-05 12:15:06]   What's Up in AI: BREAKING: Gemini just launched Gemma 4 -> 6 stories extracted
+[2026-04-05 12:15:06]   Social Growth Engineers: 8 Viral Hits You Missed This Week -> 26 stories extracted
+[2026-04-05 12:15:06]   Page One: Some Thoughts on Things -> 3 stories extracted
+[2026-04-05 12:15:06] Analyzing 42 total stories with LLM...
+[2026-04-05 12:15:38] LLM analysis: 42 stories -> 8 kept
+[2026-04-05 12:15:38] Mining newsletters for nuggets (new emails only)...
+[2026-04-05 12:15:53] Extracted 7 nuggets from newsletters
+[2026-04-05 12:15:53] Marked 3 emails as nugget-mined
+[2026-04-05 12:15:53] Saved 3 emails, 7 stories, 7 nuggets | Skipped: 0 blacklisted
+
+======================================================================
+TOP STORIES (12)
+======================================================================
+
+[82] Photos from recent meetups 😍
+    Source: Lenny's Newsletter
+    Stripe built AI coding 'minions' shipping 1,300 PRs/week — a concrete, mind-blowing example of AI agents doing real work that will resonate with Ben's vibecoding audience.
+    https://substack.com/redirect/7b70a5a3-b2f9-4469-aedd-fb45963abcaa
+
+[76] 1 LATEST IN AI TODAY
+    Source: What's Up in AI
+    Google Gemma 4 open-weight models let everyday builders run AI locally for free — directly actionable for Ben's audience exploring DIY AI tools.
+    https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
+
+[72] 2 LATEST IN AI TODAY
+    Source: What's Up in AI
+    Microsoft launched voice, transcription, and image AI models in Foundry — new multimodal tools builders can plug into their apps.
+    https://microsoft.ai/news/today-were-announcing-3-new-world-class-mai-models-available-in-foundry/
+
+[70] WHAT ELSE HAPPENED IN AI
+    Source: What's Up in AI
+    Seedance 2.0 now leads AI video leaderboards and is widely available — a new top-tier video generation tool creators can immediately test.
+    https://seed.bytedance.com/en/seedance2_0
+
+[68] Google's AI Inbox comes to Gmail — but only for $250/month Ultra subscribers
+    Source: AI For Work
+    Gmail's AI Inbox feature is a concrete, everyday-use AI tool that Ben's non-technical audience can immediately relate to and try.
+
+[64] OpenAI raising 122 billion dollars (!!!) the largest private round ever
+    Source: Page One
+    OpenAI raising $122B (largest private round ever) is a major signal about where AI is heading — great fodder for a hot take or trend piece.
+    https://substack.com/redirect/2a8fc779-7e53-45cc-a501-30208f1bc785
+
+[60] Building a knowledge graph
+    Source: Lenny's Newsletter
+    Real-world discussion of building a personal knowledge graph using Obsidian + Claude Code — a practical, relatable AI-augmented workflow for Ben's builders.
+    https://substack.com/redirect/d211629b-4f04-4616-82f1-47702b65a751
+
+[60] Use it to:
+    Source: Snack Prompt
+    A ready-to-use Midjourney prompt for pencil illustration style is exactly the kind of practical, shareable prompt tip Ben's audience loves.
+    https://snackprompt.com/e/prompt/3bgCTsmBlYYaP-midjourney-pencil-illustration
+
+[55] Sherlock, an AI face search app, is only 70 days old and already crushing it.
+    Source: Social Growth Engineers
+    Sherlock AI face search app going viral in 70 days shows what's possible with a focused AI app—good case study for aspiring builders.
+
+[54] LLM Knowledge Bases
+    Source: What's Up in AI
+    Karpathy sharing thoughts on LLM knowledge bases — anything from Karpathy carries signal for the builder community even if the snippet is thin.
+    https://x.com/karpathy/status/2039805659525644595
+
+[52] Perplexity Sued Over Data Sharing Claims
+    Source: Snack Prompt
+    Perplexity sued for sharing user data with Meta and Google is a timely privacy reminder worth flagging for builders choosing AI tools.
+    https://www.firstpost.com/tech/perplexity-ai-sued-over-alleged-user-data-sharing-with-meta-and-google-13995307.html
+
+[52] Slackbot (Slack AI)
+    Source: Snack Prompt
+    Slack's built-in AI assistant summarizing threads is a real tool everyday workers can use right now, relevant to Ben's productivity-focused audience.
+    https://www.producthunt.com/products/slack
+
+======================================================================
+NUGGETS (14)
+======================================================================
+
+  [tool]
+    - Merge Gateway is a single integration point between your app and every LLM provider — handles routing, fallbacks, spend limits, and logs every AI action with cost and latency data. -> https://www.merge.dev/gateway
+      (AI For Work)
+    - Clerk now includes MCP server support, letting AI agents authenticate and act on behalf of users — useful for building agentic apps that need to access third-party services securely. -> https://clerk.com
+      (Lenny's Newsletter)
+    - Google released Gemma 4, an open model designed to run anywhere — relevant for builders who want to self-host or run AI locally without relying on cloud APIs.
+      (What's Up in AI)
+    - Sherlock is an AI face search app that went viral on TikTok at just 70 days old, racking up 7.3M views on a single video — worth watching as a case study in rapid AI app growth. -> https://www.tiktok.com/@alyyycole1/video/7622826190243368222
+      (Social Growth Engineers)
+    - BoldVoice is an AI pronunciation coaching app whose creator went viral (7.4M views) by showing real-time pronunciation scores and error breakdowns in a 'long word road' format. -> https://www.tiktok.com/@boldvoice.gina/video/7622278863128644878
+      (Social Growth Engineers)
+    - Cupidly is an AI 'rizz keyboard' that suggests dating app messages in real time — their top video hit 459K views using a format they iterated on 30+ times before it broke through. -> https://www.tiktok.com/@rizzlord836/video/7622417684419906847
+      (Social Growth Engineers)
+
+  [tip]
+    - Semantic caching can reuse LLM responses for equivalent requests, reducing both cost and latency without degrading output quality — a key optimization for production AI apps.
+      (AI For Work)
+    - Viral AI app videos that show the actual app feature in action (like BoldVoice's live scoring) drive comment-section demand for the app naturally — build content around the feature, not the brand.
+      (Social Growth Engineers)
+    - Repeating and iterating a single content format 30+ times before it breaks through is a documented growth tactic among top consumer AI apps — volume and consistency beat one-off creative swings.
+      (Social Growth Engineers)
+    - The April Growth Guide from Social Growth Engineers covers a month of content strategy patterns across 7+ consumer app niches — useful for anyone building or marketing an AI product. -> https://www.socialgrowthengineers.com/april-in-consumer-app-growth
+      (Social Growth Engineers)
+
+  [insight]
+    - LLM governance failures (no logging, no spend controls, no audit trail) are more dangerous than infrastructure failures — when things go wrong in production, you need a complete record of what happened and why.
+      (AI For Work)
+    - Microsoft and Google are taking opposite strategies on the AI stack: Microsoft going deeper into proprietary full-stack models, Google pushing open models that can run anywhere (Gemma 4).
+      (What's Up in AI)
+    - The AI customer service paradox: 88% ticket resolution rate but 22% customer churn — efficiency metrics look great but loyalty metrics tell a different story, suggesting AI alone isn't enough for retention. -> https://www.gladly.ai/resources/customer-service-reports-guides/leveraging-ai-automation/customer-expectations-report-2026/
+      (What's Up in AI)
+[2026-04-05 12:15:53] Done
+    - Consumer AI apps are cracking TikTok virality by using classic drama/entertainment hooks (cheating exposés, pronunciation games) rather than product demos — the AI is the tool, not the star.
+      (Social Growth Engineers)
+[2026-04-05 12:15:53] Done
