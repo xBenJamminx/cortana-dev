@@ -142,3 +142,19 @@ When you receive a message containing `[media attached: /path/to/file]`, the ima
 3. If the Read fails, tell Ben immediately
 
 Without this step, you are blind to screenshots, photos, and any visual content Ben sends.
+
+## Meeting Briefing vs FAM Sync — CRITICAL DISTINCTION
+
+These are two different tasks. Never confuse them.
+
+**Run the meeting briefing/sync** = pull latest Fathom meeting, format for Slack, hand to Ben. He posts it himself. Never post it yourself.
+
+**Run the FAM sync** = full Composio pipeline (Slack + Notion + QA Sheet + approval gate + writes). Only run when explicitly asked for the FAM sync, not for meeting notes.
+
+Meeting Briefing Format:
+- Recording link and share link at top
+- Key Takeaways: full paragraphs from Fathom summary with timestamped links
+- Action Items: grouped by person, sub-sections by category (Bug Fixes, Backend, Animations, etc.)
+- Use hyphen dash for bullets, NOT bullet characters (Slack does not render them as list items)
+- Never shorten or paraphrase action items, use exact wording from transcript
+- Fathom client: python3 /root/.openclaw/workspace/core/fathom/client.py meeting ID
