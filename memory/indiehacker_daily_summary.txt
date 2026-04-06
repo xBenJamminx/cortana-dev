@@ -1,13 +1,13 @@
-🚀 Indie Hacker Monitor (2026-04-05 13:01)
+🚀 Indie Hacker Monitor (2026-04-06 12:01)
 
 📈 Top Stories:
-  • [Hacker News] (833⬆): Artemis II crew take “spectacular” image of Earth
-    https://www.bbc.com/news/articles/ce8jzr423p9o
   • [Hacker News] (812⬆): Show HN: A game where you build a GPU
     https://jaso1024.com/mvidia/
-  • [Hacker News] (809⬆): Tell HN: Anthropic no longer allowing Claude Code subscriptions to use OpenClaw
-    https://news.ycombinator.com/item?id=47633396
-  • [Hacker News] (722⬆): Show HN: I built a frontpage for personal blogs
-    https://text.blogosphere.app/
+  • [Hacker News] (811⬆): Eight years of wanting, three months of building with AI
+    https://lalitm.com/post/building-syntaqlite-ai/
+  • [Hacker News] (783⬆): Caveman: Why use many token when few token do trick
+    https://github.com/JuliusBrussee/caveman
   • [Hacker News] (698⬆): How many products does Microsoft have named 'Copilot'?
     https://teybannerman.com/strategy/2026/03/31/how-many-microsoft-copilot-are-there.html
+  • [Hacker News] (677⬆): Gemma 4 on iPhone
+    https://apps.apple.com/nl/app/google-ai-edge-gallery/id6749645337

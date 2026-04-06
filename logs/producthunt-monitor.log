@@ -484,3 +484,9 @@
 [2026-04-05 13:01:33] Saved 15 products
 [2026-04-05 13:01:33] Summary generated
 [2026-04-05 13:01:33] Done
+[2026-04-06 12:01:46] Product Hunt monitor starting...
+[2026-04-06 12:01:46] API returned 403, trying RSS fallback
+[2026-04-06 12:01:46] Found 15 products
+[2026-04-06 12:01:46] Saved 15 products
+[2026-04-06 12:01:46] Summary generated
+[2026-04-06 12:01:46] Done

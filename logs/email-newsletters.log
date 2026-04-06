@@ -19012,3 +19012,19 @@ NUGGETS (14)
 [2026-04-05 13:01:05] Marked 1 emails as nugget-mined
 [2026-04-05 13:01:05] Saved 1 emails, 3 stories, 8 nuggets | Skipped: 0 blacklisted
 [2026-04-05 13:01:05] Done
+[2026-04-06 12:00:10] Newsletter Monitor v3 starting...
+[2026-04-06 12:00:16] Fetched 8 unique newsletter emails across 19 queries
+[2026-04-06 12:00:16]   The Rundown AI:  Claude's AI agent usage problem -> 2 stories extracted
+[2026-04-06 12:00:16]   AI For Work: What OpenClaw tells us about the future of agents -> 6 stories extracted
+[2026-04-06 12:00:16]   AI For Work: Control LLM reliability and spend from one place -> 3 stories extracted
+[2026-04-06 12:00:16]   Lenny's Newsletter: Anthropics $1B to $19B growth run: how Claude beca -> 8 stories extracted
+[2026-04-06 12:00:16]   Lenny's Newsletter:  Community Wisdom: Evaluating startup equity, navi -> 31 stories extracted
+[2026-04-06 12:00:16]   What's Up in AI: robots are everywhere -> 5 stories extracted
+[2026-04-06 12:00:16]   What's Up in AI: BREAKING: Gemini just launched Gemma 4 -> 6 stories extracted
+[2026-04-06 12:00:16] Analyzing 45 total stories with LLM...
+[2026-04-06 12:00:57] LLM analysis: 45 stories -> 8 kept
+[2026-04-06 12:00:57] Mining newsletters for nuggets (new emails only)...
+[2026-04-06 12:01:19] Extracted 8 nuggets from newsletters
+[2026-04-06 12:01:19] Marked 3 emails as nugget-mined
+[2026-04-06 12:01:19] Saved 3 emails, 2 stories, 8 nuggets | Skipped: 1 blacklisted
+[2026-04-06 12:01:19] Done
