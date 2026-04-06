@@ -747,3 +747,10 @@ Manual intervention may be needed.
 Service was: active/running
 HTTP probe: <urlopen error [Errno 111] Connection refused>
 
+
+---
+
+## 2026-04-06 16:23:02: WARNING Alert
+
+**Message:** Killed 2 stuck claude process(es) running >3600s
+

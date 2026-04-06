@@ -360,3 +360,6 @@ HTTP probe: <urlopen error [Errno 111] Connection refused>
 [2026-03-12 03:35:12] Logged to ERROR_LOG.md
 [2026-03-12 03:47:02] Alert [info]: Auto-cleared 1 stale openclaw session ref(s): agent:main:telegram:group:-1003856131939:topic:1.sessionId (was 0e6f2bc9-6de...)
 [2026-03-12 03:47:02] Telegram alert sent: Auto-cleared 1 stale openclaw session ref(s): agen...
+[2026-04-06 16:23:01] Alert [warning]: Killed 2 stuck claude process(es) running >3600s
+[2026-04-06 16:23:02] Telegram alert sent: Killed 2 stuck claude process(es) running >3600s...
+[2026-04-06 16:23:02] Logged to ERROR_LOG.md
