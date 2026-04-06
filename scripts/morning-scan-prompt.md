@@ -76,10 +76,14 @@ TODAY'S FOCUS
 
 Rules:
 - No emojis in the Slack post. Professional.
-- If there was NO activity in the last 72h on a channel, say "No new activity."
-- Keep the whole briefing under 20 lines.
-- "Needs Attention" = stuck or waiting, not business as usual.
-- "Today's Focus" = your best read on what matters most based on channel evidence. Max 3 items.
+- If there was NO activity since the last scan on a channel, say "No new activity."
+- Do NOT truncate message content — read the full text of every message before summarizing. Missing detail is worse than a longer briefing.
+- Each person's bullet should be specific enough that the team knows exactly what happened — not "Cassandra found bugs" but which avatars, which behaviors, which builds.
+- Include ALL bugs reported, not just the top ones. A bug left out of the briefing is a bug that doesn't get fixed.
+- Include analysis and recommendations posted in channels — these are actionable, not noise.
+- "Needs Attention" = stuck or waiting, not business as usual. List every unresolved issue.
+- "Today's Focus" = your best read on what matters most based on channel evidence. Max 3 items, assigned to specific people.
+- Length should match the volume of activity. If a lot happened, the briefing will be longer. Do not cut detail to hit a line count.
 
 ## Step 4 — Post to Slack
 
