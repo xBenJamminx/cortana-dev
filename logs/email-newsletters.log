@@ -19028,3 +19028,161 @@ NUGGETS (14)
 [2026-04-06 12:01:19] Marked 3 emails as nugget-mined
 [2026-04-06 12:01:19] Saved 3 emails, 2 stories, 8 nuggets | Skipped: 1 blacklisted
 [2026-04-06 12:01:19] Done
+[2026-04-06 12:15:01] Newsletter Monitor v3 starting...
+[2026-04-06 12:15:06] Fetched 8 unique newsletter emails across 19 queries
+[2026-04-06 12:15:06]   The Rundown AI:  Claude's AI agent usage problem -> 2 stories extracted
+[2026-04-06 12:15:06]   AI For Work: What OpenClaw tells us about the future of agents -> 6 stories extracted
+[2026-04-06 12:15:06]   AI For Work: Control LLM reliability and spend from one place -> 3 stories extracted
+[2026-04-06 12:15:06]   Lenny's Newsletter: Anthropics $1B to $19B growth run: how Claude beca -> 8 stories extracted
+[2026-04-06 12:15:06]   Lenny's Newsletter:  Community Wisdom: Evaluating startup equity, navi -> 31 stories extracted
+[2026-04-06 12:15:06]   What's Up in AI: robots are everywhere -> 5 stories extracted
+[2026-04-06 12:15:06]   What's Up in AI: BREAKING: Gemini just launched Gemma 4 -> 6 stories extracted
+[2026-04-06 12:15:06] Analyzing 45 total stories with LLM...
+[2026-04-06 12:15:36] LLM analysis: 45 stories -> 7 kept
+[2026-04-06 12:15:36] Mining newsletters for nuggets (new emails only)...
+[2026-04-06 12:15:36] Saved 0 emails, 1 stories, 0 nuggets | Skipped: 1 blacklisted
+[2026-04-06 12:15:01] Newsletter Monitor v3 starting...
+[2026-04-06 12:15:06] Fetched 8 unique newsletter emails across 19 queries
+[2026-04-06 12:15:06]   The Rundown AI:  Claude's AI agent usage problem -> 2 stories extracted
+[2026-04-06 12:15:06]   AI For Work: What OpenClaw tells us about the future of agents -> 6 stories extracted
+[2026-04-06 12:15:06]   AI For Work: Control LLM reliability and spend from one place -> 3 stories extracted
+[2026-04-06 12:15:06]   Lenny's Newsletter: Anthropics $1B to $19B growth run: how Claude beca -> 8 stories extracted
+[2026-04-06 12:15:06]   Lenny's Newsletter:  Community Wisdom: Evaluating startup equity, navi -> 31 stories extracted
+[2026-04-06 12:15:06]   What's Up in AI: robots are everywhere -> 5 stories extracted
+[2026-04-06 12:15:06]   What's Up in AI: BREAKING: Gemini just launched Gemma 4 -> 6 stories extracted
+[2026-04-06 12:15:06] Analyzing 45 total stories with LLM...
+[2026-04-06 12:15:36] LLM analysis: 45 stories -> 7 kept
+[2026-04-06 12:15:36] Mining newsletters for nuggets (new emails only)...
+[2026-04-06 12:15:36] Saved 0 emails, 1 stories, 0 nuggets | Skipped: 1 blacklisted
+
+======================================================================
+TOP STORIES (13)
+======================================================================
+
+[87] [MULTI-SOURCE] Anthropic boots third-party agents from Claude plans
+    Source: The Rundown AI, AI For Work, Lenny's Newsletter
+    OpenClaw blowing up and Anthropic blocking third-party agents is the week's biggest AI story for builders — multiple newsletters covered it, Claire Vo's 'skeptic to true believer' podcast adds a personal angle perfect for Ben's audience who use or want to use AI agents.
+    https://x.com/bcherny/status/2040206440556826908
+
+[82] Photos from recent meetups 😍
+    Source: Lenny's Newsletter
+    Stripe built AI coding 'minions' shipping 1,300 PRs/week — a concrete, mind-blowing example of AI agents doing real work that will resonate with Ben's vibecoding audience.
+    https://substack.com/redirect/7b70a5a3-b2f9-4469-aedd-fb45963abcaa
+
+[76] 1 LATEST IN AI TODAY
+    Source: What's Up in AI
+    Google Gemma 4 open-weight models let everyday builders run AI locally for free — directly actionable for Ben's audience exploring DIY AI tools.
+    https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
+
+[74] In our in-depth discussion, Amol shares:
+    Source: Lenny's Newsletter
+    Anthropic's 19x growth and the prediction that PMs will outnumber engineers as AI supercharges productivity is a hot take Ben's audience will find validating and thought-provoking about AI's impact on careers.
+    https://substack.com/redirect/9b151140-5fbd-47eb-87f7-af678eb1d56c
+
+[72] 2 LATEST IN AI TODAY
+    Source: What's Up in AI
+    Microsoft launched voice, transcription, and image AI models in Foundry — new multimodal tools builders can plug into their apps.
+    https://microsoft.ai/news/today-were-announcing-3-new-world-class-mai-models-available-in-foundry/
+
+[70] WHAT ELSE HAPPENED IN AI
+    Source: What's Up in AI
+    Seedance 2.0 now leads AI video leaderboards and is widely available — a new top-tier video generation tool creators can immediately test.
+    https://seed.bytedance.com/en/seedance2_0
+
+[65] How Anthropic is automating growth experiments with Claude (their internal tool called “CASH”)
+    Source: Lenny's Newsletter
+    Anthropic using Claude internally to automate growth experiments (tool called 'CASH') is a great behind-the-scenes example of AI automation that non-technical builders can relate to and learn from.
+    https://substack.com/redirect/9b151140-5fbd-47eb-87f7-af678eb1d56c
+
+[64] OpenAI raising 122 billion dollars (!!!) the largest private round ever
+    Source: Page One
+    OpenAI raising $122B (largest private round ever) is a major signal about where AI is heading — great fodder for a hot take or trend piece.
+    https://substack.com/redirect/2a8fc779-7e53-45cc-a501-30208f1bc785
+
+[60] Building a knowledge graph
+    Source: Lenny's Newsletter
+    Real-world discussion of building a personal knowledge graph using Obsidian + Claude Code — a practical, relatable AI-augmented workflow for Ben's builders.
+    https://substack.com/redirect/d211629b-4f04-4616-82f1-47702b65a751
+
+[58] Wouter: Good question, I am actually struggling with the same challenge.
+    Source: Lenny's Newsletter
+    Practical discussion of building a personal knowledge graph using Obsidian + Claude Code — hands-on AI tool use that resonates with everyday builders managing information.
+    https://substack.com/redirect/82319287-5ee2-4486-882f-a26c6c50a3e4
+
+[55] The Rundown Roundtable: Our AI use cases
+    Source: The Rundown AI
+    The Rundown staff sharing their actual AI use cases is relatable, repeatable content format Ben could mirror with his own audience.
+    https://www.rundown.ai/
+
+[54] LLM Knowledge Bases
+    Source: What's Up in AI
+    Karpathy sharing thoughts on LLM knowledge bases — anything from Karpathy carries signal for the builder community even if the snippet is thin.
+    https://x.com/karpathy/status/2039805659525644595
+
+[52] # Control LLM reliability and spend from one place
+    Source: AI For Work
+    LLM gateway layer for managing model costs and reliability — marginally relevant for builders scaling AI apps who need to control spend, though somewhat technical/enterprise-leaning.
+
+======================================================================
+NUGGETS (23)
+======================================================================
+
+  [how-to]
+    - Every general-purpose AI agent breaks down into four building blocks: Triggers (what wakes it up), Memory (continuity between sessions), an Execution layer (ability to take real-world actions), and a Model (the reasoning engine). Understanding this stack helps you build or evaluate any agent.
+      (AI For Work)
+
+  [tool]
+    - OpenClaw is an open-source AI agent that reached 247,000 GitHub stars in weeks. It's model-agnostic and can send emails, manage calendars, write code, and handle tasks across dozens of apps autonomously.
+      (AI For Work)
+    - Netflix opened its physics-aware AI for video editing — a tool that understands real-world physics to assist in editing video content.
+      (The Rundown AI)
+    - Anthropic built an internal tool called 'CASH' that automates growth experiments using Claude — a real example of AI automating its own company's growth work. -> https://www.lennysnewsletter.com/p/anthropics-1b-to-19b-growth-run
+      (Lenny's Newsletter)
+    - Cowork is a tool Anthropic uses to detect team misalignment by analyzing Slack conversations — useful signal for distributed AI teams scaling fast. -> https://www.lennysnewsletter.com/p/anthropics-1b-to-19b-growth-run
+      (Lenny's Newsletter)
+    - Merge Gateway is a single integration point between your app and every LLM provider — handles routing, fallbacks, spend limits, and logs every AI action with cost and latency data. -> https://www.merge.dev/gateway
+      (AI For Work)
+    - Clerk now includes MCP server support, letting AI agents authenticate and act on behalf of users — useful for building agentic apps that need to access third-party services securely. -> https://clerk.com
+      (Lenny's Newsletter)
+    - Google released Gemma 4, an open model designed to run anywhere — relevant for builders who want to self-host or run AI locally without relying on cloud APIs.
+      (What's Up in AI)
+
+  [funding]
+    - Anthropic scaled from $1B to over $19B ARR in just 14 months, making Claude the fastest-growing AI product in history. -> https://www.lennysnewsletter.com/p/anthropics-1b-to-19b-growth-run
+      (Lenny's Newsletter)
+
+  [hiring]
+    - The creator of OpenClaw was hired by OpenAI shortly after the project exploded to 247,000 GitHub stars — a signal that viral open-source AI agent projects are a direct path to top AI lab recruitment.
+      (AI For Work)
+
+  [tip]
+[2026-04-06 12:15:36] Done
+    - Anthropic is offering credits worth one month's subscription plus up to 30% discounts on usage add-ons to users affected by the OpenClaw/agent platform cutoff — affected users should check for refund or credit options. -> https://x.com/bcherny/status/2040206440556826908
+      (The Rundown AI)
+    - Anthropic's growth team bets 70% on big swings and only 30% on incremental experiments — the inverse of most growth teams — because AI product growth requires bold differentiation. -> https://www.lennysnewsletter.com/p/anthropics-1b-to-19b-growth-run
+      (Lenny's Newsletter)
+    - Amol Avasare cold-emailed Anthropic's CPO Mike Krieger to land his Head of Growth role when no job listing existed — a concrete example of proactive outreach working at top AI companies. -> https://www.lennysnewsletter.com/p/anthropics-1b-to-19b-growth-run
+      (Lenny's Newsletter)
+    - Semantic caching can reuse LLM responses for equivalent requests, reducing both cost and latency without degrading output quality — a key optimization for production AI apps.
+      (AI For Work)
+
+  [insight]
+    - AI agents like OpenClaw hit Claude with nonstop requests that flat-rate subscriptions were never built to absorb — Anthropic is now blocking third-party agent platforms from running on standard Claude plans, requiring API keys or usage add-ons instead. -> https://x.com/bcherny/status/2040206440556826908
+      (The Rundown AI)
+    - The intelligence layer of AI agents is becoming interchangeable — the real competitive advantage is the surrounding stack: memory, triggers, execution, and security. Whoever controls the architecture and permissions wins, not whoever has the best model.
+      (AI For Work)
+    - Most AI tools wait for you to show up. The paradigm shift with agents like OpenClaw is that they show up for you — proactively waking up via cron jobs, webhooks, and message listeners across platforms like WhatsApp, Telegram, and Discord.
+      (AI For Work)
+    - Anthropic's Head of Growth believes the PM-to-engineer ratio may need to flip — more PMs than engineers — as AI makes individual engineers exponentially more productive. -> https://www.lennysnewsletter.com/p/anthropics-1b-to-19b-growth-run
+      (Lenny's Newsletter)
+    - Activation (getting new users to their first 'aha moment') is the single highest-leverage growth problem in AI products right now, according to Anthropic's Head of Growth. -> https://www.lennysnewsletter.com/p/anthropics-1b-to-19b-growth-run
+      (Lenny's Newsletter)
+    - Anthropic's focus on AI coding tools created a research flywheel — the more developers used Claude for coding, the faster their models improved, compounding growth. -> https://www.lennysnewsletter.com/p/anthropics-1b-to-19b-growth-run
+      (Lenny's Newsletter)
+    - LLM governance failures (no logging, no spend controls, no audit trail) are more dangerous than infrastructure failures — when things go wrong in production, you need a complete record of what happened and why.
+      (AI For Work)
+    - Microsoft and Google are taking opposite strategies on the AI stack: Microsoft going deeper into proprietary full-stack models, Google pushing open models that can run anywhere (Gemma 4).
+      (What's Up in AI)
+    - The AI customer service paradox: 88% ticket resolution rate but 22% customer churn — efficiency metrics look great but loyalty metrics tell a different story, suggesting AI alone isn't enough for retention. -> https://www.gladly.ai/resources/customer-service-reports-guides/leveraging-ai-automation/customer-expectations-report-2026/
+      (What's Up in AI)
+[2026-04-06 12:15:36] Done
