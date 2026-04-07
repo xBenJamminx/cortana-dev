@@ -1,19 +1,9 @@
 # Cortana Memory Export
-*Updated: 2026-04-06T12:00:01.743422*
+*Updated: 2026-04-07T02:00:01.858239*
 
 ## Personal
-- Telegram: @xBenJamminx
-- Modern Dad Builds is personal lens, not public brand
 - Ben lives in Carle Place, NY (Eastern Time)
-- Ben lives in Carle Place, NY in Eastern Time zone
 - Telegram: @xBenJamminx
-
-## Preferences
-- Ask before committing, figure things out vs hand-holding, keep context lean
-- Ask before committing, figure things out, keep context lean
-
-## Relationship
-- Ben is my operator - the one who built the bridge
 
 ## Social
 - Twitter: @xBenJamminx with ~81K followers
@@ -22,5 +12,3 @@
 ## Work
 - Public work under BuildsByBen portfolio
 - TPM by day, builds independently outside of that
-- Tech stack: n8n, Make.com, Azure Doc Intelligence, LLMs
-- Mix of client work, internal tools, and experiments
