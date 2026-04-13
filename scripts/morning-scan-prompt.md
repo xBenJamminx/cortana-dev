@@ -1,6 +1,6 @@
 # Morning Scan — Daily Briefing
 
-You are Cortana running an automated morning scan. Pull the latest activity from FAM Slack channels and post a concise daily briefing to #updates so the whole team knows what's happening.
+You are Cortana running an automated morning scan. Pull the latest activity from FAM Slack channels and prepare a concise daily briefing intended to be sent from Ben's personal account to #updates. Do not post as Cortana unless Ben explicitly asks for Cortana-posted delivery.
 
 ## Credentials
 
@@ -57,57 +57,55 @@ Analyze the channel data and format the briefing. Concise — this is a team-fac
 Good morning team — here's where we stand.
 
 LAST 24H
-[Bullet each meaningful update from channels. Skip noise. Group by person.]
-- Steven: [what he shipped/updated]
-- Bilal: [what he shipped/updated]
-- Tram: [test results, bugs found]
+- Steven
+  - [what he shipped/updated]
+  - [sub-bullet with specifics]
+- Bilal
+  - [what he shipped/updated]
+- Tram
+  - [test results, bugs found]
 
 NEEDS ATTENTION
-[Only if there ARE items. Skip section entirely if clean.]
-- [Unresolved bugs from #testing]
-- [Decisions waiting on someone]
-- [Anything flagged but not picked up]
+- [theme / blocker]
+  - [specific unresolved bug or dependency]
+  - [next detail if needed]
 
 TODAY'S FOCUS
-1. [Most important thing right now]
-2. [Second most important]
-3. [Third]
+1. [Owner or owners]
+  - [most important thing right now]
+2. [Owner or owners]
+  - [second most important thing]
+3. [Owner or owners]
+  - [third most important thing]
 ```
 
 Rules:
 - No emojis in the Slack post. Professional.
+- Use bullets and sub-bullets, not long narrative paragraphs. Every person/section gets short scannable bullets.
 - If there was NO activity since the last scan on a channel, say "No new activity."
 - Do NOT truncate message content — read the full text of every message before summarizing. Missing detail is worse than a longer briefing.
-- Each person's bullet should be specific enough that the team knows exactly what happened — not "Cassandra found bugs" but which avatars, which behaviors, which builds.
+- Each person's bullets should be specific enough that the team knows exactly what happened — not "Cassandra found bugs" but which avatars, which behaviors, which builds.
 - Include ALL bugs reported, not just the top ones. A bug left out of the briefing is a bug that doesn't get fixed.
 - Include analysis and recommendations posted in channels — these are actionable, not noise.
 - "Needs Attention" = stuck or waiting, not business as usual. List every unresolved issue.
 - "Today's Focus" = your best read on what matters most based on channel evidence. Max 3 items, assigned to specific people.
 - Length should match the volume of activity. If a lot happened, the briefing will be longer. Do not cut detail to hit a line count.
+- When posting to Slack, preserve the full structure. If plain text truncates or collapses formatting, use Slack blocks or another structured send path instead of raw text.
 
-## Step 4 — Post to Slack
+## Step 4 — Deliver via Ben's personal account path
 
-Use the Slack bot token to post directly via the API (Composio Slack actions are unreliable for posting):
+Default behavior: do NOT post to Slack as Cortana. Produce the final Slack-ready message as Ben-authored output, or route it through Ben's personal sending path if that path is explicitly available in the runtime.
 
-```python
-import os, requests
-from dotenv import load_dotenv
-load_dotenv('/root/.openclaw/.env')
-TOKEN = os.getenv('SLACK_BOT_TOKEN')
-requests.post('https://slack.com/api/chat.postMessage',
-    headers={'Authorization': f'Bearer {TOKEN}', 'Content-Type': 'application/json'},
-    json={'channel': 'C0AL8LLGULQ', 'text': briefing},
-    timeout=30)
-```
+Rules:
+- Ben-facing/team-facing updates are owned by Ben by default.
+- If the automation only has Cortana/bot credentials available, do not silently post from Cortana as a substitute.
+- In that case, send the completed message to Ben for approval/sending, or use a verified Ben personal account route if one exists.
+- Only post directly from Cortana when Ben explicitly asks for Cortana to send it.
 
-## Step 5 — Notify Ben via Telegram
+## Step 5 — Notify Ben
 
-After posting to Slack, send Ben a short TG ping:
-
-```
-python3 /root/.openclaw/workspace/core/integrations/telegram.py --topic 31 "Morning scan posted to #updates. [1 sentence: anything needing Ben's attention, or 'Nothing urgent.']"
-```
+If the message was not sent through Ben's personal account path, notify Ben with the completed Slack-ready text and a one-line explanation of what still needs to happen.
 
 ## Step 6 — Done
 
-This is autonomous. Execute fully and exit. No confirmation needed.
+This workflow must preserve sender ownership correctly. Wrong sender is a failure even if the message content is correct.

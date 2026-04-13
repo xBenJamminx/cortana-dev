@@ -28,6 +28,14 @@ All three integrations use **Composio connectedAccountIds**. These are OAuth con
 
 ---
 
+## Morning Update Formatting Rule
+
+For the daily Slack morning update:
+- Always format with bullets and sub-bullets.
+- Never use large narrative paragraphs for person summaries or blocker sections.
+- Group by person or theme at the top level, then put specifics in short nested bullets.
+- If Slack plain-text posting truncates or mangles the layout, send with structured Slack blocks instead.
+
 ## Slack Channels
 
 These are the only channels relevant to this sync. Pull from each one every run.
@@ -266,3 +274,43 @@ Keep it tight. Ben reads this to understand what changed, not to re-read the mee
 8. **Steven = Cao Tan Luc** in Notion. All backend work belongs to him. Do not create a new user.
 9. **Bilal owns all frontend/Unity work.** If it's a UI, animation, AR, or build issue — it's Bilal.
 10. **Ben owns product tasks** — naming conventions, QA sheet updates, descriptions, clarifications with the team.
+
+---
+
+## Composio Action Fixes (2026-04-07)
+
+**DO NOT USE** `GOOGLESHEETS_BATCH_UPDATE` — it is broken. It ignores the `range` parameter and always writes to A2 regardless of what you specify.
+
+**USE INSTEAD:** `GOOGLESHEETS_BATCH_UPDATE_VALUES_BY_DATA_FILTER`
+
+Format:
+```json
+{
+  "spreadsheet_id": "1TfblNSRCTqkKJFIxPpIlb8b-iE9cSeR16Lu4gMZ0Qio",
+  "valueInputOption": "USER_ENTERED",
+  "data": [
+    {
+      "dataFilter": {"a1Range": "In Progress!H23"},
+      "values": [["your comment text here"]]
+    }
+  ]
+}
+```
+
+**DO NOT USE** `NOTION_INSERT_ROW_DATABASE` or `NOTION_UPDATE_PAGE` — they ignore all property values.
+
+**USE INSTEAD:** Direct Notion API with `NOTION_API_KEY_WORK`:
+```python
+requests.post("https://api.notion.com/v1/pages",
+    headers={"Authorization": "Bearer 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", "Notion-Version": "2022-06-28"},
+    json={"parent": {"database_id": "26c4666bd1ca807b930dca5ffff9c8e9"},
+          "properties": {
+              "Name": {"title": [{"text": {"content": "task name"}}]},
+              "Status": {"status": {"name": "Not Started"}},
+              "Priority": {"select": {"name": "High"}},
+              "Assigned": {"people": [{"object": "user", "id": "user-id"}]},
+              "Project": {"relation": [{"id": "26c4666b-d1ca-80e5-a4cd-fc007ab84486"}]}
+          }})
+```
+
+Note: `google_credentials.json` on the server has an expired OAuth token (invalid_grant as of Apr 7). Do not try to use it for direct Google API calls.
