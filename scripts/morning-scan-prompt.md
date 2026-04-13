@@ -81,7 +81,9 @@ TODAY'S FOCUS
 
 Rules:
 - No emojis in the Slack post. Professional.
-- Use bullets and sub-bullets, not long narrative paragraphs. Every person/section gets short scannable bullets.
+- Use Slack-native formatting, not document-style nested lists. Prefer bold section/person headers plus flat `•` bullets under each header.
+- Do not rely on indented `-` nested bullets, because Slack mobile renders them badly.
+- Keep each bullet self-contained when possible instead of creating deep hierarchies.
 - If there was NO activity since the last scan on a channel, say "No new activity."
 - Do NOT truncate message content — read the full text of every message before summarizing. Missing detail is worse than a longer briefing.
 - Each person's bullets should be specific enough that the team knows exactly what happened — not "Cassandra found bugs" but which avatars, which behaviors, which builds.
@@ -91,6 +93,7 @@ Rules:
 - "Today's Focus" = your best read on what matters most based on channel evidence. Max 3 items, assigned to specific people.
 - Length should match the volume of activity. If a lot happened, the briefing will be longer. Do not cut detail to hit a line count.
 - When posting to Slack, preserve the full structure. If plain text truncates or collapses formatting, use Slack blocks or another structured send path instead of raw text.
+- Mobile readability matters. Optimize for Slack mobile first, not markdown purity.
 
 ## Step 4 — Deliver via Ben's personal account path
 

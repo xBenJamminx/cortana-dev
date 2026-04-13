@@ -1,104 +1,59 @@
-Good morning team — here's where we stand.
+Good morning team, here's where we stand.
 
-LAST 3 DAYS
-- Meeting notes
-  - Team aligned on a few key calls and blockers.
-  - Decided to move avatar responses from ChatGPT to Claude because Claude felt smarter and less agreeable.
-  - FIA's voice issue was addressed, but screen recording and audio capture are still unresolved.
-  - Bilal and Steven still need to fix the restaurant-data mismatch between frontend visuals and backend data.
-  - The team also called out the need to remove the constraint that keeps forcing 3-option responses.
+*LAST 3 DAYS*
 
-- Ben
-  - Posted major stabilization updates on `demo/ben-stabilization`, all isolated from production.
-  - Backend / prompt stack changes:
-    - dynamic prompt rendering so GPT-5 no longer sees placeholder strings like "Location not set"
-    - structured JSON soul generation in Gemini 2.5 Pro
-    - age-aware memory recall so fresh memories stop getting filtered out
-    - observability logs across the memory and greeting pipeline
-    - explicit user preferences now rank above the soul, so instructions like "ask me questions, don't prescribe" win reliably
-  - Conversation / behavior changes:
-    - reworked conversation flow into 5 phases
-    - added example exchanges to soul generation
-    - reduced soul size from 10-15 rules to 5-8
-    - added emotional-state-card conflict detection
-    - added post-session observation and entity extraction
-    - improved open-loop and emotional-tone capture
-    - cleaned up onboarding and greeting behavior
-  - Testing notes:
-    - clear character differentiation across 5 personas and 3 sessions
-    - much better adherence to user engagement preferences
-    - still flagged name persistence, inconsistent greeting recall, and live voice-state drift for real voice testing
+*Meeting notes*
+• Team aligned on key decisions and blockers.
+• Avatar responses are moving from ChatGPT to Claude because Claude felt smarter and less agreeable.
+• FIA's voice issue was addressed, but screen recording and audio capture are still unresolved.
+• Bilal and Steven still need to fix the restaurant-data mismatch between frontend visuals and backend data.
+• The team also called out the need to remove the constraint that keeps forcing 3-option responses.
 
-- Steven
-  - Merged a meaningful batch from `demo/ben-stabilization` into staging.
-  - Staging fixes now include:
-    - memory corruption from hardcoded examples like Marco and March 15
-    - preferred-name persistence
-    - first-session naming behavior
-    - bootstrap injection fallback
-    - age-tagged memories
-    - pre-reply voice-path memory retrieval
-    - emotional-tone capture
-    - entity detection
-    - shorter structured souls
-    - conversation-phase guidance
-    - greeting continuity improvements
-  - Still needs to copy `{{greeting_instruction}}` and `{{conversation_guidance}}` into the Hume dashboard to activate the full behavior stack.
+*Ben*
+• Posted major stabilization updates on `demo/ben-stabilization`, all isolated from production.
+• Backend and prompt changes: dynamic prompt rendering, structured JSON soul generation, age-aware memory recall, observability logs, and user preferences ranked above the soul.
+• Conversation changes: 5-phase flow, example exchanges, shorter souls, emotional-state conflict detection, observation/entity extraction, and cleaner onboarding/greeting behavior.
+• Testing showed stronger character differentiation and better adherence to user engagement preferences.
+• Still flagged name persistence, inconsistent greeting recall, and live voice-state drift for real voice testing.
 
-- Bilal
-  - Posted Build #5(47) updates:
-    - human-character animation fixes
-    - larger avatar selections
-    - all avatars walking in AR
-    - FIA integrated with eye movement and lip sync
-    - Nike lip sync resolved
-  - Also documented two major remaining blockers:
-    - WebSocket reconnection can kill audio when switching avatars, respawning, auto-reconnecting, or moving to 3D mode
-    - screen recording mutes speaker audio and fails to save video to Photos
-  - Asked Steven for help on the reconnection issue and gave a temporary workaround to restart the app when switching avatars.
+*Steven*
+• Merged a meaningful batch from `demo/ben-stabilization` into staging.
+• Staging fixes now include: memory-corruption fixes, preferred-name persistence, first-session naming behavior, bootstrap fallback, age-tagged memories, pre-reply voice memory retrieval, emotional-tone capture, entity detection, shorter souls, conversation guidance, and greeting continuity.
+• Still needs to copy `{{greeting_instruction}}` and `{{conversation_guidance}}` into the Hume dashboard to activate the full behavior stack.
 
-- Cassandra
-  - Reported that conversation feels smoother and closer to human flow.
-  - Still flagged active product issues:
-    - avatars jump too quickly into work memories instead of using context naturally
-    - avatars hallucinate tool actions, including restaurant pulls she did not ask for
-    - avatars stay too sensitive to background noise
-    - avatars do not fill dead air naturally while waiting on tools like surf reports
-  - Earlier tests also documented:
-    - FIA wrong voice
-    - FIA eyes looking upward
-    - FIA transparent hair
-    - strange body movement
-    - Lilith AR instability and claw-like hands
-    - avatars still too small in the selection box
-    - respawn requiring full logout
-    - restaurant suggestions wrong in location and too chatbot-like in detail
+*Bilal*
+• Posted Build #5(47) updates: human-character animation fixes, larger avatar selections, all avatars walking in AR, FIA eye movement and lip sync, and Nike lip sync resolved.
+• Also documented two major blockers: WebSocket reconnection can kill audio, and screen recording mutes speaker audio while failing to save video to Photos.
+• Asked Steven for help on the reconnection issue and gave a temporary workaround to restart the app when switching avatars.
 
-NEEDS ATTENTION
-- Audio stability
-  - Latest build still loses audio on WebSocket reconnection paths including avatar change, respawn, auto-reconnect, and sometimes switching to 3D mode, even while animation continues.
+*Cassandra*
+• Reported that conversation feels smoother and closer to human flow.
+• Still flagged active issues: avatars jump too quickly into work memories, hallucinate tool actions, stay too sensitive to background noise, and do not fill dead air naturally while waiting on tools.
+• Earlier tests also documented: FIA wrong voice, upward eyes, transparent hair, strange body movement, Lilith AR instability and claw-like hands, avatars too small in the selection box, respawn requiring full logout, and restaurant suggestions being wrong in both location and tone.
 
-- Screen recording
-  - Starting recording mutes speaker audio and does not save video output to Photos.
+*NEEDS ATTENTION*
 
-- Hume dashboard activation
-  - `{{greeting_instruction}}` and `{{conversation_guidance}}` still need to be copied over or some staging conversation improvements will not fully activate.
+*Audio stability*
+• Latest build still loses audio on WebSocket reconnection paths including avatar change, respawn, auto-reconnect, and sometimes switching to 3D mode, even while animation continues.
 
-- Conversation quality
-  - avatars jump into memory too abruptly
-  - hallucinate tool actions
-  - give overly long restaurant answers instead of short conversational suggestions
-  - do not always handle pauses or tool-wait time in a human way
+*Screen recording*
+• Starting recording mutes speaker audio and does not save video output to Photos.
 
-- Other unresolved issues
-  - Kaleidoco email still is not working for Cassandra, who switched back to Particle Ink again
-  - background-noise sensitivity is still unresolved
-  - restaurant-data mismatch between UI and backend is still unresolved
+*Hume dashboard activation*
+• `{{greeting_instruction}}` and `{{conversation_guidance}}` still need to be copied over or some staging conversation improvements will not fully activate.
 
-TODAY'S FOCUS
-1. Steven + Bilal
-  - Resolve the WebSocket reconnection audio failure and screen-recording bug first, because they block reliable avatar switching, respawn testing, and demo capture.
-2. Ben + Steven
-  - Finish activating and validating the conversation stack in staging, including the Hume dashboard template updates, then keep tightening memory use, pacing, and hallucination control for Monday's standup.
-3. Team
-  - Re-test Build #5(47) against the full live-use flow, especially avatar switching, AR stability, tool-wait behavior, background noise sensitivity, and whether avatars now use context naturally instead of blurting out old work memories.
+*Conversation quality*
+• Avatars jump into memory too abruptly.
+• Avatars hallucinate tool actions.
+• Restaurant answers are still too long instead of conversational.
+• Tool-wait pacing still feels unnatural.
+
+*Other unresolved issues*
+• Kaleidoco email still is not working for Cassandra, who switched back to Particle Ink again.
+• Background-noise sensitivity is still unresolved.
+• Restaurant-data mismatch between UI and backend is still unresolved.
+
+*TODAY'S FOCUS*
+1. *Steven + Bilal* — Resolve the WebSocket reconnection audio failure and screen-recording bug first, because they block reliable avatar switching, respawn testing, and demo capture.
+2. *Ben + Steven* — Finish activating and validating the conversation stack in staging, including the Hume dashboard template updates, then keep tightening memory use, pacing, and hallucination control for Monday's standup.
+3. *Team* — Re-test Build #5(47) against the full live-use flow, especially avatar switching, AR stability, tool-wait behavior, background noise sensitivity, and whether avatars now use context naturally instead of blurting out old work memories.
