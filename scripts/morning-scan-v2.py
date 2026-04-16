@@ -342,7 +342,7 @@ Good morning team -- here's where we stand.
 
     subprocess.run([
         'python3', '/root/.openclaw/workspace/core/integrations/telegram.py',
-        '--topic', '31', 'Morning scan posted to #updates.'
+        '--topic', '2122', 'Morning scan posted to #updates.'
     ], capture_output=True)
     print('Done.', flush=True)
 
