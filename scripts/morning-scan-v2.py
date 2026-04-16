@@ -288,6 +288,8 @@ Format using this exact syntax (it gets converted to Slack Block Kit):
 Output:
 Good morning team -- here's where we stand.
 
+[2-4 sentence executive summary. A punchy paragraph that captures the overall state of the project right now -- what's the momentum, what's the biggest outstanding concern, what's the theme of today. Should read like something a founder would say to kick off a standup. No bullets here, just prose. Write it like a human, not a bot.]
+
 *{period_label}*
 
 *[Person Name]*
