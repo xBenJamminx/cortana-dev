@@ -147,10 +147,50 @@ def text_to_blocks(text):
 
     return blocks
 
-def slack_post(channel, text, env):
+def md_link_to_slack(text):
+    """Convert [text](url) markdown links to Slack mrkdwn <url|text> format."""
+    return re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<\2|\1>', text)
+
+def takeaways_to_blocks(title, recording_url, share_url, duration, sections):
+    """Build Key Takeaways as compact mrkdwn section blocks (1 block per section)."""
+    blocks = []
+    spacer = {'type': 'section', 'text': {'type': 'mrkdwn', 'text': ' '}}
+
+    # Header
+    blocks.append({
+        'type': 'section',
+        'text': {'type': 'mrkdwn', 'text': f'*{title}*'}
+    })
+    blocks.append({
+        'type': 'section',
+        'text': {'type': 'mrkdwn', 'text': f'<{recording_url}|VIEW RECORDING - {duration} mins> · <{share_url}|Share Link> <!channel>'}
+    })
+    blocks.append(spacer)
+    blocks.append({
+        'type': 'section',
+        'text': {'type': 'mrkdwn', 'text': '*Key Takeaways*'}
+    })
+    blocks.append(spacer)
+
+    for title_link, body in sections:
+        # Convert [text](url) to <url|text> for mrkdwn
+        title_mrkdwn = md_link_to_slack(title_link)
+        body_mrkdwn = re.sub(r'\*\*(.+?)\*\*', r'*\1*', body)  # normalize bold
+        # Replace indented bullets "  - " with Slack mrkdwn bullets
+        body_mrkdwn = re.sub(r'^  - ', '• ', body_mrkdwn, flags=re.MULTILINE)
+        blocks.append({
+            'type': 'section',
+            'text': {'type': 'mrkdwn', 'text': f'{title_mrkdwn}\n{body_mrkdwn}'}
+        })
+        blocks.append(spacer)
+
+    return blocks
+
+def slack_post(channel, text, env, blocks=None):
     """Post to Slack as Ben via Composio."""
     api_key = env['COMPOSIO_API_KEY']
-    blocks = text_to_blocks(text)
+    if blocks is None:
+        blocks = text_to_blocks(text)
     payload = json.dumps({
         'connectedAccountId': COMPOSIO_ACCOUNT_ID,
         'input': {
@@ -172,7 +212,11 @@ def slack_post(channel, text, env):
     )
     with urllib.request.urlopen(req, timeout=30) as r:
         result = json.loads(r.read())
-        if not result.get('data'):
+        print(f'Composio response: successful={result.get("successful")}, error={result.get("error")}', flush=True)
+        data = result.get('data', {})
+        if data:
+            print(f'  ok={data.get("ok")}, warning={data.get("warning")}, ts={data.get("ts")}', flush=True)
+        if not result.get('successful'):
             raise Exception('Composio post failed: ' + str(result))
         return result
 
@@ -317,8 +361,15 @@ Output format (no intro, no outro -- just the action items):
     with open(BRIEFING_FILE, 'w') as f:
         f.write(briefing)
 
-    print('Posting to #meeting-notes...', flush=True)
-    slack_post(MEETING_NOTES_CHANNEL, briefing, env)
+    title = f'{header.get("title", "FAM POC Standup")} - {date_formatted}'
+    action_items_section = '*Action Items*\n\n' + action_items
+
+    print('Posting Key Takeaways to #meeting-notes...', flush=True)
+    kt_blocks = takeaways_to_blocks(title, recording_url, share_url, duration, sections)
+    slack_post(MEETING_NOTES_CHANNEL, title, env, blocks=kt_blocks)
+
+    print('Posting Action Items...', flush=True)
+    slack_post(MEETING_NOTES_CHANNEL, action_items_section, env)
     print('Posted.', flush=True)
 
     subprocess.run([
