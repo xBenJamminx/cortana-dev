@@ -329,49 +329,58 @@ Output a JSON object only — no commentary before or after:
         json.dump(delta, f, indent=2)
     print(f'Delta saved to {DELTA_FILE}', flush=True)
 
-    # Format human-readable summary
+    def h(text):
+        """HTML-escape user content."""
+        return text.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+
     new_tasks = delta.get('new_tasks', [])
     status_updates = delta.get('status_updates', [])
     ambiguous = delta.get('ambiguous', [])
 
-    lines = [f'FAM SYNC — {period_label}']
-    lines.append(f'{len(new_tasks)} new  |  {len(status_updates)} status changes  |  {len(ambiguous)} needs your call')
-    lines.append('')
+    parts = [f'<b>FAM SYNC — {period_label}</b>']
+    counts = []
+    if new_tasks: counts.append(f'{len(new_tasks)} new')
+    if status_updates: counts.append(f'{len(status_updates)} updates')
+    if ambiguous: counts.append(f'{len(ambiguous)} needs your call')
+    parts.append('  ·  '.join(counts) if counts else 'No changes detected')
+    parts.append('')
 
     if new_tasks:
-        lines.append(f'NEW TASKS')
+        parts.append('<b>NEW TASKS</b>')
         for i, t in enumerate(new_tasks, 1):
-            qa = '+QA' if t.get('add_to_qa_sheet') else 'Notion'
-            lines.append(f'{i}. [{t["assigned_name"]} | {t["priority"]} | {qa}] {t["name"]}')
-            lines.append(f'   {t["evidence"]}')
-        lines.append('')
+            qa = '+QA' if t.get('add_to_qa_sheet') else 'Notion only'
+            parts.append(f'{i}. <b>{h(t["name"])}</b>')
+            parts.append(f'   {h(t["assigned_name"])}  ·  {h(t.get("priority",""))}  ·  {qa}')
+            parts.append(f'   <i>{h(t.get("evidence",""))}</i>')
+        parts.append('')
 
     if status_updates:
-        lines.append(f'STATUS CHANGES')
+        parts.append('<b>STATUS CHANGES</b>')
         for i, u in enumerate(status_updates, 1):
-            qa_note = f' [QA {u["qa_sheet_row"]}]' if u.get('qa_sheet_row') else ''
-            arrow = f'{u["current_status"]} → {u["new_status"]}'
-            lines.append(f'{i}. {arrow}{qa_note} | {u["notion_name"]}')
-            lines.append(f'   {u["evidence"]}')
-        lines.append('')
+            qa_note = f'  [QA {u["qa_sheet_row"]}]' if u.get('qa_sheet_row') else ''
+            arrow = f'{h(u["current_status"])} → <b>{h(u["new_status"])}</b>'
+            parts.append(f'{i}. {arrow}{qa_note}')
+            parts.append(f'   {h(u["notion_name"])}')
+            parts.append(f'   <i>{h(u.get("evidence",""))}</i>')
+        parts.append('')
 
     if ambiguous:
-        lines.append(f'NEEDS YOUR CALL')
+        parts.append('<b>NEEDS YOUR CALL</b>')
         for i, a in enumerate(ambiguous, 1):
-            lines.append(f'{i}. {a["item"]}')
-            lines.append(f'   {a["reason"]}')
-        lines.append('')
+            parts.append(f'{i}. {h(a["item"])}')
+            parts.append(f'   <i>{h(a["reason"])}</i>')
+        parts.append('')
 
-    lines.append('"approved" to write  |  or tell me what to adjust.')
-    summary = '\n'.join(lines)
+    parts.append('<i>"approved" to write  ·  or tell me what to adjust</i>')
+    summary = '\n'.join(parts)
 
     print('\n' + '=' * 60, flush=True)
     print(summary, flush=True)
     print('=' * 60, flush=True)
 
-    # Send to Telegram
+    # Send to Telegram (HTML formatted)
     subprocess.run([
-        'python3', TELEGRAM_CLIENT, '--topic', TELEGRAM_TOPIC, summary
+        'python3', TELEGRAM_CLIENT, '--topic', TELEGRAM_TOPIC, '--parse-mode', 'HTML', summary
     ], capture_output=True)
     print('Delta sent to Telegram topic 2122.', flush=True)
 
