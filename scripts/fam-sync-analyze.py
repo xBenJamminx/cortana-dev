@@ -276,7 +276,8 @@ Nice to have → Low
 3. New tasks = items mentioned in Slack that do NOT exist in Notion (after semantic matching).
 4. Status updates = existing Notion tasks whose status should change based on Slack evidence.
 5. Dev-priority tasks (Steven/Bilal work) should also be added/updated in QA Sheet. Ben/Cassandra tasks stay in Notion only.
-6. Be conservative: if it's ambiguous, put it in the ambiguous list rather than creating/updating.
+6. SILENTLY IGNORE (do not put in ambiguous): scheduling updates, meeting times, attendance questions, acknowledgements ("great!", "thanks!", "super!"), status questions ("when will X be done?"), praise, general feedback that maps to an existing task's evidence, informational messages with no action.
+7. AMBIGUOUS = only items where you genuinely cannot decide: (a) is this a new task or an update to an existing one? (b) who owns it? (c) does Slack evidence clearly say done/testing but you're not sure which Notion task it maps to? Aim for 0–5 ambiguous items max. When in doubt, make the call rather than surfacing it.
 
 Output a JSON object only — no commentary before or after:
 
@@ -329,41 +330,39 @@ Output a JSON object only — no commentary before or after:
     print(f'Delta saved to {DELTA_FILE}', flush=True)
 
     # Format human-readable summary
-    lines = [f'FAM SYNC DELTA -- {period_label}', '']
-
     new_tasks = delta.get('new_tasks', [])
-    lines.append(f'NEW TASKS ({len(new_tasks)})')
-    if new_tasks:
-        for i, t in enumerate(new_tasks, 1):
-            qa = ' + QA Sheet' if t.get('add_to_qa_sheet') else ' (Notion only)'
-            lines.append(f'{i}. {t["name"]}')
-            lines.append(f'   → {t["assigned_name"]} | {t["priority"]}{qa}')
-            lines.append(f'   Source: {t["evidence"]}')
-    else:
-        lines.append('  None')
-    lines.append('')
-
     status_updates = delta.get('status_updates', [])
-    lines.append(f'STATUS CHANGES ({len(status_updates)})')
-    if status_updates:
-        for i, u in enumerate(status_updates, 1):
-            qa_note = f' | QA row {u["qa_sheet_row"]}' if u.get('qa_sheet_row') else ''
-            lines.append(f'{i}. {u["notion_name"]}')
-            lines.append(f'   {u["current_status"]} → {u["new_status"]}{qa_note}')
-            lines.append(f'   Evidence: {u["evidence"]}')
-    else:
-        lines.append('  None')
+    ambiguous = delta.get('ambiguous', [])
+
+    lines = [f'FAM SYNC — {period_label}']
+    lines.append(f'{len(new_tasks)} new  |  {len(status_updates)} status changes  |  {len(ambiguous)} needs your call')
     lines.append('')
 
-    ambiguous = delta.get('ambiguous', [])
-    if ambiguous:
-        lines.append(f'AMBIGUOUS -- needs your call ({len(ambiguous)})')
-        for i, a in enumerate(ambiguous, 1):
-            lines.append(f'{i}. {a["item"]}')
-            lines.append(f'   Reason: {a["reason"]}')
+    if new_tasks:
+        lines.append(f'NEW TASKS')
+        for i, t in enumerate(new_tasks, 1):
+            qa = '+QA' if t.get('add_to_qa_sheet') else 'Notion'
+            lines.append(f'{i}. [{t["assigned_name"]} | {t["priority"]} | {qa}] {t["name"]}')
+            lines.append(f'   {t["evidence"]}')
         lines.append('')
 
-    lines.append('Reply "approved" to write all changes, or tell me what to adjust.')
+    if status_updates:
+        lines.append(f'STATUS CHANGES')
+        for i, u in enumerate(status_updates, 1):
+            qa_note = f' [QA {u["qa_sheet_row"]}]' if u.get('qa_sheet_row') else ''
+            arrow = f'{u["current_status"]} → {u["new_status"]}'
+            lines.append(f'{i}. {arrow}{qa_note} | {u["notion_name"]}')
+            lines.append(f'   {u["evidence"]}')
+        lines.append('')
+
+    if ambiguous:
+        lines.append(f'NEEDS YOUR CALL')
+        for i, a in enumerate(ambiguous, 1):
+            lines.append(f'{i}. {a["item"]}')
+            lines.append(f'   {a["reason"]}')
+        lines.append('')
+
+    lines.append('"approved" to write  |  or tell me what to adjust.')
     summary = '\n'.join(lines)
 
     print('\n' + '=' * 60, flush=True)
