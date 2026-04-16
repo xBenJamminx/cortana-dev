@@ -280,13 +280,18 @@ Rules:
 - Keep technical specifics (function names, build numbers, specific bugs) -- just don't repeat them multiple times.
 - Drop pure conversational back-and-forth ("Yes", "Thank you", "Got it") -- only include substantive updates.
 - Each person gets 2-6 bullets covering their meaningful activity. Not one vague bullet, not 30 bullets.
-- Every distinct unresolved bug gets its own line in Needs Attention.
+- Every distinct unresolved bug MUST appear in Needs Attention. Never drop an issue -- if unsure of severity, default to WATCH. Tiering is for prioritization, not filtering.
 - No emojis. No markdown ##. No em dashes. Professional tone.
 
+Needs Attention tiers:
+- BLOCKING: actively preventing work or a deliverable from moving forward
+- HIGH: serious issue that needs to be resolved today
+- WATCH: known issue, not urgent, but needs to be tracked -- use this as the default if severity is unclear
+
 Format using this exact syntax (it gets converted to Slack Block Kit):
-- *bold* for section headers and person names only
-- Top-level bullets: "- item"
-- Sub-bullets for grouping related details: "  - sub-item" (exactly 2 spaces then dash)
+- *bold* for standalone line headers and person names ONLY -- never inside a bullet or sub-bullet
+- Top-level bullets: "- item" (plain text only, no bold markers inside)
+- Sub-bullets for grouping related details: "  - sub-item" (exactly 2 spaces then dash, plain text only)
 - Numbered list for Today's Focus only
 
 Output:
@@ -303,8 +308,20 @@ Good morning team -- here's where we stand.
 - [next area of work]
 
 *NEEDS ATTENTION*
-- [unresolved issue]
-  - [specific detail: build number, what fails, what's blocked]
+
+*BLOCKING*
+- [issue actively stopping work]
+  - [specific detail: what fails, what's blocked]
+
+*HIGH*
+- [serious issue needing resolution today]
+  - [specific detail]
+
+*WATCH*
+- [known issue, not urgent]
+  - [specific detail]
+
+(Omit any tier that has no issues. Do not include an empty tier.)
 
 *TODAY'S FOCUS*
 1. [Person] -- [most important thing]
