@@ -70,11 +70,9 @@ def text_to_blocks(text):
 
         if not line:
             # Emit a spacer between content blocks, but never two in a row
-            if blocks and blocks[-1] != {'type': 'rich_text', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': ' '}]}]}:
-                blocks.append({
-                    'type': 'rich_text',
-                    'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': ' '}]}]
-                })
+            spacer = {'type': 'section', 'text': {'type': 'mrkdwn', 'text': ' '}}
+            if blocks and blocks[-1] != spacer:
+                blocks.append(spacer)
             i += 1
             continue
 
