@@ -29,24 +29,35 @@ def slack_get(endpoint, params, token):
     with urllib.request.urlopen(req, timeout=15) as r:
         return json.loads(r.read())
 
-def slack_post(channel, text, token):
-    payload = json.dumps({'channel': channel, 'text': text}).encode()
+def slack_post(channel, text, env):
+    # Post via Composio using Ben's connected account (posts as Ben, not as bot)
+    api_key = env['COMPOSIO_API_KEY']
+    payload = json.dumps({
+        'connectedAccountId': 'b02db1f4-9d22-416c-bb78-bdb8c1bc6bb4',
+        'input': {'channel': channel, 'text': text}
+    }).encode()
     req = urllib.request.Request(
-        'https://slack.com/api/chat.postMessage',
+        'https://backend.composio.dev/api/v2/actions/SLACK_SENDS_A_MESSAGE_TO_A_SLACK_CHANNEL/execute',
         data=payload,
-        headers={'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json'}
+        headers={
+            'x-api-key': api_key,
+            'Content-Type': 'application/json',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+            'Accept': 'application/json',
+            'Origin': 'https://app.composio.dev',
+        }
     )
     with urllib.request.urlopen(req, timeout=15) as r:
         result = json.loads(r.read())
-        if not result.get('ok'):
-            raise Exception('Slack post failed: ' + result.get('error', 'unknown'))
+        if not result.get('data'):
+            raise Exception('Composio post failed: ' + str(result))
         return result
 
 def openrouter_complete(prompt, api_key):
     payload = json.dumps({
         'model': 'google/gemini-2.5-flash',
         'messages': [{'role': 'user', 'content': prompt}],
-        'max_tokens': 2000,
+        'max_tokens': 8000,
     }).encode()
     req = urllib.request.Request(
         'https://openrouter.ai/api/v1/chat/completions',
@@ -113,45 +124,44 @@ def main():
 
     messages_block = '\n'.join(raw_msgs)
 
-    prompt = f"""You are building a Slack morning briefing for the FAM Smart Companion team.
+    prompt = f"""You are writing a morning briefing for the FAM Smart Companion team to post in Slack.
 
 PERIOD: {period_label}
 
-RAW SLACK MESSAGES (sender is always correct -- do not change attribution):
+RAW SLACK MESSAGES (sender names in [brackets] are the actual authors -- never change attribution):
 {messages_block}
 
-Format a concise team briefing using ONLY Slack-native formatting:
-- *bold* for section headers and person names
-- flat bullet list with - (no nested bullets, Slack mobile renders them poorly)
-- No markdown ##, no **, no em dashes
+Write a synthesized team briefing. Your job is to summarize and consolidate -- not quote verbatim or bullet-point every line. Group related items. Merge related bugs into themes. Keep the key specifics (exact bug names, feature names, build numbers) but write it as a human summary, not a message dump.
 
-Output format:
+Rules:
+- NEVER include @mentions or tag anyone. Strip all @name references from your output.
+- NEVER quote messages verbatim. Summarize what happened.
+- Keep technical specifics (function names, build numbers, specific bugs) -- just don't repeat them multiple times.
+- Drop pure conversational back-and-forth ("Yes", "Thank you", "Got it") -- only include substantive updates.
+- Each person gets 2-6 bullets covering their meaningful activity. Not one vague bullet, not 30 bullets.
+- Every distinct unresolved bug gets its own line in Needs Attention.
+- No emojis. No markdown ##. No em dashes. Professional tone.
+
+Format using Slack-native formatting only:
+- *bold* for section headers and names
+- Flat - bullets only (no nested bullets, no indentation)
+
+Output:
 Good morning team -- here's where we stand.
 
 *{period_label}*
 
 *[Person Name]*
-- [what they did/reported, specific and concrete]
-- [next item]
-
-*[Next Person]*
-- ...
+- [synthesized summary of what they did, specific but not verbatim]
+- [next distinct area of work]
 
 *NEEDS ATTENTION*
-- [unresolved issue with specifics]
+- [specific unresolved issue -- build/feature/what breaks]
 
 *TODAY'S FOCUS*
 1. [Person] -- [most important thing]
-2. [Person] -- [second priority]  
-3. [Person] -- [third priority]
-
-Rules:
-- Only include people who have messages. Do not invent activity.
-- Attribution is exact: use the sender name from [brackets] only.
-- Include ALL bugs reported. Don't summarize away specifics.
-- Needs Attention = blocked or unresolved. List every open issue.
-- Today's Focus = max 3 items based on evidence.
-- No emojis. Professional."""
+2. [Person] -- [second priority]
+3. [Person] -- [third priority]"""
 
     print('Calling OpenRouter for summarization...', flush=True)
     briefing = openrouter_complete(prompt, or_key)
@@ -159,7 +169,7 @@ Rules:
     with open(BRIEFING_FILE, 'w') as f:
         f.write(briefing)
 
-    slack_post(UPDATES_CHANNEL, briefing, slack_token)
+    slack_post(UPDATES_CHANNEL, briefing, env)
     print('Posted to #updates', flush=True)
 
     with open(LAST_RUN_FILE, 'w') as f:
