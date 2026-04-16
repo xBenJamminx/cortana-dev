@@ -29,12 +29,149 @@ def slack_get(endpoint, params, token):
     with urllib.request.urlopen(req, timeout=15) as r:
         return json.loads(r.read())
 
+def parse_inline(text):
+    """Parse a line with *bold* markers into rich_text elements."""
+    import re
+    elements = []
+    parts = re.split(r'(\*[^*]+\*)', text)
+    for part in parts:
+        if part.startswith('*') and part.endswith('*') and len(part) > 2:
+            elements.append({'type': 'text', 'text': part[1:-1], 'style': {'bold': True}})
+        elif part:
+            elements.append({'type': 'text', 'text': part})
+    return elements if elements else [{'type': 'text', 'text': text}]
+
+
+def text_to_blocks(text):
+    """Convert briefing text to Slack Block Kit blocks.
+    Supports:
+      - *bold* for headers
+      - '- ' for top-level bullets
+      '  - ' (2-space indent) for sub-bullets
+      - '1. ' for numbered lists
+    """
+    import re
+    blocks = []
+    lines = text.strip().splitlines()
+    i = 0
+
+    def is_bullet(line):
+        return re.match(r'^- ', line)
+
+    def is_sub_bullet(line):
+        return re.match(r'^  - ', line)
+
+    def is_numbered(line):
+        return re.match(r'^\d+\. ', line)
+
+    while i < len(lines):
+        raw = lines[i]
+        line = raw.strip()
+
+        if not line:
+            i += 1
+            continue
+
+        # Top-level bullet (possibly followed by sub-bullets)
+        if is_bullet(raw) and not is_sub_bullet(raw):
+            rt_elements = []
+            current_group = []
+            current_indent = 0
+
+            while i < len(lines):
+                raw_l = lines[i]
+                if is_sub_bullet(raw_l):
+                    # Flush any pending top-level group
+                    if current_group and current_indent == 0:
+                        rt_elements.append({
+                            'type': 'rich_text_list',
+                            'style': 'bullet',
+                            'indent': 0,
+                            'elements': current_group
+                        })
+                        current_group = []
+                    current_indent = 1
+                    bullet_text = raw_l.strip()[2:]
+                    current_group.append({
+                        'type': 'rich_text_section',
+                        'elements': parse_inline(bullet_text)
+                    })
+                    i += 1
+                elif is_bullet(raw_l) and not is_sub_bullet(raw_l):
+                    # Flush any pending sub-level group
+                    if current_group and current_indent == 1:
+                        rt_elements.append({
+                            'type': 'rich_text_list',
+                            'style': 'bullet',
+                            'indent': 1,
+                            'elements': current_group
+                        })
+                        current_group = []
+                    current_indent = 0
+                    bullet_text = raw_l.strip()[2:]
+                    current_group.append({
+                        'type': 'rich_text_section',
+                        'elements': parse_inline(bullet_text)
+                    })
+                    i += 1
+                else:
+                    break
+
+            # Flush remaining group
+            if current_group:
+                rt_elements.append({
+                    'type': 'rich_text_list',
+                    'style': 'bullet',
+                    'indent': current_indent,
+                    'elements': current_group
+                })
+
+            blocks.append({'type': 'rich_text', 'elements': rt_elements})
+            continue
+
+        # Numbered list (Today's Focus)
+        if is_numbered(raw):
+            ordered_items = []
+            while i < len(lines) and re.match(r'^\d+\. ', lines[i]):
+                m = re.match(r'^\d+\. (.*)', lines[i])
+                ordered_items.append({
+                    'type': 'rich_text_section',
+                    'elements': parse_inline(m.group(1))
+                })
+                i += 1
+            blocks.append({
+                'type': 'rich_text',
+                'elements': [{
+                    'type': 'rich_text_list',
+                    'style': 'ordered',
+                    'indent': 0,
+                    'elements': ordered_items
+                }]
+            })
+            continue
+
+        # Section header or plain text
+        elements = parse_inline(line)
+        blocks.append({
+            'type': 'rich_text',
+            'elements': [{'type': 'rich_text_section', 'elements': elements}]
+        })
+        i += 1
+
+    return blocks
+
+
 def slack_post(channel, text, env):
     # Post via Composio using Ben's connected account (posts as Ben, not as bot)
     api_key = env['COMPOSIO_API_KEY']
+    blocks = text_to_blocks(text)
     payload = json.dumps({
         'connectedAccountId': 'b02db1f4-9d22-416c-bb78-bdb8c1bc6bb4',
-        'input': {'channel': channel, 'text': text}
+        'input': {
+            'channel': channel,
+            'text': text,  # fallback for notifications
+            'blocks': json.dumps(blocks)
+        }
     }).encode()
     req = urllib.request.Request(
         'https://backend.composio.dev/api/v2/actions/SLACK_SENDS_A_MESSAGE_TO_A_SLACK_CHANNEL/execute',
@@ -142,9 +279,11 @@ Rules:
 - Every distinct unresolved bug gets its own line in Needs Attention.
 - No emojis. No markdown ##. No em dashes. Professional tone.
 
-Format using Slack-native formatting only:
-- *bold* for section headers and names
-- Flat - bullets only (no nested bullets, no indentation)
+Format using this exact syntax (it gets converted to Slack Block Kit):
+- *bold* for section headers and person names only
+- Top-level bullets: "- item"
+- Sub-bullets for grouping related details: "  - sub-item" (exactly 2 spaces then dash)
+- Numbered list for Today's Focus only
 
 Output:
 Good morning team -- here's where we stand.
@@ -152,11 +291,14 @@ Good morning team -- here's where we stand.
 *{period_label}*
 
 *[Person Name]*
-- [synthesized summary of what they did, specific but not verbatim]
-- [next distinct area of work]
+- [top-level area of work or theme]
+  - [specific detail or sub-item]
+  - [another detail]
+- [next area of work]
 
 *NEEDS ATTENTION*
-- [specific unresolved issue -- build/feature/what breaks]
+- [unresolved issue]
+  - [specific detail: build number, what fails, what's blocked]
 
 *TODAY'S FOCUS*
 1. [Person] -- [most important thing]
