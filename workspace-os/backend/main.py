@@ -25,7 +25,7 @@ from services.websocket_manager import WebSocketManager
 from services.airtable_sync import sync_all, create_content_item, update_content_item
 
 # Import routers
-from routers import dashboard, files, projects, ai, memory, settings, system, workspace, integrations, documents, google_services, bookmarks
+from routers import dashboard, files, projects, ai, memory, settings, system, workspace, integrations, documents, google_services, bookmarks, browser
 
 ws_manager = WebSocketManager()
 
@@ -74,6 +74,7 @@ app.include_router(integrations.router, prefix="/api/integrations", tags=["integ
 app.include_router(documents.router, prefix="/api/documents", tags=["documents"])
 app.include_router(google_services.router, prefix="/api/google", tags=["google"])
 app.include_router(bookmarks.router, prefix="/api/bookmarks", tags=["bookmarks"])
+app.include_router(browser.router, prefix="/api/browser", tags=["browser"])
 
 # ============ CONTENT ROUTES (Airtable-synced) ============
 

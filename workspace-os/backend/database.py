@@ -216,16 +216,6 @@ class IntegrationStatus(Base):
     last_error = Column(Text)
     extra_data = Column(JSON, default=dict)
 
-def init_db():
-    Base.metadata.create_all(bind=engine)
-    with engine.connect() as conn:
-        conn.execute(text("PRAGMA journal_mode=WAL"))
-        conn.commit()
-
-if __name__ == "__main__":
-    init_db()
-    print("Database initialized")
-
 class Bookmark(Base):
     __tablename__ = "bookmarks"
     id = Column(Integer, primary_key=True)
@@ -243,3 +233,13 @@ class Bookmark(Base):
     bookmarked_at = Column(DateTime)
     synced_at = Column(DateTime, default=datetime.utcnow)
     created_at = Column(DateTime, default=datetime.utcnow)
+
+def init_db():
+    Base.metadata.create_all(bind=engine)
+    with engine.connect() as conn:
+        conn.execute(text("PRAGMA journal_mode=WAL"))
+        conn.commit()
+
+if __name__ == "__main__":
+    init_db()
+    print("Database initialized")

@@ -1691,6 +1691,24 @@
             </div>
 
             <!-- Settings View -->
+            <div class="view-container" id="view-tasks">
+                <div class="view-header">
+                    <h1 class="view-title">✅ Tasks <span>Projects & To-Dos</span></h1>
+                </div>
+                <div id="tasks-content">
+                    <div class="loading"><div class="spinner"></div> Loading tasks...</div>
+                </div>
+            </div>
+
+            <div class="view-container" id="view-youtube">
+                <div class="view-header">
+                    <h1 class="view-title">▶️ YouTube <span>Channel Analytics</span></h1>
+                </div>
+                <div id="youtube-content">
+                    <div class="loading"><div class="spinner"></div> Loading YouTube data...</div>
+                </div>
+            </div>
+
             <div class="view-container" id="view-settings">
                 <div class="view-header">
                     <h1 class="view-title">⚙️ Settings <span>Configuration & Status</span></h1>
@@ -1832,6 +1850,8 @@
                 case 'notion': loadNotion(); break;
                 case 'drive': loadDrive(); break;
                 case 'documents': loadDocuments(); break;
+                case 'tasks': loadProjects(); break;
+                case 'youtube': loadYouTube(); break;
                 case 'settings': loadSettings(); break;
             }
         }
@@ -3057,6 +3077,59 @@
                 <pre style="white-space: pre-wrap; font-family: 'JetBrains Mono', monospace; font-size: 13px; background: var(--bg-surface); padding: 16px; border-radius: 8px; max-height: 400px; overflow: auto;">${data.content?.replace(/</g, '&lt;').replace(/>/g, '&gt;') || ''}</pre>
             `;
             document.getElementById('modal-overlay').classList.add('active');
+        }
+
+        // Tasks (projects)
+        async function loadProjects() {
+            const data = await api('/projects/');
+            const container = document.getElementById('tasks-content');
+            const projects = safeArray(data);
+            if (projects.length === 0) {
+                container.innerHTML = '<div class="empty-state"><div class="icon">✅</div>No projects yet</div>';
+                return;
+            }
+            container.innerHTML = `<div class="grid-2">${projects.map(p => `
+                <div class="card">
+                    <div class="card-title">${p.title}</div>
+                    <div style="font-size:12px;color:var(--text-dim);margin:6px 0;">${p.status || 'idea'} ${p.priority ? '· P'+p.priority : ''}</div>
+                    ${p.description ? `<div style="font-size:13px;margin-top:8px;">${p.description}</div>` : ''}
+                    ${p.tasks?.length ? `<div style="margin-top:10px;font-size:12px;color:var(--text-dim);">${p.tasks.filter(t=>t.completed).length}/${p.tasks.length} tasks done</div>` : ''}
+                </div>
+            `).join('')}</div>`;
+        }
+
+        // YouTube
+        async function loadYouTube() {
+            const container = document.getElementById('youtube-content');
+            const [channel, videos] = await Promise.all([
+                api('/integrations/youtube/channel/benjamminbuilds'),
+                api('/integrations/youtube/videos?limit=10')
+            ]);
+            const ch = safeObj(channel);
+            const vids = safeArray(safeObj(videos).videos || videos);
+
+            if (ch.error) {
+                container.innerHTML = `<div class="empty-state"><div class="icon">▶️</div>${ch.error}</div>`;
+                return;
+            }
+
+            container.innerHTML = `
+                <div class="card" style="margin-bottom:16px;">
+                    <div class="card-title">${ch.title || 'Channel'}</div>
+                    <div style="display:flex;gap:24px;margin-top:12px;">
+                        <div><div style="font-size:20px;font-weight:700;">${(ch.subscriber_count||0).toLocaleString()}</div><div style="font-size:12px;color:var(--text-dim)">Subscribers</div></div>
+                        <div><div style="font-size:20px;font-weight:700;">${(ch.view_count||0).toLocaleString()}</div><div style="font-size:12px;color:var(--text-dim)">Total Views</div></div>
+                        <div><div style="font-size:20px;font-weight:700;">${(ch.video_count||0).toLocaleString()}</div><div style="font-size:12px;color:var(--text-dim)">Videos</div></div>
+                    </div>
+                </div>
+                <div class="grid-2">${vids.map(v => `
+                    <div class="card" onclick="window.open('https://youtube.com/watch?v=${v.video_id}','_blank')" style="cursor:pointer;">
+                        ${v.thumbnail ? `<img src="${v.thumbnail}" style="width:100%;border-radius:4px;margin-bottom:8px;">` : ''}
+                        <div style="font-weight:600;font-size:13px;margin-bottom:4px;">${v.title}</div>
+                        <div style="font-size:12px;color:var(--text-dim);">${(v.views||0).toLocaleString()} views · ${formatRelativeTime(v.published_at)}</div>
+                    </div>
+                `).join('')}</div>
+            `;
         }
 
         // Settings

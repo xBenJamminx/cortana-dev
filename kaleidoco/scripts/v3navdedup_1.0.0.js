@@ -1,0 +1,1 @@
+(function(){document.addEventListener('DOMContentLoaded',function(){var extras=Array.from(document.querySelectorAll('nav a[href="#mission"]'));extras.forEach(function(a){a.parentNode.removeChild(a);});});})();

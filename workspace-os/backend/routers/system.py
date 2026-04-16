@@ -5,6 +5,11 @@ import os
 import json
 from fastapi import APIRouter, HTTPException
 from datetime import datetime
+try:
+    import psutil
+    _has_psutil = True
+except ImportError:
+    _has_psutil = False
 
 router = APIRouter()
 
@@ -16,6 +21,27 @@ def read_json(path, default=None):
             return json.load(f)
     except:
         return default
+
+# ============ STATUS ============
+
+@router.get('/status')
+async def get_system_status():
+    """Get system resource usage (cpu, memory, disk)"""
+    if not _has_psutil:
+        return {"cpu": {"percent": 0}, "memory": {"percent": 0}, "disk": {"percent": 0}}
+    return {
+        "cpu": {"percent": round(psutil.cpu_percent(interval=0.1), 1)},
+        "memory": {
+            "percent": round(psutil.virtual_memory().percent, 1),
+            "used_gb": round(psutil.virtual_memory().used / 1e9, 2),
+            "total_gb": round(psutil.virtual_memory().total / 1e9, 2)
+        },
+        "disk": {
+            "percent": round(psutil.disk_usage('/').percent, 1),
+            "used_gb": round(psutil.disk_usage('/').used / 1e9, 2),
+            "total_gb": round(psutil.disk_usage('/').total / 1e9, 2)
+        }
+    }
 
 # ============ AGENTS ============
 
