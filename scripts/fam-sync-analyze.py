@@ -87,13 +87,38 @@ def pull_slack(env, cutoff):
         msgs = resp.get('messages', [])
         channel_msgs = []
         for m in msgs:
-            if float(m.get('ts', 0)) > cutoff and not m.get('bot_id'):
+            msg_ts = float(m.get('ts', 0))
+            if m.get('bot_id'):
+                continue
+
+            # Include top-level message if after cutoff
+            if msg_ts > cutoff:
                 sender = user_map.get(m.get('user', ''), m.get('user', 'unknown'))
                 text = resolve_mentions(m.get('text', ''), user_map)
-                ts = time.strftime('%Y-%m-%d %H:%M', time.localtime(float(m.get('ts', 0))))
-                channel_msgs.append(f'[{ts}] {sender}: {text}')
+                ts_fmt = time.strftime('%Y-%m-%d %H:%M', time.localtime(msg_ts))
+                channel_msgs.append(f'[{ts_fmt}] {sender}: {text}')
+
+            # Fetch thread replies if thread has activity after cutoff
+            latest_reply = float(m.get('latest_reply', 0))
+            if m.get('reply_count', 0) > 0 and latest_reply > cutoff:
+                thread_resp = slack_get(
+                    'conversations.replies',
+                    f'channel={cid}&ts={m["ts"]}&limit=10',
+                    token
+                )
+                thread_replies = []
+                for tm in thread_resp.get('messages', [])[1:]:  # skip parent
+                    t_ts = float(tm.get('ts', 0))
+                    if t_ts > cutoff and not tm.get('bot_id'):
+                        t_sender = user_map.get(tm.get('user', ''), tm.get('user', 'unknown'))
+                        t_text = resolve_mentions(tm.get('text', ''), user_map)
+                        t_ts_fmt = time.strftime('%Y-%m-%d %H:%M', time.localtime(t_ts))
+                        thread_replies.append(f'[{t_ts_fmt}] {t_sender} [thread]: {t_text}')
+                # Limit to last 5 replies to reduce context bloat
+                channel_msgs.extend(thread_replies[-5:])
+
         messages[ch_name] = channel_msgs
-        print(f'  #{ch_name}: {len(channel_msgs)} msgs', flush=True)
+        print(f'  #{ch_name}: {len(channel_msgs)} msgs (incl. threads)', flush=True)
 
     return messages
 
@@ -185,7 +210,7 @@ def openrouter_complete(prompt, api_key):
     payload = json.dumps({
         'model': 'google/gemini-2.5-flash',
         'messages': [{'role': 'user', 'content': prompt}],
-        'max_tokens': 8000,
+        'max_tokens': 12000,
     }).encode()
     req = urllib.request.Request(
         'https://openrouter.ai/api/v1/chat/completions',
@@ -328,7 +353,8 @@ Output a JSON object only — no commentary before or after:
         f.write(raw)
 
     def fix_json_strings(s):
-        """Escape literal newlines/tabs inside JSON string values."""
+        """Repair common JSON generation issues from LLMs."""
+        # First pass: escape literal whitespace in strings
         result = []
         in_string = False
         escaped = False
@@ -350,7 +376,13 @@ Output a JSON object only — no commentary before or after:
                 result.append('\\t')
             else:
                 result.append(ch)
-        return ''.join(result)
+        s = ''.join(result)
+
+        # Second pass: fix common trailing issues (truncated arrays/objects)
+        s = re.sub(r',\s*\]\s*$', ']', s)  # trailing comma before ]
+        s = re.sub(r',\s*\}\s*$', '}', s)  # trailing comma before }
+
+        return s
 
     # Extract JSON from response
     json_match = re.search(r'\{[\s\S]+\}', raw)
@@ -373,11 +405,20 @@ Output a JSON object only — no commentary before or after:
 
     def h(text):
         """HTML-escape user content."""
-        return text.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+        if not text:
+            return ''
+        return str(text).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
 
     new_tasks = delta.get('new_tasks', [])
     status_updates = delta.get('status_updates', [])
     ambiguous = delta.get('ambiguous', [])
+
+    STATUS_ICON = {
+        'Done': '✅',
+        'In Testing': '🧪',
+        'In Progress': '🔙',
+        'Not Started': '⏸',
+    }
 
     parts = [f'<b>FAM SYNC — {period_label}</b>']
     counts = []
@@ -385,34 +426,42 @@ Output a JSON object only — no commentary before or after:
     if status_updates: counts.append(f'{len(status_updates)} updates')
     if ambiguous: counts.append(f'{len(ambiguous)} needs your call')
     parts.append('  ·  '.join(counts) if counts else 'No changes detected')
-    parts.append('')
 
     if new_tasks:
+        parts.append('')
         parts.append('<b>NEW TASKS</b>')
         for i, t in enumerate(new_tasks, 1):
-            qa = '+QA' if t.get('add_to_qa_sheet') else 'Notion only'
-            parts.append(f'{i}. <b>{h(t["name"])}</b>')
-            parts.append(f'   {h(t["assigned_name"])}  ·  {h(t.get("priority",""))}  ·  {qa}')
-            parts.append(f'   <i>{h(t.get("evidence",""))}</i>')
-        parts.append('')
+            qa = '+QA' if t.get('add_to_qa_sheet') else ''
+            meta = '  ·  '.join(filter(None, [
+                h(t.get('assigned_name', '')),
+                h(t.get('priority', '')),
+                qa,
+            ]))
+            parts.append(f'{i}.  {h(t["name"])}')
+            parts.append(f'    <i>{meta}</i>')
 
     if status_updates:
-        parts.append('<b>STATUS CHANGES</b>')
-        for i, u in enumerate(status_updates, 1):
-            qa_note = f'  [QA {u["qa_sheet_row"]}]' if u.get('qa_sheet_row') else ''
-            arrow = f'{h(u["current_status"])} → <b>{h(u["new_status"])}</b>'
-            parts.append(f'{i}. {arrow}{qa_note}')
-            parts.append(f'   {h(u["notion_name"])}')
-            parts.append(f'   <i>{h(u.get("evidence",""))}</i>')
         parts.append('')
+        parts.append('<b>STATUS CHANGES</b>')
+        # Sort: Done first, then In Testing, then regressions
+        order = {'Done': 0, 'In Testing': 1, 'In Progress': 2, 'Not Started': 3}
+        sorted_updates = sorted(status_updates, key=lambda u: order.get(u.get('new_status', ''), 9))
+        for u in sorted_updates:
+            # Skip no-ops
+            if u.get('current_status') == u.get('new_status'):
+                continue
+            icon = STATUS_ICON.get(u.get('new_status', ''), '→')
+            qa_note = f' [QA {u["qa_sheet_row"]}]' if u.get('qa_sheet_row') else ''
+            parts.append(f'{icon}  {h(u["notion_name"])}{qa_note}')
 
     if ambiguous:
+        parts.append('')
         parts.append('<b>NEEDS YOUR CALL</b>')
         for i, a in enumerate(ambiguous, 1):
-            parts.append(f'{i}. {h(a["item"])}')
-            parts.append(f'   <i>{h(a["reason"])}</i>')
-        parts.append('')
+            parts.append(f'{i}.  {h(a["item"])}')
+            parts.append(f'    <i>{h(a["reason"])}</i>')
 
+    parts.append('')
     parts.append('<i>"approved" to write  ·  or tell me what to adjust</i>')
     summary = '\n'.join(parts)
 
@@ -421,10 +470,18 @@ Output a JSON object only — no commentary before or after:
     print('=' * 60, flush=True)
 
     # Send to Telegram (HTML formatted)
-    subprocess.run([
+    result = subprocess.run([
         'python3', TELEGRAM_CLIENT, '--topic', TELEGRAM_TOPIC, '--parse-mode', 'HTML', summary
-    ], capture_output=True)
-    print('Delta sent to Telegram topic 2122.', flush=True)
+    ], capture_output=True, text=True)
+    if result.returncode != 0:
+        print(f'WARNING: Telegram send failed (exit {result.returncode}): {result.stderr.strip()}', flush=True)
+        # Fallback: send without HTML parse mode
+        subprocess.run([
+            'python3', TELEGRAM_CLIENT, '--topic', TELEGRAM_TOPIC, summary
+        ], capture_output=True)
+        print('Delta sent to Telegram topic 2122 (plain text fallback).', flush=True)
+    else:
+        print('Delta sent to Telegram topic 2122.', flush=True)
 
 if __name__ == '__main__':
     main()
