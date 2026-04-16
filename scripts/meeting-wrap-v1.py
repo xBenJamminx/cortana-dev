@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Meeting Wrap v1 - Fathom meeting -> formatted Slack briefing
+Meeting Wrap v1 - Fathom meeting -> Slack post as Ben via Composio
 - Key Takeaways: Fathom summary sections used verbatim (no AI rewriting)
 - Action Items: extracted and grouped from transcript via Gemini
-Ben pastes the output into Slack himself -- this script never posts.
+- Posts to #meeting-notes as Ben. Ben can edit/delete in Slack if needed.
 """
 import ast, json, re, subprocess, sys, urllib.request
 
@@ -12,6 +12,8 @@ BRIEFING_FILE = '/root/.openclaw/workspace/logs/meeting-wrap-briefing.txt'
 FATHOM_CLIENT = '/root/.openclaw/workspace/core/fathom/client.py'
 TELEGRAM_TOPIC = '2122'
 TELEGRAM_CLIENT = '/root/.openclaw/workspace/core/integrations/telegram.py'
+MEETING_NOTES_CHANNEL = 'C09J78SH2FM'
+COMPOSIO_ACCOUNT_ID = 'b02db1f4-9d22-416c-bb78-bdb8c1bc6bb4'
 
 def load_env():
     env = {}
@@ -30,31 +32,6 @@ def fathom(args, timeout=60):
         raise Exception(f'Fathom error: {result.stderr}')
     return result.stdout.strip()
 
-def slack_dm(user_id, text, token):
-    """Send a DM to a Slack user via the bot token."""
-    # Open DM channel
-    payload = json.dumps({'users': user_id}).encode()
-    req = urllib.request.Request(
-        'https://slack.com/api/conversations.open',
-        data=payload,
-        headers={'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json'}
-    )
-    with urllib.request.urlopen(req, timeout=15) as r:
-        channel_id = json.loads(r.read())['channel']['id']
-
-    # Send in chunks (Slack text limit ~40000 chars, but DMs render better in pieces)
-    chunk_size = 3000
-    chunks = [text[i:i+chunk_size] for i in range(0, len(text), chunk_size)]
-    for chunk in chunks:
-        payload = json.dumps({'channel': channel_id, 'text': chunk}).encode()
-        req = urllib.request.Request(
-            'https://slack.com/api/chat.postMessage',
-            data=payload,
-            headers={'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json'}
-        )
-        with urllib.request.urlopen(req, timeout=15) as r:
-            json.loads(r.read())
-
 def openrouter_complete(prompt, api_key):
     payload = json.dumps({
         'model': 'google/gemini-2.5-flash',
@@ -64,23 +41,146 @@ def openrouter_complete(prompt, api_key):
     req = urllib.request.Request(
         'https://openrouter.ai/api/v1/chat/completions',
         data=payload,
-        headers={
-            'Authorization': 'Bearer ' + api_key,
-            'Content-Type': 'application/json',
-        }
+        headers={'Authorization': 'Bearer ' + api_key, 'Content-Type': 'application/json'}
     )
     with urllib.request.urlopen(req, timeout=120) as r:
         result = json.loads(r.read())
         return result['choices'][0]['message']['content']
 
+def parse_inline(text):
+    """Parse *bold* and [text](url) into rich_text elements."""
+    elements = []
+    # Tokenize: split on bold markers and markdown links
+    pattern = r'(\*[^*]+\*|\[[^\]]+\]\([^)]+\))'
+    parts = re.split(pattern, text)
+    for part in parts:
+        if not part:
+            continue
+        bold_m = re.match(r'^\*([^*]+)\*$', part)
+        link_m = re.match(r'^\[([^\]]+)\]\(([^)]+)\)$', part)
+        if bold_m:
+            elements.append({'type': 'text', 'text': bold_m.group(1), 'style': {'bold': True}})
+        elif link_m:
+            elements.append({'type': 'link', 'url': link_m.group(2), 'text': link_m.group(1)})
+        else:
+            elements.append({'type': 'text', 'text': part})
+    return elements if elements else [{'type': 'text', 'text': text}]
+
+def text_to_blocks(text):
+    """Convert meeting briefing text to Slack Block Kit blocks."""
+    blocks = []
+    lines = text.strip().splitlines()
+    i = 0
+    spacer = {'type': 'section', 'text': {'type': 'mrkdwn', 'text': ' '}}
+
+    def is_bullet(line):
+        return re.match(r'^- ', line)
+
+    def is_sub_bullet(line):
+        return re.match(r'^  - ', line)
+
+    def add_spacer():
+        if blocks and blocks[-1] != spacer:
+            blocks.append(spacer)
+
+    while i < len(lines):
+        raw = lines[i]
+        line = raw.strip()
+
+        if not line:
+            add_spacer()
+            i += 1
+            continue
+
+        # Bullet list (top-level and sub-bullets)
+        if is_bullet(raw) and not is_sub_bullet(raw):
+            rt_elements = []
+            current_group = []
+            current_indent = 0
+
+            while i < len(lines):
+                raw_l = lines[i]
+                if is_sub_bullet(raw_l):
+                    if current_group and current_indent == 0:
+                        rt_elements.append({
+                            'type': 'rich_text_list', 'style': 'bullet', 'indent': 0,
+                            'elements': current_group
+                        })
+                        current_group = []
+                    current_indent = 1
+                    current_group.append({
+                        'type': 'rich_text_section',
+                        'elements': parse_inline(raw_l.strip()[2:])
+                    })
+                    i += 1
+                elif is_bullet(raw_l) and not is_sub_bullet(raw_l):
+                    if current_group and current_indent == 1:
+                        rt_elements.append({
+                            'type': 'rich_text_list', 'style': 'bullet', 'indent': 1,
+                            'elements': current_group
+                        })
+                        current_group = []
+                    current_indent = 0
+                    current_group.append({
+                        'type': 'rich_text_section',
+                        'elements': parse_inline(raw_l.strip()[2:])
+                    })
+                    i += 1
+                else:
+                    break
+
+            if current_group:
+                rt_elements.append({
+                    'type': 'rich_text_list', 'style': 'bullet', 'indent': current_indent,
+                    'elements': current_group
+                })
+            blocks.append({'type': 'rich_text', 'elements': rt_elements})
+            continue
+
+        # Plain text / section header (handles inline links and bold)
+        elements = parse_inline(line)
+        blocks.append({
+            'type': 'rich_text',
+            'elements': [{'type': 'rich_text_section', 'elements': elements}]
+        })
+        i += 1
+
+    return blocks
+
+def slack_post(channel, text, env):
+    """Post to Slack as Ben via Composio."""
+    api_key = env['COMPOSIO_API_KEY']
+    blocks = text_to_blocks(text)
+    payload = json.dumps({
+        'connectedAccountId': COMPOSIO_ACCOUNT_ID,
+        'input': {
+            'channel': channel,
+            'text': text,
+            'blocks': json.dumps(blocks)
+        }
+    }).encode()
+    req = urllib.request.Request(
+        'https://backend.composio.dev/api/v2/actions/SLACK_SENDS_A_MESSAGE_TO_A_SLACK_CHANNEL/execute',
+        data=payload,
+        headers={
+            'x-api-key': api_key,
+            'Content-Type': 'application/json',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+            'Accept': 'application/json',
+            'Origin': 'https://app.composio.dev',
+        }
+    )
+    with urllib.request.urlopen(req, timeout=30) as r:
+        result = json.loads(r.read())
+        if not result.get('data'):
+            raise Exception('Composio post failed: ' + str(result))
+        return result
+
 def parse_summary(summary_raw):
     """Parse Fathom summary output into structured sections."""
-    # Fathom returns a Python dict repr -- eval it safely
     data = ast.literal_eval(summary_raw)
     markdown = data.get('markdown_formatted', '')
-
     sections = []
-    # Split on ### headers
     parts = re.split(r'(###\s+\[.+?\]\(.+?\))', markdown)
     for i, part in enumerate(parts):
         if re.match(r'###\s+\[', part):
@@ -90,10 +190,9 @@ def parse_summary(summary_raw):
     return sections
 
 def parse_meeting_header(meeting_raw):
-    """Extract title, date, recording URL, share URL, duration from meeting output."""
-    lines = meeting_raw.splitlines()
+    """Extract title, date, recording URL, share URL from meeting output."""
     info = {}
-    for line in lines:
+    for line in meeting_raw.splitlines():
         if line.startswith('Title:'):
             info['title'] = line.split(':', 1)[1].strip()
         elif line.startswith('Date:'):
@@ -105,7 +204,6 @@ def parse_meeting_header(meeting_raw):
     return info
 
 def format_date(date_str):
-    """Convert 2026-04-16 to April 16, 2026."""
     from datetime import datetime
     try:
         dt = datetime.strptime(date_str, '%Y-%m-%d')
@@ -114,7 +212,6 @@ def format_date(date_str):
         return date_str
 
 def extract_duration(today_output, meeting_id):
-    """Pull duration from today's meeting list output."""
     m = re.search(rf'\[{meeting_id}\].*?\((\d+) min\)', today_output)
     return m.group(1) if m else '?'
 
@@ -143,12 +240,10 @@ def main():
     print('Pulling transcript...', flush=True)
     meeting_raw = fathom(['meeting', meeting_id], timeout=90)
 
-    # Parse summary sections verbatim
     sections = parse_summary(summary_raw)
     header = parse_meeting_header(meeting_raw)
 
     if not today_output:
-        # Need duration -- pull from meeting list for the given date
         today_output = fathom(['today'])
     duration = extract_duration(today_output, meeting_id)
 
@@ -156,11 +251,11 @@ def main():
     recording_url = header.get('url', '')
     share_url = header.get('share_url', '')
 
-    # Build Key Takeaways block verbatim from Fathom summary
-    # Normalize **bold** -> *bold* for Slack mrkdwn compatibility
+    # Build Key Takeaways verbatim from Fathom summary
+    # Strip **double** bold (from Fathom markdown) -- *single* bold is handled by parse_inline
     takeaways_lines = []
     for title_link, body in sections:
-        body = re.sub(r'\*\*(.+?)\*\*', r'*\1*', body)
+        body = re.sub(r'\*\*(.+?)\*\*', r'\1', body)
         takeaways_lines.append(title_link)
         takeaways_lines.append(body)
         takeaways_lines.append('')
@@ -174,13 +269,13 @@ TRANSCRIPT:
 Rules:
 - Extract explicit commitments and next steps only -- things someone said they would do
 - Group by person, then by category within each person (e.g. Bug Fixes:, Backend:, Animations:, Testing:)
-- Rewrite each item as a clean, professional third-person action item. Do NOT copy spoken language verbatim -- rephrase "I'm going to..." / "you should..." / "send you..." into proper action items (e.g. "Send Ben the updated avatar preview files")
+- Rewrite each item as a clean, professional third-person action item. Do NOT copy spoken language verbatim.
 - Person order: Steven -> Bilal -> Ben -> Cassandra
 - Tram (Tram Lee) works under Steven -- her action items go under Steven's section. Do NOT create a Tram section.
-- Only create sections for active team members. New hires not yet started (Ian, Chris Miller, Parry) go inside other people's items if relevant (e.g. "Add Ian to GitHub repos" under Steven), not their own section.
-- No emojis. No markdown ## or ### headers. No em dashes. Professional tone.
-- Use *Person Name* for bold person names (Slack mrkdwn). Never use **double asterisks**.
+- Only create sections for active team members. New hires not yet started (Ian, Chris Miller, Parry) appear inside other people's items if relevant, not their own section.
+- No emojis. No markdown ## or ### headers. No em dashes. No asterisks or bold markers of any kind.
 - Action items use - bullets
+- *Person Name* for person name headers (single asterisks for Slack bold)
 
 Output format (no intro, no outro -- just the action items):
 
@@ -198,26 +293,22 @@ Output format (no intro, no outro -- just the action items):
 
     print('Extracting action items from transcript...', flush=True)
     action_items = openrouter_complete(action_items_prompt, or_key)
-    # Normalize any **bold** that slipped through
+    # Normalize **double** to *single* bold
     action_items = re.sub(r'\*\*(.+?)\*\*', r'*\1*', action_items)
-    # Remove any person sections with no real items (e.g. "N/A" or empty)
-    action_items = re.sub(
-        r'\*[^*]+\*\s*\n+N/A[^\n]*\n*',
-        '',
-        action_items
-    ).strip()
+    # Remove N/A sections
+    action_items = re.sub(r'\*[^*\n]+\*\s*\nN/A[^\n]*\n*', '', action_items).strip()
 
     # Assemble final briefing
     lines = [
-        f'{header.get("title", "FAM POC Standup")} - {date_formatted}',
+        f'*{header.get("title", "FAM POC Standup")} - {date_formatted}*',
         '',
         f'[VIEW RECORDING - {duration} mins]({recording_url}) · [Share Link]({share_url})',
         '',
-        'Key Takeaways',
+        '*Key Takeaways*',
         '',
     ]
     lines.extend(takeaways_lines)
-    lines.append('Action Items @channel')
+    lines.append('*Action Items* @channel')
     lines.append('')
     lines.append(action_items)
 
@@ -226,25 +317,15 @@ Output format (no intro, no outro -- just the action items):
     with open(BRIEFING_FILE, 'w') as f:
         f.write(briefing)
 
-    print('\n' + '=' * 60, flush=True)
-    print(briefing, flush=True)
-    print('=' * 60, flush=True)
-    print(f'\nSaved to {BRIEFING_FILE}', flush=True)
-    print('Sending to Telegram...', flush=True)
+    print('Posting to #meeting-notes...', flush=True)
+    slack_post(MEETING_NOTES_CHANNEL, briefing, env)
+    print('Posted.', flush=True)
 
-    # Send full briefing to Telegram topic 2122 for Ben to review before posting
     subprocess.run([
         'python3', TELEGRAM_CLIENT,
         '--topic', TELEGRAM_TOPIC,
-        f'*Meeting wrap ready -- review below, then paste into #meeting-notes*'
+        f'Meeting wrap posted to #meeting-notes. Edit there if anything needs adjusting.'
     ], capture_output=True)
-    subprocess.run([
-        'python3', TELEGRAM_CLIENT,
-        '--topic', TELEGRAM_TOPIC,
-        briefing
-    ], capture_output=True)
-
-    print('Done. Briefing sent to Telegram topic 2122.', flush=True)
 
 if __name__ == '__main__':
     main()
