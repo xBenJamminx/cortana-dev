@@ -257,12 +257,17 @@ Ben = product, admin, web, onboarding, research
 Cassandra = business, strategy
 Tram = QA testing (her items go under Steven in Notion, not her own section)
 
+--- VALID STATUSES ---
+Not Started, In Progress, In Testing, Done
+(No other values. "Fixed", "Resolved", "Complete" etc. all map to Done.)
+
 --- STATUS MAPPING ---
-"done / completed / merged / finished" → Done
+"done / completed / merged / finished / fixed / resolved" → Done
 "in testing / being tested / shipped in build" → In Testing (shipped ≠ done)
-Bug reported → In Progress (add detail to comments)
-"continue working / in progress" → In Progress (no change)
-No evidence → no change
+Bug reported → In Progress (add new bug detail to evidence)
+"continue working / in progress" → no change, do NOT emit a status update
+No evidence → no change, do NOT emit a status update
+If new_status == current_status → OMIT from status_updates entirely
 
 --- PRIORITY ---
 Blocking other work / critical path → Top
@@ -276,8 +281,9 @@ Nice to have → Low
 3. New tasks = items mentioned in Slack that do NOT exist in Notion (after semantic matching).
 4. Status updates = existing Notion tasks whose status should change based on Slack evidence.
 5. Dev-priority tasks (Steven/Bilal work) should also be added/updated in QA Sheet. Ben/Cassandra tasks stay in Notion only.
-6. SILENTLY IGNORE (do not put in ambiguous): scheduling updates, meeting times, attendance questions, acknowledgements ("great!", "thanks!", "super!"), status questions ("when will X be done?"), praise, general feedback that maps to an existing task's evidence, informational messages with no action.
-7. AMBIGUOUS = only items where you genuinely cannot decide: (a) is this a new task or an update to an existing one? (b) who owns it? (c) does Slack evidence clearly say done/testing but you're not sure which Notion task it maps to? Aim for 0–5 ambiguous items max. When in doubt, make the call rather than surfacing it.
+6. NEW TASK criteria (ALL must be true): (a) someone explicitly commits to doing something new, OR a specific bug/feature is named that doesn't exist yet in Notion; (b) there is a clear owner; (c) it does NOT already exist in Notion semantically. Do NOT create tasks from: priority checklists / wish lists, general feedback or complaints, questions about when something will be done, status updates on existing work, or things that are already captured as Notion tasks.
+7. SILENTLY IGNORE: scheduling updates, meeting times, attendance, acknowledgements ("great!", "thanks!", "super!"), status questions, praise, general observations, Cassandra's priority checklists (these are reminders of existing tasks, not new ones), informational messages with no explicit action commitment.
+8. AMBIGUOUS = only items where you genuinely cannot decide: (a) is this a new task or an update to an existing one? (b) who owns it? (c) does Slack evidence clearly say done/testing but you're not sure which Notion task it maps to? Aim for 0–5 ambiguous items max. When in doubt, make the call rather than surfacing it.
 
 Output a JSON object only — no commentary before or after:
 
@@ -316,13 +322,49 @@ Output a JSON object only — no commentary before or after:
     print('Analyzing with Gemini...', flush=True)
     raw = openrouter_complete(prompt, env['OPENROUTER_API_KEY'])
 
+    # Save raw for debugging
+    raw_file = DELTA_FILE.replace('fam-sync-delta.json', 'fam-sync-raw-last.txt')
+    with open(raw_file, 'w') as f:
+        f.write(raw)
+
+    def fix_json_strings(s):
+        """Escape literal newlines/tabs inside JSON string values."""
+        result = []
+        in_string = False
+        escaped = False
+        for ch in s:
+            if escaped:
+                result.append(ch)
+                escaped = False
+            elif ch == '\\':
+                result.append(ch)
+                escaped = True
+            elif ch == '"':
+                in_string = not in_string
+                result.append(ch)
+            elif in_string and ch == '\n':
+                result.append('\\n')
+            elif in_string and ch == '\r':
+                result.append('\\r')
+            elif in_string and ch == '\t':
+                result.append('\\t')
+            else:
+                result.append(ch)
+        return ''.join(result)
+
     # Extract JSON from response
     json_match = re.search(r'\{[\s\S]+\}', raw)
     if not json_match:
         print('ERROR: Could not parse JSON from Gemini response')
         print(raw[:500])
         return
-    delta = json.loads(json_match.group(0))
+    try:
+        delta = json.loads(fix_json_strings(json_match.group(0)))
+    except json.JSONDecodeError as e:
+        print(f'ERROR: JSON parse failed at char {e.pos}: {e.msg}')
+        snippet = raw[max(0, e.pos - 150):e.pos + 150]
+        print(f'Context:\n{snippet}')
+        return
 
     # Save delta
     with open(DELTA_FILE, 'w') as f:
