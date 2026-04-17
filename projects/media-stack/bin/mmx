@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="/root/.openclaw/workspace/projects/media-stack"
+mkdir -p "$ROOT/output/mmx"
+exec npx -y mmx-cli "$@"

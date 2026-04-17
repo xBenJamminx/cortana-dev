@@ -1,0 +1,8 @@
+output/
+node_modules/
+.hyperframes/
+*.mp4
+*.mp3
+*.wav
+*.mov
+.env.local
