@@ -28,15 +28,17 @@ def load_env():
 
 def notion_create(name, status, priority, assigned_id, evidence, token):
     """Create a new Notion task via direct API."""
+    props = {
+        'Name': {'title': [{'text': {'content': name}}]},
+        'Status': {'status': {'name': status}},
+        'Priority': {'select': {'name': priority}},
+        'Project': {'relation': [{'id': NOTION_PROJECT_ID}]},
+    }
+    if assigned_id:
+        props['Assigned'] = {'people': [{'object': 'user', 'id': assigned_id}]}
     body = {
         'parent': {'database_id': NOTION_DB},
-        'properties': {
-            'Name': {'title': [{'text': {'content': name}}]},
-            'Status': {'status': {'name': status}},
-            'Priority': {'select': {'name': priority}},
-            'Assigned': {'people': [{'object': 'user', 'id': assigned_id}]},
-            'Project': {'relation': [{'id': NOTION_PROJECT_ID}]},
-        }
+        'properties': props,
     }
     req = urllib.request.Request(
         'https://api.notion.com/v1/pages',

@@ -208,9 +208,9 @@ def pull_qa_sheet(env):
 
 def openrouter_complete(prompt, api_key):
     payload = json.dumps({
-        'model': 'google/gemini-2.5-flash',
+        'model': 'google/gemini-3.1-pro-preview',
         'messages': [{'role': 'user', 'content': prompt}],
-        'max_tokens': 12000,
+        'max_tokens': 16000,
     }).encode()
     req = urllib.request.Request(
         'https://openrouter.ai/api/v1/chat/completions',
@@ -275,12 +275,12 @@ PERIOD: {period_label}
 --- CURRENT QA SHEET (In Progress tab) ---
 {qa_summary}
 
---- TEAM ---
-Steven (Cao Tan Luc) = backend, APIs, voice, sentiment, memory, LLMs
-Bilal (Muhammad Bilal Akram) = frontend, Unity, AR, avatar, animations, UI
-Ben = product, admin, web, onboarding, research
-Cassandra = business, strategy
-Tram = QA testing (her items go under Steven in Notion, not her own section)
+--- TEAM (use exact notion_id values below) ---
+Steven (Cao Tan Luc) = backend, APIs, voice, sentiment, memory, LLMs | notion_id: 9b822e2d-467a-421f-b17f-af78b6e3bdd1
+Bilal (Muhammad Bilal Akram) = frontend, Unity, AR, avatar, animations, UI | notion_id: 9d54ac97-30c7-4e0d-a2bf-aa46796e4c79
+Ben (Ben Jammin) = product, admin, web, onboarding, research | notion_id: 2ddd48a3-d87a-417a-9e5c-c41b8d8b3d90
+Cassandra (Cassandra Rosenthal) = business, strategy | notion_id: 1edfb9ea-81ea-4798-80c8-7993279a85c8
+Tram (Tram Lee) = QA testing — her items go under Steven in Notion, not her own section | notion_id: d25c4e21-99fe-4abe-a646-077105f11e5d
 
 --- VALID STATUSES ---
 Not Started, In Progress, In Testing, Done
@@ -307,8 +307,9 @@ Nice to have → Low
 4. Status updates = existing Notion tasks whose status should change based on Slack evidence.
 5. Dev-priority tasks (Steven/Bilal work) should also be added/updated in QA Sheet. Ben/Cassandra tasks stay in Notion only.
 6. NEW TASK criteria (ALL must be true): (a) someone explicitly commits to doing something new, OR a specific bug/feature is named that doesn't exist yet in Notion; (b) there is a clear owner; (c) it does NOT already exist in Notion semantically. Do NOT create tasks from: priority checklists / wish lists, general feedback or complaints, questions about when something will be done, status updates on existing work, or things that are already captured as Notion tasks.
-7. SILENTLY IGNORE: scheduling updates, meeting times, attendance, acknowledgements ("great!", "thanks!", "super!"), status questions, praise, general observations, Cassandra's priority checklists (these are reminders of existing tasks, not new ones), informational messages with no explicit action commitment.
-8. AMBIGUOUS = only items where you genuinely cannot decide: (a) is this a new task or an update to an existing one? (b) who owns it? (c) does Slack evidence clearly say done/testing but you're not sure which Notion task it maps to? Aim for 0–5 ambiguous items max. When in doubt, make the call rather than surfacing it.
+7. THREAD REPLIES ARE AUTHORITATIVE: If a bug or issue is raised in a message, but a [thread] reply on that same conversation marks it as fixed/done/resolved — do NOT create a new task. Instead treat it as a Done status update to the matching existing Notion task (or ignore it entirely if it doesn't exist in Notion yet and was resolved immediately). The final state of a thread is what matters, not the initial report.
+8. SILENTLY IGNORE: scheduling updates, meeting times, attendance, acknowledgements ("great!", "thanks!", "super!"), status questions, praise, general observations, Cassandra's priority checklists (these are reminders of existing tasks, not new ones), informational messages with no explicit action commitment.
+9. AMBIGUOUS = only items where you genuinely cannot decide: (a) is this a new task or an update to an existing one? (b) who owns it? (c) does Slack evidence clearly say done/testing but you're not sure which Notion task it maps to? Aim for 0–5 ambiguous items max. When in doubt, make the call rather than surfacing it.
 
 Output a JSON object only — no commentary before or after:
 
@@ -384,14 +385,16 @@ Output a JSON object only — no commentary before or after:
 
         return s
 
-    # Extract JSON from response
-    json_match = re.search(r'\{[\s\S]+\}', raw)
+    # Extract JSON — handle optional ```json code fence wrapper
+    fence_match = re.search(r'```(?:json)?\s*(\{[\s\S]+?\})\s*```', raw)
+    json_match = fence_match or re.search(r'\{[\s\S]+\}', raw)
     if not json_match:
         print('ERROR: Could not parse JSON from Gemini response')
         print(raw[:500])
         return
+    json_str = fence_match.group(1) if fence_match else json_match.group(0)
     try:
-        delta = json.loads(fix_json_strings(json_match.group(0)))
+        delta = json.loads(fix_json_strings(json_str))
     except json.JSONDecodeError as e:
         print(f'ERROR: JSON parse failed at char {e.pos}: {e.msg}')
         snippet = raw[max(0, e.pos - 150):e.pos + 150]
