@@ -1,20 +1,26 @@
 👀 *COMPETITOR WATCH*
 
-Updated: 2026-04-06 12:00
+Updated: 2026-04-18 12:00
 
 
 📺 YOUTUBE:
-  TheAIGRID: Google AI Edge Gallery Tutorial - How To Run LLMS Locally On
-    Published: 2026-04-05
-  Wes Roth: The Claude Code Nightmare, LLM Emotions, AI Neuroscience and
-    Published: 2026-04-06
-  WorldofAI: Claude Code + Karpathy's NEW Self-Evolving System = 10x Code
-    Published: 2026-04-06
-  My First Million: Claude sold all of his Furniture.
-    Published: 2026-04-05
-  TheAIGRID: Googles Gemma 4 Just Shocked The AI Industry
-    Published: 2026-04-04
-  WorldofAI: OpenAI Spud (GPT 6), Claude Conway, GPT Image 2, Cursor 3, C
-    Published: 2026-04-05
-  My First Million: This AI Business Makes $100k/M
-    Published: 2026-04-04
+  TheAIGRID: Opus 4.7 Just Dropped — Here's What Everyone Missed
+    Published: 2026-04-17
+  WorldofAI: Claude Design Is INCREDIBLE! RIP Frontend Developers...
+    Published: 2026-04-18
+  David Ondrej: Most successful man of all time
+    Published: 2026-04-17
+  My First Million: He went from laundromats to a $3.5B Hollywood empire
+    Published: 2026-04-17
+  Liam Ottley: constantly keeping up with AI is keeping you poor
+    Published: 2026-04-17
+  The AI Advantage: You Need to Learn This New Claude Function...
+    Published: 2026-04-17
+  AI Explained: Claude Opus 4.7 - A New Frontier, in Performance … and Drama
+    Published: 2026-04-17
+  Wes Roth: Claude just forced them to reveal THE TRUTH...
+    Published: 2026-04-16
+  WorldofAI: Claude Opus 4.7: Most Powerful Coding Model Ever! Beats EVER
+    Published: 2026-04-16
+  David Ondrej: Claude Code + Opus 4.7 = Ultimate Coding Agent
+    Published: 2026-04-16

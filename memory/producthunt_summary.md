@@ -1,67 +1,72 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [Shotwell](https://www.producthunt.com/products/shotwell)
+• [E.Y.E. by Expert Chase](https://www.producthunt.com/products/expert-chase-deleted-1107920)
   _<p>
-            The screenshot editor for iPhone.
+            Where human life runs with AI
           </p>
           <p>
-            <a href="_
+            <a href="http_
 
-• [CatBar](https://www.producthunt.com/products/catbar)
+• [Visual PR Testing with AI](https://www.producthunt.com/products/qa-tech)
   _<p>
-            RevenueCat stats in your macOS menu bar.
+            Validate every PR with AI that runs tests for you
           </p>
           <p>
-            <a_
+     _
 
-• [Handle Extension](https://www.producthunt.com/products/tonkotsu)
+• [Codex 2.0 by OpenAI](https://www.producthunt.com/products/openai)
   _<p>
-            Refine UI in the browser, feed changes to your coding agent
-          </p>
-         _
-
-• [Panorama](https://www.producthunt.com/products/panorama)
-  _<p>
-            AI that finds your team’s workflows and hidden structures
-          </p>
-          <_
-
-• [Ember](https://www.producthunt.com/products/ember-104)
-  _<p>
-            Meal scan, macros & AI coach
+            Codex now runs apps, automates tasks, codes & more
           </p>
           <p>
-            <a href="https_
+    _
 
-• [Influcio](https://www.producthunt.com/products/influcio-2)
+• [BARKOD studio](https://www.producthunt.com/products/barkod-studio)
   _<p>
-            AI marketing Agent for result-driven influencer campaign
-          </p>
-          <p_
-
-• [Tiny Aya](https://www.producthunt.com/products/cohere-2)
-  _<p>
-            Local, open-weight AI designed for real-world languages
-          </p>
-          <p>_
-
-• [Donut Browser](https://www.producthunt.com/products/donut-browser)
-  _<p>
-            Open Source Anti-Detect Browser with Unlimited Profiles
-          </p>
-          <p>_
-
-• [OpenRouter Model Fusion](https://www.producthunt.com/products/openrouter)
-  _<p>
-            Run many models side by side and fuse the best answer
+            Transform boring barcodes into beautiful brand assets
           </p>
           <p>
  _
 
-• [Sleek Analytics](https://www.producthunt.com/products/sleek-analytics)
+• [Submit.DIY](https://www.producthunt.com/products/submit-diy)
   _<p>
-            See who's on your site. Right now.
+            All-in-one AI launch platform for makers
           </p>
           <p>
-            <a href=_
+            <a_
+
+• [Build Check (for Outsiders)](https://www.producthunt.com/products/build-check-for-outsiders)
+  _<p>
+            Is your app idea actually worth building?
+          </p>
+          <p>
+            <_
+
+• [Hello Aria](https://www.producthunt.com/products/hello-aria-3)
+  _<p>
+            Turn chats into tasks, reminders & notes — instantly.
+          </p>
+          <p>
+ _
+
+• [Arky](https://www.producthunt.com/products/arky)
+  _<p>
+            The canvas for thinking with AI
+          </p>
+          <p>
+            <a href="ht_
+
+• [Melo](https://www.producthunt.com/products/melo-3)
+  _<p>
+            One canvas for all your work
+          </p>
+          <p>
+            <a href="https_
+
+• [CoAgentor](https://www.producthunt.com/products/coagentor)
+  _<p>
+            AI Agents that participate live in meetings
+          </p>
+          <p>
+           _
 

@@ -147,14 +147,38 @@ Without this step, you are blind to screenshots, photos, and any visual content 
 
 These are two different tasks. Never confuse them.
 
-**Run the meeting briefing/sync** = pull latest Fathom meeting, format for Slack, hand to Ben. He posts it himself. Never post it yourself.
+Run the meeting briefing = pull latest Fathom meeting, format for Slack, hand to Ben. He posts it himself. Never post it yourself.
 
-**Run the FAM sync** = full Composio pipeline (Slack + Notion + QA Sheet + approval gate + writes). Only run when explicitly asked for the FAM sync, not for meeting notes.
+Run the FAM sync = full Composio pipeline (Slack + Notion + QA Sheet + approval gate + writes). Only run when explicitly asked for the FAM sync, not for meeting notes.
 
-Meeting Briefing Format:
-- Recording link and share link at top
-- Key Takeaways: full paragraphs from Fathom summary with timestamped links
-- Action Items: grouped by person, sub-sections by category (Bug Fixes, Backend, Animations, etc.)
-- Use hyphen dash for bullets, NOT bullet characters (Slack does not render them as list items)
-- Never shorten or paraphrase action items, use exact wording from transcript
-- Fathom client: python3 /root/.openclaw/workspace/core/fathom/client.py meeting ID
+## How to Run the Meeting Briefing
+
+Step 1: Find today meetings
+  python3 /root/.openclaw/workspace/core/fathom/client.py today
+
+Step 2: Pull FULL meeting data (transcript + summary + actions) for the relevant meeting ID
+  python3 /root/.openclaw/workspace/core/fathom/client.py meeting ID
+
+Step 3: Pull the summary separately for Key Takeaways sections with timestamps
+  python3 /root/.openclaw/workspace/core/fathom/client.py summary ID
+
+Step 4: Format the output using this structure:
+
+  FAM POC Standup - [Date]
+  [VIEW RECORDING - X mins](url) . [Share Link](url)
+
+  Meeting Purpose
+  [one line]
+
+  Key Takeaways
+  [Each section from the Fathom summary with title, timestamp link, and full paragraph - do not shorten]
+
+  Action Items @channel
+  [Grouped by person, sub-sections by category, hyphen bullets]
+
+CRITICAL: Action items must come from the FULL TRANSCRIPT via client.py meeting ID, not just the summary. The summary only covers highlights. The transcript has everything.
+
+Person order: Team, Steven, Bilal, Ben, Cassandra
+Tram works under Steven - her items go in Steven section
+Use - (hyphen) for bullets. Slack renders these as proper bullet points. No code block needed.
+Never auto-post. Hand output to Ben.

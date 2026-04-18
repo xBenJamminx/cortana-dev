@@ -1,13 +1,16 @@
-🚀 Indie Hacker Monitor (2026-04-06 12:01)
+🚀 Indie Hacker Monitor (2026-04-18 12:00)
+
+🔥 Hot Topics:
+  • launch: 4 mentions
 
 📈 Top Stories:
-  • [Hacker News] (812⬆): Show HN: A game where you build a GPU
-    https://jaso1024.com/mvidia/
-  • [Hacker News] (811⬆): Eight years of wanting, three months of building with AI
-    https://lalitm.com/post/building-syntaqlite-ai/
-  • [Hacker News] (783⬆): Caveman: Why use many token when few token do trick
-    https://github.com/JuliusBrussee/caveman
-  • [Hacker News] (698⬆): How many products does Microsoft have named 'Copilot'?
-    https://teybannerman.com/strategy/2026/03/31/how-many-microsoft-copilot-are-there.html
-  • [Hacker News] (677⬆): Gemma 4 on iPhone
-    https://apps.apple.com/nl/app/google-ai-edge-gallery/id6749645337
+  • [Hacker News] (1806⬆): Claude Opus 4.7
+    https://www.anthropic.com/news/claude-opus-4-7
+  • [Hacker News] (1134⬆): Qwen3.6-35B-A3B: Agentic coding power, now open to all
+    https://qwen.ai/blog?id=qwen3.6-35b-a3b
+  • [Hacker News] (1076⬆): Claude Design
+    https://www.anthropic.com/news/claude-design-anthropic-labs
+  • [Hacker News] (908⬆): Codex for almost everything
+    https://openai.com/index/codex-for-almost-everything/
+  • [Hacker News] (640⬆): The future of everything is lies, I guess: Where do we go from here?
+    https://aphyr.com/posts/420-the-future-of-everything-is-lies-i-guess-where-do-we-go-from-here

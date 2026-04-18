@@ -1,0 +1,2 @@
+[main/sessions/boot-2026-04-12_09-00-35-967-b3b80b95.jsonl#L5] User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any user message: 1. Read memory/handoff.md — note what was happening and when 2. Check the last 5 messa
+[main/sessions/boot-2026-04-12_09-00-35-967-b3b80b95.jsonl#L9] Assistant: NO_REPLY
