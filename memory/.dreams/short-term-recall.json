@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-19T03:00:00.251Z",
+  "updatedAt": "2026-04-19T03:01:24.590Z",
   "entries": {
     "memory:memory/.dreams/session-corpus/2026-04-12.txt:1:1": {
       "key": "memory:memory/.dreams/session-corpus/2026-04-12.txt:1:1",
@@ -528,7 +528,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-14T03:01:04.242Z",
-      "lastRecalledAt": "2026-04-18T03:00:00.249Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
       "queryHashes": [
         "11d1361acb2d"
       ],
@@ -536,7 +536,8 @@
         "2026-04-14",
         "2026-04-15",
         "2026-04-17",
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-19"
       ],
       "conceptTags": [
         "1.00",
@@ -562,7 +563,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-14T03:01:04.242Z",
-      "lastRecalledAt": "2026-04-18T03:00:00.249Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
       "queryHashes": [
         "11d1361acb2d"
       ],
@@ -570,7 +571,8 @@
         "2026-04-14",
         "2026-04-15",
         "2026-04-17",
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-19"
       ],
       "conceptTags": [
         "1.00",
@@ -596,7 +598,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-14T03:01:04.242Z",
-      "lastRecalledAt": "2026-04-18T03:00:00.249Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
       "queryHashes": [
         "11d1361acb2d"
       ],
@@ -604,7 +606,8 @@
         "2026-04-14",
         "2026-04-15",
         "2026-04-17",
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-19"
       ],
       "conceptTags": [
         "1.00",
@@ -630,7 +633,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-14T03:01:04.242Z",
-      "lastRecalledAt": "2026-04-18T03:00:00.249Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
       "queryHashes": [
         "11d1361acb2d"
       ],
@@ -638,7 +641,8 @@
         "2026-04-14",
         "2026-04-15",
         "2026-04-17",
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-19"
       ],
       "conceptTags": [
         "1.00",
@@ -664,7 +668,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-14T03:01:04.242Z",
-      "lastRecalledAt": "2026-04-18T03:00:00.249Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
       "queryHashes": [
         "11d1361acb2d"
       ],
@@ -672,7 +676,8 @@
         "2026-04-14",
         "2026-04-15",
         "2026-04-17",
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-19"
       ],
       "conceptTags": [
         "1-1",
@@ -698,7 +703,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-14T03:01:04.242Z",
-      "lastRecalledAt": "2026-04-18T03:00:00.249Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
       "queryHashes": [
         "11d1361acb2d"
       ],
@@ -706,7 +711,8 @@
         "2026-04-14",
         "2026-04-15",
         "2026-04-17",
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-19"
       ],
       "conceptTags": [
         "3-3",
@@ -732,7 +738,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-14T03:01:04.242Z",
-      "lastRecalledAt": "2026-04-18T03:00:00.249Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
       "queryHashes": [
         "11d1361acb2d"
       ],
@@ -740,7 +746,8 @@
         "2026-04-14",
         "2026-04-15",
         "2026-04-17",
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-19"
       ],
       "conceptTags": [
         "1.00",
@@ -980,14 +987,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-16T03:00:00.195Z",
-      "lastRecalledAt": "2026-04-18T03:00:00.249Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
       "queryHashes": [
         "4c4c0cb04efa"
       ],
       "recallDays": [
         "2026-04-15",
         "2026-04-16",
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-19"
       ],
       "conceptTags": [
         "1.00",
@@ -1013,14 +1021,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-16T03:00:00.195Z",
-      "lastRecalledAt": "2026-04-18T03:00:00.249Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
       "queryHashes": [
         "4c4c0cb04efa"
       ],
       "recallDays": [
         "2026-04-15",
         "2026-04-16",
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-19"
       ],
       "conceptTags": [
         "1.00",
@@ -1046,14 +1055,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-16T03:00:00.195Z",
-      "lastRecalledAt": "2026-04-18T03:00:00.249Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
       "queryHashes": [
         "4c4c0cb04efa"
       ],
       "recallDays": [
         "2026-04-15",
         "2026-04-16",
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-19"
       ],
       "conceptTags": [
         "1.00",
@@ -1079,14 +1089,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-16T03:00:00.195Z",
-      "lastRecalledAt": "2026-04-18T03:00:00.249Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
       "queryHashes": [
         "4c4c0cb04efa"
       ],
       "recallDays": [
         "2026-04-15",
         "2026-04-16",
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-19"
       ],
       "conceptTags": [
         "1.00",
@@ -1112,14 +1123,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-16T03:00:00.195Z",
-      "lastRecalledAt": "2026-04-18T03:00:00.249Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
       "queryHashes": [
         "4c4c0cb04efa"
       ],
       "recallDays": [
         "2026-04-15",
         "2026-04-16",
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-19"
       ],
       "conceptTags": [
         "1-1",
@@ -1145,14 +1157,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-16T03:00:00.195Z",
-      "lastRecalledAt": "2026-04-18T03:00:00.249Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
       "queryHashes": [
         "4c4c0cb04efa"
       ],
       "recallDays": [
         "2026-04-15",
         "2026-04-16",
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-19"
       ],
       "conceptTags": [
         "3-3",
@@ -1178,14 +1191,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-16T03:00:00.195Z",
-      "lastRecalledAt": "2026-04-18T03:00:00.249Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
       "queryHashes": [
         "4c4c0cb04efa"
       ],
       "recallDays": [
         "2026-04-15",
         "2026-04-16",
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-19"
       ],
       "conceptTags": [
         "0.77",
@@ -1302,13 +1316,14 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T03:00:00.181Z",
-      "lastRecalledAt": "2026-04-17T03:00:00.181Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
       "queryHashes": [
         "b628913e3912"
       ],
       "recallDays": [
         "2026-04-16",
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-19"
       ],
       "conceptTags": [
         "1.00",
@@ -1334,13 +1349,14 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T03:00:00.181Z",
-      "lastRecalledAt": "2026-04-17T03:00:00.181Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
       "queryHashes": [
         "b628913e3912"
       ],
       "recallDays": [
         "2026-04-16",
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-19"
       ],
       "conceptTags": [
         "1.00",
@@ -1366,13 +1382,14 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T03:00:00.181Z",
-      "lastRecalledAt": "2026-04-17T03:00:00.181Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
       "queryHashes": [
         "b628913e3912"
       ],
       "recallDays": [
         "2026-04-16",
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-19"
       ],
       "conceptTags": [
         "1.00",
@@ -1398,13 +1415,14 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T03:00:00.181Z",
-      "lastRecalledAt": "2026-04-17T03:00:00.181Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
       "queryHashes": [
         "b628913e3912"
       ],
       "recallDays": [
         "2026-04-16",
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-19"
       ],
       "conceptTags": [
         "1.00",
@@ -1430,13 +1448,14 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T03:00:00.181Z",
-      "lastRecalledAt": "2026-04-17T03:00:00.181Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
       "queryHashes": [
         "b628913e3912"
       ],
       "recallDays": [
         "2026-04-16",
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-19"
       ],
       "conceptTags": [
         "gateway",
@@ -3059,7 +3078,8 @@
         "77ca9720ec15"
       ],
       "recallDays": [
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-19"
       ],
       "conceptTags": [
         "0.88",
@@ -3090,7 +3110,8 @@
         "77ca9720ec15"
       ],
       "recallDays": [
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-19"
       ],
       "conceptTags": [
         "0.88",
@@ -3121,7 +3142,8 @@
         "77ca9720ec15"
       ],
       "recallDays": [
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-19"
       ],
       "conceptTags": [
         "gateway",
@@ -3152,7 +3174,8 @@
         "d5bd631cdecb"
       ],
       "recallDays": [
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-19"
       ],
       "conceptTags": [
         "assistant",
@@ -3183,7 +3206,8 @@
         "d5bd631cdecb"
       ],
       "recallDays": [
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-19"
       ],
       "conceptTags": [
         "assistant",
@@ -3214,7 +3238,8 @@
         "d5bd631cdecb"
       ],
       "recallDays": [
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-19"
       ],
       "conceptTags": [
         "reply-to-current",
@@ -3245,7 +3270,8 @@
         "d5bd631cdecb"
       ],
       "recallDays": [
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-19"
       ],
       "conceptTags": [
         "ember-tr",
@@ -3276,7 +3302,8 @@
         "d5bd631cdecb"
       ],
       "recallDays": [
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-19"
       ],
       "conceptTags": [
         "assistant",
@@ -3307,7 +3334,8 @@
         "d5bd631cdecb"
       ],
       "recallDays": [
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-19"
       ],
       "conceptTags": [
         "memory/context.md",
@@ -3338,7 +3366,8 @@
         "d5bd631cdecb"
       ],
       "recallDays": [
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-19"
       ],
       "conceptTags": [
         "no-reply",
@@ -3363,7 +3392,8 @@
         "d5bd631cdecb"
       ],
       "recallDays": [
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-19"
       ],
       "conceptTags": [
         "message-id",
@@ -3394,7 +3424,8 @@
         "d5bd631cdecb"
       ],
       "recallDays": [
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-19"
       ],
       "conceptTags": [
         "reply-to-current",
@@ -3425,7 +3456,8 @@
         "d5bd631cdecb"
       ],
       "recallDays": [
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-19"
       ],
       "conceptTags": [
         "message-id",
@@ -3456,7 +3488,8 @@
         "d5bd631cdecb"
       ],
       "recallDays": [
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-19"
       ],
       "conceptTags": [
         "assistant",
@@ -3487,7 +3520,8 @@
         "d5bd631cdecb"
       ],
       "recallDays": [
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-19"
       ],
       "conceptTags": [
         "agent-stacks-are-a-mess.mp4",
@@ -3514,7 +3548,8 @@
         "6ca7743b227b"
       ],
       "recallDays": [
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-19"
       ],
       "conceptTags": [
         "gateway",
@@ -3545,7 +3580,8 @@
         "6ca7743b227b"
       ],
       "recallDays": [
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-19"
       ],
       "conceptTags": [
         "handoff.md",
@@ -3576,7 +3612,8 @@
         "6ca7743b227b"
       ],
       "recallDays": [
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-19"
       ],
       "conceptTags": [
         "heartbeat.md",
@@ -3607,11 +3644,666 @@
         "6ca7743b227b"
       ],
       "recallDays": [
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-19"
       ],
       "conceptTags": [
         "no-reply",
         "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:42:42": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:42:42",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 42,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "Assistant: NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:43:43": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:43:43",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 43,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"5025\", \"sender_id\": \"1455611839\", \"conversation_label\": \"Cortana-OS id:-1003856131939 topic:22\", \"sender\": \"Ben Jammin\", \"timestamp\": \"Fri 2026-04-17 23:32 UTC\", \"group_subject\": \"Cortana-OS\", \"topic_id\": \"22\"",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "conversation-label",
+        "cortana-os",
+        "group-subject",
+        "topic-id",
+        "user",
+        "conversation"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:44:44": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:44:44",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 44,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]]Yes, but with an important distinction. 💜 ## Short answer **Hyperframes can handle audio in the composition/render pipeline.** It is **not** your music generation engine. ## What Hyperframes is good at with audio - place background music - sync aud",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "composition/render",
+        "assistant",
+        "yes",
+        "but",
+        "important",
+        "distinction",
+        "answer"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:45:45": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:45:45",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 45,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"5027\", \"sender_id\": \"1455611839\", \"conversation_label\": \"Cortana-OS id:-1003856131939 topic:22\", \"sender\": \"Ben Jammin\", \"timestamp\": \"Fri 2026-04-17 23:32 UTC\", \"group_subject\": \"Cortana-OS\", \"topic_id\": \"22\"",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "conversation-label",
+        "cortana-os",
+        "group-subject",
+        "topic-id",
+        "user",
+        "conversation"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:46:46": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:46:46",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 46,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]]Best open-source picks depend on whether you want **music generation**, **voice/TTS**, or **audio cleanup**. Different beasts. 💜 ## If you want music generation ### 1. **MusicGen** Best all-around open-source starting point. Good for: - prompt-to-m",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "open-source",
+        "voice/tts",
+        "all-around",
+        "prompt-to-m",
+        "assistant",
+        "best",
+        "open"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:47:47": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:47:47",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 47,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"5029\", \"sender_id\": \"1455611839\", \"conversation_label\": \"Cortana-OS id:-1003856131939 topic:22\", \"sender\": \"Ben Jammin\", \"timestamp\": \"Fri 2026-04-17 23:33 UTC\", \"group_subject\": \"Cortana-OS\", \"topic_id\": \"22\"",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "conversation-label",
+        "cortana-os",
+        "group-subject",
+        "topic-id",
+        "user",
+        "conversation"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:48:48": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:48:48",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 48,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]]Then I’d optimize for **video production**, not purity. Open source is nice, but “best” means **sounds good, runs reliably, and fits the pipeline**. 💜 ## Best stack for making the videos better ### Voice overs #### Best practical choice: - **Eleven",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "assistant",
+        "i’d",
+        "optimize",
+        "video",
+        "production",
+        "not",
+        "purity"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:49:49": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:49:49",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 49,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"5031\", \"sender_id\": \"1455611839\", \"conversation_label\": \"Cortana-OS id:-1003856131939 topic:22\", \"sender\": \"Ben Jammin\", \"timestamp\": \"Fri 2026-04-17 23:34 UTC\", \"group_subject\": \"Cortana-OS\", \"topic_id\": \"22\"",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "conversation-label",
+        "cortana-os",
+        "group-subject",
+        "topic-id",
+        "user",
+        "conversation"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:50:50": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:50:50",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 50,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]]Use this stack. 💜 - **Hyperframes** for video assembly and motion - **ElevenLabs** for voiceovers - **MusicGen** for open-source background music experiments - **ffmpeg** for final audio polish and mixing - **OpenClaw** to orchestrate the whole thi",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "open-source",
+        "assistant",
+        "use",
+        "stack",
+        "hyperframes",
+        "video",
+        "assembly"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:51:51": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:51:51",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 51,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"5033\", \"sender_id\": \"1455611839\", \"conversation_label\": \"Cortana-OS id:-1003856131939 topic:22\", \"sender\": \"Ben Jammin\", \"timestamp\": \"Fri 2026-04-17 23:35 UTC\", \"group_subject\": \"Cortana-OS\", \"topic_id\": \"22\"",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "conversation-label",
+        "cortana-os",
+        "group-subject",
+        "topic-id",
+        "user",
+        "conversation"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:52:52": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:52:52",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 52,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]]Then the open-source TLDR is: 💜 - **Hyperframes** for video assembly - **Kokoro** for voiceovers - **MusicGen** for music - **ffmpeg** for mixing/polish - **Demucs/UVR** if you need stem separation ## Best OSS picks - best OSS voice: **Kokoro** - b",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "open-source",
+        "mixing/polish",
+        "demucs/uvr",
+        "assistant",
+        "the",
+        "open",
+        "source"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:53:53": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:53:53",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 53,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"5035\", \"sender_id\": \"1455611839\", \"conversation_label\": \"Cortana-OS id:-1003856131939 topic:22\", \"sender\": \"Ben Jammin\", \"timestamp\": \"Fri 2026-04-17 23:35 UTC\", \"group_subject\": \"Cortana-OS\", \"topic_id\": \"22\"",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "conversation-label",
+        "cortana-os",
+        "group-subject",
+        "topic-id",
+        "user",
+        "conversation"
+      ]
+    },
+    "memory:memory/2026-04-19.md:323:323": {
+      "key": "memory:memory/2026-04-19.md:323:323",
+      "path": "memory/2026-04-19.md",
+      "startLine": 323,
+      "endLine": 323,
+      "source": "memory",
+      "snippet": "Reflections: No strong patterns surfaced.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-19T03:00:56.960Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
+      "queryHashes": [
+        "21faa0df9302"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "reflections",
+        "strong",
+        "patterns",
+        "surfaced"
+      ]
+    },
+    "memory:memory/2026-04-19.md:326:328": {
+      "key": "memory:memory/2026-04-19.md:326:328",
+      "path": "memory/2026-04-19.md",
+      "startLine": 326,
+      "endLine": 328,
+      "source": "memory",
+      "snippet": "Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any user message: 1. Read memory/handoff.md — note wha",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-19T03:00:56.960Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
+      "queryHashes": [
+        "21faa0df9302"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "gateway",
+        "boot.md",
+        "memory/handoff.md",
+        "possible",
+        "lasting",
+        "truths",
+        "user",
+        "you"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:54:54": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:54:54",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 54,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]]Yes. That’s a **good open-source stack for complementing Hyperframes**. 💜 ## Clean split - **Hyperframes** = composition, animation, timing, final render - **Kokoro** = voiceovers - **MusicGen** = background music - **ffmpeg** = mixing, mastering,",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:56.960Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "open-source",
+        "assistant",
+        "yes",
+        "that’s",
+        "good",
+        "open",
+        "source"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:55:55": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:55:55",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 55,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"5037\", \"sender_id\": \"1455611839\", \"conversation_label\": \"Cortana-OS id:-1003856131939 topic:22\", \"sender\": \"Ben Jammin\", \"timestamp\": \"Fri 2026-04-17 23:47 UTC\", \"group_subject\": \"Cortana-OS\", \"topic_id\": \"22\"",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:56.960Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "conversation-label",
+        "cortana-os",
+        "group-subject",
+        "topic-id",
+        "user",
+        "conversation"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:56:56": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:56:56",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 56,
+      "endLine": 56,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]]On it. I’m making the next one properly, sharper design, stronger pacing, and actually worthy of the stack. I can’t trust X fetches here, so I’m going to build from the Claude design/use-case angle directly and make it feel premium. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:56.960Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "design/use-case",
+        "assistant",
+        "i’m",
+        "making",
+        "the",
+        "one",
+        "properly"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:57:57": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:57:57",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 57,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"5037\", \"sender_id\": \"1455611839\", \"conversation_label\": \"Cortana-OS id:-1003856131939 topic:22\", \"sender\": \"Ben Jammin\", \"timestamp\": \"Fri 2026-04-17 23:47 UTC\", \"group_subject\": \"Cortana-OS\", \"topic_id\": \"22\"",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:56.960Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "conversation-label",
+        "cortana-os",
+        "group-subject",
+        "topic-id",
+        "user",
+        "conversation"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:58:58": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:58:58",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 58,
+      "endLine": 58,
+      "source": "memory",
+      "snippet": "Assistant: The 10/10 attempt is rendering now. I tightened the design hard, calmer palette, sharper hierarchy, much more “editorial product explainer” than the first one. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:56.960Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17",
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "10/10",
+        "assistant",
+        "the",
+        "attempt",
+        "rendering",
+        "now",
+        "tightened",
+        "design"
+      ]
+    },
+    "memory:memory/2026-04-19.md:378:378": {
+      "key": "memory:memory/2026-04-19.md:378:378",
+      "path": "memory/2026-04-19.md",
+      "startLine": 378,
+      "endLine": 378,
+      "source": "memory",
+      "snippet": "Reflections: No strong patterns surfaced.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-19T03:00:56.960Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
+      "queryHashes": [
+        "21faa0df9302"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "reflections",
+        "strong",
+        "patterns",
+        "surfaced"
+      ]
+    },
+    "memory:memory/2026-04-19.md:381:383": {
+      "key": "memory:memory/2026-04-19.md:381:383",
+      "path": "memory/2026-04-19.md",
+      "startLine": 381,
+      "endLine": 383,
+      "source": "memory",
+      "snippet": "Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any user message: 1. Read memory/handoff.md — note wha",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-19T03:00:56.960Z",
+      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
+      "queryHashes": [
+        "21faa0df9302"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "gateway",
+        "boot.md",
+        "memory/handoff.md",
+        "possible",
+        "lasting",
+        "truths",
+        "user",
+        "you"
       ]
     }
   }
