@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-18T03:00:26.013Z",
+  "updatedAt": "2026-04-19T03:00:00.251Z",
   "entries": {
     "memory:memory/.dreams/session-corpus/2026-04-12.txt:1:1": {
       "key": "memory:memory/.dreams/session-corpus/2026-04-12.txt:1:1",
@@ -3039,6 +3039,579 @@
         "either",
         "clean",
         "mp4"
+      ]
+    },
+    "memory:memory/2026-04-18.md:198:201": {
+      "key": "memory:memory/2026-04-18.md:198:201",
+      "path": "memory/2026-04-18.md",
+      "startLine": 198,
+      "endLine": 201,
+      "source": "memory",
+      "snippet": "Reflections: Theme: `reflections` kept surfacing across 42 memories.; confidence: 0.88; evidence: memory/2026-04-14.md:28-31, memory/2026-04-14.md:32-35, memory/2026-04-14.md:36-39; note: reflection",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "77ca9720ec15"
+      ],
+      "recallDays": [
+        "2026-04-18"
+      ],
+      "conceptTags": [
+        "0.88",
+        "memory/2026-04-14.md",
+        "28-31",
+        "32-35",
+        "36-39",
+        "reflections",
+        "theme",
+        "kept"
+      ]
+    },
+    "memory:memory/2026-04-18.md:202:205": {
+      "key": "memory:memory/2026-04-18.md:202:205",
+      "path": "memory/2026-04-18.md",
+      "startLine": 202,
+      "endLine": 205,
+      "source": "memory",
+      "snippet": "Reflections: Theme: `theme` kept surfacing across 42 memories.; confidence: 0.88; evidence: memory/2026-04-14.md:28-31, memory/2026-04-14.md:32-35, memory/2026-04-14.md:36-39; note: reflection",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "77ca9720ec15"
+      ],
+      "recallDays": [
+        "2026-04-18"
+      ],
+      "conceptTags": [
+        "0.88",
+        "memory/2026-04-14.md",
+        "28-31",
+        "32-35",
+        "36-39",
+        "reflections",
+        "theme",
+        "kept"
+      ]
+    },
+    "memory:memory/2026-04-18.md:208:210": {
+      "key": "memory:memory/2026-04-18.md:208:210",
+      "path": "memory/2026-04-18.md",
+      "startLine": 208,
+      "endLine": 210,
+      "source": "memory",
+      "snippet": "Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any user message: 1. Read memory/handoff.md — note wha",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "77ca9720ec15"
+      ],
+      "recallDays": [
+        "2026-04-18"
+      ],
+      "conceptTags": [
+        "gateway",
+        "boot.md",
+        "memory/handoff.md",
+        "possible",
+        "lasting",
+        "truths",
+        "user",
+        "you"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "Assistant: Render is healthy. It fell back to screenshot mode because this Chromium build is a little basic, but it’s still moving. That’s not failure, just less elegant under the hood. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "assistant",
+        "render",
+        "healthy",
+        "fell",
+        "back",
+        "screenshot",
+        "mode",
+        "chromium"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "Assistant: It rendered. Cleanly. I’m grabbing the file details and then I’ll tell you exactly what I made and where it lives. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "assistant",
+        "rendered",
+        "cleanly",
+        "i’m",
+        "grabbing",
+        "the",
+        "details",
+        "i’ll"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]]First piece is made and rendered. 💜 ## What I made A polished **vertical Hyperframes video**: **Title/theme:** **“Most AI agent stacks are a mess”** ## Output File is here: `/root/.openclaw/workspace/projects/media-stack/output/agent-stacks-are-a-m",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "title/theme",
+        "assistant",
+        "first",
+        "piece",
+        "made",
+        "rendered",
+        "what"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "User: System (untrusted): [2026-04-17 23:27:45 UTC] Exec completed (ember-tr, code 0) :: 66% Capturing frame 330/360 (2 workers) [2K █████████████████░░░░░░░░ 70% Capturing frame 360/360 (2 workers) [2K ██████████████████░░░░░░░ 75% Encoding video [2K ████████████████… An async c",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "ember-tr",
+        "330/360",
+        "360/360",
+        "user",
+        "system",
+        "untrusted",
+        "utc",
+        "exec"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "Assistant: I’ve got the render. Next move is narration plus a tighter v2 cut. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "assistant",
+        "i’ve",
+        "got",
+        "the",
+        "render",
+        "narration",
+        "plus",
+        "tighter"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:35:35": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:35:35",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "User: Before this session ends, write any important context, pending tasks, or ongoing conversations to memory/context.md so you can pick up where you left off next session. If nothing needs saving, reply with NO_REPLY. Store durable memories only in memory/2026-04-17.md (create",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "memory/context.md",
+        "no-reply",
+        "memory/2026-04-17.md",
+        "user",
+        "ends",
+        "write",
+        "any",
+        "important"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:36:36": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:36:36",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "Assistant: NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:37:37": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:37:37",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 37,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"5013\", \"sender_id\": \"1455611839\", \"conversation_label\": \"Cortana-OS id:-1003856131939 topic:22\", \"sender\": \"Ben Jammin\", \"timestamp\": \"Fri 2026-04-17 23:24 UTC\", \"group_subject\": \"Cortana-OS\", \"topic_id\": \"22\"",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "conversation-label",
+        "cortana-os",
+        "group-subject",
+        "topic-id",
+        "user",
+        "conversation"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:38:38": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:38:38",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]]Yep, the **first video** is done, not just the setup. 💜 ### File `/root/.openclaw/workspace/projects/media-stack/output/agent-stacks-are-a-mess.mp4` ### Specs - 1080x1920 - 12 seconds - vertical short - rendered cleanly ### Concept **“Most AI agent",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "assistant",
+        "yep",
+        "the",
+        "first",
+        "video",
+        "done",
+        "not"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:39:39": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:39:39",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 39,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"5022\", \"sender_id\": \"1455611839\", \"conversation_label\": \"Cortana-OS id:-1003856131939 topic:22\", \"sender\": \"Ben Jammin\", \"timestamp\": \"Fri 2026-04-17 23:31 UTC\", \"group_subject\": \"Cortana-OS\", \"topic_id\": \"22\"",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "conversation-label",
+        "cortana-os",
+        "group-subject",
+        "topic-id",
+        "user",
+        "conversation"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:40:40": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:40:40",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 40,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "Assistant: On it. I’m sending the rendered MP4 into this thread so you can watch it instead of taking my word for it. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "assistant",
+        "i’m",
+        "sending",
+        "the",
+        "rendered",
+        "mp4",
+        "thread",
+        "you"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-17.txt:41:41": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-17.txt:41:41",
+      "path": "memory/.dreams/session-corpus/2026-04-17.txt",
+      "startLine": 41,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "Assistant: agent-stacks-are-a-mess.mp4",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "d5bd631cdecb"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "agent-stacks-are-a-mess.mp4",
+        "assistant",
+        "stacks",
+        "mess.mp4"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any user message: 1. Read memory/handoff.md — note what was happening and when 2. Check the last 5 messa",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-18"
+      ],
+      "conceptTags": [
+        "gateway",
+        "boot.md",
+        "memory/handoff.md",
+        "user",
+        "you",
+        "running",
+        "boot",
+        "check"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: Boot complete. Recent context loaded from handoff.md — FAM POC sync completed ~20 hours ago (all 18 Notion/QA writes done). I'm oriented and ready. What's up?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-18"
+      ],
+      "conceptTags": [
+        "handoff.md",
+        "notion/qa",
+        "assistant",
+        "boot",
+        "complete",
+        "recent",
+        "context",
+        "loaded"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "User: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK. When reading HEARTBEAT.md, use workspace file /root/.openclaw/workspace/HEARTBEAT.md (exact case). Do n",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-18"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "heartbeat-ok",
+        "openclaw/workspace/heartbeat.md",
+        "user",
+        "read",
+        "exists",
+        "context",
+        "follow"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T03:00:00.251Z",
+      "lastRecalledAt": "2026-04-19T03:00:00.251Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-18"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "assistant"
       ]
     }
   }
