@@ -1,72 +1,67 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [E.Y.E. by Expert Chase](https://www.producthunt.com/products/expert-chase-deleted-1107920)
+• [Vercel Flags](https://www.producthunt.com/products/vercel)
   _<p>
-            Where human life runs with AI
+            Feature flags, targeting rules, rollouts. All from Vercel.
+          </p>
+          _
+
+• [lindo.ai](https://www.producthunt.com/products/lindo)
+  _<p>
+            Launch your own AI website builder under your brand
           </p>
           <p>
-            <a href="http_
+   _
 
-• [Visual PR Testing with AI](https://www.producthunt.com/products/qa-tech)
+• [CapyPlan](https://www.producthunt.com/products/gentle-daily-planner-capyplan)
   _<p>
-            Validate every PR with AI that runs tests for you
-          </p>
-          <p>
-     _
-
-• [Codex 2.0 by OpenAI](https://www.producthunt.com/products/openai)
-  _<p>
-            Codex now runs apps, automates tasks, codes & more
-          </p>
-          <p>
-    _
-
-• [BARKOD studio](https://www.producthunt.com/products/barkod-studio)
-  _<p>
-            Transform boring barcodes into beautiful brand assets
-          </p>
-          <p>
- _
-
-• [Submit.DIY](https://www.producthunt.com/products/submit-diy)
-  _<p>
-            All-in-one AI launch platform for makers
-          </p>
-          <p>
-            <a_
-
-• [Build Check (for Outsiders)](https://www.producthunt.com/products/build-check-for-outsiders)
-  _<p>
-            Is your app idea actually worth building?
+            Your no stress chearleader for tiny tasks
           </p>
           <p>
             <_
 
-• [Hello Aria](https://www.producthunt.com/products/hello-aria-3)
+• [Claude Design by Anthropic Labs](https://www.producthunt.com/products/claude)
   _<p>
-            Turn chats into tasks, reminders & notes — instantly.
+            Make prototypes, slides & one-pagers by talking to Claude
+          </p>
+          <_
+
+• [Lounge](https://www.producthunt.com/products/lounge-2)
+  _<p>
+            macOS Tahoe menu bar manager with notch-aware icon control
+          </p>
+          _
+
+• [Is Your Site Agent-Ready? by Cloudflare](https://www.producthunt.com/products/is-your-site-agent-ready)
+  _<p>
+            Scan your website to see how ready it is for AI agents. 
+          </p>
+          <p_
+
+• [Hipocampus](https://www.producthunt.com/products/hipocampus)
+  _<p>
+            AI operators that own team workflows
+          </p>
+          <p>
+            <a hre_
+
+• [Android CLI](https://www.producthunt.com/products/android-cli)
+  _<p>
+            Build high quality Android apps 3x faster using any agent 
+          </p>
+          _
+
+• [ChatGPT Shopping](https://www.producthunt.com/products/chatgpt-shopping)
+  _<p>
+            Richer, more visually immersive shopping experiences
+          </p>
+          <p>
+  _
+
+• [CraftBot](https://www.producthunt.com/products/craftbot)
+  _<p>
+            Self-hosted proactive AI assistant that lives locally
           </p>
           <p>
  _
-
-• [Arky](https://www.producthunt.com/products/arky)
-  _<p>
-            The canvas for thinking with AI
-          </p>
-          <p>
-            <a href="ht_
-
-• [Melo](https://www.producthunt.com/products/melo-3)
-  _<p>
-            One canvas for all your work
-          </p>
-          <p>
-            <a href="https_
-
-• [CoAgentor](https://www.producthunt.com/products/coagentor)
-  _<p>
-            AI Agents that participate live in meetings
-          </p>
-          <p>
-           _
 

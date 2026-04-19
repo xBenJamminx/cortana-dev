@@ -1,9 +1,15 @@
 👀 *COMPETITOR WATCH*
 
-Updated: 2026-04-18 12:00
+Updated: 2026-04-19 12:00
 
 
 📺 YOUTUBE:
+  WorldofAI: Full AI Agent Tutorial for Beginners 2026 - How to Build AI 
+    Published: 2026-04-19
+  David Ondrej: Mindset key
+    Published: 2026-04-18
+  My First Million: Why Japan is Giving Free Houses
+    Published: 2026-04-18
   TheAIGRID: Opus 4.7 Just Dropped — Here's What Everyone Missed
     Published: 2026-04-17
   WorldofAI: Claude Design Is INCREDIBLE! RIP Frontend Developers...
@@ -18,9 +24,3 @@ Updated: 2026-04-18 12:00
     Published: 2026-04-17
   AI Explained: Claude Opus 4.7 - A New Frontier, in Performance … and Drama
     Published: 2026-04-17
-  Wes Roth: Claude just forced them to reveal THE TRUTH...
-    Published: 2026-04-16
-  WorldofAI: Claude Opus 4.7: Most Powerful Coding Model Ever! Beats EVER
-    Published: 2026-04-16
-  David Ondrej: Claude Code + Opus 4.7 = Ultimate Coding Agent
-    Published: 2026-04-16

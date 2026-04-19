@@ -1,16 +1,16 @@
-🚀 Indie Hacker Monitor (2026-04-18 12:00)
+🚀 Indie Hacker Monitor (2026-04-19 12:00)
 
 🔥 Hot Topics:
-  • launch: 4 mentions
+  • launch: 2 mentions
 
 📈 Top Stories:
-  • [Hacker News] (1806⬆): Claude Opus 4.7
-    https://www.anthropic.com/news/claude-opus-4-7
-  • [Hacker News] (1134⬆): Qwen3.6-35B-A3B: Agentic coding power, now open to all
-    https://qwen.ai/blog?id=qwen3.6-35b-a3b
   • [Hacker News] (1076⬆): Claude Design
     https://www.anthropic.com/news/claude-design-anthropic-labs
-  • [Hacker News] (908⬆): Codex for almost everything
-    https://openai.com/index/codex-for-almost-everything/
-  • [Hacker News] (640⬆): The future of everything is lies, I guess: Where do we go from here?
-    https://aphyr.com/posts/420-the-future-of-everything-is-lies-i-guess-where-do-we-go-from-here
+  • [Hacker News] (801⬆): Migrating from DigitalOcean to Hetzner
+    https://isayeter.com/posts/digitalocean-to-hetzner-migration/
+  • [Hacker News] (624⬆): Measuring Claude 4.7's tokenizer costs
+    https://www.claudecodecamp.com/p/i-measured-claude-4-7-s-new-tokenizer-here-s-what-it-costs-you
+  • [Hacker News] (536⬆): Anonymous request-token comparisons from Opus 4.6 and Opus 4.7
+    https://tokens.billchambers.me/leaderboard
+  • [Hacker News] (432⬆): Why Japan has such good railways
+    https://worksinprogress.co/issue/why-japan-has-such-good-railways/
