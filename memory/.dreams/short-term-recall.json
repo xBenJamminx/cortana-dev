@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-19T03:01:24.590Z",
+  "updatedAt": "2026-04-20T03:00:00.244Z",
   "entries": {
     "memory:memory/.dreams/session-corpus/2026-04-12.txt:1:1": {
       "key": "memory:memory/.dreams/session-corpus/2026-04-12.txt:1:1",
@@ -4261,7 +4261,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-19T03:00:56.960Z",
-      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
+      "lastRecalledAt": "2026-04-20T03:00:00.244Z",
       "queryHashes": [
         "21faa0df9302"
       ],
@@ -4281,14 +4281,14 @@
       "startLine": 381,
       "endLine": 383,
       "source": "memory",
-      "snippet": "Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any user message: 1. Read memory/handoff.md — note wha",
+      "snippet": "Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any user message: 1. Read mem",
       "recallCount": 0,
       "dailyCount": 1,
       "groundedCount": 0,
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-19T03:00:56.960Z",
-      "lastRecalledAt": "2026-04-19T03:00:56.960Z",
+      "lastRecalledAt": "2026-04-20T03:00:00.244Z",
       "queryHashes": [
         "21faa0df9302"
       ],
@@ -4298,12 +4298,409 @@
       "conceptTags": [
         "gateway",
         "boot.md",
-        "memory/handoff.md",
         "possible",
         "lasting",
         "truths",
         "user",
-        "you"
+        "you",
+        "running"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"5132\", \"sender_id\": \"1455611839\", \"conversation_label\": \"Cortana-OS id:-1003856131939 topic:20\", \"sender\": \"Ben Jammin\", \"timestamp\": \"Sun 2026-04-19 08:56 UTC\", \"group_subject\": \"Cortana-OS\", \"topic_id\": \"20\"",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T03:00:00.244Z",
+      "lastRecalledAt": "2026-04-20T03:00:00.244Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "conversation-label",
+        "cortana-os",
+        "group-subject",
+        "topic-id",
+        "user",
+        "conversation"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: On it. I’m making the two comparison clips now so we can hear whether Gemini’s prompt-driven expressiveness is real or just marketing perfume. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T03:00:00.244Z",
+      "lastRecalledAt": "2026-04-20T03:00:00.244Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "prompt-driven",
+        "assistant",
+        "i’m",
+        "making",
+        "the",
+        "two",
+        "comparison",
+        "clips"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: Quick reality check: if you want a proper apples-to-apples test, I’m using the same script across both. Otherwise we’re just comparing vibes and bullshit. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T03:00:00.244Z",
+      "lastRecalledAt": "2026-04-20T03:00:00.244Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "apples-to-apples",
+        "assistant",
+        "quick",
+        "reality",
+        "check",
+        "you",
+        "want",
+        "proper"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: Gemini is still cooking. If it chokes, that’s on Google’s preview model chaos, not me. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T03:00:00.244Z",
+      "lastRecalledAt": "2026-04-20T03:00:00.244Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "assistant",
+        "gemini",
+        "still",
+        "cooking",
+        "chokes",
+        "that’s",
+        "google’s",
+        "preview"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]]Done. Two files, same script, different engine. 💜 MEDIA:/root/.openclaw/workspace/output/voice-compare/hume_baseline_cortana.mp3 MEDIA:/root/.openclaw/workspace/output/voice-compare/gemini_prompt_expressive_kore.wav What I made: - `hume_baseline_co",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T03:00:00.244Z",
+      "lastRecalledAt": "2026-04-20T03:00:00.244Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "hume-baseline-co",
+        "assistant",
+        "done",
+        "two",
+        "script",
+        "different",
+        "engine"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "User: System (untrusted): [2026-04-19 08:57:58 UTC] Exec completed (young-mi, code 0) :: /root/.openclaw/workspace/output/voice-compare/gemini_prompt_expressive_kore.wav An async command you ran earlier has completed. The result is shown in the system messages above. Handle the r",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T03:00:00.244Z",
+      "lastRecalledAt": "2026-04-20T03:00:00.244Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "young-mi",
+        "user",
+        "system",
+        "untrusted",
+        "utc",
+        "exec",
+        "completed",
+        "young"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T03:00:00.244Z",
+      "lastRecalledAt": "2026-04-20T03:00:00.244Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"5137\", \"sender_id\": \"1455611839\", \"conversation_label\": \"Cortana-OS id:-1003856131939 topic:20\", \"sender\": \"Ben Jammin\", \"timestamp\": \"Sun 2026-04-19 11:21 UTC\", \"group_subject\": \"Cortana-OS\", \"topic_id\": \"20\"",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T03:00:00.244Z",
+      "lastRecalledAt": "2026-04-20T03:00:00.244Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "conversation-label",
+        "cortana-os",
+        "group-subject",
+        "topic-id",
+        "user",
+        "conversation"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]]Yep. My mistake. I used the older preview TTS model like a clown. I’ll rerun it with `gemini-3.1-flash-tts-preview` and send the corrected file. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T03:00:00.244Z",
+      "lastRecalledAt": "2026-04-20T03:00:00.244Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "gemini-3.1-flash-tts-preview",
+        "assistant",
+        "yep",
+        "mistake",
+        "used",
+        "the",
+        "older"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"5139\", \"sender_id\": \"1455611839\", \"conversation_label\": \"Cortana-OS id:-1003856131939 topic:20\", \"sender\": \"Ben Jammin\", \"timestamp\": \"Sun 2026-04-19 11:22 UTC\", \"group_subject\": \"Cortana-OS\", \"topic_id\": \"20\"",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T03:00:00.244Z",
+      "lastRecalledAt": "2026-04-20T03:00:00.244Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "conversation-label",
+        "cortana-os",
+        "group-subject",
+        "topic-id",
+        "user",
+        "conversation"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: [[reply_to_current]]On it. I’m reading the transcript tag spec properly this time, then I’ll remake the Gemini sample the non-stupid way. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T03:00:00.244Z",
+      "lastRecalledAt": "2026-04-20T03:00:00.244Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "reply-to-current",
+        "non-stupid",
+        "assistant",
+        "i’m",
+        "reading",
+        "the",
+        "transcript",
+        "tag"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"5141\", \"sender_id\": \"1455611839\", \"conversation_label\": \"Cortana-OS id:-1003856131939 topic:20\", \"sender\": \"Ben Jammin\", \"timestamp\": \"Sun 2026-04-19 11:52 UTC\", \"group_subject\": \"Cortana-OS\", \"topic_id\": \"20\"",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T03:00:00.244Z",
+      "lastRecalledAt": "2026-04-20T03:00:00.244Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "conversation-label",
+        "cortana-os",
+        "group-subject",
+        "topic-id",
+        "user",
+        "conversation"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any user message: 1. Read memory/handoff.md — note what was happening and when 2. Check the last 5 messa",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T03:00:00.244Z",
+      "lastRecalledAt": "2026-04-20T03:00:00.244Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "gateway",
+        "boot.md",
+        "memory/handoff.md",
+        "user",
+        "you",
+        "running",
+        "boot",
+        "check"
       ]
     }
   }
