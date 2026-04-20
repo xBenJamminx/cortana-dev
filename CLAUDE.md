@@ -182,3 +182,26 @@ Person order: Team, Steven, Bilal, Ben, Cassandra
 Tram works under Steven - her items go in Steven section
 Use - (hyphen) for bullets. Slack renders these as proper bullet points. No code block needed.
 Never auto-post. Hand output to Ben.
+
+## Skills — Read BEFORE Running
+
+You have operational skills in .claude/skills/. Before running any of these workflows, READ the skill file first. The skill tells you format rules, what NOT to do, and the correct behavior.
+
+| When Ben says... | Read this skill first | Then run |
+|-----------------|----------------------|----------|
+| "meeting wrap", "meeting notes", "format the standup" | .claude/skills/meeting-wrap/SKILL.md | python3 scripts/meeting-wrap-v1.py |
+| "fam sync", "sync the board", "update Notion" | .claude/skills/fam-sync/SKILL.md | python3 scripts/fam-sync-analyze.py (Phase 1) |
+| "morning scan", "morning briefing", "post the FAM update" | .claude/skills/morning-scan/SKILL.md | python3 scripts/morning-scan-v2.py |
+
+**CRITICAL rules from meeting-wrap skill:**
+- Script sends draft to Telegram topic 2122 — Ben reviews and pastes into Slack HIMSELF
+- You NEVER post to Slack for meeting notes
+- Person order: Steven → Bilal → Ben → Cassandra
+- Tram's items go under Steven — no separate Tram section
+- No emojis, no em dashes in output
+
+**CRITICAL rules from fam-sync skill:**
+- Two phases: analyze first, present delta, get approval, THEN write
+- Never write to Notion/QA Sheet without explicit approval from Ben
+- Use direct Notion API (not Composio) — Composio Notion actions are broken
+- Use GOOGLESHEETS_BATCH_UPDATE_VALUES_BY_DATA_FILTER (not regular BATCH_UPDATE — that one is broken)
