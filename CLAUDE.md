@@ -194,8 +194,8 @@ You have operational skills in .claude/skills/. Before running any of these work
 | "morning scan", "morning briefing", "post the FAM update" | .claude/skills/morning-scan/SKILL.md | python3 scripts/morning-scan-v2.py |
 
 **CRITICAL rules from meeting-wrap skill:**
-- Script sends draft to Telegram topic 2122 — Ben reviews and pastes into Slack HIMSELF
-- You NEVER post to Slack for meeting notes
+- Phase 1: Script sends draft to Telegram topic 2122 for review — Ben reviews and pastes into Slack HIMSELF
+- Phase 2: On approval, run with --post to post to Slack. NEVER post without approval first
 - Person order: Steven → Bilal → Ben → Cassandra
 - Tram's items go under Steven — no separate Tram section
 - No emojis, no em dashes in output
