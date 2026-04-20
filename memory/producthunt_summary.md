@@ -1,66 +1,69 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [Vercel Flags](https://www.producthunt.com/products/vercel)
+• [Avina](https://www.producthunt.com/products/avina-2)
   _<p>
-            Feature flags, targeting rules, rollouts. All from Vercel.
-          </p>
-          _
-
-• [lindo.ai](https://www.producthunt.com/products/lindo)
-  _<p>
-            Launch your own AI website builder under your brand
+            GTM Agents to Find and Reach Your Next Customer
           </p>
           <p>
-   _
+       _
 
-• [CapyPlan](https://www.producthunt.com/products/gentle-daily-planner-capyplan)
+• [Tell](https://www.producthunt.com/products/tell-2)
   _<p>
-            Your no stress chearleader for tiny tasks
+            Mac widgets, made fun. 
           </p>
           <p>
-            <_
+            <a href="https://ww_
 
-• [Claude Design by Anthropic Labs](https://www.producthunt.com/products/claude)
+• [Paperweight](https://www.producthunt.com/products/paperweight)
   _<p>
-            Make prototypes, slides & one-pagers by talking to Claude
-          </p>
-          <_
-
-• [Lounge](https://www.producthunt.com/products/lounge-2)
-  _<p>
-            macOS Tahoe menu bar manager with notch-aware icon control
-          </p>
-          _
-
-• [Is Your Site Agent-Ready? by Cloudflare](https://www.producthunt.com/products/is-your-site-agent-ready)
-  _<p>
-            Scan your website to see how ready it is for AI agents. 
-          </p>
-          <p_
-
-• [Hipocampus](https://www.producthunt.com/products/hipocampus)
-  _<p>
-            AI operators that own team workflows
-          </p>
-          <p>
-            <a hre_
-
-• [Android CLI](https://www.producthunt.com/products/android-cli)
-  _<p>
-            Build high quality Android apps 3x faster using any agent 
-          </p>
-          _
-
-• [ChatGPT Shopping](https://www.producthunt.com/products/chatgpt-shopping)
-  _<p>
-            Richer, more visually immersive shopping experiences
+            Cleanup your email and manage your digital footprint
           </p>
           <p>
   _
 
-• [CraftBot](https://www.producthunt.com/products/craftbot)
+• [Verdent 2.0](https://www.producthunt.com/products/verdent-deck)
   _<p>
-            Self-hosted proactive AI assistant that lives locally
+            Your AI Technical Cofounder
+          </p>
+          <p>
+            <a href="https:_
+
+• [Gemini app for Mac](https://www.producthunt.com/products/gemini-6)
+  _<p>
+            Option + Space and Gemini is right there
+          </p>
+          <p>
+            <a_
+
+• [Wyndo](https://www.producthunt.com/products/wyndo)
+  _<p>
+            Weather app that tells you when to walk, bike or eat outside
+          </p>
+        _
+
+• [Creator OS](https://www.producthunt.com/products/creator-os-3)
+  _<p>
+            Stop missing comments on Instagram.
+          </p>
+          <p>
+            <a href_
+
+• [Nibbo](https://www.producthunt.com/products/nibbo)
+  _<p>
+            Family hub with a 3D pet that grows as you get things done
+          </p>
+          _
+
+• [Perplexity Personal Computer](https://www.producthunt.com/products/perplexity-ai)
+  _<p>
+            Local files. Native apps. Voice control. Always on.
+          </p>
+          <p>
+   _
+
+• [AGG Loop](https://www.producthunt.com/products/agg-loop)
+  _<p>
+            Secure, forever-free localhost tunnels (ex-Deposure).
           </p>
           <p>
  _

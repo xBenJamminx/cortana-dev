@@ -1,16 +1,13 @@
-🚀 Indie Hacker Monitor (2026-04-19 12:00)
-
-🔥 Hot Topics:
-  • launch: 2 mentions
+🚀 Indie Hacker Monitor (2026-04-20 12:00)
 
 📈 Top Stories:
-  • [Hacker News] (1076⬆): Claude Design
-    https://www.anthropic.com/news/claude-design-anthropic-labs
   • [Hacker News] (801⬆): Migrating from DigitalOcean to Hetzner
     https://isayeter.com/posts/digitalocean-to-hetzner-migration/
-  • [Hacker News] (624⬆): Measuring Claude 4.7's tokenizer costs
-    https://www.claudecodecamp.com/p/i-measured-claude-4-7-s-new-tokenizer-here-s-what-it-costs-you
+  • [Hacker News] (769⬆): Vercel April 2026 security incident
+    https://www.bleepingcomputer.com/news/security/vercel-confirms-breach-as-hackers-claim-to-be-selling-stolen-data/
   • [Hacker News] (536⬆): Anonymous request-token comparisons from Opus 4.6 and Opus 4.7
     https://tokens.billchambers.me/leaderboard
   • [Hacker News] (432⬆): Why Japan has such good railways
     https://worksinprogress.co/issue/why-japan-has-such-good-railways/
+  • [Hacker News] (412⬆): State of Kdenlive
+    https://kdenlive.org/news/2026/state-2026/
