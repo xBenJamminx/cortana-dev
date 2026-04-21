@@ -1,70 +1,68 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [Avina](https://www.producthunt.com/products/avina-2)
+• [kaizen](https://www.producthunt.com/products/kaizen-7)
   _<p>
-            GTM Agents to Find and Reach Your Next Customer
-          </p>
-          <p>
-       _
-
-• [Tell](https://www.producthunt.com/products/tell-2)
-  _<p>
-            Mac widgets, made fun. 
-          </p>
-          <p>
-            <a href="https://ww_
-
-• [Paperweight](https://www.producthunt.com/products/paperweight)
-  _<p>
-            Cleanup your email and manage your digital footprint
+            Run training that adapts based on the running you do
           </p>
           <p>
   _
 
-• [Verdent 2.0](https://www.producthunt.com/products/verdent-deck)
+• [Pegasus 1.5 by TwelveLabs](https://www.producthunt.com/products/twelvelabs)
   _<p>
-            Your AI Technical Cofounder
+            AI model for transforming video into Time-Based Metadata
           </p>
-          <p>
-            <a href="https:_
+          <p_
 
-• [Gemini app for Mac](https://www.producthunt.com/products/gemini-6)
+• [DogBase v2 Official Launch](https://www.producthunt.com/products/dogbase)
   _<p>
-            Option + Space and Gemini is right there
+            The AI-powered platform built for professional K9 teams
+          </p>
+          <p>_
+
+• [EchoTube](https://www.producthunt.com/products/echotube-open-source-youtube-client)
+  _<p>
+            Fast, private Open Source YouTube client
           </p>
           <p>
             <a_
 
-• [Wyndo](https://www.producthunt.com/products/wyndo)
+• [TorchTPU](https://www.producthunt.com/products/google)
   _<p>
-            Weather app that tells you when to walk, bike or eat outside
-          </p>
-        _
-
-• [Creator OS](https://www.producthunt.com/products/creator-os-3)
-  _<p>
-            Stop missing comments on Instagram.
+            Running PyTorch Natively on TPUs at Google Scale
           </p>
           <p>
-            <a href_
+      _
 
-• [Nibbo](https://www.producthunt.com/products/nibbo)
+• [The New Waydev](https://www.producthunt.com/products/waydev)
   _<p>
-            Family hub with a 3D pet that grows as you get things done
-          </p>
-          _
-
-• [Perplexity Personal Computer](https://www.producthunt.com/products/perplexity-ai)
-  _<p>
-            Local files. Native apps. Voice control. Always on.
+            Measure the full AI SDLC. From token to production.
           </p>
           <p>
    _
 
-• [AGG Loop](https://www.producthunt.com/products/agg-loop)
+• [Urbned](https://www.producthunt.com/products/urbned-2)
   _<p>
-            Secure, forever-free localhost tunnels (ex-Deposure).
+            Send money like a Text Message. Powered by Stablecoins.
+          </p>
+          <p>_
+
+• [Granter](https://www.producthunt.com/products/granter-ai)
+  _<p>
+            Your company's AI Grant Consultant 
+          </p>
+          <p>
+            <a href_
+
+• [Mainteny](https://www.producthunt.com/products/mainteny)
+  _<p>
+            AI-powered Operating System for Maintenance Companies
           </p>
           <p>
  _
+
+• [Lia](https://www.producthunt.com/products/lia-3)
+  _<p>
+            Manages invoices, reminders, + repayment plans autonomously
+          </p>
+         _
 

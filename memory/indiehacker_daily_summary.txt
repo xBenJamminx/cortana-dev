@@ -1,13 +1,16 @@
-🚀 Indie Hacker Monitor (2026-04-20 12:00)
+🚀 Indie Hacker Monitor (2026-04-21 12:00)
+
+🔥 Hot Topics:
+  • launch: 1 mentions
 
 📈 Top Stories:
-  • [Hacker News] (801⬆): Migrating from DigitalOcean to Hetzner
-    https://isayeter.com/posts/digitalocean-to-hetzner-migration/
+  • [Hacker News] (1909⬆): John Ternus to become Apple CEO
+    https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo/
+  • [Hacker News] (1324⬆): All phones sold in the EU to have replaceable batteries from 2027
+    https://www.theolivepress.es/spain-news/2026/04/20/eu-to-force-replaceable-batteries-in-phones-and-tablets-from-2027/
   • [Hacker News] (769⬆): Vercel April 2026 security incident
     https://www.bleepingcomputer.com/news/security/vercel-confirms-breach-as-hackers-claim-to-be-selling-stolen-data/
-  • [Hacker News] (536⬆): Anonymous request-token comparisons from Opus 4.6 and Opus 4.7
-    https://tokens.billchambers.me/leaderboard
-  • [Hacker News] (432⬆): Why Japan has such good railways
-    https://worksinprogress.co/issue/why-japan-has-such-good-railways/
-  • [Hacker News] (412⬆): State of Kdenlive
-    https://kdenlive.org/news/2026/state-2026/
+  • [Hacker News] (637⬆): Qwen3.6-Max-Preview: Smarter, Sharper, Still Evolving
+    https://qwen.ai/blog?id=qwen3.6-max-preview
+  • [Hacker News] (428⬆): ggsql: A Grammar of Graphics for SQL
+    https://opensource.posit.co/blog/2026-04-20_ggsql_alpha_release/
