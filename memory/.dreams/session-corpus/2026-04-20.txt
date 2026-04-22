@@ -22,3 +22,15 @@
 [main/sessions/boot-2026-04-20_09-00-28-014-936967b4.jsonl#L30] Assistant: NO_REPLY
 [main/sessions/boot-2026-04-20_09-00-28-014-936967b4.jsonl#L31] User: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK. When reading HEARTBEAT.md, use workspace file /root/.openclaw/workspace/HEARTBEAT.md (exact case). Do n
 [main/sessions/boot-2026-04-20_09-00-28-014-936967b4.jsonl#L32] Assistant: NO_REPLY
+[main/sessions/boot-2026-04-20_09-00-28-014-936967b4.jsonl#L33] User: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK. When reading HEARTBEAT.md, use workspace file /root/.openclaw/workspace/HEARTBEAT.md (exact case). Do n
+[main/sessions/boot-2026-04-20_09-00-28-014-936967b4.jsonl#L34] Assistant: NO_REPLY
+[main/sessions/boot-2026-04-20_09-00-28-014-936967b4.jsonl#L35] User: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK. When reading HEARTBEAT.md, use workspace file /root/.openclaw/workspace/HEARTBEAT.md (exact case). Do n
+[main/sessions/boot-2026-04-20_09-00-28-014-936967b4.jsonl#L36] Assistant: NO_REPLY
+[main/sessions/boot-2026-04-20_09-00-28-014-936967b4.jsonl#L37] User: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK. When reading HEARTBEAT.md, use workspace file /root/.openclaw/workspace/HEARTBEAT.md (exact case). Do n
+[main/sessions/boot-2026-04-20_09-00-28-014-936967b4.jsonl#L38] Assistant: NO_REPLY
+[main/sessions/boot-2026-04-20_09-00-28-014-936967b4.jsonl#L39] User: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK. When reading HEARTBEAT.md, use workspace file /root/.openclaw/workspace/HEARTBEAT.md (exact case). Do n
+[main/sessions/boot-2026-04-20_09-00-28-014-936967b4.jsonl#L40] Assistant: NO_REPLY
+[main/sessions/boot-2026-04-20_09-00-28-014-936967b4.jsonl#L41] User: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK. When reading HEARTBEAT.md, use workspace file /root/.openclaw/workspace/HEARTBEAT.md (exact case). Do n
+[main/sessions/boot-2026-04-20_09-00-28-014-936967b4.jsonl#L42] Assistant: HEARTBEAT_OK
+[main/sessions/boot-2026-04-20_09-00-28-014-936967b4.jsonl#L43] User: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK. When reading HEARTBEAT.md, use workspace file /root/.openclaw/workspace/HEARTBEAT.md (exact case). Do n
+[main/sessions/boot-2026-04-20_09-00-28-014-936967b4.jsonl#L44] Assistant: NO_REPLY
