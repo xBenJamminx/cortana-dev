@@ -1,4 +1,4 @@
-🚀 Indie Hacker Monitor (2026-04-21 12:00)
+🚀 Indie Hacker Monitor (2026-04-22 12:00)
 
 🔥 Hot Topics:
   • launch: 1 mentions
@@ -8,9 +8,9 @@
     https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo/
   • [Hacker News] (1324⬆): All phones sold in the EU to have replaceable batteries from 2027
     https://www.theolivepress.es/spain-news/2026/04/20/eu-to-force-replaceable-batteries-in-phones-and-tablets-from-2027/
-  • [Hacker News] (769⬆): Vercel April 2026 security incident
-    https://www.bleepingcomputer.com/news/security/vercel-confirms-breach-as-hackers-claim-to-be-selling-stolen-data/
-  • [Hacker News] (637⬆): Qwen3.6-Max-Preview: Smarter, Sharper, Still Evolving
-    https://qwen.ai/blog?id=qwen3.6-max-preview
-  • [Hacker News] (428⬆): ggsql: A Grammar of Graphics for SQL
-    https://opensource.posit.co/blog/2026-04-20_ggsql_alpha_release/
+  • [Hacker News] (1323⬆): Framework Laptop 13 Pro
+    https://frame.work/laptop13pro
+  • [Hacker News] (1047⬆): Laws of Software Engineering
+    https://lawsofsoftwareengineering.com
+  • [Hacker News] (872⬆): ChatGPT Images 2.0
+    https://openai.com/index/introducing-chatgpt-images-2-0/

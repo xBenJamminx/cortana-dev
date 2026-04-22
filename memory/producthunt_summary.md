@@ -1,68 +1,68 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [kaizen](https://www.producthunt.com/products/kaizen-7)
+• [YourMemory](https://www.producthunt.com/products/yourmemory)
   _<p>
-            Run training that adapts based on the running you do
-          </p>
-          <p>
-  _
-
-• [Pegasus 1.5 by TwelveLabs](https://www.producthunt.com/products/twelvelabs)
-  _<p>
-            AI model for transforming video into Time-Based Metadata
-          </p>
-          <p_
-
-• [DogBase v2 Official Launch](https://www.producthunt.com/products/dogbase)
-  _<p>
-            The AI-powered platform built for professional K9 teams
-          </p>
-          <p>_
-
-• [EchoTube](https://www.producthunt.com/products/echotube-open-source-youtube-client)
-  _<p>
-            Fast, private Open Source YouTube client
-          </p>
-          <p>
-            <a_
-
-• [TorchTPU](https://www.producthunt.com/products/google)
-  _<p>
-            Running PyTorch Natively on TPUs at Google Scale
-          </p>
-          <p>
-      _
-
-• [The New Waydev](https://www.producthunt.com/products/waydev)
-  _<p>
-            Measure the full AI SDLC. From token to production.
+            Cut token waste by 84% with self pruning MCP memory
           </p>
           <p>
    _
 
-• [Urbned](https://www.producthunt.com/products/urbned-2)
+• [Dageno AI](https://www.producthunt.com/products/agent-powered-geo-by-dageno)
   _<p>
-            Send money like a Text Message. Powered by Stablecoins.
-          </p>
-          <p>_
-
-• [Granter](https://www.producthunt.com/products/granter-ai)
-  _<p>
-            Your company's AI Grant Consultant 
+            Become the most recommended brand across 7+ major LLMs
           </p>
           <p>
-            <a href_
+_
 
-• [Mainteny](https://www.producthunt.com/products/mainteny)
+• [Cosine Swarm](https://www.producthunt.com/products/cosine)
   _<p>
-            AI-powered Operating System for Maintenance Companies
-          </p>
-          <p>
- _
-
-• [Lia](https://www.producthunt.com/products/lia-3)
-  _<p>
-            Manages invoices, reminders, + repayment plans autonomously
+            Parallel AI agents for long-horizon, complex software tasks
           </p>
          _
+
+• [Twenty 2.0](https://www.producthunt.com/products/twenty-crm)
+  _<p>
+            Build your Enterprise CRM at AI Speed
+          </p>
+          <p>
+            <a hr_
+
+• [STRIKE](https://www.producthunt.com/products/strike-6)
+  _<p>
+            The habit app that doesn't forgive you
+          </p>
+          <p>
+            <a h_
+
+• [RankAI](https://www.producthunt.com/products/rankai-2)
+  _<p>
+            RankAI autonomously gets you buyers from Google & AI Search
+          </p>
+         _
+
+• [KingCoding](https://www.producthunt.com/products/kingcoding)
+  _<p>
+            Your Claude Code & Codex dev, now in your pocket
+          </p>
+          <p>
+      _
+
+• [Pagecorder](https://www.producthunt.com/products/pagecorder)
+  _<p>
+            Turn your web page into a hardware accelerated video via API
+          </p>
+        _
+
+• [Flow AI](https://www.producthunt.com/products/agent-maya-by-flow-ai)
+  _<p>
+            Turn Linkedin into unlimited leads on auto-pilot
+          </p>
+          <p>
+      _
+
+• [delegare](https://www.producthunt.com/products/delegare)
+  _<p>
+            Give AI agents spending power without giving up control
+          </p>
+          <p>_
 
