@@ -1,68 +1,69 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [YourMemory](https://www.producthunt.com/products/yourmemory)
+• [Kyohansha](https://www.producthunt.com/products/kyohansha)
   _<p>
-            Cut token waste by 84% with self pruning MCP memory
+            Web-based 60FPS Live2D AI with Lite-RAG long-term memory
+          </p>
+          <p_
+
+• [SpeakON](https://www.producthunt.com/products/speakon)
+  _<p>
+            A MagSafe AI device for a post-keyboard world
           </p>
           <p>
-   _
-
-• [Dageno AI](https://www.producthunt.com/products/agent-powered-geo-by-dageno)
-  _<p>
-            Become the most recommended brand across 7+ major LLMs
-          </p>
-          <p>
-_
-
-• [Cosine Swarm](https://www.producthunt.com/products/cosine)
-  _<p>
-            Parallel AI agents for long-horizon, complex software tasks
-          </p>
          _
 
-• [Twenty 2.0](https://www.producthunt.com/products/twenty-crm)
+• [Reference Board](https://www.producthunt.com/products/reference-board)
   _<p>
-            Build your Enterprise CRM at AI Speed
+            Infinite Canvas for your ideas
           </p>
           <p>
-            <a hr_
+            <a href="htt_
 
-• [STRIKE](https://www.producthunt.com/products/strike-6)
+• [Qwen3.6-Max-Preview](https://www.producthunt.com/products/qwen3)
   _<p>
-            The habit app that doesn't forgive you
+            The flagship Qwen for agentic coding
           </p>
           <p>
-            <a h_
+            <a hre_
 
-• [RankAI](https://www.producthunt.com/products/rankai-2)
+• [ChatFolders](https://www.producthunt.com/products/chatfolders)
   _<p>
-            RankAI autonomously gets you buyers from Google & AI Search
-          </p>
-         _
-
-• [KingCoding](https://www.producthunt.com/products/kingcoding)
-  _<p>
-            Your Claude Code & Codex dev, now in your pocket
-          </p>
-          <p>
-      _
-
-• [Pagecorder](https://www.producthunt.com/products/pagecorder)
-  _<p>
-            Turn your web page into a hardware accelerated video via API
+            Folders for your AI chats with ChatGPT Claude, Gemini & Grok
           </p>
         _
 
-• [Flow AI](https://www.producthunt.com/products/agent-maya-by-flow-ai)
+• [Nomie v2](https://www.producthunt.com/products/nomie)
   _<p>
-            Turn Linkedin into unlimited leads on auto-pilot
+            Replace doomscrolling with a self-care interactive world
+          </p>
+          <p_
+
+• [OneGlanse](https://www.producthunt.com/products/oneglanse)
+  _<p>
+            Free open-source GEO tracker for LLM visibility
+          </p>
+          <p>
+       _
+
+• [FusedFrames](https://www.producthunt.com/products/fusedframes)
+  _<p>
+            Capture your team's expertise to power AI agents
           </p>
           <p>
       _
 
-• [delegare](https://www.producthunt.com/products/delegare)
+• [SoKal](https://www.producthunt.com/products/sokal)
   _<p>
-            Give AI agents spending power without giving up control
+            Social calendar that shows when friends are free
           </p>
-          <p>_
+          <p>
+      _
+
+• [Loomal](https://www.producthunt.com/products/loomal)
+  _<p>
+            Identity infrastructure for AI agents
+          </p>
+          <p>
+            <a hr_
 

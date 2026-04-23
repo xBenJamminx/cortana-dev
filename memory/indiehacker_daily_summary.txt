@@ -1,16 +1,13 @@
-🚀 Indie Hacker Monitor (2026-04-22 12:00)
-
-🔥 Hot Topics:
-  • launch: 1 mentions
+🚀 Indie Hacker Monitor (2026-04-23 12:00)
 
 📈 Top Stories:
-  • [Hacker News] (1909⬆): John Ternus to become Apple CEO
-    https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo/
-  • [Hacker News] (1324⬆): All phones sold in the EU to have replaceable batteries from 2027
-    https://www.theolivepress.es/spain-news/2026/04/20/eu-to-force-replaceable-batteries-in-phones-and-tablets-from-2027/
+  • [Hacker News] (1843⬆): Alberta startup sells no-tech tractors for half price
+    https://wheelfront.com/this-alberta-startup-sells-no-tech-tractors-for-half-price/
   • [Hacker News] (1323⬆): Framework Laptop 13 Pro
     https://frame.work/laptop13pro
   • [Hacker News] (1047⬆): Laws of Software Engineering
     https://lawsofsoftwareengineering.com
+  • [Hacker News] (876⬆): Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model
+    https://qwen.ai/blog?id=qwen3.6-27b
   • [Hacker News] (872⬆): ChatGPT Images 2.0
     https://openai.com/index/introducing-chatgpt-images-2-0/
