@@ -1,69 +1,66 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [Kyohansha](https://www.producthunt.com/products/kyohansha)
+• [Skill Inspector](https://www.producthunt.com/products/snyk)
   _<p>
-            Web-based 60FPS Live2D AI with Lite-RAG long-term memory
-          </p>
-          <p_
-
-• [SpeakON](https://www.producthunt.com/products/speakon)
-  _<p>
-            A MagSafe AI device for a post-keyboard world
+            Audit your AI agent skills to avoid malware
           </p>
           <p>
-         _
+           _
 
-• [Reference Board](https://www.producthunt.com/products/reference-board)
+• [Public Pages for Confluence](https://www.producthunt.com/products/atlassian)
   _<p>
-            Infinite Canvas for your ideas
+            Turn Confluence pages into public SEO-friendly websites
+          </p>
+          <p>_
+
+• [Typewise AI Customer Service](https://www.producthunt.com/products/typewise)
+  _<p>
+            Automate customer support across systems with AI agents
+          </p>
+          <p>_
+
+• [Ubuntu 26.04 Resolute Raccoon](https://www.producthunt.com/products/ubuntu)
+  _<p>
+            The next-generation Ubuntu for Developers, AI and Cloud
+          </p>
+          <p>_
+
+• [Figma For AI Agents](https://www.producthunt.com/products/figma-for-ai-agents)
+  _<p>
+            Drop-in design systems your AI coding agent can read
           </p>
           <p>
-            <a href="htt_
+  _
 
-• [Qwen3.6-Max-Preview](https://www.producthunt.com/products/qwen3)
+• [Hookdeck Outpost](https://www.producthunt.com/products/hookdeck)
   _<p>
-            The flagship Qwen for agentic coding
-          </p>
-          <p>
-            <a hre_
-
-• [ChatFolders](https://www.producthunt.com/products/chatfolders)
-  _<p>
-            Folders for your AI chats with ChatGPT Claude, Gemini & Grok
-          </p>
-        _
-
-• [Nomie v2](https://www.producthunt.com/products/nomie)
-  _<p>
-            Replace doomscrolling with a self-care interactive world
-          </p>
-          <p_
-
-• [OneGlanse](https://www.producthunt.com/products/oneglanse)
-  _<p>
-            Free open-source GEO tracker for LLM visibility
+            Open-source outbound webhooks for your platform
           </p>
           <p>
        _
 
-• [FusedFrames](https://www.producthunt.com/products/fusedframes)
+• [Fabric CLI](https://www.producthunt.com/products/fabric-6)
   _<p>
-            Capture your team's expertise to power AI agents
+            Make notes, tasks, and search, directly from the terminal.
           </p>
-          <p>
-      _
+          _
 
-• [SoKal](https://www.producthunt.com/products/sokal)
+• [IFTTT MCP](https://www.producthunt.com/products/ifttt)
   _<p>
-            Social calendar that shows when friends are free
+            Connect Claude to 1000+ apps, instantly
           </p>
           <p>
-      _
+            <a _
 
-• [Loomal](https://www.producthunt.com/products/loomal)
+• [Vora Health](https://www.producthunt.com/products/vora-health)
   _<p>
-            Identity infrastructure for AI agents
+            One AI-powered health app for every health metric & wearable
           </p>
-          <p>
-            <a hr_
+        _
+
+• [Speakmac](https://www.producthunt.com/products/speakmac)
+  _<p>
+            Local dictation tool now with live preview & hands-free mode
+          </p>
+        _
 
