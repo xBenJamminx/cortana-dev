@@ -1,66 +1,68 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [Skill Inspector](https://www.producthunt.com/products/snyk)
+• [Spira AI](https://www.producthunt.com/products/spira-ai)
   _<p>
-            Audit your AI agent skills to avoid malware
+            AI Influencer that always on trend, create & grow your brand
+          </p>
+        _
+
+• [Beezi AI](https://www.producthunt.com/products/beezi-ai)
+  _<p>
+            Make AI development structured, secure, and cost-efficient.
+          </p>
+         _
+
+• [Emotional intelligence AI for live calls](https://www.producthunt.com/products/emotional-intelligence-ai-for-live-calls)
+  _<p>
+            Emotional intelligence AI for live sales calls
           </p>
           <p>
-           _
+        _
 
-• [Public Pages for Confluence](https://www.producthunt.com/products/atlassian)
+• [SaveForm.io](https://www.producthunt.com/products/saveform-io)
   _<p>
-            Turn Confluence pages into public SEO-friendly websites
+            Automated form tracking and e-mail notifications & webhooks
           </p>
-          <p>_
+         _
 
-• [Typewise AI Customer Service](https://www.producthunt.com/products/typewise)
+• [TuneJourney.com](https://www.producthunt.com/products/tunejourney-com)
   _<p>
-            Automate customer support across systems with AI agents
+            AI learns your listening habits and curates your live radio
           </p>
-          <p>_
+         _
 
-• [Ubuntu 26.04 Resolute Raccoon](https://www.producthunt.com/products/ubuntu)
+• [boots.list](https://www.producthunt.com/products/boots-list)
   _<p>
-            The next-generation Ubuntu for Developers, AI and Cloud
-          </p>
-          <p>_
-
-• [Figma For AI Agents](https://www.producthunt.com/products/figma-for-ai-agents)
-  _<p>
-            Drop-in design systems your AI coding agent can read
-          </p>
-          <p>
-  _
-
-• [Hookdeck Outpost](https://www.producthunt.com/products/hookdeck)
-  _<p>
-            Open-source outbound webhooks for your platform
+            From Rekordbox collection to set-ready playlist
           </p>
           <p>
        _
 
-• [Fabric CLI](https://www.producthunt.com/products/fabric-6)
+• [MailCue](https://www.producthunt.com/products/mailcue-realistic-email-testing-server)
   _<p>
-            Make notes, tasks, and search, directly from the terminal.
-          </p>
-          _
-
-• [IFTTT MCP](https://www.producthunt.com/products/ifttt)
-  _<p>
-            Connect Claude to 1000+ apps, instantly
+            Run as a fully hardened production email server.
           </p>
           <p>
-            <a _
+      _
 
-• [Vora Health](https://www.producthunt.com/products/vora-health)
+• [LifeOS](https://www.producthunt.com/products/lifeos-6)
   _<p>
-            One AI-powered health app for every health metric & wearable
+            Use your LLM context to find friends and collaborators
           </p>
+          <p>
+_
+
+• [DeepSeek-V4](https://www.producthunt.com/products/deepseek)
+  _<p>
+            The open-source era of 1M context intelligence
+          </p>
+          <p>
         _
 
-• [Speakmac](https://www.producthunt.com/products/speakmac)
+• [Codex 3.0 by OpenAI](https://www.producthunt.com/products/codex-3-0-by-openai)
   _<p>
-            Local dictation tool now with live preview & hands-free mode
+            Codex can now build, test & debug on autopilot
           </p>
+          <p>
         _
 

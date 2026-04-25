@@ -1,13 +1,16 @@
-🚀 Indie Hacker Monitor (2026-04-24 12:00)
+🚀 Indie Hacker Monitor (2026-04-25 12:02)
+
+🔥 Hot Topics:
+  • launch: 1 mentions
 
 📈 Top Stories:
   • [Hacker News] (2211⬆): Alberta startup sells no-tech tractors for half price
     https://wheelfront.com/this-alberta-startup-sells-no-tech-tractors-for-half-price/
+  • [Hacker News] (1943⬆): DeepSeek v4
+    https://api-docs.deepseek.com/news/news260424
   • [Hacker News] (1405⬆): GPT-5.5
     https://openai.com/index/introducing-gpt-5-5/
-  • [Hacker News] (1115⬆): DeepSeek v4
-    https://api-docs.deepseek.com/
-  • [Hacker News] (876⬆): Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model
-    https://qwen.ai/blog?id=qwen3.6-27b
   • [Hacker News] (781⬆): Bitwarden CLI compromised in ongoing Checkmarx supply chain campaign
     https://socket.dev/blog/bitwarden-cli-compromised
+  • [Hacker News] (768⬆): An update on recent Claude Code quality reports
+    https://www.anthropic.com/engineering/april-23-postmortem
