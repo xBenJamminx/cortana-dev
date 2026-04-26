@@ -1,68 +1,71 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [Spira AI](https://www.producthunt.com/products/spira-ai)
+• [XChat](https://www.producthunt.com/products/chat-by-x)
   _<p>
-            AI Influencer that always on trend, create & grow your brand
-          </p>
-        _
-
-• [Beezi AI](https://www.producthunt.com/products/beezi-ai)
-  _<p>
-            Make AI development structured, secure, and cost-efficient.
-          </p>
-         _
-
-• [Emotional intelligence AI for live calls](https://www.producthunt.com/products/emotional-intelligence-ai-for-live-calls)
-  _<p>
-            Emotional intelligence AI for live sales calls
+            The standalone, encrypted messaging app from X
           </p>
           <p>
         _
 
-• [SaveForm.io](https://www.producthunt.com/products/saveform-io)
+• [Euphony](https://www.producthunt.com/products/euphony-2)
   _<p>
-            Automated form tracking and e-mail notifications & webhooks
+            Render AI chat data and Codex logs into browsable views
           </p>
-         _
+          <p>_
 
-• [TuneJourney.com](https://www.producthunt.com/products/tunejourney-com)
+• [Gemini Personal Intelligence](https://www.producthunt.com/products/gemini-personal-intelligence)
   _<p>
-            AI learns your listening habits and curates your live radio
-          </p>
-         _
-
-• [boots.list](https://www.producthunt.com/products/boots-list)
-  _<p>
-            From Rekordbox collection to set-ready playlist
+            Gemini answers with context from your Google apps
           </p>
           <p>
-       _
+     _
 
-• [MailCue](https://www.producthunt.com/products/mailcue-realistic-email-testing-server)
+• [Bansi AI by Writesonic](https://www.producthunt.com/products/bansi)
   _<p>
-            Run as a fully hardened production email server.
+            AI video editor for long-form talking head videos
+          </p>
+          <p>
+     _
+
+• [Onboarding0](https://www.producthunt.com/products/onboarding0)
+  _<p>
+            Turn company knowledge into AI-guided onboarding
           </p>
           <p>
       _
 
-• [LifeOS](https://www.producthunt.com/products/lifeos-6)
+• [Haiker](https://www.producthunt.com/products/haiker)
   _<p>
-            Use your LLM context to find friends and collaborators
-          </p>
-          <p>
-_
-
-• [DeepSeek-V4](https://www.producthunt.com/products/deepseek)
-  _<p>
-            The open-source era of 1M context intelligence
+            Hacker News App for non-native english speaker
           </p>
           <p>
         _
 
-• [Codex 3.0 by OpenAI](https://www.producthunt.com/products/codex-3-0-by-openai)
+• [Your Name in Landsat 🛰️](https://www.producthunt.com/products/your-name-in-landsat)
   _<p>
-            Codex can now build, test & debug on autopilot
+            The planet can spell your name – literally!
           </p>
           <p>
-        _
+           _
+
+• [Happenstance](https://www.producthunt.com/products/happenstance-2)
+  _<p>
+            Search your network with AI
+          </p>
+          <p>
+            <a href="https:_
+
+• [Claude Connectors](https://www.producthunt.com/products/claude-connectors)
+  _<p>
+            New connectors in Claude for everyday life
+          </p>
+          <p>
+            _
+
+• [Edgee Team](https://www.producthunt.com/products/edgee)
+  _<p>
+            Strava for your coding assistants
+          </p>
+          <p>
+            <a href="_
 
