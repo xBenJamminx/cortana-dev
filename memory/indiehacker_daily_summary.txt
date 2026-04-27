@@ -1,17 +1,16 @@
-🚀 Indie Hacker Monitor (2026-04-26 12:00)
+🚀 Indie Hacker Monitor (2026-04-27 12:00)
 
 🔥 Hot Topics:
   • build in public: 2 mentions
-  • launch: 1 mentions
 
 📈 Top Stories:
-  • [Hacker News] (1943⬆): DeepSeek v4
-    https://api-docs.deepseek.com/news/news260424
-  • [Hacker News] (625⬆): Google plans to invest up to $40B in Anthropic
-    https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic
+  • [Hacker News] (872⬆): I bought Friendster for $30k – Here's what I'm doing with it
+    https://ca98am79.medium.com/i-bought-friendster-for-30k-heres-what-i-m-doing-with-it-d5e8ddb3991d
+  • [Hacker News] (737⬆): An AI agent deleted our production database. The agent's confession is below
+    https://twitter.com/lifeof_jer/status/2048103471019434248
+  • [Hacker News] (561⬆): AI should elevate your thinking, not replace it
+    https://www.koshyjohn.com/blog/ai-should-elevate-your-thinking-not-replace-it/
   • [Hacker News] (521⬆): The West forgot how to make things, now it’s forgetting how to code
     https://techtrenches.dev/p/the-west-forgot-how-to-make-things
-  • [Hacker News] (450⬆): Sabotaging projects by overthinking, scope creep, and structural diffing
-    https://kevinlynagh.com/newsletter/2026_04_overthinking/
   • [Hacker News] (439⬆): Amateur armed with ChatGPT solves an Erdős problem
     https://www.scientificamerican.com/article/amateur-armed-with-chatgpt-vibe-maths-a-60-year-old-problem/

@@ -12,12 +12,3 @@
 • [GPT 5.5 Arrives, DeepSeek V4 Drops, and the Compute War Intensifies](https://www.youtube.com/watch?v=jz0rNhfAKo8)
   _AI Explained_
 
-• [The Only Investing Video You’ll Ever Need (Start With $0)](https://www.youtube.com/watch?v=bfENsVP77VQ)
-  _Ali Abdaal_
-
-• [The Minimum $2K Pricing Effect](https://www.youtube.com/shorts/1a5xOhqvm-I)
-  _Ali Abdaal_
-
-• [I finally found a use case for OpenClaw…](https://www.youtube.com/watch?v=FM5-R4VPArw)
-  _Fireship_
-
