@@ -1,72 +1,70 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [Happenstance](https://www.producthunt.com/products/happenstance-2)
+• [GitBar](https://www.producthunt.com/products/gitbar-3)
   _<p>
-            Search your network with AI
+            Every pull request, one menubar. GitHub, GitLab & Azure
           </p>
-          <p>
-            <a href="https:_
+          <p>_
 
-• [Claude Connectors](https://www.producthunt.com/products/claude-connectors)
+• [Wafaa.io](https://www.producthunt.com/products/wafaa-io-beta)
   _<p>
-            New connectors in Claude for everyday life
+            Create secure digital contracts in minutes
           </p>
           <p>
             _
 
-• [Edgee Team](https://www.producthunt.com/products/edgee)
+• [Waitlister](https://www.producthunt.com/products/waitlister)
   _<p>
-            Strava for your coding assistants
+            The waitlist software to launch your product
           </p>
           <p>
-            <a href="_
+          _
 
-• [Pica](https://www.producthunt.com/products/pica)
+• [VIDEO AI ME](https://www.producthunt.com/products/video-ai-me)
   _<p>
-            Fully native app for managing your fonts on MacOS
-          </p>
-          <p>
-     _
-
-• [QuickCompare by Trismik](https://www.producthunt.com/products/quickcompare-by-trismik)
-  _<p>
-            Compare LLMs on your data, measure, and pick the best.
-          </p>
-          <p>
-_
-
-• [Free chart generator by Embedful](https://www.producthunt.com/products/embedful)
-  _<p>
-            Turn CSV & Excel files into charts in seconds
-          </p>
-          <p>
-         _
-
-• [GPT-5.5 by OpenAI](https://www.producthunt.com/products/openai)
-  _<p>
-            OpenAI's smartest and most intuitive to use model yet
+            Create videos with AI actors that sound and look real
           </p>
           <p>
  _
 
-• [Genspark for Excel](https://www.producthunt.com/products/genspark-for-excel)
+• [Orange Slice](https://www.producthunt.com/products/orange-slice)
   _<p>
-            AI assistant for Excel formulas, charts, insights.
+            Automate any sales task with AI
           </p>
           <p>
-    _
+            <a href="ht_
 
-• [ZeroHuman.](https://www.producthunt.com/products/zerohuman)
+• [Logic](https://www.producthunt.com/products/logic-ship-an-agent)
   _<p>
-            Your AI Co-Founder: OpenClaw x Paperclip x Spud
+            Build and operate fleets of agents
           </p>
           <p>
-       _
+            <a href=_
 
-• [Inrō AI](https://www.producthunt.com/products/inro)
+• [Jet AI Agents](https://www.producthunt.com/products/jet-admin)
   _<p>
-            Your AI Agent for Instagram Marketing
+            Build business AI agents in minutes
           </p>
           <p>
-            <a hr_
+            <a href_
+
+• [Replyless](https://www.producthunt.com/products/replylessai)
+  _<p>
+            AI Email app that sends daily email briefs on Telegram
+          </p>
+          <p>
+_
+
+• [Subgrapher](https://www.producthunt.com/products/subgrapher)
+  _<p>
+            P2P desktop app for building, browsing, & sharing knowledge
+          </p>
+         _
+
+• [PlayJoob](https://www.producthunt.com/products/playjoob)
+  _<p>
+            turns dead task boards into a shared strategy map
+          </p>
+          <p>
+     _
 
