@@ -1,70 +1,65 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [GitBar](https://www.producthunt.com/products/gitbar-3)
+• [Monet](https://www.producthunt.com/products/monet-5)
   _<p>
-            Every pull request, one menubar. GitHub, GitLab & Azure
+            Edit Videos and Design Images with Claude Code and Codex
+          </p>
+          <p_
+
+• [Colir](https://www.producthunt.com/products/colir)
+  _<p>
+            Gradients that don't look like defaults
+          </p>
+          <p>
+            <a _
+
+• [Devin for Terminal](https://www.producthunt.com/products/devin-1-2-by-congition)
+  _<p>
+            A CLI agent that keeps working when you close your laptop
+          </p>
+          <_
+
+• [Not Pink](https://www.producthunt.com/products/not-pink)
+  _<p>
+            A shared bucket list with active scheduling and planning
+          </p>
+          <p_
+
+• [SureThing.io](https://www.producthunt.com/products/surething-io)
+  _<p>
+            Autonomous agent that communicates results like a human
           </p>
           <p>_
 
-• [Wafaa.io](https://www.producthunt.com/products/wafaa-io-beta)
+• [Happy Horse](https://www.producthunt.com/products/happyhorse-10)
   _<p>
-            Create secure digital contracts in minutes
+            Top-tier AI video generation and editing from Alibaba ATH
+          </p>
+          <_
+
+• [Blueprint](https://www.producthunt.com/products/imbue-7)
+  _<p>
+            Turn random prompts into airtight plans for any coding agent
+          </p>
+        _
+
+• [SimCam](https://www.producthunt.com/products/simcam-2)
+  _<p>
+             Test camera features directly in the iOS simulator
           </p>
           <p>
-            _
+   _
 
-• [Waitlister](https://www.producthunt.com/products/waitlister)
+• [Lovable mobile app](https://www.producthunt.com/products/lovable)
   _<p>
-            The waitlist software to launch your product
+            Your ideas don't wait for you to sit down at a desk
           </p>
           <p>
-          _
+   _
 
-• [VIDEO AI ME](https://www.producthunt.com/products/video-ai-me)
+• [Actian VectorAI DB](https://www.producthunt.com/products/actian)
   _<p>
-            Create videos with AI actors that sound and look real
-          </p>
-          <p>
- _
-
-• [Orange Slice](https://www.producthunt.com/products/orange-slice)
-  _<p>
-            Automate any sales task with AI
-          </p>
-          <p>
-            <a href="ht_
-
-• [Logic](https://www.producthunt.com/products/logic-ship-an-agent)
-  _<p>
-            Build and operate fleets of agents
-          </p>
-          <p>
-            <a href=_
-
-• [Jet AI Agents](https://www.producthunt.com/products/jet-admin)
-  _<p>
-            Build business AI agents in minutes
-          </p>
-          <p>
-            <a href_
-
-• [Replyless](https://www.producthunt.com/products/replylessai)
-  _<p>
-            AI Email app that sends daily email briefs on Telegram
-          </p>
-          <p>
-_
-
-• [Subgrapher](https://www.producthunt.com/products/subgrapher)
-  _<p>
-            P2P desktop app for building, browsing, & sharing knowledge
+            The portable vector database for AI agents beyond the cloud
           </p>
          _
-
-• [PlayJoob](https://www.producthunt.com/products/playjoob)
-  _<p>
-            turns dead task boards into a shared strategy map
-          </p>
-          <p>
-     _
 

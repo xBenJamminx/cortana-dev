@@ -1,16 +1,18 @@
-🚀 Indie Hacker Monitor (2026-04-28 12:00)
+🚀 Indie Hacker Monitor (2026-04-29 12:00)
 
 🔥 Hot Topics:
   • revenue: 1 mentions
+  • launch: 1 mentions
+  • build in public: 1 mentions
 
 📈 Top Stories:
+  • [Hacker News] (2755⬆): Ghostty is leaving GitHub
+    https://mitchellh.com/writing/ghostty-leaving-github
+  • [Hacker News] (1444⬆): Your phone is about to stop being yours
+    https://keepandroidopen.org/en/
   • [Hacker News] (899⬆): Microsoft and OpenAI end their exclusive and revenue-sharing deal
     https://www.bloomberg.com/news/articles/2026-04-27/microsoft-to-stop-sharing-revenue-with-main-ai-partner-openai
-  • [Hacker News] (872⬆): I bought Friendster for $30k – Here's what I'm doing with it
-    https://ca98am79.medium.com/i-bought-friendster-for-30k-heres-what-i-m-doing-with-it-d5e8ddb3991d
-  • [Hacker News] (737⬆): An AI agent deleted our production database. The agent's confession is below
-    https://twitter.com/lifeof_jer/status/2048103471019434248
+  • [Hacker News] (711⬆): Talkie: a 13B vintage language model from 1930
+    https://talkie-lm.com/introducing-talkie
   • [Hacker News] (610⬆): Men who stare at walls
     https://www.alexselimov.com/posts/men_who_stare_at_walls/
-  • [Hacker News] (591⬆): Is my blue your blue? (2024)
-    https://ismy.blue/
