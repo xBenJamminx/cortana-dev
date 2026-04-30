@@ -405,7 +405,7 @@
       "size": 28290,
       "contentHash": "dd1b755c71fb21b564ae164437af0bf82aad547123b7c3d7bb5fc46b8bc207d9",
       "lineCount": 13,
-      "lastContentLine": 12
+      "lastContentLine": 13
     },
     "main:sessions/6f929868-dfb6-4dfb-8dd0-f360eafb0022-topic-22.trajectory.jsonl": {
       "mtimeMs": 1777468692502,
@@ -1553,10 +1553,8 @@
       "f0cba34341d44b2b4c1736aad7cc711a6da0f8d5",
       "f2f814e7880d5e15b1f09944148d33a5495ea1bd",
       "dfda0b525be0513018275f57568c16bf677c930c",
-      "8c3dc656986f2f30c95f283afc3f6b991af77fb8"
-    ],
-    "main:6f929868-dfb6-4dfb-8dd0-f360eafb0022-topic-22.trajectory": [],
-    "main:83bd6763-2f7f-4d54-a90a-f4a787d5eb2f.trajectory": [],
-    "main:d1085ff8-ca11-4cbc-aa99-9f83dbe6be42.trajectory": []
+      "8c3dc656986f2f30c95f283afc3f6b991af77fb8",
+      "d3f2bd2b8ada293fd2d974d9d7d62931cee71622"
+    ]
   }
 }

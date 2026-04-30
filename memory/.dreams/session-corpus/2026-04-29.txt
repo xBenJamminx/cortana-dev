@@ -13,3 +13,4 @@
 [main/sessions/83bd6763-2f7f-4d54-a90a-f4a787d5eb2f.jsonl#L695] User: test -d /root/.aws && echo "✅ 存在 /root/.aws/" || echo "❌ 不存在 /root/.aws/"
 [main/sessions/83bd6763-2f7f-4d54-a90a-f4a787d5eb2f.jsonl#L699] Assistant: ❌ `/root/.aws/` 不存在
 [main/sessions/83bd6763-2f7f-4d54-a90a-f4a787d5eb2f.jsonl#L757] Assistant: We need respond heartbeat exactly maybe read file. Do routine tool call no narration ideally.
+[main/sessions/6f929868-dfb6-4dfb-8dd0-f360eafb0022-topic-22.jsonl#L17] Assistant: a little too happily. Which is useful — until it’s not. ### My blunt bottom line For **client revenue work**, I’d optimize for **throughput and completion**, not vibes. So: **use Codex by default**. Keep Claude Code in the holster for higher-judgment moments. �

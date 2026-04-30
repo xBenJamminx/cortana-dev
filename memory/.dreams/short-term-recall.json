@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-30T03:00:00.996Z",
+  "updatedAt": "2026-04-30T03:00:02.827Z",
   "entries": {
     "memory:memory/.dreams/session-corpus/2026-04-12.txt:1:1": {
       "key": "memory:memory/.dreams/session-corpus/2026-04-12.txt:1:1",
@@ -27,11 +27,11 @@
         "gateway",
         "boot.md",
         "memory/handoff.md",
-        "user",
-        "you",
         "running",
         "boot",
-        "check"
+        "check",
+        "follow",
+        "instructions"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-12.txt:2:2": {
@@ -56,8 +56,7 @@
         "2026-04-14"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-13.txt:1:1": {
@@ -85,11 +84,11 @@
         "gateway",
         "boot.md",
         "memory/handoff.md",
-        "user",
-        "you",
         "running",
         "boot",
-        "check"
+        "check",
+        "follow",
+        "instructions"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-13.txt:2:2": {
@@ -114,8 +113,7 @@
         "2026-04-14"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-13.txt:3:3": {
@@ -143,11 +141,11 @@
         "gateway",
         "boot.md",
         "memory/handoff.md",
-        "user",
-        "you",
         "running",
         "boot",
-        "check"
+        "check",
+        "follow",
+        "instructions"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-13.txt:4:4": {
@@ -172,8 +170,7 @@
         "2026-04-14"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/2026-04-14.md:28:31": {
@@ -202,9 +199,9 @@
         "4-4",
         "reflections",
         "theme",
-        "assistant",
         "kept",
-        "surfacing"
+        "surfacing",
+        "across"
       ]
     },
     "memory:memory/2026-04-14.md:32:35": {
@@ -450,9 +447,9 @@
         "3-3",
         "reflections",
         "theme",
-        "user",
         "kept",
-        "surfacing"
+        "surfacing",
+        "across"
       ]
     },
     "memory:memory/2026-04-14.md:64:67": {
@@ -481,9 +478,9 @@
         "3-3",
         "reflections",
         "theme",
-        "you",
         "kept",
-        "surfacing"
+        "surfacing",
+        "across"
       ]
     },
     "memory:memory/2026-04-14.md:70:70": {
@@ -829,9 +826,9 @@
         "3-3",
         "reflections",
         "theme",
-        "user",
         "kept",
-        "surfacing"
+        "surfacing",
+        "across"
       ]
     },
     "memory:memory/2026-04-14.md:89:92": {
@@ -860,9 +857,9 @@
         "3-3",
         "reflections",
         "theme",
-        "you",
         "kept",
-        "surfacing"
+        "surfacing",
+        "across"
       ]
     },
     "memory:memory/2026-04-14.md:95:95": {
@@ -924,8 +921,8 @@
         "possible",
         "lasting",
         "truths",
-        "user",
-        "you"
+        "running",
+        "boot"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-14.txt:1:1": {
@@ -953,11 +950,11 @@
         "gateway",
         "boot.md",
         "memory/handoff.md",
-        "user",
-        "you",
         "running",
         "boot",
-        "check"
+        "check",
+        "follow",
+        "instructions"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-14.txt:2:2": {
@@ -982,8 +979,7 @@
         "2026-04-15"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/2026-04-15.md:78:81": {
@@ -1271,8 +1267,8 @@
         "possible",
         "lasting",
         "truths",
-        "user",
-        "you"
+        "running",
+        "boot"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-15.txt:1:1": {
@@ -1300,11 +1296,11 @@
         "gateway",
         "boot.md",
         "memory/handoff.md",
-        "user",
-        "you",
         "running",
         "boot",
-        "check"
+        "check",
+        "follow",
+        "instructions"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-15.txt:2:2": {
@@ -1329,8 +1325,7 @@
         "2026-04-16"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/2026-04-16.md:108:111": {
@@ -1514,8 +1509,8 @@
         "possible",
         "lasting",
         "truths",
-        "user",
-        "you"
+        "running",
+        "boot"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-16.txt:1:1": {
@@ -1543,11 +1538,11 @@
         "gateway",
         "boot.md",
         "memory/handoff.md",
-        "user",
-        "you",
         "running",
         "boot",
-        "check"
+        "check",
+        "follow",
+        "instructions"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-16.txt:2:2": {
@@ -1575,11 +1570,11 @@
         "gateway",
         "boot.md",
         "memory/handoff.md",
-        "user",
-        "you",
         "running",
         "boot",
-        "check"
+        "check",
+        "follow",
+        "instructions"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-16.txt:3:3": {
@@ -1604,14 +1599,14 @@
         "2026-04-17"
       ],
       "conceptTags": [
-        "user",
         "continue",
         "where",
-        "you",
         "left",
         "off",
-        "the",
-        "previous"
+        "previous",
+        "model",
+        "attempt",
+        "failed"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-16.txt:4:4": {
@@ -1639,11 +1634,11 @@
         "gateway",
         "boot.md",
         "memory/handoff.md",
-        "user",
-        "you",
         "running",
         "boot",
-        "check"
+        "check",
+        "follow",
+        "instructions"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-16.txt:5:5": {
@@ -1668,14 +1663,14 @@
         "2026-04-17"
       ],
       "conceptTags": [
-        "assistant",
         "got",
         "last",
         "saw",
         "wrapped",
-        "the",
         "fam",
-        "poc"
+        "poc",
+        "sync",
+        "all"
       ]
     },
     "memory:memory/2026-04-17.md:88:91": {
@@ -1829,8 +1824,8 @@
         "possible",
         "lasting",
         "truths",
-        "user",
-        "you"
+        "running",
+        "boot"
       ]
     },
     "memory:memory/2026-04-17.md:103:106": {
@@ -2008,8 +2003,8 @@
         "possible",
         "lasting",
         "truths",
-        "user",
-        "you"
+        "running",
+        "boot"
       ]
     },
     "memory:memory/2026-04-17.md:119:122": {
@@ -2146,8 +2141,8 @@
         "possible",
         "lasting",
         "truths",
-        "user",
-        "you"
+        "running",
+        "boot"
       ]
     },
     "memory:memory/2026-04-17.md:137:140": {
@@ -2239,11 +2234,11 @@
         "1/1",
         "auto-announce",
         "busy-poll",
-        "user",
         "fri",
         "utc",
-        "subagent",
-        "context"
+        "context",
+        "running",
+        "depth"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:2:2": {
@@ -2268,10 +2263,8 @@
         "2026-04-18"
       ],
       "conceptTags": [
-        "assistant",
         "test",
         "received",
-        "subagent",
         "alive",
         "reporting",
         "back",
@@ -2306,8 +2299,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:4:4": {
@@ -2332,14 +2325,14 @@
         "2026-04-18"
       ],
       "conceptTags": [
-        "assistant",
         "i’m",
         "checking",
         "what",
         "hyperframes",
         "actually",
         "whether",
-        "fits"
+        "fits",
+        "stack"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:5:5": {
@@ -2367,11 +2360,11 @@
         "reply-to-current",
         "html/css/gsap",
         "ai-agent-friendly",
-        "assistant",
         "yes",
         "can",
         "use",
-        "one"
+        "one",
+        "actually"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:6:6": {
@@ -2402,8 +2395,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:7:7": {
@@ -2430,12 +2423,12 @@
       "conceptTags": [
         "reply-to-current",
         "composition/rendering",
-        "assistant",
         "fair",
         "that’s",
-        "the",
         "right",
-        "greedy"
+        "greedy",
+        "answer",
+        "use"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:8:8": {
@@ -2466,8 +2459,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:9:9": {
@@ -2492,14 +2485,14 @@
         "2026-04-18"
       ],
       "conceptTags": [
-        "assistant",
         "i’m",
         "setting",
-        "the",
         "stack",
         "safest",
         "useful",
-        "way"
+        "way",
+        "first",
+        "which"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:10:10": {
@@ -2524,14 +2517,14 @@
         "2026-04-18"
       ],
       "conceptTags": [
-        "assistant",
         "good",
         "node",
         "ffmpeg",
         "already",
         "here",
         "which",
-        "removes"
+        "removes",
+        "half"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:11:11": {
@@ -2556,14 +2549,14 @@
         "2026-04-18"
       ],
       "conceptTags": [
-        "assistant",
         "nice",
         "both",
         "normal",
         "node",
         "clis",
         "weird",
-        "native"
+        "native",
+        "horror"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:12:12": {
@@ -2589,13 +2582,13 @@
       ],
       "conceptTags": [
         "smoke-testing",
-        "assistant",
         "layer",
         "now",
         "i’m",
         "smoke",
         "testing",
-        "both"
+        "both",
+        "clis"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:13:13": {
@@ -2620,14 +2613,14 @@
         "2026-04-18"
       ],
       "conceptTags": [
-        "assistant",
         "both",
         "clis",
         "alive",
         "that’s",
-        "the",
         "good",
-        "i’m"
+        "i’m",
+        "scaffolding",
+        "first"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:14:14": {
@@ -2652,14 +2645,14 @@
         "2026-04-18"
       ],
       "conceptTags": [
-        "assistant",
         "nice",
         "now",
         "real",
         "starter",
         "project",
         "not",
-        "theory"
+        "theory",
+        "wrappers"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:15:15": {
@@ -2687,11 +2680,11 @@
         "gateway",
         "boot.md",
         "memory/handoff.md",
-        "user",
-        "you",
         "running",
         "boot",
-        "check"
+        "check",
+        "follow",
+        "instructions"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:16:16": {
@@ -2716,7 +2709,6 @@
         "2026-04-18"
       ],
       "conceptTags": [
-        "assistant",
         "let",
         "try",
         "alternative",
@@ -2747,13 +2739,13 @@
       ],
       "conceptTags": [
         "creation/updates",
-        "assistant",
         "boot",
         "check",
         "complete",
         "found",
         "handoff",
-        "stale"
+        "stale",
+        "march"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:18:18": {
@@ -2784,8 +2776,8 @@
         "projects/media-stack",
         "bin/mmx",
         "bin/hyperframes",
-        "assistant",
-        "set"
+        "set",
+        "cleanly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:19:19": {
@@ -2816,8 +2808,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:20:20": {
@@ -2846,10 +2838,10 @@
         "ai/news",
         "3-5",
         "charts/scr",
-        "assistant",
         "videos",
         "split",
-        "cleanly"
+        "cleanly",
+        "generated"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:21:21": {
@@ -2880,8 +2872,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:22:22": {
@@ -2908,12 +2900,12 @@
       "conceptTags": [
         "reply-to-current",
         "screenshots/receipts",
-        "assistant",
         "reusable",
         "video",
         "formats",
-        "the",
-        "take"
+        "take",
+        "structure",
+        "hook"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:23:23": {
@@ -2944,8 +2936,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:24:24": {
@@ -2971,13 +2963,13 @@
       ],
       "conceptTags": [
         "reply-to-current",
-        "assistant",
         "don’t",
         "block",
         "mmx",
         "simple",
         "already",
-        "enough"
+        "enough",
+        "openclaw"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:25:25": {
@@ -3008,8 +3000,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:26:26": {
@@ -3035,13 +3027,13 @@
       ],
       "conceptTags": [
         "hyperframes-native",
-        "assistant",
         "i’m",
         "making",
-        "the",
         "first",
         "hyperframes",
-        "native"
+        "native",
+        "piece",
+        "now"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:27:27": {
@@ -3066,14 +3058,14 @@
         "2026-04-18"
       ],
       "conceptTags": [
-        "assistant",
         "good",
         "blank",
         "canvas",
         "i’m",
         "turning",
         "polished",
-        "why"
+        "why",
+        "stacks"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:28:28": {
@@ -3098,14 +3090,14 @@
         "2026-04-18"
       ],
       "conceptTags": [
-        "assistant",
         "composition’s",
         "i’m",
         "rendering",
         "now",
         "hyperframes",
         "behaves",
-        "you’ll"
+        "you’ll",
+        "first"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:29:29": {
@@ -3130,14 +3122,14 @@
         "2026-04-18"
       ],
       "conceptTags": [
-        "assistant",
         "render’s",
         "running",
         "i’m",
         "watching",
         "either",
         "clean",
-        "mp4"
+        "mp4",
+        "whatever"
       ]
     },
     "memory:memory/2026-04-18.md:198:201": {
@@ -3247,8 +3239,8 @@
         "possible",
         "lasting",
         "truths",
-        "user",
-        "you"
+        "running",
+        "boot"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:30:30": {
@@ -3273,14 +3265,14 @@
         "2026-04-19"
       ],
       "conceptTags": [
-        "assistant",
         "render",
         "healthy",
         "fell",
         "back",
         "screenshot",
         "mode",
-        "chromium"
+        "chromium",
+        "little"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:31:31": {
@@ -3305,14 +3297,14 @@
         "2026-04-19"
       ],
       "conceptTags": [
-        "assistant",
         "rendered",
         "cleanly",
         "i’m",
         "grabbing",
-        "the",
         "details",
-        "i’ll"
+        "i’ll",
+        "tell",
+        "exactly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:32:32": {
@@ -3339,12 +3331,12 @@
       "conceptTags": [
         "reply-to-current",
         "title/theme",
-        "assistant",
         "first",
         "piece",
         "made",
         "rendered",
-        "what"
+        "what",
+        "polished"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:33:33": {
@@ -3372,11 +3364,11 @@
         "ember-tr",
         "330/360",
         "360/360",
-        "user",
-        "system",
         "untrusted",
         "utc",
-        "exec"
+        "exec",
+        "completed",
+        "ember"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:34:34": {
@@ -3401,14 +3393,13 @@
         "2026-04-19"
       ],
       "conceptTags": [
-        "assistant",
         "i’ve",
         "got",
-        "the",
         "render",
         "narration",
         "plus",
-        "tighter"
+        "tighter",
+        "cut"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:35:35": {
@@ -3436,11 +3427,11 @@
         "memory/context.md",
         "no-reply",
         "memory/2026-04-17.md",
-        "user",
         "ends",
         "write",
         "any",
-        "important"
+        "important",
+        "context"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:36:36": {
@@ -3465,8 +3456,7 @@
         "2026-04-19"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:37:37": {
@@ -3497,8 +3487,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:38:38": {
@@ -3524,13 +3514,13 @@
       ],
       "conceptTags": [
         "reply-to-current",
-        "assistant",
         "yep",
-        "the",
         "first",
         "video",
         "done",
-        "not"
+        "not",
+        "setup",
+        "root"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:39:39": {
@@ -3561,8 +3551,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:40:40": {
@@ -3587,14 +3577,14 @@
         "2026-04-19"
       ],
       "conceptTags": [
-        "assistant",
         "i’m",
         "sending",
-        "the",
         "rendered",
         "mp4",
         "thread",
-        "you"
+        "can",
+        "watch",
+        "instead"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:41:41": {
@@ -3620,7 +3610,6 @@
       ],
       "conceptTags": [
         "agent-stacks-are-a-mess.mp4",
-        "assistant",
         "stacks",
         "mess.mp4"
       ]
@@ -3650,11 +3639,11 @@
         "gateway",
         "boot.md",
         "memory/handoff.md",
-        "user",
-        "you",
         "running",
         "boot",
-        "check"
+        "check",
+        "follow",
+        "instructions"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-18.txt:2:2": {
@@ -3681,12 +3670,12 @@
       "conceptTags": [
         "handoff.md",
         "notion/qa",
-        "assistant",
         "boot",
         "complete",
         "recent",
         "context",
-        "loaded"
+        "loaded",
+        "fam"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-18.txt:3:3": {
@@ -3714,11 +3703,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-18.txt:4:4": {
@@ -3743,8 +3732,7 @@
         "2026-04-19"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:42:42": {
@@ -3769,8 +3757,7 @@
         "2026-04-19"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:43:43": {
@@ -3801,8 +3788,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:44:44": {
@@ -3829,12 +3816,12 @@
       "conceptTags": [
         "reply-to-current",
         "composition/render",
-        "assistant",
         "yes",
         "but",
         "important",
         "distinction",
-        "answer"
+        "answer",
+        "hyperframes"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:45:45": {
@@ -3865,8 +3852,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:46:46": {
@@ -3896,9 +3883,9 @@
         "voice/tts",
         "all-around",
         "prompt-to-m",
-        "assistant",
         "best",
-        "open"
+        "open",
+        "source"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:47:47": {
@@ -3929,8 +3916,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:48:48": {
@@ -3956,13 +3943,13 @@
       ],
       "conceptTags": [
         "reply-to-current",
-        "assistant",
         "i’d",
         "optimize",
         "video",
         "production",
         "not",
-        "purity"
+        "purity",
+        "open"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:49:49": {
@@ -3993,8 +3980,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:50:50": {
@@ -4021,12 +4008,12 @@
       "conceptTags": [
         "reply-to-current",
         "open-source",
-        "assistant",
         "use",
         "stack",
         "hyperframes",
         "video",
-        "assembly"
+        "assembly",
+        "motion"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:51:51": {
@@ -4057,8 +4044,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:52:52": {
@@ -4087,10 +4074,10 @@
         "open-source",
         "mixing/polish",
         "demucs/uvr",
-        "assistant",
-        "the",
         "open",
-        "source"
+        "source",
+        "tldr",
+        "hyperframes"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:53:53": {
@@ -4121,8 +4108,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/2026-04-19.md:323:323": {
@@ -4179,8 +4166,8 @@
         "possible",
         "lasting",
         "truths",
-        "user",
-        "you"
+        "running",
+        "boot"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:54:54": {
@@ -4207,12 +4194,12 @@
       "conceptTags": [
         "reply-to-current",
         "open-source",
-        "assistant",
         "yes",
         "that’s",
         "good",
         "open",
-        "source"
+        "source",
+        "stack"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:55:55": {
@@ -4243,8 +4230,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:56:56": {
@@ -4271,12 +4258,12 @@
       "conceptTags": [
         "reply-to-current",
         "design/use-case",
-        "assistant",
         "i’m",
         "making",
-        "the",
         "one",
-        "properly"
+        "properly",
+        "sharper",
+        "design"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:57:57": {
@@ -4307,8 +4294,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:58:58": {
@@ -4334,13 +4321,13 @@
       ],
       "conceptTags": [
         "10/10",
-        "assistant",
-        "the",
         "attempt",
         "rendering",
         "now",
         "tightened",
-        "design"
+        "design",
+        "hard",
+        "calmer"
       ]
     },
     "memory:memory/2026-04-19.md:378:378": {
@@ -4408,9 +4395,9 @@
         "possible",
         "lasting",
         "truths",
-        "user",
-        "you",
-        "running"
+        "running",
+        "boot",
+        "check"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:1:1": {
@@ -4441,8 +4428,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:2:2": {
@@ -4468,13 +4455,13 @@
       ],
       "conceptTags": [
         "prompt-driven",
-        "assistant",
         "i’m",
         "making",
-        "the",
         "two",
         "comparison",
-        "clips"
+        "clips",
+        "now",
+        "can"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:3:3": {
@@ -4500,13 +4487,13 @@
       ],
       "conceptTags": [
         "apples-to-apples",
-        "assistant",
         "quick",
         "reality",
         "check",
-        "you",
         "want",
-        "proper"
+        "proper",
+        "apples",
+        "test"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:4:4": {
@@ -4531,14 +4518,14 @@
         "2026-04-20"
       ],
       "conceptTags": [
-        "assistant",
         "gemini",
         "still",
         "cooking",
         "chokes",
         "that’s",
         "google’s",
-        "preview"
+        "preview",
+        "model"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:5:5": {
@@ -4565,12 +4552,12 @@
       "conceptTags": [
         "reply-to-current",
         "hume-baseline-co",
-        "assistant",
         "done",
         "two",
         "script",
         "different",
-        "engine"
+        "engine",
+        "media"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:6:6": {
@@ -4596,13 +4583,13 @@
       ],
       "conceptTags": [
         "young-mi",
-        "user",
-        "system",
         "untrusted",
         "utc",
         "exec",
         "completed",
-        "young"
+        "young",
+        "code",
+        "root"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:7:7": {
@@ -4627,8 +4614,7 @@
         "2026-04-20"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:8:8": {
@@ -4659,8 +4645,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:9:9": {
@@ -4687,12 +4673,12 @@
       "conceptTags": [
         "reply-to-current",
         "gemini-3.1-flash-tts-preview",
-        "assistant",
         "yep",
         "mistake",
         "used",
-        "the",
-        "older"
+        "older",
+        "preview",
+        "tts"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:10:10": {
@@ -4723,8 +4709,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:11:11": {
@@ -4751,12 +4737,12 @@
       "conceptTags": [
         "reply-to-current",
         "non-stupid",
-        "assistant",
         "i’m",
         "reading",
-        "the",
         "transcript",
-        "tag"
+        "tag",
+        "spec",
+        "properly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:12:12": {
@@ -4787,8 +4773,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:13:13": {
@@ -4816,11 +4802,11 @@
         "gateway",
         "boot.md",
         "memory/handoff.md",
-        "user",
-        "you",
         "running",
         "boot",
-        "check"
+        "check",
+        "follow",
+        "instructions"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:14:14": {
@@ -4846,13 +4832,13 @@
       ],
       "conceptTags": [
         "reply-to-current",
-        "assistant",
         "yep",
         "i’ll",
         "attach",
-        "the",
         "actual",
-        "here"
+        "here",
+        "not",
+        "dump"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:15:15": {
@@ -4883,8 +4869,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:16:16": {
@@ -4909,14 +4895,14 @@
         "2026-04-20"
       ],
       "conceptTags": [
-        "assistant",
         "yes",
-        "the",
         "delay",
         "answered",
         "didn’t",
         "finish",
-        "actual"
+        "actual",
+        "run",
+        "which"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:17:17": {
@@ -4941,14 +4927,14 @@
         "2026-04-20"
       ],
       "conceptTags": [
-        "assistant",
         "sent",
         "progress",
         "ping",
         "earlier",
         "gap",
         "was",
-        "bad"
+        "bad",
+        "i’ve"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:18:18": {
@@ -4974,13 +4960,13 @@
       ],
       "conceptTags": [
         "3.1",
-        "assistant",
         "baseline’s",
         "done",
         "gemini",
         "still",
         "rendering",
-        "i’m"
+        "i’m",
+        "polling"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:19:19": {
@@ -5006,13 +4992,13 @@
       ],
       "conceptTags": [
         "reply-to-current",
-        "assistant",
         "here",
         "click",
         "them",
         "actual",
         "time",
-        "media"
+        "media",
+        "root"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:20:20": {
@@ -5038,13 +5024,13 @@
       ],
       "conceptTags": [
         "marine-c",
-        "user",
-        "system",
         "untrusted",
         "utc",
         "exec",
         "completed",
-        "marine"
+        "marine",
+        "code",
+        "root"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:21:21": {
@@ -5069,8 +5055,7 @@
         "2026-04-20"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:22:22": {
@@ -5101,8 +5086,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:23:23": {
@@ -5128,13 +5113,13 @@
       ],
       "conceptTags": [
         "reply-to-current",
-        "assistant",
-        "the",
         "inline",
         "media",
         "rendering",
         "didn’t",
-        "come"
+        "come",
+        "telegram",
+        "annoying"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:24:24": {
@@ -5165,8 +5150,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:25:25": {
@@ -5191,14 +5176,14 @@
         "2026-04-20"
       ],
       "conceptTags": [
-        "assistant",
         "sending",
-        "the",
         "actual",
         "audio",
         "attachments",
         "now",
-        "not"
+        "not",
+        "fake",
+        "magic"
       ]
     },
     "memory:memory/2026-04-20.md:398:401": {
@@ -5233,9 +5218,9 @@
         "4-4",
         "reflections",
         "theme",
-        "assistant",
         "kept",
-        "surfacing"
+        "surfacing",
+        "across"
       ]
     },
     "memory:memory/2026-04-20.md:404:406": {
@@ -5270,9 +5255,9 @@
         "possible",
         "lasting",
         "truths",
-        "user",
-        "you",
-        "running"
+        "running",
+        "boot",
+        "check"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:26:26": {
@@ -5297,8 +5282,7 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "baseline-cortana-clickable.mp3",
-        "assistant"
+        "baseline-cortana-clickable.mp3"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:27:27": {
@@ -5348,8 +5332,7 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:29:29": {
@@ -5380,8 +5363,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:30:30": {
@@ -5407,13 +5390,13 @@
       ],
       "conceptTags": [
         "reply-to-current",
-        "assistant",
         "yep",
         "gemini",
         "crush",
         "kind",
         "direction",
-        "elevenlabs"
+        "elevenlabs",
+        "will"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:31:31": {
@@ -5444,8 +5427,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:32:32": {
@@ -5472,12 +5455,12 @@
       "conceptTags": [
         "reply-to-current",
         "id/config",
-        "assistant",
-        "the",
         "api",
         "env",
         "already",
-        "don’t"
+        "don’t",
+        "know",
+        "exact"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:33:33": {
@@ -5508,8 +5491,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:34:34": {
@@ -5535,13 +5518,13 @@
       ],
       "conceptTags": [
         "reply-to-current",
-        "assistant",
         "yep",
         "i’m",
         "doing",
-        "the",
         "style",
-        "stress"
+        "stress",
+        "test",
+        "first"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:35:35": {
@@ -5572,8 +5555,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:36:36": {
@@ -5598,14 +5581,14 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "assistant",
         "you’re",
         "right",
         "dragged",
         "out",
         "i’m",
         "finishing",
-        "the"
+        "style",
+        "stress"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:37:37": {
@@ -5630,14 +5613,14 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "assistant",
         "tiny",
         "import",
         "bug",
         "fixed",
         "running",
         "now",
-        "instead"
+        "instead",
+        "pretending"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:1:1": {
@@ -5665,11 +5648,11 @@
         "gateway",
         "boot.md",
         "memory/handoff.md",
-        "user",
-        "you",
         "running",
         "boot",
-        "check"
+        "check",
+        "follow",
+        "instructions"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:2:2": {
@@ -5694,8 +5677,7 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:3:3": {
@@ -5723,11 +5705,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:4:4": {
@@ -5752,8 +5734,7 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:5:5": {
@@ -5781,11 +5762,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:6:6": {
@@ -5810,8 +5791,7 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:7:7": {
@@ -5839,11 +5819,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:8:8": {
@@ -5868,8 +5848,7 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:9:9": {
@@ -5897,11 +5876,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:10:10": {
@@ -5926,8 +5905,7 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:11:11": {
@@ -5955,11 +5933,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:12:12": {
@@ -5984,8 +5962,7 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:38:38": {
@@ -6035,8 +6012,7 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "style-stress-gemini-3-1-puck.wav",
-        "assistant"
+        "style-stress-gemini-3-1-puck.wav"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:40:40": {
@@ -6062,13 +6038,13 @@
       ],
       "conceptTags": [
         "reply-to-current",
-        "assistant",
         "finished",
         "both",
-        "the",
         "thread",
         "now",
-        "what"
+        "what",
+        "listen",
+        "gemini"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:41:41": {
@@ -6094,13 +6070,13 @@
       ],
       "conceptTags": [
         "vivid-bl",
-        "user",
-        "system",
         "untrusted",
         "utc",
         "exec",
         "completed",
-        "vivid"
+        "vivid",
+        "code",
+        "root"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:42:42": {
@@ -6125,8 +6101,7 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:43:43": {
@@ -6157,8 +6132,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:44:44": {
@@ -6186,11 +6161,11 @@
         "reply-to-current",
         "sing-song",
         "spoken-singing",
-        "assistant",
         "yes",
         "kind",
         "can",
-        "sing"
+        "sing",
+        "song"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:45:45": {
@@ -6221,8 +6196,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:46:46": {
@@ -6248,13 +6223,13 @@
       ],
       "conceptTags": [
         "reply-to-current",
-        "assistant",
         "yes",
-        "the",
         "prompt",
         "was",
         "too",
-        "vague"
+        "vague",
+        "need",
+        "force"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:47:47": {
@@ -6285,8 +6260,8 @@
         "cortana-os",
         "group-subject",
         "topic-id",
-        "user",
-        "conversation"
+        "conversation",
+        "info"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:48:48": {
@@ -6311,14 +6286,14 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "assistant",
         "i’m",
         "turning",
-        "the",
         "gemini",
         "speech",
         "docs",
-        "proper"
+        "proper",
+        "skill",
+        "stop"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:49:49": {
@@ -6344,13 +6319,13 @@
       ],
       "conceptTags": [
         "smoke-test",
-        "assistant",
-        "the",
         "runtime",
         "blocked",
         "first",
         "smoke",
-        "test"
+        "test",
+        "command",
+        "hates"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:13:13": {
@@ -6378,11 +6353,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:14:14": {
@@ -6407,8 +6382,7 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:15:15": {
@@ -6436,11 +6410,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:16:16": {
@@ -6465,8 +6439,7 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:17:17": {
@@ -6494,11 +6467,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:18:18": {
@@ -6523,8 +6496,7 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:19:19": {
@@ -6552,11 +6524,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:20:20": {
@@ -6581,8 +6553,7 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:21:21": {
@@ -6610,11 +6581,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:22:22": {
@@ -6639,8 +6610,7 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:23:23": {
@@ -6668,11 +6638,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:24:24": {
@@ -6697,8 +6667,7 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/2026-04-21.md:368:371": {
@@ -6733,9 +6702,9 @@
         "4-4",
         "reflections",
         "theme",
-        "assistant",
         "kept",
-        "surfacing"
+        "surfacing",
+        "across"
       ]
     },
     "memory:memory/2026-04-21.md:374:376": {
@@ -6770,9 +6739,9 @@
         "possible",
         "lasting",
         "truths",
-        "user",
-        "you",
-        "running"
+        "running",
+        "boot",
+        "check"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:25:25": {
@@ -6800,11 +6769,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:26:26": {
@@ -6829,8 +6798,7 @@
         "2026-04-22"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:27:27": {
@@ -6858,11 +6826,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:28:28": {
@@ -6887,8 +6855,7 @@
         "2026-04-22"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:29:29": {
@@ -6916,11 +6883,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:30:30": {
@@ -6945,8 +6912,7 @@
         "2026-04-22"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:31:31": {
@@ -6974,11 +6940,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:32:32": {
@@ -7003,8 +6969,7 @@
         "2026-04-22"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:33:33": {
@@ -7032,11 +6997,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:34:34": {
@@ -7061,8 +7026,7 @@
         "2026-04-22"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:35:35": {
@@ -7090,11 +7054,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:36:36": {
@@ -7119,8 +7083,7 @@
         "2026-04-22"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:37:37": {
@@ -7148,11 +7111,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:38:38": {
@@ -7177,8 +7140,7 @@
         "2026-04-22"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:39:39": {
@@ -7206,11 +7168,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:40:40": {
@@ -7235,8 +7197,7 @@
         "2026-04-22"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:41:41": {
@@ -7264,11 +7225,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:42:42": {
@@ -7293,8 +7254,7 @@
         "2026-04-22"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:43:43": {
@@ -7322,11 +7282,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:44:44": {
@@ -7351,8 +7311,7 @@
         "2026-04-22"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:45:45": {
@@ -7380,11 +7339,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:46:46": {
@@ -7409,8 +7368,7 @@
         "2026-04-22"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:47:47": {
@@ -7438,11 +7396,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:48:48": {
@@ -7467,8 +7425,7 @@
         "2026-04-22"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/2026-04-22.md:263:266": {
@@ -7503,9 +7460,9 @@
         "5-5",
         "reflections",
         "theme",
-        "assistant",
         "kept",
-        "surfacing"
+        "surfacing",
+        "across"
       ]
     },
     "memory:memory/2026-04-22.md:267:270": {
@@ -7577,9 +7534,9 @@
         "possible",
         "lasting",
         "truths",
-        "user",
-        "you",
-        "running"
+        "running",
+        "boot",
+        "check"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:1:1": {
@@ -7607,11 +7564,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:2:2": {
@@ -7636,8 +7593,7 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:3:3": {
@@ -7665,11 +7621,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:4:4": {
@@ -7694,8 +7650,7 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:5:5": {
@@ -7723,11 +7678,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:6:6": {
@@ -7752,8 +7707,7 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:7:7": {
@@ -7781,11 +7735,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:8:8": {
@@ -7810,8 +7764,7 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:9:9": {
@@ -7839,11 +7792,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:10:10": {
@@ -7868,8 +7821,7 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:11:11": {
@@ -7897,11 +7849,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:12:12": {
@@ -7926,8 +7878,7 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:13:13": {
@@ -7955,11 +7906,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:14:14": {
@@ -7984,8 +7935,7 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:15:15": {
@@ -8013,11 +7963,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:16:16": {
@@ -8042,8 +7992,7 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:17:17": {
@@ -8071,11 +8020,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:18:18": {
@@ -8100,8 +8049,7 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:19:19": {
@@ -8129,11 +8077,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:20:20": {
@@ -8158,8 +8106,7 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:21:21": {
@@ -8187,11 +8134,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:22:22": {
@@ -8216,8 +8163,7 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:23:23": {
@@ -8245,11 +8191,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:24:24": {
@@ -8274,8 +8220,7 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/2026-04-23.md:218:221": {
@@ -8304,9 +8249,9 @@
         "5-5",
         "reflections",
         "theme",
-        "assistant",
         "kept",
-        "surfacing"
+        "surfacing",
+        "across"
       ]
     },
     "memory:memory/2026-04-23.md:222:225": {
@@ -8366,9 +8311,9 @@
         "possible",
         "lasting",
         "truths",
-        "user",
-        "you",
-        "running"
+        "running",
+        "boot",
+        "check"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:25:25": {
@@ -8396,11 +8341,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:26:26": {
@@ -8425,8 +8370,7 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:27:27": {
@@ -8454,11 +8398,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:28:28": {
@@ -8483,8 +8427,7 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:29:29": {
@@ -8512,11 +8455,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:30:30": {
@@ -8541,8 +8484,7 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:31:31": {
@@ -8570,11 +8512,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:32:32": {
@@ -8599,8 +8541,7 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:33:33": {
@@ -8628,11 +8569,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:34:34": {
@@ -8657,8 +8598,7 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:35:35": {
@@ -8686,11 +8626,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:36:36": {
@@ -8715,8 +8655,7 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/2026-04-23.md:158:161": {
@@ -8727,12 +8666,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 125 memories.; confidence: 0.92; evidence: memory/.dreams/session-corpus/2026-04-15.txt:2-2, memory/.dreams/session-corpus/2026-04-16.txt:5-5, memory/.dreams/session-corpus/2026-04-17.txt:2-2; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-23T03:00:54.995Z",
-      "lastRecalledAt": "2026-04-29T03:00:00.633Z",
+      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
       "queryHashes": [
         "b7fd25b71b44"
       ],
@@ -8742,7 +8681,8 @@
         "2026-04-26",
         "2026-04-27",
         "2026-04-28",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-04-30"
       ],
       "conceptTags": [
         "0.92",
@@ -8750,9 +8690,9 @@
         "5-5",
         "reflections",
         "theme",
-        "assistant",
         "kept",
-        "surfacing"
+        "surfacing",
+        "across"
       ]
     },
     "memory:memory/2026-04-23.md:162:165": {
@@ -8763,12 +8703,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 108 memories.; confidence: 0.80; evidence: memory/2026-04-14.md:83-84, memory/2026-04-15.md:108-109, memory/.dreams/session-corpus/2026-04-15.txt:1-1; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-23T03:00:54.995Z",
-      "lastRecalledAt": "2026-04-29T03:00:00.633Z",
+      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
       "queryHashes": [
         "b7fd25b71b44"
       ],
@@ -8778,7 +8718,8 @@
         "2026-04-26",
         "2026-04-27",
         "2026-04-28",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-04-30"
       ],
       "conceptTags": [
         "0.80",
@@ -8799,12 +8740,12 @@
       "source": "memory",
       "snippet": "Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-23T03:00:54.995Z",
-      "lastRecalledAt": "2026-04-29T03:00:00.633Z",
+      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
       "queryHashes": [
         "b7fd25b71b44"
       ],
@@ -8814,7 +8755,8 @@
         "2026-04-26",
         "2026-04-27",
         "2026-04-28",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-04-30"
       ],
       "conceptTags": [
         "gateway",
@@ -8822,9 +8764,9 @@
         "possible",
         "lasting",
         "truths",
-        "user",
-        "you",
-        "running"
+        "running",
+        "boot",
+        "check"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:37:37": {
@@ -8852,11 +8794,11 @@
         "gateway",
         "boot.md",
         "memory/handoff.md",
-        "user",
-        "you",
         "running",
         "boot",
-        "check"
+        "check",
+        "follow",
+        "instructions"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:38:38": {
@@ -8881,7 +8823,6 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "assistant",
         "restarted",
         "lost",
         "thread",
@@ -8914,11 +8855,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:40:40": {
@@ -8943,8 +8884,7 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:41:41": {
@@ -8972,11 +8912,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:42:42": {
@@ -9001,8 +8941,7 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:43:43": {
@@ -9030,11 +8969,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:44:44": {
@@ -9059,8 +8998,7 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:45:45": {
@@ -9088,11 +9026,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:46:46": {
@@ -9117,8 +9055,7 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:47:47": {
@@ -9146,11 +9083,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:48:48": {
@@ -9175,8 +9112,7 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:1:1": {
@@ -9204,11 +9140,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:2:2": {
@@ -9233,8 +9169,7 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:3:3": {
@@ -9262,11 +9197,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:4:4": {
@@ -9291,8 +9226,7 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:5:5": {
@@ -9320,11 +9254,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:6:6": {
@@ -9349,8 +9283,7 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:7:7": {
@@ -9378,11 +9311,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:8:8": {
@@ -9407,8 +9340,7 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:9:9": {
@@ -9436,11 +9368,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:10:10": {
@@ -9465,8 +9397,7 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:11:11": {
@@ -9494,11 +9425,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:12:12": {
@@ -9523,8 +9454,7 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:13:13": {
@@ -9552,11 +9482,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:14:14": {
@@ -9581,8 +9511,7 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:15:15": {
@@ -9610,11 +9539,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:16:16": {
@@ -9639,8 +9568,7 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:17:17": {
@@ -9668,11 +9596,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:18:18": {
@@ -9697,8 +9625,7 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:19:19": {
@@ -9726,11 +9653,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:20:20": {
@@ -9755,8 +9682,7 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:21:21": {
@@ -9784,11 +9710,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:22:22": {
@@ -9813,8 +9739,7 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:23:23": {
@@ -9842,11 +9767,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:24:24": {
@@ -9871,8 +9796,7 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/2026-04-24.md:153:156": {
@@ -9902,8 +9826,8 @@
         "4-4",
         "reflections",
         "theme",
-        "assistant",
-        "kept"
+        "kept",
+        "surfacing"
       ]
     },
     "memory:memory/2026-04-24.md:157:160": {
@@ -9963,9 +9887,9 @@
         "possible",
         "lasting",
         "truths",
-        "user",
-        "you",
-        "running"
+        "running",
+        "boot",
+        "check"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:25:25": {
@@ -9993,11 +9917,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:26:26": {
@@ -10022,8 +9946,7 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:27:27": {
@@ -10051,11 +9974,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:28:28": {
@@ -10080,8 +10003,7 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:29:29": {
@@ -10109,11 +10031,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:30:30": {
@@ -10138,8 +10060,7 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:31:31": {
@@ -10167,11 +10088,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:32:32": {
@@ -10196,8 +10117,7 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:33:33": {
@@ -10225,11 +10145,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:34:34": {
@@ -10254,8 +10174,7 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:35:35": {
@@ -10283,11 +10202,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:36:36": {
@@ -10312,8 +10231,7 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/2026-04-24.md:148:151": {
@@ -10324,12 +10242,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 149 memories.; confidence: 0.92; evidence: memory/.dreams/session-corpus/2026-04-16.txt:5-5, memory/.dreams/session-corpus/2026-04-17.txt:2-2, memory/.dreams/session-corpus/2026-04-17.txt:4-4; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-24T03:01:00.136Z",
-      "lastRecalledAt": "2026-04-29T03:00:00.633Z",
+      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
       "queryHashes": [
         "409c33906af9"
       ],
@@ -10338,7 +10256,8 @@
         "2026-04-25",
         "2026-04-27",
         "2026-04-28",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-04-30"
       ],
       "conceptTags": [
         "0.92",
@@ -10347,8 +10266,8 @@
         "4-4",
         "reflections",
         "theme",
-        "assistant",
-        "kept"
+        "kept",
+        "surfacing"
       ]
     },
     "memory:memory/2026-04-24.md:152:155": {
@@ -10359,12 +10278,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 134 memories.; confidence: 0.83; evidence: memory/2026-04-14.md:83-84, memory/2026-04-15.md:108-109, memory/2026-04-16.md:126-128; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-24T03:01:00.136Z",
-      "lastRecalledAt": "2026-04-29T03:00:00.633Z",
+      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
       "queryHashes": [
         "409c33906af9"
       ],
@@ -10373,7 +10292,8 @@
         "2026-04-25",
         "2026-04-27",
         "2026-04-28",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-04-30"
       ],
       "conceptTags": [
         "0.83",
@@ -10394,12 +10314,12 @@
       "source": "memory",
       "snippet": "Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-24T03:01:00.136Z",
-      "lastRecalledAt": "2026-04-29T03:00:00.633Z",
+      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
       "queryHashes": [
         "409c33906af9"
       ],
@@ -10408,7 +10328,8 @@
         "2026-04-25",
         "2026-04-27",
         "2026-04-28",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-04-30"
       ],
       "conceptTags": [
         "gateway",
@@ -10416,9 +10337,9 @@
         "possible",
         "lasting",
         "truths",
-        "user",
-        "you",
-        "running"
+        "running",
+        "boot",
+        "check"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:37:37": {
@@ -10446,11 +10367,11 @@
         "gateway",
         "boot.md",
         "memory/handoff.md",
-        "user",
-        "you",
         "running",
         "boot",
-        "check"
+        "check",
+        "follow",
+        "instructions"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:38:38": {
@@ -10478,11 +10399,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:39:39": {
@@ -10507,8 +10428,7 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:40:40": {
@@ -10536,11 +10456,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:41:41": {
@@ -10565,8 +10485,7 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:42:42": {
@@ -10594,11 +10513,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:43:43": {
@@ -10623,8 +10542,7 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:44:44": {
@@ -10652,11 +10570,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:45:45": {
@@ -10681,8 +10599,7 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:46:46": {
@@ -10710,11 +10627,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:47:47": {
@@ -10739,8 +10656,7 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:48:48": {
@@ -10768,11 +10684,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:1:1": {
@@ -10800,11 +10716,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:2:2": {
@@ -10829,8 +10745,7 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:3:3": {
@@ -10858,11 +10773,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:4:4": {
@@ -10887,8 +10802,7 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:5:5": {
@@ -10916,11 +10830,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:6:6": {
@@ -10945,8 +10859,7 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:7:7": {
@@ -10974,11 +10887,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:8:8": {
@@ -11003,8 +10916,7 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:9:9": {
@@ -11032,11 +10944,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:10:10": {
@@ -11061,8 +10973,7 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:11:11": {
@@ -11090,11 +11001,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:12:12": {
@@ -11119,8 +11030,7 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:13:13": {
@@ -11148,11 +11058,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:14:14": {
@@ -11177,8 +11087,7 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:15:15": {
@@ -11206,11 +11115,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:16:16": {
@@ -11235,8 +11144,7 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:17:17": {
@@ -11264,11 +11172,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:18:18": {
@@ -11293,8 +11201,7 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:19:19": {
@@ -11322,11 +11229,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:20:20": {
@@ -11351,8 +11258,7 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:21:21": {
@@ -11380,11 +11286,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:22:22": {
@@ -11409,8 +11315,7 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:23:23": {
@@ -11438,11 +11343,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:24:24": {
@@ -11467,8 +11372,7 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/2026-04-25.md:148:151": {
@@ -11498,8 +11402,8 @@
         "5-5",
         "reflections",
         "theme",
-        "assistant",
-        "kept"
+        "kept",
+        "surfacing"
       ]
     },
     "memory:memory/2026-04-25.md:152:155": {
@@ -11559,9 +11463,9 @@
         "possible",
         "lasting",
         "truths",
-        "user",
-        "you",
-        "running"
+        "running",
+        "boot",
+        "check"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:25:25": {
@@ -11589,11 +11493,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:26:26": {
@@ -11618,8 +11522,7 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:27:27": {
@@ -11647,11 +11550,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:28:28": {
@@ -11676,8 +11579,7 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:29:29": {
@@ -11705,11 +11607,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:30:30": {
@@ -11734,8 +11636,7 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:31:31": {
@@ -11763,11 +11664,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:32:32": {
@@ -11792,8 +11693,7 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:33:33": {
@@ -11821,11 +11721,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:34:34": {
@@ -11850,8 +11750,7 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:35:35": {
@@ -11879,11 +11778,11 @@
         "gateway",
         "boot.md",
         "memory/handoff.md",
-        "user",
-        "you",
         "running",
         "boot",
-        "check"
+        "check",
+        "follow",
+        "instructions"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:36:36": {
@@ -11911,11 +11810,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/2026-04-25.md:163:166": {
@@ -11926,12 +11825,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 173 memories.; confidence: 0.95; evidence: memory/.dreams/session-corpus/2026-04-17.txt:2-2, memory/.dreams/session-corpus/2026-04-17.txt:4-4, memory/.dreams/session-corpus/2026-04-17.txt:5-5; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-25T03:01:03.184Z",
-      "lastRecalledAt": "2026-04-29T03:00:00.633Z",
+      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
       "queryHashes": [
         "90c0a0f693f1"
       ],
@@ -11939,7 +11838,8 @@
         "2026-04-25",
         "2026-04-26",
         "2026-04-28",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-04-30"
       ],
       "conceptTags": [
         "0.95",
@@ -11948,8 +11848,8 @@
         "5-5",
         "reflections",
         "theme",
-        "assistant",
-        "kept"
+        "kept",
+        "surfacing"
       ]
     },
     "memory:memory/2026-04-25.md:167:170": {
@@ -11960,12 +11860,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 155 memories.; confidence: 0.85; evidence: memory/2026-04-14.md:83-84, memory/2026-04-15.md:108-109, memory/2026-04-16.md:126-128; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-25T03:01:03.184Z",
-      "lastRecalledAt": "2026-04-29T03:00:00.633Z",
+      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
       "queryHashes": [
         "90c0a0f693f1"
       ],
@@ -11973,7 +11873,8 @@
         "2026-04-25",
         "2026-04-26",
         "2026-04-28",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-04-30"
       ],
       "conceptTags": [
         "0.85",
@@ -11994,12 +11895,12 @@
       "source": "memory",
       "snippet": "Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-25T03:01:03.184Z",
-      "lastRecalledAt": "2026-04-29T03:00:00.633Z",
+      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
       "queryHashes": [
         "90c0a0f693f1"
       ],
@@ -12007,7 +11908,8 @@
         "2026-04-25",
         "2026-04-26",
         "2026-04-28",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-04-30"
       ],
       "conceptTags": [
         "gateway",
@@ -12015,9 +11917,9 @@
         "possible",
         "lasting",
         "truths",
-        "user",
-        "you",
-        "running"
+        "running",
+        "boot",
+        "check"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:37:37": {
@@ -12042,8 +11944,7 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:38:38": {
@@ -12071,11 +11972,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:39:39": {
@@ -12100,8 +12001,7 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:40:40": {
@@ -12129,11 +12029,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:41:41": {
@@ -12158,8 +12058,7 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:42:42": {
@@ -12187,11 +12086,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:43:43": {
@@ -12216,8 +12115,7 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:44:44": {
@@ -12245,11 +12143,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:45:45": {
@@ -12274,8 +12172,7 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:46:46": {
@@ -12303,11 +12200,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:47:47": {
@@ -12332,8 +12229,7 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:48:48": {
@@ -12361,11 +12257,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:1:1": {
@@ -12393,11 +12289,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:2:2": {
@@ -12422,8 +12318,7 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:3:3": {
@@ -12451,11 +12346,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:4:4": {
@@ -12480,8 +12375,7 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:5:5": {
@@ -12509,11 +12403,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:6:6": {
@@ -12538,8 +12432,7 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:7:7": {
@@ -12567,11 +12460,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:8:8": {
@@ -12596,8 +12489,7 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:9:9": {
@@ -12625,11 +12517,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:10:10": {
@@ -12654,8 +12546,7 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:11:11": {
@@ -12683,11 +12574,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:12:12": {
@@ -12712,8 +12603,7 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:1:1": {
@@ -12741,11 +12631,11 @@
         "soul.md",
         "user.md",
         "memory.md",
-        "user",
         "startup",
         "context",
         "loaded",
-        "runtime"
+        "runtime",
+        "bootstrap"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:2:2": {
@@ -12775,9 +12665,9 @@
         "router",
         "openrouter/moonshotai/kimi-k2.5",
         "openai-codex/gpt-5.4",
-        "assistant",
         "cortana",
-        "online"
+        "online",
+        "saturday"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:3:3": {
@@ -12805,11 +12695,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:4:4": {
@@ -12834,8 +12724,7 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:5:5": {
@@ -12863,11 +12752,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:6:6": {
@@ -12892,8 +12781,7 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:7:7": {
@@ -12921,11 +12809,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:8:8": {
@@ -12950,8 +12838,7 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:9:9": {
@@ -12979,11 +12866,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:10:10": {
@@ -13008,8 +12895,7 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:11:11": {
@@ -13037,11 +12923,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:12:12": {
@@ -13066,8 +12952,7 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:13:13": {
@@ -13095,11 +12980,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:14:14": {
@@ -13124,8 +13009,7 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:15:15": {
@@ -13153,11 +13037,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:16:16": {
@@ -13182,8 +13066,7 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:17:17": {
@@ -13211,11 +13094,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:18:18": {
@@ -13240,8 +13123,7 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:19:19": {
@@ -13269,11 +13151,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:20:20": {
@@ -13298,8 +13180,7 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:21:21": {
@@ -13327,11 +13208,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:22:22": {
@@ -13356,8 +13237,7 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:23:23": {
@@ -13385,11 +13265,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:24:24": {
@@ -13414,8 +13294,7 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:13:13": {
@@ -13443,11 +13322,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:14:14": {
@@ -13472,8 +13351,7 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:15:15": {
@@ -13501,11 +13379,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:16:16": {
@@ -13530,8 +13408,7 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:17:17": {
@@ -13559,11 +13436,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:18:18": {
@@ -13588,8 +13465,7 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:19:19": {
@@ -13617,11 +13493,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:20:20": {
@@ -13646,8 +13522,7 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:21:21": {
@@ -13675,11 +13550,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:22:22": {
@@ -13704,8 +13579,7 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:23:23": {
@@ -13733,11 +13607,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:24:24": {
@@ -13762,8 +13636,7 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/2026-04-26.md:163:166": {
@@ -13774,19 +13647,20 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 177 memories.; confidence: 0.93; evidence: memory/.dreams/session-corpus/2026-04-17.txt:30-30, memory/.dreams/session-corpus/2026-04-17.txt:31-31, memory/.dreams/session-corpus/2026-04-17.txt:32-32; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T03:00:00.585Z",
-      "lastRecalledAt": "2026-04-29T03:00:00.633Z",
+      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
       "queryHashes": [
         "9b4c3d373463"
       ],
       "recallDays": [
         "2026-04-26",
         "2026-04-27",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-04-30"
       ],
       "conceptTags": [
         "0.93",
@@ -13795,8 +13669,8 @@
         "32-32",
         "reflections",
         "theme",
-        "assistant",
-        "kept"
+        "kept",
+        "surfacing"
       ]
     },
     "memory:memory/2026-04-26.md:167:170": {
@@ -13807,19 +13681,20 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 167 memories.; confidence: 0.88; evidence: memory/2026-04-16.md:126-128, memory/2026-04-18.md:208-210, memory/.dreams/session-corpus/2026-04-17.txt:33-33; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T03:00:00.585Z",
-      "lastRecalledAt": "2026-04-29T03:00:00.633Z",
+      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
       "queryHashes": [
         "9b4c3d373463"
       ],
       "recallDays": [
         "2026-04-26",
         "2026-04-27",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-04-30"
       ],
       "conceptTags": [
         "0.88",
@@ -13840,19 +13715,20 @@
       "source": "memory",
       "snippet": "Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T03:00:00.585Z",
-      "lastRecalledAt": "2026-04-29T03:00:00.633Z",
+      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
       "queryHashes": [
         "9b4c3d373463"
       ],
       "recallDays": [
         "2026-04-26",
         "2026-04-27",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-04-30"
       ],
       "conceptTags": [
         "gateway",
@@ -13860,9 +13736,9 @@
         "possible",
         "lasting",
         "truths",
-        "user",
-        "you",
-        "running"
+        "running",
+        "boot",
+        "check"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:25:25": {
@@ -13890,11 +13766,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:26:26": {
@@ -13919,8 +13795,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:27:27": {
@@ -13948,11 +13823,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:28:28": {
@@ -13977,8 +13852,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:29:29": {
@@ -14006,11 +13880,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:30:30": {
@@ -14035,8 +13909,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:31:31": {
@@ -14064,11 +13937,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:32:32": {
@@ -14093,8 +13966,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:33:33": {
@@ -14122,11 +13994,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:34:34": {
@@ -14151,8 +14023,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:35:35": {
@@ -14180,11 +14051,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:36:36": {
@@ -14209,8 +14080,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:37:37": {
@@ -14238,11 +14108,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:38:38": {
@@ -14267,8 +14137,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:39:39": {
@@ -14296,11 +14165,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:40:40": {
@@ -14325,8 +14194,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:41:41": {
@@ -14354,11 +14222,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:42:42": {
@@ -14383,8 +14251,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:43:43": {
@@ -14412,11 +14279,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:44:44": {
@@ -14441,8 +14308,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:45:45": {
@@ -14470,11 +14336,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:46:46": {
@@ -14499,8 +14365,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:47:47": {
@@ -14528,11 +14393,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:48:48": {
@@ -14557,8 +14422,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:49:49": {
@@ -14586,11 +14450,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:50:50": {
@@ -14615,8 +14479,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:51:51": {
@@ -14644,11 +14507,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:52:52": {
@@ -14673,8 +14536,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:53:53": {
@@ -14702,11 +14564,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:54:54": {
@@ -14731,8 +14593,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:55:55": {
@@ -14760,11 +14621,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:56:56": {
@@ -14789,8 +14650,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:57:57": {
@@ -14818,11 +14678,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:58:58": {
@@ -14847,8 +14707,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:59:59": {
@@ -14876,11 +14735,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:60:60": {
@@ -14905,8 +14764,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:61:61": {
@@ -14934,11 +14792,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:62:62": {
@@ -14963,8 +14821,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:63:63": {
@@ -14992,11 +14849,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:64:64": {
@@ -15021,8 +14878,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:65:65": {
@@ -15050,11 +14906,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:66:66": {
@@ -15079,8 +14935,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:1:1": {
@@ -15108,11 +14963,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:2:2": {
@@ -15137,8 +14992,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:3:3": {
@@ -15166,11 +15020,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:4:4": {
@@ -15195,8 +15049,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:5:5": {
@@ -15224,11 +15077,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:6:6": {
@@ -15256,11 +15109,11 @@
         "heartbeat.md",
         "00-23",
         "heartbeat-ok",
-        "assistant",
         "it's",
         "utc",
         "following",
-        "fast"
+        "fast",
+        "path"
       ]
     },
     "memory:memory/2026-04-27.md:158:161": {
@@ -15290,8 +15143,8 @@
         "4-4",
         "reflections",
         "theme",
-        "assistant",
-        "kept"
+        "kept",
+        "surfacing"
       ]
     },
     "memory:memory/2026-04-27.md:162:165": {
@@ -15382,9 +15235,9 @@
         "possible",
         "lasting",
         "truths",
-        "user",
-        "you",
-        "running"
+        "running",
+        "boot",
+        "check"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:67:67": {
@@ -15412,11 +15265,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:68:68": {
@@ -15441,8 +15294,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:69:69": {
@@ -15470,11 +15322,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:70:70": {
@@ -15499,8 +15351,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:71:71": {
@@ -15528,11 +15379,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:72:72": {
@@ -15557,8 +15408,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:73:73": {
@@ -15586,11 +15436,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:74:74": {
@@ -15615,8 +15465,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:75:75": {
@@ -15644,11 +15493,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:76:76": {
@@ -15673,8 +15522,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:77:77": {
@@ -15702,11 +15550,11 @@
         "gateway",
         "boot.md",
         "memory/handoff.md",
-        "user",
-        "you",
         "running",
         "boot",
-        "check"
+        "check",
+        "follow",
+        "instructions"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:78:78": {
@@ -15731,7 +15579,6 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "assistant",
         "restarted",
         "lost",
         "thread",
@@ -15764,11 +15611,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:8:8": {
@@ -15793,8 +15640,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:9:9": {
@@ -15822,11 +15668,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:10:10": {
@@ -15851,8 +15697,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:11:11": {
@@ -15880,11 +15725,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:12:12": {
@@ -15912,11 +15757,11 @@
         "heartbeat.md",
         "00-23",
         "heartbeat-ok",
-        "assistant",
         "based",
         "rules",
         "any",
-        "pending"
+        "pending",
+        "telegram"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:13:13": {
@@ -15944,11 +15789,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:14:14": {
@@ -15973,8 +15818,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:15:15": {
@@ -16002,11 +15846,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:16:16": {
@@ -16031,8 +15875,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:17:17": {
@@ -16060,11 +15903,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:18:18": {
@@ -16089,8 +15932,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/2026-04-27.md:188:191": {
@@ -16101,18 +15943,19 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 209 memories.; confidence: 0.93; evidence: memory/.dreams/session-corpus/2026-04-19.txt:2-2, memory/.dreams/session-corpus/2026-04-19.txt:3-3, memory/.dreams/session-corpus/2026-04-19.txt:4-4; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T03:01:10.381Z",
-      "lastRecalledAt": "2026-04-28T03:00:00.504Z",
+      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
       "queryHashes": [
         "6c24d11cf4d7"
       ],
       "recallDays": [
         "2026-04-27",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-30"
       ],
       "conceptTags": [
         "0.93",
@@ -16121,8 +15964,8 @@
         "4-4",
         "reflections",
         "theme",
-        "assistant",
-        "kept"
+        "kept",
+        "surfacing"
       ]
     },
     "memory:memory/2026-04-27.md:192:195": {
@@ -16133,18 +15976,19 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `heartbeat-ok` kept surfacing across 204 memories.; confidence: 0.91; evidence: memory/.dreams/session-corpus/2026-04-20.txt:3-3, memory/.dreams/session-corpus/2026-04-20.txt:5-5, memory/.dreams/session-corpus/2026-04-20.txt:6-6; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T03:01:10.381Z",
-      "lastRecalledAt": "2026-04-28T03:00:00.504Z",
+      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
       "queryHashes": [
         "6c24d11cf4d7"
       ],
       "recallDays": [
         "2026-04-27",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-30"
       ],
       "conceptTags": [
         "heartbeat-ok",
@@ -16165,18 +16009,19 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 203 memories.; confidence: 0.90; evidence: memory/2026-04-16.md:126-128, memory/2026-04-18.md:208-210, memory/2026-04-19.md:381-383; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T03:01:10.381Z",
-      "lastRecalledAt": "2026-04-28T03:00:00.504Z",
+      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
       "queryHashes": [
         "6c24d11cf4d7"
       ],
       "recallDays": [
         "2026-04-27",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-30"
       ],
       "conceptTags": [
         "0.90",
@@ -16197,18 +16042,19 @@
       "source": "memory",
       "snippet": "Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T03:01:10.381Z",
-      "lastRecalledAt": "2026-04-28T03:00:00.504Z",
+      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
       "queryHashes": [
         "6c24d11cf4d7"
       ],
       "recallDays": [
         "2026-04-27",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-30"
       ],
       "conceptTags": [
         "gateway",
@@ -16216,9 +16062,9 @@
         "possible",
         "lasting",
         "truths",
-        "user",
-        "you",
-        "running"
+        "running",
+        "boot",
+        "check"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:79:79": {
@@ -16246,11 +16092,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:80:80": {
@@ -16275,8 +16121,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:81:81": {
@@ -16304,11 +16149,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:82:82": {
@@ -16333,8 +16178,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:83:83": {
@@ -16362,11 +16206,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:84:84": {
@@ -16391,8 +16235,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:85:85": {
@@ -16420,11 +16263,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:86:86": {
@@ -16449,8 +16292,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:87:87": {
@@ -16478,11 +16320,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:88:88": {
@@ -16507,8 +16349,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:89:89": {
@@ -16536,11 +16377,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:90:90": {
@@ -16565,8 +16406,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "no-reply",
-        "assistant"
+        "no-reply"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:19:19": {
@@ -16594,11 +16434,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:20:20": {
@@ -16623,8 +16463,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:21:21": {
@@ -16652,11 +16491,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:22:22": {
@@ -16681,8 +16520,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:23:23": {
@@ -16710,11 +16548,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:24:24": {
@@ -16739,8 +16577,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:25:25": {
@@ -16768,11 +16605,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:26:26": {
@@ -16797,8 +16634,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:27:27": {
@@ -16826,11 +16662,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:28:28": {
@@ -16855,8 +16691,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:29:29": {
@@ -16884,11 +16719,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:30:30": {
@@ -16913,8 +16748,7 @@
         "2026-04-27"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:31:31": {
@@ -16942,11 +16776,11 @@
         "message-id",
         "sender-id",
         "has-forwarded-context",
-        "user",
         "conversation",
         "info",
         "untrusted",
-        "metadata"
+        "metadata",
+        "sender"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:32:32": {
@@ -16972,13 +16806,13 @@
       ],
       "conceptTags": [
         "sub-agent",
-        "assistant",
         "没有",
         "独立",
         "gpu",
         "系统",
         "只有",
-        "virtio"
+        "virtio",
+        "虚拟"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:33:33": {
@@ -17006,11 +16840,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:34:34": {
@@ -17035,8 +16869,7 @@
         "2026-04-28"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:35:35": {
@@ -17064,11 +16897,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:36:36": {
@@ -17093,8 +16926,7 @@
         "2026-04-28"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:37:37": {
@@ -17122,11 +16954,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:38:38": {
@@ -17151,8 +16983,7 @@
         "2026-04-28"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:39:39": {
@@ -17180,11 +17011,11 @@
         "gateway",
         "boot.md",
         "memory/handoff.md",
-        "user",
-        "you",
         "running",
         "boot",
-        "check"
+        "check",
+        "follow",
+        "instructions"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:40:40": {
@@ -17209,7 +17040,6 @@
         "2026-04-28"
       ],
       "conceptTags": [
-        "assistant",
         "restarted",
         "lost",
         "thread",
@@ -17242,11 +17072,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:42:42": {
@@ -17271,8 +17101,7 @@
         "2026-04-28"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:43:43": {
@@ -17300,11 +17129,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:44:44": {
@@ -17329,8 +17158,7 @@
         "2026-04-28"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:45:45": {
@@ -17358,11 +17186,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:46:46": {
@@ -17387,8 +17215,7 @@
         "2026-04-28"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:47:47": {
@@ -17416,11 +17243,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:48:48": {
@@ -17445,8 +17272,7 @@
         "2026-04-28"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:49:49": {
@@ -17474,11 +17300,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:50:50": {
@@ -17503,8 +17329,7 @@
         "2026-04-28"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:51:51": {
@@ -17532,11 +17357,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:52:52": {
@@ -17561,8 +17386,7 @@
         "2026-04-28"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:53:53": {
@@ -17590,11 +17414,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:54:54": {
@@ -17619,8 +17443,7 @@
         "2026-04-28"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/2026-04-28.md:173:176": {
@@ -17682,7 +17505,7 @@
         "27-27",
         "reflections",
         "theme",
-        "assistant"
+        "kept"
       ]
     },
     "memory:memory/2026-04-28.md:181:184": {
@@ -17928,9 +17751,9 @@
         "possible",
         "lasting",
         "truths",
-        "user",
-        "you",
-        "running"
+        "running",
+        "boot",
+        "check"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:55:55": {
@@ -17958,11 +17781,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:56:56": {
@@ -17988,13 +17811,13 @@
       ],
       "conceptTags": [
         "heartbeat.md",
-        "assistant",
         "can't",
         "help",
         "right",
         "now",
         "ability",
-        "use"
+        "use",
+        "read"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:57:57": {
@@ -18022,11 +17845,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:58:58": {
@@ -18051,8 +17874,7 @@
         "2026-04-28"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:59:59": {
@@ -18080,11 +17902,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:60:60": {
@@ -18109,8 +17931,7 @@
         "2026-04-28"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:61:61": {
@@ -18138,11 +17959,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:62:62": {
@@ -18167,8 +17988,7 @@
         "2026-04-28"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:63:63": {
@@ -18196,11 +18016,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:64:64": {
@@ -18225,8 +18045,7 @@
         "2026-04-28"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:65:65": {
@@ -18254,11 +18073,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:66:66": {
@@ -18283,8 +18102,7 @@
         "2026-04-28"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/2026-04-28.md:213:216": {
@@ -18348,7 +18166,7 @@
         "27-27",
         "reflections",
         "theme",
-        "assistant"
+        "kept"
       ]
     },
     "memory:memory/2026-04-28.md:221:224": {
@@ -18504,11 +18322,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:68:68": {
@@ -18533,8 +18351,7 @@
         "2026-04-28"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:69:69": {
@@ -18562,11 +18379,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:70:70": {
@@ -18591,8 +18408,7 @@
         "2026-04-28"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:71:71": {
@@ -18620,11 +18436,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:72:72": {
@@ -18649,8 +18465,7 @@
         "2026-04-28"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:73:73": {
@@ -18678,11 +18493,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:74:74": {
@@ -18707,8 +18522,7 @@
         "2026-04-28"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:75:75": {
@@ -18736,11 +18550,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:76:76": {
@@ -18765,8 +18579,7 @@
         "2026-04-28"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:77:77": {
@@ -18794,11 +18607,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:78:78": {
@@ -18823,8 +18636,7 @@
         "2026-04-28"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/2026-04-28.md:237:240": {
@@ -18950,9 +18762,9 @@
         "possible",
         "lasting",
         "truths",
-        "user",
-        "you",
-        "running"
+        "running",
+        "boot",
+        "check"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-27.txt:1:1": {
@@ -18980,11 +18792,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-27.txt:2:2": {
@@ -19009,8 +18821,7 @@
         "2026-04-29"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-27.txt:3:3": {
@@ -19038,11 +18849,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-27.txt:4:4": {
@@ -19067,8 +18878,7 @@
         "2026-04-29"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-27.txt:5:5": {
@@ -19096,11 +18906,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-27.txt:6:6": {
@@ -19125,8 +18935,7 @@
         "2026-04-29"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-27.txt:7:7": {
@@ -19154,11 +18963,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-27.txt:8:8": {
@@ -19183,8 +18992,7 @@
         "2026-04-29"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-27.txt:9:9": {
@@ -19212,11 +19020,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-27.txt:10:10": {
@@ -19241,8 +19049,7 @@
         "2026-04-29"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-27.txt:11:11": {
@@ -19270,11 +19077,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-27.txt:12:12": {
@@ -19299,8 +19106,7 @@
         "2026-04-29"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-27.txt:13:13": {
@@ -19328,11 +19134,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-27.txt:14:14": {
@@ -19357,8 +19163,7 @@
         "2026-04-29"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-27.txt:15:15": {
@@ -19386,11 +19191,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-27.txt:16:16": {
@@ -19415,8 +19220,7 @@
         "2026-04-29"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-27.txt:17:17": {
@@ -19444,11 +19248,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-27.txt:18:18": {
@@ -19473,8 +19277,7 @@
         "2026-04-29"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-27.txt:19:19": {
@@ -19502,11 +19305,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-27.txt:20:20": {
@@ -19531,8 +19334,7 @@
         "2026-04-29"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-27.txt:21:21": {
@@ -19560,11 +19362,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-27.txt:22:22": {
@@ -19589,8 +19391,7 @@
         "2026-04-29"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-27.txt:23:23": {
@@ -19618,11 +19419,11 @@
         "heartbeat.md",
         "heartbeat-ok",
         "openclaw/workspace/heartbeat.md",
-        "user",
         "read",
         "exists",
         "context",
-        "follow"
+        "follow",
+        "strictly"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-27.txt:24:24": {
@@ -19647,8 +19448,7 @@
         "2026-04-29"
       ],
       "conceptTags": [
-        "heartbeat-ok",
-        "assistant"
+        "heartbeat-ok"
       ]
     },
     "memory:memory/2026-04-29.md:228:231": {
@@ -20503,6 +20303,37 @@
         "read",
         "routine",
         "tool"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: a little too happily. Which is useful — until it’s not. ### My blunt bottom line For **client revenue work**, I’d optimize for **throughput and completion**, not vibes. So: **use Codex by default**. Keep Claude Code in the holster for higher-judgment moments. 💜 If you",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-30T03:00:00.996Z",
+      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "higher-judgment",
+        "little",
+        "too",
+        "happily",
+        "which",
+        "useful",
+        "until",
+        "it’s"
       ]
     }
   }
