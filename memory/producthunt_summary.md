@@ -1,65 +1,67 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [Monet](https://www.producthunt.com/products/monet-5)
+• [Open Wearables](https://www.producthunt.com/products/open-wearables)
   _<p>
-            Edit Videos and Design Images with Claude Code and Codex
-          </p>
-          <p_
-
-• [Colir](https://www.producthunt.com/products/colir)
-  _<p>
-            Gradients that don't look like defaults
-          </p>
-          <p>
-            <a _
-
-• [Devin for Terminal](https://www.producthunt.com/products/devin-1-2-by-congition)
-  _<p>
-            A CLI agent that keeps working when you close your laptop
+            Open infrastructure for wearable-powered health products.
           </p>
           <_
 
-• [Not Pink](https://www.producthunt.com/products/not-pink)
+• [Gro v2](https://www.producthunt.com/products/gro-2)
   _<p>
-            A shared bucket list with active scheduling and planning
-          </p>
-          <p_
-
-• [SureThing.io](https://www.producthunt.com/products/surething-io)
-  _<p>
-            Autonomous agent that communicates results like a human
-          </p>
-          <p>_
-
-• [Happy Horse](https://www.producthunt.com/products/happyhorse-10)
-  _<p>
-            Top-tier AI video generation and editing from Alibaba ATH
+            Spot signals, trigger outreach - turn posts into pipeline
           </p>
           <_
 
-• [Blueprint](https://www.producthunt.com/products/imbue-7)
+• [Plannotator](https://www.producthunt.com/products/plannotator)
   _<p>
-            Turn random prompts into airtight plans for any coding agent
-          </p>
-        _
-
-• [SimCam](https://www.producthunt.com/products/simcam-2)
-  _<p>
-             Test camera features directly in the iOS simulator
-          </p>
-          <p>
-   _
-
-• [Lovable mobile app](https://www.producthunt.com/products/lovable)
-  _<p>
-            Your ideas don't wait for you to sit down at a desk
-          </p>
-          <p>
-   _
-
-• [Actian VectorAI DB](https://www.producthunt.com/products/actian)
-  _<p>
-            The portable vector database for AI agents beyond the cloud
+            Annotate any doc, URL, or folder - send feedback to agents 
           </p>
          _
+
+• [Snapr](https://www.producthunt.com/products/snapr-5)
+  _<p>
+            Screenshot, record, annotate & edit video in on app
+          </p>
+          <p>
+   _
+
+• [Dreambase Data Agent Skills](https://www.producthunt.com/products/dreambase-ai)
+  _<p>
+            Analytical skills for data agents running on Supabase
+          </p>
+          <p>
+ _
+
+• [CodeHealth MCP Server by CodeScene](https://www.producthunt.com/products/codescene-codehealth-mcp-server)
+  _<p>
+            Keep AI-generated code healthy and maintainable
+          </p>
+          <p>
+       _
+
+• [Plurai](https://www.producthunt.com/products/plurai)
+  _<p>
+            Vibe-train evals and guardrails tailored to your use case
+          </p>
+          <_
+
+• [Netlify Database](https://www.producthunt.com/products/netlify)
+  _<p>
+            Ship data-driven apps without breaking flow
+          </p>
+          <p>
+           _
+
+• [Compact Message Composer by CometChat](https://www.producthunt.com/products/cometchat)
+  _<p>
+            Everything users expect from modern chat. Out of the box. 
+          </p>
+          _
+
+• [Picsart CLI](https://www.producthunt.com/products/picsart)
+  _<p>
+            Picsart's power right from your AI chat box
+          </p>
+          <p>
+           _
 

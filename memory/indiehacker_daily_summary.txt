@@ -1,18 +1,17 @@
-🚀 Indie Hacker Monitor (2026-04-29 12:00)
+🚀 Indie Hacker Monitor (2026-04-30 12:00)
 
 🔥 Hot Topics:
-  • revenue: 1 mentions
   • launch: 1 mentions
   • build in public: 1 mentions
 
 📈 Top Stories:
   • [Hacker News] (2755⬆): Ghostty is leaving GitHub
     https://mitchellh.com/writing/ghostty-leaving-github
+  • [Hacker News] (1915⬆): Zed 1.0
+    https://zed.dev/blog/zed-1-0
   • [Hacker News] (1444⬆): Your phone is about to stop being yours
     https://keepandroidopen.org/en/
-  • [Hacker News] (899⬆): Microsoft and OpenAI end their exclusive and revenue-sharing deal
-    https://www.bloomberg.com/news/articles/2026-04-27/microsoft-to-stop-sharing-revenue-with-main-ai-partner-openai
-  • [Hacker News] (711⬆): Talkie: a 13B vintage language model from 1930
-    https://talkie-lm.com/introducing-talkie
-  • [Hacker News] (610⬆): Men who stare at walls
-    https://www.alexselimov.com/posts/men_who_stare_at_walls/
+  • [Hacker News] (1155⬆): HERMES.md in commit messages causes requests to route to extra usage billing
+    https://github.com/anthropics/claude-code/issues/53262
+  • [Hacker News] (1069⬆): Copy Fail
+    https://copy.fail/
