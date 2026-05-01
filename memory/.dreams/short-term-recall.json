@@ -10242,12 +10242,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 149 memories.; confidence: 0.92; evidence: memory/.dreams/session-corpus/2026-04-16.txt:5-5, memory/.dreams/session-corpus/2026-04-17.txt:2-2, memory/.dreams/session-corpus/2026-04-17.txt:4-4; note: reflection",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-24T03:01:00.136Z",
-      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
+      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
       "queryHashes": [
         "409c33906af9"
       ],
@@ -10257,7 +10257,8 @@
         "2026-04-27",
         "2026-04-28",
         "2026-04-29",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-01"
       ],
       "conceptTags": [
         "0.92",
@@ -10278,12 +10279,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 134 memories.; confidence: 0.83; evidence: memory/2026-04-14.md:83-84, memory/2026-04-15.md:108-109, memory/2026-04-16.md:126-128; note: reflection",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-24T03:01:00.136Z",
-      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
+      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
       "queryHashes": [
         "409c33906af9"
       ],
@@ -10293,7 +10294,8 @@
         "2026-04-27",
         "2026-04-28",
         "2026-04-29",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-01"
       ],
       "conceptTags": [
         "0.83",
@@ -10309,17 +10311,17 @@
     "memory:memory/2026-04-24.md:158:160": {
       "key": "memory:memory/2026-04-24.md:158:160",
       "path": "memory/2026-04-24.md",
-      "startLine": 158,
-      "endLine": 160,
+      "startLine": 93,
+      "endLine": 95,
       "source": "memory",
-      "snippet": "Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any",
+      "snippet": "- Candidate: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any - confidence: 0.62 - evidence: memory/2026-04-23.md:168-170",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-24T03:01:00.136Z",
-      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
+      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
       "queryHashes": [
         "409c33906af9"
       ],
@@ -10329,7 +10331,8 @@
         "2026-04-27",
         "2026-04-28",
         "2026-04-29",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-01"
       ],
       "conceptTags": [
         "gateway",
@@ -10340,7 +10343,8 @@
         "running",
         "boot",
         "check"
-      ]
+      ],
+      "promotedAt": "2026-05-01T03:00:01.056Z"
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:37:37": {
       "key": "memory:memory/.dreams/session-corpus/2026-04-22.txt:37:37",
@@ -11825,12 +11829,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 173 memories.; confidence: 0.95; evidence: memory/.dreams/session-corpus/2026-04-17.txt:2-2, memory/.dreams/session-corpus/2026-04-17.txt:4-4, memory/.dreams/session-corpus/2026-04-17.txt:5-5; note: reflection",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-25T03:01:03.184Z",
-      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
+      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
       "queryHashes": [
         "90c0a0f693f1"
       ],
@@ -11839,7 +11843,8 @@
         "2026-04-26",
         "2026-04-28",
         "2026-04-29",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-01"
       ],
       "conceptTags": [
         "0.95",
@@ -11860,12 +11865,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 155 memories.; confidence: 0.85; evidence: memory/2026-04-14.md:83-84, memory/2026-04-15.md:108-109, memory/2026-04-16.md:126-128; note: reflection",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-25T03:01:03.184Z",
-      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
+      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
       "queryHashes": [
         "90c0a0f693f1"
       ],
@@ -11874,7 +11879,8 @@
         "2026-04-26",
         "2026-04-28",
         "2026-04-29",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-01"
       ],
       "conceptTags": [
         "0.85",
@@ -11890,17 +11896,17 @@
     "memory:memory/2026-04-25.md:173:175": {
       "key": "memory:memory/2026-04-25.md:173:175",
       "path": "memory/2026-04-25.md",
-      "startLine": 173,
-      "endLine": 175,
+      "startLine": 153,
+      "endLine": 155,
       "source": "memory",
-      "snippet": "Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any",
+      "snippet": "- Candidate: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any - confidence: 0.62 - evidence: memory/2026-04-23.md:168-170",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-25T03:01:03.184Z",
-      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
+      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
       "queryHashes": [
         "90c0a0f693f1"
       ],
@@ -11909,7 +11915,8 @@
         "2026-04-26",
         "2026-04-28",
         "2026-04-29",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-01"
       ],
       "conceptTags": [
         "gateway",
@@ -11920,7 +11927,8 @@
         "running",
         "boot",
         "check"
-      ]
+      ],
+      "promotedAt": "2026-05-01T03:00:01.056Z"
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:37:37": {
       "key": "memory:memory/.dreams/session-corpus/2026-04-23.txt:37:37",
@@ -13647,12 +13655,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 177 memories.; confidence: 0.93; evidence: memory/.dreams/session-corpus/2026-04-17.txt:30-30, memory/.dreams/session-corpus/2026-04-17.txt:31-31, memory/.dreams/session-corpus/2026-04-17.txt:32-32; note: reflection",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T03:00:00.585Z",
-      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
+      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
       "queryHashes": [
         "9b4c3d373463"
       ],
@@ -13660,7 +13668,8 @@
         "2026-04-26",
         "2026-04-27",
         "2026-04-29",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-01"
       ],
       "conceptTags": [
         "0.93",
@@ -13681,12 +13690,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 167 memories.; confidence: 0.88; evidence: memory/2026-04-16.md:126-128, memory/2026-04-18.md:208-210, memory/.dreams/session-corpus/2026-04-17.txt:33-33; note: reflection",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T03:00:00.585Z",
-      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
+      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
       "queryHashes": [
         "9b4c3d373463"
       ],
@@ -13694,7 +13703,8 @@
         "2026-04-26",
         "2026-04-27",
         "2026-04-29",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-01"
       ],
       "conceptTags": [
         "0.88",
@@ -13710,17 +13720,17 @@
     "memory:memory/2026-04-26.md:173:175": {
       "key": "memory:memory/2026-04-26.md:173:175",
       "path": "memory/2026-04-26.md",
-      "startLine": 173,
-      "endLine": 175,
+      "startLine": 133,
+      "endLine": 135,
       "source": "memory",
-      "snippet": "Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any",
+      "snippet": "- Candidate: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any - confidence: 0.62 - evidence: memory/2026-04-24.md:158-160",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T03:00:00.585Z",
-      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
+      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
       "queryHashes": [
         "9b4c3d373463"
       ],
@@ -13728,7 +13738,8 @@
         "2026-04-26",
         "2026-04-27",
         "2026-04-29",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-01"
       ],
       "conceptTags": [
         "gateway",
@@ -13739,7 +13750,8 @@
         "running",
         "boot",
         "check"
-      ]
+      ],
+      "promotedAt": "2026-05-01T03:00:01.056Z"
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:25:25": {
       "key": "memory:memory/.dreams/session-corpus/2026-04-25.txt:25:25",
@@ -15943,19 +15955,20 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 209 memories.; confidence: 0.93; evidence: memory/.dreams/session-corpus/2026-04-19.txt:2-2, memory/.dreams/session-corpus/2026-04-19.txt:3-3, memory/.dreams/session-corpus/2026-04-19.txt:4-4; note: reflection",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T03:01:10.381Z",
-      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
+      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
       "queryHashes": [
         "6c24d11cf4d7"
       ],
       "recallDays": [
         "2026-04-27",
         "2026-04-28",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-01"
       ],
       "conceptTags": [
         "0.93",
@@ -15976,19 +15989,20 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `heartbeat-ok` kept surfacing across 204 memories.; confidence: 0.91; evidence: memory/.dreams/session-corpus/2026-04-20.txt:3-3, memory/.dreams/session-corpus/2026-04-20.txt:5-5, memory/.dreams/session-corpus/2026-04-20.txt:6-6; note: reflection",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T03:01:10.381Z",
-      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
+      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
       "queryHashes": [
         "6c24d11cf4d7"
       ],
       "recallDays": [
         "2026-04-27",
         "2026-04-28",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-01"
       ],
       "conceptTags": [
         "heartbeat-ok",
@@ -16009,19 +16023,20 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 203 memories.; confidence: 0.90; evidence: memory/2026-04-16.md:126-128, memory/2026-04-18.md:208-210, memory/2026-04-19.md:381-383; note: reflection",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T03:01:10.381Z",
-      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
+      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
       "queryHashes": [
         "6c24d11cf4d7"
       ],
       "recallDays": [
         "2026-04-27",
         "2026-04-28",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-01"
       ],
       "conceptTags": [
         "0.90",
@@ -16042,19 +16057,20 @@
       "source": "memory",
       "snippet": "Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T03:01:10.381Z",
-      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
+      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
       "queryHashes": [
         "6c24d11cf4d7"
       ],
       "recallDays": [
         "2026-04-27",
         "2026-04-28",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-01"
       ],
       "conceptTags": [
         "gateway",
@@ -18113,18 +18129,19 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `heartbeat-ok` kept surfacing across 249 memories.; confidence: 1.00; evidence: memory/.dreams/session-corpus/2026-04-20.txt:3-3, memory/.dreams/session-corpus/2026-04-20.txt:5-5, memory/.dreams/session-corpus/2026-04-20.txt:6-6; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T03:01:12.819Z",
-      "lastRecalledAt": "2026-04-29T03:00:00.633Z",
+      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
       "recallDays": [
         "2026-04-28",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-05-01"
       ],
       "conceptTags": [
         "heartbeat-ok",
@@ -18145,18 +18162,19 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 220 memories.; confidence: 0.90; evidence: memory/2026-04-20.md:398-401, memory/.dreams/session-corpus/2026-04-19.txt:26-26, memory/.dreams/session-corpus/2026-04-19.txt:27-27; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T03:01:12.819Z",
-      "lastRecalledAt": "2026-04-29T03:00:00.633Z",
+      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
       "recallDays": [
         "2026-04-28",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-05-01"
       ],
       "conceptTags": [
         "0.90",
@@ -18177,18 +18195,19 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 218 memories.; confidence: 0.89; evidence: memory/2026-04-16.md:126-128, memory/2026-04-18.md:208-210, memory/2026-04-19.md:381-383; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T03:01:12.819Z",
-      "lastRecalledAt": "2026-04-29T03:00:00.633Z",
+      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
       "recallDays": [
         "2026-04-28",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-05-01"
       ],
       "conceptTags": [
         "0.89",
@@ -18209,18 +18228,19 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `heartbeat.md` kept surfacing across 191 memories.; confidence: 0.78; evidence: memory/.dreams/session-corpus/2026-04-20.txt:3-3, memory/.dreams/session-corpus/2026-04-20.txt:5-5, memory/.dreams/session-corpus/2026-04-20.txt:7-7; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T03:01:12.819Z",
-      "lastRecalledAt": "2026-04-29T03:00:00.633Z",
+      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
       "recallDays": [
         "2026-04-28",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-05-01"
       ],
       "conceptTags": [
         "heartbeat.md",
@@ -18241,18 +18261,19 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `context` kept surfacing across 189 memories.; confidence: 0.77; evidence: memory/.dreams/session-corpus/2026-04-20.txt:3-3, memory/.dreams/session-corpus/2026-04-20.txt:5-5, memory/.dreams/session-corpus/2026-04-20.txt:7-7; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T03:01:12.819Z",
-      "lastRecalledAt": "2026-04-29T03:00:00.633Z",
+      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
       "recallDays": [
         "2026-04-28",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-05-01"
       ],
       "conceptTags": [
         "0.77",
@@ -18273,18 +18294,19 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `exists` kept surfacing across 188 memories.; confidence: 0.77; evidence: memory/.dreams/session-corpus/2026-04-20.txt:3-3, memory/.dreams/session-corpus/2026-04-20.txt:5-5, memory/.dreams/session-corpus/2026-04-20.txt:7-7; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T03:01:12.819Z",
-      "lastRecalledAt": "2026-04-29T03:00:00.633Z",
+      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
       "recallDays": [
         "2026-04-28",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-05-01"
       ],
       "conceptTags": [
         "0.77",
@@ -18647,18 +18669,19 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `follow` kept surfacing across 187 memories.; confidence: 0.77; evidence: memory/.dreams/session-corpus/2026-04-20.txt:3-3, memory/.dreams/session-corpus/2026-04-20.txt:5-5, memory/.dreams/session-corpus/2026-04-20.txt:7-7; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-29T03:00:00.633Z",
-      "lastRecalledAt": "2026-04-29T03:00:00.633Z",
+      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
       "recallDays": [
         "2026-04-28",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-05-01"
       ],
       "conceptTags": [
         "0.77",

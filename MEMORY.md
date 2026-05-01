@@ -19,3 +19,12 @@ Cortana memory. Twitter auth: ~/.bashrc. YouTube OAuth: ~/.config/youtube/. Ask 
 - Ask before committing code
 - Keep workspace files lean
 - Be proactive, don't ask for hand-holding
+
+## Promoted From Short-Term Memory (2026-05-01)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-04-24.md:158:160 -->
+- - Candidate: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any - confidence: 0.62 - evidence: memory/2026-04-23.md:168-170 [score=0.845 recalls=0 avg=0.620 source=memory/2026-04-24.md:93-95]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-25.md:173:175 -->
+- - Candidate: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any - confidence: 0.62 - evidence: memory/2026-04-23.md:168-170 [score=0.838 recalls=0 avg=0.620 source=memory/2026-04-25.md:153-155]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-26.md:173:175 -->
+- - Candidate: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any - confidence: 0.62 - evidence: memory/2026-04-24.md:158-160 [score=0.827 recalls=0 avg=0.620 source=memory/2026-04-26.md:133-135]
