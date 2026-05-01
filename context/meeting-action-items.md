@@ -78,8 +78,15 @@ Cassandra
 
 ### 4. Send BOTH drafts to Ben in Telegram
 - Post the summary draft and action items draft in the current Telegram topic
-- Ben reviews and posts them to Slack himself
+- Ben reviews and posts them to Slack himself unless he explicitly says to post it
 - NEVER post directly to Slack without explicit confirmation
+
+### 5. If Ben says to post it to Slack
+- Do NOT use `core/integrations/slack.py` or the generic bot token path for meeting wrap-ups
+- Use the dedicated workflow in `scripts/meeting-wrap-v1.py` so the post goes through the intended Slack posting route
+- Slack list formatting must use real list lines beginning with `- ` in the source text so the script can convert them into Slack rich-text bullet lists
+- Never use Unicode bullets like `•` for source meeting wrap text
+- If the "post as Ben" route is unavailable, stop and say that explicitly -- do not silently fall back to posting as the bot
 
 ## Slack Channel
 #meeting-notes -- C09J78SH2FM
