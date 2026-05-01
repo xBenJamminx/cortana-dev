@@ -1,17 +1,13 @@
-🚀 Indie Hacker Monitor (2026-04-30 12:00)
-
-🔥 Hot Topics:
-  • launch: 1 mentions
-  • build in public: 1 mentions
+🚀 Indie Hacker Monitor (2026-05-01 12:00)
 
 📈 Top Stories:
-  • [Hacker News] (2755⬆): Ghostty is leaving GitHub
-    https://mitchellh.com/writing/ghostty-leaving-github
   • [Hacker News] (1915⬆): Zed 1.0
     https://zed.dev/blog/zed-1-0
-  • [Hacker News] (1444⬆): Your phone is about to stop being yours
-    https://keepandroidopen.org/en/
+  • [Hacker News] (1192⬆): Claude Code refuses requests or charges extra if your commits mention "OpenClaw"
+    https://twitter.com/theo/status/2049645973350363168
   • [Hacker News] (1155⬆): HERMES.md in commit messages causes requests to route to extra usage billing
     https://github.com/anthropics/claude-code/issues/53262
   • [Hacker News] (1069⬆): Copy Fail
     https://copy.fail/
+  • [Hacker News] (1002⬆): Cursor Camp
+    https://neal.fun/cursor-camp/

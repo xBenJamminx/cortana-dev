@@ -1,67 +1,67 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [Open Wearables](https://www.producthunt.com/products/open-wearables)
+• [Mintlify Editor](https://www.producthunt.com/products/mintlify)
   _<p>
-            Open infrastructure for wearable-powered health products.
+            AI-native collaborative editor
           </p>
-          <_
+          <p>
+            <a href="htt_
 
-• [Gro v2](https://www.producthunt.com/products/gro-2)
+• [Basedash Dashboard Agent](https://www.producthunt.com/products/basedash)
   _<p>
-            Spot signals, trigger outreach - turn posts into pipeline
+            Builds entire dashboards from a single prompt
           </p>
-          <_
-
-• [Plannotator](https://www.producthunt.com/products/plannotator)
-  _<p>
-            Annotate any doc, URL, or folder - send feedback to agents 
-          </p>
+          <p>
          _
 
-• [Snapr](https://www.producthunt.com/products/snapr-5)
+• [Sync-in](https://www.producthunt.com/products/sync-in)
   _<p>
-            Screenshot, record, annotate & edit video in on app
-          </p>
-          <p>
-   _
-
-• [Dreambase Data Agent Skills](https://www.producthunt.com/products/dreambase-ai)
-  _<p>
-            Analytical skills for data agents running on Supabase
-          </p>
-          <p>
- _
-
-• [CodeHealth MCP Server by CodeScene](https://www.producthunt.com/products/codescene-codehealth-mcp-server)
-  _<p>
-            Keep AI-generated code healthy and maintainable
-          </p>
-          <p>
-       _
-
-• [Plurai](https://www.producthunt.com/products/plurai)
-  _<p>
-            Vibe-train evals and guardrails tailored to your use case
-          </p>
-          <_
-
-• [Netlify Database](https://www.producthunt.com/products/netlify)
-  _<p>
-            Ship data-driven apps without breaking flow
-          </p>
-          <p>
-           _
-
-• [Compact Message Composer by CometChat](https://www.producthunt.com/products/cometchat)
-  _<p>
-            Everything users expect from modern chat. Out of the box. 
+            Open-source file storage, sharing, collaboration & syncing
           </p>
           _
 
-• [Picsart CLI](https://www.producthunt.com/products/picsart)
+• [ElevenLabs Agent Templates](https://www.producthunt.com/products/elevenlabs-agent-templates)
   _<p>
-            Picsart's power right from your AI chat box
+            Deploy pre-built voice and chat agents for support, sales
+          </p>
+          <_
+
+• [Tabstack](https://www.producthunt.com/products/tabstack)
+  _<p>
+            Extract web data and automate browsers, no scraper required.
+          </p>
+        _
+
+• [Docky](https://www.producthunt.com/products/docky-the-dock-rebuit-for-focus)
+  _<p>
+            Pin, group, and remove apps easily from your dock
+          </p>
+          <p>
+     _
+
+• [Symphony](https://www.producthunt.com/products/openai)
+  _<p>
+            An open-source spec for Codex orchestration
           </p>
           <p>
            _
+
+• [Tinfoil](https://www.producthunt.com/products/tinfoil-private-ai-chat)
+  _<p>
+            AI chat and API that keeps your conversations fully private
+          </p>
+         _
+
+• [Motorola Razr Fold](https://www.producthunt.com/products/motorola-g7)
+  _<p>
+            A foldable phone built for pen-first productivity
+          </p>
+          <p>
+     _
+
+• [KushoAI for Playwright](https://www.producthunt.com/products/kushoai)
+  _<p>
+            Open-source Terminal UI, just record & get exhaustive tests
+          </p>
+         _
 
