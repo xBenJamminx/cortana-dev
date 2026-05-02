@@ -1,67 +1,66 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [Mintlify Editor](https://www.producthunt.com/products/mintlify)
+• [PeekFocus](https://www.producthunt.com/products/peekfocus)
   _<p>
-            AI-native collaborative editor
+            One keystroke blurs everything behind your active window
+          </p>
+          <p_
+
+• [Beauty Diagram](https://www.producthunt.com/products/beauty-diagram)
+  _<p>
+            Diagrams that don't look like they were auto-generated
           </p>
           <p>
-            <a href="htt_
+_
 
-• [Basedash Dashboard Agent](https://www.producthunt.com/products/basedash)
+• [Bitgrain](https://www.producthunt.com/products/bitgrain)
   _<p>
-            Builds entire dashboards from a single prompt
-          </p>
-          <p>
-         _
-
-• [Sync-in](https://www.producthunt.com/products/sync-in)
-  _<p>
-            Open-source file storage, sharing, collaboration & syncing
-          </p>
-          _
-
-• [ElevenLabs Agent Templates](https://www.producthunt.com/products/elevenlabs-agent-templates)
-  _<p>
-            Deploy pre-built voice and chat agents for support, sales
-          </p>
-          <_
-
-• [Tabstack](https://www.producthunt.com/products/tabstack)
-  _<p>
-            Extract web data and automate browsers, no scraper required.
-          </p>
-        _
-
-• [Docky](https://www.producthunt.com/products/docky-the-dock-rebuit-for-focus)
-  _<p>
-            Pin, group, and remove apps easily from your dock
-          </p>
-          <p>
-     _
-
-• [Symphony](https://www.producthunt.com/products/openai)
-  _<p>
-            An open-source spec for Codex orchestration
-          </p>
-          <p>
-           _
-
-• [Tinfoil](https://www.producthunt.com/products/tinfoil-private-ai-chat)
-  _<p>
-            AI chat and API that keeps your conversations fully private
+            Design studio lighter than Figma & more flexible than Canva
           </p>
          _
 
-• [Motorola Razr Fold](https://www.producthunt.com/products/motorola-g7)
+• [Ghosted: Smart Presence](https://www.producthunt.com/products/ghosted-smart-presence)
   _<p>
-            A foldable phone built for pen-first productivity
+            Pause media or lock your screen when you step away
           </p>
           <p>
-     _
+    _
 
-• [KushoAI for Playwright](https://www.producthunt.com/products/kushoai)
+• [Marx Finance](https://www.producthunt.com/products/marx-finance)
   _<p>
-            Open-source Terminal UI, just record & get exhaustive tests
+            AI agents debate the markets
+          </p>
+          <p>
+            <a href="https_
+
+• [Genspark for Word](https://www.producthunt.com/products/genspark)
+  _<p>
+            Draft, edit, and research inside Microsoft Word with AI
+          </p>
+          <p>_
+
+• [Buda](https://www.producthunt.com/products/buda-2)
+  _<p>
+            Recruit agents to run your company as a synchronous team
+          </p>
+          <p_
+
+• [Postiz](https://www.producthunt.com/products/postiz)
+  _<p>
+            Agentic social media scheduler for agents like OpenClaw
+          </p>
+          <p>_
+
+• [Zed 1.0](https://www.producthunt.com/products/zed)
+  _<p>
+            High-performance, open source, multiplayer code editor
+          </p>
+          <p>
+_
+
+• [Zush: AI File Renamer](https://www.producthunt.com/products/zush)
+  _<p>
+            Updated: docs support, BYOK, Local AI (Ollama), Windows App
           </p>
          _
 
