@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-01T03:00:01.056Z",
+  "updatedAt": "2026-05-02T03:00:01.107Z",
   "entries": {
     "memory:memory/.dreams/session-corpus/2026-04-12.txt:1:1": {
       "key": "memory:memory/.dreams/session-corpus/2026-04-12.txt:1:1",
@@ -10337,12 +10337,12 @@
       "conceptTags": [
         "gateway",
         "boot.md",
+        "0.62",
+        "memory/2026-04-23.md",
+        "168-170",
+        "candidate",
         "possible",
-        "lasting",
-        "truths",
-        "running",
-        "boot",
-        "check"
+        "lasting"
       ],
       "promotedAt": "2026-05-01T03:00:01.056Z"
     },
@@ -11829,12 +11829,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 173 memories.; confidence: 0.95; evidence: memory/.dreams/session-corpus/2026-04-17.txt:2-2, memory/.dreams/session-corpus/2026-04-17.txt:4-4, memory/.dreams/session-corpus/2026-04-17.txt:5-5; note: reflection",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-25T03:01:03.184Z",
-      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "90c0a0f693f1"
       ],
@@ -11844,7 +11844,8 @@
         "2026-04-28",
         "2026-04-29",
         "2026-04-30",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ],
       "conceptTags": [
         "0.95",
@@ -11865,12 +11866,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 155 memories.; confidence: 0.85; evidence: memory/2026-04-14.md:83-84, memory/2026-04-15.md:108-109, memory/2026-04-16.md:126-128; note: reflection",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-25T03:01:03.184Z",
-      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "90c0a0f693f1"
       ],
@@ -11880,7 +11881,8 @@
         "2026-04-28",
         "2026-04-29",
         "2026-04-30",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ],
       "conceptTags": [
         "0.85",
@@ -11896,17 +11898,17 @@
     "memory:memory/2026-04-25.md:173:175": {
       "key": "memory:memory/2026-04-25.md:173:175",
       "path": "memory/2026-04-25.md",
-      "startLine": 153,
-      "endLine": 155,
+      "startLine": 173,
+      "endLine": 175,
       "source": "memory",
-      "snippet": "- Candidate: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any - confidence: 0.62 - evidence: memory/2026-04-23.md:168-170",
+      "snippet": "Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-25T03:01:03.184Z",
-      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "90c0a0f693f1"
       ],
@@ -11916,7 +11918,8 @@
         "2026-04-28",
         "2026-04-29",
         "2026-04-30",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ],
       "conceptTags": [
         "gateway",
@@ -13655,12 +13658,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 177 memories.; confidence: 0.93; evidence: memory/.dreams/session-corpus/2026-04-17.txt:30-30, memory/.dreams/session-corpus/2026-04-17.txt:31-31, memory/.dreams/session-corpus/2026-04-17.txt:32-32; note: reflection",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T03:00:00.585Z",
-      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "9b4c3d373463"
       ],
@@ -13669,7 +13672,8 @@
         "2026-04-27",
         "2026-04-29",
         "2026-04-30",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ],
       "conceptTags": [
         "0.93",
@@ -13690,12 +13694,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 167 memories.; confidence: 0.88; evidence: memory/2026-04-16.md:126-128, memory/2026-04-18.md:208-210, memory/.dreams/session-corpus/2026-04-17.txt:33-33; note: reflection",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T03:00:00.585Z",
-      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "9b4c3d373463"
       ],
@@ -13704,7 +13708,8 @@
         "2026-04-27",
         "2026-04-29",
         "2026-04-30",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ],
       "conceptTags": [
         "0.88",
@@ -13720,17 +13725,17 @@
     "memory:memory/2026-04-26.md:173:175": {
       "key": "memory:memory/2026-04-26.md:173:175",
       "path": "memory/2026-04-26.md",
-      "startLine": 133,
-      "endLine": 135,
+      "startLine": 173,
+      "endLine": 175,
       "source": "memory",
-      "snippet": "- Candidate: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any - confidence: 0.62 - evidence: memory/2026-04-24.md:158-160",
+      "snippet": "Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently before responding to any",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T03:00:00.585Z",
-      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "9b4c3d373463"
       ],
@@ -13739,7 +13744,8 @@
         "2026-04-27",
         "2026-04-29",
         "2026-04-30",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ],
       "conceptTags": [
         "gateway",
@@ -15955,12 +15961,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 209 memories.; confidence: 0.93; evidence: memory/.dreams/session-corpus/2026-04-19.txt:2-2, memory/.dreams/session-corpus/2026-04-19.txt:3-3, memory/.dreams/session-corpus/2026-04-19.txt:4-4; note: reflection",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T03:01:10.381Z",
-      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "6c24d11cf4d7"
       ],
@@ -15968,7 +15974,8 @@
         "2026-04-27",
         "2026-04-28",
         "2026-04-30",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ],
       "conceptTags": [
         "0.93",
@@ -15989,12 +15996,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `heartbeat-ok` kept surfacing across 204 memories.; confidence: 0.91; evidence: memory/.dreams/session-corpus/2026-04-20.txt:3-3, memory/.dreams/session-corpus/2026-04-20.txt:5-5, memory/.dreams/session-corpus/2026-04-20.txt:6-6; note: reflection",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T03:01:10.381Z",
-      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "6c24d11cf4d7"
       ],
@@ -16002,7 +16009,8 @@
         "2026-04-27",
         "2026-04-28",
         "2026-04-30",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ],
       "conceptTags": [
         "heartbeat-ok",
@@ -16023,12 +16031,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 203 memories.; confidence: 0.90; evidence: memory/2026-04-16.md:126-128, memory/2026-04-18.md:208-210, memory/2026-04-19.md:381-383; note: reflection",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T03:01:10.381Z",
-      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "6c24d11cf4d7"
       ],
@@ -16036,7 +16044,8 @@
         "2026-04-27",
         "2026-04-28",
         "2026-04-30",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ],
       "conceptTags": [
         "0.90",
@@ -16052,17 +16061,17 @@
     "memory:memory/2026-04-27.md:202:204": {
       "key": "memory:memory/2026-04-27.md:202:204",
       "path": "memory/2026-04-27.md",
-      "startLine": 202,
-      "endLine": 204,
+      "startLine": 18,
+      "endLine": 20,
       "source": "memory",
-      "snippet": "Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently",
+      "snippet": "- Candidate: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently - confidence: 0.62 - evidence: memory/2026-04-27.md:172-174",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T03:01:10.381Z",
-      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "6c24d11cf4d7"
       ],
@@ -16070,7 +16079,8 @@
         "2026-04-27",
         "2026-04-28",
         "2026-04-30",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ],
       "conceptTags": [
         "gateway",
@@ -16081,7 +16091,8 @@
         "running",
         "boot",
         "check"
-      ]
+      ],
+      "promotedAt": "2026-05-02T03:00:01.107Z"
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:79:79": {
       "key": "memory:memory/.dreams/session-corpus/2026-04-25.txt:79:79",
@@ -18129,19 +18140,20 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `heartbeat-ok` kept surfacing across 249 memories.; confidence: 1.00; evidence: memory/.dreams/session-corpus/2026-04-20.txt:3-3, memory/.dreams/session-corpus/2026-04-20.txt:5-5, memory/.dreams/session-corpus/2026-04-20.txt:6-6; note: reflection",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T03:01:12.819Z",
-      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
       "recallDays": [
         "2026-04-28",
         "2026-04-29",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ],
       "conceptTags": [
         "heartbeat-ok",
@@ -18162,19 +18174,20 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 220 memories.; confidence: 0.90; evidence: memory/2026-04-20.md:398-401, memory/.dreams/session-corpus/2026-04-19.txt:26-26, memory/.dreams/session-corpus/2026-04-19.txt:27-27; note: reflection",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T03:01:12.819Z",
-      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
       "recallDays": [
         "2026-04-28",
         "2026-04-29",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ],
       "conceptTags": [
         "0.90",
@@ -18195,19 +18208,20 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 218 memories.; confidence: 0.89; evidence: memory/2026-04-16.md:126-128, memory/2026-04-18.md:208-210, memory/2026-04-19.md:381-383; note: reflection",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T03:01:12.819Z",
-      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
       "recallDays": [
         "2026-04-28",
         "2026-04-29",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ],
       "conceptTags": [
         "0.89",
@@ -18228,19 +18242,20 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `heartbeat.md` kept surfacing across 191 memories.; confidence: 0.78; evidence: memory/.dreams/session-corpus/2026-04-20.txt:3-3, memory/.dreams/session-corpus/2026-04-20.txt:5-5, memory/.dreams/session-corpus/2026-04-20.txt:7-7; note: reflection",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T03:01:12.819Z",
-      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
       "recallDays": [
         "2026-04-28",
         "2026-04-29",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ],
       "conceptTags": [
         "heartbeat.md",
@@ -18261,19 +18276,20 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `context` kept surfacing across 189 memories.; confidence: 0.77; evidence: memory/.dreams/session-corpus/2026-04-20.txt:3-3, memory/.dreams/session-corpus/2026-04-20.txt:5-5, memory/.dreams/session-corpus/2026-04-20.txt:7-7; note: reflection",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T03:01:12.819Z",
-      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
       "recallDays": [
         "2026-04-28",
         "2026-04-29",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ],
       "conceptTags": [
         "0.77",
@@ -18294,19 +18310,20 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `exists` kept surfacing across 188 memories.; confidence: 0.77; evidence: memory/.dreams/session-corpus/2026-04-20.txt:3-3, memory/.dreams/session-corpus/2026-04-20.txt:5-5, memory/.dreams/session-corpus/2026-04-20.txt:7-7; note: reflection",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T03:01:12.819Z",
-      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
       "recallDays": [
         "2026-04-28",
         "2026-04-29",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ],
       "conceptTags": [
         "0.77",
@@ -18669,19 +18686,20 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `follow` kept surfacing across 187 memories.; confidence: 0.77; evidence: memory/.dreams/session-corpus/2026-04-20.txt:3-3, memory/.dreams/session-corpus/2026-04-20.txt:5-5, memory/.dreams/session-corpus/2026-04-20.txt:7-7; note: reflection",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-29T03:00:00.633Z",
-      "lastRecalledAt": "2026-05-01T03:00:01.056Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
       "recallDays": [
         "2026-04-28",
         "2026-04-29",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-02"
       ],
       "conceptTags": [
         "0.77",
@@ -18702,18 +18720,19 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `openclaw/workspace/heartbeat.md` kept surfacing across 187 memories.; confidence: 0.77; evidence: memory/.dreams/session-corpus/2026-04-20.txt:3-3, memory/.dreams/session-corpus/2026-04-20.txt:5-5, memory/.dreams/session-corpus/2026-04-20.txt:7-7; note: refle",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-29T03:00:00.633Z",
-      "lastRecalledAt": "2026-04-29T03:00:00.633Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
       "recallDays": [
         "2026-04-28",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-05-02"
       ],
       "conceptTags": [
         "openclaw/workspace/heartbeat.md",
@@ -19482,17 +19501,18 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `heartbeat-ok` kept surfacing across 260 memories.; confidence: 1.00; evidence: memory/.dreams/session-corpus/2026-04-20.txt:25-25, memory/.dreams/session-corpus/2026-04-20.txt:27-27, memory/.dreams/session-corpus/2026-04-20.txt:29-29; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-30T03:00:00.996Z",
-      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-02"
       ],
       "conceptTags": [
         "heartbeat-ok",
@@ -19513,17 +19533,18 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 211 memories.; confidence: 0.91; evidence: memory/2026-04-16.md:126-128, memory/2026-04-18.md:208-210, memory/2026-04-19.md:381-383; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-30T03:00:00.996Z",
-      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-02"
       ],
       "conceptTags": [
         "0.91",
@@ -19544,17 +19565,18 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 204 memories.; confidence: 0.88; evidence: memory/2026-04-20.md:398-401, memory/2026-04-21.md:368-371, memory/.dreams/session-corpus/2026-04-20.txt:26-26; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-30T03:00:00.996Z",
-      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-02"
       ],
       "conceptTags": [
         "0.88",
@@ -19575,17 +19597,18 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `heartbeat.md` kept surfacing across 192 memories.; confidence: 0.83; evidence: memory/.dreams/session-corpus/2026-04-20.txt:25-25, memory/.dreams/session-corpus/2026-04-20.txt:27-27, memory/.dreams/session-corpus/2026-04-20.txt:29-29; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-30T03:00:00.996Z",
-      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-02"
       ],
       "conceptTags": [
         "heartbeat.md",
@@ -19606,17 +19629,18 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `context` kept surfacing across 190 memories.; confidence: 0.82; evidence: memory/.dreams/session-corpus/2026-04-20.txt:25-25, memory/.dreams/session-corpus/2026-04-20.txt:27-27, memory/.dreams/session-corpus/2026-04-20.txt:29-29; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-30T03:00:00.996Z",
-      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-02"
       ],
       "conceptTags": [
         "0.82",
@@ -19637,17 +19661,18 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `exists` kept surfacing across 189 memories.; confidence: 0.82; evidence: memory/.dreams/session-corpus/2026-04-20.txt:25-25, memory/.dreams/session-corpus/2026-04-20.txt:27-27, memory/.dreams/session-corpus/2026-04-20.txt:29-29; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-30T03:00:00.996Z",
-      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-02"
       ],
       "conceptTags": [
         "0.82",
@@ -19668,17 +19693,18 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `follow` kept surfacing across 189 memories.; confidence: 0.82; evidence: memory/.dreams/session-corpus/2026-04-20.txt:25-25, memory/.dreams/session-corpus/2026-04-20.txt:27-27, memory/.dreams/session-corpus/2026-04-20.txt:29-29; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-30T03:00:00.996Z",
-      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-02"
       ],
       "conceptTags": [
         "0.82",
@@ -19699,17 +19725,18 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `openclaw/workspace/heartbeat.md` kept surfacing across 189 memories.; confidence: 0.82; evidence: memory/.dreams/session-corpus/2026-04-20.txt:25-25, memory/.dreams/session-corpus/2026-04-20.txt:27-27, memory/.dreams/session-corpus/2026-04-20.txt:29-29; note:",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-30T03:00:00.996Z",
-      "lastRecalledAt": "2026-04-30T03:00:00.996Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-02"
       ],
       "conceptTags": [
         "openclaw/workspace/heartbeat.md",
@@ -20481,6 +20508,1046 @@
         "blank",
         "explicit",
         "slack"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: https://github.com/cedar2025/Xboard 审计一下这个项目，寻找安全漏洞",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "github.com/cedar2025/xboard",
+        "https",
+        "github.com",
+        "cedar2025",
+        "xboard",
+        "审计",
+        "一下",
+        "这个"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: 我先拉下来过一遍，重点盯认证、注入、越权、敏感信息处理这几类。💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "我先",
+        "拉下来",
+        "一遍",
+        "重点",
+        "认证",
+        "注入",
+        "越权",
+        "敏感"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "User: look into this, can we use it? https://github.com/mvanhorn/last30days-skill",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "look",
+        "can",
+        "use",
+        "https",
+        "github.com",
+        "mvanhorn",
+        "last30days",
+        "skill"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: I’m checking the repo now. If it’s useful, I’ll tell you exactly how and where it breaks. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "i’m",
+        "checking",
+        "repo",
+        "now",
+        "it’s",
+        "useful",
+        "i’ll",
+        "tell"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: I’ve got enough to call it. I’m doing one more sanity check on compatibility instead of trusting the README hype train. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "i’ve",
+        "got",
+        "enough",
+        "call",
+        "i’m",
+        "doing",
+        "one",
+        "sanity"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: I’m giving it one real shakeout run. Static analysis is nice; successful output is nicer. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "i’m",
+        "giving",
+        "one",
+        "real",
+        "shakeout",
+        "run",
+        "static",
+        "analysis"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: Yes - but with an asterisk the size of Texas. 💜 My take: **usable, worth testing, not worth blindly trusting**. What I verified: - It **does support OpenClaw** explicitly: `clawhub install last30days-official` - The changelog says the **OpenClaw bundle was republished",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "last30days-official",
+        "yes",
+        "but",
+        "asterisk",
+        "size",
+        "texas",
+        "take",
+        "usable"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: source config**, the value drops fast - The public repo itself hints the **OpenClaw variant is published separately**, so “clone repo and use it” is not the clean path My verdict: - **Use it as an experiment, not infrastructure** - Good for **manual research runs** - B",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "source",
+        "config",
+        "value",
+        "drops",
+        "fast",
+        "public",
+        "repo",
+        "itself"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "User: did yo test it",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "did",
+        "test"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: Yeah. I actually ran it. 💜 What I tested: - cloned the repo - checked the OpenClaw/Codex plugin layout - ran its **real CLI** locally: - `python3 skills/last30days/scripts/last30days.py OpenClaw --diagnose` - `python3 skills/last30days/scripts/last30days.py OpenClaw -",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "openclaw/codex",
+        "yeah",
+        "actually",
+        "ran",
+        "what",
+        "tested",
+        "cloned",
+        "repo"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: we’d really use it.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "we’d",
+        "really",
+        "use"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "User: Run the fam meeting sync",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "run",
+        "fam",
+        "meeting",
+        "sync"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: On it — kicking the fam sync now. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "kicking",
+        "fam",
+        "sync",
+        "now"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: Quick snag: Composio says the Slack/Notion/Sheets connections aren’t active from its side, so I’m checking the auth state before I touch anything. If it hands me fresh login links, I’ll need you to click them. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "slack/notion/sheets",
+        "quick",
+        "snag",
+        "composio",
+        "says",
+        "slack",
+        "notion",
+        "sheets"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: Blocked on auth — Composio says all three connections need to be completed before I can pull the FAM data. Click these and I’ll continue: - [Connect Slack](https://connect.composio.dev/link/lk_UtD6aXjrafPn) - [Connect Notion](https://connect.composio.dev/link/lk_enuBjr",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "blocked",
+        "auth",
+        "composio",
+        "says",
+        "all",
+        "three",
+        "connections",
+        "need"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "User: I mean meeting wrap up",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "mean",
+        "meeting",
+        "wrap"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: Got it — meeting wrap-up, not the FAM sync. Pulling the latest one now. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "wrap-up",
+        "got",
+        "meeting",
+        "wrap",
+        "not",
+        "fam",
+        "sync",
+        "pulling"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: Using the latest team meeting, not your solo impromptu call — that’s the sane default. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "latest",
+        "team",
+        "meeting",
+        "not",
+        "solo",
+        "impromptu",
+        "call",
+        "that’s"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "Assistant: Using the latest team meeting: **FAM POC Standup — April 30**. Here are the two drafts, ready to paste. 💜 ```text Companion POC - April 30 VIEW RECORDING - 60 mins (No highlights) (https://fathom.video/share/Y-qMsq9WieV1vagHZZh147GbsDjFxQsv) @channel Animation and vis",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "latest",
+        "team",
+        "meeting",
+        "fam",
+        "poc",
+        "standup",
+        "april",
+        "here"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "Assistant: During testing, Bilal pointed out that the web experience is still showing older avatar models and older animation behavior. They discussed that the latest assets and prefabs from the Animoca Mine demo branch are not being used consistently in the web flow, which is ca",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "testing",
+        "bilal",
+        "pointed",
+        "out",
+        "web",
+        "experience",
+        "still",
+        "showing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "Assistant: failures. Plan to rebuild web scene from Bilal’s Unity setup @ 57:04 (https://fathom.video/share/Y-qMsq9WieV1vagHZZh147GbsDjFxQsv?tab=summary&timestamp=3424) Bilal said the better path is to prepare a web-ready Unity scene based on the working iOS-side setup, with the",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "web-ready",
+        "ios-side",
+        "failures",
+        "plan",
+        "rebuild",
+        "web",
+        "scene",
+        "bilal’s"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "Assistant: Companion POC - April 30 Action Items @channel Bilal Animations: • Push the updated prefabs and animation assets from the Animoca Mine demo branch so the web POC uses the latest files • Create a web-ready Unity scene using the working controller setup from iOS -- inclu",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "web-ready",
+        "companion",
+        "poc",
+        "april",
+        "action",
+        "items",
+        "channel",
+        "bilal"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: with Ben so it can be wired into the web build • When reporting fixes, provide something concrete to verify the change -- build evidence, scene update, or recording where possible Ben • Pull the latest scene and asset updates from the Animoca Mine demo branch once Bila",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "ben",
+        "can",
+        "wired",
+        "web",
+        "when",
+        "reporting",
+        "fixes",
+        "provide"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "Assistant: these even more for Slack voice?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "even",
+        "slack",
+        "voice"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "User: Approved",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "approved"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "Assistant: Do you want me to post both to **#meeting-notes** now, or are you posting them yourself? 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "meeting-notes",
+        "want",
+        "post",
+        "both",
+        "meeting",
+        "now",
+        "posting",
+        "them"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "User: Except don’t post it as a code block in Slack",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "except",
+        "don’t",
+        "post",
+        "code",
+        "block",
+        "slack"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:28:28": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:28:28",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "Assistant: Yep — plain text, not fenced code. Slack code blocks look like ass for meeting notes. 💜 Here it is clean: Companion POC - April 30 VIEW RECORDING - 60 mins (No highlights) (https://fathom.video/share/Y-qMsq9WieV1vagHZZh147GbsDjFxQsv) @channel Animation and visual issu",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "yep",
+        "plain",
+        "not",
+        "fenced",
+        "code",
+        "slack",
+        "blocks",
+        "look"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:29:29": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:29:29",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 29,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "Assistant: testing, Bilal pointed out that the web experience is still showing older avatar models and older animation behavior. They discussed that the latest assets and prefabs from the Animoca Mine demo branch are not being used consistently in the web flow, which is causing d",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "testing",
+        "bilal",
+        "pointed",
+        "out",
+        "web",
+        "experience",
+        "still",
+        "showing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "Assistant: Plan to rebuild web scene from Bilal’s Unity setup @ 57:04 (https://fathom.video/share/Y-qMsq9WieV1vagHZZh147GbsDjFxQsv?tab=summary&timestamp=3424) Bilal said the better path is to prepare a web-ready Unity scene based on the working iOS-side setup, with the correct mo",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "web-ready",
+        "ios-side",
+        "plan",
+        "rebuild",
+        "web",
+        "scene",
+        "bilal’s",
+        "unity"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "Assistant: Action Items @channel Bilal Animations: • Push the updated prefabs and animation assets from the Animoca Mine demo branch so the web POC uses the latest files • Create a web-ready Unity scene using the working controller setup from iOS -- including correct animation st",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "web-ready",
+        "action",
+        "items",
+        "channel",
+        "bilal",
+        "animations",
+        "push",
+        "updated"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "Assistant: into the web build • When reporting fixes, provide something concrete to verify the change -- build evidence, scene update, or recording where possible Ben • Pull the latest scene and asset updates from the Animoca Mine demo branch once Bilal pushes them • Send Bilal t",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "web",
+        "when",
+        "reporting",
+        "fixes",
+        "provide",
+        "something",
+        "concrete",
+        "verify"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "User: No, that’s fine. Just make sure you’re using the right formatting for Slack bullets.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "that’s",
+        "fine",
+        "sure",
+        "you’re",
+        "right",
+        "formatting",
+        "slack",
+        "bullets"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "Assistant: Yep. Plain text, real line breaks, and standard bullet characters — not code blocks, not weird nested formatting that Slack mangles. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "yep",
+        "plain",
+        "real",
+        "breaks",
+        "standard",
+        "bullet",
+        "characters",
+        "not"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:35:35": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:35:35",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "User: Post it",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T03:00:01.107Z",
+      "lastRecalledAt": "2026-05-02T03:00:01.107Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "post"
       ]
     }
   }
