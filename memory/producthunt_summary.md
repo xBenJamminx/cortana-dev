@@ -1,66 +1,71 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [PeekFocus](https://www.producthunt.com/products/peekfocus)
+• [DESIGN.md by Google Stitch](https://www.producthunt.com/products/design-md-by-google-stitch)
   _<p>
-            One keystroke blurs everything behind your active window
+            Store your design system in a file AI agents can read
           </p>
-          <p_
+          <p>
+ _
 
-• [Beauty Diagram](https://www.producthunt.com/products/beauty-diagram)
+• [TrafficClaw](https://www.producthunt.com/products/trafficclaw)
   _<p>
-            Diagrams that don't look like they were auto-generated
+            Have a conversation with your SEO & analytics data 
+          </p>
+          <p>
+   _
+
+• [AnyDrop](https://www.producthunt.com/products/anydrop-3)
+  _<p>
+            AirDrop for the browser: share files, chat and sync notes
+          </p>
+          <_
+
+• [CipherLock](https://www.producthunt.com/products/cipherlock)
+  _<p>
+            Learn ciphers by breaking them
+          </p>
+          <p>
+            <a href="htt_
+
+• [HiveTerm](https://www.producthunt.com/products/hiveterm)
+  _<p>
+            One workspace for Claude, Codex, Gemini and your stack
           </p>
           <p>
 _
 
-• [Bitgrain](https://www.producthunt.com/products/bitgrain)
+• [ScreenVeil](https://www.producthunt.com/products/screenveil)
   _<p>
-            Design studio lighter than Figma & more flexible than Canva
-          </p>
-         _
-
-• [Ghosted: Smart Presence](https://www.producthunt.com/products/ghosted-smart-presence)
-  _<p>
-            Pause media or lock your screen when you step away
+            Hide what shouldn’t be seen on your computer
           </p>
           <p>
-    _
+          _
 
-• [Marx Finance](https://www.producthunt.com/products/marx-finance)
+• [nudge](https://www.producthunt.com/products/nudge-26)
   _<p>
-            AI agents debate the markets
+            Drop your tasks. AI auto-schedules your whole week.
           </p>
           <p>
-            <a href="https_
+   _
 
-• [Genspark for Word](https://www.producthunt.com/products/genspark)
+• [Radar](https://www.producthunt.com/products/radar-7)
   _<p>
-            Draft, edit, and research inside Microsoft Word with AI
+            The missing open-source Kubernetes UI
           </p>
-          <p>_
+          <p>
+            <a hr_
 
-• [Buda](https://www.producthunt.com/products/buda-2)
+• [Huddle01 VMs](https://www.producthunt.com/products/huddle01-cloud-2)
   _<p>
-            Recruit agents to run your company as a synchronous team
+            Virtual Machines for Your Agents
           </p>
-          <p_
+          <p>
+            <a href="h_
 
-• [Postiz](https://www.producthunt.com/products/postiz)
+• [Rosentic](https://www.producthunt.com/products/rosentic)
   _<p>
-            Agentic social media scheduler for agents like OpenClaw
-          </p>
-          <p>_
-
-• [Zed 1.0](https://www.producthunt.com/products/zed)
-  _<p>
-            High-performance, open source, multiplayer code editor
+            Catch when coding agents break each other before merge
           </p>
           <p>
 _
-
-• [Zush: AI File Renamer](https://www.producthunt.com/products/zush)
-  _<p>
-            Updated: docs support, BYOK, Local AI (Ollama), Windows App
-          </p>
-         _
 

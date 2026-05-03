@@ -1,5 +1,8 @@
 📺 YouTube - Latest from AI/Creator Channels
 
+• [My simple path to getting rich](https://www.youtube.com/shorts/jCyhEO3h-Ik)
+  _Ali Abdaal_
+
 • [This book called me out (I love it)](https://www.youtube.com/shorts/4iXwPD-VHyg)
   _Ali Abdaal_
 

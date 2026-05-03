@@ -1,13 +1,13 @@
-🚀 Indie Hacker Monitor (2026-05-02 12:00)
+🚀 Indie Hacker Monitor (2026-05-03 12:00)
 
 📈 Top Stories:
-  • [Hacker News] (1192⬆): Claude Code refuses requests or charges extra if your commits mention "OpenClaw"
-    https://twitter.com/theo/status/2049645973350363168
-  • [Hacker News] (641⬆): Can I disable all data collection from my vehicle?
-    https://rivian.com/support/article/can-i-disable-all-data-collection-from-my-vehicle
-  • [Hacker News] (617⬆): How Mark Klein told the EFF about Room 641A [book excerpt]
-    https://thereader.mitpress.mit.edu/the-whistleblower-who-uncovered-the-nsas-big-brother-machine/
-  • [Hacker News] (519⬆): For Linux kernel vulnerabilities, there is no heads-up to distributions
-    https://www.openwall.com/lists/oss-security/2026/04/30/10
+  • [Hacker News] (1257⬆): VS Code inserting 'Co-Authored-by Copilot' into commits regardless of usage
+    https://github.com/microsoft/vscode/pull/310226
+  • [Hacker News] (550⬆): DeepSeek V4 – almost on the frontier
+    https://simonwillison.net/2026/Apr/24/deepseek-v4/
+  • [Hacker News] (502⬆): Dav2d
+    https://code.videolan.org/videolan/dav2d
   • [Hacker News] (473⬆): Ti-84 Evo
     https://education.ti.com/en/products/calculators/graphing-calculators/ti-84-evo
+  • [Hacker News] (365⬆): This Month in Ladybird – April 2026
+    https://ladybird.org/newsletter/2026-04-30/
