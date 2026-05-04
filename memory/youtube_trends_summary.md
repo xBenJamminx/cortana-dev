@@ -1,5 +1,11 @@
 📺 YouTube - Latest from AI/Creator Channels
 
+• [My favourite book for finding love](https://www.youtube.com/shorts/d7qfcHa4LTY)
+  _Ali Abdaal_
+
+• [NVIDIA's New AI Turns One Photo Into A World That Never Breaks](https://www.youtube.com/watch?v=eCw33snvoNI)
+  _Two Minute Papers_
+
 • [My simple path to getting rich](https://www.youtube.com/shorts/jCyhEO3h-Ik)
   _Ali Abdaal_
 
@@ -8,13 +14,4 @@
 
 • [Sakana AI’s Survival Simulator Is Brilliant](https://www.youtube.com/watch?v=QzZ4VwDHAT4)
   _Two Minute Papers_
-
-• [7 Unhealthy Habits That Made Me Rich](https://www.youtube.com/watch?v=9rRvmcDpWwA)
-  _Ali Abdaal_
-
-• [3 Surprising Things I Learned As a New Dad](https://www.youtube.com/shorts/OgbLx7K5jKI)
-  _Ali Abdaal_
-
-• [GitHub is having some major issues right now…](https://www.youtube.com/watch?v=d53Zk28esmU)
-  _Fireship_
 

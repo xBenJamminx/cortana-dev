@@ -1,9 +1,19 @@
 👀 *COMPETITOR WATCH*
 
-Updated: 2026-05-03 12:00
+Updated: 2026-05-04 12:00
 
 
 📺 YOUTUBE:
+  TheAIGRID: Hermes Agent Setup With Use Cases - Hermes Agent Use Cases
+    Published: 2026-05-03
+  WorldofAI: DeepSeek V4 + Claude Code = BEST AI Coder!
+    Published: 2026-05-04
+  David Ondrej: Use Gemini now
+    Published: 2026-05-03
+  Two Minute Papers: NVIDIA's New AI Turns One Photo Into A World That Never Brea
+    Published: 2026-05-03
+  My First Million: Replit CEO Hacked His Way Into Better Grades
+    Published: 2026-05-03
   TheAIGRID: Google’s New AI  Could Change Healthcare Forever (Google Dee
     Published: 2026-05-02
   WorldofAI: Gemini 3.5 Flash In Arena! POWERFUL, Cheap, & Fast NEW AI Mo
@@ -13,14 +23,4 @@ Updated: 2026-05-03 12:00
   My First Million: 15-Year-Old Sells $1 Bills for $15 On eBay
     Published: 2026-05-02
   The AI Advantage: I Made Presentations Using Every AI. This is the Best One By
-    Published: 2026-05-02
-  Wes Roth: AI just killed Crypto...
-    Published: 2026-05-02
-  WorldofAI: Claude Sonnet 4.8 Leaked, Claude Cardinal, New Gemini 3.5 Mo
-    Published: 2026-05-02
-  David Ondrej: Hermes Agent Just 10x’d Everyone’s Claude Code
-    Published: 2026-05-01
-  David Ondrej: Hack to own the world
-    Published: 2026-05-01
-  AI Jason: Ship 5x more PRs with OpenAI Symphony
     Published: 2026-05-02

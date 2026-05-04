@@ -1,13 +1,13 @@
-🚀 Indie Hacker Monitor (2026-05-03 12:00)
+🚀 Indie Hacker Monitor (2026-05-04 12:00)
 
 📈 Top Stories:
   • [Hacker News] (1257⬆): VS Code inserting 'Co-Authored-by Copilot' into commits regardless of usage
     https://github.com/microsoft/vscode/pull/310226
+  • [Hacker News] (733⬆): Mercedes-Benz commits to bringing back physical buttons
+    https://www.drive.com.au/news/mercedes-benz-commits-to-bringing-back-phycial-buttons/
   • [Hacker News] (550⬆): DeepSeek V4 – almost on the frontier
     https://simonwillison.net/2026/Apr/24/deepseek-v4/
+  • [Hacker News] (511⬆): DeepClaude – Claude Code agent loop with DeepSeek V4 Pro
+    https://github.com/aattaran/deepclaude
   • [Hacker News] (502⬆): Dav2d
     https://code.videolan.org/videolan/dav2d
-  • [Hacker News] (473⬆): Ti-84 Evo
-    https://education.ti.com/en/products/calculators/graphing-calculators/ti-84-evo
-  • [Hacker News] (365⬆): This Month in Ladybird – April 2026
-    https://ladybird.org/newsletter/2026-04-30/
