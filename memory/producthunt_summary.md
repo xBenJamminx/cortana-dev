@@ -1,71 +1,69 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [Huddle01 VMs](https://www.producthunt.com/products/huddle01-cloud-2)
+• [Flowly](https://www.producthunt.com/products/flowly-6)
   _<p>
-            Virtual Machines for Your Agents
+            Your personal AI assistant, native to your desktop
           </p>
           <p>
-            <a href="h_
+    _
 
-• [PandaProbe](https://www.producthunt.com/products/pandaprobe)
+• [Aaavatar](https://www.producthunt.com/products/aaavatar)
   _<p>
-            open source agent engineering platform
+            Branded team headshots in one drop
           </p>
           <p>
-            <a h_
+            <a href=_
 
-• [Mockin 2.0](https://www.producthunt.com/products/mockin-for-product-designers)
+• [Dropy](https://www.producthunt.com/products/dropy-price-tracker-price-history)
   _<p>
-            Ultimate career toolkit for UX/UI & Product designers
+            Track prices on stores like Amazon, eBay, & AliExpress
+          </p>
+          <p>
+_
+
+• [Mindra](https://www.producthunt.com/products/mindra)
+  _<p>
+            Agent Teams You Can Actually Delegate To
+          </p>
+          <p>
+            <a_
+
+• [Codex Pets](https://www.producthunt.com/products/openai)
+  _<p>
+            Animated companions for your Codex workflow
+          </p>
+          <p>
+           _
+
+• [Regulus by Cumbuca](https://www.producthunt.com/products/cumbuca)
+  _<p>
+            AI chatbot trained on Brazil's Central Bank regulations
+          </p>
+          <p>_
+
+• [Panels Store](https://www.producthunt.com/products/panels-store)
+  _<p>
+            Buy DRM-free comics and read them instantly in Panels
           </p>
           <p>
  _
 
-• [Cloud Computer by Manus](https://www.producthunt.com/products/manus)
+• [Replyke V7](https://www.producthunt.com/products/replyke)
   _<p>
-            A dedicated cloud machine for bots and software
+            Pre-Modeled Infra & Client SDKs for User-Powered Products.
+          </p>
+          _
+
+• [Visitor profiles and timeline by Croct](https://www.producthunt.com/products/croct)
+  _<p>
+            Uncover the story behind every click to optimize your site
+          </p>
+          _
+
+• [Claude Code & Codex Usage Trading Cards by Rudel](https://www.producthunt.com/products/rudel)
+  _<p>
+            Get your trading card based on your CC & codex usage
           </p>
           <p>
-       _
-
-• [Filect](https://www.producthunt.com/products/filect)
-  _<p>
-            Organize Your Files With AI
-          </p>
-          <p>
-            <a href="https:_
-
-• [Microsoft Copilot Health](https://www.producthunt.com/products/copilot-health)
-  _<p>
-            Dedicated space to bring your personal health data together
-          </p>
-         _
-
-• [Breaks](https://www.producthunt.com/products/breaks)
-  _<p>
-            A quiet Pomodoro that lives in your menu bar.
-          </p>
-          <p>
-         _
-
-• [Scholé](https://www.producthunt.com/products/schole-2)
-  _<p>
-            Turn everyday work into personalized AI learning
-          </p>
-          <p>
-      _
-
-• [YouTube TV Custom Multiview](https://www.producthunt.com/products/google)
-  _<p>
-            Mix and match up to 4 live streams at once
-          </p>
-          <p>
-            _
-
-• [Feather](https://www.producthunt.com/products/feather-18)
-  _<p>
-            Photo editor with local AI
-          </p>
-          <p>
-            <a href="https:/_
+  _
 

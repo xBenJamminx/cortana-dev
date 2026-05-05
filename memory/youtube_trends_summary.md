@@ -1,5 +1,11 @@
 📺 YouTube - Latest from AI/Creator Channels
 
+• [The Dry Well Effect](https://www.youtube.com/shorts/ve_y3EI_VeA)
+  _Ali Abdaal_
+
+• [732 bytes of Python just borked every Linux machine on earth…](https://www.youtube.com/watch?v=lkifbWtxxlk)
+  _Fireship_
+
 • [My favourite book for finding love](https://www.youtube.com/shorts/d7qfcHa4LTY)
   _Ali Abdaal_
 
@@ -8,10 +14,4 @@
 
 • [My simple path to getting rich](https://www.youtube.com/shorts/jCyhEO3h-Ik)
   _Ali Abdaal_
-
-• [This book called me out (I love it)](https://www.youtube.com/shorts/4iXwPD-VHyg)
-  _Ali Abdaal_
-
-• [Sakana AI’s Survival Simulator Is Brilliant](https://www.youtube.com/watch?v=QzZ4VwDHAT4)
-  _Two Minute Papers_
 
