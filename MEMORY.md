@@ -33,3 +33,8 @@ Cortana memory. Twitter auth: ~/.bashrc. YouTube OAuth: ~/.config/youtube/. Ask 
 
 <!-- openclaw-memory-promotion:memory:memory/2026-04-27.md:202:204 -->
 - - Candidate: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently - confidence: 0.62 - evidence: memory/2026-04-27.md:172-174 [score=0.849 recalls=0 avg=0.620 source=memory/2026-04-27.md:18-20]
+
+## Promoted From Short-Term Memory (2026-05-06)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-04-29.md:266:268 -->
+- - Candidate: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently - confidence: 0.62 - evidence: memory/2026-04-27.md:202-204 [score=0.930 recalls=0 avg=0.620 source=memory/2026-04-29.md:188-190]

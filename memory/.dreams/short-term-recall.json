@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-05T03:00:01.225Z",
+  "updatedAt": "2026-05-06T03:00:01.278Z",
   "entries": {
     "memory:memory/.dreams/session-corpus/2026-04-12.txt:1:1": {
       "key": "memory:memory/.dreams/session-corpus/2026-04-12.txt:1:1",
@@ -19542,12 +19542,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `heartbeat-ok` kept surfacing across 260 memories.; confidence: 1.00; evidence: memory/.dreams/session-corpus/2026-04-20.txt:25-25, memory/.dreams/session-corpus/2026-04-20.txt:27-27, memory/.dreams/session-corpus/2026-04-20.txt:29-29; note: reflection",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-30T03:00:00.996Z",
-      "lastRecalledAt": "2026-05-05T03:00:01.225Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
       "queryHashes": [
         "312dd0eab707"
       ],
@@ -19556,7 +19556,8 @@
         "2026-05-02",
         "2026-05-03",
         "2026-05-04",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ],
       "conceptTags": [
         "heartbeat-ok",
@@ -19577,12 +19578,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 211 memories.; confidence: 0.91; evidence: memory/2026-04-16.md:126-128, memory/2026-04-18.md:208-210, memory/2026-04-19.md:381-383; note: reflection",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-30T03:00:00.996Z",
-      "lastRecalledAt": "2026-05-05T03:00:01.225Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
       "queryHashes": [
         "312dd0eab707"
       ],
@@ -19591,7 +19592,8 @@
         "2026-05-02",
         "2026-05-03",
         "2026-05-04",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ],
       "conceptTags": [
         "0.91",
@@ -19612,12 +19614,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 204 memories.; confidence: 0.88; evidence: memory/2026-04-20.md:398-401, memory/2026-04-21.md:368-371, memory/.dreams/session-corpus/2026-04-20.txt:26-26; note: reflection",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-30T03:00:00.996Z",
-      "lastRecalledAt": "2026-05-05T03:00:01.225Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
       "queryHashes": [
         "312dd0eab707"
       ],
@@ -19626,7 +19628,8 @@
         "2026-05-02",
         "2026-05-03",
         "2026-05-04",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ],
       "conceptTags": [
         "0.88",
@@ -19647,12 +19650,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `heartbeat.md` kept surfacing across 192 memories.; confidence: 0.83; evidence: memory/.dreams/session-corpus/2026-04-20.txt:25-25, memory/.dreams/session-corpus/2026-04-20.txt:27-27, memory/.dreams/session-corpus/2026-04-20.txt:29-29; note: reflection",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-30T03:00:00.996Z",
-      "lastRecalledAt": "2026-05-05T03:00:01.225Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
       "queryHashes": [
         "312dd0eab707"
       ],
@@ -19661,7 +19664,8 @@
         "2026-05-02",
         "2026-05-03",
         "2026-05-04",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ],
       "conceptTags": [
         "heartbeat.md",
@@ -19682,12 +19686,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `context` kept surfacing across 190 memories.; confidence: 0.82; evidence: memory/.dreams/session-corpus/2026-04-20.txt:25-25, memory/.dreams/session-corpus/2026-04-20.txt:27-27, memory/.dreams/session-corpus/2026-04-20.txt:29-29; note: reflection",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-30T03:00:00.996Z",
-      "lastRecalledAt": "2026-05-05T03:00:01.225Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
       "queryHashes": [
         "312dd0eab707"
       ],
@@ -19696,7 +19700,8 @@
         "2026-05-02",
         "2026-05-03",
         "2026-05-04",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ],
       "conceptTags": [
         "0.82",
@@ -19717,12 +19722,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `exists` kept surfacing across 189 memories.; confidence: 0.82; evidence: memory/.dreams/session-corpus/2026-04-20.txt:25-25, memory/.dreams/session-corpus/2026-04-20.txt:27-27, memory/.dreams/session-corpus/2026-04-20.txt:29-29; note: reflection",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-30T03:00:00.996Z",
-      "lastRecalledAt": "2026-05-05T03:00:01.225Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
       "queryHashes": [
         "312dd0eab707"
       ],
@@ -19731,7 +19736,8 @@
         "2026-05-02",
         "2026-05-03",
         "2026-05-04",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ],
       "conceptTags": [
         "0.82",
@@ -19752,12 +19758,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `follow` kept surfacing across 189 memories.; confidence: 0.82; evidence: memory/.dreams/session-corpus/2026-04-20.txt:25-25, memory/.dreams/session-corpus/2026-04-20.txt:27-27, memory/.dreams/session-corpus/2026-04-20.txt:29-29; note: reflection",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-30T03:00:00.996Z",
-      "lastRecalledAt": "2026-05-05T03:00:01.225Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
       "queryHashes": [
         "312dd0eab707"
       ],
@@ -19766,7 +19772,8 @@
         "2026-05-02",
         "2026-05-03",
         "2026-05-04",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ],
       "conceptTags": [
         "0.82",
@@ -19787,12 +19794,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `openclaw/workspace/heartbeat.md` kept surfacing across 189 memories.; confidence: 0.82; evidence: memory/.dreams/session-corpus/2026-04-20.txt:25-25, memory/.dreams/session-corpus/2026-04-20.txt:27-27, memory/.dreams/session-corpus/2026-04-20.txt:29-29; note:",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-30T03:00:00.996Z",
-      "lastRecalledAt": "2026-05-05T03:00:01.225Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
       "queryHashes": [
         "312dd0eab707"
       ],
@@ -19801,7 +19808,8 @@
         "2026-05-02",
         "2026-05-03",
         "2026-05-04",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ],
       "conceptTags": [
         "openclaw/workspace/heartbeat.md",
@@ -19822,12 +19830,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `read` kept surfacing across 189 memories.; confidence: 0.82; evidence: memory/.dreams/session-corpus/2026-04-20.txt:25-25, memory/.dreams/session-corpus/2026-04-20.txt:27-27, memory/.dreams/session-corpus/2026-04-20.txt:29-29; note: reflection",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-30T03:00:00.996Z",
-      "lastRecalledAt": "2026-05-05T03:00:01.225Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
       "queryHashes": [
         "312dd0eab707"
       ],
@@ -19835,7 +19843,8 @@
         "2026-04-30",
         "2026-05-03",
         "2026-05-04",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ],
       "conceptTags": [
         "0.82",
@@ -19851,17 +19860,17 @@
     "memory:memory/2026-04-29.md:266:268": {
       "key": "memory:memory/2026-04-29.md:266:268",
       "path": "memory/2026-04-29.md",
-      "startLine": 266,
-      "endLine": 268,
+      "startLine": 188,
+      "endLine": 190,
       "source": "memory",
-      "snippet": "Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently",
+      "snippet": "- Candidate: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: Possible Lasting Truths: User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Boot Sequence On gateway startup, run this recovery checklist silently - confidence: 0.62 - evidence: memory/2026-04-27.md:202-204",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-30T03:00:00.996Z",
-      "lastRecalledAt": "2026-05-05T03:00:01.225Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
       "queryHashes": [
         "312dd0eab707"
       ],
@@ -19869,7 +19878,8 @@
         "2026-04-30",
         "2026-05-03",
         "2026-05-04",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ],
       "conceptTags": [
         "gateway",
@@ -19880,7 +19890,8 @@
         "running",
         "boot",
         "check"
-      ]
+      ],
+      "promotedAt": "2026-05-06T03:00:01.278Z"
     },
     "memory:memory/.dreams/session-corpus/2026-04-28.txt:1:1": {
       "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:1:1",
@@ -24378,6 +24389,547 @@
         "wrap",
         "send",
         "review"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "Assistant: Good — it found today’s meeting: `143216413` on 2026-05-04. I’m letting it finish the draft and send it for your review only. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T03:00:01.278Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "good",
+        "found",
+        "today’s",
+        "meeting",
+        "i’m",
+        "letting",
+        "finish",
+        "draft"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "Assistant: Draft’s sent here for approval only. Now I’m putting a lock on `--post` so stale briefings can’t sneak through again. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T03:00:01.278Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "draft’s",
+        "sent",
+        "here",
+        "approval",
+        "only",
+        "now",
+        "i’m",
+        "putting"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "Assistant: Redid it correctly. - Generated today’s wrap for **meeting `143216413` / 2026-05-04** - Sent it to Telegram topic **2122** for your review only - Did **not** post to Slack Also patched the script: - `--post` now refuses to send if the saved briefing isn’t dated **today",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T03:00:01.278Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "redid",
+        "correctly",
+        "generated",
+        "today’s",
+        "wrap",
+        "meeting",
+        "sent",
+        "telegram"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:28:28": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:28:28",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "User: wheres all the key takewawyas (summary)?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T03:00:01.278Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "wheres",
+        "all",
+        "key",
+        "takewawyas",
+        "summary"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:29:29": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:29:29",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 29,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "Assistant: Let me check the actual draft file — if the summary got dropped, that’s the bug, not your eyes. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T03:00:01.278Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "actual",
+        "draft",
+        "summary",
+        "got",
+        "dropped",
+        "that’s"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "Assistant: Found it. The draft file has the `*Key Takeaways*` header, then nothing underneath it. So the summary extraction broke before Telegram ever saw it. I’m checking the Fathom summary payload now. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T03:00:01.278Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "found",
+        "draft",
+        "has",
+        "key",
+        "takeaways",
+        "header",
+        "nothing",
+        "underneath"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "Assistant: The parser is probably expecting the old `markdown_formatted` shape and Fathom gave it something else. I’m pulling just the summary keys instead of the whole payload so we can see what changed. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T03:00:01.278Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "markdown-formatted",
+        "parser",
+        "probably",
+        "expecting",
+        "old",
+        "shape",
+        "fathom",
+        "gave"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "Assistant: There it is: Fathom’s summary endpoint is being flaky too — just threw a 502 at me. But the real bug is still ours: the script happily sent the draft even when the Key Takeaways parse came back empty. That’s sloppy. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T03:00:01.278Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "fathom’s",
+        "summary",
+        "endpoint",
+        "flaky",
+        "too",
+        "threw",
+        "but",
+        "real"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "Assistant: Short version: it’s missing because the script sent the draft even though `sections = parse_summary(summary_raw)` came back empty. So you got Action Items only. That’s on me. I’m adding a hard stop so it refuses to send a wrap with an empty Key Takeaways section. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T03:00:01.278Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "parse-summary",
+        "summary-raw",
+        "version",
+        "it’s",
+        "missing",
+        "script",
+        "sent",
+        "draft"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "Assistant: Because the Fathom summary parse came back empty, and the script still sent the draft anyway. So the `*Key Takeaways*` header showed up with no body under it. Dumb bug. 💜 I just patched it so: - if Key Takeaways are empty - the wrap **does not send** - it errors inste",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T03:00:01.278Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "fathom",
+        "summary",
+        "parse",
+        "came",
+        "back",
+        "empty",
+        "script",
+        "still"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:35:35": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:35:35",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "User: approve",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T03:00:01.278Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "approve"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:36:36": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:36:36",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "Assistant: Posting it, but I’m not sending broken empty-summary crap. I’m repairing the Key Takeaways from today’s meeting first, then I’ll post the clean version. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T03:00:01.278Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "empty-summary",
+        "posting",
+        "but",
+        "i’m",
+        "not",
+        "sending",
+        "broken",
+        "empty"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:37:37": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:37:37",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 37,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "Assistant: Got it — Fathom’s returning markdown, and our parser was expecting the old shape. That’s the actual bug. I’m patching the parser, rebuilding today’s wrap, then posting the approved version. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T03:00:01.278Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "got",
+        "fathom’s",
+        "returning",
+        "markdown",
+        "parser",
+        "was",
+        "expecting",
+        "old"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:38:38": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:38:38",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "Assistant: Parser’s fixed now. I’m rebuilding today’s wrap with the actual Key Takeaways, checking it, then posting. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T03:00:01.278Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "parser’s",
+        "fixed",
+        "now",
+        "i’m",
+        "rebuilding",
+        "today’s",
+        "wrap",
+        "actual"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:39:39": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:39:39",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 39,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "Assistant: Clean now. Posting the fixed May 4 wrap to `#meeting-notes`. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T03:00:01.278Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "meeting-notes",
+        "clean",
+        "now",
+        "posting",
+        "fixed",
+        "may",
+        "wrap",
+        "meeting"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:40:40": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:40:40",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 40,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "Assistant: Posted the fixed one — **May 4**, with the Key Takeaways included this time. 💜 Also fixed the two actual bugs: - `--post` won’t send stale saved briefings from the wrong date - meeting wrap now parses Fathom’s newer summary format instead of dropping the summary on th",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T03:00:01.278Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "posted",
+        "fixed",
+        "one",
+        "may",
+        "key",
+        "takeaways",
+        "included",
+        "time"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:41:41": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:41:41",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 41,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "User: approved",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T03:00:01.278Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "approved"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:42:42": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:42:42",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 42,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "Assistant: Already posted — the fixed May 4 version went up after I repaired the summary parser. 💜",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T03:00:01.278Z",
+      "lastRecalledAt": "2026-05-06T03:00:01.278Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "already",
+        "posted",
+        "fixed",
+        "may",
+        "version",
+        "went",
+        "repaired",
+        "summary"
       ]
     }
   }
