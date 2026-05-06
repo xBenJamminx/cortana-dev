@@ -1,69 +1,70 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [Flowly](https://www.producthunt.com/products/flowly-6)
+• [Dina](https://www.producthunt.com/products/dina)
   _<p>
-            Your personal AI assistant, native to your desktop
-          </p>
-          <p>
-    _
-
-• [Aaavatar](https://www.producthunt.com/products/aaavatar)
-  _<p>
-            Branded team headshots in one drop
-          </p>
-          <p>
-            <a href=_
-
-• [Dropy](https://www.producthunt.com/products/dropy-price-tracker-price-history)
-  _<p>
-            Track prices on stores like Amazon, eBay, & AliExpress
-          </p>
-          <p>
-_
-
-• [Mindra](https://www.producthunt.com/products/mindra)
-  _<p>
-            Agent Teams You Can Actually Delegate To
+            From screen to polished video in minutes
           </p>
           <p>
             <a_
 
-• [Codex Pets](https://www.producthunt.com/products/openai)
+• [Flowstep 1.0](https://www.producthunt.com/products/flowstep)
   _<p>
-            Animated companions for your Codex workflow
+            AI design engineer. Design & ship real UI.
           </p>
           <p>
-           _
+            _
 
-• [Regulus by Cumbuca](https://www.producthunt.com/products/cumbuca)
+• [Velo 2.0](https://www.producthunt.com/products/velo-4)
   _<p>
-            AI chatbot trained on Brazil's Central Bank regulations
+            Turn your voice and screen into shareable videos instantly.
           </p>
-          <p>_
+         _
 
-• [Panels Store](https://www.producthunt.com/products/panels-store)
+• [Kilo Code v7 for VS Code](https://www.producthunt.com/products/kilocode)
   _<p>
-            Buy DRM-free comics and read them instantly in Panels
+            Parallel agents, diff reviewer, and multi-model comparisons
           </p>
-          <p>
- _
+         _
 
-• [Replyke V7](https://www.producthunt.com/products/replyke)
+• [Blaze](https://www.producthunt.com/products/blaze-your-new-calendar)
   _<p>
-            Pre-Modeled Infra & Client SDKs for User-Powered Products.
-          </p>
-          _
-
-• [Visitor profiles and timeline by Croct](https://www.producthunt.com/products/croct)
-  _<p>
-            Uncover the story behind every click to optimize your site
-          </p>
-          _
-
-• [Claude Code & Codex Usage Trading Cards by Rudel](https://www.producthunt.com/products/rudel)
-  _<p>
-            Get your trading card based on your CC & codex usage
+            The AI-powered calendar that plans your day for you.
           </p>
           <p>
   _
+
+• [Steam Controller](https://www.producthunt.com/products/steam-machine)
+  _<p>
+            Steam Input, now in controller form
+          </p>
+          <p>
+            <a href_
+
+• [Airbyte Agents](https://www.producthunt.com/products/airbyte-agents)
+  _<p>
+            The context layer for production-grade AI agent
+          </p>
+          <p>
+       _
+
+• [PaceBar](https://www.producthunt.com/products/pacebar)
+  _<p>
+            A quiet pace instrument for your Mac
+          </p>
+          <p>
+            <a hre_
+
+• [Unity AI](https://www.producthunt.com/products/unity)
+  _<p>
+            AI agents built directly into Unity workflows
+          </p>
+          <p>
+         _
+
+• [PanicMode](https://www.producthunt.com/products/panicmode)
+  _<p>
+            Protect your screen in public with one shortcut
+          </p>
+          <p>
+       _
 

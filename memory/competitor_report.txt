@@ -1,9 +1,19 @@
 👀 *COMPETITOR WATCH*
 
-Updated: 2026-05-05 12:00
+Updated: 2026-05-06 12:00
 
 
 📺 YOUTUBE:
+  TheAIGRID: How To Use Pomelli - Google Pomelli Tutorial -
+    Published: 2026-05-05
+  Wes Roth: Claude BROKE Wall Street Overnight...
+    Published: 2026-05-06
+  WorldofAI: Gemini Omni, Gemini 3.2 Flash, a 12M Context Window Model, C
+    Published: 2026-05-06
+  David Ondrej: Philosophers different approach
+    Published: 2026-05-05
+  My First Million: How to Spot the Next Winning Product
+    Published: 2026-05-05
   TheAIGRID: AI Helped Spark a Quantum Breakthrough. "The World 'Is Not P
     Published: 2026-05-04
   WorldofAI: Open Design - Open Source Claude Design! Fully Free AI Desig
@@ -14,13 +24,3 @@ Updated: 2026-05-05 12:00
     Published: 2026-05-05
   My First Million: How I sold my company to Pepsi for $2B | Rohan Oza
     Published: 2026-05-05
-  Greg Isenberg: Stanford Leadership Forum 2026: Conversation with Ken Griffi
-    Published: 2026-05-04
-  Greg Isenberg: Power to Truth: How Big Tech Is Rewriting Reality and Weaken
-    Published: 2026-05-04
-  Fireship: 732 bytes of Python just borked every Linux machine on earth
-    Published: 2026-05-04
-  TheAIGRID: Hermes Agent Setup With Use Cases - Hermes Agent Use Cases
-    Published: 2026-05-03
-  WorldofAI: DeepSeek V4 + Claude Code = BEST AI Coder!
-    Published: 2026-05-04

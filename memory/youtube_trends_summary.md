@@ -1,5 +1,8 @@
 📺 YouTube - Latest from AI/Creator Channels
 
+• [3 Paths to a Rich Retirement](https://www.youtube.com/shorts/Or6yvefovGU)
+  _Ali Abdaal_
+
 • [The Dry Well Effect](https://www.youtube.com/shorts/ve_y3EI_VeA)
   _Ali Abdaal_
 
@@ -11,7 +14,4 @@
 
 • [NVIDIA's New AI Turns One Photo Into A World That Never Breaks](https://www.youtube.com/watch?v=eCw33snvoNI)
   _Two Minute Papers_
-
-• [My simple path to getting rich](https://www.youtube.com/shorts/jCyhEO3h-Ik)
-  _Ali Abdaal_
 
