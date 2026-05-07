@@ -1,70 +1,69 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [Dina](https://www.producthunt.com/products/dina)
+• [WOZCODE](https://www.producthunt.com/products/wozcode)
   _<p>
-            From screen to polished video in minutes
+            Cut Claude Code costs by up to 50%
+          </p>
+          <p>
+            <a href=_
+
+• [damnlines.com](https://www.producthunt.com/products/damnlines-com)
+  _<p>
+            No one likes waiting in a damn line. 
+          </p>
+          <p>
+            <a hr_
+
+• [Contrario](https://www.producthunt.com/products/contrario)
+  _<p>
+            The AI recruiting platform powered by expert recruiters
+          </p>
+          <p>_
+
+• [Shadow 2.0](https://www.producthunt.com/products/shadow-6)
+  _<p>
+            The work your meetings create, done before they end
+          </p>
+          <p>
+   _
+
+• [DevAlly](https://www.producthunt.com/products/devally)
+  _<p>
+            AI powered accessibility compliance for teams who ship fast 
+          </p>
+        _
+
+• [GetDynasty](https://www.producthunt.com/products/getdynasty)
+  _<p>
+            Exit tax-free using Trusts. For startup founders.
+          </p>
+          <p>
+     _
+
+• [Gas City 1.0](https://www.producthunt.com/products/gas-city)
+  _<p>
+            build your own software factory
+          </p>
+          <p>
+            <a href="ht_
+
+• [Spotit](https://www.producthunt.com/products/spotit-3)
+  _<p>
+            Your cursor's tutor. For every Mac app. 
           </p>
           <p>
             <a_
 
-• [Flowstep 1.0](https://www.producthunt.com/products/flowstep)
+• [Alumni Founder](https://www.producthunt.com/products/alumni-founder)
   _<p>
-            AI design engineer. Design & ship real UI.
+            The tool that maps founder networks for any company
           </p>
           <p>
-            _
+   _
 
-• [Velo 2.0](https://www.producthunt.com/products/velo-4)
+• [Open Finance MCP](https://www.producthunt.com/products/open-finance-mcp)
   _<p>
-            Turn your voice and screen into shareable videos instantly.
+            Access your bank data in ChatGPT & Claude via Open Finance
           </p>
-         _
-
-• [Kilo Code v7 for VS Code](https://www.producthunt.com/products/kilocode)
-  _<p>
-            Parallel agents, diff reviewer, and multi-model comparisons
-          </p>
-         _
-
-• [Blaze](https://www.producthunt.com/products/blaze-your-new-calendar)
-  _<p>
-            The AI-powered calendar that plans your day for you.
-          </p>
-          <p>
-  _
-
-• [Steam Controller](https://www.producthunt.com/products/steam-machine)
-  _<p>
-            Steam Input, now in controller form
-          </p>
-          <p>
-            <a href_
-
-• [Airbyte Agents](https://www.producthunt.com/products/airbyte-agents)
-  _<p>
-            The context layer for production-grade AI agent
-          </p>
-          <p>
-       _
-
-• [PaceBar](https://www.producthunt.com/products/pacebar)
-  _<p>
-            A quiet pace instrument for your Mac
-          </p>
-          <p>
-            <a hre_
-
-• [Unity AI](https://www.producthunt.com/products/unity)
-  _<p>
-            AI agents built directly into Unity workflows
-          </p>
-          <p>
-         _
-
-• [PanicMode](https://www.producthunt.com/products/panicmode)
-  _<p>
-            Protect your screen in public with one shortcut
-          </p>
-          <p>
-       _
+          _
 

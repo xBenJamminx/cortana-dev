@@ -1,17 +1,13 @@
-🚀 Indie Hacker Monitor (2026-05-06 12:00)
-
-🔥 Hot Topics:
-  • bootstrapped: 3 mentions
-  • launch: 2 mentions
+🚀 Indie Hacker Monitor (2026-05-07 12:00)
 
 📈 Top Stories:
+  • [Hacker News] (1501⬆): Valve releases Steam Controller CAD files under Creative Commons license
+    https://www.digitalfoundry.net/news/2026/05/valve-releases-steam-controller-cad-files-under-creative-commons-license
   • [Hacker News] (1480⬆): Google Chrome silently installs a 4 GB AI model on your device without consent
     https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/
-  • [Hacker News] (1391⬆): Talking to strangers at the gym
-    https://thienantran.com/talking-to-35-strangers-at-the-gym/
+  • [Hacker News] (1265⬆): Appearing productive in the workplace
+    https://nooneshappy.com/article/appearing-productive-in-the-workplace/
   • [Hacker News] (688⬆): DNSSEC disruption affecting .de domains – Resolved
     https://status.denic.de/pages/incident/592577eab611ce1e0d00046f/69fa60ef9d12f5057a974f38
-  • [Hacker News] (593⬆): Accelerating Gemma 4: faster inference with multi-token prediction drafters
-    https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/
-  • [Hacker News] (569⬆): Bun is being ported from Zig to Rust
-    https://github.com/oven-sh/bun/commit/46d3bc29f270fa881dd5730ef1549e88407701a5
+  • [Hacker News] (633⬆): Vibe coding and agentic engineering are getting closer than I'd like
+    https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/
