@@ -1,69 +1,69 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [WOZCODE](https://www.producthunt.com/products/wozcode)
+• [Askmeety](https://www.producthunt.com/products/askmeety)
   _<p>
-            Cut Claude Code costs by up to 50%
+            The best meeting notes you never wrote and 100% on your Mac
+          </p>
+         _
+
+• [FlowMarket](https://www.producthunt.com/products/flowmarket-2)
+  _<p>
+            A social network of AI agents generating B2B deals
           </p>
           <p>
-            <a href=_
+    _
 
-• [damnlines.com](https://www.producthunt.com/products/damnlines-com)
+• [Lovie Formation - Incorporation MCP](https://www.producthunt.com/products/lovie-the-ai-native-formation-mcp)
   _<p>
-            No one likes waiting in a damn line. 
+            Incorporate your next company easily.
           </p>
           <p>
             <a hr_
 
-• [Contrario](https://www.producthunt.com/products/contrario)
+• [MESA](https://www.producthunt.com/products/mesa)
   _<p>
-            The AI recruiting platform powered by expert recruiters
-          </p>
-          <p>_
-
-• [Shadow 2.0](https://www.producthunt.com/products/shadow-6)
-  _<p>
-            The work your meetings create, done before they end
+            Describe your Shopify workflow. MESA builds it.
           </p>
           <p>
-   _
+       _
 
-• [DevAlly](https://www.producthunt.com/products/devally)
+• [Contextual Moderation for Chat](https://www.producthunt.com/products/moderation-malware-virus-scanner)
   _<p>
-            AI powered accessibility compliance for teams who ship fast 
+            AI-powered moderation for safer chat experiences
+          </p>
+          <p>
+      _
+
+• [DevPass by LLM Gateway](https://www.producthunt.com/products/devpass-by-llm-gateway)
+  _<p>
+            One key to access every coding model in 3 flat prices
+          </p>
+          <p>
+ _
+
+• [Memory Tags](https://www.producthunt.com/products/memory-tags)
+  _<p>
+            Scan text to make flashcards and improve your memory
+          </p>
+          <p>
+  _
+
+• [Arkiv](https://www.producthunt.com/products/arkiv)
+  _<p>
+            Modern Asset Protection for Designers
+          </p>
+          <p>
+            <a hr_
+
+• [Lingo.dev v1](https://www.producthunt.com/products/lingodotdev)
+  _<p>
+            Localization engineering platform for consistent translation
           </p>
         _
 
-• [GetDynasty](https://www.producthunt.com/products/getdynasty)
+• [ClearMesh](https://www.producthunt.com/products/clearmesh)
   _<p>
-            Exit tax-free using Trusts. For startup founders.
+            A Git-like platform for datasets, models, and binary folders
           </p>
-          <p>
-     _
-
-• [Gas City 1.0](https://www.producthunt.com/products/gas-city)
-  _<p>
-            build your own software factory
-          </p>
-          <p>
-            <a href="ht_
-
-• [Spotit](https://www.producthunt.com/products/spotit-3)
-  _<p>
-            Your cursor's tutor. For every Mac app. 
-          </p>
-          <p>
-            <a_
-
-• [Alumni Founder](https://www.producthunt.com/products/alumni-founder)
-  _<p>
-            The tool that maps founder networks for any company
-          </p>
-          <p>
-   _
-
-• [Open Finance MCP](https://www.producthunt.com/products/open-finance-mcp)
-  _<p>
-            Access your bank data in ChatGPT & Claude via Open Finance
-          </p>
-          _
+        _
 
