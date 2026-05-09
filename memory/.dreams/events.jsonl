@@ -286,3 +286,5 @@
 {"type":"memory.dream.completed","timestamp":"2026-05-08T03:00:01.349Z","phase":"deep","reportPath":"/root/.openclaw/workspace/memory/dreaming/deep/2026-05-08.md","lineCount":3,"storageMode":"separate"}
 {"type":"memory.recall.recorded","timestamp":"2026-05-09T03:00:01.286Z","query":"__dreaming_sessions__:2026-05-08","resultCount":2,"results":[{"path":"memory/.dreams/session-corpus/2026-05-08.txt","startLine":1,"endLine":1,"score":0.58},{"path":"memory/.dreams/session-corpus/2026-05-08.txt","startLine":2,"endLine":2,"score":0.58}]}
 {"type":"memory.dream.completed","timestamp":"2026-05-09T03:00:01.286Z","phase":"light","reportPath":"/root/.openclaw/workspace/memory/dreaming/light/2026-05-09.md","lineCount":120,"storageMode":"separate"}
+{"type":"memory.dream.completed","timestamp":"2026-05-09T03:00:01.286Z","phase":"rem","reportPath":"/root/.openclaw/workspace/memory/dreaming/rem/2026-05-09.md","lineCount":7,"storageMode":"separate"}
+{"type":"memory.dream.completed","timestamp":"2026-05-09T03:00:01.286Z","phase":"deep","reportPath":"/root/.openclaw/workspace/memory/dreaming/deep/2026-05-09.md","lineCount":2,"storageMode":"separate"}
