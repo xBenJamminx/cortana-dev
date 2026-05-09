@@ -1,17 +1,17 @@
-🚀 Indie Hacker Monitor (2026-05-08 12:00)
+🚀 Indie Hacker Monitor (2026-05-09 12:00)
 
 🔥 Hot Topics:
   • bootstrapped: 4 mentions
   • launch: 2 mentions
 
 📈 Top Stories:
-  • [Hacker News] (1501⬆): Valve releases Steam Controller CAD files under Creative Commons license
-    https://www.digitalfoundry.net/news/2026/05/valve-releases-steam-controller-cad-files-under-creative-commons-license
-  • [Hacker News] (1265⬆): Appearing productive in the workplace
-    https://nooneshappy.com/article/appearing-productive-in-the-workplace/
+  • [Hacker News] (1118⬆): Google broke reCAPTCHA for de-googled Android users
+    https://reclaimthenet.org/google-broke-recaptcha-for-de-googled-android-users
   • [Hacker News] (861⬆): Cloudflare to cut about 20% workforce
     https://www.reuters.com/business/world-at-work/cloudflare-cut-over-1100-jobs-2026-05-07/
   • [Hacker News] (715⬆): Canvas is down as ShinyHunters threatens to leak schools’ data
     https://www.theverge.com/tech/926458/canvas-shinyhunters-breach
   • [Hacker News] (697⬆): AI slop is killing online communities
     https://rmoff.net/2026/05/06/ai-slop-is-killing-online-communities/
+  • [Hacker News] (685⬆): David Attenborough's 100th Birthday
+    https://www.bbc.com/news/articles/cp3pww9g0p5o
