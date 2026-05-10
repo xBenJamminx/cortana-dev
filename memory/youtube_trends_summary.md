@@ -1,5 +1,17 @@
 📺 YouTube - Latest from AI/Creator Channels
 
+• [My favourite book for making millions](https://www.youtube.com/shorts/SSs7i4DW19g)
+  _Ali Abdaal_
+
+• [Why VLC never sold out, even when it almost died: Sacrificing $30+ million dollars | Lex Fridman](https://www.youtube.com/watch?v=6Kxh8mN_6aw)
+  _Matt Wolfe_
+
+• [The impossible task of testing FFmpeg code | Lex Fridman Podcast](https://www.youtube.com/watch?v=IHFb6Op9aKo)
+  _Matt Wolfe_
+
+• ["Talk is cheap. Send patches" - FFmpeg | Lex Fridman Podcast](https://www.youtube.com/watch?v=6SH-AKxaIZE)
+  _Matt Wolfe_
+
 • [OpenClaw is Insane. Here's the Safe Way to Use It #ad](https://www.youtube.com/shorts/j8jE4UhhMuo)
   _Ali Abdaal_
 
@@ -17,16 +29,4 @@
 
 • [OpenAI's GPT 5.5 Instant: The Good, The Bad And The Insane](https://www.youtube.com/watch?v=4nQnhjimB4Y)
   _Two Minute Papers_
-
-• [The Simplest Way to Make $10k/month - Case Study](https://www.youtube.com/watch?v=CFBEih785-I)
-  _Ali Abdaal_
-
-• [My $100K App: What I Learned](https://www.youtube.com/shorts/GYBVh5zlV50)
-  _Ali Abdaal_
-
-• [FFmpeg drama on Twitter/X | Lex Fridman Podcast](https://www.youtube.com/watch?v=aoXjoQH_u_w)
-  _Matt Wolfe_
-
-• [How CIA spied on people using fake VLC video player | Lex Fridman Podcast](https://www.youtube.com/watch?v=R6kWsZYTZpw)
-  _Matt Wolfe_
 

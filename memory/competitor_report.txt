@@ -1,26 +1,26 @@
 👀 *COMPETITOR WATCH*
 
-Updated: 2026-05-09 12:00
+Updated: 2026-05-10 12:00
 
 
 📺 YOUTUBE:
+  TheAIGRID: How To Use Claude For Microsoft Word (Microsoft Word Claude 
+    Published: 2026-05-09
+  WorldofAI: Hermes Agent NEW Desktop App - The 24/7 Self-Evolving AI Age
+    Published: 2026-05-10
+  David Ondrej: Geopolitical LLMs current state
+    Published: 2026-05-10
+  AI Jason: I used /goals command wrong... Here are all tips & mistakes
+    Published: 2026-05-09
+  My First Million: How OpenClaw Got Acquired by OpenAI
+    Published: 2026-05-09
+  Matt Wolfe: The impossible task of testing FFmpeg code | Lex Fridman Pod
+    Published: 2026-05-10
+  Matt Wolfe: "Talk is cheap. Send patches" - FFmpeg | Lex Fridman Podcast
+    Published: 2026-05-10
   TheAIGRID: OpenAI Is Losing The AI War
     Published: 2026-05-08
   Wes Roth: we JUST figured out how AI thinks
     Published: 2026-05-09
   WorldofAI: Codex Super App, OpenAI Chaos Drama, Gemini 3.2 Pro In Arena
-    Published: 2026-05-09
-  David Ondrej: Edit Anything with Codex, Here’s How
-    Published: 2026-05-09
-  David Ondrej: Manifest “HARD” present moment into bright future
-    Published: 2026-05-09
-  Two Minute Papers: OpenAI's GPT 5.5 Instant: The Good, The Bad And The Insane
-    Published: 2026-05-08
-  Greg Isenberg: Daniela Amodei, Co-Founder and President of Anthropic: Build
-    Published: 2026-05-08
-  The AI Advantage: New ChatGPT Model & Memory Features Explained (AI News You C
-    Published: 2026-05-08
-  Matt Wolfe: How hackers steal your data | Lex Fridman Podcast
-    Published: 2026-05-09
-  Matt Wolfe: FFmpeg vs Google: Twitter drama explained by FFmpeg develope
     Published: 2026-05-09

@@ -1,69 +1,69 @@
 🚀 Product Hunt Top Launches (last 24h)
 
-• [SuperIsland](https://www.producthunt.com/products/superisland)
+• [nocal 4](https://www.producthunt.com/products/nocal)
   _<p>
-            Dynamic Island for macOS with Extensions
-          </p>
-          <p>
-            <a_
-
-• [Google Health](https://www.producthunt.com/products/google)
-  _<p>
-            A new relationship with your health
-          </p>
-          <p>
-            <a href_
-
-• [Flare](https://www.producthunt.com/products/flare-9)
-  _<p>
-            AI-Native Voice-First Social App for GenZ
+            The calendar that thinks like a workspace
           </p>
           <p>
             <_
 
-• [GlowIsland](https://www.producthunt.com/products/glowisland-evolve-your-mac-s-notch)
+• [BugDrop](https://www.producthunt.com/products/bugdrop-2)
   _<p>
-            Turn your Mac notch into an interactive utility ribbon.
-          </p>
-          <p>_
-
-• [Operations](https://www.producthunt.com/products/operations)
-  _<p>
-            Turn every new tab into your personal dashboard
-          </p>
-          <p>
-       _
-
-• [BNA Code](https://www.producthunt.com/products/bna-code)
-  _<p>
-            CLI agent that builds full-stack mobile apps from terminal
-          </p>
-          _
-
-• [Photobomb](https://www.producthunt.com/products/photobomb)
-  _<p>
-            Card against humanity but for your camera roll
-          </p>
-          <p>
-        _
-
-• [MarkUp](https://www.producthunt.com/products/markup-chrome-extension-launch)
-  _<p>
-            Edit websites through AI with visual prompts
-          </p>
-          <p>
-          _
-
-• [Sendly](https://www.producthunt.com/products/sendly-2)
-  _<p>
-            SMS For AI Agents & Developers
-          </p>
-          <p>
-            <a href="htt_
-
-• [KodHau](https://www.producthunt.com/products/kodhau-senior-context-for-ai-agents)
-  _<p>
-            Stop your AI from breaking prod-give it your team decisions
+            In-app feedback that creates GitHub Issues with screenshots
           </p>
          _
+
+• [Staff.rip](https://www.producthunt.com/products/staff-rip)
+  _<p>
+            Describe a code change in plain language and ship it
+          </p>
+          <p>
+  _
+
+• [MolmoAct 2](https://www.producthunt.com/products/allen-institute-of-artificial-intelligence)
+  _<p>
+            Open robotics model that reasons in 3D before acting
+          </p>
+          <p>
+  _
+
+• [Glowix](https://www.producthunt.com/products/glowix)
+  _<p>
+            Keep your Mac display awake exactly when you need it
+          </p>
+          <p>
+  _
+
+• [ClawTick](https://www.producthunt.com/products/clawtick)
+  _<p>
+            Cron jobs for AI agents w/ one command, zero infrastructure
+          </p>
+         _
+
+• [Ghost](https://www.producthunt.com/products/ghost-8)
+  _<p>
+            Open-source, self-hosted game servers
+          </p>
+          <p>
+            <a hr_
+
+• [Nylas CLI](https://www.producthunt.com/products/nylas)
+  _<p>
+            Email, calendar, and contacts for AI agents
+          </p>
+          <p>
+           _
+
+• [LumiChats Offline](https://www.producthunt.com/products/lumichats-offline)
+  _<p>
+            Your AI, fully offline with Zero data collection & 100% free
+          </p>
+        _
+
+• [Keel](https://www.producthunt.com/products/keel-3)
+  _<p>
+            An AI assistant whose memory belongs to you
+          </p>
+          <p>
+           _
 
