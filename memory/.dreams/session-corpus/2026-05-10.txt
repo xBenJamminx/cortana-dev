@@ -1,0 +1,12 @@
+[main/sessions/12608117-9a0a-4cb5-bd12-715772062f97.jsonl#L188] User: 你看一下.bond 域名还有没有 3 位一下字母的可用前缀
+[main/sessions/12608117-9a0a-4cb5-bd12-715772062f97.jsonl#L190] Assistant: 我查一下 .bond 里 3 位及以下前缀还有没有活口，别让注册商薅你时间。💜
+[main/sessions/12608117-9a0a-4cb5-bd12-715772062f97.jsonl#L200] Assistant: 还在扫，我抓个结果就回你。💜
+[main/sessions/12608117-9a0a-4cb5-bd12-715772062f97.jsonl#L202] Assistant: 有，而且不少。💜 我刚查了 **.bond 的纯字母前缀（a-z）**： - **1 位字母**：**0 个可用**（全没了） - **2 位字母**：**276 个可用** 随手给你一批 **2 位可用** 的： `ab ah ak an ap av ay bc bk bp bu bx cb ce cp cq da db dd df dh di dl dn dp dq ds dt dv dy ea ef eg ei ej ek el en eo er eu ew ey ez fb fc fd fe ff fk fl fn fp 
+[main/sessions/12608117-9a0a-4cb5-bd12-715772062f97.jsonl#L211] User: 有没有什么著名网页使用这个域名
+[main/sessions/12608117-9a0a-4cb5-bd12-715772062f97.jsonl#L213] Assistant: 我去翻一下，看看 `.bond` 有没有真出圈的网站，不听注册商吹牛。💜
+[main/sessions/12608117-9a0a-4cb5-bd12-715772062f97.jsonl#L231] Assistant: 有，但**没什么大众级“著名网页”**，更多是小众品牌或加密项目在用。💜 我查到几个还算像样的例子： - **[ape.bond](https://www.ape.bond)** — 一个比较显眼的 **DeFi / Web3** 项目站 - **[cargo.bond](https://cargo.bond)** — 物流运输公司官网 - **[shortdot.bond](https://shortdot.bond/bond)** — `.bond` 这个后缀自己的注册局宣传页 结论很直接： - **有真实使用** - **但
+[main/sessions/12608117-9a0a-4cb5-bd12-715772062f97.jsonl#L232] User: .cyou 呢？
+[main/sessions/12608117-9a0a-4cb5-bd12-715772062f97.jsonl#L234] Assistant: 我看下 `.cyou`，这个后缀比 `.bond` 还更野一点。💜
+[main/sessions/12608117-9a0a-4cb5-bd12-715772062f97.jsonl#L244] Assistant: `.cyou` 比 `.bond` **更有“活人网站”味儿**，但档次也更杂，甚至有点鱼龙混杂。💜 我查到几个像样的例子： - **[it.cyou](https://it.cyou)** — 做临时隧道/端口暴露，挺像正经独立项目 - **[mk49.cyou](https://mk49.cyou)** — 一个网页游戏项目 - **[educationaltools.cyou](https://educationaltools.cyou)** — 教育练习站 但问题也很明显： - `.cyou` 上**杂站、低质站、灰产味域
+[main/sessions/12608117-9a0a-4cb5-bd12-715772062f97.jsonl#L245] User: 你查一下单字母 .ai有哪些著名域名
+[main/sessions/12608117-9a0a-4cb5-bd12-715772062f97.jsonl#L247] Assistant: 我查一圈，给你挑真有名的，不报菜名。💜
