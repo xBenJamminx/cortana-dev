@@ -9,6 +9,7 @@ ENV_FILE = '/root/.openclaw/.env'
 LAST_RUN_FILE = '/root/.openclaw/workspace/logs/morning-scan-last-run.txt'
 BRIEFING_FILE = '/root/.openclaw/workspace/logs/morning-scan-briefing.txt'
 UPDATES_CHANNEL = 'C0AL8LLGULQ'
+CHANNEL_PING = '<!channel>'
 CHANNELS = {
     'meeting-notes': 'C09J78SH2FM',
     'updates': 'C0AL8LLGULQ',
@@ -69,10 +70,8 @@ def text_to_blocks(text):
         line = raw.strip()
 
         if not line:
-            # Emit a spacer between content blocks, but never two in a row
-            spacer = {'type': 'section', 'text': {'type': 'mrkdwn', 'text': ' '}}
-            if blocks and blocks[-1] != spacer:
-                blocks.append(spacer)
+            # Slack already adds spacing between blocks. Turning blank lines into
+            # explicit spacer blocks creates ugly double-gaps in the posted scan.
             i += 1
             continue
 
@@ -165,16 +164,27 @@ def text_to_blocks(text):
     return blocks
 
 
-def slack_post(channel, text, env):
-    # Post via Composio using Ben's connected account (posts as Ben, not as bot)
+def place_ping_later(text, ping):
+    if not ping:
+        return text
+    parts = text.split('\n\n', 1)
+    if len(parts) == 2:
+        intro, rest = parts
+        return f'{intro}\n\n{ping}\n\n{rest}'
+    return f'{text}\n\n{ping}'
+
+
+def slack_post(channel, text, env, ping=CHANNEL_PING):
+    # Post via Composio using Ben's connected account (posts as Ben, not as bot).
+    # Keep the channel ping in the message, but place it after the opening line so
+    # the post doesn't start with an alert token.
     api_key = env['COMPOSIO_API_KEY']
-    blocks = text_to_blocks(text)
+    message = place_ping_later(text, ping)
     payload = json.dumps({
         'connectedAccountId': 'b02db1f4-9d22-416c-bb78-bdb8c1bc6bb4',
         'input': {
             'channel': channel,
-            'text': text,  # fallback for notifications
-            'blocks': json.dumps(blocks)
+            'text': message
         }
     }).encode()
     req = urllib.request.Request(
@@ -288,10 +298,10 @@ Needs Attention tiers:
 - HIGH: serious issue that needs to be resolved today
 - WATCH: known issue, not urgent, but needs to be tracked -- use this as the default if severity is unclear
 
-Format using this exact syntax (it gets converted to Slack Block Kit):
+Format using this exact syntax for Slack text:
 - *bold* for standalone line headers and person names ONLY -- never inside a bullet or sub-bullet
-- Top-level bullets: "- item" (plain text only, no bold markers inside)
-- Sub-bullets for grouping related details: "  - sub-item" (exactly 2 spaces then dash, plain text only)
+- Top-level bullets: "- item" (markdown dash, plain text only)
+- Sub-bullets for grouping related details: "  - sub-item" (two spaces then dash, plain text only)
 - Numbered list for Today's Focus only
 
 Output:
@@ -330,6 +340,12 @@ Good morning team -- here's where we stand.
 
     print('Calling OpenRouter for summarization...', flush=True)
     briefing = openrouter_complete(prompt, or_key)
+
+    import re
+    briefing = re.sub(r'\n{3,}', '\n\n', briefing.strip())
+    # Defensive: if model emits bullet characters, convert back to markdown so text_to_blocks can render them as Block Kit lists
+    briefing = re.sub(r'(?m)^◦ ', '  - ', briefing)
+    briefing = re.sub(r'(?m)^• ', '- ', briefing)
 
     with open(BRIEFING_FILE, 'w') as f:
         f.write(briefing)

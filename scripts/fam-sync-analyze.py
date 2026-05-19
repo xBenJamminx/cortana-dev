@@ -24,9 +24,9 @@ CHANNELS = {
     'testing': 'C08MV404LVD',
 }
 CHANNEL_LIMITS = {
-    'meeting-notes': 5,
-    'updates': 30,
-    'testing': 30,
+    'meeting-notes': 20,
+    'updates': 60,
+    'testing': 60,
 }
 
 TEAM = {
@@ -54,9 +54,10 @@ def get_cutoff():
     try:
         ts = float(open(LAST_RUN_FILE).read().strip())
         age_days = (time.time() - ts) / 86400
-        if age_days > 7:
-            return time.time() - (7 * 86400), 'LAST 7 DAYS'
-        return ts, f'SINCE LAST SYNC ({int(age_days * 24)}h ago)'
+        if age_days > 14:
+            return time.time() - (14 * 86400), 'LAST 14 DAYS'
+        label = f'LAST {int(age_days)} DAYS' if age_days >= 1 else f'SINCE LAST SYNC ({int(age_days * 24)}h ago)'
+        return ts, label
     except:
         return time.time() - (7 * 86400), 'LAST 7 DAYS'
 
@@ -88,7 +89,9 @@ def pull_slack(env, cutoff):
         channel_msgs = []
         for m in msgs:
             msg_ts = float(m.get('ts', 0))
-            if m.get('bot_id'):
+            # Skip pure bot messages (no user = automated noise)
+            # Keep messages with both user+bot_id — those are Composio-proxied user posts (meeting notes, etc.)
+            if m.get('bot_id') and not m.get('user'):
                 continue
 
             # Include top-level message if after cutoff
@@ -208,9 +211,9 @@ def pull_qa_sheet(env):
 
 def openrouter_complete(prompt, api_key):
     payload = json.dumps({
-        'model': 'google/gemini-3.1-pro-preview',
+        'model': 'google/gemini-2.5-flash',
         'messages': [{'role': 'user', 'content': prompt}],
-        'max_tokens': 16000,
+        'max_tokens': 65000,
     }).encode()
     req = urllib.request.Request(
         'https://openrouter.ai/api/v1/chat/completions',
@@ -287,10 +290,10 @@ Not Started, In Progress, In Testing, Done
 (No other values. "Fixed", "Resolved", "Complete" etc. all map to Done.)
 
 --- STATUS MAPPING ---
-"done / completed / merged / finished / fixed / resolved" → Done
-"in testing / being tested / shipped in build" → In Testing (shipped ≠ done)
-Bug reported → In Progress (add new bug detail to evidence)
-"continue working / in progress" → no change, do NOT emit a status update
+"done / completed / merged / finished / fixed / resolved / closed / pushed / deployed / shipped / submitted / sent / confirmed working" → Done
+"in testing / being tested / shipped in build / build X is out / added to build / available in build / ready to test / can test now" → In Testing (shipped ≠ done — it just moved to testing)
+Bug reported / issue identified / broken / not working / regressed → In Progress (if currently Not Started or Done, this is a regression)
+"continue working / in progress / working on" → no change, do NOT emit a status update
 No evidence → no change, do NOT emit a status update
 If new_status == current_status → OMIT from status_updates entirely
 
@@ -306,9 +309,10 @@ Nice to have → Low
 3. New tasks = items mentioned in Slack that do NOT exist in Notion (after semantic matching).
 4. Status updates = existing Notion tasks whose status should change based on Slack evidence.
 5. Dev-priority tasks (Steven/Bilal work) should also be added/updated in QA Sheet. Ben/Cassandra tasks stay in Notion only.
-6. NEW TASK criteria (ALL must be true): (a) someone explicitly commits to doing something new, OR a specific bug/feature is named that doesn't exist yet in Notion; (b) there is a clear owner; (c) it does NOT already exist in Notion semantically. Do NOT create tasks from: priority checklists / wish lists, general feedback or complaints, questions about when something will be done, status updates on existing work, or things that are already captured as Notion tasks.
+6. NEW TASK criteria: (a) someone commits to doing something, OR a specific bug/feature/deliverable is named; (b) there is a clear owner; (c) it does NOT already exist in Notion semantically. Be INCLUSIVE — if someone says "I'll do X", "I need to fix X", "working on X", "I'm adding X" and X is not in Notion, create the task. Do NOT create tasks from: vague complaints with no owner, general questions, acknowledgements, praise, or meeting scheduling.
 7. THREAD REPLIES ARE AUTHORITATIVE: If a bug or issue is raised in a message, but a [thread] reply on that same conversation marks it as fixed/done/resolved — do NOT create a new task. Instead treat it as a Done status update to the matching existing Notion task (or ignore it entirely if it doesn't exist in Notion yet and was resolved immediately). The final state of a thread is what matters, not the initial report.
-8. SILENTLY IGNORE: scheduling updates, meeting times, attendance, acknowledgements ("great!", "thanks!", "super!"), status questions, praise, general observations, Cassandra's priority checklists (these are reminders of existing tasks, not new ones), informational messages with no explicit action commitment.
+8. SILENTLY IGNORE: scheduling updates, meeting times, attendance, pure acknowledgements ("great!", "thanks!"), praise with no action, general observations with no owner and no commitment.
+9. MEETING NOTES (#meeting-notes) ARE HIGH PRIORITY: If action items appear in meeting notes, extract ALL of them as new tasks unless they already exist in Notion semantically. Meeting note action items always have clear owners and are explicit commitments — treat them as the most reliable source.
 9. AMBIGUOUS = only items where you genuinely cannot decide: (a) is this a new task or an update to an existing one? (b) who owns it? (c) does Slack evidence clearly say done/testing but you're not sure which Notion task it maps to? Aim for 0–5 ambiguous items max. When in doubt, make the call rather than surfacing it.
 
 Output a JSON object only — no commentary before or after:
