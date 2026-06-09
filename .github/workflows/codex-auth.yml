@@ -1,0 +1,44 @@
+name: Codex Auth Token Exchange
+
+on:
+  workflow_dispatch:
+    inputs:
+      code:
+        description: 'OAuth authorization code from callback URL'
+        required: true
+      verifier:
+        description: 'PKCE code verifier'
+        required: true
+
+jobs:
+  exchange:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Exchange code for tokens
+        run: |
+          RESPONSE=$(curl -s -X POST https://auth.openai.com/oauth/token \
+            -H "Content-Type: application/x-www-form-urlencoded" \
+            -H "Origin: http://localhost:1455" \
+            -H "Referer: http://localhost:1455/auth/callback" \
+            --data-urlencode "grant_type=authorization_code" \
+            --data-urlencode "code=${{ github.event.inputs.code }}" \
+            --data-urlencode "redirect_uri=http://localhost:1455/auth/callback" \
+            --data-urlencode "client_id=app_EMoamEEZ73f0CkXaXp7hrann" \
+            --data-urlencode "code_verifier=${{ github.event.inputs.verifier }}")
+          echo "RESPONSE=$RESPONSE"
+          # Check for success
+          echo "$RESPONSE" | python3 -c "
+import sys, json
+data = json.load(sys.stdin)
+if 'access_token' in data:
+    print('SUCCESS')
+    # Print safe subset (no full access token in logs)
+    print('token_type:', data.get('token_type'))
+    print('expires_in:', data.get('expires_in'))
+    print('has_refresh_token:', bool(data.get('refresh_token')))
+    # Print full JSON for extraction (will be in logs)
+    print('TOKENS_JSON:', json.dumps(data))
+else:
+    print('FAILED:', data)
+    sys.exit(1)
+"
