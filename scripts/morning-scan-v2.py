@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Morning Scan v2 - Direct Slack pull + OpenRouter summarization + Slack post
+Morning Scan v2 - Direct Slack pull + Codex CLI summarization + Slack post
 No agent framework needed. Fast, reliable, correct attribution.
 """
-import urllib.request, json, time, subprocess, sys
+import urllib.request, json, time, subprocess, sys, os, tempfile
 
 ENV_FILE = '/root/.openclaw/.env'
 LAST_RUN_FILE = '/root/.openclaw/workspace/logs/morning-scan-last-run.txt'
@@ -204,23 +204,23 @@ def slack_post(channel, text, env, ping=CHANNEL_PING):
             raise Exception('Composio post failed: ' + str(result))
         return result
 
-def openrouter_complete(prompt, api_key):
-    payload = json.dumps({
-        'model': 'google/gemini-2.5-flash',
-        'messages': [{'role': 'user', 'content': prompt}],
-        'max_tokens': 8000,
-    }).encode()
-    req = urllib.request.Request(
-        'https://openrouter.ai/api/v1/chat/completions',
-        data=payload,
-        headers={
-            'Authorization': 'Bearer ' + api_key,
-            'Content-Type': 'application/json',
-        }
-    )
-    with urllib.request.urlopen(req, timeout=120) as r:
-        result = json.loads(r.read())
-        return result['choices'][0]['message']['content']
+def codex_complete(prompt):
+    fd, outfile = tempfile.mkstemp(suffix='.txt')
+    os.close(fd)
+    try:
+        result = subprocess.run(
+            ['codex', 'exec', '--ephemeral', '-o', outfile, '-'],
+            input=prompt, capture_output=True, text=True, timeout=180
+        )
+        if result.returncode != 0:
+            raise Exception(f'Codex failed: {result.stderr[:500]}')
+        with open(outfile) as f:
+            return f.read().strip()
+    finally:
+        try:
+            os.unlink(outfile)
+        except Exception:
+            pass
 
 def get_cutoff():
     try:
@@ -244,7 +244,6 @@ def resolve_mentions(text, user_map):
 def main():
     env = load_env()
     slack_token = env['SLACK_BOT_TOKEN']
-    or_key = env['OPENROUTER_API_KEY']
 
     cutoff, period_label = get_cutoff()
     print(f'Pulling since {time.ctime(cutoff)} ({period_label})', flush=True)
@@ -338,8 +337,8 @@ Good morning team -- here's where we stand.
 2. [Person] -- [second priority]
 3. [Person] -- [third priority]"""
 
-    print('Calling OpenRouter for summarization...', flush=True)
-    briefing = openrouter_complete(prompt, or_key)
+    print('Calling Codex for summarization...', flush=True)
+    briefing = codex_complete(prompt)
 
     import re
     briefing = re.sub(r'\n{3,}', '\n\n', briefing.strip())

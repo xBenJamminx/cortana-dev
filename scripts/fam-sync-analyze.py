@@ -4,7 +4,7 @@ FAM Sync Analyze — Phase 1 of 2
 Pulls Slack + Notion + QA Sheet, generates a delta list, and sends to Ben for approval.
 Does NOT write anything. Run fam-sync-write.py after Ben approves.
 """
-import json, re, subprocess, sys, time, urllib.request, urllib.parse
+import json, os, re, subprocess, sys, tempfile, time, urllib.request, urllib.parse
 
 ENV_FILE = '/root/.openclaw/.env'
 DELTA_FILE = '/root/.openclaw/workspace/logs/fam-sync-delta.json'
@@ -209,23 +209,23 @@ def pull_qa_sheet(env):
         sheet_data.append(entry)
     return sheet_data
 
-def openrouter_complete(prompt, api_key):
-    payload = json.dumps({
-        'model': 'google/gemini-2.5-flash',
-        'messages': [{'role': 'user', 'content': prompt}],
-        'max_tokens': 65000,
-    }).encode()
-    req = urllib.request.Request(
-        'https://openrouter.ai/api/v1/chat/completions',
-        data=payload,
-        headers={
-            'Authorization': 'Bearer ' + api_key,
-            'Content-Type': 'application/json',
-        }
-    )
-    with urllib.request.urlopen(req, timeout=120) as r:
-        result = json.loads(r.read())
-        return result['choices'][0]['message']['content']
+def codex_complete(prompt):
+    fd, outfile = tempfile.mkstemp(suffix='.txt')
+    os.close(fd)
+    try:
+        result = subprocess.run(
+            ['codex', 'exec', '--ephemeral', '-o', outfile, '-'],
+            input=prompt, capture_output=True, text=True, timeout=180
+        )
+        if result.returncode != 0:
+            raise Exception(f'Codex failed: {result.stderr[:500]}')
+        with open(outfile) as f:
+            return f.read().strip()
+    finally:
+        try:
+            os.unlink(outfile)
+        except Exception:
+            pass
 
 def main():
     env = load_env()
@@ -349,8 +349,8 @@ Output a JSON object only — no commentary before or after:
   ]
 }}"""
 
-    print('Analyzing with Gemini...', flush=True)
-    raw = openrouter_complete(prompt, env['OPENROUTER_API_KEY'])
+    print('Analyzing with Codex...', flush=True)
+    raw = codex_complete(prompt)
 
     # Save raw for debugging
     raw_file = DELTA_FILE.replace('fam-sync-delta.json', 'fam-sync-raw-last.txt')

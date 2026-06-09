@@ -5,7 +5,7 @@ Meeting Wrap v1 - Fathom meeting -> Telegram review for Ben
 - Action Items: extracted and grouped from transcript via Gemini
 - Sends full briefing to Telegram topic 2122 for Ben to review and paste into Slack himself.
 """
-import ast, json, re, subprocess, sys, urllib.request
+import ast, json, os, re, subprocess, sys, tempfile, urllib.request
 
 ENV_FILE = '/root/.openclaw/.env'
 BRIEFING_FILE = '/root/.openclaw/workspace/logs/meeting-wrap-briefing.txt'
@@ -32,20 +32,23 @@ def fathom(args, timeout=60):
         raise Exception(f'Fathom error: {result.stderr}')
     return result.stdout.strip()
 
-def openrouter_complete(prompt, api_key):
-    payload = json.dumps({
-        'model': 'google/gemini-2.5-flash',
-        'messages': [{'role': 'user', 'content': prompt}],
-        'max_tokens': 4000,
-    }).encode()
-    req = urllib.request.Request(
-        'https://openrouter.ai/api/v1/chat/completions',
-        data=payload,
-        headers={'Authorization': 'Bearer ' + api_key, 'Content-Type': 'application/json'}
-    )
-    with urllib.request.urlopen(req, timeout=120) as r:
-        result = json.loads(r.read())
-        return result['choices'][0]['message']['content']
+def codex_complete(prompt):
+    fd, outfile = tempfile.mkstemp(suffix='.txt')
+    os.close(fd)
+    try:
+        result = subprocess.run(
+            ['codex', 'exec', '--ephemeral', '-o', outfile, '-'],
+            input=prompt, capture_output=True, text=True, timeout=180
+        )
+        if result.returncode != 0:
+            raise Exception(f'Codex failed: {result.stderr[:500]}')
+        with open(outfile) as f:
+            return f.read().strip()
+    finally:
+        try:
+            os.unlink(outfile)
+        except Exception:
+            pass
 
 def parse_inline(text):
     """Parse *bold*, [text](url), and @channel/@here into rich_text elements."""
@@ -362,8 +365,6 @@ def main():
         return
 
     env = load_env()
-    or_key = env['OPENROUTER_API_KEY']
-
     # Get meeting ID from arg or use today's latest
     today_output = ''
     if len(sys.argv) > 1:
@@ -451,7 +452,7 @@ Output format (no intro, no outro -- just the action items):
 - [action item]"""
 
     print('Extracting action items from transcript...', flush=True)
-    action_items = openrouter_complete(action_items_prompt, or_key)
+    action_items = codex_complete(action_items_prompt)
     # Normalize **double** to *single* bold
     action_items = re.sub(r'\*\*(.+?)\*\*', r'*\1*', action_items)
     # Remove N/A sections
