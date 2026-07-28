@@ -1,39 +1,59 @@
-# Morning Scan — Setup
+# Morning Scan — Hermes Agent Setup
 
 ## What it does
-Every weekday at 9am Eastern, Cortana automatically:
-1. Pulls last 24h from #meeting-notes, #updates, #testing
-2. Checks Notion board state (In Progress, In Testing, Top Priority counts)
-3. Posts a concise daily briefing to #updates so the whole team sees it
-4. Sends Ben a TG ping if anything needs attention
 
-## Deploy to server
+Every weekday at 9:00 AM Eastern, Cortana:
+
+1. Pulls the last 24 hours from the configured Slack channels.
+2. Posts a concise daily briefing to the team updates channel.
+3. Notifies Ben through the configured Hermes messaging destination.
+
+The workflow prompt is [`morning-scan-prompt.md`](morning-scan-prompt.md). The protected production implementation is `morning-scan-v2.py`; do not edit or deploy it casually.
+
+## Prerequisites
 
 ```bash
-# 1. Copy files to server
-scp scripts/morning-scan-prompt.md cortana:/root/.openclaw/workspace/scripts/
-scp scripts/morning-scan.sh cortana:/root/.openclaw/workspace/scripts/
-
-# 2. SSH in and make executable
-ssh cortana
-chmod +x /root/.openclaw/workspace/scripts/morning-scan.sh
-
-# 3. Add cron job (Mon-Fri at 9am Eastern = 13:00 UTC during EDT)
-crontab -e
-# Add this line:
-# 0 13 * * 1-5 /root/.openclaw/workspace/scripts/morning-scan.sh >> /var/log/morning-scan.log 2>&1
-
-# 4. Test it manually first
-bash /root/.openclaw/workspace/scripts/morning-scan.sh
+hermes gateway setup
+hermes gateway status
+hermes cron status
 ```
 
-## Tuning
-- **Time**: Currently `0 13` (13:00 UTC = 9am EDT). Change to `0 14` in November when EST resumes.
-- **Days**: `1-5` = Mon-Fri. Change to `*` for every day.
-- **Briefing format**: Edit `morning-scan-prompt.md` to change what gets posted.
-- **TG topic**: Currently posts to Topic 31 (Business). Change in `morning-scan.sh`.
+- Configure provider and messaging settings in `~/.hermes/config.yaml`.
+- Set `timezone: America/New_York` in `~/.hermes/config.yaml` so the cron expression follows Eastern time and daylight-saving transitions.
+- Keep Composio and integration credentials in `~/.hermes/.env` or their secure credential stores.
+- Verify the Slack connected-account and channel IDs in the target environment. Do not copy example IDs blindly.
+- Set `terminal.cwd` to the deployed `cortana-dev` checkout.
 
-## Dependencies
-- `spawn_task.sh` must exist at `/root/.openclaw/workspace/core/utils/spawn_task.sh`
-- Composio Slack credential must be active (connectedAccountId: `b02db1f4-...`)
-- Composio Notion credential needs to be re-established (currently dead as of 2026-03-24)
+## Create the schedule
+
+Use the Hermes `cronjob` tool to create a durable agent run. Recommended job definition:
+
+- **Name:** `cortana-morning-scan`
+- **Schedule:** `0 9 * * 1-5`
+- **Timezone:** inherited from the top-level `timezone: America/New_York` Hermes configuration
+- **Prompt:** Read `scripts/morning-scan-prompt.md`, execute it completely, and deliver the result through the destinations configured in that prompt.
+- **Working directory:** the deployed `cortana-dev` checkout
+
+Hermes cron accepts cron expressions and natural schedules. Creating this as an agent cron job avoids the old `crontab` plus session-spawn-wrapper architecture and handles daylight saving time when the timezone is configured.
+
+After creation:
+
+```bash
+hermes cron list
+hermes cron status
+```
+
+Trigger the job once with the `cronjob` tool or `hermes cron run <job-id>`, inspect the actual Slack/Telegram delivery, and only then leave the schedule enabled.
+
+## Delegation and long-running work
+
+- The scheduled run itself is durable because it is a Hermes cron job.
+- Inside the run, use `delegate_task` only for isolated reasoning-heavy subtasks.
+- Use `terminal(background=true, notify_on_complete=true)` for bounded long-running commands.
+- Do not use `spawn_task.sh`, `sessions_spawn`, detached shell agents, or OpenClaw session targets.
+
+## Legacy wrapper
+
+`morning-scan.sh` is now a non-executing migration notice. It remains only to fail safely for hosts with stale references. Remove old system `crontab` entries after the Hermes cron job is verified.
+
+Authoritative documentation: <https://hermes-agent.nousresearch.com/docs/user-guide/features/cron>

@@ -1,16 +1,14 @@
-version: "3.8"
-
 services:
   workspace-os:
     build: .
     ports:
       - "3000:3000"
     volumes:
-      - /root/clawd:/workspace:rw
+      - ${CORTANA_WORKSPACE:-..}:/workspace:rw
       - ./workspace.db:/app/backend/workspace.db
     environment:
       - WORKSPACE_ROOT=/workspace
     env_file:
       - .env
     restart: unless-stopped
-    network_mode: host  # To access clawdbot on localhost
+    network_mode: host  # Host-local integrations; some legacy routes still need OpenClaw compatibility.

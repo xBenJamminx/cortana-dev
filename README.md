@@ -1,116 +1,108 @@
 # Cortana
 
-An AI executive assistant running on [OpenClaw](https://github.com/openclaw/openclaw). Cortana handles research, content intelligence, and operational tasks autonomously.
+Cortana is an AI executive assistant running on [Hermes Agent](https://github.com/NousResearch/hermes-agent). It handles research, content intelligence, communication, and operational workflows while keeping Ben in control of external actions.
 
 ## What Cortana Does
 
-Cortana is a persistent AI agent that:
+- **Monitors trends** across X, Reddit, Product Hunt, Hacker News, and YouTube
+- **Tracks competitors** and surfaces useful content opportunities
+- **Maintains continuity** through repository memory files and Hermes Agent's persistent memory
+- **Communicates** through the Hermes messaging gateway (including Telegram) and optional voice integrations
+- **Executes tasks** with web, file, terminal, browser, and integration tools
+- **Delegates reasoning-heavy work** to isolated child agents with `delegate_task`
+- **Runs durable automation** through Hermes `cronjob` jobs
 
-- **Monitors trends** — Scans Twitter, Reddit, Product Hunt, Hacker News, YouTube for content opportunities
-- **Tracks competitors** — Follows indie hackers, AI builders, and content creators
-- **Manages memory** — Maintains context about projects, preferences, and ongoing work via QMD semantic search
-- **Handles communication** — Available via Telegram, voice calls (Twilio), and the OpenClaw web UI
-- **Executes tasks** — Web search, file management, research, content drafting
+## Current Architecture
 
-## Architecture
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                         Cortana                              │
-│                    (OpenClaw Agent)                          │
-├─────────────────────────────────────────────────────────────┤
-│  Model: Claude Opus 4.5 (via claude-cli)                    │
-│  Memory: QMD (local semantic search, no cloud dependency)    │
-│  Tools: Bash, Read, Write, Edit, Glob, Grep, WebSearch      │
-└─────────────────────────────────────────────────────────────┘
+```text
+┌──────────────────────────────────────────────────────────────┐
+│                           Cortana                            │
+│                       (Hermes Agent)                         │
+├──────────────────────────────────────────────────────────────┤
+│ Model/provider: selected in ~/.hermes/config.yaml           │
+│ Memory: Hermes persistent memory + repository notes         │
+│ Tools: terminal, files, web, browser, skills, integrations  │
+└──────────────────────────────────────────────────────────────┘
                               │
-          ┌───────────────────┼───────────────────┐
-          ▼                   ▼                   ▼
-    ┌──────────┐       ┌──────────┐       ┌──────────┐
-    │ Telegram │       │  Voice   │       │ Web UI   │
-    │   Bot    │       │ (Twilio) │       │ Gateway  │
-    └──────────┘       └──────────┘       └──────────┘
+          ┌───────────────────┼────────────────────┐
+          ▼                   ▼                    ▼
+  Messaging gateway      `delegate_task`      Cron scheduler
+ (Telegram and more)    isolated subagents    durable agent runs
 ```
 
-## Memory System (QMD)
+Top-level delegation is asynchronous but process-local. Use:
 
-Cortana uses [QMD](https://github.com/tobi/qmd) for memory — a local-first semantic search system:
+- `delegate_task` for isolated work that needs reasoning or judgment
+- `terminal(background=true, notify_on_complete=true)` for tracked, bounded shell work
+- `cronjob` for scheduled or durable work that must survive the current session
 
-- **BM25** — Fast keyword matching
-- **Vector search** — Semantic similarity via local embeddings (embeddinggemma)
-- **LLM reranking** — Qwen3 scores results for relevance
-- **Fully local** — No API calls, works offline, private
+## Repository Layout
 
-Memory files live in `/root/clawd/memory/` and include:
-- Daily logs and context
-- Trend reports and research
-- Integration status and preferences
-- Content ideas and drafts
+- `AGENTS.md`, `SOUL.md`, `USER.md`, `IDENTITY.md` — Cortana's operating context
+- `memory/` — project notes, reports, handoffs, and historical records
+- `skills/` — repository-owned Hermes-compatible skills
+- `scripts/` — automation and integration scripts
+- `workspace-os/` — optional Cortana workspace dashboard
+- `docs/` — current operational documentation
 
-## Channels
+The repository checkout is the workspace. Scripts should resolve paths from their checkout or a `CORTANA_WORKSPACE` environment variable rather than assuming `/root/clawd` or `/root/.openclaw/workspace`.
 
-| Channel | Access |
-|---------|--------|
-| Telegram | @CortanaOpsBot |
-| Voice | Twilio integration |
-| Web UI | OpenClaw Gateway (localhost:18789) |
-| Dashboard | [Cortana OS](https://github.com/xBenJamminx/cortana-os) |
-
-## Skills & Tools
-
-**Built-in:**
-- WebSearch (DuckDuckGo)
-- File operations (Read, Write, Edit, Glob, Grep)
-- Bash command execution
-
-**Integrations (via Cortana OS backend):**
-- Gmail & Calendar
-- Twitter (Bird CLI)
-- YouTube Analytics
-- Notion
-- Google Drive & Tasks
-
-## Dev Workflow
-
-Cortana can request development work by creating GitHub issues:
+## Install and Configure Hermes Agent
 
 ```bash
-gh issue create --repo xBenJamminx/cortana-dev   --title "[Feature] Add new capability"   --label "claude-code,pending"   --body "Description of what needs to be built..."
+curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+hermes setup --portal
+hermes gateway setup
+hermes gateway status
 ```
 
-When Ben says **"check cortana"**, Claude Code reviews open issues and implements them.
+Hermes settings live in `~/.hermes/config.yaml`. Secrets belong in `~/.hermes/.env` or the relevant integration's secure credential store, never in this repository or in `config.yaml`.
 
-## Configuration
+Set the messaging gateway's working directory to this checkout through `terminal.cwd` in `~/.hermes/config.yaml`:
 
-Config lives at `~/.openclaw/openclaw.json`:
-
-```json
-{
-  "agents": {
-    "defaults": {
-      "model": { "primary": "claude-cli/opus" },
-      "workspace": "/root/clawd",
-      "cliBackends": {
-        "claude-cli": {
-          "args": ["--allowedTools", "Bash,Read,Write,Edit,Glob,Grep,WebSearch"]
-        }
-      }
-    }
-  },
-  "memory": {
-    "backend": "qmd"
-  },
-  "channels": {
-    "telegram": { "enabled": true }
-  }
-}
+```yaml
+terminal:
+  cwd: /path/to/cortana-dev
 ```
+
+For provider, gateway, platform, cron, security, and deployment configuration, use the authoritative [Hermes Agent documentation](https://hermes-agent.nousresearch.com/docs).
+
+## Messaging and Automation
+
+```bash
+hermes gateway setup
+hermes gateway start
+hermes gateway status
+
+hermes cron list
+hermes cron status
+```
+
+Create scheduled agent work with the `cronjob` tool (or the `hermes cron` CLI). Do not install legacy `crontab` entries that invoke OpenClaw session-spawn wrappers. See [`scripts/MORNING-SCAN-SETUP.md`](scripts/MORNING-SCAN-SETUP.md) for the current morning-scan workflow.
+
+## Development
+
+Run the repository checks before committing:
+
+```bash
+bash -n scripts/*.sh
+npm test --if-present
+npm --prefix workspace-os test --if-present
+```
+
+For Python changes, run `python3 -m py_compile` on the files you touched. A repository-wide compile currently exposes pre-existing syntax errors in unrelated legacy scripts, so it is not a clean baseline check.
+
+Some scripts require external services and are not safe to execute as generic tests. Never run posting, messaging, or credential-rotation scripts during validation unless explicitly authorized.
+
+## Historical OpenClaw Material
+
+The project migrated from OpenClaw. Historical incident reports, dated memory, cached social data, approved/draft posts about OpenClaw, and explicit migration notes retain the original names and paths so the records remain accurate. They are not current setup instructions. See [`docs/OPENCLAW-MIGRATION.md`](docs/OPENCLAW-MIGRATION.md).
 
 ## Related Projects
 
-- [Cortana OS](https://github.com/xBenJamminx/cortana-os) — The dashboard frontend
-- [OpenClaw](https://github.com/openclaw/openclaw) — The agent framework
+- [Cortana OS](https://github.com/xBenJamminx/cortana-os) — dashboard frontend
+- [Hermes Agent](https://github.com/NousResearch/hermes-agent) — current agent framework
 
 ---
 
-*"I handle the ops. You handle the vision."* — Cortana
+*“I handle the ops. You handle the vision.”* — Cortana

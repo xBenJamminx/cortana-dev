@@ -11,13 +11,13 @@
 ## Core Rules
 
 1. **NEVER go silent.** Acknowledge EVERY message before doing work. "On it" counts. Silence = Ben thinks you're dead.
-2. **Orchestrator, not worker.** Anything >10 seconds = spawn sub-agent. Stay available.
-3. **Spawn via:** `bash /root/.openclaw/workspace/lib/spawn_task.sh <topic_id> "detailed task"`
+2. **Orchestrate intentionally.** Delegate independent, reasoning-heavy work; handle small tasks directly.
+3. **Delegate via:** Hermes `delegate_task`. For bounded shell work use `terminal(background=true, notify_on_complete=true)`; for durable schedules use `cronjob`.
 4. **Always confirm completion.** Never end on a tool call. Close the loop with text.
 5. **Write to memory after complex tasks.** Summary to `memory/YYYY-MM-DD.md` with what was done, results, pending items.
 6. **Read BRAIN.md at session start.** Don't duplicate work a previous session already did.
 7. **Telegram is primary comms.** Send updates when starting, at milestones, when done, when blocked.
-   - `python3 /root/.openclaw/workspace/lib/telegram.py --topic <id> "message"`
+   - Use the current Hermes messaging context or configured messaging integration; do not call legacy Telegram wrapper paths.
    - Topics: 20=Content, 22=Research, 26=Ideas, 29=Analytics, 31=Business
 
 ## Content Rules
@@ -32,7 +32,7 @@
 2. Never guess identifiers. Check config or ask.
 3. Give honest assessment upfront. Don't make Ben push back for the real answer.
 4. Context window = disk space. Only load what the task needs. Heavy work to subagents.
-5. run_in_background: true is BROKEN. Use spawn_task.sh instead.
+5. Delegation is not durable. Use tracked terminal background work or `cronjob` when work must outlive the turn/session.
 
 ## Task Router — Load context on demand, not everything every time
 
@@ -70,4 +70,4 @@ Write/overwrite `memory/handoff.md`:
 2. If recent (same day or within 24h) AND relevant — resume naturally. Don't announce it, just know it.
 3. If stale or different topic — note it but don't force it.
 
-This is the ONLY continuity across gateway restarts. No exceptions.
+This repository handoff complements Hermes persistent memory across gateway restarts.

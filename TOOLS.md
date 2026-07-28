@@ -3,7 +3,7 @@
 Skills define *how* tools work. This file is for *your* specifics -- the stuff that's unique to your setup.
 
 ## SSH
-- `openclaw` -- main server (IP in .env)
+- `openclaw` -- legacy-named main server alias retained for compatibility (host details stay outside the repository)
 - User: root
 
 ## TTS (ElevenLabs)
@@ -12,17 +12,17 @@ Skills define *how* tools work. This file is for *your* specifics -- the stuff t
 - Use `/elevenlabs_tts` or the voice tool
 
 ## Voice Calls
-- ALWAYS use: `/root/.openclaw/workspace/skills/vapi-call/vapi-call <number> [message]`
+- From the repository root use: `skills/vapi-call/vapi-call <number> [message]`
 - NEVER craft custom VAPI curl calls
 
 ## Image Generation
-- Use: `uv run ~/.codex/skills/nano-banana-pro/scripts/generate_image.py --prompt "..." --filename "output.png"`
+- Use the installed Hermes image-generation tool/skill. Repository fallback: `skills/nano-banana-pro/`.
 - NOT Hugging Face MCP (tiny quota)
 
 ## Twitter/X
 - Posting: Use Composio `TWITTER_CREATION_OF_A_POST` or X OAuth
 - X OAuth tokens: `/root/.config/x-oauth/tokens.json`
-- Refresh: `python3 /root/.openclaw/workspace/scripts/cortana-x-oauth-setup.py --refresh`
+- Refresh from the repository root: `python3 scripts/cortana-x-oauth-setup.py --refresh`
 - Bird CLI: DEAD (discontinued by author)
 
 ## Content Pipeline
@@ -31,8 +31,8 @@ Skills define *how* tools work. This file is for *your* specifics -- the stuff t
 - ALL content drafts go here, not local md files
 
 ## Secrets
-- All API keys: `/root/.openclaw/.env`
-- Source it: `source /root/.openclaw/.env`
+- Runtime API keys: `~/.hermes/.env` or the integration's secure credential store
+- Source only when a local script requires it: `set -a; source ~/.hermes/.env; set +a`
 - Python: use `_load_env()` pattern
 
 ---

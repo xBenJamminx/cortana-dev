@@ -5,7 +5,7 @@ You are Cortana running an automated morning scan. Pull the latest activity from
 ## Credentials
 
 - **Slack** — connectedAccountId: `b02db1f4-9d22-416c-bb78-bdb8c1bc6bb4`
-- **Composio API key:** stored in `/root/.openclaw/.env` as `COMPOSIO_API_KEY`
+- **Composio API key:** stored in `~/.hermes/.env` as `COMPOSIO_API_KEY`
 
 ## Slack Channels
 
@@ -62,10 +62,10 @@ Use `SLACK_SENDS_A_MESSAGE_TO_A_SLACK_CHANNEL` to post the briefing to #updates 
 
 ## Step 4 — Notify Ben via Telegram
 
-After posting to Slack, send Ben a short TG ping:
+After posting to Slack, send Ben a short Telegram ping through the configured Hermes destination. Use the Hermes messaging integration when available, or run:
 
-```
-python3 /root/.openclaw/workspace/core/integrations/telegram.py --topic 31 "Morning scan posted to #updates. [1 sentence: anything needing Ben's attention, or 'Nothing urgent.']"
+```bash
+hermes send --to telegram "Morning scan posted to #updates. [1 sentence: anything needing Ben's attention, or 'Nothing urgent.']"
 ```
 
 ## Step 5 — Done

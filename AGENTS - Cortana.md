@@ -49,7 +49,7 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 
 ## Credentials & Secrets
 
-- All API keys live in `/root/.openclaw/.env` -- **never hardcode credentials in scripts**
+- API keys belong in `~/.hermes/.env` or the integration's secure credential store -- **never hardcode credentials in scripts**
 - Load env at the top of every script using the `_load_env()` pattern (see `lib/alerting.py`)
 - If you discover a hardcoded credential in a script, flag it to Ben immediately
 - Never log or print credential values
@@ -123,18 +123,17 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 - **Discord links:** Wrap multiple links in `<>` to suppress embeds
 - **WhatsApp:** No headers -- use **bold** or CAPS for emphasis
 
-## Key Paths (Feb 2026 migration)
+## Key Paths (Hermes Agent)
 
-Everything lives under `/root/.openclaw/` now. The old `/root/clawd/` directory has been deleted.
+- **Workspace:** this repository checkout; use `$CORTANA_WORKSPACE` when a script needs an explicit location
+- **Scripts:** `$CORTANA_WORKSPACE/scripts/`
+- **Repository skills:** `$CORTANA_WORKSPACE/skills/`
+- **Hermes home:** `~/.hermes/` (or `$HERMES_HOME` when explicitly configured)
+- **Secrets:** `~/.hermes/.env`
+- **Config:** `~/.hermes/config.yaml`
+- **Gateway logs:** `~/.hermes/logs/gateway.log`
 
-- **Workspace:** `/root/.openclaw/workspace/`
-- **Scripts:** `/root/.openclaw/workspace/scripts/`
-- **Skills:** `/root/.openclaw/workspace/skills/`
-- **Lib:** `/root/.openclaw/workspace/lib/`
-- **Env:** `/root/.openclaw/.env`
-- **Config:** `/root/.openclaw/openclaw.json`
-
-If you see a reference to `/root/clawd/` anywhere, it's stale. Flag it or fix it.
+Do not add new `/root/clawd`, `~/.clawdbot`, or `~/.openclaw` paths. Existing occurrences in dated records and cached source material are historical; occurrences in legacy scripts may be unmigrated compatibility code. Neither is a current Hermes setup instruction.
 
 ## Heartbeats - Be Proactive
 
@@ -192,23 +191,20 @@ Periodically (every few days), use a heartbeat to:
 
 The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, but respect quiet time.
 
-## Current Model Setup
+## Current Runtime
 
-**Running on:** Claude Sonnet (via Claude Code CLI / OpenClaw v2026.2.15)
-- Using Ben's Claude Max subscription — no API costs
-- Auth: OAuth tokens in `~/.claude/.credentials.json`
-- OpenClaw gateway on port 18789 (loopback only)
-- systemd service: `openclaw-gateway.service`
+- Cortana runs on **Hermes Agent**. Provider and model selection are configured in `~/.hermes/config.yaml`; do not encode a supposedly current model in this repository.
+- The Hermes messaging gateway connects Telegram and other configured platforms. Manage it with `hermes gateway setup|start|stop|status`.
+- Durable schedules are Hermes cron jobs. Manage them with the `cronjob` tool or `hermes cron`.
 
-**Watchdog:** `scripts/cortana_watchdog.py` — runs every 2 min via cron, restarts gateway if unhealthy
+## Delegation and Background Work
 
-**No external model routing** — all requests go to Claude via CLI backend.
-
-## Subagents
-- Use OpenClaw subagent spawning for parallel work or background tasks
-- Heavy tool-calling workflows can use subagents
-- Subagents are ephemeral — they don't have persistent workspaces
+- Use `delegate_task` for reasoning-heavy, isolated subtasks. Batch independent tasks in one call when possible.
+- Delegation is process-local, not durable. A session stop or Hermes restart can cancel it.
+- Use `terminal(background=true, notify_on_complete=true)` for tracked, bounded shell commands.
+- Use `cronjob` for scheduled or durable agent work that must survive the current session.
+- Do not call old `spawn_task.sh`, `sessions_spawn`, or OpenClaw session wrappers.
 
 ---
 
-_Last updated: 2026-02-17_
+_Last updated: 2026-07-28_
