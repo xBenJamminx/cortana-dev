@@ -50,7 +50,8 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 ## Credentials & Secrets
 
 - API keys belong in `~/.hermes/.env` or the integration's secure credential store -- **never hardcode credentials in scripts**
-- Load env at the top of every script using the `_load_env()` pattern (see `lib/alerting.py`)
+- Load env at the top of every script using the `_load_env()` pattern (see `lib/env.py`)
+- Saving a new key is a **file edit on the secrets file, not a repo commit** — see `context/auth.md`
 - If you discover a hardcoded credential in a script, flag it to Ben immediately
 - Never log or print credential values
 

@@ -9,7 +9,12 @@ import requests
 import datetime
 
 def _load_env():
-    env_path = os.path.expanduser("~/.openclaw/.env")
+    env_path = ""
+    for _candidate in ("~/.hermes/.env", "~/.openclaw/.env"):
+        _expanded = os.path.expanduser(_candidate)
+        if os.path.exists(_expanded):
+            env_path = _expanded
+            break
     if os.path.exists(env_path):
         with open(env_path) as f:
             for line in f:

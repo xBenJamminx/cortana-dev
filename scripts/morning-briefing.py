@@ -14,7 +14,12 @@ from pathlib import Path
 
 def _load_env():
     import os as _os
-    env_path = _os.path.expanduser("~/.openclaw/.env")
+    env_path = ""
+    for _candidate in ("~/.hermes/.env", "~/.openclaw/.env"):
+        _expanded = _os.path.expanduser(_candidate)
+        if _os.path.exists(_expanded):
+            env_path = _expanded
+            break
     if _os.path.exists(env_path):
         with open(env_path) as f:
             for line in f:

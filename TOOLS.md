@@ -33,7 +33,8 @@ Skills define *how* tools work. This file is for *your* specifics -- the stuff t
 ## Secrets
 - Runtime API keys: `~/.hermes/.env` or the integration's secure credential store
 - Source only when a local script requires it: `set -a; source ~/.hermes/.env; set +a`
-- Python: use `_load_env()` pattern
+- Python: use `_load_env()` pattern (`lib/env.py`)
+- Saving a key: edit the secrets file directly. See `context/auth.md`. Never commit it.
 
 ---
 
