@@ -43,6 +43,39 @@ compatibility and lose to `AGENT_*` when both are set.
 Cortana-specific. They discover the workspace from their own file location, so
 they work in any agent's checkout with **zero configuration**.
 
+### Automated
+
+For a sibling agent on the same host, `scripts/port-hermes-resolvers.py` does
+the mechanical work. Dry run is the default; nothing is written without
+`--apply`, and re-running is a no-op.
+
+```bash
+# 1. commit the target's current state first -- git is the only undo
+git -C /path/to/scout add -A && git -C /path/to/scout commit -m "pre-migration"
+
+# 2. see what would change
+python3 scripts/port-hermes-resolvers.py --target /path/to/scout
+
+# 3. apply
+python3 scripts/port-hermes-resolvers.py --target /path/to/scout --apply
+
+# 4. verify BEFORE restarting that agent
+cd /path/to/scout
+python3 -m py_compile $(git ls-files '*.py')
+python3 -c "from lib.paths import WORKSPACE, LOGS; print(WORKSPACE, LOGS)"
+#   ^ must print the target's checkout, not Cortana's
+```
+
+It installs the resolvers, rewrites hardcoded paths, converts shell `source`
+lines to the Hermes-first loop, and replaces per-script `_load_env()` copies.
+It skips dated memory, reports, published post copy, and legacy-removal
+utilities, and prints anything it will not touch under **NEEDS MANUAL REVIEW**
+— systemd unit names, crontabs, logrotate, and gateway HTTP endpoints. Work
+through that list by hand; the same server-side steps in this document apply to
+each agent separately.
+
+### By hand
+
 1. Copy the three modules into the other agent's `lib/` (create `lib/__init__.py`
    if it does not exist).
 2. In each script, replace hardcoded paths with the resolvers, using the same
