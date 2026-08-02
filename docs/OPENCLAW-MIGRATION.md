@@ -25,13 +25,52 @@ back to the legacy homes only for state that has not been moved yet.
 
 ### Environment variables
 
-| Variable | Effect |
-|---|---|
-| `CORTANA_WORKSPACE` | workspace root |
-| `CORTANA_LOGS` | log directory |
-| `CORTANA_MEMORY_DB` | agent memory sqlite |
-| `CORTANA_GATEWAY_SERVICE` | systemd unit name for the gateway |
-| `HERMES_HOME` | Hermes home (default `~/.hermes`) |
+None are required — the defaults are correct for a normal checkout. Prefer the
+generic `AGENT_*` names; the `CORTANA_*` names are honoured for backward
+compatibility and lose to `AGENT_*` when both are set.
+
+| Variable | Legacy alias | Effect |
+|---|---|---|
+| `AGENT_WORKSPACE` | `CORTANA_WORKSPACE` | workspace root |
+| `AGENT_LOGS` | `CORTANA_LOGS` | log directory |
+| `AGENT_MEMORY_DB` | `CORTANA_MEMORY_DB` | agent memory sqlite |
+| `AGENT_GATEWAY_SERVICE` | `CORTANA_GATEWAY_SERVICE` | gateway systemd unit name |
+| `HERMES_HOME` | — | Hermes home (default `~/.hermes`) |
+
+## Porting to another Hermes agent (Scout, MiMoo, ...)
+
+`lib/paths.py`, `lib/env.py`, and `lib/gateway.py` contain nothing
+Cortana-specific. They discover the workspace from their own file location, so
+they work in any agent's checkout with **zero configuration**.
+
+1. Copy the three modules into the other agent's `lib/` (create `lib/__init__.py`
+   if it does not exist).
+2. In each script, replace hardcoded paths with the resolvers, using the same
+   four-line bootstrap this repository uses:
+
+   ```python
+   import os as _os
+   import sys as _sys
+   _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+   from lib.paths import log_file, memory_db
+   ```
+
+   Adjust the number of nested `dirname()` calls to the file's depth below the
+   checkout root — one per level, so `scripts/foo.py` needs two.
+3. Delete any per-script `_load_env()` copies and import `load_env` from
+   `lib.env` instead. Divergent copies of that function are what broke key
+   loading here in the first place.
+4. Verify before deploying:
+
+   ```bash
+   python3 -m py_compile $(git ls-files '*.py')
+   python3 -c "from lib.paths import WORKSPACE, LOGS; print(WORKSPACE, LOGS)"
+   ```
+
+   `WORKSPACE` must print that agent's checkout, not Cortana's.
+
+Only set `AGENT_WORKSPACE` if the gateway runs the agent from a directory other
+than the checkout.
 
 Workspace OS has its own copy of this logic in `workspace-os/backend/paths.py`,
 because it ships as a separate container image and cannot import from the

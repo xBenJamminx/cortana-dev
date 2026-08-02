@@ -1,9 +1,13 @@
 """Messaging gateway control.
 
-Cortana runs on Hermes Agent, whose gateway is managed with
+The agent runs on Hermes Agent, whose gateway is managed with
 `hermes gateway start|stop|status` (AGENTS.md). Some boxes still run the
 gateway as a systemd unit, so every operation tries the Hermes CLI first and
 falls back to systemd.
+
+PORTABLE ACROSS AGENTS: nothing here is Cortana-specific. Copy this module
+alongside `paths.py` and `env.py` into any sibling agent's workspace and it
+works unmodified.
 
 Usage:
     from lib.gateway import is_active, restart
@@ -17,7 +21,7 @@ import subprocess
 
 from lib.paths import gateway_service
 
-log = logging.getLogger("cortana.gateway")
+log = logging.getLogger("hermes.gateway")
 
 TIMEOUT = 30
 

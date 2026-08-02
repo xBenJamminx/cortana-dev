@@ -1,4 +1,4 @@
-"""Canonical runtime path resolution for Cortana.
+"""Canonical runtime path resolution for a Hermes agent workspace.
 
 Single source of truth. Nothing outside this module should hardcode
 `/root/clawd`, `/root/.openclaw`, or `/root/.clawdbot`.
@@ -9,11 +9,21 @@ same correct paths whether it runs from `/root/.openclaw/workspace`,
 `/root/clawd`, or anywhere else. That makes this behavior-preserving on an
 unmigrated box and correct on a migrated one, with no flag day.
 
-Override with environment variables when the layout differs:
-    CORTANA_WORKSPACE   workspace root (default: this checkout)
-    CORTANA_LOGS        log directory  (default: <workspace>/logs)
-    CORTANA_MEMORY_DB   agent memory sqlite
-    HERMES_HOME         Hermes home    (default: ~/.hermes)
+PORTABLE ACROSS AGENTS: nothing here is Cortana-specific. Copy this module,
+`env.py`, and `gateway.py` into any sibling agent's workspace (Scout, MiMoo,
+...) and they work unmodified, because the workspace is discovered from the
+file's own location. No environment variables are required.
+
+Override with environment variables when the layout differs. The generic
+`AGENT_*` names work in every agent's workspace; the `CORTANA_*` names are
+honoured for backward compatibility with this deployment.
+
+    AGENT_WORKSPACE / CORTANA_WORKSPACE     workspace root (default: this checkout)
+    AGENT_LOGS / CORTANA_LOGS               log directory  (default: <workspace>/logs)
+    AGENT_MEMORY_DB / CORTANA_MEMORY_DB     agent memory sqlite
+    AGENT_GATEWAY_SERVICE /
+        CORTANA_GATEWAY_SERVICE             gateway systemd unit name
+    HERMES_HOME                             Hermes home (default: ~/.hermes)
 
 Usage:
     from lib.paths import WORKSPACE, LOGS, MEMORY, memory_db, log_file
@@ -23,6 +33,16 @@ Usage:
 import os
 from pathlib import Path
 
+
+def _env(*names: str) -> str | None:
+    """First environment variable that is set and non-empty."""
+    for name in names:
+        value = os.environ.get(name)
+        if value:
+            return value
+    return None
+
+
 # ---------------------------------------------------------------- workspace
 
 def _default_workspace() -> Path:
@@ -30,15 +50,15 @@ def _default_workspace() -> Path:
     return Path(__file__).resolve().parent.parent
 
 
-WORKSPACE = Path(os.environ.get("CORTANA_WORKSPACE") or _default_workspace())
-LOGS = Path(os.environ.get("CORTANA_LOGS") or WORKSPACE / "logs")
+WORKSPACE = Path(_env("AGENT_WORKSPACE", "CORTANA_WORKSPACE") or _default_workspace())
+LOGS = Path(_env("AGENT_LOGS", "CORTANA_LOGS") or WORKSPACE / "logs")
 MEMORY = WORKSPACE / "memory"
 SCRIPTS = WORKSPACE / "scripts"
 ERROR_LOG = WORKSPACE / "ERROR_LOG.md"
 
 # ------------------------------------------------------------------- hermes
 
-HERMES_HOME = Path(os.environ.get("HERMES_HOME") or os.path.expanduser("~/.hermes"))
+HERMES_HOME = Path(_env("HERMES_HOME") or os.path.expanduser("~/.hermes"))
 HERMES_CONFIG = HERMES_HOME / "config.yaml"
 GATEWAY_LOG = HERMES_HOME / "logs" / "gateway.log"
 
@@ -81,8 +101,8 @@ def agent_file(name: str) -> str:
 
 
 def memory_db() -> str:
-    """Locate the agent memory sqlite database. CORTANA_MEMORY_DB overrides."""
-    return os.environ.get("CORTANA_MEMORY_DB") or agent_file("memory/main.sqlite")
+    """Locate the agent memory sqlite database. AGENT_MEMORY_DB overrides."""
+    return _env("AGENT_MEMORY_DB", "CORTANA_MEMORY_DB") or agent_file("memory/main.sqlite")
 
 
 def gateway_service() -> str:
@@ -92,4 +112,4 @@ def gateway_service() -> str:
     only for direct systemd interaction, and is overridable because the unit
     name differs between deployments.
     """
-    return os.environ.get("CORTANA_GATEWAY_SERVICE", "hermes-gateway")
+    return _env("AGENT_GATEWAY_SERVICE", "CORTANA_GATEWAY_SERVICE") or "hermes-gateway"

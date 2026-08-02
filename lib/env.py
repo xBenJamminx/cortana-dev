@@ -1,10 +1,14 @@
-"""Canonical env loading for Cortana scripts.
+"""Canonical env loading for a Hermes agent workspace.
 
 AGENTS.md and TOOLS.md both point here for the `_load_env()` pattern.
 
 Secrets live outside this repository. We check the Hermes location first and
 fall back to the legacy homes so scripts keep working on boxes that have not
 finished the migration. Honours `HERMES_HOME` via lib.paths.
+
+PORTABLE ACROSS AGENTS: nothing here is Cortana-specific. Copy this module
+alongside `paths.py` and `gateway.py` into any sibling agent's workspace and
+it works unmodified.
 
 Usage:
     from lib.env import load_env

@@ -142,6 +142,12 @@ Never hardcode a runtime path. Resolve through `lib/paths.py` (Python) or
 - `memory_db()`, `agent_file(name)` — agent home, Hermes first then legacy fallback
 - `gateway_service()` and `lib/gateway.py` — gateway control, `hermes` CLI first
 
+These three modules are agent-neutral: they discover the workspace from their
+own location and work unmodified in any sibling agent's checkout. Overrides use
+`AGENT_*` names (`AGENT_WORKSPACE`, `AGENT_LOGS`, `AGENT_MEMORY_DB`,
+`AGENT_GATEWAY_SERVICE`); the older `CORTANA_*` names still work. None are
+required.
+
 Remaining `/root/clawd`, `~/.clawdbot`, or `~/.openclaw` strings are one of:
 dated records and cached source material (historical), published post copy
 (must stay verbatim), legacy-removal utilities such as `cleanup-user-systemd.sh`
