@@ -25,26 +25,34 @@
     unverified against Hermes; Hermes `config.yaml` schema differs from
     `clawdbot.json` so workspace-os config lookups return empty; watchdogs still
     match processes named `claude`.
-  - **SCOUT — next action, Cortana's to run.** Scout is a sibling Hermes agent
+  - **DEPLOY PROMPT: `docs/DEPLOY-PROMPT.md`** — paste-ready prompt for Claude
+    Code on Ben's local PC (which has the `ssh cortana` alias; the web sandbox
+    has no ssh binary, no keys, and port 22 blocked, so it cannot reach the
+    host). That prompt covers Scout's port and the server-side steps for both
+    agents end to end.
+  - **SCOUT — next action, needs a machine with server access.** Scout is a sibling Hermes agent
     on the same host. The resolvers are agent-neutral (they discover the
     workspace from their own file location, zero config), and
     `scripts/port-hermes-resolvers.py` automates the port:
 
     ```bash
-    git -C <scout> add -A && git -C <scout> commit -m "pre-migration"
+    python3 scripts/port-hermes-resolvers.py --discover                 # finds Scout
     python3 scripts/port-hermes-resolvers.py --target <scout>           # dry run
     python3 scripts/port-hermes-resolvers.py --target <scout> --apply
-    cd <scout> && python3 -m py_compile $(git ls-files '*.py')
+    cd <scout> && python3 -m py_compile $(find . -name '*.py' -not -path './.git/*')
     cd <scout> && python3 -c "from lib.paths import WORKSPACE; print(WORKSPACE)"
     ```
+
+    Scout has **no git repo**, so `--apply` writes a timestamped tar.gz backup
+    and prints the `tar -xzf` rollback. That archive is the only undo.
 
     `WORKSPACE` must print Scout's checkout, not Cortana's. Dry run is the
     default, it is idempotent, and it refuses to target cortana-dev. Whatever it
     lists under NEEDS MANUAL REVIEW (systemd units, crontabs, logrotate, gateway
     HTTP endpoints) is a human job — the server-side steps in
     `docs/OPENCLAW-MIGRATION.md` apply to each agent separately.
-  - Ben has not given Scout's workspace path yet; it was never needed here
-    because Cortana runs the port on the host.
+  - Scout's workspace path is still unknown here; `--discover` finds it on the
+    host, so it was never needed.
   - **Still unresolved from earlier:** `BRAIN.md`, `LEARNINGS.md`,
     `memory/index.md` and most `context/*.md` router targets are referenced by
     CLAUDE.md but absent from the repo. Not fabricated.
