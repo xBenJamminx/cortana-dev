@@ -50,6 +50,9 @@ the mechanical work. Dry run is the default; nothing is written without
 `--apply`, and re-running is a no-op.
 
 ```bash
+# 0. find the sibling agents on this host (skips this repository)
+python3 scripts/port-hermes-resolvers.py --discover
+
 # 1. commit the target's current state first -- git is the only undo
 git -C /path/to/scout add -A && git -C /path/to/scout commit -m "pre-migration"
 

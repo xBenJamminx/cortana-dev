@@ -89,6 +89,56 @@ MANUAL_RE = re.compile(
 LEGACY_RE = re.compile(r"/root/(?:clawd|\.openclaw|\.clawdbot)|~/\.(?:openclaw|clawdbot)|~/clawd")
 
 
+# Where sibling agent workspaces tend to live on a Hermes host.
+SEARCH_ROOTS = ("/root", "/home", "/srv", "/opt")
+
+# A directory looks like an agent workspace if it has these.
+MARKERS = ("AGENTS.md", "CLAUDE.md", "SOUL.md", "IDENTITY.md")
+
+
+def discover() -> list[tuple[Path, str]]:
+    """Find sibling agent workspaces on this host.
+
+    Looks two levels deep under the usual roots for directories carrying agent
+    marker files, and skips this repository.
+    """
+    found, seen = [], set()
+    for root in SEARCH_ROOTS:
+        base = Path(root)
+        if not base.is_dir():
+            continue
+        candidates = [base]
+        try:
+            candidates += [p for p in base.iterdir() if p.is_dir()]
+            for child in list(candidates):
+                if child != base:
+                    try:
+                        candidates += [p for p in child.iterdir() if p.is_dir()]
+                    except PermissionError:
+                        pass
+        except PermissionError:
+            continue
+
+        for path in candidates:
+            try:
+                resolved = path.resolve()
+            except OSError:
+                continue
+            if resolved in seen or resolved == HERE:
+                continue
+            if resolved.name.startswith(".") or "node_modules" in resolved.parts:
+                continue
+            hits = [m for m in MARKERS if (resolved / m).exists()]
+            if not hits:
+                continue
+            seen.add(resolved)
+            ported = (resolved / "lib" / "paths.py").exists()
+            why = f"has {', '.join(hits[:2])}"
+            why += "; already ported" if ported else "; NOT yet ported"
+            found.append((resolved, why))
+    return sorted(found)
+
+
 def walk(root: Path):
     for path in sorted(root.rglob("*")):
         if not path.is_file():
@@ -168,9 +218,27 @@ def migrate_python(src: str, rel: Path) -> tuple[str, set[str]]:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--target", required=True, help="the other agent's workspace root")
+    ap.add_argument("--target", help="the other agent's workspace root")
+    ap.add_argument("--discover", action="store_true",
+                    help="list sibling agent workspaces on this host and exit")
     ap.add_argument("--apply", action="store_true", help="write changes (default: dry run)")
     args = ap.parse_args()
+
+    if args.discover:
+        found = discover()
+        if not found:
+            print("No sibling agent workspaces found.")
+            print("Searched:", ", ".join(SEARCH_ROOTS))
+            return 1
+        print("Sibling agent workspaces on this host:\n")
+        for path, why in found:
+            print(f"  {path}\n      ({why})")
+        print("\nRun against one with:")
+        print(f"  python3 {Path(__file__).name} --target <path>")
+        return 0
+
+    if not args.target:
+        ap.error("--target is required (or use --discover to find one)")
 
     target = Path(args.target).expanduser().resolve()
     if not target.is_dir():
