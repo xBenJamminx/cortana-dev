@@ -4,13 +4,18 @@ FAM Sync Analyze — Phase 1 of 2
 Pulls Slack + Notion + QA Sheet, generates a delta list, and sends to Ben for approval.
 Does NOT write anything. Run fam-sync-write.py after Ben approves.
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.env import env_path
+from lib.paths import WORKSPACE, log_file
 import json, re, subprocess, sys, time, urllib.request, urllib.parse
 
-ENV_FILE = '/root/.openclaw/.env'
-DELTA_FILE = '/root/.openclaw/workspace/logs/fam-sync-delta.json'
-LAST_RUN_FILE = '/root/.openclaw/workspace/logs/fam-sync-last-run.txt'
+ENV_FILE = env_path() or _os.path.expanduser('~/.hermes/.env')
+DELTA_FILE = str(log_file('fam-sync-delta.json'))
+LAST_RUN_FILE = str(log_file('fam-sync-last-run.txt'))
 TELEGRAM_TOPIC = '2122'
-TELEGRAM_CLIENT = '/root/.openclaw/workspace/core/integrations/telegram.py'
+TELEGRAM_CLIENT = str(WORKSPACE / 'core' / 'integrations' / 'telegram.py')
 
 NOTION_TOKEN_KEY = 'NOTION_API_KEY_WORK'
 NOTION_DB = '26c4666bd1ca807b930dca5ffff9c8e9'

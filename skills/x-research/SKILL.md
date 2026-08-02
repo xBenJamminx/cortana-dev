@@ -21,7 +21,7 @@ Agentic research over X/Twitter via Composio. Search, follow threads, deep-dive 
 All commands run from this skill directory:
 
 ```bash
-cd ~/clawd/skills/x-research
+cd $CORTANA_WORKSPACE/skills/x-research
 ```
 
 ### Search
@@ -38,7 +38,7 @@ bun run x-search.ts search "<query>" [options]
 - `--pages N` -- pages to fetch, 1-5 (default: 1, 100 tweets/page)
 - `--limit N` -- max results to display (default: 15)
 - `--no-replies` -- exclude replies
-- `--save` -- save results to `~/clawd/drafts/x-research-{slug}-{date}.md`
+- `--save` -- save results to `$CORTANA_WORKSPACE/drafts/x-research-{slug}-{date}.md`
 - `--json` -- raw JSON output
 - `--markdown` -- markdown output for research docs
 
@@ -126,7 +126,7 @@ Group findings by theme, not by query. Include engagement data and direct links.
 
 ### 5. Save
 
-Use `--save` flag or save manually to `~/clawd/drafts/x-research-{topic-slug}-{YYYY-MM-DD}.md`.
+Use `--save` flag or save manually to `$CORTANA_WORKSPACE/drafts/x-research-{topic-slug}-{YYYY-MM-DD}.md`.
 
 ## Reply Monitoring
 

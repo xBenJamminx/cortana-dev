@@ -3,6 +3,11 @@
 Competitor Monitor - Track what creators in our niche are posting about
 Twitter accounts + YouTube channels we watch
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import log_file, memory_db, memory_file
+
 import sqlite3
 import subprocess
 import json
@@ -10,8 +15,8 @@ import feedparser
 from datetime import datetime
 from pathlib import Path
 
-MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/competitor-monitor.log")
+MEMORY_DB = memory_db()
+LOG_FILE = log_file("competitor-monitor.log")
 
 # Twitter accounts to monitor (AI news, builders, creators)
 TWITTER_COMPETITORS = [
@@ -276,7 +281,7 @@ def main():
     report = generate_report()
     print(report)
     
-    Path("/root/clawd/memory/competitor_report.txt").write_text(report)
+    memory_file("competitor_report.txt").write_text(report)
     
     log("Done")
 

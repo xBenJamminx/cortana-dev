@@ -1,3 +1,8 @@
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import WORKSPACE
+
 import random
 import bpy
 import math
@@ -48,4 +53,4 @@ bpy.ops.object.light_add(type='POINT', location=(2, 2, 2))
 bpy.data.objects['Point'].data.energy = 1000
 
 # SAVE FILE
-bpy.ops.wm.save_as_mainfile(filepath="/root/clawd/cortana_humanoid.blend")
+bpy.ops.wm.save_as_mainfile(filepath=str(WORKSPACE / "cortana_humanoid.blend"))

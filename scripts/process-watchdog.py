@@ -5,15 +5,19 @@ Runs every 2 minutes via cron
 """
 import os
 import subprocess
+import sys
 import time
 from datetime import datetime
 from pathlib import Path
 
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from lib import gateway
+from lib.paths import ERROR_LOG, SCRIPTS, log_file
+
 # Config
 MAX_CLAUDE_RUNTIME = 600  # 10 minutes - kill if running longer
-ERROR_LOG = Path("/root/clawd/ERROR_LOG.md")
-WATCHDOG_LOG = Path("/root/clawd/logs/watchdog.log")
-ALERT_SCRIPT = "/root/clawd/scripts/alert.py"
+WATCHDOG_LOG = log_file("watchdog.log")
+ALERT_SCRIPT = str(SCRIPTS / "alert.py")
 
 def log(message: str):
     """Log to both stdout and file"""
@@ -61,10 +65,9 @@ def kill_process(pid: int):
         return False
 
 def restart_gateway():
-    """Restart the openclaw-gateway service"""
+    """Restart the messaging gateway (hermes CLI, systemd fallback)"""
     try:
-        subprocess.run(["systemctl", "restart", "openclaw-gateway"], check=True)
-        return True
+        return gateway.restart()
     except Exception as e:
         log(f"Error restarting gateway: {e}")
         return False
@@ -72,12 +75,9 @@ def restart_gateway():
 def check_gateway_status():
     """Check if gateway is running"""
     try:
-        result = subprocess.run(
-            ["systemctl", "is-active", "openclaw-gateway"],
-            capture_output=True, text=True
-        )
-        return result.stdout.strip() == "active"
-    except:
+        return gateway.is_active()
+    except Exception as e:
+        log(f"Error checking gateway: {e}")
         return False
 
 def main():

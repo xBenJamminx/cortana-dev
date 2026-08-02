@@ -2,10 +2,15 @@
 """
 Cross-sync memory between:
 - Cortana VAPI (phone calls)
-- Clawd Telegram bot
+- Cortana Telegram bot
 - Claude Code sessions
 - Local markdown docs
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import WORKSPACE, memory_db
+
 import os
 import json
 import sqlite3
@@ -13,8 +18,8 @@ import requests
 from datetime import datetime
 from pathlib import Path
 
-MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-DOCS_DIR = Path("/root/clawd")
+MEMORY_DB = memory_db()
+DOCS_DIR = WORKSPACE
 MEMORY_DIR = DOCS_DIR / "memory"
 VAPI_API_KEY = "REDACTED_VAPI_API_KEY"
 ASSISTANT_ID = "899db371-3ca9-44f6-8ad3-a70131af4987"

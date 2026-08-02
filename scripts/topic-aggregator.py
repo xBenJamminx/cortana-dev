@@ -11,6 +11,11 @@ Output:
 - 🟡 SPREADING (2 platforms)
 - ⚡ EXPLODING (viral on 1 platform - 10X normal engagement)
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import WORKSPACE, log_file, memory_db
+
 import sqlite3
 import json
 import re
@@ -20,8 +25,8 @@ from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse
 
-MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/topic-aggregator.log")
+MEMORY_DB = memory_db()
+LOG_FILE = log_file("topic-aggregator.log")
 
 # Baseline engagement thresholds (what's "normal")
 # Anything significantly above this = exploding
@@ -151,7 +156,7 @@ def gather_all_content():
 
     # 1. REDDIT
     log("Fetching Reddit...")
-    reddit_subs = json.load(open("/root/clawd/config/high_signal_sources.json"))["reddit_subreddits"]
+    reddit_subs = json.load(open(WORKSPACE / "config" / "high_signal_sources.json"))["reddit_subreddits"]
     for sub in reddit_subs:
         posts = fetch_reddit_hot(sub)
         for p in posts[:8]:

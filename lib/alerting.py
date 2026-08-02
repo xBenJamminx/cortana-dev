@@ -2,7 +2,7 @@
 Dedup-aware alerting wrapper around the existing alert.py.
 
 Prevents alert floods by tracking last-sent time per alert key.
-State is stored in /tmp/clawd-alert-dedup.json.
+State is stored in /tmp/cortana-alert-dedup.json.
 
 Usage:
     from lib.alerting import send_alert, clear_alert
@@ -19,13 +19,15 @@ import sys
 import os
 from pathlib import Path
 
+from lib.paths import SCRIPTS
+
 log = logging.getLogger("cortana.alerting")
 
-DEDUP_STATE_FILE = Path("/tmp/clawd-alert-dedup.json")
+DEDUP_STATE_FILE = Path("/tmp/cortana-alert-dedup.json")
 DEFAULT_COOLDOWN = 1800  # 30 minutes
 
 # Import the existing alert.py send_alert
-sys.path.insert(0, "/root/clawd/scripts")
+sys.path.insert(0, str(SCRIPTS))
 try:
     from alert import send_alert as _raw_send_alert
 except ImportError:

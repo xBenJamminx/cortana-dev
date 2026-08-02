@@ -4,6 +4,11 @@ Sync Cortana's VAPI assistant config with local docs.
 Reads USER.md, IDENTITY.md, and CLAUDE.md to build the system prompt.
 Run manually or via cron/hook when docs change.
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import WORKSPACE, memory_db
+
 import os
 import json
 import requests
@@ -14,8 +19,8 @@ from pathlib import Path
 # Config
 VAPI_API_KEY = "REDACTED_VAPI_API_KEY"
 ASSISTANT_ID = "899db371-3ca9-44f6-8ad3-a70131af4987"
-DOCS_DIR = Path("/root/clawd")
-MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
+DOCS_DIR = WORKSPACE
+MEMORY_DB = memory_db()
 TUNNEL_URL = None  # Will be detected
 
 def get_tunnel_url():

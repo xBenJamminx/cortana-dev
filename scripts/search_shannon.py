@@ -1,3 +1,8 @@
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import agent_file
+
 import json
 import os
 from google.oauth2.credentials import Credentials
@@ -5,7 +10,7 @@ from googleapiclient.discovery import build
 
 def search_shannon():
     # Attempt to load credentials
-    creds_path = '/root/.clawdbot/google_credentials.json'
+    creds_path = agent_file("google_credentials.json")
     if not os.path.exists(creds_path):
         print("Credentials file not found.")
         return

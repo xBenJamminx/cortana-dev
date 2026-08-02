@@ -3,8 +3,13 @@
 Cortana Daily Health Report — Telegram summary of system health.
 
 Runs daily at 7 AM ET (12:00 UTC) before morning briefing.
-Cron: 0 12 * * * /usr/bin/python3 /root/clawd/scripts/health-report.py >> /var/log/clawd/health-report.log 2>&1
+Cron: 0 12 * * * /usr/bin/python3 $CORTANA_WORKSPACE/scripts/health-report.py >> $CORTANA_WORKSPACE/logs/health-report.log 2>&1
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import GATEWAY_LOG, LOGS, WORKSPACE, gateway_service, log_file
+
 import json
 import logging
 import os
@@ -14,25 +19,11 @@ import time
 from datetime import datetime, timedelta
 from pathlib import Path
 
-def _load_env():
-    env_path = ""
-    for _candidate in ("~/.hermes/.env", "~/.openclaw/.env"):
-        _expanded = os.path.expanduser(_candidate)
-        if os.path.exists(_expanded):
-            env_path = _expanded
-            break
-    if os.path.exists(env_path):
-        with open(env_path) as f:
-            for line in f:
-                line = line.strip()
-                if line and not line.startswith("#") and "=" in line:
-                    key, _, val = line.partition("=")
-                    key = key.replace("export ", "").strip()
-                    if key and not os.environ.get(key):
-                        os.environ[key] = val
-_load_env()
+from lib.env import load_env
 
-sys.path.insert(0, "/root/clawd")
+load_env()
+
+sys.path.insert(0, str(WORKSPACE))
 
 from lib.health import (
     check_gateway_http,
@@ -53,9 +44,9 @@ BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 # Log directories
-CLAWD_LOGS = Path("/root/clawd/logs")
-SYSTEM_LOGS = Path("/var/log/clawd")
-GATEWAY_LOGS = Path("/tmp/openclaw")
+CLAWD_LOGS = LOGS
+SYSTEM_LOGS = Path("/var/log/cortana")
+GATEWAY_LOGS = GATEWAY_LOG.parent
 
 
 def send_telegram(message: str) -> bool:
@@ -85,11 +76,11 @@ def get_24h_restart_count() -> int:
     """Count gateway restarts in last 24h from journal."""
     try:
         result = subprocess.run(
-            ["journalctl", "-u", "openclaw-gateway", "--since", "24 hours ago",
+            ["journalctl", "-u", gateway_service(), "--since", "24 hours ago",
              "--no-pager", "-o", "short"],
             capture_output=True, text=True, timeout=15,
         )
-        return result.stdout.count("Started OpenClaw Gateway")
+        return result.stdout.lower().count("started") if result.returncode == 0 else -1
     except Exception:
         return -1
 
@@ -175,12 +166,12 @@ def get_recent_alerts(hours: int = 24, limit: int = 5) -> list:
 def get_cron_freshness() -> list:
     """Check freshness of cron job outputs."""
     jobs = [
-        ("Morning briefing", "/root/clawd/logs/cron-morning.log", 26),
-        ("Content intel", "/root/clawd/logs/cron-intel.log", 6),
-        ("Twitter monitor", "/root/clawd/logs/twitter-cron.log", 8),
-        ("YouTube monitor", "/root/clawd/logs/youtube-cron.log", 8),
-        ("Content analytics", "/root/clawd/logs/analytics-cron.log", 26),
-        ("Reddit monitor", "/root/clawd/logs/reddit-monitor.log", 26),
+        ("Morning briefing", str(log_file("cron-morning.log")), 26),
+        ("Content intel", str(log_file("cron-intel.log")), 6),
+        ("Twitter monitor", str(log_file("twitter-cron.log")), 8),
+        ("YouTube monitor", str(log_file("youtube-cron.log")), 8),
+        ("Content analytics", str(log_file("analytics-cron.log")), 26),
+        ("Reddit monitor", str(log_file("reddit-monitor.log")), 26),
     ]
 
     results = []

@@ -3,15 +3,20 @@
 Content Ideas Generator — Autonomous idea surfacing for Ben
 Pulls from trends, competitors, and gaps to generate actionable content ideas
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import log_file, memory_db, memory_file
+
 import sqlite3
 import json
 import requests
 from datetime import datetime
 from pathlib import Path
 
-MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/content-ideas.log")
-IDEAS_FILE = Path("/root/clawd/memory/daily_content_ideas.md")
+MEMORY_DB = memory_db()
+LOG_FILE = log_file("content-ideas.log")
+IDEAS_FILE = memory_file("daily_content_ideas.md")
 
 # Ben's content pillars for relevance scoring
 BENS_PILLARS = [

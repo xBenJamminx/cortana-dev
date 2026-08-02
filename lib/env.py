@@ -3,8 +3,8 @@
 AGENTS.md and TOOLS.md both point here for the `_load_env()` pattern.
 
 Secrets live outside this repository. We check the Hermes location first and
-fall back to the legacy openclaw location so scripts keep working on boxes
-that have not finished the migration.
+fall back to the legacy homes so scripts keep working on boxes that have not
+finished the migration. Honours `HERMES_HOME` via lib.paths.
 
 Usage:
     from lib.env import load_env
@@ -13,19 +13,23 @@ Usage:
     token = os.environ["TELEGRAM_BOT_TOKEN"]
 """
 import os
+from pathlib import Path
 
-ENV_PATHS = (
-    "~/.hermes/.env",
-    "~/.openclaw/.env",
-)
+from lib.paths import HERMES_HOME, _LEGACY_HOMES
+
+
+def env_candidates() -> list[Path]:
+    """Secrets file locations, most current first."""
+    return [HERMES_HOME / ".env"] + [
+        Path(os.path.expanduser(home)) / ".env" for home in _LEGACY_HOMES
+    ]
 
 
 def env_path() -> str:
     """Return the first secrets file that exists, or "" if none do."""
-    for candidate in ENV_PATHS:
-        expanded = os.path.expanduser(candidate)
-        if os.path.exists(expanded):
-            return expanded
+    for candidate in env_candidates():
+        if candidate.exists():
+            return str(candidate)
     return ""
 
 
@@ -49,5 +53,5 @@ def load_env() -> str:
     return path
 
 
-# Alias matching the name used by the inline copies in scripts/.
+# Alias matching the name used historically across scripts/.
 _load_env = load_env

@@ -3,11 +3,16 @@
 Morning Scan v2 - Direct Slack pull + OpenRouter summarization + Slack post
 No agent framework needed. Fast, reliable, correct attribution.
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.env import env_path
+from lib.paths import WORKSPACE, log_file
 import urllib.request, json, time, subprocess, sys
 
-ENV_FILE = '/root/.openclaw/.env'
-LAST_RUN_FILE = '/root/.openclaw/workspace/logs/morning-scan-last-run.txt'
-BRIEFING_FILE = '/root/.openclaw/workspace/logs/morning-scan-briefing.txt'
+ENV_FILE = env_path() or _os.path.expanduser('~/.hermes/.env')
+LAST_RUN_FILE = str(log_file('morning-scan-last-run.txt'))
+BRIEFING_FILE = str(log_file('morning-scan-briefing.txt'))
 UPDATES_CHANNEL = 'C0AL8LLGULQ'
 CHANNEL_PING = '<!channel>'
 CHANNELS = {
@@ -357,7 +362,7 @@ Good morning team -- here's where we stand.
         f.write(str(time.time()))
 
     subprocess.run([
-        'python3', '/root/.openclaw/workspace/core/integrations/telegram.py',
+        'python3', str(WORKSPACE / 'core' / 'integrations' / 'telegram.py'),
         '--topic', '2122', 'Morning scan posted to #updates.'
     ], capture_output=True)
     print('Done.', flush=True)

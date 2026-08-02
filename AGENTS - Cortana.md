@@ -134,7 +134,20 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 - **Config:** `~/.hermes/config.yaml`
 - **Gateway logs:** `~/.hermes/logs/gateway.log`
 
-Do not add new `/root/clawd`, `~/.clawdbot`, or `~/.openclaw` paths. Existing occurrences in dated records and cached source material are historical; occurrences in legacy scripts may be unmigrated compatibility code. Neither is a current Hermes setup instruction.
+Never hardcode a runtime path. Resolve through `lib/paths.py` (Python) or
+`${CORTANA_WORKSPACE:-...}` (shell):
+
+- `WORKSPACE`, `LOGS`, `SCRIPTS`, `MEMORY`, `ERROR_LOG` — derived from the checkout
+- `log_file(name)`, `memory_file(name)` — workspace files, parent dir auto-created
+- `memory_db()`, `agent_file(name)` — agent home, Hermes first then legacy fallback
+- `gateway_service()` and `lib/gateway.py` — gateway control, `hermes` CLI first
+
+Remaining `/root/clawd`, `~/.clawdbot`, or `~/.openclaw` strings are one of:
+dated records and cached source material (historical), published post copy
+(must stay verbatim), legacy-removal utilities such as `cleanup-user-systemd.sh`
+(need the old names to do their job), or the `clawdbot` key in skill metadata
+(a loader schema key, not a path). None are current setup instructions, and
+none should be bulk-renamed.
 
 ## Heartbeats - Be Proactive
 

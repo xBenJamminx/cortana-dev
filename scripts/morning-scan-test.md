@@ -5,7 +5,7 @@ You are Cortana running a TEST of the morning scan. Pull FAM Slack channels and 
 ## Credentials
 
 - **Slack** — connectedAccountId: `b02db1f4-9d22-416c-bb78-bdb8c1bc6bb4`
-- **Composio API key:** stored in `/root/.openclaw/.env` as `COMPOSIO_API_KEY`
+- **Composio API key:** stored in the agent secrets file (`~/.hermes/.env`) as `COMPOSIO_API_KEY`
 
 ## Step 1 — Pull last 24 hours from Slack
 
@@ -48,7 +48,7 @@ Use Composio `SLACK_SENDS_A_MESSAGE_TO_A_SLACK_CHANNEL` with:
 
 After sending the Slack DM, confirm in the Telegram group:
 ```
-python3 /root/.openclaw/workspace/core/integrations/telegram.py --topic 31 "Morning scan test complete — briefing sent to Ben's Slack DM."
+python3 $CORTANA_WORKSPACE/core/integrations/telegram.py --topic 31 "Morning scan test complete — briefing sent to Ben's Slack DM."
 ```
 
 ## Done

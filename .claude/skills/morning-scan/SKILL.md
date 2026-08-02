@@ -23,7 +23,7 @@ The pipeline:
 ## How to run it
 
 ```bash
-ssh cortana "python3 /root/.openclaw/workspace/scripts/morning-scan-v2.py"
+ssh cortana "python3 $CORTANA_WORKSPACE/scripts/morning-scan-v2.py"
 ```
 
 Use a 5-minute timeout (300000 ms) — the OpenRouter call can take 30-60 seconds.
@@ -34,9 +34,9 @@ To force a specific lookback window, reset the last-run timestamp first:
 
 ```bash
 # Force 3-day window
-ssh cortana "python3 -c \"import time; open('/root/.openclaw/workspace/logs/morning-scan-last-run.txt','w').write(str(time.time()-3*86400))\""
+ssh cortana "python3 -c \"import time; open('$CORTANA_WORKSPACE/logs/morning-scan-last-run.txt','w').write(str(time.time()-3*86400))\""
 # Then run normally
-ssh cortana "python3 /root/.openclaw/workspace/scripts/morning-scan-v2.py"
+ssh cortana "python3 $CORTANA_WORKSPACE/scripts/morning-scan-v2.py"
 ```
 
 ## Reporting back

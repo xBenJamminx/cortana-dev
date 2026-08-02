@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Define virtual environment path
-VENV_PATH="/root/clawd/composio_venv"
+REPO_ROOT="${CORTANA_WORKSPACE:-$(cd "$(dirname "$0")" && pwd)}"
+VENV_PATH="$REPO_ROOT/composio_venv"
 
 # Create virtual environment if it doesn't exist
 if [ ! -d "$VENV_PATH" ]; then
@@ -20,7 +21,7 @@ python3 -c "import composio_core; import composio_openai; print('Composio packag
 
 # Then execute the composio_integration.py script using the venv's python
 echo "\nRunning composio_integration.py..."
-python3 /root/clawd/composio_integration.py
+python3 "$REPO_ROOT/composio_integration.py"
 
 # Deactivate virtual environment (optional, but good practice)
 deactivate

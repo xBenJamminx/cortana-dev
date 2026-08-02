@@ -9,7 +9,9 @@ from typing import Optional
 
 router = APIRouter()
 
-CLAWDBOT_BROWSER_URL = os.getenv("CLAWDBOT_BROWSER_URL", "http://127.0.0.1:18791")
+from paths import browser_url
+
+CLAWDBOT_BROWSER_URL = browser_url()
 
 async def browser_request(endpoint: str, method: str = "GET", data: dict = None):
     """Make request to clawdbot browser control"""

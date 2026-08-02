@@ -3,6 +3,11 @@
 Real Trends Monitor - Pull ACTUAL trending topics, then filter for relevance
 Sources: Google Daily Trends, Twitter Trending, HN Front Page, Reddit Rising
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import log_file, memory_db, memory_file
+
 import sqlite3
 import requests
 import feedparser
@@ -11,8 +16,8 @@ import re
 from datetime import datetime
 from pathlib import Path
 
-MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/real-trends.log")
+MEMORY_DB = memory_db()
+LOG_FILE = log_file("real-trends.log")
 
 # Our niche keywords for relevance scoring
 NICHE_KEYWORDS = [
@@ -340,7 +345,7 @@ def main():
     print(report)
     
     # Save report
-    Path("/root/clawd/memory/real_trends_report.txt").write_text(report)
+    memory_file("real_trends_report.txt").write_text(report)
     
     log("Done")
 

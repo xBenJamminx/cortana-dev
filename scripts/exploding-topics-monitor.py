@@ -3,15 +3,20 @@
 Exploding Topics Monitor - Track early trend signals
 Uses their public trending page (no API key needed)
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import log_file, memory_db, memory_file
+
 import sqlite3
 import requests
 from datetime import datetime
 from pathlib import Path
 from bs4 import BeautifulSoup
 
-MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/exploding-topics-monitor.log")
-SUMMARY_FILE = Path("/root/clawd/memory/exploding_topics_summary.md")
+MEMORY_DB = memory_db()
+LOG_FILE = log_file("exploding-topics-monitor.log")
+SUMMARY_FILE = memory_file("exploding_topics_summary.md")
 
 # Categories to check
 CATEGORIES = [

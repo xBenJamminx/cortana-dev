@@ -4,8 +4,9 @@
 # Status: APPROVED
 # Method: Composio Twitter API
 
-LOG="/root/clawd/logs/scheduled-posts.log"
-mkdir -p /root/clawd/logs
+REPO_ROOT="${CORTANA_WORKSPACE:-$(cd "$(dirname "$0")/.." && pwd)}"
+LOG="$REPO_ROOT/logs/scheduled-posts.log"
+mkdir -p "$REPO_ROOT/logs"
 
 TWEET_TEXT='Your @OpenClaw bot can build, push, and deploy a web app for you.
 
@@ -27,7 +28,7 @@ Paste it in and your bot handles the rest.'
 
 echo "[$(date)] Posting deploy web app post via Composio..." >> "$LOG"
 
-python3 /root/clawd/skills/composio/composio-mcp.py --exec TWITTER_CREATION_OF_A_POST "{\"text\": $(python3 -c "import json; print(json.dumps('''$TWEET_TEXT'''))")}" >> "$LOG" 2>&1
+python3 "$REPO_ROOT/skills/composio/composio-mcp.py" --exec TWITTER_CREATION_OF_A_POST "{\"text\": $(python3 -c "import json; print(json.dumps('''$TWEET_TEXT'''))")}" >> "$LOG" 2>&1
 
 if [ $? -eq 0 ]; then
     echo "[$(date)] Deploy post published successfully" >> "$LOG"

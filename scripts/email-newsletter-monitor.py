@@ -3,6 +3,11 @@
 Email Newsletter Monitor v3 - Extract individual stories from Ben's AI/creator newsletters
 Parses full newsletter content into separate stories with descriptions and article links
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import log_file, memory_db
+
 import sqlite3
 import json
 import re
@@ -10,8 +15,8 @@ import requests
 from datetime import datetime
 from pathlib import Path
 
-MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/email-newsletters.log")
+MEMORY_DB = memory_db()
+LOG_FILE = log_file("email-newsletters.log")
 
 MCP_URL = 'https://backend.composio.dev/tool_router/trs_r19DmEN65WU9/mcp'
 API_KEY = 'REDACTED_COMPOSIO_MCP_KEY'

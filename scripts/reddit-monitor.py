@@ -3,6 +3,11 @@
 Reddit Monitor - Track trending posts in relevant subreddits
 Runs every 4 hours via cron
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import log_file, memory_db, memory_file
+
 import os
 import json
 import sqlite3
@@ -12,8 +17,8 @@ from pathlib import Path
 from typing import List, Dict
 
 # Config
-MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/reddit-monitor.log")
+MEMORY_DB = memory_db()
+LOG_FILE = log_file("reddit-monitor.log")
 
 # Subreddits to monitor
 SUBREDDITS = [
@@ -234,7 +239,7 @@ def main():
     log(summary)
 
     # Save summary to file for morning briefing
-    summary_file = Path("/root/clawd/memory/reddit_daily_summary.txt")
+    summary_file = memory_file("reddit_daily_summary.txt")
     summary_file.parent.mkdir(parents=True, exist_ok=True)
     summary_file.write_text(summary)
 

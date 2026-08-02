@@ -115,15 +115,15 @@ Example schedules (cron):
 0 5 * * * export PATH="$HOME/.bun/bin:$PATH" && qmd embed
 ```
 
-If your Clawdbot/agent environment supports a built-in scheduler, you can run the same commands there instead of system cron.
+If your agent environment supports a built-in scheduler, you can run the same commands there instead of system cron.
 
 ## Models and cache
 
 - Uses local GGUF models; first run auto-downloads them.
 - Default cache: `~/.cache/qmd/models/` (override with `XDG_CACHE_HOME`).
 
-## Relationship to Clawdbot memory search
+## Relationship to agent memory search
 
 - `qmd` searches *your local files* (notes/docs) that you explicitly index into collections.
-- Clawdbot's `memory_search` searches *agent memory* (saved facts/context from prior interactions).
+- The agent's `memory_search` searches *agent memory* (saved facts/context from prior interactions).
 - Use both: `memory_search` for "what did we decide/learn before?", `qmd` for "what's in my notes/docs on disk?".

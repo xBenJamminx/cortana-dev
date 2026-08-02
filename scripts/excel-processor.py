@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 """
-Excel/CSV Processor for OpenClaw
+Excel/CSV Processor for Cortana
 Handles large spreadsheet files by extracting content to readable format
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import WORKSPACE, agent_file, memory_file
+
 import os
 import sys
 import json
@@ -11,14 +16,14 @@ from pathlib import Path
 from datetime import datetime
 
 # Use the workspace-os venv
-VENV_PATH = '/root/clawd/workspace-os/venv'
+VENV_PATH = str(WORKSPACE / 'workspace-os' / 'venv')
 sys.path.insert(0, f'{VENV_PATH}/lib/python3.12/site-packages')
 
 import pandas as pd
 
-MEDIA_DIR = Path('/root/.openclaw/media/inbound')
-OUTPUT_DIR = Path('/root/.openclaw/media/processed')
-SUMMARY_DIR = Path('/root/clawd/memory/spreadsheets')
+MEDIA_DIR = Path(agent_file('media/inbound'))
+OUTPUT_DIR = Path(agent_file('media/processed'))
+SUMMARY_DIR = memory_file("spreadsheets")
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 SUMMARY_DIR.mkdir(parents=True, exist_ok=True)

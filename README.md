@@ -45,7 +45,12 @@ Top-level delegation is asynchronous but process-local. Use:
 - `workspace-os/` — optional Cortana workspace dashboard
 - `docs/` — current operational documentation
 
-The repository checkout is the workspace. Scripts should resolve paths from their checkout or a `CORTANA_WORKSPACE` environment variable rather than assuming `/root/clawd` or `/root/.openclaw/workspace`.
+The repository checkout is the workspace. Scripts resolve every runtime path
+through `lib/paths.py`, which derives from the checkout and honours
+`CORTANA_WORKSPACE`, so the same code runs correctly regardless of where the
+checkout lives. Secrets resolve through `lib/env.py` and the gateway through
+`lib/gateway.py`. See [`docs/OPENCLAW-MIGRATION.md`](docs/OPENCLAW-MIGRATION.md)
+for the environment variables and the remaining known gaps.
 
 ## Install and Configure Hermes Agent
 

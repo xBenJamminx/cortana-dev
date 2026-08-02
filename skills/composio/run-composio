@@ -1,6 +1,7 @@
 #!/bin/bash
 # Composio wrapper - handles venv activation
-source ~/clawd/composio_venv/bin/activate
+REPO_ROOT="${CORTANA_WORKSPACE:-$(cd "$(dirname "$0")/../.." && pwd)}"
+source "$REPO_ROOT/composio_venv/bin/activate"
 export COMPOSIO_API_KEY=ak_UjBg3sflMbHRQgr_qzwr
 
 if [ "$1" == "--list" ]; then
@@ -13,5 +14,5 @@ elif [ "$1" == "--connections" ]; then
     composio connections 2>&1
 else
     # Execute action via Python
-    python3 ~/clawd/skills/composio/composio-tool.py "$@"
+    python3 "$REPO_ROOT/skills/composio/composio-tool.py" "$@"
 fi

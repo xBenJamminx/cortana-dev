@@ -3,6 +3,11 @@
 Content Analytics Engine - Topic-first intelligence
 Detects trending topics, then finds related content across sources
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import log_file, memory_db, memory_file
+
 import sqlite3
 import requests
 import json
@@ -11,9 +16,9 @@ from datetime import datetime
 from pathlib import Path
 from collections import Counter
 
-MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/content-analytics.log")
-SUMMARY_FILE = Path("/root/clawd/memory/content_analytics_summary.txt")
+MEMORY_DB = memory_db()
+LOG_FILE = log_file("content-analytics.log")
+SUMMARY_FILE = memory_file("content_analytics_summary.txt")
 
 def log(msg):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")

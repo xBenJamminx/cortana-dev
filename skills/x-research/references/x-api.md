@@ -3,7 +3,7 @@
 ## Authentication
 
 Uses Composio's `TWITTER_RECENT_SEARCH` action with a connected account.
-No bearer token needed. Set `COMPOSIO_API_KEY` in env or `/root/.openclaw/.env`.
+No bearer token needed. Set `COMPOSIO_API_KEY` in env or the agent secrets file (`~/.hermes/.env`).
 
 ## Available Composio Actions
 

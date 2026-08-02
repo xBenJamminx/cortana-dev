@@ -2,14 +2,19 @@
 """
 Dev.to and Hashnode Monitor - Track trending dev content
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import log_file, memory_db, memory_file
+
 import sqlite3
 import requests
 from datetime import datetime
 from pathlib import Path
 
-MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/devto-hashnode-monitor.log")
-SUMMARY_FILE = Path("/root/clawd/memory/devto_hashnode_summary.md")
+MEMORY_DB = memory_db()
+LOG_FILE = log_file("devto-hashnode-monitor.log")
+SUMMARY_FILE = memory_file("devto_hashnode_summary.md")
 
 # Tags to monitor
 TAGS = ["ai", "automation", "nocode", "productivity", "webdev", "programming"]

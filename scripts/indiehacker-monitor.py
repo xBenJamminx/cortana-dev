@@ -4,6 +4,11 @@ Indie Hacker Monitor - Track trending topics from indie hacker communities
 Runs every 4 hours via cron
 Sources: Hacker News, IndieHackers, Product Hunt, DuckDuckGo News
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import log_file, memory_db, memory_file
+
 import os
 import json
 import sqlite3
@@ -13,8 +18,8 @@ from pathlib import Path
 from typing import List, Dict
 
 # Config
-MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/indiehacker-monitor.log")
+MEMORY_DB = memory_db()
+LOG_FILE = log_file("indiehacker-monitor.log")
 
 # Keywords to track
 KEYWORDS = [
@@ -244,7 +249,7 @@ def main():
     summary = get_daily_summary()
     log(summary)
 
-    summary_file = Path("/root/clawd/memory/indiehacker_daily_summary.txt")
+    summary_file = memory_file("indiehacker_daily_summary.txt")
     summary_file.parent.mkdir(parents=True, exist_ok=True)
     summary_file.write_text(summary)
 

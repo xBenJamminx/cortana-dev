@@ -3,6 +3,11 @@
 Content Sweep - On-demand trending content check
 Uses the same topic-aggregator as morning briefing to stay in sync.
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import SCRIPTS, memory_db
+
 import subprocess
 import sqlite3
 import json
@@ -10,14 +15,14 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
+MEMORY_DB = memory_db()
 MONITORS = [
-    ("/root/clawd/scripts/real-trends-monitor.py", "Trends"),
-    ("/root/clawd/scripts/indiehacker-monitor.py", "IndieHacker/HN"),
-    ("/root/clawd/scripts/producthunt-monitor.py", "Product Hunt"),
-    ("/root/clawd/scripts/devto-hashnode-monitor.py", "Dev.to"),
+    (str(SCRIPTS / "real-trends-monitor.py"), "Trends"),
+    (str(SCRIPTS / "indiehacker-monitor.py"), "IndieHacker/HN"),
+    (str(SCRIPTS / "producthunt-monitor.py"), "Product Hunt"),
+    (str(SCRIPTS / "devto-hashnode-monitor.py"), "Dev.to"),
 ]
-TOPIC_AGGREGATOR = "/root/clawd/scripts/topic-aggregator.py"
+TOPIC_AGGREGATOR = str(SCRIPTS / "topic-aggregator.py")
 
 def refresh_data():
     """Run monitors to gather fresh data"""

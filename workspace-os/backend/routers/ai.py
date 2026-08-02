@@ -13,8 +13,10 @@ from database import get_db, AICall
 
 router = APIRouter()
 
-CLAWDBOT_GATEWAY_URL = os.getenv("CLAWDBOT_GATEWAY_URL", "http://127.0.0.1:18789")
-CLAWDBOT_GATEWAY_TOKEN = os.getenv("CLAWDBOT_GATEWAY_TOKEN")
+from paths import gateway_token, gateway_url, workspace_root
+
+CLAWDBOT_GATEWAY_URL = gateway_url()
+CLAWDBOT_GATEWAY_TOKEN = gateway_token()
 
 async def call_clawdbot(endpoint: str, method: str = "GET", data: dict = None):
     """Call clawdbot gateway API"""
@@ -40,7 +42,7 @@ async def list_models():
 async def test_routing(prompt: str):
     """Test which model would be selected for a prompt using smart router"""
     import sys
-    sys.path.insert(0, "/root/clawd")
+    sys.path.insert(0, workspace_root())
     try:
         from model_router import route, classify_complexity
         choice = route(prompt)

@@ -19,7 +19,7 @@ Two-phase interactive sync that keeps Notion and the QA Sheet aligned with Slack
 ## Phase 1 — Analyze
 
 ```bash
-ssh cortana "python3 /root/.openclaw/workspace/scripts/fam-sync-analyze.py"
+ssh cortana "python3 $CORTANA_WORKSPACE/scripts/fam-sync-analyze.py"
 ```
 
 Timeout: 5 minutes. The script:
@@ -27,7 +27,7 @@ Timeout: 5 minutes. The script:
 - Pulls all Notion tasks (In Progress, In Testing, Not Started)
 - Pulls QA Sheet "In Progress" tab
 - Sends to Gemini to generate a structured delta
-- Saves delta to `/root/.openclaw/workspace/logs/fam-sync-delta.json`
+- Saves delta to `$CORTANA_WORKSPACE/logs/fam-sync-delta.json`
 - Sends formatted summary to Telegram topic 2122
 
 After running, relay the delta output to Ben and wait for his response.
@@ -35,7 +35,7 @@ After running, relay the delta output to Ben and wait for his response.
 ## Phase 2 — Write (only after Ben approves)
 
 ```bash
-ssh cortana "python3 /root/.openclaw/workspace/scripts/fam-sync-write.py"
+ssh cortana "python3 $CORTANA_WORKSPACE/scripts/fam-sync-write.py"
 ```
 
 Reads the saved delta and executes:
@@ -50,7 +50,7 @@ Reads the saved delta and executes:
 **"approved" / "looks good" / "run it"** → run Phase 2 immediately
 
 **Corrections (e.g. "change X to In Testing", "remove item 2", "add Y"):**
-1. Read the delta file: `ssh cortana "cat /root/.openclaw/workspace/logs/fam-sync-delta.json"`
+1. Read the delta file: `ssh cortana "cat $CORTANA_WORKSPACE/logs/fam-sync-delta.json"`
 2. Apply the correction to the JSON in-place on the server
 3. Re-present the updated delta to Ben for final confirmation
 4. Then run Phase 2
@@ -71,7 +71,7 @@ Reads the saved delta and executes:
 - GOOGLESHEETS_BATCH_UPDATE_VALUES_BY_DATA_FILTER for Sheets (regular BATCH_UPDATE is broken)
 - Notion DB: `26c4666bd1ca807b930dca5ffff9c8e9`
 - QA Sheet: `1TfblNSRCTqkKJFIxPpIlb8b-iE9cSeR16Lu4gMZ0Qio`
-- Full credentials and team IDs in `/root/.openclaw/workspace/context/fam-sync-process.md`
+- Full credentials and team IDs in `$CORTANA_WORKSPACE/context/fam-sync-process.md`
 
 ## Don't
 - Never skip the approval gate — even if Ben seems to want it fast

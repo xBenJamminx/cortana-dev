@@ -6,6 +6,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
 from typing import Any, Optional
+from paths import workspace_root
 from database import get_db, Setting
 
 router = APIRouter()
@@ -13,7 +14,7 @@ router = APIRouter()
 # Default settings
 DEFAULTS = {
     "theme": "dark",
-    "workspace_root": "/root/clawd",
+    "workspace_root": workspace_root(),
     "auto_index": True,
     "index_interval_minutes": 5,
     "model_costs": {
@@ -81,9 +82,9 @@ async def check_env():
     env_vars = [
         "AUTH_TOKEN",
         "WORKSPACE_ROOT",
-        "CLAWDBOT_GATEWAY_URL",
-        "CLAWDBOT_GATEWAY_TOKEN",
-        "CLAWDBOT_BROWSER_URL",
+        "CORTANA_GATEWAY_URL",
+        "CORTANA_GATEWAY_TOKEN",
+        "CORTANA_BROWSER_URL",
         "AIRTABLE_API_KEY",
         "AIRTABLE_BASE_ID"
     ]

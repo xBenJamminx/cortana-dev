@@ -13,7 +13,9 @@ import base64
 
 router = APIRouter()
 
-WORKSPACE_DIR = '/root/clawd'
+from paths import workspace_root
+
+WORKSPACE_DIR = workspace_root()
 
 # File categories
 CATEGORIES = {

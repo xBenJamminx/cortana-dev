@@ -2,12 +2,17 @@
 """
 Telegram Reaction Monitor v7
 
-Watches journalctl for openclaw gateway events.
+Watches journalctl for messaging gateway events.
 On cli exec: sends typing to all forum topics + reacts to incoming message.
 On sendMessage ok: stop typing, remove reaction, track message_id.
 On watchdog timeout: immediately alert Ben which model failed.
 On all models failed: send clear failure message.
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import gateway_service
+
 import re
 import subprocess
 import sys
@@ -91,7 +96,7 @@ def main():
     log('Telegram reaction monitor v6 started')
 
     proc = subprocess.Popen(
-        ['journalctl', '-u', 'openclaw-gateway', '-f', '-o', 'cat', '--no-pager'],
+        ['journalctl', '-u', gateway_service(), '-f', '-o', 'cat', '--no-pager'],
         stdout=subprocess.PIPE,
         stderr=subprocess.DEVNULL,
         text=True,

@@ -3,15 +3,20 @@
 Twitter/X Trends Monitor - Track what's hot in AI/automation/creator space
 Uses bird CLI for searching
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import log_file, memory_db, memory_file
+
 import sqlite3
 import subprocess
 import json
 from datetime import datetime
 from pathlib import Path
 
-MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/twitter-trends-monitor.log")
-SUMMARY_FILE = Path("/root/clawd/memory/twitter_trends_summary.md")
+MEMORY_DB = memory_db()
+LOG_FILE = log_file("twitter-trends-monitor.log")
+SUMMARY_FILE = memory_file("twitter_trends_summary.md")
 
 # Searches to run
 SEARCHES = [

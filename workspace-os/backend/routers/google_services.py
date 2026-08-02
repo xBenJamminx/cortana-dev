@@ -13,7 +13,9 @@ import base64
 
 router = APIRouter()
 
-GOOGLE_CREDS_PATH = '/root/.clawdbot/google_credentials.json'
+from paths import agent_dir
+
+GOOGLE_CREDS_PATH = f'{agent_dir()}/google_credentials.json'
 
 def load_google_creds():
     """Load Google OAuth credentials"""

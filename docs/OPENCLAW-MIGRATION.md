@@ -1,38 +1,127 @@
 # OpenClaw to Hermes Agent migration
 
-Cortana's active runtime is **Hermes Agent**. OpenClaw is retained where required for historical accuracy or compatibility, and in legacy code that has not yet been safely migrated and deployment-tested.
+Cortana's runtime is **Hermes Agent**. The repository no longer hardcodes
+OpenClaw paths in executable code: every runtime path resolves through
+`lib/paths.py`, secrets through `lib/env.py`, and gateway control through
+`lib/gateway.py`.
 
-## Current equivalents
+## How paths resolve now
 
-| Legacy concept | Current Hermes Agent equivalent |
+Everything derives from the checkout rather than an absolute path, so the same
+code is correct whether the workspace lives at `/root/.openclaw/workspace`,
+`/root/clawd`, or anywhere else. Agent-home lookups check Hermes first and fall
+back to the legacy homes only for state that has not been moved yet.
+
+| Concern | Resolver | Default |
+|---|---|---|
+| Workspace root | `lib.paths.WORKSPACE` | the checkout |
+| Logs | `lib.paths.log_file(name)` | `<workspace>/logs` |
+| Workspace memory files | `lib.paths.memory_file(name)` | `<workspace>/memory` |
+| Agent memory sqlite | `lib.paths.memory_db()` | `~/.hermes/memory/main.sqlite` |
+| Any agent-home file | `lib.paths.agent_file(name)` | `~/.hermes/<name>` |
+| Secrets | `lib.env.load_env()` / `env_path()` | `~/.hermes/.env` |
+| Gateway control | `lib.gateway.is_active()` / `.restart()` | `hermes gateway`, systemd fallback |
+| Gateway unit name | `lib.paths.gateway_service()` | `hermes-gateway` |
+
+### Environment variables
+
+| Variable | Effect |
+|---|---|
+| `CORTANA_WORKSPACE` | workspace root |
+| `CORTANA_LOGS` | log directory |
+| `CORTANA_MEMORY_DB` | agent memory sqlite |
+| `CORTANA_GATEWAY_SERVICE` | systemd unit name for the gateway |
+| `HERMES_HOME` | Hermes home (default `~/.hermes`) |
+
+Workspace OS has its own copy of this logic in `workspace-os/backend/paths.py`,
+because it ships as a separate container image and cannot import from the
+checkout. It also reads `CORTANA_GATEWAY_URL`, `CORTANA_GATEWAY_TOKEN`, and
+`CORTANA_BROWSER_URL`, each falling back to its old `CLAWDBOT_*` name.
+
+## Concept mapping
+
+| Legacy concept | Hermes Agent equivalent |
 |---|---|
 | `~/.openclaw/openclaw.json` / `~/.clawdbot/clawdbot.json` | `~/.hermes/config.yaml` |
-| `/root/.openclaw/workspace` / `/root/clawd` | this repository checkout, optionally exposed as `$CORTANA_WORKSPACE` |
+| `/root/.openclaw/workspace` / `/root/clawd` | the checkout, or `$CORTANA_WORKSPACE` |
 | `spawn_task.sh`, `sessions_spawn` | `delegate_task` for isolated reasoning work |
-| ad-hoc detached/background agent sessions | `terminal(background=true, notify_on_complete=true)` for bounded shell work |
+| ad-hoc detached agent sessions | `terminal(background=true, notify_on_complete=true)` |
 | system `crontab` invoking an agent wrapper | Hermes `cronjob` or `hermes cron` |
-| `openclaw-gateway.service` | `hermes gateway setup|start|stop|status` |
-| OpenClaw channel configuration | Hermes messaging gateway under `gateway` in `~/.hermes/config.yaml` |
+| `openclaw-gateway.service` | `hermes gateway setup\|start\|stop\|status` |
+| OpenClaw channel configuration | `gateway` section of `~/.hermes/config.yaml` |
 
-Delegation is not durable: session/process shutdown can cancel child agents. Use Hermes cron for scheduled or durable agent runs.
+Delegation is not durable: session shutdown can cancel child agents. Use Hermes
+cron for scheduled or durable agent runs.
+
+## Server-side steps (not done by this repository)
+
+The code no longer cares which layout exists, but these still need doing on the
+host to finish the move:
+
+1. **Confirm which secrets file is live.**
+   `ls -la ~/.hermes/.env ~/.openclaw/.env`
+   If both exist, consolidate into `~/.hermes/.env` — the loaders pick the
+   first that exists and do **not** merge them.
+2. **Move agent state** (memory database, `google_credentials.json`, media
+   directories) from `~/.openclaw` or `~/.clawdbot` into `~/.hermes`, or set
+   `CORTANA_MEMORY_DB` to keep it where it is.
+3. **Set `CORTANA_WORKSPACE`** in the gateway environment if the checkout is
+   not the working directory.
+4. **Reinstall log rotation.** `config/logrotate-cortana.conf` replaces
+   `logrotate-clawd.conf`; the workspace path inside it must be edited by hand,
+   because logrotate expands neither `~` nor environment variables.
+5. **Re-run `scripts/setup-cron.sh`** so crontab entries point at the checkout.
+   It removes both the new marker and legacy `clawd` entries first.
+6. **Confirm the gateway unit name.** `lib/gateway.py` prefers the `hermes` CLI
+   and only falls back to systemd; if the unit is not `hermes-gateway`, set
+   `CORTANA_GATEWAY_SERVICE`.
+
+## Known gaps
+
+- **Workspace OS gateway routes** (`workspace-os/backend/routers/ai.py`,
+  `browser.py`) call the legacy gateway HTTP API (`/api/models`,
+  `/api/ai/image`) on port 18789. The URLs are now configurable, but the
+  endpoints themselves are unverified against Hermes.
+- **Workspace OS config reads.** `paths.agent_config()` reads
+  `~/.hermes/config.yaml` when present, but the Hermes schema differs from the
+  old `clawdbot.json`, so lookups such as `agents.defaults.models` and
+  `skills.entries` return empty until they are mapped. Callers keep their
+  `.get(..., {})` defaults, so this degrades rather than crashes.
+- **Watchdog process matching.** `scripts/watchdog.py` and
+  `process-watchdog.py` still hunt for processes named `claude`. If Hermes runs
+  a differently named provider process, that match needs updating.
 
 ## Intentionally retained OpenClaw references
 
-The following are records or compatibility artifacts, not current instructions. Some legacy scripts still contain OpenClaw paths because they have not been deployment-tested on Hermes; they are not Hermes-ready merely because this documentation changed.
+Not stale, not to be bulk-renamed:
 
-- `memory/`, dated root notes, and `learnings_patch.md`: historical events and migration records
-- `ERROR_LOG.md`: historical OpenClaw incident signatures and remediations; consult only when maintaining a legacy instance
-- `reports/`, `social_posts/`, `memory/content-drafts/`, and `skills/x-research/data/cache/`: previously published/drafted/cached source material whose wording must remain faithful
-- `skills/x-research/data/watchlist.json`: an explicit watch target for the OpenClaw project
-- legacy maintenance scripts such as `sync-cli-sessions.sh` and `cleanup-user-systemd.sh`: OpenClaw-only compatibility/removal utilities
-- other scripts that still contain OpenClaw paths: unmigrated legacy code; review and test each one before use rather than bulk-renaming production paths
-- sacred production workflow scripts (`meeting-wrap-v1.py`, `morning-scan-v2.py`, `fam-sync-analyze.py`, `fam-sync-write.py`): intentionally not edited during repository modernization; migrate only in a separately approved, deployment-tested change
-- filenames and product labels such as `clawdbot_router.png` or old database/table names: archival identifiers
+- `memory/`, dated root notes, `learnings_patch.md`, `ERROR_LOG.md` — historical
+  records and legacy incident signatures
+- `reports/`, `social_posts/`, `memory/content-drafts/`, and the drafted or
+  published X posts in `scripts/scheduled-*-post.*` — published copy whose
+  wording must stay faithful
+- `skills/x-research/data/` — cached source material and an explicit OpenClaw
+  watch target
+- `scripts/cleanup-user-systemd.sh`, `scripts/sync-cli-sessions.sh` — utilities
+  whose whole job is removing or reading OpenClaw state; they need the old names
+- `scripts/morning-scan.sh` — a retired wrapper kept as a tombstone
+- the `clawdbot` key in skill `metadata:` front matter — a loader schema key,
+  not a path
+- `topic-aggregator.py`'s `"openclaw"` keyword — a monitoring search term
+- `openclaw` as an SSH host alias in `TOOLS.md` — a real host alias
+- `<!-- openclaw:* -->` markers in `SOUL.md` — consumed by tooling
+- root OAuth one-offs (`exchange_oauth_code.py`, `google_oauth_flow.py`,
+  `generate_oauth_url.py`, and the `test_*google*.py` scripts) — archival
+  bootstrap records; live code reads credentials via `agent_file()`
 
 ## Rules for new changes
 
-1. Do not introduce new `.openclaw`, `.clawdbot`, `/root/clawd`, `spawn_task.sh`, `sessions_spawn`, or `openclaw-gateway` dependencies.
-2. Resolve repository paths relative to the checkout or `$CORTANA_WORKSPACE`.
-3. Keep secrets in `~/.hermes/.env` or an integration's secure store, never in git.
-4. Confirm current commands and configuration against <https://hermes-agent.nousresearch.com/docs>.
-5. Do not blindly rename historical quotes, incident details, social content, or archival data.
+1. Never hardcode `/root/clawd`, `~/.openclaw`, `~/.clawdbot`, `spawn_task.sh`,
+   `sessions_spawn`, or `openclaw-gateway`. Use the resolvers.
+2. Keep secrets in `~/.hermes/.env` or an integration's secure store, never in
+   git. Saving a key is a secrets-file edit, not a commit — see
+   `context/auth.md`.
+3. Confirm current commands and configuration against
+   <https://hermes-agent.nousresearch.com/docs>.
+4. Do not rename historical quotes, incident details, social copy, or archival
+   data.

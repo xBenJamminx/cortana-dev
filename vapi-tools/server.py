@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 """VAPI Tools Server for Cortana - with Google Calendar & Sheets"""
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.env import env_path
+from lib.paths import agent_file, gateway_service, memory_db
+
 import os, json, sqlite3, subprocess
 from datetime import datetime, timedelta
 from typing import Optional, List, Dict, Any
@@ -8,7 +14,7 @@ from fastapi.responses import JSONResponse
 import requests
 from dotenv import load_dotenv
 
-load_dotenv("/root/.openclaw/.env")
+load_dotenv(env_path() or None)
 app = FastAPI(title="Cortana VAPI Tools", version="2.1.0")
 
 
@@ -29,8 +35,8 @@ async def auth_middleware(request: Request, call_next):
         return await call_next(request)
     return JSONResponse({"error": "Unauthorized"}, status_code=401)
 
-MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-GOOGLE_CREDS_FILE = "/root/.openclaw/google_credentials.json"
+MEMORY_DB = memory_db()
+GOOGLE_CREDS_FILE = agent_file("google_credentials.json")
 
 # ============= MEMORY FUNCTIONS =============
 def get_memory_db():
@@ -149,11 +155,11 @@ def append_to_sheet(spreadsheet_id: str, range_name: str, values: List[List]) ->
 
 # ============= HEALTH CHECK FUNCTIONS =============
 def check_gateway_status() -> Dict:
-    """Check if openclaw-gateway service is running"""
+    """Check if the messaging gateway service is running"""
     try:
-        result = subprocess.run(["systemctl", "is-active", "openclaw-gateway"], capture_output=True, text=True, timeout=5)
+        result = subprocess.run(["systemctl", "is-active", gateway_service()], capture_output=True, text=True, timeout=5)
         is_active = result.stdout.strip() == "active"
-        return {"status": "ok" if is_active else "down", "service": "openclaw-gateway"}
+        return {"status": "ok" if is_active else "down", "service": gateway_service()}
     except Exception as e:
         return {"status": "error", "error": str(e)}
 
@@ -240,10 +246,10 @@ if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8787)
 
 # ============= VOICE WEBHOOK PROXY =============
-# Proxies /voice/* requests to OpenClaw voice-call plugin on port 3334
+# Proxies /voice/* requests to the voice-call plugin on port 3334
 @app.api_route("/voice/{path:path}", methods=["GET", "POST", "PUT", "DELETE"])
 async def proxy_voice_webhook(path: str, request: Request):
-    """Reverse proxy for OpenClaw voice-call plugin webhook"""
+    """Reverse proxy for the voice-call plugin webhook"""
     import httpx
     target = f"http://127.0.0.1:3334/voice/{path}"
     body = await request.body()

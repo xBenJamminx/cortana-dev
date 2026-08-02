@@ -13,7 +13,9 @@ except ImportError:
 
 router = APIRouter()
 
-CLAWDBOT_DIR = '/root/.clawdbot'
+from paths import agent_config, agent_dir
+
+CLAWDBOT_DIR = agent_dir()
 
 def read_json(path, default=None):
     try:
@@ -48,7 +50,7 @@ async def get_system_status():
 @router.get('/agents/')
 async def list_agents():
     """List configured agents"""
-    config = read_json(f'{CLAWDBOT_DIR}/clawdbot.json', {})
+    config = agent_config()
     agents_config = config.get('agents', {})
     defaults = agents_config.get('defaults', {})
     agent_list = agents_config.get('list', [])
@@ -68,7 +70,7 @@ async def list_agents():
 @router.get('/agents/models')
 async def list_available_models():
     """List available AI models"""
-    config = read_json(f'{CLAWDBOT_DIR}/clawdbot.json', {})
+    config = agent_config()
     agents_config = config.get('agents', {})
     defaults = agents_config.get('defaults', {})
     models = defaults.get('models', {})
@@ -87,7 +89,7 @@ async def list_available_models():
 @router.get('/skills/')
 async def list_skills():
     """List installed skills and their config"""
-    config = read_json(f'{CLAWDBOT_DIR}/clawdbot.json', {})
+    config = agent_config()
     skills_config = config.get('skills', {})
     skill_entries = skills_config.get('entries', {})
 
@@ -154,7 +156,7 @@ async def list_schedules():
 @router.get('/channels/')
 async def list_channels():
     """List configured channels (Telegram, etc)"""
-    config = read_json(f'{CLAWDBOT_DIR}/clawdbot.json', {})
+    config = agent_config()
     channels = config.get('channels', {})
 
     result = []
@@ -227,7 +229,7 @@ async def get_memory_stats():
 @router.get('/browser/')
 async def get_browser_status():
     """Get browser configuration and status"""
-    config = read_json(f'{CLAWDBOT_DIR}/clawdbot.json', {})
+    config = agent_config()
     browser = config.get('browser', {})
 
     return {

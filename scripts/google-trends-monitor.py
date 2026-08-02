@@ -2,14 +2,19 @@
 """
 Google Trends Monitor - Track breakout searches in AI/automation/creator space
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import log_file, memory_db, memory_file
+
 import sqlite3
 import requests
 from datetime import datetime
 from pathlib import Path
 
-MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/google-trends-monitor.log")
-SUMMARY_FILE = Path("/root/clawd/memory/google_trends_summary.md")
+MEMORY_DB = memory_db()
+LOG_FILE = log_file("google-trends-monitor.log")
+SUMMARY_FILE = memory_file("google_trends_summary.md")
 
 # Categories of interest
 CATEGORIES = [

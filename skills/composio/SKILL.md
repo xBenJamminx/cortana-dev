@@ -14,10 +14,10 @@ Universal API gateway to 500+ connected apps including Twitter, Gmail, Slack, No
 
 ```bash
 # Search for tools by use case
-~/clawd/skills/composio/composio-mcp.py --search "post tweet"
+$CORTANA_WORKSPACE/skills/composio/composio-mcp.py --search "post tweet"
 
 # Execute a tool
-~/clawd/skills/composio/composio-mcp.py --exec TOOL_SLUG '{"param": "value"}'
+$CORTANA_WORKSPACE/skills/composio/composio-mcp.py --exec TOOL_SLUG '{"param": "value"}'
 ```
 
 ## Connected Services
@@ -36,22 +36,22 @@ Universal API gateway to 500+ connected apps including Twitter, Gmail, Slack, No
 
 **Get my profile:**
 ```bash
-~/clawd/skills/composio/composio-mcp.py --exec TWITTER_USER_LOOKUP_ME
+$CORTANA_WORKSPACE/skills/composio/composio-mcp.py --exec TWITTER_USER_LOOKUP_ME
 ```
 
 **Post a tweet:**
 ```bash
-~/clawd/skills/composio/composio-mcp.py --exec TWITTER_CREATION_OF_A_POST '{"text": "Hello world!"}'
+$CORTANA_WORKSPACE/skills/composio/composio-mcp.py --exec TWITTER_CREATION_OF_A_POST '{"text": "Hello world!"}'
 ```
 
 **Search tweets:**
 ```bash
-~/clawd/skills/composio/composio-mcp.py --exec TWITTER_RECENT_SEARCH '{"query": "AI agents", "max_results": 10}'
+$CORTANA_WORKSPACE/skills/composio/composio-mcp.py --exec TWITTER_RECENT_SEARCH '{"query": "AI agents", "max_results": 10}'
 ```
 
 **Get home timeline:**
 ```bash
-~/clawd/skills/composio/composio-mcp.py --exec TWITTER_USER_HOME_TIMELINE_BY_USER_ID '{"max_results": 20}'
+$CORTANA_WORKSPACE/skills/composio/composio-mcp.py --exec TWITTER_USER_HOME_TIMELINE_BY_USER_ID '{"max_results": 20}'
 ```
 
 ## Connecting New Apps
@@ -59,7 +59,7 @@ Universal API gateway to 500+ connected apps including Twitter, Gmail, Slack, No
 To connect a new app (e.g., Gmail, Slack, Notion):
 
 ```bash
-~/clawd/skills/composio/composio-mcp.py COMPOSIO_MANAGE_CONNECTIONS '{"toolkits": ["gmail"]}'
+$CORTANA_WORKSPACE/skills/composio/composio-mcp.py COMPOSIO_MANAGE_CONNECTIONS '{"toolkits": ["gmail"]}'
 ```
 
 This returns an authentication URL. Open it in a browser to complete OAuth.
@@ -68,9 +68,9 @@ This returns an authentication URL. Open it in a browser to complete OAuth.
 
 Search by what you want to do:
 ```bash
-~/clawd/skills/composio/composio-mcp.py --search "send email"
-~/clawd/skills/composio/composio-mcp.py --search "create calendar event"
-~/clawd/skills/composio/composio-mcp.py --search "post slack message"
+$CORTANA_WORKSPACE/skills/composio/composio-mcp.py --search "send email"
+$CORTANA_WORKSPACE/skills/composio/composio-mcp.py --search "create calendar event"
+$CORTANA_WORKSPACE/skills/composio/composio-mcp.py --search "post slack message"
 ```
 
 ## Meta Tools

@@ -14,7 +14,9 @@ from pathlib import Path
 
 log = logging.getLogger("cortana.health")
 
-DIAGNOSTICS_DIR = Path("/root/clawd/logs/diagnostics")
+from lib.paths import GATEWAY_LOG, LOGS, gateway_service
+
+DIAGNOSTICS_DIR = LOGS / "diagnostics"
 
 
 def check_gateway_http(port: int = 18789, timeout: float = 5.0) -> dict:
@@ -112,12 +114,13 @@ def check_disk_space(threshold_warn: int = 80, threshold_crit: int = 90) -> dict
         return {"usage_pct": -1, "free_gb": -1, "alert": False, "level": None}
 
 
-def check_systemd_service(name: str = "openclaw-gateway") -> dict:
+def check_systemd_service(name: str | None = None) -> dict:
     """Check systemd service status.
 
     Returns:
         {"active": bool, "state": str, "sub_state": str, "restart_count": int}
     """
+    name = name or gateway_service()
     try:
         result = subprocess.run(
             ["systemctl", "show", name,
@@ -182,9 +185,10 @@ def capture_diagnostics(reason: str = "unknown") -> str:
         ("Port 18789 holders", "ss -tlnp sport = :18789"),
         ("Top processes (CPU)", "ps aux --sort=-%cpu | head -15"),
         ("Top processes (MEM)", "ps aux --sort=-%mem | head -15"),
-        ("Gateway service", "systemctl status openclaw-gateway --no-pager -l"),
-        ("Journal (last 30 lines)", "journalctl -u openclaw-gateway --no-pager -n 30"),
-        ("Recent gateway log", "tail -50 /tmp/openclaw/openclaw-$(date +%Y-%m-%d).log 2>/dev/null || echo 'no log'"),
+        ("Gateway status", "hermes gateway status 2>/dev/null || systemctl status "
+                           f"{gateway_service()} --no-pager -l"),
+        ("Journal (last 30 lines)", f"journalctl -u {gateway_service()} --no-pager -n 30"),
+        ("Recent gateway log", f"tail -50 {GATEWAY_LOG} 2>/dev/null || echo 'no log'"),
     ]
 
     for title, cmd in commands:

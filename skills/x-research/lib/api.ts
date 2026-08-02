@@ -5,21 +5,38 @@
  */
 
 import { readFileSync } from "fs";
+import { homedir } from "os";
+import { join } from "path";
 
 const COMPOSIO_BASE = "https://backend.composio.dev/api";
 const RATE_DELAY_MS = 500; // be nice to Composio
 
+// Agent secrets file: Hermes first, legacy homes as fallback.
+const ENV_CANDIDATES = [
+  join(homedir(), ".hermes", ".env"),
+  join(homedir(), ".openclaw", ".env"),
+];
+
+function readAgentEnv(): string {
+  for (const path of ENV_CANDIDATES) {
+    try {
+      return readFileSync(path, "utf-8");
+    } catch {}
+  }
+  throw new Error("no agent secrets file found");
+}
+
 function getComposioKey(): string {
   if (process.env.COMPOSIO_API_KEY) return process.env.COMPOSIO_API_KEY;
 
-  // Try .openclaw/.env
+  // Try the agent secrets file
   try {
-    const envFile = readFileSync("/root/.openclaw/.env", "utf-8");
+    const envFile = readAgentEnv();
     const match = envFile.match(/COMPOSIO_API_KEY=["']?([^"'\n]+)/);
     if (match) return match[1];
   } catch {}
 
-  throw new Error("COMPOSIO_API_KEY not found in env or /root/.openclaw/.env");
+  throw new Error("COMPOSIO_API_KEY not found in env or the agent secrets file");
 }
 
 // Ben's main account connection (default entity)

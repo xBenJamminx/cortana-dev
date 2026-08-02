@@ -15,6 +15,7 @@ import httpx
 # Local imports
 import sys
 sys.path.insert(0, os.path.dirname(__file__))
+from paths import browser_url, gateway_url, workspace_root
 from database import (
     get_db, init_db, SessionLocal,
     Project, ProjectTask, FileIndex, AICall, Activity, Memory,
@@ -479,7 +480,7 @@ async def get_integration_status(db: Session = Depends(get_db)):
     # Check Gateway
     try:
         async with httpx.AsyncClient(timeout=5.0) as client:
-            resp = await client.get(f"{os.getenv('CLAWDBOT_GATEWAY_URL', 'http://127.0.0.1:18789')}/health")
+            resp = await client.get(f"{gateway_url()}/health")
             statuses["gateway"] = {
                 "status": "connected" if resp.status_code == 200 else "error",
                 "last_check": datetime.utcnow().isoformat()
@@ -490,7 +491,7 @@ async def get_integration_status(db: Session = Depends(get_db)):
     # Check Browser Relay
     try:
         async with httpx.AsyncClient(timeout=5.0) as client:
-            resp = await client.get(f"{os.getenv('CLAWDBOT_BROWSER_URL', 'http://127.0.0.1:18791')}/health")
+            resp = await client.get(f"{browser_url()}/health")
             statuses["browser"] = {
                 "status": "connected" if resp.status_code == 200 else "error",
                 "last_check": datetime.utcnow().isoformat()
@@ -505,7 +506,7 @@ async def get_integration_status(db: Session = Depends(get_db)):
 @app.get("/api/identity/")
 async def get_identity_docs():
     """Get identity documents (SOUL, USER, IDENTITY, MEMORY)"""
-    workspace = os.getenv("WORKSPACE_ROOT", "/root/clawd")
+    workspace = workspace_root()
     docs = {}
 
     for doc in ["SOUL.md", "USER.md", "IDENTITY.md", "MEMORY.md", "AGENTS.md"]:
@@ -519,7 +520,7 @@ async def get_identity_docs():
 @app.put("/api/identity/{doc_name}")
 async def update_identity_doc(doc_name: str, content: str, db: Session = Depends(get_db)):
     """Update an identity document"""
-    workspace = os.getenv("WORKSPACE_ROOT", "/root/clawd")
+    workspace = workspace_root()
     allowed = ["SOUL.md", "USER.md", "IDENTITY.md", "MEMORY.md"]
 
     if doc_name not in allowed:

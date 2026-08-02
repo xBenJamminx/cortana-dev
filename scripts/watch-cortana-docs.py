@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import SCRIPTS, WORKSPACE
+
 import time, subprocess
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
 WATCH_FILES = {"USER.md", "IDENTITY.md", "CLAUDE.md", "MEMORY.md"}
-SYNC_SCRIPT = "/root/clawd/scripts/cross-sync-memory.py"
+SYNC_SCRIPT = str(SCRIPTS / "cross-sync-memory.py")
 
 class Handler(FileSystemEventHandler):
     def __init__(self):
@@ -20,7 +25,7 @@ class Handler(FileSystemEventHandler):
 if __name__ == "__main__":
     print("👀 Watching docs...")
     o = Observer()
-    o.schedule(Handler(), "/root/clawd", recursive=False)
+    o.schedule(Handler(), str(WORKSPACE), recursive=False)
     o.start()
     try:
         while True: time.sleep(1)

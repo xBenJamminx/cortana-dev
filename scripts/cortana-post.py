@@ -6,35 +6,26 @@ Usage:
   cortana-post.py --file /path/to/tweet.txt
   cortana-post.py --test  # Check connection status
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import log_file
+
 import os
 import sys
 import json
 import requests
 from datetime import datetime
 
-def _load_env():
-    env_path = ""
-    for _candidate in ("~/.hermes/.env", "~/.openclaw/.env"):
-        _expanded = os.path.expanduser(_candidate)
-        if os.path.exists(_expanded):
-            env_path = _expanded
-            break
-    if os.path.exists(env_path):
-        with open(env_path) as f:
-            for line in f:
-                line = line.strip()
-                if line and not line.startswith("#") and "=" in line:
-                    key, _, val = line.partition("=")
-                    key = key.replace("export ", "").strip()
-                    if key and not os.environ.get(key):
-                        os.environ[key] = val
-_load_env()
+from lib.env import load_env
+
+load_env()
 
 # CortanaOps Composio connection
 CONNECTED_ACCOUNT_ID = "1fc9b642-233c-41c0-b754-3879b85ec0bb"
 COMPOSIO_API_KEY = os.environ["COMPOSIO_MCP_API_KEY"]
 BASE_URL = "https://backend.composio.dev/api"
-LOG = "/root/clawd/logs/cortana-posts.log"
+LOG = str(log_file("cortana-posts.log"))
 
 def log(msg):
     ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")

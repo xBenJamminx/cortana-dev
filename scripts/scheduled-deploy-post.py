@@ -4,31 +4,22 @@ Scheduled for: Wednesday Feb 12, 2026 at 10:00 AM ET (15:00 UTC)
 Status: APPROVED (moved from Monday to Wednesday)
 Method: Telegram reminder (Ben posts manually)
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import log_file
+
 import os
 import requests
 import datetime
 
-def _load_env():
-    env_path = ""
-    for _candidate in ("~/.hermes/.env", "~/.openclaw/.env"):
-        _expanded = os.path.expanduser(_candidate)
-        if os.path.exists(_expanded):
-            env_path = _expanded
-            break
-    if os.path.exists(env_path):
-        with open(env_path) as f:
-            for line in f:
-                line = line.strip()
-                if line and not line.startswith("#") and "=" in line:
-                    key, _, val = line.partition("=")
-                    key = key.replace("export ", "").strip()
-                    if key and not os.environ.get(key):
-                        os.environ[key] = val
-_load_env()
+from lib.env import load_env
+
+load_env()
 
 BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
-LOG = "/root/clawd/logs/scheduled-posts.log"
+LOG = str(log_file("scheduled-posts.log"))
 
 draft = """Your @OpenClaw bot can build, push, and deploy a web app for you.
 

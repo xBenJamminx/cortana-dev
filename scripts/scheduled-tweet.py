@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
 """Post the YouTube audience mismatch tweet"""
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import WORKSPACE
+
 import subprocess
 import json
 
-script = "/root/clawd/skills/composio/composio-mcp.py"
+script = str(WORKSPACE / "skills" / "composio" / "composio-mcp.py")
 base_id = "appdFTSkXnphHLwfl"
 table_id = "tblvLSX7DZxIRWU5g"
 

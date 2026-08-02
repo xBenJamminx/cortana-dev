@@ -9,6 +9,11 @@ Approach:
 3. Cluster similar topics and count mentions
 4. Output: "Topic X - 500 posts" style like X's Today's News
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import log_file, memory_db, memory_file
+
 import sqlite3
 import subprocess
 import json
@@ -19,8 +24,8 @@ from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse
 
-MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/twitter-topic-extractor.log")
+MEMORY_DB = memory_db()
+LOG_FILE = log_file("twitter-topic-extractor.log")
 
 # Tech-focused search queries
 SEARCHES = [
@@ -355,7 +360,7 @@ def main():
     print(output)
 
     # Save to file
-    output_file = Path("/root/clawd/memory/twitter_topics.md")
+    output_file = memory_file("twitter_topics.md")
     output_file.parent.mkdir(parents=True, exist_ok=True)
     output_file.write_text(output)
 

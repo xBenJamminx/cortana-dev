@@ -13,8 +13,10 @@ from database import get_db, FileIndex, Activity
 
 router = APIRouter()
 
-WORKSPACE_ROOT = os.getenv("WORKSPACE_ROOT", "/root/clawd")
-EXCLUDE_DIRS = os.getenv("WATCH_EXCLUDE", ".clawdbot,clawdbot.json,workspace-os").split(",")
+from paths import workspace_root
+
+WORKSPACE_ROOT = workspace_root()
+EXCLUDE_DIRS = os.getenv("WATCH_EXCLUDE", ".hermes,config.yaml,workspace-os").split(",")
 
 def get_file_type(ext):
     ext = ext.lower().lstrip(".")

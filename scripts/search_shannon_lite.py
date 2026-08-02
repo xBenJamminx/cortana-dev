@@ -1,3 +1,8 @@
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import agent_file
+
 import json
 import os
 import requests
@@ -43,7 +48,7 @@ def search_contacts(creds, query):
         print(f"Contact: {name} ({email})")
 
 if __name__ == "__main__":
-    with open('/root/.clawdbot/google_credentials.json') as f:
+    with open(agent_file("google_credentials.json")) as f:
         creds = json.load(f)
     
     # Check if token needs refresh (simplified for this test)

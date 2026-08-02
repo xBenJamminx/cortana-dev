@@ -11,8 +11,10 @@ from typing import Optional
 
 router = APIRouter()
 
-CLAWDBOT_DIR = '/root/.clawdbot'
-WORKSPACE_DIR = '/root/clawd'
+from paths import agent_config, agent_dir, workspace_root
+
+CLAWDBOT_DIR = agent_dir()
+WORKSPACE_DIR = workspace_root()
 
 # ============ MEMORY ============
 
@@ -269,7 +271,7 @@ async def send_telegram_message(msg: TelegramMessage):
     import httpx
 
     # Read bot token from config
-    config_path = f'{CLAWDBOT_DIR}/clawdbot.json'
+    config_path = f'{CLAWDBOT_DIR}/clawdbot.json'  # legacy; see paths.agent_config
     with open(config_path, 'r') as f:
         config = json.load(f)
 

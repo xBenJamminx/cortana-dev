@@ -3,7 +3,9 @@
 
 # Source env if not set
 if [ -z "$ELEVENLABS_API_KEY" ]; then
-  [ -f /root/.openclaw/.env ] && source /root/.openclaw/.env
+  for _env in "$HOME/.hermes/.env" "$HOME/.openclaw/.env"; do
+    [ -f "$_env" ] && { set -a; . "$_env"; set +a; break; }
+  done
   [ -f /root/.bashrc ] && source /root/.bashrc
 fi
 

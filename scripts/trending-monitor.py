@@ -3,12 +3,17 @@
 Trending Topics Monitor - Track AI/tech/creator trends
 Uses DuckDuckGo for news and web searches
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import log_file, memory_db, memory_file
+
 import sqlite3
 from datetime import datetime
 from pathlib import Path
 
-MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/trending-monitor.log")
+MEMORY_DB = memory_db()
+LOG_FILE = log_file("trending-monitor.log")
 
 SEARCH_QUERIES = [
     "AI tools 2025",
@@ -106,7 +111,7 @@ def generate_summary():
     for title, source, url in news:
         summary += f"• {title}\n  _{source}_\n\n"
     
-    Path("/root/clawd/memory/trending_summary.md").write_text(summary)
+    memory_file("trending_summary.md").write_text(summary)
     return summary
 
 def main():

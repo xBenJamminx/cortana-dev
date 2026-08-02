@@ -24,7 +24,7 @@
  *   --no-retweets              Exclude retweets (added by default)
  *   --limit N                  Max results to display (default: 15)
  *   --since 1h|3h|12h|1d|7d   Time filter
- *   --save                     Save results to ~/clawd/drafts/
+ *   --save                     Save results to $CORTANA_WORKSPACE/drafts/
  *   --json                     Output raw JSON
  *   --markdown                 Output as markdown (for research docs)
  */
@@ -37,7 +37,10 @@ import * as fmt from "./lib/format";
 
 const SKILL_DIR = import.meta.dir;
 const WATCHLIST_PATH = join(SKILL_DIR, "data", "watchlist.json");
-const DRAFTS_DIR = join(process.env.HOME!, "clawd", "drafts");
+const DRAFTS_DIR = join(
+  process.env.CORTANA_WORKSPACE ?? join(import.meta.dirname, "..", ".."),
+  "drafts",
+);
 
 // --- Arg parsing ---
 
@@ -359,7 +362,7 @@ Search options:
   --pages N                  Pages to fetch, 1-5 (default: 1)
   --limit N                  Results to display (default: 15)
   --no-replies               Exclude replies
-  --save                     Save to ~/clawd/drafts/
+  --save                     Save to $CORTANA_WORKSPACE/drafts/
   --json                     Raw JSON output
   --markdown                 Markdown output`);
 }

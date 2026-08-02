@@ -9,7 +9,7 @@ Generates the FAM POC Standup wrap-up after each meeting, sends to Telegram for 
 
 ## The script does everything — run it, do not draft manually
 
-`/root/.openclaw/workspace/scripts/meeting-wrap-v1.py`
+`$CORTANA_WORKSPACE/scripts/meeting-wrap-v1.py`
 
 Doing it manually = wrong channel, wrong account, wrong format. The script handles Fathom, Gemini, Telegram, and Slack. Your job is to run it and wait.
 
@@ -18,13 +18,13 @@ Doing it manually = wrong channel, wrong account, wrong format. The script handl
 ## Phase 1 — Generate and send to Telegram for review
 
 ```bash
-cd /root/.openclaw/workspace && python3 scripts/meeting-wrap-v1.py
+cd $CORTANA_WORKSPACE && python3 scripts/meeting-wrap-v1.py
 ```
 
 For a specific meeting ID:
 
 ```bash
-cd /root/.openclaw/workspace && python3 scripts/meeting-wrap-v1.py 138608865
+cd $CORTANA_WORKSPACE && python3 scripts/meeting-wrap-v1.py 138608865
 ```
 
 Use a 5-minute timeout (300000 ms) — transcript pull + OpenRouter call takes 60-90 seconds.
@@ -47,7 +47,7 @@ After running: tell Ben "Done — FAM standup wrap sent to Telegram topic 2122. 
 ## Phase 2 — Post to Slack (ONLY after Ben approves)
 
 ```bash
-cd /root/.openclaw/workspace && python3 scripts/meeting-wrap-v1.py --post
+cd $CORTANA_WORKSPACE && python3 scripts/meeting-wrap-v1.py --post
 ```
 
 What it does:

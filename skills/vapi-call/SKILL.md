@@ -11,7 +11,7 @@ Make outbound phone calls through Cortana via VAPI.
 ## Usage
 
 ```bash
-/root/clawd/skills/vapi-call/vapi-call +15551234567 "Hey, this is Cortana calling on behalf of Ben"
+$CORTANA_WORKSPACE/skills/vapi-call/vapi-call +15551234567 "Hey, this is Cortana calling on behalf of Ben"
 ```
 
 - First argument: phone number (with country code)

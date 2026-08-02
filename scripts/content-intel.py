@@ -5,6 +5,11 @@ Detects what's blowing up across platforms, groups by topic, shows multi-platfor
 
 Sources: Hacker News, Product Hunt, Dev.to, Google Trends, DuckDuckGo News
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import log_file, memory_db, memory_file
+
 import os
 import json
 import sqlite3
@@ -15,8 +20,8 @@ from pathlib import Path
 from typing import List, Dict, Set
 from collections import defaultdict
 
-MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/content-intel.log")
+MEMORY_DB = memory_db()
+LOG_FILE = log_file("content-intel.log")
 
 # Topic keywords to track and normalize
 TOPIC_ALIASES = {
@@ -338,7 +343,7 @@ def main():
     print(report)
 
     # Save to file for morning briefing
-    report_file = Path("/root/clawd/memory/content_intel_report.txt")
+    report_file = memory_file("content_intel_report.txt")
     report_file.parent.mkdir(parents=True, exist_ok=True)
     report_file.write_text(report)
 

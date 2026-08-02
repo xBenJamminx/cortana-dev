@@ -11,7 +11,9 @@ from database import get_db, Memory, FileIndex
 
 router = APIRouter()
 
-WORKSPACE_ROOT = os.getenv("WORKSPACE_ROOT", "/root/clawd")
+from paths import workspace_root
+
+WORKSPACE_ROOT = workspace_root()
 
 @router.get("/search")
 async def search_memory(q: str, limit: int = 20, db: Session = Depends(get_db)):
@@ -111,7 +113,7 @@ async def delete_memory(memory_id: int, db: Session = Depends(get_db)):
 
 @router.post("/import/files")
 async def import_memory_files(db: Session = Depends(get_db)):
-    """Import memories from /root/clawd/memory/ files"""
+    """Import memories from the workspace memory/ directory"""
     memory_dir = os.path.join(WORKSPACE_ROOT, "memory")
     if not os.path.exists(memory_dir):
         return {"imported": 0, "error": "Memory directory not found"}

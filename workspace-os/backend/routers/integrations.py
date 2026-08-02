@@ -14,13 +14,15 @@ import hashlib
 import hmac
 import time
 import urllib.parse
+from paths import agent_dir
 
 router = APIRouter()
 
 # Load environment
 def load_env():
     env = {}
-    env_files = ['/root/.clawdbot/.env', '/root/.clawdbot/.env.notion', '/root/.clawdbot/.env.google', '/root/.clawdbot/.env.slack']
+    _home = agent_dir()
+    env_files = [f'{_home}/.env', f'{_home}/.env.notion', f'{_home}/.env.google', f'{_home}/.env.slack']
     for env_file in env_files:
         if os.path.exists(env_file):
             with open(env_file, 'r') as f:

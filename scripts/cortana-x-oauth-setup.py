@@ -2,6 +2,11 @@
 """
 X/Twitter OAuth 2.0 PKCE Setup for @cortanaops account
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.env import env_path
+
 import os
 import sys
 import json
@@ -16,7 +21,7 @@ from datetime import datetime
 import requests
 
 # Load env
-env_file = Path("/root/.openclaw/.env")
+env_file = Path(env_path() or os.path.expanduser("~/.hermes/.env"))
 if env_file.exists():
     for line in env_file.read_text().split("\n"):
         if "=" in line and not line.startswith("#"):
@@ -167,8 +172,9 @@ def setup_oauth():
         tokens = resp.json()
         save_tokens(tokens)
         print("\nOAuth setup complete!")
-        print(f"Access token: {tokens.get('access_token', ''[:30]}...")
-        print(f"Refresh token: {tokens.get('refresh_token', ''[:30]}...")
+        # Never print credential values (AGENTS.md). Confirm presence only.
+        print(f"Access token: {'received' if tokens.get('access_token') else 'MISSING'}")
+        print(f"Refresh token: {'received' if tokens.get('refresh_token') else 'MISSING'}")
         print(f"Expires in: {tokens.get('expires_in')} seconds")
         return tokens
     else:

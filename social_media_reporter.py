@@ -4,6 +4,11 @@ Unified Social Media Report Generator
 Pulls data from X/Twitter, YouTube, and TikTok (when available)
 Generates weekly performance brief
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+from lib.paths import WORKSPACE
+
 
 import os
 import json
@@ -12,7 +17,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 # Config
-REPORT_DIR = Path("/root/clawd/reports")
+REPORT_DIR = WORKSPACE / "reports"
 REPORT_DIR.mkdir(exist_ok=True)
 
 def run_bird_command(cmd, auth_token=None, ct0=None):
@@ -345,7 +350,7 @@ def generate_report():
 {'' if not tt_data.get('manual_entry') else '''
 To add TikTok data:
 1. Export analytics from TikTok Creator Tools (7-day CSV)
-2. Save to `/root/clawd/reports/tiktok_data.csv`
+2. Save to `$CORTANA_WORKSPACE/reports/tiktok_data.csv`
 3. Re-run this report
 
 **Or** connect via Composio once you have Creator account API access.

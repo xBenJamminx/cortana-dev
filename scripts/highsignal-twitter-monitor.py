@@ -7,6 +7,11 @@ Rotates between two accounts to avoid rate limits.
 Extracts topics from tweet CONTENT using Claude.
 No hardcoded keyword searches - purely organic discovery.
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import WORKSPACE, log_file, memory_db
+
 import sqlite3
 import subprocess
 import json
@@ -20,15 +25,15 @@ from collections import defaultdict
 import time
 
 # Setup lib path
-sys.path.insert(0, "/root/clawd")
+sys.path.insert(0, str(WORKSPACE))
 from lib.retry import retry_with_backoff
 from lib.alerting import send_alert
 
-MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-LOG_FILE = Path("/root/clawd/logs/highsignal-twitter.log")
+MEMORY_DB = memory_db()
+LOG_FILE = log_file("highsignal-twitter.log")
 COOKIE_FILE = Path("/root/.config/bird/cookies.json")
-CONFIG_FILE = Path("/root/clawd/config/high_signal_sources.json")
-SUCCESS_MARKER = Path("/root/clawd/logs/.twitter-monitor-last-success")
+CONFIG_FILE = WORKSPACE / "config" / "high_signal_sources.json"
+SUCCESS_MARKER = log_file(".twitter-monitor-last-success")
 
 logging.basicConfig(
     level=logging.INFO,

@@ -11,9 +11,9 @@ Secrets live **outside this repository**, in a plain `KEY=value` env file:
 2. `~/.openclaw/.env` — legacy openclaw location, still present on boxes that
    have not finished migrating
 
-`lib/env.py` checks both, in that order, and loads **the first one that
-exists** — it does not merge them. The inline `_load_env()` copies in
-`scripts/*.py` do the same.
+`lib/env.py` is the single loader — there are no per-script copies any more. It
+checks each location in order and loads **the first one that exists**; it does
+not merge them. `HERMES_HOME` overrides the first path.
 
 That means if `~/.hermes/.env` exists, `~/.openclaw/.env` is ignored
 entirely. If keys are currently split across both files, consolidate them

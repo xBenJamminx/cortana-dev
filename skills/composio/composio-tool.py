@@ -9,7 +9,9 @@ import os
 import json
 
 # Add venv to path
-venv_path = os.path.expanduser('~/clawd/composio_venv')
+venv_path = os.environ.get('CORTANA_WORKSPACE') or os.path.dirname(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+venv_path = os.path.join(venv_path, 'composio_venv')
 sys.path.insert(0, os.path.join(venv_path, 'lib', 'python3.12', 'site-packages'))
 
 os.environ['COMPOSIO_API_KEY'] = 'ak_UjBg3sflMbHRQgr_qzwr'

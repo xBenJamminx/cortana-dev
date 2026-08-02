@@ -3,6 +3,11 @@
 Cortana Morning Briefing v2 - Full data integration
 Pulls from: Calendar, Twitter (Composio), Airtable, Notion, Trending News
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.paths import SCRIPTS, WORKSPACE, agent_file, log_file, memory_db
+
 import os
 import json
 import sqlite3
@@ -12,33 +17,18 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 
-def _load_env():
-    import os as _os
-    env_path = ""
-    for _candidate in ("~/.hermes/.env", "~/.openclaw/.env"):
-        _expanded = _os.path.expanduser(_candidate)
-        if _os.path.exists(_expanded):
-            env_path = _expanded
-            break
-    if _os.path.exists(env_path):
-        with open(env_path) as f:
-            for line in f:
-                line = line.strip()
-                if line and not line.startswith("#") and "=" in line:
-                    key, _, val = line.partition("=")
-                    key = key.replace("export ", "").strip()
-                    if key and not _os.environ.get(key):
-                        _os.environ[key] = val
-_load_env()
+from lib.env import load_env
+
+load_env()
 
 # Config
 BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 CHAT_ID = "-1003856131939"
 BRIEFING_TOPIC_ID = 29  # Analytics & Monitoring topic
-MEMORY_DB = "/root/.openclaw/memory/main.sqlite"
-GOOGLE_CREDS_FILE = "/root/.openclaw/google_credentials.json"
-USER_MD = Path("/root/.openclaw/workspace/USER.md")
-LOG_FILE = Path("/root/.openclaw/workspace/logs/briefing.log")
+MEMORY_DB = memory_db()
+GOOGLE_CREDS_FILE = agent_file("google_credentials.json")
+USER_MD = WORKSPACE / "USER.md"
+LOG_FILE = log_file("briefing.log")
 BIRD_ENV = Path(os.path.expanduser("~/.bird-env"))
 AIRTABLE_PAT = os.environ.get("AIRTABLE_PAT", "")
 AIRTABLE_BASE_ID = "appdFTSkXnphHLwfl"
@@ -626,7 +616,7 @@ def main():
     log("Morning briefing v2 starting...")
 
     # Run monitors first to refresh data
-    SCRIPTS_DIR = "/root/.openclaw/workspace/scripts"
+    SCRIPTS_DIR = str(SCRIPTS)
     monitors = [
         # Data collection from all sources
         (f"{SCRIPTS_DIR}/real-trends-monitor.py", "Real Trends (Google Daily, HN)"),

@@ -5,13 +5,18 @@ Meeting Wrap v1 - Fathom meeting -> Telegram review for Ben
 - Action Items: extracted and grouped from transcript via Gemini
 - Sends full briefing to Telegram topic 2122 for Ben to review and paste into Slack himself.
 """
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
+from lib.env import env_path
+from lib.paths import WORKSPACE, log_file
 import ast, json, re, subprocess, sys, urllib.request
 
-ENV_FILE = '/root/.openclaw/.env'
-BRIEFING_FILE = '/root/.openclaw/workspace/logs/meeting-wrap-briefing.txt'
-FATHOM_CLIENT = '/root/.openclaw/workspace/core/fathom/client.py'
+ENV_FILE = env_path() or _os.path.expanduser('~/.hermes/.env')
+BRIEFING_FILE = str(log_file('meeting-wrap-briefing.txt'))
+FATHOM_CLIENT = str(WORKSPACE / 'core' / 'fathom' / 'client.py')
 TELEGRAM_TOPIC = '2122'
-TELEGRAM_CLIENT = '/root/.openclaw/workspace/core/integrations/telegram.py'
+TELEGRAM_CLIENT = str(WORKSPACE / 'core' / 'integrations' / 'telegram.py')
 MEETING_NOTES_CHANNEL = 'C09J78SH2FM'
 COMPOSIO_ACCOUNT_ID = 'b02db1f4-9d22-416c-bb78-bdb8c1bc6bb4'
 

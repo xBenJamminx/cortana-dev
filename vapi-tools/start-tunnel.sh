@@ -4,7 +4,9 @@
 
 set -e
 
-source /root/.openclaw/.env
+for _env in "$HOME/.hermes/.env" "$HOME/.openclaw/.env"; do
+  [ -f "$_env" ] && { set -a; . "$_env"; set +a; break; }
+done
 VAPI_API_KEY="${VAPI_API_KEY:?VAPI_API_KEY not set}"
 ASSISTANT_ID="899db371-3ca9-44f6-8ad3-a70131af4987"
 TUNNEL_LOG="/tmp/cloudflared-tunnel.log"
