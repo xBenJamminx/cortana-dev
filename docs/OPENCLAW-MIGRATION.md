@@ -50,11 +50,8 @@ the mechanical work. Dry run is the default; nothing is written without
 `--apply`, and re-running is a no-op.
 
 ```bash
-# 0. find the sibling agents on this host (skips this repository)
+# 1. find the sibling agents on this host (skips this repository)
 python3 scripts/port-hermes-resolvers.py --discover
-
-# 1. commit the target's current state first -- git is the only undo
-git -C /path/to/scout add -A && git -C /path/to/scout commit -m "pre-migration"
 
 # 2. see what would change
 python3 scripts/port-hermes-resolvers.py --target /path/to/scout
@@ -64,10 +61,17 @@ python3 scripts/port-hermes-resolvers.py --target /path/to/scout --apply
 
 # 4. verify BEFORE restarting that agent
 cd /path/to/scout
-python3 -m py_compile $(git ls-files '*.py')
+python3 -m py_compile $(find . -name '*.py' -not -path './.git/*')
 python3 -c "from lib.paths import WORKSPACE, LOGS; print(WORKSPACE, LOGS)"
 #   ^ must print the target's checkout, not Cortana's
 ```
+
+Not every agent workspace is a git repository, so `--apply` writes a
+timestamped `.tar.gz` of every file it is about to overwrite, next to the
+target, and prints the one-line `tar -xzf` that undoes the run. For a target
+with no git history that archive is the only undo, so it is created by default;
+`--no-backup` waives it. If the archive cannot be written, nothing is
+modified.
 
 It installs the resolvers, rewrites hardcoded paths, converts shell `source`
 lines to the Hermes-first loop, and replaces per-script `_load_env()` copies.

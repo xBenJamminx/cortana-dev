@@ -29,9 +29,10 @@ Those are listed under NEEDS MANUAL REVIEW so a human decides.
 """
 import argparse
 import re
-import shutil
 import subprocess
 import sys
+import tarfile
+from datetime import datetime
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent.parent
@@ -222,6 +223,8 @@ def main() -> int:
     ap.add_argument("--discover", action="store_true",
                     help="list sibling agent workspaces on this host and exit")
     ap.add_argument("--apply", action="store_true", help="write changes (default: dry run)")
+    ap.add_argument("--no-backup", action="store_true",
+                    help="skip the pre-change backup archive (not advised)")
     args = ap.parse_args()
 
     if args.discover:
@@ -258,23 +261,25 @@ def main() -> int:
         if dirty:
             print("WARNING: target has uncommitted changes. Commit first so this is revertible.\n")
     else:
-        print("WARNING: target is not a git repository. There is no undo.\n")
+        print("Note: target is not a git repository, so the backup archive below\n"
+              "      is the only way to undo this run.\n")
 
     # 1. resolvers
     lib = target / "lib"
     print("-- resolvers --")
+    writes = []          # (path, text) to write after backup
+    overwrites = []      # existing files this run would replace
     for name in RESOLVERS:
         dest = lib / name
         state = "overwrite" if dest.exists() else "install"
         print(f"  {state}: lib/{name}")
-        if args.apply:
-            lib.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(HERE / "lib" / name, dest)
+        if dest.exists():
+            overwrites.append(dest)
+        writes.append((dest, (HERE / "lib" / name).read_text()))
     init = lib / "__init__.py"
     if not init.exists():
         print("  install: lib/__init__.py")
-        if args.apply:
-            init.write_text('"""Shared utilities."""\n')
+        writes.append((init, '"""Shared utilities."""\n'))
 
     # 2. code
     changed, manual = [], []
@@ -297,11 +302,11 @@ def main() -> int:
 
         if needed and new != src:
             changed.append((rel, sorted(needed)))
-            if args.apply:
-                # Preserve original line endings.
-                if "\r\n" in src and "\r\n" not in new:
-                    new = new.replace("\n", "\r\n")
-                path.write_text(new)
+            # Preserve original line endings.
+            if "\r\n" in src and "\r\n" not in new:
+                new = new.replace("\n", "\r\n")
+            writes.append((path, new))
+            overwrites.append(path)
 
         rest = new if needed else src
         if MANUAL_RE.search(rest) or LEGACY_RE.search(rest):
@@ -325,13 +330,39 @@ def main() -> int:
 
     print(f"\n{len(changed)} file(s) migrated, {len(manual)} need review.")
 
-    if args.apply:
-        print("\nVerify before restarting the agent:")
-        print(f"  cd {target} && python3 -m py_compile $(git ls-files '*.py')")
-        print(f"  cd {target} && python3 -c \"from lib.paths import WORKSPACE, LOGS; print(WORKSPACE, LOGS)\"")
-        print("  ^ WORKSPACE must print this agent's checkout.")
-    else:
+    if not args.apply:
         print("\nDry run. Re-run with --apply to write.")
+        return 0
+
+    # 3. back up everything about to be overwritten, then write.
+    # For a target with no git history this archive is the only undo, so it is
+    # created by default and only skipped when explicitly waived.
+    archive = None
+    if overwrites and not args.no_backup:
+        stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+        archive = target.parent / f"{target.name}-pre-hermes-{stamp}.tar.gz"
+        try:
+            with tarfile.open(archive, "w:gz") as tar:
+                for path in sorted(set(overwrites)):
+                    if path.exists():
+                        tar.add(path, arcname=str(path.relative_to(target)))
+        except OSError as e:
+            print(f"\nerror: could not write backup {archive}: {e}", file=sys.stderr)
+            print("Nothing was modified. Re-run with --no-backup to override.",
+                  file=sys.stderr)
+            return 3
+        print(f"\nBackup: {archive}")
+
+    for path, text in writes:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(text)
+
+    print("\nVerify before restarting the agent:")
+    print(f"  cd {target} && python3 -m py_compile $(find . -name '*.py' -not -path './.git/*')")
+    print(f"  cd {target} && python3 -c \"from lib.paths import WORKSPACE, LOGS; print(WORKSPACE, LOGS)\"")
+    print("  ^ WORKSPACE must print this agent's checkout.")
+    if archive:
+        print(f"\nRoll back with:\n  tar -xzf {archive} -C {target}")
     return 0
 
 
