@@ -47,6 +47,7 @@
 | Scheduling/calendar/priorities | context/schedule.md |
 | Community/EverydayAI/Discord | context/community.md |
 | Error investigation/past mistakes | context/learnings-full.md |
+| Cron job failing on a script path | docs/cron-script-paths.md |
 | General conversation | BRAIN.md only |
 
 ## Memory Rules
