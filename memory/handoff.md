@@ -1,12 +1,17 @@
 # Session Handoff
 
-- **Topic:** Infrastructure / FAM
-- **What we were doing:** Fixed Cortana and MiMoo after Anthropic cut off Claude subscriptions from openclaw (2026-04-04). Both servers migrated to `openai-codex/gpt-5.4-mini`. Also ran the April 6 and April 7 meeting briefings manually because Cortana's behavior degraded on GPT.
-- **Status:** Done. Both servers running. Meeting briefings delivered.
+- **Topic:** Infrastructure / cron reliability
+- **What we were doing:** The midweek Hungryroot plan check cronjob failed with an
+  [Errno 13] permission error on `/root/cortana/scripts/hungryroot_api.py`. Diagnosed it
+  as a path-portability problem, not a permission problem, and shipped a portable script
+  resolver so this class of cron failure reports the real cause.
+- **Status:** Fix pushed to `claude/hungryroot-api-permission-6ndclp` (commit `8f380bf`).
+  No PR opened. The Hungryroot check itself is still not runnable from a remote session —
+  waiting on Ben to decide between committing the script or pinning the job to the box.
 - **Key context:**
-  - Cortana and MiMoo are now on `openai-codex/gpt-5.4-mini` — authenticated with benjoselson@gmail.com OpenAI account
-  - Claude Max plan staying on 20x ($200/month) — Ben uses Claude Code heavily for work
-  - Cortana's behavior on GPT is degraded vs Sonnet: she confuses meeting briefing with FAM sync, mixes meeting data across sessions, makes excuses instead of using tools
-  - Server CLAUDE.md updated with explicit meeting briefing process including: use `client.py meeting <id>` for full transcript, use `-` bullets not `•`, never auto-post, action items from transcript not summary
-  - Meeting briefing format fully documented in `memory/feedback_meeting_briefing.md`
-  - Tram works under Steven (old memory had this wrong — corrected)
+  - `hungryroot_api.py` exists nowhere in cortana-dev; `/root/cortana` does not exist in
+    remote containers. The "permission denied" was `/root` being 0700 to a non-root process.
+  - New: `lib/paths.py` (`resolve_script`) and `scripts/cortana-run.py`. Cron prompts and
+    skills should invoke scripts by name through the wrapper, never by absolute path.
+  - Details in `memory/2026-08-13.md` and `docs/cron-script-paths.md`.
+  - I did NOT rebuild the Hungryroot client — no endpoints or credentials available here.
